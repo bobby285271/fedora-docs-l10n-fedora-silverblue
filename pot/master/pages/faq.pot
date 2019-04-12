@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-04-12 17:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/faq.adoc:1
+#, no-wrap
+msgid "Frequently Asked Questions (FAQ)"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/faq.adoc:3
+#, no-wrap
+msgid "General"
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/faq.adoc:6
+#, no-wrap
+msgid "Is it Team Silverblue, Silverblue, or Fedora Silverblue?"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:8
+msgid ""
+"We chose the name Team Silverblue to refer to the overall project. Fedora "
+"Silverblue will be used for the OS that we are producing, but calling it "
+"Silverblue in its short version is fine as well."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/faq.adoc:9
+#, no-wrap
+msgid "Why does the Silverblue logo look like a leaf?"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:11
+msgid ""
+"Our favorite choice for a project name was Silverleaf, but that sadly did "
+"not work out. We just couldn't quite let go of the leaf."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:12
+msgid "You could also say that Silverblue is a new new leaf on Fedora's OSTree :-)"
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/faq.adoc:13
+#, no-wrap
+msgid "Is Silverbue another GNOME OS?"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:15
+msgid ""
+"GNOME OS was a codename that was used by the upstream GNOME project for a "
+"while to refer to the idea of designing the entire user experience from boot "
+"through login to the desktop. Silverblue by contrast is an effort inside the "
+"Fedora project, and will be built with existing Fedora technologies. One "
+"aspect that the two efforts have in common is the desire to deliver a user "
+"experience that is polished and coherent."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/faq.adoc:16
+#, no-wrap
+msgid "Technical"
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/faq.adoc:20
+#, no-wrap
+msgid "How do I create a VPN connection?"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:22
+msgid ""
+"/etc is not part of the immutable OS image, so you can just copy files into "
+"/etc/NetworkManager/system-connections (or let NetworkManager store them "
+"there when you recreate your connections). Certificates in /etc/pki need to "
+"be handled similarly."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/faq.adoc:23
+#, no-wrap
+msgid "How can I play YouTube videos?"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:25
+msgid ""
+"Firefox is included in the OS image for now. Until that changes, getting it "
+"to play videos works the same way as it does for the regular Workstation: "
+"find a package with the needed codecs, and install it. The one difference is "
+"that you use _rpm-ostree install_ instead of dnf install."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:25
+msgid ""
+"An alternative solution is to install the nightly firefox, which is "
+"available as a "
+"https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly.flatpakref[Flatpak]."
+msgstr ""
