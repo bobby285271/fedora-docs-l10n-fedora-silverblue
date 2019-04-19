@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-04-13 12:44+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ./nav.adoc:3
+msgid ""
+"xref:installation-guide.adoc[Installation Guide] ** "
+"xref:installation-dual-boot.adoc[Installation: Dual Boot]"
+msgstr ""
+
+#. type: Plain text
+#: ./nav.adoc:4
+msgid "xref:first-login.adoc[First Login]"
+msgstr ""
+
+#. type: Plain text
+#: ./nav.adoc:5
+msgid "xref:upgrades.adoc[Upgrades and Rollbacks]"
+msgstr ""
+
+#. type: Plain text
+#: ./nav.adoc:6
+msgid "xref:silverblue-guide.adoc[Silverblue Guide]"
+msgstr ""
+
+#. type: Plain text
+#: ./nav.adoc:7
+msgid "xref:f29-release-notes.adoc[Fedora 29 Silverblue Release Notes]"
+msgstr ""
+
+#. type: Plain text
+#: ./nav.adoc:8
+msgid "xref:faq.adoc[FAQ]"
+msgstr ""
+
+#. type: Plain text
+#: ./nav.adoc:8
+msgid "xref:other-sources.adoc[Other Sources]"
+msgstr ""
