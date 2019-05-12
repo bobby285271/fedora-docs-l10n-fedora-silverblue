@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-19 08:51+0200\n"
+"POT-Creation-Date: 2019-05-12 15:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,16 +16,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Plain text
-#: nav.adoc:8
-#, no-wrap
-msgid ""
-"* xref:installation-guide.adoc[Installation Guide]\n"
-"** xref:installation-dual-boot.adoc[Installation: Dual Boot]\n"
-"* xref:first-login.adoc[First Login]\n"
-"* xref:upgrades.adoc[Upgrades and Rollbacks]\n"
-"* xref:silverblue-guide.adoc[Silverblue Guide]\n"
-"* xref:f29-release-notes.adoc[Fedora 29 Silverblue Release Notes]\n"
-"* xref:faq.adoc[FAQ]\n"
-"* xref:other-sources.adoc[Other Sources]\n"
+#. type: Bullet: '* '
+#: nav.adoc:7
+msgid "xref:installation.adoc[Installation]"
+msgstr ""
+
+#. type: Bullet: '* '
+#: nav.adoc:7
+msgid "xref:getting-started.adoc[Getting Started]"
+msgstr ""
+
+#. type: Bullet: '* '
+#: nav.adoc:7
+msgid "xref:updates-upgrades-rollbacks.adoc[Updates, Upgrades & Rollbacks]"
+msgstr ""
+
+#. type: Bullet: '* '
+#: nav.adoc:7
+msgid "xref:toolbox.adoc[Toolbox]"
+msgstr ""
+
+#. type: Bullet: '* '
+#: nav.adoc:7
+msgid "xref:technical-information.adoc[Technical Information]"
+msgstr ""
+
+#. type: Bullet: '* '
+#: nav.adoc:7
+msgid "xref:reading-and-resources.adoc[Reading and Resources]"
+msgstr ""
+
+#. type: Bullet: '* '
+#: nav.adoc:7
+msgid "xref:faq.adoc[FAQ]"
 msgstr ""
