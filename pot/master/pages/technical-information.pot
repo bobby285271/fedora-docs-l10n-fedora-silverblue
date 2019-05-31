@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-05-12 16:09+0200\n"
+"POT-Creation-Date: 2019-05-31 16:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: ./pages/technical-information.adoc:19
 msgid ""
 "https://ostree.readthedocs.io/en/latest/[ostree] is the core technology that "
-"is used to compose, deplay and update Silverblue. ostree operates in a "
+"is used to compose, deploy and update Silverblue. ostree operates in a "
 "similar manner to a version control system, but it operates on entire "
 "filesystem trees.  It is often described as “Git for operating system "
 "binaries”."
@@ -57,8 +57,8 @@ msgstr ""
 #. type: Plain text
 #: ./pages/technical-information.adoc:23
 msgid ""
-"For Silverblue installs, ostree is responsible for eploying and updating the "
-"OS image (including everything below `/` that is not symlinked into "
+"For Silverblue installs, ostree is responsible for deploying and updating "
+"the OS image (including everything below `/` that is not symlinked into "
 "`/var`). It also updates `grub.cfg` entries to point to the current image."
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr ""
 #: ./pages/technical-information.adoc:43
 msgid ""
 "`/var` is where all of Silverblue's runtime state is store. Symlinks are "
-"used to make traditional state-carrying directors availabel in their "
+"used to make traditional state-carrying directors available in their "
 "expected locations. This includes:"
 msgstr ""
 

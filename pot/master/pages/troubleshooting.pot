@@ -1,0 +1,474 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-05-31 16:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/troubleshooting.adoc:1
+#, no-wrap
+msgid "Troubleshooting"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:8
+#, no-wrap
+msgid ""
+"Silverblue is a radically new way of deploying and managing your\n"
+"desktop operating system, so you may ocassionally run into problems\n"
+"while going through your day to day.  Below are some of the more\n"
+"common problems reported and any workarounds for those problems.\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:10
+#, no-wrap
+msgid "\"Forbidden base package replacements\"\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:12
+msgid "https://github.com/projectatomic/rpm-ostree/issues/415"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:17
+msgid ""
+"This can happen when a package that is being layered has a dependency on a "
+"package that is in the base OS.  In the problematic case, the layered "
+"package requires a newer version of the dependent package which is not "
+"available in the base OS."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:21
+msgid ""
+"In most cases, waiting for a newer OSTree compose will resolve this "
+"problem.  The dependent package will be updated in the compose and the "
+"package that was going to be layered will be successful."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:25
+msgid ""
+"However, if you continue to encounter this problem with a newer compose, you "
+"can try to cleanup the metadata with `rpm-ostree cleanup -m` and then "
+"retrying the `rpm-ostree install`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:28
+msgid ""
+"Alternatively, you can try rebasing to any `updates` ref, like "
+"`fedora/30/updates/x86_64` after the `cleanup` operation."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:30
+msgid "Installing packages to `/opt` or `/usr/local`"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:32
+#, no-wrap
+msgid "https://github.com/projectatomic/rpm-ostree/issues/233\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:37
+#, no-wrap
+msgid ""
+"Installing into `/opt` was commonly raised as a problem when users where\n"
+"trying to install Google Chrome.  A partial solution has been implemented\n"
+"that allows users to layer Google Chrome, however it is not a complete\n"
+"solution for applications that write mutable data to `/opt`.\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:39
+#, no-wrap
+msgid "https://github.com/projectatomic/rpm-ostree/pull/1795\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:41
+#, no-wrap
+msgid "Using Nvidia drivers\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:43
+msgid "https://github.com/projectatomic/rpm-ostree/issues/1091"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:48
+msgid ""
+"Users have long wanted to use their Nvidia GPUs on their Silverblue "
+"systems.  Thankfully, recent changes to the `akmods` and `kmodtools` "
+"packages were made by https://twitter.com/gnomealex[Alex Larsson] to allow "
+"for normal installation of the Nvidia drivers."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:50
+msgid "`# rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:52
+msgid ""
+"You can read more about the work that Alex did on his "
+"https://blogs.gnome.org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/[blog]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:54
+msgid "SELinux problems"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:60
+#, no-wrap
+msgid ""
+"As users work with Silverblue day-to-day, it is possible that they have "
+"modified\n"
+"the default SELinux policy in an effort to workaround one or more problems\n"
+"related to SELinux.  This is usually done when a user sees a SELinux denial "
+"in the\n"
+"journal.  If this is the case and one wishes to revert back to the default "
+"SELinux\n"
+"policy, you can try these set of actions.\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:63
+#, no-wrap
+msgid ""
+". Check the state of the SELinux policy\n"
+"+\n"
+"--\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:70
+#, no-wrap
+msgid ""
+"  $ sudo ostree admin config-diff | grep policy\n"
+"  M    selinux/targeted/active/policy.linked\n"
+"  M    selinux/targeted/active/policy.kern\n"
+"  M    selinux/targeted/policy/policy.31\n"
+"  A    selinux/targeted/policy/policy.30\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:74
+#, no-wrap
+msgid ""
+"If anything is returned by this command, then your SELinux policy has been "
+"modified\n"
+"from the default.\n"
+"--\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:78
+#, no-wrap
+msgid ""
+".  Copy the default SELinux policy shipped in the OSTree compose\n"
+"+\n"
+"--\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:82
+#, no-wrap
+msgid ""
+"  $ sudo cp -al /etc/selinux{,.bak}\n"
+"  $ sudo rsync -rlv /usr/etc/selinux/ /etc/selinux/\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:85
+#, no-wrap
+msgid ""
+"After doing this, the output from `ostree admin config-diff | grep policy` "
+"should\n"
+"no longer indicate the policy is modified.\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:87
+#, no-wrap
+msgid ""
+"If your policy still appears to be modified, you can try the following "
+"approach.\n"
+"--\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:91
+#, no-wrap
+msgid ""
+".  Remove the SELinux policy; copy in the default policy\n"
+"+\n"
+"--\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:95
+#, no-wrap
+msgid ""
+"  $ sudo rm -rf /etc/selinux\n"
+"  $ sudo cp -aT /usr/etc/selinux /etc/selinux\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:98
+#, no-wrap
+msgid ""
+"After this, the `ostree admin config-diff | grep policy` command should "
+"return\n"
+"no modifications.\n"
+"--\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:101
+msgid "Unable to add user to group"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:103
+msgid "https://github.com/projectatomic/rpm-ostree/issues/29"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:105
+msgid "https://github.com/projectatomic/rpm-ostree/issues/49"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:112
+msgid ""
+"Due to how `rpm-ostree` handles user + group entries, it may not be possible "
+"to use `usermod -a -G` to add a user to a group successfully.  Until the "
+"`rpm-ostree` moves to using `systemd sysusers`, users will have to populate "
+"the `/etc/group` file from the `/usr/lib/group` file before they can add "
+"themselves to the group.  For example, if you wanted to add a user to the "
+"`libvirt` group:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:116
+#, no-wrap
+msgid ""
+"# grep -E '^libvirt:' /usr/lib/group >> /etc/group\n"
+"# usermod -a G libvirt username\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:119
+msgid "`ostree fsck` reports file corruption"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:124
+#, no-wrap
+msgid ""
+"It is possible to end up in a situation where one or more files on the "
+"disk\n"
+"have become corrupted or missing.  In this case, `ostree fsck` will report\n"
+"errors in certain commits.  The workaround in this case is to mark the "
+"entire\n"
+"OSTree commit as partially retrieved and then re-pull the commit.\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:126
+#, no-wrap
+msgid "https://github.com/ostreedev/ostree/pull/345#issuecomment-262263824\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:128
+#, no-wrap
+msgid "Read-only `/boot/efi` prevents any upgrades\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:130
+msgid "https://github.com/projectatomic/rpm-ostree/issues/1380"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:135
+msgid ""
+"This issue is most commonly seen when users have installed Silverblue on "
+"Apple hardware.  The `/boot/efi` partition on Apple hardware is formatted as "
+"HFS+ and is not always resilient to power failures or other kinds of hard "
+"power events."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:139
+msgid ""
+"Since Silverblue now includes the `hfsplus-tools` package in the base "
+"compose, it has become relatively easy for users to workaround this kind of "
+"error."
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:144
+#, no-wrap
+msgid ""
+"# umount /boot/efi\n"
+"# fsck.hfsplus /dev/sda1\n"
+"# mount -o rw /boot/efi\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:147
+msgid "See the linked issue for additional details."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:149
+msgid "Unable to install Silverblue on EFI systems"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:151
+#, no-wrap
+msgid "https://bugzilla.redhat.com/show_bug.cgi?id=1575957\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:155
+#, no-wrap
+msgid ""
+"Users have reported that they cannot install Silverblue on an EFI based\n"
+"system where they previously had another OS installed.  The error that\n"
+"is often observed looks like:\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:158
+msgid ""
+"ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', "
+"'--os=fedora-workstation', "
+"'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:161
+#, no-wrap
+msgid "A couple of possible workarounds exist:\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:164
+#, no-wrap
+msgid ""
+"* During the install process, select \"Custom Partitioning\" and create an "
+"additional EFI partition. Assign the newly created EFI partition to "
+"`/boot/efi`. You will then be able to boot the previous OS(s) alongside "
+"Fedora Silverblue. If this workaround is not successfull follow the below "
+"step.\n"
+"* Reformat the EFI partition on the host during the install process. This "
+"can be done by selecting \"Custom Partitioning\" and checking the `Reformat` "
+"box when creating the `/boot/efi` partition.\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:168
+#, no-wrap
+msgid ""
+"WARNING: Choosing to reformat `/boot/efi` will likely result in the "
+"inability\n"
+"to boot any other operating systems that were previously installed. Be sure "
+"that\n"
+"you have backed up any important data before using this workaround.\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:170
+#, no-wrap
+msgid "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:173
+msgid ""
+"When issuing the `toolbox list` command, systems using `podman` versions "
+"newer than `1.2.0`, will generate the following error:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/troubleshooting.adoc:176
+#, no-wrap
+msgid "toolbox: failed to list images with com.redhat.component=fedora-toolbox\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:179
+msgid ""
+"The following workaround might be useful for other `toolbox` errors caused "
+"by `podman` versions greater than `1.2.0`. See "
+"https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902[Toolbox "
+"Github Repo]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:181
+msgid ""
+"As a workaround, it is possible to override `podman` packages newer than "
+"version `1.2.0` following these steps:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:183
+msgid ""
+"Download `podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm` from "
+"https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:184
+msgid ""
+"Remove `podman-manpages` issuing: `rpm-ostree override remove "
+"podman-manpages`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:185
+msgid ""
+"Override the currenty installed `podman` package (using the package you have "
+"downloaded on the first step) by: `rpm-ostree override replace "
+"podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:186
+msgid ""
+"Alternatively, you can avoid downloading the file by issuing the following "
+"command: `rpm-ostree override replace "
+"https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/troubleshooting.adoc:187
+msgid "You can now reboot the system for the change to take effect."
+msgstr ""

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-05-12 16:09+0200\n"
+"POT-Creation-Date: 2019-05-31 16:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,14 +118,14 @@ msgstr ""
 
 #. type: Plain text
 #: pages/index.adoc:46
-msgid "link:upgrades[OS upgrades and rollbacks]"
+msgid "link:updates-upgrades-rollbacks[OS upgrades and rollbacks]"
 msgstr ""
 
 #. type: Plain text
 #: pages/index.adoc:50
 msgid ""
 "The primary audience for these docs are new users, who aren't expected to "
-"have specialist knowledge or technical knowledg about Silverblue's "
+"have specialist knowledge or technical knowledge about Silverblue's "
 "internals.  However, some background link:technical-information[technical "
 "information] is provided, for those who are interested and want to learn "
 "more."
