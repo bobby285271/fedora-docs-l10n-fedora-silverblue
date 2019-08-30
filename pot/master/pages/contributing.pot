@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-08-31 00:31+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/contributing.adoc:2
+#, no-wrap
+msgid "Contributing to Fedora Silverblue"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:5
+msgid "Help us improve Fedora Silverblue by contributing to the project!"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/contributing.adoc:7
+#, no-wrap
+msgid "Developing Silverblue"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:10
+msgid ""
+"If you are a developer, you can contribute to one of the several projects "
+"which make Fedora Silverblue possible. Submit your pull requests to:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:12
+msgid "https://github.com/projectatomic/rpm-ostree[rpm-ostree]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:13
+msgid "https://github.com/flatpak/flatpak[flatpak]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:14
+msgid "https://github.com/ostreedev/ostree[ostree]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:15
+msgid "https://github.com/debarshiray/toolbox[toolbox]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:16
+msgid "https://github.com/containers/libpod[podman]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:18
+msgid ""
+"Your contributions towards the main "
+"https://fedoraproject.org/wiki/Join[Fedora] project are also very welcome."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/contributing.adoc:20
+#, no-wrap
+msgid "Creating Flatpaks"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:23
+msgid ""
+"Your favourite application is not in the default repository and won't "
+"probably be added? You can do it yourself! Go through our tutorial for "
+"creating flatpaks from rpm packages:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:25
+msgid ""
+"https://docs.fedoraproject.org/en-US/flatpak/tutorial/[RPM to Flatpak "
+"tutorial]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:27
+msgid ""
+"To become an official packager you need to go through several steps to gain "
+"all required permissions to use the Fedora infrastrucutre (Pagure, Koji, "
+"Bodhi). There is a detailed "
+"https://fedoraproject.org/wiki/Join_the_package_collection_maintainers[wiki "
+"page] about becoming a packager."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:29
+msgid "Other useful links:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:31
+msgid "https://pagure.io[Pagure]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:32
+msgid "https://src.fedoraproject.org[Package Sources]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:33
+msgid "https://koji.fedoraproject.org/koji/[Koji]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:34
+msgid "https://bodhi.fedoraproject.org/[Bodhi]"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/contributing.adoc:36
+#, no-wrap
+msgid "Writing Documentation"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:39
+msgid ""
+"Creating or modifing documentation is easy. Head over to our "
+"https://github.com/fedora-silverblue/silverblue-docs[documentation] GitHub "
+"repository, fork it and create a pull request."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:41
+msgid ""
+"If you are not comfortable with using git, create a new topic in our "
+"https://discussion.fedoraproject.org/c/desktop/silverblue[community] or log "
+"an https://github.com/fedora-silverblue/silverblue-docs/issues[issue] "
+"describing what need to be changed."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/contributing.adoc:43
+#, no-wrap
+msgid "Writing Conventions"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:46
+msgid "When creating documentation, please follow these writing conventions:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:48
+msgid ""
+"Code blocks for commands that require `root` privileges must show the `#` "
+"prompt symbol. Example:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:50
+#, no-wrap
+msgid "# dnf install <package>\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:52
+msgid ""
+"The `$` user prompt symbol can also be used but you must prefix the command "
+"with `sudo`. Example:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:54
+#, no-wrap
+msgid " $ sudo dnf install <package>\n"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/contributing.adoc:56
+#, no-wrap
+msgid "Reporting Issues"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:58
+msgid ""
+"You can report bugs and suggest features or improvements on the "
+"https://github.com/fedora-silverblue/issue-tracker/issues[issue tracker.]"
+msgstr ""

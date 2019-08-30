@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-02 22:20+0200\n"
+"POT-Creation-Date: 2019-08-31 00:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,7 +158,8 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:63
-msgid "`$ rpm-ostree install toolbox`"
+#, no-wrap
+msgid " $ rpm-ostree install toolbox\n"
 msgstr ""
 
 #. type: Plain text
@@ -181,12 +182,14 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:72
-msgid "`$ sudo dnf install toolbox`"
+#, no-wrap
+msgid " $ sudo dnf install toolbox\n"
 msgstr ""
 
-#. type: Plain text
-#: pages/toolbox.adoc:75
-msgid "## Your first toolbox"
+#. type: Title ==
+#: pages/toolbox.adoc:74
+#, no-wrap
+msgid "Your first toolbox"
 msgstr ""
 
 #. type: Plain text
@@ -197,7 +200,8 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:79
-msgid "`$ toolbox create`"
+#, no-wrap
+msgid " $ toolbox create\n"
 msgstr ""
 
 #. type: Plain text
@@ -209,7 +213,8 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:84
-msgid "`$ toolbox enter`"
+#, no-wrap
+msgid " $ toolbox enter\n"
 msgstr ""
 
 #. type: Plain text
@@ -220,26 +225,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:91
+#: pages/toolbox.adoc:90
 msgid ""
 "When the prompt is inside a toolbox, it is prepended with a diamond: this "
 "indicates that the prompt is inside a toolbox container."
 msgstr ""
 
 #. type: Title ==
-#: pages/toolbox.adoc:93
+#: pages/toolbox.adoc:92
 #, no-wrap
 msgid "Commands and usage"
 msgstr ""
 
 #. type: Labeled list
-#: pages/toolbox.adoc:95
+#: pages/toolbox.adoc:94
 #, no-wrap
 msgid "`toolbox create [--container <name>]`"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:102
+#: pages/toolbox.adoc:101
 msgid ""
 "Creates a toolbox container. This will download an OCI image if one isn't "
 "available (this is required to create the container). By default a Fedora "
@@ -249,13 +254,13 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: pages/toolbox.adoc:103
+#: pages/toolbox.adoc:102
 #, no-wrap
 msgid "`toolbox enter [--container <name>]`"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:108
+#: pages/toolbox.adoc:107
 msgid ""
 "Enters a toolbox for interactive use. Used without options, `toolbox enter` "
 "opens the default toolbox. If there is more than one toolbox, use the `--"
@@ -263,13 +268,13 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: pages/toolbox.adoc:109
+#: pages/toolbox.adoc:108
 #, no-wrap
 msgid "`toolbox list`"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:115
+#: pages/toolbox.adoc:114
 msgid ""
 "Lists local toolbox images and containers. Note: it is typical to see two "
 "images listed, one with a `localhost` prefix and one with a `registry."
@@ -278,94 +283,94 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: pages/toolbox.adoc:116
+#: pages/toolbox.adoc:115
 #, no-wrap
 msgid "`toolbox rm [--force] <name>`"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:120
+#: pages/toolbox.adoc:119
 msgid ""
 "Removes one or more toolbox containers. The `--force` option removes the "
 "container even if it is running."
 msgstr ""
 
 #. type: Labeled list
-#: pages/toolbox.adoc:121
+#: pages/toolbox.adoc:120
 #, no-wrap
 msgid "`toolbox rmi [--force] <name>`"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:124
+#: pages/toolbox.adoc:123
 msgid "Removes one or more toolbox images."
 msgstr ""
 
 #. type: Labeled list
-#: pages/toolbox.adoc:125
+#: pages/toolbox.adoc:124
 #, no-wrap
 msgid "`toolbox --help`"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:128
+#: pages/toolbox.adoc:127
 msgid "Lists available commands."
 msgstr ""
 
 #. type: Title ===
-#: pages/toolbox.adoc:129
+#: pages/toolbox.adoc:128
 #, no-wrap
 msgid "Exiting a toolbox"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:133
+#: pages/toolbox.adoc:132
 msgid ""
 "To return to the host environment, either run `exit` or quit the current "
 "shell (typically Ctrl+D)."
 msgstr ""
 
 #. type: Title ==
-#: pages/toolbox.adoc:136
+#: pages/toolbox.adoc:135
 #, no-wrap
 msgid "Under the hood"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:139
+#: pages/toolbox.adoc:138
 msgid "Toolbox uses the following technologies:"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:141
+#: pages/toolbox.adoc:140
 msgid "https://buildah.io/[Buildah]"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:142
+#: pages/toolbox.adoc:141
 msgid "https://www.opencontainers.org/[OCI container images]"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:143
+#: pages/toolbox.adoc:142
 msgid "https://podman.io/[Podman]"
 msgstr ""
 
 #. type: Title ==
-#: pages/toolbox.adoc:145
+#: pages/toolbox.adoc:144
 #, no-wrap
 msgid "Contact and issues"
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:149
+#: pages/toolbox.adoc:148
 msgid ""
 "To report issues, make suggestions, or contribute fixes, see https://github."
 "com/debarshiray/toolbox[toolbox's GitHub project]."
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:153
+#: pages/toolbox.adoc:152
 msgid ""
 "To get in touch with toolbox users and developers, use https://discussion."
 "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "

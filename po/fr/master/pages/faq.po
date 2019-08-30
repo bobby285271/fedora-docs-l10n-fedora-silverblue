@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-02 22:33+0200\n"
+"POT-Creation-Date: 2019-08-31 00:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,8 +101,8 @@ msgstr ""
 #. type: Plain text
 #: pages/faq.adoc:34
 msgid ""
-"An experimental nightly build of Eclipse http://eclipse.matbooth.co.uk/[is "
-"available to download]."
+"Instructions to setup the Nightly flatpak remote for Eclipse are available "
+"http://eclipse.matbooth.co.uk/flatpak[here]."
 msgstr ""
 
 #. type: Labeled list
@@ -127,13 +127,184 @@ msgid "How can I play more videos in Firefox, like YouTube?"
 msgstr ""
 
 #. type: Plain text
-#: pages/faq.adoc:48
+#: pages/faq.adoc:49
 msgid ""
 "Firefox is included in the OS image for now. Until that changes, getting it "
 "to play videos works the same way as it does for the regular Fedora "
 "Workstation: find a package with the needed codecs, and install it. The one "
-"difference is that you use `rpm-ostree install` instead of dnf `install.` An "
-"alternative solution is to install the nightly Firefox, which is available "
-"as a https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly."
-"flatpakref[Flatpak]."
+"difference is that you use `rpm-ostree install` instead of `dnf install`.  "
+"An alternative solution is to install the nightly Firefox, which is "
+"available as a https://firefox-flatpak.mojefedora.cz/org.mozilla."
+"FirefoxNightly.flatpakref[Flatpak]."
+msgstr ""
+
+#. type: Labeled list
+#: pages/faq.adoc:50
+#, no-wrap
+msgid "How can I use Adobe Flash on the Firefox version pre installed on my system?"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:53
+msgid ""
+"You can follow this https://docs.fedoraproject.org/en-US/quick-docs/using-"
+"adobe-flash/[Fedora quickdoc] with the following changes:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:55
+msgid ""
+"where needed, substitute the `dnf install` command with the `rpm-ostree "
+"install` command"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:57
+msgid "reboot the system after the installation of the Adobe DNF repository"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:59
+msgid ""
+"install only `flash-plugin` as `libcurl` and `alsa-plugins-pulseaudio` are "
+"installed by default on Fedora Silverblue"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:61
+msgid "reboot the system after having installed `flash-plugin`"
+msgstr ""
+
+#. type: Labeled list
+#: pages/faq.adoc:62
+#, no-wrap
+msgid "How can I see what packages were updated between two commits?"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:65
+msgid ""
+"If you want to compare the booted deployment with the pending deployment (or "
+"rollback deployment), simply issue:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:67
+#, no-wrap
+msgid "$ rpm-ostree db diff\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:69
+msgid ""
+"You can also see the RPM changelog by adding the `-c` option like so: `rpm-"
+"ostree db diff -c`"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:71
+msgid ""
+"If you want to see which packages were updated between two specific commits:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:73
+msgid "find out which two commits you want to compare by issuing:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:75
+#, no-wrap
+msgid "$ ostree log <ref>\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:77
+msgid "you can now compare the two commits by issuing:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:79
+#, no-wrap
+msgid "$ rpm-ostree db diff <commit x> <commit y>\n"
+msgstr ""
+
+#. type: Labeled list
+#: pages/faq.adoc:80
+#, no-wrap
+msgid "How can I check the version number of an installed package?"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:83
+msgid "You can simply use:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:85
+#, no-wrap
+msgid " $ rpm -q <package>\n"
+msgstr ""
+
+#. type: Labeled list
+#: pages/faq.adoc:86
+#, no-wrap
+msgid "How can I check if an `rpm` software package is available in the repository?"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:89
+msgid ""
+"At this point in time, there is no `rpm` package search function built into "
+"`rpm-ostree`. However, you can use `toolbox` with the following command:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:91
+#, no-wrap
+msgid " $ toolbox run dnf search <package>\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:93
+msgid ""
+"The assumption is that you have already created a toolbox matching the "
+"version of your Fedora Silverblue installation."
+msgstr ""
+
+#. type: Labeled list
+#: pages/faq.adoc:94
+#, no-wrap
+msgid "How can I downgrade my system's kernel?"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:97
+msgid ""
+"If, for whatever reason, you need to downgrade the kernel, you can do so by "
+"following these steps:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:99
+msgid ""
+"For the version you need to downgrade, download `<kernel>`, `<kernel-core>`, "
+"`<kernel-modules>` and `<kernel-modules-extra>` from https://koji."
+"fedoraproject.org/koji/packageinfo?packageID=8[Koji]."
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:101
+msgid "Install the packages downloaded on the previous step by issuing:"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:103
+#, no-wrap
+msgid "$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> <kernel-modules-extra>\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/faq.adoc:105
+msgid "Reboot the system to apply the changes."
 msgstr ""

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-02 22:33+0200\n"
+"POT-Creation-Date: 2019-08-31 00:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,32 +55,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:25
+#: ./pages/installation.adoc:26
 msgid ""
-"It is therefore recommended that you read this user guide before decideng to "
-"install Silverblue. It is also recommended that, that Silverblue meets any "
-"specific needs or requirements that you might have. If you are uncertain "
-"about this, Silverblue can also be tested in a virtual machine prior to "
-"installation."
+"It is therefore recommended that you read this user guide before deciding to "
+"install Silverblue. It is also recommended that you determine whether "
+"Silverblue meets the specific needs or requirements that you might have. If "
+"you are uncertain about this, Silverblue can also be tested in a virtual "
+"machine prior to installation or booted from a flash drive using Fedora "
+"Media Writer."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/installation.adoc:27
+#: ./pages/installation.adoc:28
 #, no-wrap
 msgid "Known limitations"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:31
+#: ./pages/installation.adoc:32
 #, no-wrap
 msgid ""
 "*Silverblue does not provide a fully functional experience for dual booting "
 "or \n"
-"manual partitioning, including seperate home partitions.*\n"
+"manual partitioning, including separate home partitions.*\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:37
+#: ./pages/installation.adoc:38
 msgid ""
 "It is possible to make Silverblue work for both dual boot and manual "
 "partitioning, and some guidance is provided on manual partitioning below.  "
@@ -90,13 +91,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: ./pages/installation.adoc:39
+#: ./pages/installation.adoc:40
 #, no-wrap
 msgid "Getting Silverblue"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:45
+#: ./pages/installation.adoc:46
 msgid ""
 "If you are using Fedora Media Writer, Silverblue should be listed as a "
 "download option. However, if it isn't, or if you want to download it "
@@ -105,20 +106,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:48
+#: ./pages/installation.adoc:49
 msgid ""
 "Once you have got your copy of Silverblue, it can be installed in the usual "
 "manner. We hope that you love it!"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/installation.adoc:50
+#: ./pages/installation.adoc:51
 #, no-wrap
 msgid "Manual Partitioning"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:56
+#: ./pages/installation.adoc:57
 msgid ""
 "As described above, there are known issues with manual partitioning on "
 "Silverblue, and it should be used with caution. The following notes are "
@@ -127,36 +128,36 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:59
+#: ./pages/installation.adoc:60
 msgid ""
 "With Silverblue, only certain mounts can be manually specified as "
 "partitions. These include:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:61
+#: ./pages/installation.adoc:62
 msgid "`/boot`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:62
+#: ./pages/installation.adoc:63
 msgid "`/var`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:66
+#: ./pages/installation.adoc:67
 msgid ""
 "Subdirectories under `/var`, including: ** `/var/home` (Silverblue has a "
 "symlink from `/home` to `/var/home`)  ** `/var/log` ** `/var/containers`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:67
+#: ./pages/installation.adoc:68
 msgid "The root filesystem: `/`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:71
+#: ./pages/installation.adoc:72
 msgid ""
 "The Fedora installer is not aware of these restrictions and will accept "
 "custom partitions without error, even if they are incompatible with "
@@ -164,26 +165,26 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation.adoc:72
+#: ./pages/installation.adoc:73
 #, no-wrap
 msgid "Partitioning Complete"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation.adoc:72
+#: ./pages/installation.adoc:73
 #, no-wrap
 msgid "faw-manual-partition-complete.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:76
+#: ./pages/installation.adoc:77
 msgid ""
 "The above screenshot shows a typical configuration with manual partitioning, "
 "with partitions for `/boot`, `/`, `swap` and `/var/home`."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation.adoc:79
+#: ./pages/installation.adoc:80
 msgid ""
 "Manual partitioning on Silverblue can be done with "
 "https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], as "

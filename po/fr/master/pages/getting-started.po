@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-02 22:33+0200\n"
+"POT-Creation-Date: 2019-08-31 00:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,7 +166,7 @@ msgstr ""
 #: pages/getting-started.adoc:58
 msgid ""
 "After the repository installation process is complete, the window will be "
-"updated to show a “Remove` button in place of the “Install” button."
+"updated to show a “Remove\" button in place of the “Install” button."
 msgstr ""
 
 #. type: Title ===
@@ -186,18 +186,18 @@ msgstr ""
 #. type: Plain text
 #: pages/getting-started.adoc:70
 msgid ""
-"If you choose to install apps from the Flathub website, clicking install "
+"If you choose to install apps from the Flathub website, clicking \"Install\" "
 "will download a file which will be opened by the Software app, which can "
-"then be used to install the app. For example, to install LibreOffice, you "
-"first search for and open the LibreOffice page, and then press the “Install” "
-"button (1)."
+"then be used to install the app. For example, to install https://www."
+"libreoffice.org/[LibreOffice], you first search for and open the LibreOffice "
+"page, and then press the “Install” button (2)."
 msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:74
 msgid ""
 "After clicking the “Install” button, a download information window will be "
-"shown. Verify the correct Flatpak is being downloaded and then click on the "
+"shown. Verify the correct Flatpak has been downloaded and then click on the "
 "“OK” button to begin installing the LibreOffice application."
 msgstr ""
 
@@ -217,7 +217,7 @@ msgstr ""
 #: pages/getting-started.adoc:79
 msgid ""
 "Once the Flatpak is downloaded, the Software application will open a new "
-"window with an “Install” button (1). lick this button to begin installation."
+"window with an “Install” button (2). Click this button to begin installation."
 msgstr ""
 
 #. type: Title ===
@@ -277,18 +277,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:106
+#: pages/getting-started.adoc:107
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
-"rollback and the transactional model, but means system must be rebooted "
-"after a package has been layered.  Eventually this limitation may be lifted, "
-"but it's generally expected that you use package layering sparingly, and use "
-"`flatpak` and `dnf install` inside a `toolbox` etc."
+"rollback and the transactional model, but means that the system must be "
+"rebooted after a package has been layered.  Eventually this limitation may "
+"be lifted, but it's generally expected that you use package layering "
+"sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:110
+#: pages/getting-started.adoc:111
 msgid ""
 "Package layering is generally done from the command line. However, the "
 "Software application does rely on it for installing a small number of apps "
@@ -296,23 +296,24 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: pages/getting-started.adoc:111
+#: pages/getting-started.adoc:112
 #, no-wrap
 msgid "Installing packages"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:114
+#: pages/getting-started.adoc:115
 msgid "Packages can be installed on Silverblue using:"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:116
-msgid "`$ rpm-ostree install <package name>`"
+#: pages/getting-started.adoc:117
+#, no-wrap
+msgid " $ rpm-ostree install <package name>\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:121
+#: pages/getting-started.adoc:122
 msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
@@ -321,34 +322,35 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:124
+#: pages/getting-started.adoc:125
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
 msgstr ""
 
 #. type: Title ===
-#: pages/getting-started.adoc:125
+#: pages/getting-started.adoc:126
 #, no-wrap
 msgid "Replacing packages"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:129
+#: pages/getting-started.adoc:130
 msgid ""
-"In some scenarios, you may want to e.g. test out a new version of `podman` "
-"or `kernel` or other packages that live on the host.  The `rpm-ostree "
-"override` command can be used to replace a package with a different "
-"version.  Currently you must download the RPM packages locally, and then run:"
+"In some scenarios, you may want to test out a new version of `podman` or "
+"`kernel` or other packages that live on the host.  The `rpm-ostree override` "
+"command can be used to replace a package with a different version.  "
+"Currently you must download the RPM packages locally, and then run:"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:131
-msgid "`$ rpm-ostree override replace <path to package>`"
+#: pages/getting-started.adoc:132
+#, no-wrap
+msgid " $ rpm-ostree override replace <path to package>\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:133
+#: pages/getting-started.adoc:134
 msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
@@ -356,7 +358,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:136
+#: pages/getting-started.adoc:137
 msgid ""
 "Removing and replacing packages using package layering is not generally "
 "recommended. For more information, see the https://rpm-ostree.readthedocs.io/"
