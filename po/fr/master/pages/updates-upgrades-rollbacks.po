@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-31 00:31+0200\n"
+"POT-Creation-Date: 2019-10-10 23:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,28 +102,36 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:43
-#, no-wrap
+#: pages/updates-upgrades-rollbacks.adoc:42
 msgid ""
-" $ sudo ostree remote gpg-import fedora-workstation -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-30-primary\n"
-" $ rpm-ostree rebase fedora-workstation:fedora/30/x86_64/silverblue\n"
+"Currently, the default remote for Silverblue 30 is named `fedora`. If this "
+"is not the case for your system, you can find out the remote name by "
+"issuing: `ostree remote list`."
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:46
+#: pages/updates-upgrades-rollbacks.adoc:45
+#, no-wrap
+msgid ""
+" $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-30-primary\n"
+" $ rpm-ostree rebase fedora:fedora/30/x86_64/silverblue\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/updates-upgrades-rollbacks.adoc:48
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
 msgstr ""
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:48
+#: pages/updates-upgrades-rollbacks.adoc:50
 #, no-wrap
 msgid "Rolling back"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:54
+#: pages/updates-upgrades-rollbacks.adoc:56
 msgid ""
 "Silverblue keeps a record of the previous OS version, which can be switched "
 "to instead of the latest version. While this shouldn't usually be necessary, "
@@ -132,12 +140,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:56
+#: pages/updates-upgrades-rollbacks.adoc:58
 msgid "There are two ways to roll back to the previous version:"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:60
+#: pages/updates-upgrades-rollbacks.adoc:62
 msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
@@ -145,14 +153,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:62
+#: pages/updates-upgrades-rollbacks.adoc:64
 msgid ""
 "Permanant rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:65
+#: pages/updates-upgrades-rollbacks.adoc:67
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update. Updating will undo the rollback, so should be avoided if "

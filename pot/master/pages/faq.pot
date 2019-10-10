@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-31 00:31+0200\n"
+"POT-Creation-Date: 2019-10-10 23:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,14 +59,14 @@ msgstr ""
 #. type: Labeled list
 #: ./pages/faq.adoc:16
 #, no-wrap
-msgid "Is Silverbue another GNOME OS?"
+msgid "Is Silverblue another GNOME OS?"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/faq.adoc:22
 msgid ""
 "GNOME OS was a codename that was used by the upstream GNOME project for a "
-"while to refer to the idea of designing the entire deskotp user experience.  "
+"while to refer to the idea of designing the entire desktop user experience.  "
 "By contrast, Silverblue is an effort inside the Fedora project, and will be "
 "built with existing Fedora technologies. However, the two efforts do share a "
 "desire to deliver a user experience that is polished and coherent."
@@ -309,4 +309,72 @@ msgstr ""
 #. type: Plain text
 #: ./pages/faq.adoc:105
 msgid "Reboot the system to apply the changes."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/faq.adoc:106
+#, no-wrap
+msgid ""
+"How can I upgrade my system to the next major version (for instance: rawhide "
+"or an upcoming Fedora release branch), while keeping my current deployment?"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:109
+msgid ""
+"OSTree allows you to pin deployments (pinning ensures that your deployment "
+"of choice is kept and not discarded)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:111
+msgid ""
+"Assuming that you want to keep your default deployment, issue the following "
+"command:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:113
+#, no-wrap
+msgid "$ sudo ostree admin pin 0\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:115
+msgid "`0` here refers to the first deployment listed by `rpm-ostree status`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:117
+msgid "Verify that you have pinned your deployment of choice by issuing:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:119
+#, no-wrap
+msgid "rpm-ostree status\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:121
+msgid ""
+"After the deployment is pinned, you can upgrade your system by using the "
+"instructions found "
+"https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#upgrading[here.]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:123
+msgid ""
+"When you have completed rebasing, reboot the system. The GRUB menu will now "
+"present you with both: the previous deployment major version entry (e.g.: "
+"*\"Fedora 30.YYYYMMDD.n\"*) and the new deployment major version entry "
+"(e.g.: *\"Fedora 31.YYYYMMDD.n\"*)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/faq.adoc:124
+msgid ""
+"At the moment it is not possible to name (pinned) deployments and their "
+"associated GRUB menu entries."
 msgstr ""

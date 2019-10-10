@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-31 00:04+0200\n"
+"POT-Creation-Date: 2019-10-10 22:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgstr ""
 #. type: Plain text
 #: pages/technical-information.adoc:43
 msgid ""
-"`/var` is where all of Silverblue's runtime state is store. Symlinks are "
+"`/var` is where all of Silverblue's runtime state is stored. Symlinks are "
 "used to make traditional state-carrying directors available in their "
 "expected locations. This includes:"
 msgstr ""
