@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-06 23:12+0100\n"
+"POT-Creation-Date: 2019-11-06 23:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,28 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Hash Value - Key: name
-#, no-wrap
-msgid "fedora-silverblue"
-msgstr ""
-
 #. type: Array Element
 #: >nav
 #, no-wrap
 msgid "modules/ROOT/nav.adoc"
 msgstr ""
 
-#. type: Hash Value - Key: start_page
-#, no-wrap
-msgid "ROOT:index"
-msgstr ""
-
 #. type: Hash Value - Key: title
 #, no-wrap
 msgid "Fedora Silverblue"
-msgstr ""
-
-#. type: Hash Value - Key: version
-#, no-wrap
-msgid "master"
 msgstr ""
