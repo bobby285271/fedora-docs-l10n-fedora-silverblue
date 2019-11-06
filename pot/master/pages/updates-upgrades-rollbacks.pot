@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-10-31 08:05+0100\n"
+"POT-Creation-Date: 2019-11-06 23:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:37
 msgid ""
-"Upgrading between major versions (such as from Fedora 29 to Fedora 30) is "
+"Upgrading between major versions (such as from Fedora 30 to Fedora 31) is "
 "not fully integrated into Silverblue at this time. However, Silverblue can "
 "be upgraded between major versions using the `ostree` command."
 msgstr ""
@@ -97,14 +97,14 @@ msgstr ""
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:40
 msgid ""
-"For example, to upgrade from Fedora Silverblue 29 to Silverblue 30, the "
+"For example, to upgrade from Fedora Silverblue 30 to Silverblue 31, the "
 "commands are:"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:42
 msgid ""
-"Currently, the default remote for Silverblue 30 is named `fedora`. If this "
+"Currently, the default remote for Silverblue 31 is named `fedora`. If this "
 "is not the case for your system, you can find out the remote name by "
 "issuing: `ostree remote list`."
 msgstr ""
@@ -114,8 +114,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 " $ sudo ostree remote gpg-import fedora -k "
-"/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-30-primary\n"
-" $ rpm-ostree rebase fedora:fedora/30/x86_64/silverblue\n"
+"/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
+" $ rpm-ostree rebase fedora:fedora/31/x86_64/silverblue\n"
 msgstr ""
 
 #. type: Plain text
