@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-14 22:44+0100\n"
+"POT-Creation-Date: 2019-11-23 14:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -365,7 +365,7 @@ msgstr ""
 #: ./pages/toolbox.adoc:148
 msgid ""
 "To report issues, make suggestions, or contribute fixes, see "
-"https://github.com/debarshiray/toolbox[toolbox's GitHub project]."
+"https://github.com/containers/toolbox[toolbox's GitHub project]."
 msgstr ""
 
 #. type: Plain text
