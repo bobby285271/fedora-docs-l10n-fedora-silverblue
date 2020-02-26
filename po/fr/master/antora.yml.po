@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-02 22:33+0200\n"
+"POT-Creation-Date: 2020-02-26 23:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,44 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Plain text
-#: antora.yml:4
-msgid ""
-"# Name will be mostly visible in the URL. Treat it as an indentifier.  # "
-"Tip: If you want to use the local preview scripts that come with this "
-"repository, please change this value in the site.yml file as well. (under "
-"site/start_page)  name: fedora-silverblue # <---- PLEASE MODIFY"
-msgstr ""
-
-#. type: Plain text
-#: antora.yml:7
-msgid ""
-"# Title will be visible on the page.  title: Fedora Silverblue # <---- "
-"PLEASE MODIFY"
-msgstr ""
-
-#. type: Plain text
-#: antora.yml:10
-msgid ""
-"# If you don't plan to have multiple versions of the docs (for example, to "
-"document multiple versions of some software), you can ignore this field. "
-"Otherwise, change \"master\" to a specific version.  version: master"
-msgstr ""
-
-#. type: Plain text
-#: antora.yml:13
-msgid ""
-"# We encourage you to name the index page as \"index.adoc\". If you "
-"absolutely have to use a different name, please reflect it here. You can "
-"ignore this field otherwise.  start_page: ROOT:index"
-msgstr ""
-
-#. type: Plain text
-#: antora.yml:16
-msgid "# This lists all the menu definitions of your component.  nav:"
-msgstr ""
-
-#. type: Plain text
-#: antora.yml:16
+#. type: Array Element
+#: >nav
+#, no-wrap
 msgid "modules/ROOT/nav.adoc"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#, no-wrap
+msgid "Fedora Silverblue"
 msgstr ""
