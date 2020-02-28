@@ -2,44 +2,51 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-28 09:38+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-silverblue/masterpagesreading-and-resources/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #. type: Title =
 #: ./pages/reading-and-resources.adoc:1
 #, no-wrap
 msgid "Reading & Resources"
-msgstr ""
+msgstr "Відомості і ресурси"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:4
 msgid "This page is a list of further reading and resources for Silverblue."
-msgstr ""
+msgstr "На цій сторінці наведено список текстових ресурсів щодо Silverblue."
 
 #. type: Title ==
 #: ./pages/reading-and-resources.adoc:5
 #, no-wrap
 msgid "Technology websites and documentation"
-msgstr ""
+msgstr "Сайти і документація щодо технології"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:8
 msgid "https://buildah.io/[Buildah] - build OCI container images"
-msgstr ""
+msgstr "https://buildah.io/[Buildah] — збирання образів контейнерів OCI"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:9
 msgid "http://flatpak.org[Flatpak] - next-generation desktop app framework"
 msgstr ""
+"http://flatpak.org[Flatpak] — комплекс роботи із програмами для робочих "
+"станцій наступного покоління"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:11
@@ -47,11 +54,15 @@ msgid ""
 "https://ostree.readthedocs.io/en/latest/[ostree] - OS image composition and "
 "updates"
 msgstr ""
+"https://ostree.readthedocs.io/en/latest/[ostree] — компонування та оновлення "
+"образів операційних систем"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:12
 msgid "https://podman.io/[podman] - daemonless container engine"
 msgstr ""
+"https://podman.io/[podman] — рушій для роботи із контейнерами без фонових "
+"служб"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:14
@@ -59,12 +70,14 @@ msgid ""
 "https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] - hybrid "
 "image/package system"
 msgstr ""
+"https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] — гібридна система "
+"образів і пакунків"
 
 #. type: Title ==
 #: ./pages/reading-and-resources.adoc:15
 #, no-wrap
 msgid "Documents"
-msgstr ""
+msgstr "Документи"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:20
@@ -73,6 +86,9 @@ msgid ""
 "Origins] - PDF that explains the motivations, goals, and history behind "
 "Silverblue"
 msgstr ""
+"link:{attachmentsdir}/team-silverblue-origins.pdf[Команда Silverblue — "
+"Початок] — PDF із поясненнями щодо причин виникнення, мети та історії "
+"проєкту Silverblue"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:22
@@ -80,6 +96,8 @@ msgid ""
 "link:{attachmentsdir}/flatpak-print-cheatsheet.pdf[Flatpak Cheat Sheet] - "
 "PDF with common flatpak commands"
 msgstr ""
+"link:{attachmentsdir}/flatpak-print-cheatsheet.pdf[Шпаргалка для Flatpak] — "
+"PDF із типовими командами flatpak"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:24
@@ -87,6 +105,8 @@ msgid ""
 "link:{attachmentsdir}/silverblue-cheatsheet.pdf[rpm-ostree Cheat Sheet] - "
 "PDF with common rpm-ostree commands"
 msgstr ""
+"link:{attachmentsdir}/silverblue-cheatsheet.pdf[Шпаргалка для rpm-ostree] — "
+"PDF із типовими командами rpm-ostree"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:26
@@ -95,3 +115,7 @@ msgid ""
 "playful introduction to tools such as podman, cri-o and buildah by Máirín "
 "Duffy and Dan Walsh. Print it out, and learn as you color!"
 msgstr ""
+"link:{attachmentsdir}/container-commandos.pdf[Команди контейнерів] — книжка-"
+"розмальовка команд контейнерів є грайливим вступом до вивчення інструментів "
+"podman, cri-o та buildah, яку було створено Мареїн Даффі та Деном Волшем. "
+"Надрукуйте книжку і навчайтеся, розфарбовуючи її!"

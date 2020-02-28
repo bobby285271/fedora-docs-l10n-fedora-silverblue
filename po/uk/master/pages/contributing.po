@@ -2,34 +2,39 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-28 09:38+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-silverblue/masterpagescontributing/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #. type: Title =
 #: ./pages/contributing.adoc:2
 #, no-wrap
 msgid "Contributing to Fedora Silverblue"
-msgstr ""
+msgstr "Участь у розробці Fedora Silverblue"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:5
 msgid "Help us improve Fedora Silverblue by contributing to the project!"
-msgstr ""
+msgstr "Допоможіть нам поліпшити Fedora Silverblue своєю участю у проєкті!"
 
 #. type: Title ==
 #: ./pages/contributing.adoc:7
 #, no-wrap
 msgid "Developing Silverblue"
-msgstr ""
+msgstr "Розробка Silverblue"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:10
@@ -37,31 +42,33 @@ msgid ""
 "If you are a developer, you can contribute to one of the several projects "
 "which make Fedora Silverblue possible. Submit your pull requests to:"
 msgstr ""
+"Якщо ви є розробником, ви можете взяти участь у одному з проєктів, на основі "
+"яких створюють Fedora Silverblue. Надсилайте свої латки до таких проєктів:"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:12
 msgid "https://github.com/projectatomic/rpm-ostree[rpm-ostree]"
-msgstr ""
+msgstr "https://github.com/projectatomic/rpm-ostree[rpm-ostree]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:13
 msgid "https://github.com/flatpak/flatpak[flatpak]"
-msgstr ""
+msgstr "https://github.com/flatpak/flatpak[flatpak]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:14
 msgid "https://github.com/ostreedev/ostree[ostree]"
-msgstr ""
+msgstr "https://github.com/ostreedev/ostree[ostree]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:15
 msgid "https://github.com/debarshiray/toolbox[toolbox]"
-msgstr ""
+msgstr "https://github.com/debarshiray/toolbox[toolbox]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:16
 msgid "https://github.com/containers/libpod[podman]"
-msgstr ""
+msgstr "https://github.com/containers/libpod[podman]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:18
@@ -69,12 +76,14 @@ msgid ""
 "Your contributions towards the main "
 "https://fedoraproject.org/wiki/Join[Fedora] project are also very welcome."
 msgstr ""
+"Також будемо раді вашим внескам до основного проєкту https://fedoraproject."
+"org/wiki/Join[Fedora]."
 
 #. type: Title ==
 #: ./pages/contributing.adoc:20
 #, no-wrap
 msgid "Creating Flatpaks"
-msgstr ""
+msgstr "Створення пакунків Flatpak"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:23
@@ -83,6 +92,10 @@ msgid ""
 "probably be added? You can do it yourself! Go through our tutorial for "
 "creating flatpaks from rpm packages:"
 msgstr ""
+"Вашої улюбленої програми немає у типовому сховищі пакунків і, ймовірно, її "
+"там ніколи не буде? Ви можете усунути проблему власноруч! Скористайтеся "
+"нашими покроковими настановами щодо створення пакунків flatpak з пакунків "
+"rpm:"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:25
@@ -90,6 +103,8 @@ msgid ""
 "https://docs.fedoraproject.org/en-US/flatpak/tutorial/[RPM to Flatpak "
 "tutorial]"
 msgstr ""
+"https://docs.fedoraproject.org/en-US/flatpak/tutorial/[Підручник з "
+"перетворення RPM на Flatpak]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:27
@@ -100,37 +115,42 @@ msgid ""
 "https://fedoraproject.org/wiki/Join_the_package_collection_maintainers[wiki "
 "page] about becoming a packager."
 msgstr ""
+"Щоб стати офіційним пакувальником, вам слід виконати декілька кроків для "
+"отримання усіх потрібних прав доступу для користування інфраструктурою "
+"Fedora (Pagure, Koji, Bodhi). Ми створили докладну https://fedoraproject.org/"
+"wiki/Join_the_package_collection_maintainers[сторінку вікі] щодо набуття "
+"прав пакувальника."
 
 #. type: Plain text
 #: ./pages/contributing.adoc:29
 msgid "Other useful links:"
-msgstr ""
+msgstr "Інші корисні посилання:"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:31
 msgid "https://pagure.io[Pagure]"
-msgstr ""
+msgstr "https://pagure.io[Pagure]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:32
 msgid "https://src.fedoraproject.org[Package Sources]"
-msgstr ""
+msgstr "https://src.fedoraproject.org[Початкові коди пакунків]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:33
 msgid "https://koji.fedoraproject.org/koji/[Koji]"
-msgstr ""
+msgstr "https://koji.fedoraproject.org/koji/[Koji]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:34
 msgid "https://bodhi.fedoraproject.org/[Bodhi]"
-msgstr ""
+msgstr "https://bodhi.fedoraproject.org/[Bodhi]"
 
 #. type: Title ==
 #: ./pages/contributing.adoc:36
 #, no-wrap
 msgid "Writing Documentation"
-msgstr ""
+msgstr "Написання документації"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:39
@@ -139,6 +159,10 @@ msgid ""
 "https://github.com/fedora-silverblue/silverblue-docs[documentation] GitHub "
 "repository, fork it and create a pull request."
 msgstr ""
+"Створення і внесення змін до документації є простою справою. Прямуйте до "
+"сторінки https://github.com/fedora-silverblue/silverblue-docs[нашого сховища "
+"документації] на GitHub, створіть його відгалуження, внесіть зміни і "
+"надішліть запит щодо об'єднання."
 
 #. type: Plain text
 #: ./pages/contributing.adoc:41
@@ -148,17 +172,21 @@ msgid ""
 "an https://github.com/fedora-silverblue/silverblue-docs/issues[issue] "
 "describing what need to be changed."
 msgstr ""
+"Якщо ви не маєте наміру користуватися git, створіть нову тему у нашій "
+"https://discussion.fedoraproject.org/c/desktop/silverblue[спільноті] або "
+"повідомте про https://github.com/fedora-silverblue/silverblue-docs/"
+"issues[ваду], описавши бажані для вас зміни."
 
 #. type: Title ===
 #: ./pages/contributing.adoc:43
 #, no-wrap
 msgid "Writing Conventions"
-msgstr ""
+msgstr "Настанови щодо написання документації"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:46
 msgid "When creating documentation, please follow these writing conventions:"
-msgstr ""
+msgstr "При створенні документації, будь ласка, дотримуйтеся таких умов:"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:48
@@ -166,12 +194,14 @@ msgid ""
 "Code blocks for commands that require `root` privileges must show the `#` "
 "prompt symbol. Example:"
 msgstr ""
+"У блоках коду для команд, які потребують прав доступу `root`, має бути "
+"символ запиту `#`. Приклад:"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:50
 #, no-wrap
 msgid "# dnf install <package>\n"
-msgstr ""
+msgstr "# dnf install <пакунок>\n"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:52
@@ -179,18 +209,20 @@ msgid ""
 "The `$` user prompt symbol can also be used but you must prefix the command "
 "with `sudo`. Example:"
 msgstr ""
+"Можна використовувати символ запиту на команду користувача `$`, але до "
+"команди слід додавати префікс `sudo`. Приклад:"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:54
 #, no-wrap
 msgid " $ sudo dnf install <package>\n"
-msgstr ""
+msgstr " $ sudo dnf install <пакунок>\n"
 
 #. type: Title ==
 #: ./pages/contributing.adoc:56
 #, no-wrap
 msgid "Reporting Issues"
-msgstr ""
+msgstr "Створення повідомлень про вади"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:58
@@ -198,3 +230,6 @@ msgid ""
 "You can report bugs and suggest features or improvements on the "
 "https://github.com/fedora-silverblue/issue-tracker/issues[issue tracker.]"
 msgstr ""
+"Ви можете повідомляти про вади та надсилати запити щодо поліпшень за "
+"допомогою https://github.com/fedora-silverblue/issue-tracker/issues[системи "
+"стеження за вадами]."

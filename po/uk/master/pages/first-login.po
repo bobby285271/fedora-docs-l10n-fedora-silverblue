@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-28 09:38+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-silverblue/masterpagesfirst-login/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #. type: Title =
 #: ./pages/first-login.adoc:1
 #, no-wrap
 msgid "First Login"
-msgstr ""
+msgstr "Перший вхід до системи"
 
 #. type: delimited block -
 #: ./pages/first-login.adoc:6
@@ -27,6 +32,8 @@ msgid ""
 "[[filesystem-layout]]\n"
 "Filesystem Layout\n"
 msgstr ""
+"[[filesystem-layout]]\n"
+"Компонування файлової системи\n"
 
 #. type: Plain text
 #: ./pages/first-login.adoc:12
@@ -40,37 +47,37 @@ msgstr ""
 #. type: Plain text
 #: ./pages/first-login.adoc:14
 msgid "`/home` → `/var/home`"
-msgstr ""
+msgstr "`/home` → `/var/home`"
 
 #. type: Plain text
 #: ./pages/first-login.adoc:15
 msgid "`/opt` → `/var/opt`"
-msgstr ""
+msgstr "`/opt` → `/var/opt`"
 
 #. type: Plain text
 #: ./pages/first-login.adoc:16
 msgid "`/srv` → `/var/srv`"
-msgstr ""
+msgstr "`/srv` → `/var/srv`"
 
 #. type: Plain text
 #: ./pages/first-login.adoc:17
 msgid "`/root` → `/var/roothome`"
-msgstr ""
+msgstr "`/root` → `/var/roothome`"
 
 #. type: Plain text
 #: ./pages/first-login.adoc:18
 msgid "`/usr/local` → `/var/usrlocal`"
-msgstr ""
+msgstr "`/usr/local` → `/var/usrlocal`"
 
 #. type: Plain text
 #: ./pages/first-login.adoc:19
 msgid "`/mnt`→ `/var/mnt`"
-msgstr ""
+msgstr "`/mnt`→ `/var/mnt`"
 
 #. type: Plain text
 #: ./pages/first-login.adoc:20
 msgid "`/tmp` → `/sysroot/tmp`"
-msgstr ""
+msgstr "`/tmp` → `/sysroot/tmp`"
 
 #. type: Plain text
 #: ./pages/first-login.adoc:23
