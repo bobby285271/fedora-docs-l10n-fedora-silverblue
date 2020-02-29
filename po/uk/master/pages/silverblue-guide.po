@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-02-28 09:38+0000\n"
+"PO-Revision-Date: 2020-02-29 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagessilverblue-guide/uk/>\n"
@@ -204,7 +204,7 @@ msgstr ""
 #: ./pages/silverblue-guide.adoc:74
 #, no-wrap
 msgid "Manual Partitioning"
-msgstr ""
+msgstr "Поділ диска вручну"
 
 #. type: Title ===
 #: ./pages/silverblue-guide.adoc:75

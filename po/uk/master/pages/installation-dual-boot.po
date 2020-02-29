@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-29 20:38+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-dual-boot/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #. type: Title =
 #: ./pages/installation-dual-boot.adoc:1
 #, no-wrap
 msgid "Installing Silverblue, side-by-side"
-msgstr ""
+msgstr "Паралельне встановлення Silverblue"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:7
@@ -47,6 +52,9 @@ msgid ""
 "yum -y install ostree ostree-grub2\n"
 "....\n"
 msgstr ""
+"....\n"
+"yum -y install ostree ostree-grub2\n"
+"....\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:21
@@ -63,7 +71,7 @@ msgstr ""
 #: ./pages/installation-dual-boot.adoc:23
 #, no-wrap
 msgid "Next, we add /ostree/repo to the filesystem:\n"
-msgstr ""
+msgstr "Далі, слід додати /ostree/repo до файлової системи:\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:27
@@ -73,12 +81,15 @@ msgid ""
 "ostree admin init-fs /\n"
 "....\n"
 msgstr ""
+"....\n"
+"ostree admin init-fs /\n"
+"....\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:29
 #, no-wrap
 msgid "Add a remote which points to the Silverblue content:\n"
-msgstr ""
+msgstr "Додайте віддалене сховище, яке вказуватиме на дані Silverblue:\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:33
@@ -91,6 +102,11 @@ msgid ""
 "--set=contenturl=mirrorlist=https://ostree.fedoraproject.org/mirrorlist\n"
 "....\n"
 msgstr ""
+"....\n"
+"ostree remote add --set=gpgkeypath=/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-"
+"primary fedora https://ostree.fedoraproject.org "
+"--set=contenturl=mirrorlist=https://ostree.fedoraproject.org/mirrorlist\n"
+"....\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:37

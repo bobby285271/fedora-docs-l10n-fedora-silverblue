@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: 2020-02-28 09:38+0000\n"
+"PO-Revision-Date: 2020-02-29 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestechnical-information/uk/>\n"
@@ -62,6 +62,11 @@ msgid ""
 "filesystem trees.  It is often described as “Git for operating system "
 "binaries”."
 msgstr ""
+"https://ostree.readthedocs.io/en/latest/[ostree] — базова технологія, яка "
+"використовується для компонування, розгортання та оновлення Silverblue. "
+"ostree працює подібно до системи керування версіями, але використовує для "
+"роботи усі ієрархії файлових систем.  Часто ostree описують як «Git для "
+"бінарних файлів операційної системи»."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:23
@@ -70,6 +75,10 @@ msgid ""
 "the OS image (including everything below `/` that is not symlinked into "
 "`/var`). It also updates `grub.cfg` entries to point to the current image."
 msgstr ""
+"У встановлених системах Silverblue ostree відповідає за розгортання і "
+"оновлення образу операційної системи (зокрема усього у `/`, які не пов'язано "
+"символічними посиланнями із `/var`). ostree також оновлює записи `grub.cfg` "
+"так, щоб вони вказували на поточний образ."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:27
@@ -78,6 +87,9 @@ msgid ""
 "ostree, and makes it possible to install RPMs as a “layer” on top of an "
 "ostree image. This makes it possible to install RPMs on Silverblue."
 msgstr ""
+"https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] збирається на "
+"основі ostree і робить можливим встановлення RPM як «шару» над образом "
+"ostree. Це уможливлює встановлення RPM у Silverblue."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:33
@@ -88,6 +100,12 @@ msgid ""
 "rebooted with the new image. rpm-ostree also takes care of recreating the "
 "layered image whenever you update the base OS image."
 msgstr ""
+"Коли встановлюється пакунок за допомогою `rpm-ostree`, створюється новий "
+"образ операційної системи шляхом додавання вмісту RPM до наявного образу "
+"операційної системи і створення нового комбінованого образу. Щоб переглянути "
+"нововстановлені RPM, систему слід перезавантажити з використанням нового "
+"образу. rpm-ostree також відповідає за повторне створення шаруватого образу "
+"кожного разу, коли ви оновлюєте базовий образ операційної системи."
 
 #. type: Title ==
 #: ./pages/technical-information.adoc:35
@@ -101,6 +119,8 @@ msgid ""
 "On Silverblue, the root filesystem is immutable. This means that `/`, `/usr` "
 "and everything below it is read-only."
 msgstr ""
+"У Silverblue коренева файлова система є незмінною. Це означає, що `/`, `/usr`"
+" і усі підлеглі щодо них каталоги є придатними лише для читання."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:43
@@ -109,6 +129,10 @@ msgid ""
 "used to make traditional state-carrying directors available in their "
 "expected locations. This includes:"
 msgstr ""
+"Усі динамічні частини Silverblue зберігаються у `/var`. Для створення "
+"традиційних каталогів у очікуваних місцях для збереження стану системи "
+"використовуються символічні посилання. Це, зокрема, стосується таких "
+"каталогів:"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:45
