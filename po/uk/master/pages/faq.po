@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: 2020-02-28 09:38+0000\n"
+"PO-Revision-Date: 2020-03-02 16:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesfaq/uk/>\n"
@@ -29,13 +29,13 @@ msgstr "Поширені питання та відповіді на них"
 #: ./pages/faq.adoc:3
 #, no-wrap
 msgid "About the project"
-msgstr ""
+msgstr "Про проєкт"
 
 #. type: Labeled list
 #: ./pages/faq.adoc:6
 #, no-wrap
 msgid "Is it Team Silverblue, Silverblue, or Fedora Silverblue?"
-msgstr ""
+msgstr "Це Команда Silverblue, Silverblue чи Fedora Silverblue?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:10
@@ -63,7 +63,7 @@ msgstr ""
 #: ./pages/faq.adoc:16
 #, no-wrap
 msgid "Is Silverblue another GNOME OS?"
-msgstr ""
+msgstr "Silverblue — ще одна версія GNOME OS?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:22
@@ -79,7 +79,7 @@ msgstr ""
 #: ./pages/faq.adoc:23
 #, no-wrap
 msgid "What is Silverblue's relationship with Project Atomic?"
-msgstr ""
+msgstr "Як Silverblue пов'язано із проєктом Atomic?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:27
@@ -93,13 +93,13 @@ msgstr ""
 #: ./pages/faq.adoc:28
 #, no-wrap
 msgid "About using Silverblue"
-msgstr ""
+msgstr "Про використання Silverblue"
 
 #. type: Labeled list
 #: ./pages/faq.adoc:31
 #, no-wrap
 msgid "How can I install Eclipse on Silverblue?"
-msgstr ""
+msgstr "Як встановити Eclipse у Silverblue?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:34
