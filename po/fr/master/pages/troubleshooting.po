@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-02-26 23:32+0100\n"
+"POT-Creation-Date: 2020-03-07 07:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:7
 msgid ""
 "Silverblue is a radically new way of deploying and managing your desktop "
-"operating system, so you may ocassionally run into problems while going "
+"operating system, so you may occasionally run into problems while going "
 "through your day to day.  Below are some of the more common problems "
 "reported and any workarounds for those problems."
 msgstr ""
@@ -343,7 +343,7 @@ msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
 "additional EFI partition. Assign the newly created EFI partition to `/boot/"
 "efi`. You will then be able to boot the previous OS(s) alongside Fedora "
-"Silverblue. If this workaround is not successfull follow the below step."
+"Silverblue. If this workaround is not successful follow the below step."
 msgstr ""
 
 #. type: Plain text
@@ -440,8 +440,8 @@ msgstr ""
 #. type: Plain text
 #: pages/troubleshooting.adoc:169
 msgid ""
-"Override the currenty installed `podman` package (using the package you have "
-"downloaded on the first step) by: `rpm-ostree override replace "
+"Override the currently installed `podman` package (using the package you "
+"have downloaded on the first step) by: `rpm-ostree override replace "
 "podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
 msgstr ""
 
