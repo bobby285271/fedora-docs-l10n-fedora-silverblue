@@ -6,29 +6,28 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-02-22 13:28+0100\n"
+"POT-Creation-Date: 2020-03-07 07:04+0100\n"
 "PO-Revision-Date: 2020-02-29 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
-"\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
+">\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.2\n"
 
 #. type: Title =
-#: ./pages/updates-upgrades-rollbacks.adoc:2
+#: pages/updates-upgrades-rollbacks.adoc:2
 #, no-wrap
 msgid "Updates, Upgrades & Rollbacks"
-msgstr ""
-"Оновлення пакунків, оновлення системи та повернення до попередніх версій"
+msgstr "Оновлення пакунків, оновлення системи та повернення до попередніх версій"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:7
+#: pages/updates-upgrades-rollbacks.adoc:7
 msgid ""
 "Installing updates with Silverblue is easy and fast (much faster than other "
 "operating systems). It also has a special rollback feature, in case anything "
@@ -39,13 +38,13 @@ msgstr ""
 "до попередньої версії системи, якщо щось піде не так."
 
 #. type: Title ==
-#: ./pages/updates-upgrades-rollbacks.adoc:9
+#: pages/updates-upgrades-rollbacks.adoc:9
 #, no-wrap
 msgid "Updating Silverblue"
 msgstr "Оновлення Silverblue"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:15
+#: pages/updates-upgrades-rollbacks.adoc:15
 msgid ""
 "OS updates in Silverblue are fully integrated into the desktop; you will be "
 "automatically notified when an update is available. The standard behavior is "
@@ -58,7 +57,7 @@ msgstr ""
 "цю поведінку можна у налаштуваннях оновлень у програмі «Програми»)."
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:19
+#: pages/updates-upgrades-rollbacks.adoc:19
 msgid ""
 "Once an update is ready, it is just a matter of rebooting to start using the "
 "new version. There is no waiting for the update to be installed during this "
@@ -69,7 +68,7 @@ msgstr ""
 "оновлення під час перезавантаження немає."
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:22
+#: pages/updates-upgrades-rollbacks.adoc:22
 msgid ""
 "If you'd prefer, it is also possible to update using the command line. To do "
 "this, run:"
@@ -78,13 +77,13 @@ msgstr ""
 "Для цього віддайте таку команду:"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:24
+#: pages/updates-upgrades-rollbacks.adoc:24
 #, no-wrap
 msgid " $ rpm-ostree upgrade\n"
 msgstr " $ rpm-ostree upgrade\n"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:28
+#: pages/updates-upgrades-rollbacks.adoc:28
 msgid ""
 "This will check for new updates and download and install them if they are "
 "available. Alternatively, to check for available updates without downloading "
@@ -95,19 +94,19 @@ msgstr ""
 "доступних оновлень без їхнього отримання:"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:30
+#: pages/updates-upgrades-rollbacks.adoc:30
 #, no-wrap
 msgid " $ rpm-ostree upgrade --check\n"
 msgstr " $ rpm-ostree upgrade --check\n"
 
 #. type: Title ==
-#: ./pages/updates-upgrades-rollbacks.adoc:32
+#: pages/updates-upgrades-rollbacks.adoc:32
 #, no-wrap
 msgid "Upgrading between major versions"
 msgstr "Оновлення до новіших версій системи"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:37
+#: pages/updates-upgrades-rollbacks.adoc:37
 msgid ""
 "Upgrading between major versions (such as from Fedora 30 to Fedora 31) is "
 "not fully integrated into Silverblue at this time. However, Silverblue can "
@@ -118,7 +117,7 @@ msgstr ""
 "до нової основної версії можна за допомогою команди `ostree`."
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:40
+#: pages/updates-upgrades-rollbacks.adoc:40
 msgid ""
 "For example, to upgrade from Fedora Silverblue 30 to Silverblue 31, the "
 "commands are:"
@@ -127,7 +126,7 @@ msgstr ""
 "віддати такі команди:"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:42
+#: pages/updates-upgrades-rollbacks.adoc:42
 msgid ""
 "Currently, the default remote for Silverblue 31 is named `fedora`. If this "
 "is not the case for your system, you can find out the remote name by "
@@ -138,19 +137,17 @@ msgstr ""
 "допомогою такої команди: `ostree remote list`."
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:45
+#: pages/updates-upgrades-rollbacks.adoc:45
 #, no-wrap
 msgid ""
-" $ sudo ostree remote gpg-import fedora -k "
-"/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
+" $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
 " $ rpm-ostree rebase fedora:fedora/31/x86_64/silverblue\n"
 msgstr ""
-" $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-"
-"fedora-31-primary\n"
+" $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
 " $ rpm-ostree rebase fedora:fedora/31/x86_64/silverblue\n"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:48
+#: pages/updates-upgrades-rollbacks.adoc:48
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
@@ -160,13 +157,13 @@ msgstr ""
 "просто завантажити нову систему."
 
 #. type: Title ==
-#: ./pages/updates-upgrades-rollbacks.adoc:50
+#: pages/updates-upgrades-rollbacks.adoc:50
 #, no-wrap
 msgid "Rolling back"
 msgstr "Відновлення попередньої версії"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:56
+#: pages/updates-upgrades-rollbacks.adoc:56
 msgid ""
 "Silverblue keeps a record of the previous OS version, which can be switched "
 "to instead of the latest version. While this shouldn't usually be necessary, "
@@ -181,12 +178,12 @@ msgstr ""
 "потреба, яку пов'язано із розробкою програмного забезпечення."
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:58
+#: pages/updates-upgrades-rollbacks.adoc:58
 msgid "There are two ways to roll back to the previous version:"
 msgstr "Існує два способи повернення до попередньої версії:"
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:62
+#: pages/updates-upgrades-rollbacks.adoc:62
 msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
@@ -197,9 +194,13 @@ msgstr ""
 "попередньої версії у меню завантаження (яке часто називають меню grub)."
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:64
+#: pages/updates-upgrades-rollbacks.adoc:64
+#, fuzzy
+#| msgid ""
+#| "Permanant rollbacks: to permanently switch back to the previous "
+#| "deployment, use the `rpm-ostree rollback` command."
 msgid ""
-"Permanant rollbacks: to permanently switch back to the previous deployment, "
+"Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
 msgstr ""
 "Стале повернення до попередньої версії: щоб на тривалий час повернутися до "
@@ -207,7 +208,7 @@ msgstr ""
 "rollback`."
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:67
+#: pages/updates-upgrades-rollbacks.adoc:67
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update. Updating will undo the rollback, so should be avoided if "
