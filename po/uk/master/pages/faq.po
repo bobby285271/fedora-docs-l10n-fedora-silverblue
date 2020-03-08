@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: 2020-03-02 16:38+0000\n"
+"PO-Revision-Date: 2020-03-08 10:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesfaq/uk/>\n"
@@ -49,7 +49,7 @@ msgstr ""
 #: ./pages/faq.adoc:11
 #, no-wrap
 msgid "Why does the Silverblue logo look like a leaf?"
-msgstr ""
+msgstr "Чому логотип Silverblue виглядає як листок?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:15
@@ -107,12 +107,14 @@ msgid ""
 "Instructions to setup the Nightly flatpak remote for Eclipse are available "
 "http://eclipse.matbooth.co.uk/flatpak[here]."
 msgstr ""
+"Настанови для налаштовування віддаленого сховища щоденних flatpak для "
+"Eclipse можна знайти http://eclipse.matbooth.co.uk/flatpak[тут]."
 
 #. type: Labeled list
 #: ./pages/faq.adoc:35
 #, no-wrap
 msgid "How do I create a VPN connection?"
-msgstr ""
+msgstr "Як створити з'єднання VPN?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:40
@@ -127,7 +129,7 @@ msgstr ""
 #: ./pages/faq.adoc:41
 #, no-wrap
 msgid "How can I play more videos in Firefox, like YouTube?"
-msgstr ""
+msgstr "Як можна відтворювати ширший спектр відео у Firefox, зокрема YouTube?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:49
@@ -146,6 +148,8 @@ msgstr ""
 #, no-wrap
 msgid "How can I use Adobe Flash on the Firefox version pre installed on my system?"
 msgstr ""
+"Як скористатися Adobe Flash у версії Firefox, яку попередньо встановлено у "
+"моїй системі?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:53
@@ -154,6 +158,8 @@ msgid ""
 "https://docs.fedoraproject.org/en-US/quick-docs/using-adobe-flash/[Fedora "
 "quickdoc] with the following changes:"
 msgstr ""
+"Ви можете стежити за цим https://docs.fedoraproject.org/en-US/quick-docs/"
+"using-adobe-flash/[Fedora quickdoc] з такими змінами:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:55
@@ -161,11 +167,12 @@ msgid ""
 "where needed, substitute the `dnf install` command with the `rpm-ostree "
 "install` command"
 msgstr ""
+"де потрібно, замініть команду `dnf install` на команду `rpm-ostree install`"
 
 #. type: Plain text
 #: ./pages/faq.adoc:57
 msgid "reboot the system after the installation of the Adobe DNF repository"
-msgstr ""
+msgstr "перезавантажте систему після встановлення сховища DNF Adobe"
 
 #. type: Plain text
 #: ./pages/faq.adoc:59
@@ -173,17 +180,19 @@ msgid ""
 "install only `flash-plugin` as `libcurl` and `alsa-plugins-pulseaudio` are "
 "installed by default on Fedora Silverblue"
 msgstr ""
+"встановіть лише `flash-plugin`, оскільки `libcurl` і `alsa-plugins-"
+"pulseaudio` типово встановлено у Fedora Silverblue"
 
 #. type: Plain text
 #: ./pages/faq.adoc:61
 msgid "reboot the system after having installed `flash-plugin`"
-msgstr ""
+msgstr "перезавантажте систему після встановлення `flash-plugin`"
 
 #. type: Labeled list
 #: ./pages/faq.adoc:62
 #, no-wrap
 msgid "How can I see what packages were updated between two commits?"
-msgstr ""
+msgstr "Як переглянути список пакунків, які було оновлено, між двома внесками?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:65
@@ -196,7 +205,7 @@ msgstr ""
 #: ./pages/faq.adoc:67
 #, no-wrap
 msgid "$ rpm-ostree db diff\n"
-msgstr ""
+msgstr "$ rpm-ostree db diff\n"
 
 #. type: Plain text
 #: ./pages/faq.adoc:69
@@ -312,7 +321,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/faq.adoc:105
 msgid "Reboot the system to apply the changes."
-msgstr ""
+msgstr "Перезавантажте систему для застосування змін."
 
 #. type: Labeled list
 #: ./pages/faq.adoc:106
@@ -340,12 +349,13 @@ msgstr ""
 #: ./pages/faq.adoc:113
 #, no-wrap
 msgid "$ sudo ostree admin pin 0\n"
-msgstr ""
+msgstr "$ sudo ostree admin pin 0\n"
 
 #. type: Plain text
 #: ./pages/faq.adoc:115
 msgid "`0` here refers to the first deployment listed by `rpm-ostree status`"
 msgstr ""
+"`0` тут посилається на першу розгорнуту систему зі списку `rpm-ostree status`"
 
 #. type: Plain text
 #: ./pages/faq.adoc:117
@@ -356,7 +366,7 @@ msgstr ""
 #: ./pages/faq.adoc:119
 #, no-wrap
 msgid "rpm-ostree status\n"
-msgstr ""
+msgstr "rpm-ostree status\n"
 
 #. type: Plain text
 #: ./pages/faq.adoc:121

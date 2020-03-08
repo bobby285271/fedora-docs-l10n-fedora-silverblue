@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-07 07:04+0100\n"
-"PO-Revision-Date: 2020-02-28 09:38+0000\n"
+"PO-Revision-Date: 2020-03-08 10:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagescontributing/uk/>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.2\n"
 
 #. type: Title =
@@ -108,13 +108,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/contributing.adoc:27
-#, fuzzy
-#| msgid ""
-#| "To become an official packager you need to go through several steps to "
-#| "gain all required permissions to use the Fedora infrastrucutre (Pagure, "
-#| "Koji, Bodhi). There is a detailed https://fedoraproject.org/wiki/"
-#| "Join_the_package_collection_maintainers[wiki page] about becoming a "
-#| "packager."
 msgid ""
 "To become an official packager you need to go through several steps to gain "
 "all required permissions to use the Fedora infrastructure (Pagure, Koji, "
@@ -160,11 +153,6 @@ msgstr "Написання документації"
 
 #. type: Plain text
 #: pages/contributing.adoc:39
-#, fuzzy
-#| msgid ""
-#| "Creating or modifing documentation is easy. Head over to our https://"
-#| "github.com/fedora-silverblue/silverblue-docs[documentation] GitHub "
-#| "repository, fork it and create a pull request."
 msgid ""
 "Creating or modifying documentation is easy. Head over to our https://github."
 "com/fedora-silverblue/silverblue-docs[documentation] GitHub repository, fork "
