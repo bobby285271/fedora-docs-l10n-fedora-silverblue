@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-02-29 20:38+0000\n"
+"PO-Revision-Date: 2020-03-10 19:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-guide/uk/>\n"
@@ -34,6 +34,10 @@ msgid ""
 "page\n"
 "for details on how to create a USB stick to install Silverblue.\n"
 msgstr ""
+"Рекомендованим способом встановлення Silverblue є використання програми "
+"Fedora MediaWriter. Див. сторінку https://silverblue.fedoraproject.org/"
+"download[отримання пакукнів], щоб дізнатися більше про те, як створити "
+"флешку USB для встановлення Silverblue.\n"
 
 #. type: delimited block -
 #: ./pages/installation-guide.adoc:11
@@ -51,6 +55,8 @@ msgid ""
 "[[before-you-begin]]\n"
 "Before You Begin\n"
 msgstr ""
+"[[before-you-begin]]\n"
+"Перш ніж ви почнете\n"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:18
@@ -58,11 +64,13 @@ msgid ""
 "Before you start the installation process, you should answer the following "
 "questions:"
 msgstr ""
+"Перш ніж ви розпочнете процедуру встановлення, вам слід відповісти на такі "
+"питання:"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:20
 msgid "Do you want to retain any existing data on your system?"
-msgstr ""
+msgstr "Чи хочете ви зберегти наявні дані у вашій системі?"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:23
@@ -70,6 +78,8 @@ msgid ""
 "If yes, you should consider using the link:#manual-partition[manual "
 "partitioning] method during the install process."
 msgstr ""
+"Якщо так, вам слід спробувати скористатися у процедурі встановлення способом "
+"link:#manual-partition[поділу диска на розділи вручну]."
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:26
@@ -78,6 +88,9 @@ msgid ""
 "could use the xref:installing-silverblue-side-by-side[side-by-side] install "
 "method."
 msgstr ""
+"Крім того, якщо у вашій системі є наявний екземпляр встановленої Fedora, ви "
+"можете скористатися xref:installing-silverblue-side-by-side[паралельним "
+"встановленням]."
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:29
@@ -85,6 +98,8 @@ msgid ""
 "Do you want to do a fresh install and do not care about retaining any "
 "existing data on your system?"
 msgstr ""
+"Хочете встановити систему «з нуля» і не переймаєтеся збереженням наявних "
+"даних у вашій системі?"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:34
@@ -93,6 +108,9 @@ msgid ""
 "partitioning] method during the install process. This is the easiest way to "
 "get Silverblue installed on your system."
 msgstr ""
+"Якщо так, вам варто скористатися способом link:#automatic-partition["
+"автоматичного поділу диска на розділи] під час процедури встановлення. Це "
+"найпростіший спосіб встановити Silverblue у вашій системі."
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:37
@@ -100,12 +118,15 @@ msgid ""
 "You may still use the link:#manual-partition[manual partitioning] method "
 "during the install process, but it will require some additional steps."
 msgstr ""
+"Ви можете скористатися і способом link:#manual-partition[поділу диска на "
+"розділи вручну] під час процедури встановлення, але тоді доведеться виконати "
+"додаткові кроки."
 
 #. type: Title -
 #: ./pages/installation-guide.adoc:40
 #, no-wrap
 msgid "Starting the Install"
-msgstr ""
+msgstr "Починаємо встановлення"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:47
@@ -128,13 +149,13 @@ msgstr ""
 #: ./pages/installation-guide.adoc:51
 #, no-wrap
 msgid "Fedora 28 Installer Menu"
-msgstr ""
+msgstr "Меню засобу встановлення Fedora 28"
 
 #. type: Target for macro image
 #: ./pages/installation-guide.adoc:51
 #, no-wrap
 msgid "faw-boot-menu.png"
-msgstr ""
+msgstr "faw-boot-menu.png"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:58
