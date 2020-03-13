@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: 2020-03-08 10:38+0000\n"
+"PO-Revision-Date: 2020-03-13 11:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/uk/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: ./pages/toolbox.adoc:2
 #, no-wrap
 msgid "Toolbox"
-msgstr "Набір інструментів"
+msgstr "Toolbox"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:7
@@ -58,6 +58,12 @@ msgid ""
 "installed and used. However, toolbox can also be used on package-based "
 "systems."
 msgstr ""
+"Toolbox спрощує використання контейнеризованих середовищ для регулярної "
+"розробки програмного забезпечення та діагностування. У незмінних операційних "
+"системах, зокрема https://silverblue.fedoraproject.org/[Fedora Silverblue], "
+"він надає доступ до знайомого середовища, яке засновано на пакунках, у якому "
+"можна встановлювати інструменти і бібліотеки. Втім, toolbox також можна "
+"використовувати і у заснованих на пакунках системах."
 
 #. type: Title ==
 #: ./pages/toolbox.adoc:19
@@ -116,6 +122,10 @@ msgid ""
 "integrates toolbox containers into your regular working environment, to make "
 "it easy for you to use them as an everyday development space."
 msgstr ""
+"Toolbox працює на основі контейнерів, надаючи доступ до вузького набору "
+"команд для створення, входу, побудови списку та вилучення контейнерів. Він "
+"також інтегрує контейнери toolbox до вашого звичайного робочого середовища з "
+"метою спрощення користування ними як регулярним простором для розробки."
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:41
@@ -160,6 +170,11 @@ msgid ""
 "command itself; this makes it possible to use toolbox from inside toolbox "
 "containers."
 msgstr ""
+"У більшості випадків, при запуску команди зсередини контейнера буде "
+"використано програму з контейнера. Втім, існує декілька спеціалізованих "
+"випадків, коли замість неї буде використано програму з основної системи. "
+"Одним з прикладів є сама команда `toolbox`; таким чином можна уможливити "
+"використання toolbox з контейнерів toolbox."
 
 #. type: Title ==
 #: ./pages/toolbox.adoc:55
@@ -254,6 +269,9 @@ msgid ""
 "Once inside the toolbox, you can access common command line tools, and "
 "install new ones using DNF."
 msgstr ""
+"Потрапивши до нутрощів toolbox, ви отримуєте доступ до типових інструментів "
+"командного рядка і доступ до встановлення нових інструментів за допомогою "
+"DNF."
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:90
@@ -261,18 +279,21 @@ msgid ""
 "When the prompt is inside a toolbox, it is prepended with a diamond: this "
 "indicates that the prompt is inside a toolbox container."
 msgstr ""
+"Якщо запит щодо команди надходить зсередини toolbox, перед ним буде показано "
+"ромб: так система вказує на те, що запит є запитом із середини контейнера "
+"toolbox."
 
 #. type: Title ==
 #: ./pages/toolbox.adoc:92
 #, no-wrap
 msgid "Commands and usage"
-msgstr ""
+msgstr "Команди і користування"
 
 #. type: Labeled list
 #: ./pages/toolbox.adoc:94
 #, no-wrap
 msgid "`toolbox create [--container <name>]`"
-msgstr ""
+msgstr "`toolbox create [--container <назва>]`"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:101

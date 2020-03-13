@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-03-05 12:38+0000\n"
+"PO-Revision-Date: 2020-03-13 11:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagessilverblue-guide/uk/>\n"
@@ -23,12 +23,12 @@ msgstr ""
 #: ./pages/silverblue-guide.adoc:1
 #, no-wrap
 msgid "Silverblue User Guide"
-msgstr ""
+msgstr "Підручник користувача Silverblue"
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:4
 msgid "Steven Snow <s40w5s@gmail.com> V Pre-Alpha, 2018/11/11"
-msgstr ""
+msgstr "Steven Snow <s40w5s@gmail.com> V Pre-Alpha, 2018/11/11"
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:10
@@ -36,12 +36,14 @@ msgid ""
 "This Document is a work in progress. It aims to help with the daily use of "
 "Silverblue as a Workstation solution."
 msgstr ""
+"Роботу над цим документом ще не завершено. Він має допомогти у рутинному "
+"користуванні Silverblue на звичайній робочій станції."
 
 #. type: Block title
 #: ./pages/silverblue-guide.adoc:11
 #, no-wrap
 msgid "Help Wanted!"
-msgstr ""
+msgstr "Нам потрібна ваша допомога!"
 
 #. type: delimited block *
 #: ./pages/silverblue-guide.adoc:16
@@ -51,12 +53,15 @@ msgid ""
 "on how,\n"
 " please message me at\n"
 msgstr ""
+"Якщо ви хочете допомогти із поліпшенням цього документа і маєте якісь ідеї з "
+"приводу того, як це зробити,\n"
+" будь ласка, повідомте про це автору документа за адресою\n"
 
 #. type: Title ==
 #: ./pages/silverblue-guide.adoc:18
 #, no-wrap
 msgid "Document Conventions"
-msgstr ""
+msgstr "Угоди щодо документування"
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:20
@@ -357,7 +362,7 @@ msgstr ""
 #: ./pages/silverblue-guide.adoc:163
 #, no-wrap
 msgid "Using Package Layering"
-msgstr ""
+msgstr "Користування нашаровуванням пакунків"
 
 #. type: Title ===
 #: ./pages/silverblue-guide.adoc:164
