@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: 2020-03-13 11:38+0000\n"
+"PO-Revision-Date: 2020-03-15 17:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: ./pages/toolbox.adoc:2
@@ -304,12 +304,18 @@ msgid ""
 "`toolbox create` will automatically name the container it creates. To create "
 "additional toolboxes, use the ``--container <name>`` option."
 msgstr ""
+"Створює контейнер toolbox. У результаті буде отримано образ OCI, якщо він є "
+"недоступним (ця дія потрібна для створення контейнера). Типово, образ Fedora "
+"за версією збігається із версією основної системи. Якщо команду віддано без "
+"параметрів, `toolbox create` автоматично визначить назву для створеного "
+"контейнера. Щоб створити додаткові контейнери toolbox, скористайтеся "
+"параметром ``--container <назва>``."
 
 #. type: Labeled list
 #: ./pages/toolbox.adoc:102
 #, no-wrap
 msgid "`toolbox enter [--container <name>]`"
-msgstr ""
+msgstr "`toolbox enter [--container <назва>]`"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:107
@@ -318,12 +324,16 @@ msgid ""
 "opens the default toolbox. If there is more than one toolbox, use the "
 "`--container name` option to specify the toolbox to enter."
 msgstr ""
+"Увійти до контейнера toolbox для інтерактивного користування. Якщо команду "
+"віддано без параметрів, `toolbox enter` відкриває типовий контейнер toolbox. "
+"Якщо контейнерів декілька, скористайтеся параметром `--container назва` для "
+"визначення контейнера toolbox, до якого слід увійти."
 
 #. type: Labeled list
 #: ./pages/toolbox.adoc:108
 #, no-wrap
 msgid "`toolbox list`"
-msgstr ""
+msgstr "`toolbox list`"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:114
@@ -333,12 +343,16 @@ msgid ""
 "`registry.fedoraproject.org` prefix. These are a normal result of the "
 "toolbox creation process."
 msgstr ""
+"Виводить список образів і контейнерів toolbox. Зауваження: типово буде "
+"показано список із двох образів — один із префіксом `localhost` і один із "
+"префіксом `registry.fedoraproject.org`. Це типові образи, які буде створено "
+"у процесі ініціалізації toolbox."
 
 #. type: Labeled list
 #: ./pages/toolbox.adoc:115
 #, no-wrap
 msgid "`toolbox rm [--force] <name>`"
-msgstr ""
+msgstr "`toolbox rm [--force] <назва>`"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:119
@@ -346,34 +360,36 @@ msgid ""
 "Removes one or more toolbox containers. The `--force` option removes the "
 "container even if it is running."
 msgstr ""
+"Вилучає один або декілька контейнерів toolbox. Параметр `--force` вилучає "
+"контейнер, навіть якщо його запущено."
 
 #. type: Labeled list
 #: ./pages/toolbox.adoc:120
 #, no-wrap
 msgid "`toolbox rmi [--force] <name>`"
-msgstr ""
+msgstr "`toolbox rmi [--force] <назва>`"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:123
 msgid "Removes one or more toolbox images."
-msgstr ""
+msgstr "Вилучає один або декілька образів toolbox."
 
 #. type: Labeled list
 #: ./pages/toolbox.adoc:124
 #, no-wrap
 msgid "`toolbox --help`"
-msgstr ""
+msgstr "`toolbox --help`"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:127
 msgid "Lists available commands."
-msgstr ""
+msgstr "Виводить список доступних команд."
 
 #. type: Title ===
 #: ./pages/toolbox.adoc:128
 #, no-wrap
 msgid "Exiting a toolbox"
-msgstr ""
+msgstr "Вихід з toolbox"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:132
@@ -381,38 +397,40 @@ msgid ""
 "To return to the host environment, either run `exit` or quit the current "
 "shell (typically Ctrl+D)."
 msgstr ""
+"Щоб повернутися до середовища основної системи, або віддайте команду `exit`, "
+"або вийдіть з поточної оболонки (типово, Ctrl+D)."
 
 #. type: Title ==
 #: ./pages/toolbox.adoc:135
 #, no-wrap
 msgid "Under the hood"
-msgstr ""
+msgstr "Під капотом"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:138
 msgid "Toolbox uses the following technologies:"
-msgstr ""
+msgstr "У toolbox використано такі технології:"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:140
 msgid "https://buildah.io/[Buildah]"
-msgstr ""
+msgstr "https://buildah.io/[Buildah]"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:141
 msgid "https://www.opencontainers.org/[OCI container images]"
-msgstr ""
+msgstr "https://www.opencontainers.org/[Образи контейнерів OCI]"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:142
 msgid "https://podman.io/[Podman]"
-msgstr ""
+msgstr "https://podman.io/[Podman]"
 
 #. type: Title ==
 #: ./pages/toolbox.adoc:144
 #, no-wrap
 msgid "Contact and issues"
-msgstr ""
+msgstr "Контакти і адреси для сповіщення про вади"
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:148
@@ -420,6 +438,8 @@ msgid ""
 "To report issues, make suggestions, or contribute fixes, see "
 "https://github.com/containers/toolbox[toolbox's GitHub project]."
 msgstr ""
+"Для повідомлень про вади, пропозицій та надсилання латок скористайтеся "
+"https://github.com/containers/toolbox[сторінкою проєкту toolbox на GitHub]."
 
 #. type: Plain text
 #: ./pages/toolbox.adoc:152
@@ -428,3 +448,6 @@ msgid ""
 "https://discussion.fedoraproject.org/[Fedora's Discourse instance], or join "
 "the #silverblue IRC channel on Freenode."
 msgstr ""
+"Щоб зв'язатися із користувачами та розробниками toolbox, скористайтеся "
+"https://discussion.fedoraproject.org/[екземпляром Discourse Fedora] або "
+"каналом IRC #silverblue на сервері Freenode."
