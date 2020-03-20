@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-03-15 17:38+0000\n"
+"PO-Revision-Date: 2020-03-20 11:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-dual-boot/uk/>\n"
@@ -290,6 +290,9 @@ msgid ""
 "should only be a single directory there if this is your first\n"
 "deployment.\n"
 msgstr ""
+"де $checksum — контрольна сума системи для розгортання; має бути\n"
+"лише один каталог, якщо це розгортання системи\n"
+"є першим.\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:90
@@ -299,6 +302,10 @@ msgid ""
 "fstab copy to refer to /var/home. If you don't have a separate /home\n"
 "mount point, then you need to make sure that a symlink will be created:\n"
 msgstr ""
+"Якщо у вас окрема точка монтування /home, вам слід змінити копію\n"
+"fstab так, щоб там було посилання на цю точку монтування як на /var/home. "
+"Якщо у вас немає окремої точки монтування /home,\n"
+"вам слід створити відповідне символічне посилання:\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:94
@@ -323,6 +330,13 @@ msgid ""
 "in /etc/group. Don't copy just copy these files literally, however,\n"
 "since the system users and groups won't be the same.\n"
 msgstr ""
+"Вам також слід скопіювати записи вашого користувача з /etc/passwd, /etc/"
+"group,\n"
+"та /etc/shadow до нової теки /etc/ і додати вашого користувача до групи "
+"wheel\n"
+"у /etc/group. Втім, простого копіювання цих файлів буде недостатньо,\n"
+"оскільки користувачі та групи у новій системі не є тотожними до старих "
+"записів.\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:103
@@ -332,6 +346,10 @@ msgid ""
 "configuration, it writes config into /boot/loader/grub.cfg. On a current\n"
 "grubby system, you'll need to copy that version over:\n"
 msgstr ""
+"*Для систем з BIOS:* під час повторного створення налаштувань завантажувача "
+"в ostree,\n"
+"дані буде записано до /boot/loader/grub.cfg. У поточній версії системи\n"
+"вам доведеться перезаписати цю версію файла налаштувань:\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:107
@@ -352,6 +370,9 @@ msgid ""
 "Note that you will have to repeat this every time a new tree is created,\n"
 "so it may be more convenient to just create a symlink:\n"
 msgstr ""
+"Зауважте, що цю дію доведеться повторювати кожного разу при створенні нової "
+"ієрархії,\n"
+"тому, можливо, зручніше просто створити символічне посилання:\n"
 
 #. type: delimited block -
 #: ./pages/installation-dual-boot.adoc:115

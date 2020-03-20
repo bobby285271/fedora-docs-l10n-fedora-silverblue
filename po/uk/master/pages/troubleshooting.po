@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-16 18:57+0100\n"
-"PO-Revision-Date: 2020-03-08 10:38+0000\n"
+"PO-Revision-Date: 2020-03-20 11:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
@@ -15,9 +15,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: pages/troubleshooting.adoc:1
@@ -33,12 +33,16 @@ msgid ""
 "through your day to day.  Below are some of the more common problems "
 "reported and any workarounds for those problems."
 msgstr ""
+"Silverblue є радикально новим способом розгортання вашої операційної системи "
+"для робочих станцій та керування нею. Через це у вас можуть виникати "
+"проблеми зі щоденним користуванням нею. Нижче наведено список найпоширеніших "
+"проблем та способів їхнього розв'язання."
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:8
 #, no-wrap
 msgid "\"Forbidden base package replacements\""
-msgstr ""
+msgstr "\"Пропущені замінники пакунків базової системи\""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:11
@@ -54,6 +58,10 @@ msgid ""
 "package requires a newer version of the dependent package which is not "
 "available in the base OS."
 msgstr ""
+"Таке може трапитися, якщо нашарований пакунок має залежність від пакунка у "
+"базовій операційній системі. У проблемних випадках цей нашарований пакунок "
+"потребує новішої версії залежного пакунка, якої немає у базовій операційній "
+"системі."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:20
@@ -62,6 +70,9 @@ msgid ""
 "problem.  The dependent package will be updated in the compose and the "
 "package that was going to be layered will be successful."
 msgstr ""
+"У більшості випадків достатньо дочекатися новішої композиції OSTree  для "
+"усування проблеми. Залежний пакунок буде оновлено у новій композиції, і "
+"нашарованим пакунком можна буде користуватися."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:24
@@ -104,7 +115,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:37
 #, no-wrap
 msgid "Using Nvidia drivers"
-msgstr ""
+msgstr "Користування драйверами Nvidia"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:40
@@ -125,7 +136,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:47
 #, no-wrap
 msgid " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
-msgstr ""
+msgstr " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:49
@@ -133,12 +144,15 @@ msgid ""
 "You can read more about the work that Alex did on his https://blogs.gnome."
 "org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/[blog]."
 msgstr ""
+"Докладніше про виконану Алексом роботу можна дізнатися з його "
+"https://blogs.gnome.org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/"
+"[блогу]."
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:50
 #, no-wrap
 msgid "SELinux problems"
-msgstr ""
+msgstr "Проблеми із SELinux"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:57
@@ -165,6 +179,11 @@ msgid ""
 "M    selinux/targeted/policy/policy.31\n"
 "A    selinux/targeted/policy/policy.30\n"
 msgstr ""
+"$ sudo ostree admin config-diff | grep policy\n"
+"M    selinux/targeted/active/policy.linked\n"
+"M    selinux/targeted/active/policy.kern\n"
+"M    selinux/targeted/policy/policy.31\n"
+"A    selinux/targeted/policy/policy.30\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:68
@@ -185,6 +204,8 @@ msgid ""
 "$ sudo cp -al /etc/selinux{,.bak}\n"
 "$ sudo rsync -rlv /usr/etc/selinux/ /etc/selinux/\n"
 msgstr ""
+"$ sudo cp -al /etc/selinux{,.bak}\n"
+"$ sudo rsync -rlv /usr/etc/selinux/ /etc/selinux/\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:76
@@ -212,6 +233,8 @@ msgid ""
 "$ sudo rm -rf /etc/selinux\n"
 "$ sudo cp -aT /usr/etc/selinux /etc/selinux\n"
 msgstr ""
+"$ sudo rm -rf /etc/selinux\n"
+"$ sudo cp -aT /usr/etc/selinux /etc/selinux\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:86
@@ -224,7 +247,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:87
 #, no-wrap
 msgid "Unable to add user to group"
-msgstr ""
+msgstr "Не вдається додати користувача до групи"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:90
@@ -256,12 +279,14 @@ msgid ""
 " # grep -E '^libvirt:' /usr/lib/group >> /etc/group\n"
 " # usermod -aG libvirt username\n"
 msgstr ""
+" # grep -E '^libvirt:' /usr/lib/group >> /etc/group\n"
+" # usermod -aG libvirt username\n"
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:103
 #, no-wrap
 msgid "`ostree fsck` reports file corruption"
-msgstr ""
+msgstr "`ostree fsck` повідомляє про пошкодження файла"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:109
@@ -310,22 +335,26 @@ msgid ""
 " # fsck.hfsplus /dev/sda1\n"
 " # mount -o rw /boot/efi\n"
 msgstr ""
+" # umount /boot/efi\n"
+" # fsck.hfsplus /dev/sda1\n"
+" # mount -o rw /boot/efi\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:128
 msgid "See the linked issue for additional details."
-msgstr ""
+msgstr "Див. додаткові подробиці можна дізнатися за вказаним посиланням."
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:129
 #, no-wrap
 msgid "Unable to install Silverblue on EFI systems"
-msgstr ""
+msgstr "Не вдається встановити Silverblue у системи з EFI"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:132
 msgid "https://bugzilla.redhat.com/show_bug.cgi?id=1575957[Bugzilla Issue]"
 msgstr ""
+"https://bugzilla.redhat.com/show_bug.cgi?id=1575957[Запис вади у Bugzilla]"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:136
