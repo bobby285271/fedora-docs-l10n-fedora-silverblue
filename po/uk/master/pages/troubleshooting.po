@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-16 18:57+0100\n"
-"PO-Revision-Date: 2020-03-20 11:38+0000\n"
+"PO-Revision-Date: 2020-03-21 21:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
@@ -88,12 +88,14 @@ msgid ""
 "Alternatively, you can try rebasing to any `updates` ref, like `fedora/30/"
 "updates/x86_64` after the `cleanup` operation."
 msgstr ""
+"Крім того, ви можете спробувати перенести систему до будь-якого посилання "
+"`updates`, наприклад `fedora/30/updates/x86_64`, після дії `cleanup`."
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:28
 #, no-wrap
 msgid "Installing packages to `/opt` or `/usr/local`"
-msgstr ""
+msgstr "Встановлення пакунків до `/opt` або `/usr/local`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:31
@@ -405,6 +407,7 @@ msgstr ""
 #, no-wrap
 msgid "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
 msgstr ""
+"`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:151
@@ -447,6 +450,9 @@ msgstr ""
 #, no-wrap
 msgid " $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
 msgstr ""
+" $ rpm-ostree override --remove=podman-manpages replace "
+"https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/"
+"x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:163
@@ -467,6 +473,9 @@ msgid ""
 "fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/"
 "podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
 msgstr ""
+"Отримайте `podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm` з "
+"https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/"
+"x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:168
@@ -474,6 +483,8 @@ msgid ""
 "Remove `podman-manpages` issuing: `rpm-ostree override remove podman-"
 "manpages`"
 msgstr ""
+"Вилучіть `podman-manpages` за допомогою такої команди: `rpm-ostree override "
+"remove podman-manpages`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:169
@@ -498,17 +509,19 @@ msgstr ""
 #, no-wrap
 msgid " $ rpm-ostree override reset podman; rpm-ostree override reset podman-manpages\n"
 msgstr ""
+" $ rpm-ostree override reset podman; rpm-ostree override reset podman-"
+"manpages\n"
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:176
 #, no-wrap
 msgid "Unable to enter a toolbox due to permissions errors"
-msgstr ""
+msgstr "Не вдається увійти до toolbox через помилки із правами доступу"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:179
 msgid "https://github.com/containers/libpod/issues/3187[GitHub Issue]"
-msgstr ""
+msgstr "https://github.com/containers/libpod/issues/3187[Запис вади на GitHub]"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:183
@@ -523,6 +536,7 @@ msgstr ""
 #, no-wrap
 msgid " $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
 msgstr ""
+" $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:187
@@ -530,6 +544,8 @@ msgid ""
 "This will reset the permissions on your containers and allow you to enter "
 "them again."
 msgstr ""
+"Ця команда призведе до скидання прав доступу до ваших контейнерів і "
+"уможливлення входу до них."
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:188
@@ -562,34 +578,36 @@ msgstr ""
 #. type: Plain text
 #: pages/troubleshooting.adoc:198
 msgid "Deploy the new \"fixed\" commit"
-msgstr ""
+msgstr "Розгорніть новий «виправлений» внесок"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:199
 msgid "Run `restorecon`"
-msgstr ""
+msgstr "Віддайте команду `restorecon`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:200
 msgid "Reboot"
-msgstr ""
+msgstr "Перезавантажте систему"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:201
 msgid "Cleanup"
-msgstr ""
+msgstr "Виконайте очищення системи"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:203
 #, no-wrap
 msgid "$ rpm-ostree status -b | grep BaseCommit\n"
-msgstr ""
+msgstr "$ rpm-ostree status -b | grep BaseCommit\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:204
 #, no-wrap
 msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 msgstr ""
+"BaseCommit: "
+"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:211
@@ -603,6 +621,16 @@ msgid ""
 "$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
 "$ sudo reboot\n"
 msgstr ""
+"$ sudo ostree checkout -H "
+"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/"
+"repo/tmp/selinux-fix\n"
+"$ sudo ostree fsck --delete\n"
+"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-"
+"policy=/ /ostree/repo/tmp/selinux-fix\n"
+"$ sudo restorecon -Rv /var\n"
+"$ sudo restorecon -Rv /etc\n"
+"$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
+"$ sudo reboot\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:214
