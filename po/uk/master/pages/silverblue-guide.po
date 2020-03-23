@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-03-13 11:38+0000\n"
+"PO-Revision-Date: 2020-03-23 12:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagessilverblue-guide/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: ./pages/silverblue-guide.adoc:1
@@ -69,31 +69,33 @@ msgid ""
 "This document will show Notes, Tip's, Information, Cautions, and Warnings as "
 "follows"
 msgstr ""
+"У цьому документі показано нотатки, підказки, інформацію, попередження і "
+"зауваження ось так:"
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:23
 msgid "This is a note to show how this note would be displayed."
-msgstr ""
+msgstr "Це нотатка для показу того, як має бути показано нотатку."
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:25
 msgid "This is a tip, perhaps one you didn't know."
-msgstr ""
+msgstr "Це підказка — ймовірно, ви цього не знали."
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:27
 msgid "This is something important on the topic."
-msgstr ""
+msgstr "Це щось важливе з поточної теми."
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:29
 msgid "Cautionary note!"
-msgstr ""
+msgstr "Попередження!"
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:31
 msgid "This is a warning as it would appear!"
-msgstr ""
+msgstr "Ось так буде показано зауваження!"
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:35
@@ -108,7 +110,7 @@ msgstr ""
 #: ./pages/silverblue-guide.adoc:36
 #, no-wrap
 msgid "Introduction"
-msgstr ""
+msgstr "Вступ"
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:62
@@ -147,7 +149,7 @@ msgstr ""
 #: ./pages/silverblue-guide.adoc:63
 #, no-wrap
 msgid "Installing Fedora Silverblue"
-msgstr ""
+msgstr "Встановлення Fedora Silverblue"
 
 #. type: Plain text
 #: ./pages/silverblue-guide.adoc:66

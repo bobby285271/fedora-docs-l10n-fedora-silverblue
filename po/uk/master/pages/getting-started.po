@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: 2020-03-09 18:38+0000\n"
+"PO-Revision-Date: 2020-03-23 12:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: ./pages/getting-started.adoc:2
@@ -108,6 +108,11 @@ msgid ""
 "box in Fedora Silverblue, and Fedora provides a small (but growing) "
 "collection of apps that can be installed."
 msgstr ""
+"Flatpak є основним способом встановлення програм у Silverblue. (Докладніші "
+"відомості можна знайти на http://flatpak.org[flatpak.org].) Flatpak працює у "
+"Fedora Silverblue без додаткового налаштовування, а Fedora надає доступ до "
+"невеликого (але такого, що постійно збільшується) набору програм, які можна "
+"встановити."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:33
@@ -131,6 +136,10 @@ msgid ""
 "https://flatpak.org/setup/Fedora/[Flathub setup page for Fedora] and click "
 "the “Flathub repository file” button to download the Flathub configuration."
 msgstr ""
+"Щоб налаштувати використання Flathub у Fedora Silverblue, відкрийте "
+"https://flatpak.org/setup/Fedora/[сторінку налаштовування Flathub для Fedora]"
+" і натисніть кнопку «Flathub repository file» для отримання налаштувань "
+"Flathub."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:41
@@ -151,6 +160,10 @@ msgid ""
 "option should show “Software Install (default)”. Click on the “OK” button to "
 "start the download."
 msgstr ""
+"У контекстному вікні вам буде запропоновано отримати файл. У списку «"
+"Відкрити за допомогою» має бути показано пункт «Встановлення програмного "
+"забезпечення (типовий)». Натисніть кнопку «Гаразд», щоб розпочати отримання "
+"даних."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:47
@@ -172,6 +185,10 @@ msgid ""
 "be installed, under the details heading (1). To start the installation of "
 "the Flathub repository, click on the “Install” button (2)."
 msgstr ""
+"Після завершення отримання даних буде відкрито ще одне вікно сховища "
+"Flathub. У цьому вікні буде показано дані щодо розташування сховища, яке "
+"буде встановлено, під заголовком «Подробиці» (1). Щоб розпочати встановлення "
+"сховища Flathub, натисніть кнопку «Встановити» (2)."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:54
@@ -207,6 +224,10 @@ msgid ""
 "Flatpak apps. This can be done directly from the Software app, or apps can "
 "be browsed on the https://flathub.org/home[Flathub website]."
 msgstr ""
+"Після налаштовування сховища Flathub ним можна користуватися для "
+"встановлення програм Flatpak. Встановлювати програми можна безпосередньо за "
+"допомогою програми «Програмне забезпечення» або безпосередньо "
+"https://flathub.org/home[сайта Flathub]."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:70
@@ -217,6 +238,12 @@ msgid ""
 "https://www.libreoffice.org/[LibreOffice], you first search for and open the "
 "LibreOffice page, and then press the “Install” button (2)."
 msgstr ""
+"Якщо ви захочете встановити програми з сайта Flathub, натискання кнопки "
+"«Install» призведе до отримання файла, який можна відкрити за допомогою "
+"програми «Програмне забезпечення» і використано для встановлення програми. "
+"Наприклад, щоб встановити https://www.libreoffice.org/[LibreOffice], вам "
+"слід спочатку виконати пошук програми, потім відкрити сторінку LibreOffice, "
+"а потім натиснути кнопку «Install» (2)."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:74
@@ -225,6 +252,9 @@ msgid ""
 "shown. Verify the correct Flatpak has been downloaded and then click on the "
 "“OK” button to begin installing the LibreOffice application."
 msgstr ""
+"Після натискання кнопки «Install» буде показано вікно відомостей щодо "
+"отримання даних. Перевірте, чи той пакунок Flatpak буде отримано, а потім "
+"натисніть кнопку «Гаразд», щоб розпочати встановлення програми LibreOffice."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:75
@@ -245,12 +275,15 @@ msgid ""
 "window with an “Install” button (2). Click this button to begin "
 "installation."
 msgstr ""
+"Коли отримання пакунка Flatpak буде завершено, програма «Програмне "
+"забезпечення» відкриє нове вікно із кнопкою «Встановити» (2). Натисніть цю "
+"кнопку, щоб розпочати встановлення."
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:80
 #, no-wrap
 msgid "Flatpak command line"
-msgstr ""
+msgstr "Командний рядок Flatpak"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:86
@@ -260,6 +293,11 @@ msgid ""
 "http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] "
 "for how to do this."
 msgstr ""
+"Окрім використання для встановлення програм з пакунків Flatpak програми «"
+"Програмне забезпечення», ви можете скористатися інтерфейсом командного рядка "
+"`flatpak`. Щоб дізнатися більше про те, як це зробити, ознайомтеся із "
+"http://docs.flatpak.org/en/latest/using-flatpak.html[документацією до "
+"Flatpak]."
 
 #. type: Title ==
 #: ./pages/getting-started.adoc:88
@@ -274,11 +312,14 @@ msgid ""
 "name implies, it works by extending the packages from which Silverblue is "
 "composed."
 msgstr ""
+"Основою нашаровування пакунків є внесення змін до встановленого образу "
+"Silverblue. Як можна здогадатися із назви, усе це працює шляхом розширення "
+"списку пакунків, з яких складається Silverblue."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:94
 msgid "Good examples of packages to be layered would be:"
-msgstr ""
+msgstr "Непоганим прикладом пакунків, які можна нашарувати, є:"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:96
@@ -314,6 +355,15 @@ msgid ""
 "be lifted, but it's generally expected that you use package layering "
 "sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
 msgstr ""
+"У поточній версії нашаровування пакунків призводить до створення нового "
+"«розгортання» — придатної до завантаження кореневої файлової системи. Змін "
+"до поточної кореневої файлової системи не вноситься. Таким чином "
+"забезпечується робота моделі із можливістю повернення до попереднього стану "
+"і атомарними діями з системою. Втім, це означає, що після нашаровування "
+"пакунка систему доведеться перезавантажити. Зрештою, це обмеження може бути "
+"усунуто, але автори дистрибутива припускають, що ви не зловживатимете "
+"встановленням нашарованих пакунків і користуватиметеся `flatpak` і `dnf "
+"install` всередині `toolbox`."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:111
@@ -322,6 +372,9 @@ msgid ""
 "Software application does rely on it for installing a small number of apps "
 "that are currently difficult to install as Flatpaks."
 msgstr ""
+"Нашаровування пакунків, зазвичай, виконується з командного рядка. Втім, "
+"програма «Програмне забезпечення» може встановлювати і той невеликий набір "
+"програм, які зараз важко встановити за допомогою пакунків Flatpak."
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:112
@@ -348,6 +401,11 @@ msgid ""
 "names, which can be searched using DNF (this is not available on a "
 "Silverblue host, but can be used in a link:toolbox[toolbox])."
 msgstr ""
+"Ця команда виконає отримання пакунка та усіх потрібних залежностей і "
+"перекомпонує образ Silverblue, встановивши їх відповідним чином. `rpm-ostree`"
+" використовує стандартні назви пакунків Fedora, визначити які можна за "
+"допомогою DNF (цієї програми немає у основній системі Silverblue, але нею "
+"можна скористатися у link:toolbox[toolbox])."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:125
@@ -355,6 +413,9 @@ msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
 msgstr ""
+"Після встановлення пакунка у цей спосіб система підтримуватиме його "
+"актуальний стан з виходом нових версій пакунка та базової операційної "
+"системи."
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:126
@@ -370,6 +431,11 @@ msgid ""
 "command can be used to replace a package with a different version.  "
 "Currently you must download the RPM packages locally, and then run:"
 msgstr ""
+"Іноді, може виникати потреба у тестуванні нової версії `podman`, `ядра` або "
+"інших пакунків, які є частиною основної системи. Для виконання цього "
+"завдання ви можете скористатися командою `rpm-ostree override`, яка замінює "
+"пакунок іншою версією. У поточній версії вам слід отримати пакунки RPM на "
+"ваш комп'ютер, а потім віддати таку команду:"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:132
@@ -384,6 +450,9 @@ msgid ""
 "will still exist in the underlying base layer, but will not appear in the "
 "booted root."
 msgstr ""
+"Ви також можете скористатися командою `override remove` для фактичного "
+"«приховування» пакунків. Такі «приховані» пакунки існуватимуть у базовому "
+"шарі, але не з'являтимуться у завантаженій кореневій файловій системі."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:137
@@ -393,3 +462,7 @@ msgid ""
 "https://rpm-ostree.readthedocs.io/en/latest/manual/administrator-handbook/[rpm-ostree "
 "documentation]."
 msgstr ""
+"Загалом, не рекомендуємо вам користуватися вилученням або заміною пакунків з "
+"використанням нашаровування. Щоб дізнатися про це більше, ознайомтеся із "
+"https://rpm-ostree.readthedocs.io/en/latest/manual/administrator-handbook/["
+"документацією до rpm-ostree]."
