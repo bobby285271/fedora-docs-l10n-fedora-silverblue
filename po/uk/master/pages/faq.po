@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: 2020-03-08 10:38+0000\n"
+"PO-Revision-Date: 2020-03-24 13:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesfaq/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: ./pages/faq.adoc:1
@@ -44,6 +44,9 @@ msgid ""
 "Silverblue will be used for the OS that we are producing, but calling it "
 "Silverblue in its short version is fine as well."
 msgstr ""
+"Для усього проєкту ми вибрали назву «Team Silverblue». Назву «Fedora "
+"Silverblue» буде використано для операційної системи, яку ми створюємо, але "
+"її можна називати і короткою назвою — «Silverblue»."
 
 #. type: Labeled list
 #: ./pages/faq.adoc:11
@@ -58,6 +61,9 @@ msgid ""
 "not work out. We just couldn't quite let go of the leaf. You could also say "
 "that Silverblue is a new new leaf on Fedora's OSTree. 😀"
 msgstr ""
+"Ми хотіли назвати проєкт «Silverleaf» («срібний листок»), але, на жаль, не "
+"вийшло. Але ми не могли просто так забути наш «листок». «Silverblue», можна "
+"так сказати», — новий листок на дереві OSTree Fedora. 😀"
 
 #. type: Labeled list
 #: ./pages/faq.adoc:16
@@ -74,6 +80,12 @@ msgid ""
 "built with existing Fedora technologies. However, the two efforts do share a "
 "desire to deliver a user experience that is polished and coherent."
 msgstr ""
+"GNOME OS — кодова назва, яку певний час використовували основні учасники "
+"проєкту GNOME для позначення ідеї створення операційної системи, побудованої "
+"навколо графічного середовища. Silverblue ж є результатом зусиль учасників "
+"проєкту Fedora. Операційну систему буде побудовано на основі наявних "
+"технологій Fedora. Втім, у обох проєктах метою є створення якісного і "
+"узгодженого робочого середовища."
 
 #. type: Labeled list
 #: ./pages/faq.adoc:23
@@ -88,6 +100,10 @@ msgid ""
 "well as its successor, Fedora CoreOS). However, Silverblue is specifically "
 "focused on workstation/desktop use cases."
 msgstr ""
+"У Fedora Silverblue використано ту саму основну технологію, що у базовій "
+"системі Fedora Atomic (а також у її наступниці — Fedora CoreOS). Втім, "
+"акцент у Silverblue зроблено на задоволенні потреби у якісній робочій "
+"станції."
 
 #. type: Title ==
 #: ./pages/faq.adoc:28

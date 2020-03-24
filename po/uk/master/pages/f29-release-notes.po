@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-03-02 16:38+0000\n"
+"PO-Revision-Date: 2020-03-24 13:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesf29-release-notes/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: ./pages/f29-release-notes.adoc:1
@@ -57,6 +57,12 @@ msgid ""
 "default Fedora 29 Workstation content set. These whitelists/blacklists can "
 "be seen in the `f29` branch of the `workstation-ostree-config` repo:"
 msgstr ""
+"Для випуску Fedora 29 Silverblue вміст базової операційної системи було "
+"значно спрощено за допомогою нових інструментів, які було розроблено на боці "
+"системи збирання для додавання до «білого» або «чорного» списку певних "
+"пакунків з типового набору пакунків Fedora 29 Workstation. Ознайомитися із "
+"«білими» і «чорними» списками можна у гілці `f29` сховища `workstation-"
+"ostree-config`:"
 
 #. type: Plain text
 #: ./pages/f29-release-notes.adoc:23
@@ -71,6 +77,9 @@ msgid ""
 "file defines the packages which will be excluded from the default Fedora 29 "
 "Workstation content set."
 msgstr ""
+"Зокрема, у файлі https://pagure.io/workstation-ostree-config/blob/f29/f/"
+"comps-sync-blacklist.yml[comps-sync-blacklist.yml] визначено пакунки, які "
+"буде виключено з типового набору пакунків Fedora 29 Workstation."
 
 #. type: Plain text
 #: ./pages/f29-release-notes.adoc:33
