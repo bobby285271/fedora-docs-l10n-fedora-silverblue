@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:28+0100\n"
-"PO-Revision-Date: 2020-03-24 13:38+0000\n"
+"PO-Revision-Date: 2020-03-25 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesfaq/uk/>\n"
@@ -140,6 +140,11 @@ msgid ""
 "them there when you recreate your connections). Certificates in `/etc/pki` "
 "need to be handled similarly."
 msgstr ""
+"`/etc` не є частиною незмінного образу операційної системи, тому ви можете "
+"просто скопіювати файли до `/etc/NetworkManager/system-connections` (або "
+"надати змогу NetworkManager зберегти ці файли там, коли ви повторно "
+"створюватимете ваші з'єднання). З сертифікатами у `/etc/pki` можна працювати "
+"у той самий спосіб."
 
 #. type: Labeled list
 #: ./pages/faq.adoc:41
@@ -158,6 +163,14 @@ msgid ""
 "available as a "
 "https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly.flatpakref[Flatpak]."
 msgstr ""
+"У поточних версіях до складу образу операційної системи включено Firefox. До "
+"того, як можуть відбутися якісь зміни, для відтворення відео у браузері слід "
+"виконати ті самі дії, що і у звичайній Fedora Workstation: знайти пакунок із "
+"відповідними кодеками і встановити його. Єдиною відмінністю є те, що слід "
+"скористатися `rpm-ostree install`, а не `dnf install`.  Альтернативним "
+"варіантом вирішення проблеми є встановлення щоденної збіркиy Firefox, яка "
+"доступна у форматі пакунка https://firefox-flatpak.mojefedora.cz/"
+"org.mozilla.FirefoxNightly.flatpakref[Flatpak]."
 
 #. type: Labeled list
 #: ./pages/faq.adoc:50
@@ -216,6 +229,9 @@ msgid ""
 "If you want to compare the booted deployment with the pending deployment (or "
 "rollback deployment), simply issue:"
 msgstr ""
+"Якщо ви хочете порівняти завантажену розгорнуту систему із системою, яка "
+"очікує на розгортання (або нарощувальне розгортання), просто віддайте таку "
+"команду:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:67
@@ -229,56 +245,64 @@ msgid ""
 "You can also see the RPM changelog by adding the `-c` option like so: "
 "`rpm-ostree db diff -c`"
 msgstr ""
+"Ви також можете переглянути журнал змін RPM, додавши до команди параметр `-c`"
+". Ось так: `rpm-ostree db diff -c`"
 
 #. type: Plain text
 #: ./pages/faq.adoc:71
 msgid "If you want to see which packages were updated between two specific commits:"
 msgstr ""
+"Якщо ви хочете переглянути список пакунків, які було оновлено між двома "
+"певним внесками, зробіть так:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:73
 msgid "find out which two commits you want to compare by issuing:"
 msgstr ""
+"визначте два внески, які ви хочете порівняти, можна за допомогою такої "
+"команди:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:75
 #, no-wrap
 msgid "$ ostree log <ref>\n"
-msgstr ""
+msgstr "$ ostree log <посилання>\n"
 
 #. type: Plain text
 #: ./pages/faq.adoc:77
 msgid "you can now compare the two commits by issuing:"
-msgstr ""
+msgstr "далі, порівняйте два внески за допомогою такої команди:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:79
 #, no-wrap
 msgid "$ rpm-ostree db diff <commit x> <commit y>\n"
-msgstr ""
+msgstr "$ rpm-ostree db diff <внесок x> <внесок y>\n"
 
 #. type: Labeled list
 #: ./pages/faq.adoc:80
 #, no-wrap
 msgid "How can I check the version number of an installed package?"
-msgstr ""
+msgstr "Як можна визначити номер версії встановленого пакунка?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:83
 msgid "You can simply use:"
-msgstr ""
+msgstr "Можете просто скористатися такою командою:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:85
 #, no-wrap
 msgid " $ rpm -q <package>\n"
-msgstr ""
+msgstr " $ rpm -q <пакунок>\n"
 
 #. type: Labeled list
 #: ./pages/faq.adoc:86
 #, no-wrap
 msgid "How can I check if an `rpm` software package is available in the repository?"
 msgstr ""
+"Як перевірити, чи є пакунок програмного забезпечення `rpm` у сховищі "
+"пакунків?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:89
@@ -286,12 +310,15 @@ msgid ""
 "At this point in time, there is no `rpm` package search function built into "
 "`rpm-ostree`. However, you can use `toolbox` with the following command:"
 msgstr ""
+"На цьому етапі розвитку системи функціональної можливості пошуку пакунків "
+"`rpm`, яку було б вбудовано до `rpm-ostree`, не передбачено. Втім, ви можете "
+"скористатися `toolbox` і такою командою:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:91
 #, no-wrap
 msgid " $ toolbox run dnf search <package>\n"
-msgstr ""
+msgstr " $ toolbox run dnf search <пакунок>\n"
 
 #. type: Plain text
 #: ./pages/faq.adoc:93
@@ -299,12 +326,14 @@ msgid ""
 "The assumption is that you have already created a toolbox matching the "
 "version of your Fedora Silverblue installation."
 msgstr ""
+"Тут ми припускаємо, що у вас вже створено toolbox, який відповідає "
+"встановленій у вас версії Fedora Silverblue."
 
 #. type: Labeled list
 #: ./pages/faq.adoc:94
 #, no-wrap
 msgid "How can I downgrade my system's kernel?"
-msgstr ""
+msgstr "Як знизити версію ядра системи?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:97
@@ -312,6 +341,8 @@ msgid ""
 "If, for whatever reason, you need to downgrade the kernel, you can do so by "
 "following these steps:"
 msgstr ""
+"Якщо з будь-якої причини у вас виникла потреба у зниженні версії ядра "
+"системи, ви можете виконати його за допомогою таких кроків:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:99
@@ -320,11 +351,15 @@ msgid ""
 "`<kernel-modules>` and `<kernel-modules-extra>` from "
 "https://koji.fedoraproject.org/koji/packageinfo?packageID=8[Koji]."
 msgstr ""
+"Для версії, до якої ви хочете знизити версію ядра, отримайте пакунки "
+"`<kernel>`, `<kernel-core>`, `<kernel-modules>` і `<kernel-modules-extra>` з "
+"https://koji.fedoraproject.org/koji/packageinfo?packageID=8[Koji]."
 
 #. type: Plain text
 #: ./pages/faq.adoc:101
 msgid "Install the packages downloaded on the previous step by issuing:"
 msgstr ""
+"Встановіть отримані на попередньому кроці пакунки за допомогою такої команди:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:103
@@ -333,6 +368,8 @@ msgid ""
 "$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> "
 "<kernel-modules-extra>\n"
 msgstr ""
+"$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> "
+"<kernel-modules-extra>\n"
 
 #. type: Plain text
 #: ./pages/faq.adoc:105
@@ -346,6 +383,8 @@ msgid ""
 "How can I upgrade my system to the next major version (for instance: rawhide "
 "or an upcoming Fedora release branch), while keeping my current deployment?"
 msgstr ""
+"Як оновити систему до наступної основної версії (наприклад rawhide або гілки "
+"майбутнього випуску Fedora), не вилучаючи поточної розгорнутої системи?"
 
 #. type: Plain text
 #: ./pages/faq.adoc:109
@@ -353,6 +392,9 @@ msgid ""
 "OSTree allows you to pin deployments (pinning ensures that your deployment "
 "of choice is kept and not discarded)."
 msgstr ""
+"В OSTree передбачено можливість пришпилювання розгорнутих систем ("
+"пришпилювання призводить до того, що пришпилена система лишається "
+"встановленою і не вилучається)."
 
 #. type: Plain text
 #: ./pages/faq.adoc:111
@@ -360,6 +402,8 @@ msgid ""
 "Assuming that you want to keep your default deployment, issue the following "
 "command:"
 msgstr ""
+"Припустімо, вам потрібно зберегти вашу типову розгорнуту систему. Тоді, слід "
+"віддати таку команду:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:113
@@ -377,6 +421,8 @@ msgstr ""
 #: ./pages/faq.adoc:117
 msgid "Verify that you have pinned your deployment of choice by issuing:"
 msgstr ""
+"Перевірте, чи пришпилено вибрану вами розгорнуту систему за допомогою такої "
+"команди:"
 
 #. type: Plain text
 #: ./pages/faq.adoc:119
@@ -391,6 +437,9 @@ msgid ""
 "instructions found "
 "https://docs.fedoraproject.org/en-US/fedora-silverblue/updates-upgrades-rollbacks/#upgrading[here.]"
 msgstr ""
+"Після того, як розгорнуту систему пришпилено, ви можете оновити вашу систему "
+"за допомогою настанов, які наведено https://docs.fedoraproject.org/uk-UA/"
+"fedora-silverblue/updates-upgrades-rollbacks/#upgrading[тут.]"
 
 #. type: Plain text
 #: ./pages/faq.adoc:123
@@ -400,6 +449,10 @@ msgid ""
 "*\"Fedora 30.YYYYMMDD.n\"*) and the new deployment major version entry "
 "(e.g.: *\"Fedora 31.YYYYMMDD.n\"*)."
 msgstr ""
+"Після завершення переходу перезавантажте систему. У меню GRUB ви знайдете "
+"обидва пункти: запис попередньої розгорнутої основної версії (наприклад *\""
+"Fedora 30.YYYYMMDD.n\"*) і запис нової розгорнутої основної версії ("
+"наприклад *\"Fedora 31.YYYYMMDD.n\"*)."
 
 #. type: Plain text
 #: ./pages/faq.adoc:124
@@ -407,3 +460,5 @@ msgid ""
 "At the moment it is not possible to name (pinned) deployments and their "
 "associated GRUB menu entries."
 msgstr ""
+"У поточній версії не передбачено можливості змінювати назви (пришпилених) "
+"розгорнутих систем та пов'язаних із ними пунктів меню GRUB."

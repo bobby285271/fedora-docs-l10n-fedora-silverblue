@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-03-24 13:38+0000\n"
+"PO-Revision-Date: 2020-03-25 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesf29-release-notes/uk/>\n"
@@ -37,6 +37,14 @@ msgid ""
 "These notes will cover the significant changes from Fedora 28\n"
 "Silverblue and what users can expect.\n"
 msgstr ""
+"З часу випуску Fedora 28 Silverblue проєкт постійно розвивався\n"
+"і результат значно змінився у сенсі вмісту операційної\n"
+"системи. Проєкт Silverblue побудовано на основі Fedora,\n"
+"втім, у межах проєкту Silverblue було прийнято декілька\n"
+"рішень щодо вибору програмного забезпечення, яке\n"
+"було включено до типового набору пакунків.\n"
+"У цих нотатках описано значні зміни з часу Fedora 28\n"
+"Silverblue та те, чого очікувати користувачам.\n"
 
 #. type: delimited block -
 #: ./pages/f29-release-notes.adoc:14
@@ -89,6 +97,11 @@ msgid ""
 "and container images managed by `docker` will need to migrate to `podman` or "
 "instruct `rpm-ostree` to retain `docker` during the upgrade process."
 msgstr ""
+"Найзначнішою зміною з часу Fedora 28 Silverblue є вилучення `docker` з "
+"типового набору пакунків. Це означає, що користувачі, у яких були наявні "
+"контейнери, а для керування контейнерами використовувався `docker, мають "
+"перенести ці контейнери на `podman` або наказати `rpm-ostree` зберегти "
+"`docker` під час процедури оновлення."
 
 #. type: Plain text
 #: ./pages/f29-release-notes.adoc:39
@@ -99,6 +112,12 @@ msgid ""
 "`docker` as part of your Fedora 29 Silverblue installation, please see the "
 "<<keep-pkgs,note about keeping packages during upgrade>>."
 msgstr ""
+"Якщо у вас є наявні образи контейнерів, які ви хочете зберегти після "
+"оновлення до Fedora 29 Silverblue, будь ласка, скористайтеся <<migrating-"
+"from-docker,настановами щодо перенесення>>, перш ніж виконувати оновлення "
+"операційної системи. Якщо ви хочете зберегти `docker` як частину вашої "
+"встановленої системи Fedora 29 Silverblue, будь ласка, ознайомтеся із <<keep-"
+"pkgs,нотаткою щодо збереження пакунків під час оновлення>>."
 
 #. type: Plain text
 #: ./pages/f29-release-notes.adoc:42
@@ -106,6 +125,9 @@ msgid ""
 "For a complete list of packages that have changed, added, or removed in "
 "Fedora 29, please see the <<package-changes,full list of changes>>."
 msgstr ""
+"Щоб ознайомитися із повним списком пакунків, до яких було внесено зміни, або "
+"які було вилучено у Fedora 29, будь ласка, прочитайте <<package-"
+"changes,повний список змін>>."
 
 #. type: Title -
 #: ./pages/f29-release-notes.adoc:45
@@ -135,6 +157,10 @@ msgid ""
 "be resolved in versions of `podman` newer than `v0.8.3`.  If you find you "
 "need this package, you can layer it with `rpm-ostree install slirp4netns`."
 msgstr ""
+"Опис вади можна знайти https://github.com/containers/libpod/issues/1234[тут]"
+". Ваду має бути усунено у версіях `podman`, які є новішими за `0.8.3`.  Якщо "
+"вам дуже потрібен цей пакунок, ви можете нашарувати його за допомогою "
+"команди `rpm-ostree install slirp4netns`."
 
 #. type: Plain text
 #: ./pages/f29-release-notes.adoc:57

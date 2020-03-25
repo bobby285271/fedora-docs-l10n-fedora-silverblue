@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-03-10 19:38+0000\n"
+"PO-Revision-Date: 2020-03-25 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-guide/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: ./pages/installation-guide.adoc:1
@@ -171,13 +171,13 @@ msgstr ""
 #: ./pages/installation-guide.adoc:59
 #, no-wrap
 msgid "Fedora Installer Services Output"
-msgstr ""
+msgstr "Дані, які виведено службами встановлення Fedora"
 
 #. type: Target for macro image
 #: ./pages/installation-guide.adoc:59
 #, no-wrap
 msgid "faw-boot-output.png"
-msgstr ""
+msgstr "faw-boot-output.png"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:64
@@ -185,18 +185,21 @@ msgid ""
 "Eventually, the graphical installer should start and you'll be presented "
 "with the options to select the language you wish to use during the install:"
 msgstr ""
+"Нарешті, має запуститися графічний засіб встановлення, який покаже вам вікно "
+"вибору мови, яку ви хочете використовувати в інтерфейсі програм під час "
+"встановлення:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/installation-guide.adoc:65
 #, no-wrap
 msgid "Fedora Installer Language Selection"
-msgstr ""
+msgstr "Вибір мови у засобі встановлення Fedora"
 
 #. type: Target for macro image
 #: ./pages/installation-guide.adoc:65
 #, no-wrap
 msgid "faw-boot-welcome.png"
-msgstr ""
+msgstr "faw-boot-welcome.png"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:76
@@ -227,13 +230,13 @@ msgstr ""
 #: ./pages/installation-guide.adoc:84
 #, no-wrap
 msgid "Fedora Installtion Summary"
-msgstr ""
+msgstr "Резюме щодо встановлення Fedora"
 
 #. type: Target for macro image
 #: ./pages/installation-guide.adoc:84
 #, no-wrap
 msgid "faw-summary-one.png"
-msgstr ""
+msgstr "faw-summary-one.png"
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:93
