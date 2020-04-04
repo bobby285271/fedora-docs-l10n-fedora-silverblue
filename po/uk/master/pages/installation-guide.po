@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Vladyslav Spirin <vladspirin@hotmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-03-25 20:38+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2020-04-04 18:40+0000\n"
+"Last-Translator: Vladyslav Spirin <vladspirin@hotmail.com>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-guide/uk/>\n"
 "Language: uk\n"
@@ -47,6 +48,11 @@ msgid ""
 "you have never installed Fedora before. If you have experience using or\n"
 "installing Fedora, you may be able to skip much of these instructions._\n"
 msgstr ""
+"_ПРИМІТКА: Наступні вказівки написані докладно, припускаючи,\n"
+"що ви ніколи не встановлювали Fedora раніше. Якщо у вас є досвід "
+"використання,\n"
+"або встановлення Fedora, можливо ви зможете пропустити більшу частину цих "
+"інструкцій._\n"
 
 #. type: delimited block -
 #: ./pages/installation-guide.adoc:14
@@ -137,6 +143,11 @@ msgid ""
 "how to access the boot menu of your system's BIOS/UEFI and select the USB "
 "stick as the boot device."
 msgstr ""
+"Після того, як ви успішно створили USB-накопичувач, вам потрібно буде "
+"завантажити систему з USB-накопичувача. Залежно від вашої системи, вам "
+"можливо пощастить і вона завантажиться з USB автоматично. В іншому випадку, "
+"вам буде потрібно з'ясовувати, як отримати доступ до меню завантаження BIOS/"
+"UEFI вашої системи та вибрати USB-накопичувач, як завантажувальний пристрій."
 
 #. type: Plain text
 #: ./pages/installation-guide.adoc:50
@@ -144,6 +155,8 @@ msgid ""
 "You should see a Fedora 28 installation screen that is identical to the "
 "Fedora 28 Workstation installer:"
 msgstr ""
+"Ви повинні побачити екран встановлення Fedora 28, ідентичний встановлювачу "
+"Fedora 28 Workstation:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/installation-guide.adoc:51
@@ -166,6 +179,11 @@ msgid ""
 "is working properly, so we'll start the installer. You may see some messages "
 "fly past your screen that look like this:"
 msgstr ""
+"З цього меню, ви можете обрати перевірку носія, щоб переконатися, що USB-"
+"накопичувач, був створений успішно. Або запускайте встановлювач, якщо "
+"відчуваєте себе впевнено. З цього посібника ми знаємо, що USB-накопичувач "
+"працює належним чином, тому ми запустимо встановлювач. Можливо, ви побачите, "
+"що деякі повідомлення пролітають повз ваш екран, та виглядають приблизно так:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/installation-guide.adoc:59
