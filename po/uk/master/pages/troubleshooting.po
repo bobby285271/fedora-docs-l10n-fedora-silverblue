@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-03-16 18:57+0100\n"
+"POT-Creation-Date: 2020-04-10 20:18+0200\n"
 "PO-Revision-Date: 2020-03-21 21:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
@@ -146,9 +146,8 @@ msgid ""
 "You can read more about the work that Alex did on his https://blogs.gnome."
 "org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/[blog]."
 msgstr ""
-"Докладніше про виконану Алексом роботу можна дізнатися з його "
-"https://blogs.gnome.org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/"
-"[блогу]."
+"Докладніше про виконану Алексом роботу можна дізнатися з його https://blogs."
+"gnome.org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/[блогу]."
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:50
@@ -406,8 +405,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:148
 #, no-wrap
 msgid "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
-msgstr ""
-"`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
+msgstr "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:151
@@ -449,10 +447,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:161
 #, no-wrap
 msgid " $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
-msgstr ""
-" $ rpm-ostree override --remove=podman-manpages replace "
-"https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/"
-"x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
+msgstr " $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:163
@@ -473,9 +468,9 @@ msgid ""
 "fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/"
 "podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
 msgstr ""
-"Отримайте `podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm` з "
-"https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/"
-"x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
+"Отримайте `podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm` з https://kojipkgs."
+"fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/"
+"podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:168
@@ -508,9 +503,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:175
 #, no-wrap
 msgid " $ rpm-ostree override reset podman; rpm-ostree override reset podman-manpages\n"
-msgstr ""
-" $ rpm-ostree override reset podman; rpm-ostree override reset podman-"
-"manpages\n"
+msgstr " $ rpm-ostree override reset podman; rpm-ostree override reset podman-manpages\n"
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:176
@@ -535,8 +528,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:185
 #, no-wrap
 msgid " $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
-msgstr ""
-" $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
+msgstr " $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:187
@@ -605,9 +597,7 @@ msgstr "$ rpm-ostree status -b | grep BaseCommit\n"
 #: pages/troubleshooting.adoc:204
 #, no-wrap
 msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-msgstr ""
-"BaseCommit: "
-"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+msgstr "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:211
@@ -621,12 +611,9 @@ msgid ""
 "$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
 "$ sudo reboot\n"
 msgstr ""
-"$ sudo ostree checkout -H "
-"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/"
-"repo/tmp/selinux-fix\n"
+"$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
 "$ sudo ostree fsck --delete\n"
-"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-"
-"policy=/ /ostree/repo/tmp/selinux-fix\n"
+"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
 "$ sudo restorecon -Rv /var\n"
 "$ sudo restorecon -Rv /etc\n"
 "$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
