@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-02-22 13:28+0100\n"
+"POT-Creation-Date: 2020-04-15 02:18+0000\n"
 "PO-Revision-Date: 2020-02-29 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -15,18 +15,18 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.2\n"
 
 #. type: Title =
-#: ./pages/technical-information.adoc:2
+#: pages/technical-information.adoc:2
 #, no-wrap
 msgid "Technical Information"
 msgstr "Технічні відомості"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:7
+#: pages/technical-information.adoc:7
 msgid ""
 "This page provides some background technical information on Silverblue, "
 "including information on the core technologies used to build it, as well as "
@@ -37,7 +37,7 @@ msgstr ""
 "дистрибутива, а також щодо компонування його файлової системи."
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:11
+#: pages/technical-information.adoc:11
 msgid ""
 "Users should not need to know this information. It is provided here for "
 "those who are interested in the technical details or those who want to use "
@@ -48,13 +48,13 @@ msgstr ""
 "Silverblue у якийсь нестандартний спосіб."
 
 #. type: Title ==
-#: ./pages/technical-information.adoc:13
+#: pages/technical-information.adoc:13
 #, no-wrap
 msgid "ostree and rpm-ostree"
 msgstr "ostree та rpm-ostree"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:19
+#: pages/technical-information.adoc:19
 msgid ""
 "https://ostree.readthedocs.io/en/latest/[ostree] is the core technology that "
 "is used to compose, deploy and update Silverblue. ostree operates in a "
@@ -69,11 +69,11 @@ msgstr ""
 "бінарних файлів операційної системи»."
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:23
+#: pages/technical-information.adoc:23
 msgid ""
 "For Silverblue installs, ostree is responsible for deploying and updating "
-"the OS image (including everything below `/` that is not symlinked into "
-"`/var`). It also updates `grub.cfg` entries to point to the current image."
+"the OS image (including everything below `/` that is not symlinked into `/"
+"var`). It also updates `grub.cfg` entries to point to the current image."
 msgstr ""
 "У встановлених системах Silverblue ostree відповідає за розгортання і "
 "оновлення образу операційної системи (зокрема усього у `/`, які не пов'язано "
@@ -81,7 +81,7 @@ msgstr ""
 "так, щоб вони вказували на поточний образ."
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:27
+#: pages/technical-information.adoc:27
 msgid ""
 "https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] builds on top of "
 "ostree, and makes it possible to install RPMs as a “layer” on top of an "
@@ -92,7 +92,7 @@ msgstr ""
 "ostree. Це уможливлює встановлення RPM у Silverblue."
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:33
+#: pages/technical-information.adoc:33
 msgid ""
 "When a package is installed with `rpm-ostree`, a new OS image is composed by "
 "adding the RPM payload to the existing OS image, and creating a new, "
@@ -108,25 +108,30 @@ msgstr ""
 "кожного разу, коли ви оновлюєте базовий образ операційної системи."
 
 #. type: Title ==
-#: ./pages/technical-information.adoc:35
+#: pages/technical-information.adoc:35
 #, no-wrap
 msgid "Silverblue filesystem layout"
 msgstr "Компонування файлової системи Silverblue"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:39
+#: pages/technical-information.adoc:39
 msgid ""
 "On Silverblue, the root filesystem is immutable. This means that `/`, `/usr` "
 "and everything below it is read-only."
 msgstr ""
-"У Silverblue коренева файлова система є незмінною. Це означає, що `/`, `/usr`"
-" і усі підлеглі щодо них каталоги є придатними лише для читання."
+"У Silverblue коренева файлова система є незмінною. Це означає, що `/`, `/"
+"usr` і усі підлеглі щодо них каталоги є придатними лише для читання."
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:43
+#: pages/technical-information.adoc:43
+#, fuzzy
+#| msgid ""
+#| "`/var` is where all of Silverblue's runtime state is stored. Symlinks are "
+#| "used to make traditional state-carrying directors available in their "
+#| "expected locations. This includes:"
 msgid ""
 "`/var` is where all of Silverblue's runtime state is stored. Symlinks are "
-"used to make traditional state-carrying directors available in their "
+"used to make traditional state-carrying directories available in their "
 "expected locations. This includes:"
 msgstr ""
 "Усі динамічні частини Silverblue зберігаються у `/var`. Для створення "
@@ -135,53 +140,53 @@ msgstr ""
 "каталогів:"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:45
+#: pages/technical-information.adoc:45
 msgid "`/home` → `/var/home`"
 msgstr "`/home` → `/var/home`"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:46
+#: pages/technical-information.adoc:46
 msgid "`/opt` → `/var/opt`"
 msgstr "`/opt` → `/var/opt`"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:47
+#: pages/technical-information.adoc:47
 msgid "`/srv` → `/var/srv`"
 msgstr "`/srv` → `/var/srv`"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:48
+#: pages/technical-information.adoc:48
 msgid "`/root` → `/var/roothome`"
 msgstr "`/root` → `/var/roothome`"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:49
+#: pages/technical-information.adoc:49
 msgid "`/usr/local` → `/var/usrlocal`"
 msgstr "`/usr/local` → `/var/usrlocal`"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:50
+#: pages/technical-information.adoc:50
 msgid "`/mnt`→ `/var/mnt`"
 msgstr "`/mnt`→ `/var/mnt`"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:51
+#: pages/technical-information.adoc:51
 msgid "`/tmp` → `/sysroot/tmp`"
 msgstr "`/tmp` → `/sysroot/tmp`"
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:53
-msgid "This means that separate home partitions should be mounted on `/var/home`."
+#: pages/technical-information.adoc:53
+msgid ""
+"This means that separate home partitions should be mounted on `/var/home`."
 msgstr "Це означає, що окремі домашні розділи слід монтувати до `/var/home`."
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:57
+#: pages/technical-information.adoc:57
 msgid ""
 "For a more detailed explanation of Silverblue's filesystem layout, refer to "
-"the excellent "
-"https://ostree.readthedocs.io/en/latest/manual/adapting-existing/[libostree "
-"documentation]."
+"the excellent https://ostree.readthedocs.io/en/latest/manual/adapting-"
+"existing/[libostree documentation]."
 msgstr ""
 "Докладніший опис компонування файлової системи Silverblue можна знайти у "
-"чудовій https://ostree.readthedocs.io/en/latest/manual/adapting-existing/["
-"документації із libostree]."
+"чудовій https://ostree.readthedocs.io/en/latest/manual/adapting-existing/"
+"[документації із libostree]."
