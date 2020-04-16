@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-03-25 20:38+0000\n"
+"PO-Revision-Date: 2020-04-16 02:27+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesf29-release-notes/uk/>\n"
@@ -179,6 +179,14 @@ msgid ""
 "https://flathub.org/[Flathub].  Those packages that are not available as "
 "Flatpaks can be layered onto the system with `rpm-ostree install`."
 msgstr ""
+"З розвитком Fedora Silverblue ми намагаємося зменшити розмір встановлюваного "
+"дистрибутива кожного випуску. Це означає, що ми вилучаємо деякі пакунки, які "
+"доступні у форматі Flatpak, з маніфесту. Багато типових програм GNOME, які "
+"встановлюються у типовому дистрибутиві Fedora Workstation (зокрема `gedit`, "
+"`evolution`, `gnome-calculator` тощо) було вилучено з Silverblue.  Ви можете "
+"знайти версії у форматі Flatpak багатьох (але не усіх) програм GNOME на "
+"https://flathub.org/[Flathub]. Пакунки, версій яких у форматі Flatpak не "
+"існує, можна нашарувати на вашу систему за допомогою`rpm-ostree install`."
 
 #. type: Plain text
 #: ./pages/f29-release-notes.adoc:68
@@ -193,6 +201,11 @@ msgid ""
 "Flatpaks available from Flathub, just follow the "
 "https://flatpak.org/setup/Fedora/[install instructions]."
 msgstr ""
+"Оскільки на Flathub розповсюджується і програмне забезпечення, яке не є "
+"вільним, учасники Проєкту Fedora вирішили не вмикати сховище Flathub за "
+"типових налаштувань. Якщо ви хочете скористатися пакунками Flatpak з "
+"Flathub, просто виконайте https://flatpak.org/setup/Fedora/[настанови зі "
+"встановлення цього сховища пакунків]."
 
 #. type: Title -
 #: ./pages/f29-release-notes.adoc:75
@@ -209,6 +222,11 @@ msgid ""
 "using the `skopeo` command to copy the images from the Docker storage to the "
 "`podman` storage."
 msgstr ""
+"Якщо раніше ви користувалися `docker` для запуску і керування вашими "
+"контейнерами у Fedora 28 Silverblue, вам варто перенести ваші наявні "
+"контейнери до місця, де до них зможе отримувати доступ `podman`.  Зробити це "
+"можна за допомогою команди `skopeo`, яка скопіює образи зі сховища Docker до "
+"сховища `podman`."
 
 #. type: Plain text
 #: ./pages/f29-release-notes.adoc:83
@@ -283,6 +301,9 @@ msgid ""
 "use something that will not require manual intervention.  You can string "
 "together some utilties to achieve this goal:"
 msgstr ""
+"Але якщо у вас доволі багато образів, ймовірно, вам варто скористатися "
+"чимось, що не потребуватиме втручання вручну. Для досягнення мети ви можете "
+"скористатися допоміжними програмами:"
 
 #. type: Plain text
 #: ./pages/f29-release-notes.adoc:137
