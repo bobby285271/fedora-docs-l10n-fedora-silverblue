@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-02-22 13:28+0100\n"
+"POT-Creation-Date: 2020-04-17 02:20+0000\n"
 "PO-Revision-Date: 2020-03-23 12:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -15,18 +15,18 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
-#: ./pages/getting-started.adoc:2
+#: pages/getting-started.adoc:2
 #, no-wrap
 msgid "Getting Started"
 msgstr "Перші кроки"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:8
+#: pages/getting-started.adoc:8
 msgid ""
 "Silverblue is designed to be easy and straightforward to use, and specialist "
 "knowledge should generally not be required. However, Silverblue is built "
@@ -39,18 +39,18 @@ msgstr ""
 "речей, про які корисно знати."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:12
+#: pages/getting-started.adoc:12
 msgid ""
 "Silverblue has different options for installing software, compared with a "
-"standard Fedora Workstation (or other package-based Linux "
-"distributions). These include:"
+"standard Fedora Workstation (or other package-based Linux distributions). "
+"These include:"
 msgstr ""
 "У Silverblue передбачено інші варіанти встановлення програмного "
 "забезпечення, порівняно зі стандартною Fedora Workstation (або іншими "
 "заснованими на пакунках дистрибутивами Linux). Це, зокрема:"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:14
+#: pages/getting-started.adoc:14
 msgid ""
 "Flatpak apps: this is the primary way that (GUI) apps get installed on "
 "Silverblue."
@@ -59,14 +59,14 @@ msgstr ""
 "інтерфейсом) у Silverblue."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:15
+#: pages/getting-started.adoc:15
 msgid "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
 msgstr ""
 "Toolbox: використовується в основному для програм із текстовим інтерфейсом "
 "командного рядка, інструментів діагностики тощо."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:18
+#: pages/getting-started.adoc:18
 msgid ""
 "Package layering: The rpm-ostree tool used for host updates is a full hybrid "
 "image/package system.  By default the system operates in pure image mode, "
@@ -78,7 +78,7 @@ msgstr ""
 "для встановлення libvirt, драйверів тощо."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:20
+#: pages/getting-started.adoc:20
 msgid ""
 "For information on <<flatpak>> and <<package-layering,package layering>>, "
 "see below."
@@ -87,7 +87,7 @@ msgstr ""
 "наведено нижче."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:22
+#: pages/getting-started.adoc:22
 msgid ""
 "See the dedicated <<toolbox.adoc#toolbox,toolbox>> page to get started with "
 "it."
@@ -95,13 +95,13 @@ msgstr ""
 "Ознайомтеся, для початку, зі сторінкою щодо <<toolbox.adoc#toolbox,toolbox>>."
 
 #. type: Title ==
-#: ./pages/getting-started.adoc:24
+#: pages/getting-started.adoc:24
 #, no-wrap
 msgid "Flatpak"
 msgstr "Flatpak"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:30
+#: pages/getting-started.adoc:30
 msgid ""
 "Flatpak is the primary way that apps can be installed on Silverblue. (For "
 "information, see http://flatpak.org[flatpak.org].) Flatpak works out of the "
@@ -115,7 +115,7 @@ msgstr ""
 "встановити."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:33
+#: pages/getting-started.adoc:33
 msgid ""
 "The other main source of Flatpak apps is https://flathub.org/home[Flathub], "
 "which provides a large repository of Flatpak apps that can be installed."
@@ -124,61 +124,60 @@ msgstr ""
 "який надає велике сховище пакунків Flatpak, які можна встановити до системи."
 
 #. type: Title ==
-#: ./pages/getting-started.adoc:35
+#: pages/getting-started.adoc:35
 #, no-wrap
 msgid "Setting up Flathub"
 msgstr "Налаштовування Flathub"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:40
+#: pages/getting-started.adoc:40
 msgid ""
-"To setup Flathub on Fedora Silverblue, open the "
-"https://flatpak.org/setup/Fedora/[Flathub setup page for Fedora] and click "
-"the “Flathub repository file” button to download the Flathub configuration."
+"To setup Flathub on Fedora Silverblue, open the https://flatpak.org/setup/"
+"Fedora/[Flathub setup page for Fedora] and click the “Flathub repository "
+"file” button to download the Flathub configuration."
 msgstr ""
-"Щоб налаштувати використання Flathub у Fedora Silverblue, відкрийте "
-"https://flatpak.org/setup/Fedora/[сторінку налаштовування Flathub для Fedora]"
-" і натисніть кнопку «Flathub repository file» для отримання налаштувань "
-"Flathub."
+"Щоб налаштувати використання Flathub у Fedora Silverblue, відкрийте https://"
+"flatpak.org/setup/Fedora/[сторінку налаштовування Flathub для Fedora] і "
+"натисніть кнопку «Flathub repository file» для отримання налаштувань Flathub."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/getting-started.adoc:41
+#: pages/getting-started.adoc:41
 #, no-wrap
 msgid "Fedora quick setup page"
 msgstr "Сторінка швидкого налаштовування Fedora"
 
 #. type: Target for macro image
-#: ./pages/getting-started.adoc:41
+#: pages/getting-started.adoc:41
 #, no-wrap
 msgid "sfg_flathub_fedora.png"
 msgstr "sfg_flathub_fedora.png"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:46
+#: pages/getting-started.adoc:46
 msgid ""
 "A popup window will show a download option for the file. The “Open with” "
 "option should show “Software Install (default)”. Click on the “OK” button to "
 "start the download."
 msgstr ""
-"У контекстному вікні вам буде запропоновано отримати файл. У списку «"
-"Відкрити за допомогою» має бути показано пункт «Встановлення програмного "
+"У контекстному вікні вам буде запропоновано отримати файл. У списку "
+"«Відкрити за допомогою» має бути показано пункт «Встановлення програмного "
 "забезпечення (типовий)». Натисніть кнопку «Гаразд», щоб розпочати отримання "
 "даних."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/getting-started.adoc:47
+#: pages/getting-started.adoc:47
 #, no-wrap
 msgid "Flathub download options"
 msgstr "Параметри отримання Flathub"
 
 #. type: Target for macro image
-#: ./pages/getting-started.adoc:47
+#: pages/getting-started.adoc:47
 #, no-wrap
 msgid "sfg_flathub_download.png"
 msgstr "sfg_flathub_download.png"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:53
+#: pages/getting-started.adoc:53
 msgid ""
 "After the download is complete, a new window will open showing the Flathub "
 "repository. This window also shows the source location of the repository to "
@@ -191,19 +190,19 @@ msgstr ""
 "сховища Flathub, натисніть кнопку «Встановити» (2)."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/getting-started.adoc:54
+#: pages/getting-started.adoc:54
 #, no-wrap
 msgid "Flathub install window"
 msgstr "Вікно встановлення Flathub"
 
 #. type: Target for macro image
-#: ./pages/getting-started.adoc:54
+#: pages/getting-started.adoc:54
 #, no-wrap
 msgid "sfg_flathub_install.png"
 msgstr "sfg_flathub_install.png"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:58
+#: pages/getting-started.adoc:58
 msgid ""
 "After the repository installation process is complete, the window will be "
 "updated to show a “Remove\" button in place of the “Install” button."
@@ -212,13 +211,13 @@ msgstr ""
 "замість кнопки «Встановити» буде показано кнопку «Вилучити»."
 
 #. type: Title ===
-#: ./pages/getting-started.adoc:59
+#: pages/getting-started.adoc:59
 #, no-wrap
 msgid "Installing Flatpak apps from Flathub"
 msgstr "Встановлення програм Flatpak з Flathub"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:64
+#: pages/getting-started.adoc:64
 msgid ""
 "Once the Flathub repository has been setup, it can be used to install "
 "Flatpak apps. This can be done directly from the Software app, or apps can "
@@ -226,17 +225,17 @@ msgid ""
 msgstr ""
 "Після налаштовування сховища Flathub ним можна користуватися для "
 "встановлення програм Flatpak. Встановлювати програми можна безпосередньо за "
-"допомогою програми «Програмне забезпечення» або безпосередньо "
-"https://flathub.org/home[сайта Flathub]."
+"допомогою програми «Програмне забезпечення» або безпосередньо https://"
+"flathub.org/home[сайта Flathub]."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:70
+#: pages/getting-started.adoc:70
 msgid ""
 "If you choose to install apps from the Flathub website, clicking \"Install\" "
 "will download a file which will be opened by the Software app, which can "
-"then be used to install the app. For example, to install "
-"https://www.libreoffice.org/[LibreOffice], you first search for and open the "
-"LibreOffice page, and then press the “Install” button (2)."
+"then be used to install the app. For example, to install https://www."
+"libreoffice.org/[LibreOffice], you first search for and open the LibreOffice "
+"page, and then press the “Install” button (2)."
 msgstr ""
 "Якщо ви захочете встановити програми з сайта Flathub, натискання кнопки "
 "«Install» призведе до отримання файла, який можна відкрити за допомогою "
@@ -246,7 +245,7 @@ msgstr ""
 "а потім натиснути кнопку «Install» (2)."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:74
+#: pages/getting-started.adoc:74
 msgid ""
 "After clicking the “Install” button, a download information window will be "
 "shown. Verify the correct Flatpak has been downloaded and then click on the "
@@ -257,56 +256,55 @@ msgstr ""
 "натисніть кнопку «Гаразд», щоб розпочати встановлення програми LibreOffice."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/getting-started.adoc:75
+#: pages/getting-started.adoc:75
 #, no-wrap
 msgid "LibreOffice Flatpak download"
 msgstr "Отримання Flatpak LibreOffice"
 
 #. type: Target for macro image
-#: ./pages/getting-started.adoc:75
+#: pages/getting-started.adoc:75
 #, no-wrap
 msgid "sfg_libreoffice_install.png"
 msgstr "sfg_libreoffice_install.png"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:79
+#: pages/getting-started.adoc:79
 msgid ""
 "Once the Flatpak is downloaded, the Software application will open a new "
-"window with an “Install” button (2). Click this button to begin "
-"installation."
+"window with an “Install” button (2). Click this button to begin installation."
 msgstr ""
 "Коли отримання пакунка Flatpak буде завершено, програма «Програмне "
 "забезпечення» відкриє нове вікно із кнопкою «Встановити» (2). Натисніть цю "
 "кнопку, щоб розпочати встановлення."
 
 #. type: Title ===
-#: ./pages/getting-started.adoc:80
+#: pages/getting-started.adoc:80
 #, no-wrap
 msgid "Flatpak command line"
 msgstr "Командний рядок Flatpak"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:86
+#: pages/getting-started.adoc:86
 msgid ""
 "In addition to using the Software app to install Flatpak apps, it is also "
-"possible to use the `flatpak` command line interface. See the "
-"http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] "
-"for how to do this."
+"possible to use the `flatpak` command line interface. See the http://docs."
+"flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] for how to "
+"do this."
 msgstr ""
-"Окрім використання для встановлення програм з пакунків Flatpak програми «"
-"Програмне забезпечення», ви можете скористатися інтерфейсом командного рядка "
-"`flatpak`. Щоб дізнатися більше про те, як це зробити, ознайомтеся із "
+"Окрім використання для встановлення програм з пакунків Flatpak програми "
+"«Програмне забезпечення», ви можете скористатися інтерфейсом командного "
+"рядка `flatpak`. Щоб дізнатися більше про те, як це зробити, ознайомтеся із "
 "http://docs.flatpak.org/en/latest/using-flatpak.html[документацією до "
 "Flatpak]."
 
 #. type: Title ==
-#: ./pages/getting-started.adoc:88
+#: pages/getting-started.adoc:88
 #, no-wrap
 msgid "Package layering"
 msgstr "Нашаровування пакунків"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:92
+#: pages/getting-started.adoc:92
 msgid ""
 "Package layering works by modifying your Silverblue installation. As the "
 "name implies, it works by extending the packages from which Silverblue is "
@@ -317,27 +315,27 @@ msgstr ""
 "списку пакунків, з яких складається Silverblue."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:94
+#: pages/getting-started.adoc:94
 msgid "Good examples of packages to be layered would be:"
 msgstr "Непоганим прикладом пакунків, які можна нашарувати, є:"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:96
+#: pages/getting-started.adoc:96
 msgid "`fish`: An alternative Unix shell"
 msgstr "`fish`: альтернативна командна оболонка Unix"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:97
+#: pages/getting-started.adoc:97
 msgid "`sway`: A Wayland tiling compositor"
 msgstr "`sway`: мозаїчний засіб компонування вікон для Wayland"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:98
+#: pages/getting-started.adoc:98
 msgid "`libvirt`: The libvirt daemon"
 msgstr "`libvirt`: фонова служба libvirt"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:101
+#: pages/getting-started.adoc:101
 msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
 "Silverblue using this method."
@@ -346,7 +344,7 @@ msgstr ""
 "RPM зі сховищ Fedora."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:107
+#: pages/getting-started.adoc:107
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
@@ -366,7 +364,7 @@ msgstr ""
 "install` всередині `toolbox`."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:111
+#: pages/getting-started.adoc:111
 msgid ""
 "Package layering is generally done from the command line. However, the "
 "Software application does rely on it for installing a small number of apps "
@@ -377,24 +375,24 @@ msgstr ""
 "програм, які зараз важко встановити за допомогою пакунків Flatpak."
 
 #. type: Title ===
-#: ./pages/getting-started.adoc:112
+#: pages/getting-started.adoc:112
 #, no-wrap
 msgid "Installing packages"
 msgstr "Встановлення пакунків"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:115
+#: pages/getting-started.adoc:115
 msgid "Packages can be installed on Silverblue using:"
 msgstr "Пакунки можна встановлювати у Silverblue за допомогою такої команди:"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:117
+#: pages/getting-started.adoc:117
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
 msgstr " $ rpm-ostree install <назва пакунка>\n"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:122
+#: pages/getting-started.adoc:122
 msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
@@ -402,13 +400,13 @@ msgid ""
 "Silverblue host, but can be used in a link:toolbox[toolbox])."
 msgstr ""
 "Ця команда виконає отримання пакунка та усіх потрібних залежностей і "
-"перекомпонує образ Silverblue, встановивши їх відповідним чином. `rpm-ostree`"
-" використовує стандартні назви пакунків Fedora, визначити які можна за "
-"допомогою DNF (цієї програми немає у основній системі Silverblue, але нею "
+"перекомпонує образ Silverblue, встановивши їх відповідним чином. `rpm-"
+"ostree` використовує стандартні назви пакунків Fedora, визначити які можна "
+"за допомогою DNF (цієї програми немає у основній системі Silverblue, але нею "
 "можна скористатися у link:toolbox[toolbox])."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:125
+#: pages/getting-started.adoc:125
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
@@ -418,13 +416,13 @@ msgstr ""
 "системи."
 
 #. type: Title ===
-#: ./pages/getting-started.adoc:126
+#: pages/getting-started.adoc:126
 #, no-wrap
 msgid "Replacing packages"
 msgstr "Заміна пакунків"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:130
+#: pages/getting-started.adoc:130
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
@@ -438,13 +436,13 @@ msgstr ""
 "ваш комп'ютер, а потім віддати таку команду:"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:132
+#: pages/getting-started.adoc:132
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
 msgstr " $ rpm-ostree override replace <шлях до пакунка>\n"
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:134
+#: pages/getting-started.adoc:134
 msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
@@ -455,14 +453,13 @@ msgstr ""
 "шарі, але не з'являтимуться у завантаженій кореневій файловій системі."
 
 #. type: Plain text
-#: ./pages/getting-started.adoc:137
+#: pages/getting-started.adoc:137
 msgid ""
 "Removing and replacing packages using package layering is not generally "
-"recommended. For more information, see the "
-"https://rpm-ostree.readthedocs.io/en/latest/manual/administrator-handbook/[rpm-ostree "
-"documentation]."
+"recommended. For more information, see the https://rpm-ostree.readthedocs.io/"
+"en/latest/manual/administrator-handbook/[rpm-ostree documentation]."
 msgstr ""
 "Загалом, не рекомендуємо вам користуватися вилученням або заміною пакунків з "
 "використанням нашаровування. Щоб дізнатися про це більше, ознайомтеся із "
-"https://rpm-ostree.readthedocs.io/en/latest/manual/administrator-handbook/["
-"документацією до rpm-ostree]."
+"https://rpm-ostree.readthedocs.io/en/latest/manual/administrator-handbook/"
+"[документацією до rpm-ostree]."
