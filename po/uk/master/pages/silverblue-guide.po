@@ -15,23 +15,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
-#: ./pages/silverblue-guide.adoc:1
+#: pages/silverblue-guide.adoc:1
 #, no-wrap
 msgid "Silverblue User Guide"
 msgstr "Підручник користувача Silverblue"
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:4
+#: pages/silverblue-guide.adoc:4
 msgid "Steven Snow <s40w5s@gmail.com> V Pre-Alpha, 2018/11/11"
 msgstr "Steven Snow <s40w5s@gmail.com> V Pre-Alpha, 2018/11/11"
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:10
+#: pages/silverblue-guide.adoc:10
 msgid ""
 "This Document is a work in progress. It aims to help with the daily use of "
 "Silverblue as a Workstation solution."
@@ -40,31 +40,29 @@ msgstr ""
 "користуванні Silverblue на звичайній робочій станції."
 
 #. type: Block title
-#: ./pages/silverblue-guide.adoc:11
+#: pages/silverblue-guide.adoc:11
 #, no-wrap
 msgid "Help Wanted!"
 msgstr "Нам потрібна ваша допомога!"
 
 #. type: delimited block *
-#: ./pages/silverblue-guide.adoc:16
+#: pages/silverblue-guide.adoc:16
 #, no-wrap
 msgid ""
-"If you would like to help this document become better, and have some ideas "
-"on how,\n"
+"If you would like to help this document become better, and have some ideas on how,\n"
 " please message me at\n"
 msgstr ""
-"Якщо ви хочете допомогти із поліпшенням цього документа і маєте якісь ідеї з "
-"приводу того, як це зробити,\n"
+"Якщо ви хочете допомогти із поліпшенням цього документа і маєте якісь ідеї з приводу того, як це зробити,\n"
 " будь ласка, повідомте про це автору документа за адресою\n"
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:18
+#: pages/silverblue-guide.adoc:18
 #, no-wrap
 msgid "Document Conventions"
 msgstr "Угоди щодо документування"
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:20
+#: pages/silverblue-guide.adoc:20
 msgid ""
 "This document will show Notes, Tip's, Information, Cautions, and Warnings as "
 "follows"
@@ -73,47 +71,46 @@ msgstr ""
 "зауваження ось так:"
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:23
+#: pages/silverblue-guide.adoc:23
 msgid "This is a note to show how this note would be displayed."
 msgstr "Це нотатка для показу того, як має бути показано нотатку."
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:25
+#: pages/silverblue-guide.adoc:25
 msgid "This is a tip, perhaps one you didn't know."
 msgstr "Це підказка — ймовірно, ви цього не знали."
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:27
+#: pages/silverblue-guide.adoc:27
 msgid "This is something important on the topic."
 msgstr "Це щось важливе з поточної теми."
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:29
+#: pages/silverblue-guide.adoc:29
 msgid "Cautionary note!"
 msgstr "Попередження!"
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:31
+#: pages/silverblue-guide.adoc:31
 msgid "This is a warning as it would appear!"
 msgstr "Ось так буде показано зауваження!"
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:35
+#: pages/silverblue-guide.adoc:35
 msgid ""
 "Whenever a terminal issued command is used it will appear like so `~]$ "
 "command`, and any other form of coding listed in the document will take the "
-"form of `for config (~/.zsh/*.zsh) source $config` without the leading "
-"`~]$`."
+"form of `for config (~/.zsh/*.zsh) source $config` without the leading `~]$`."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:36
+#: pages/silverblue-guide.adoc:36
 #, no-wrap
 msgid "Introduction"
 msgstr "Вступ"
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:62
+#: pages/silverblue-guide.adoc:62
 msgid ""
 "Daily use of Fedora Silverblue as an acceptable workstation is not so easy "
 "as its wonderfully seamless installation process would belie. Independence "
@@ -146,30 +143,30 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:63
+#: pages/silverblue-guide.adoc:63
 #, no-wrap
 msgid "Installing Fedora Silverblue"
 msgstr "Встановлення Fedora Silverblue"
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:66
+#: pages/silverblue-guide.adoc:66
 msgid ""
-"The installation instructions for Silverblue can be found "
-"https://docs.fedoraproject.org/en-US/fedora-silverblue/installation-guide/[here] "
-"and are thorough, with links there to the Fedora Installation Guide as well "
-"as some other sources of reference material for Silverblue. While it is "
-"detailed and easy to follow, like many installation documents, doesn't fill "
-"in answers a user may have pre-installation."
+"The installation instructions for Silverblue can be found https://docs."
+"fedoraproject.org/en-US/fedora-silverblue/installation-guide/[here] and are "
+"thorough, with links there to the Fedora Installation Guide as well as some "
+"other sources of reference material for Silverblue. While it is detailed and "
+"easy to follow, like many installation documents, doesn't fill in answers a "
+"user may have pre-installation."
 msgstr ""
 
 #. type: Block title
-#: ./pages/silverblue-guide.adoc:67
+#: pages/silverblue-guide.adoc:67
 #, no-wrap
 msgid "Layering"
 msgstr ""
 
 #. type: delimited block *
-#: ./pages/silverblue-guide.adoc:70
+#: pages/silverblue-guide.adoc:70
 msgid ""
 "In the issue noted in the Introduction, the package Proselint was layered "
 "onto the rpm-ostree to solve the lacking proselint executable. If you have a "
@@ -177,7 +174,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:72
+#: pages/silverblue-guide.adoc:72
 msgid ""
 "Answers to such questions as, Do I want to encrypt my storage media? Am I "
 "going to use the standard RXVT terminal or do I want TMUX and Terminator, or "
@@ -185,60 +182,61 @@ msgid ""
 "selection of the many potential questions that may plague a user intending "
 "on using Fedora Silverblue as their daily workstation, and we haven't even "
 "contemplated the immutable OS much yet. Each use case draws its own set of "
-"questions needing answers to facilitate a successful "
-"installation. Throughout, and integral to these many faceted usage "
-"environments, are the individual tasks all of us users do to set up our "
-"computing environment to suit our use case needs. These tasks are the "
-"procedure we follow, whether recorded for reference or not, each time we go "
-"through the process of setting up our workstation's. Some, as indicated "
-"https://discussion.fedoraproject.org/t/how-i-automated-my-fedora-workstation-with-modular-ansible-roles/579/4[here] "
-"in a discussion at fedoraproject.org have automated their workstation setup, "
-"in this case using Ansible Roles. Then there are a couple of examples of "
-"using github to have a repo for a convenient way of being able to "
-"setup/reset a system to a known state. At a discussion about suggested "
-"approaches to correctly setup Silverblue "
-"https://discussion.fedoraproject.org/t/what-is-the-suggested-approach-es-to-correctly-set-up-a-silverblue-workstation/432[here] "
-"examples of that were offered as potential answers."
+"questions needing answers to facilitate a successful installation. "
+"Throughout, and integral to these many faceted usage environments, are the "
+"individual tasks all of us users do to set up our computing environment to "
+"suit our use case needs. These tasks are the procedure we follow, whether "
+"recorded for reference or not, each time we go through the process of "
+"setting up our workstation's. Some, as indicated https://discussion."
+"fedoraproject.org/t/how-i-automated-my-fedora-workstation-with-modular-"
+"ansible-roles/579/4[here] in a discussion at fedoraproject.org have "
+"automated their workstation setup, in this case using Ansible Roles. Then "
+"there are a couple of examples of using github to have a repo for a "
+"convenient way of being able to setup/reset a system to a known state. At a "
+"discussion about suggested approaches to correctly setup Silverblue https://"
+"discussion.fedoraproject.org/t/what-is-the-suggested-approach-es-to-"
+"correctly-set-up-a-silverblue-workstation/432[here] examples of that were "
+"offered as potential answers."
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:73
+#: pages/silverblue-guide.adoc:73
 #, no-wrap
 msgid "Automatic Partitioning"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:74
+#: pages/silverblue-guide.adoc:74
 #, no-wrap
 msgid "Manual Partitioning"
 msgstr "Поділ диска вручну"
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:75
+#: pages/silverblue-guide.adoc:75
 #, no-wrap
 msgid "Installing Side by Side with an Existing System"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:76
+#: pages/silverblue-guide.adoc:76
 #, no-wrap
 msgid "First Login"
 msgstr "Перший вхід до системи"
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:77
+#: pages/silverblue-guide.adoc:77
 #, no-wrap
 msgid "Lay of the Land"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:78
+#: pages/silverblue-guide.adoc:78
 #, no-wrap
 msgid "Containers vs Flatpak vs Package Layering"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:88
+#: pages/silverblue-guide.adoc:88
 msgid ""
 "Through the course of using Silverblue daily, it has become apparent that an "
 "orchestration of all three technologies is what occurs in fact. There are "
@@ -252,7 +250,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:94
+#: pages/silverblue-guide.adoc:94
 msgid ""
 "Each of the technologies expose varying levels of access to the OS image, "
 "with the Layering approach being the most intrusive in the fact it causes a "
@@ -263,43 +261,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:96
+#: pages/silverblue-guide.adoc:96
 msgid "Need verification and details here about the different roles of each."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:115
+#: pages/silverblue-guide.adoc:115
 msgid ""
 "As stated on https://flatpak.org/[flatpak.org] 'Flatpak is a next-generation "
-"technology for building and distributing desktop applications on "
-"Linux. Flatpak uses libostree to store application data, distinct from the "
-"host system management model.' In practice, what this means is that the "
-"flatpak deployment of an application does not normally have access to the "
-"host OS directly, or any other applications running on the host. The "
-"application is running on a runtime contained inside of the flatpak "
-"itself. If this sounds a lot like a flatpak is a container, it's because it "
-"is a container essentially. An application in flatpak form is running inside "
-"of its own environment designed specifically to make it work as intended, "
-"irrespective of the host OS, and is quite effectively sandboxed. One of "
-"Flatpak’s main goals is to increase the security of desktop systems by "
-"isolating applications from one another. This is achieved using sandboxing "
-"and means that, by default, applications that are run with Flatpak have "
-"extremely limited access to the host environment. For day to day usage in "
-"roles that encompass the bulk of things users generally are doing at their "
-"PC Silverblue, with its immutable OS and flatpak'd applications proves to "
+"technology for building and distributing desktop applications on Linux. "
+"Flatpak uses libostree to store application data, distinct from the host "
+"system management model.' In practice, what this means is that the flatpak "
+"deployment of an application does not normally have access to the host OS "
+"directly, or any other applications running on the host. The application is "
+"running on a runtime contained inside of the flatpak itself. If this sounds "
+"a lot like a flatpak is a container, it's because it is a container "
+"essentially. An application in flatpak form is running inside of its own "
+"environment designed specifically to make it work as intended, irrespective "
+"of the host OS, and is quite effectively sandboxed. One of Flatpak’s main "
+"goals is to increase the security of desktop systems by isolating "
+"applications from one another. This is achieved using sandboxing and means "
+"that, by default, applications that are run with Flatpak have extremely "
+"limited access to the host environment. For day to day usage in roles that "
+"encompass the bulk of things users generally are doing at their PC "
+"Silverblue, with its immutable OS and flatpak'd applications proves to "
 "function quite well. The updates are rolling along regularly just like the "
 "Fedora Workstation I had become used to, and the majority of my applications "
 "that are flatpak's work as they are intended to."
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:116
+#: pages/silverblue-guide.adoc:116
 #, no-wrap
 msgid "Using Flatpaks/Flathub"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:144
+#: pages/silverblue-guide.adoc:144
 msgid ""
 "When you first run Silverblue after the initial installation steps, you will "
 "likely want to install some applications, and to do that no doubt you first "
@@ -323,24 +321,24 @@ msgid ""
 "flatpak'd applications and extensions available on the Flathub repo. These "
 "applications will be displayed as usual in Gnome Software with their origin "
 "being dl.flathub.org. There are more applications being offered as flatpak's "
-"each day it seems, so check back often if your favourite isn't listed "
-"yet. There is more you can do with the repo now that you have it "
-"installed. The flatpak command has numerous options that are useful for "
-"inspecting what is available at a configured repo. The command `flatpak "
-"remotes` will list the installed/configured repositories, and if you use the "
-"`-d` switch with the command like so `flatpak remotes -d` you will get a "
-"detailed listing of your configured remotes (repo's)."
+"each day it seems, so check back often if your favourite isn't listed yet. "
+"There is more you can do with the repo now that you have it installed. The "
+"flatpak command has numerous options that are useful for inspecting what is "
+"available at a configured repo. The command `flatpak remotes` will list the "
+"installed/configured repositories, and if you use the `-d` switch with the "
+"command like so `flatpak remotes -d` you will get a detailed listing of your "
+"configured remotes (repo's)."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:146
+#: pages/silverblue-guide.adoc:146
 msgid ""
 "Flatpak refers to repositories as remotes, even if the repo exists on your "
 "own system."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:161
+#: pages/silverblue-guide.adoc:161
 msgid ""
 "Also, it is worth noting that there are other remotes available to be "
 "configured on your system if you would like to explore some more. If you "
@@ -348,189 +346,189 @@ msgid ""
 "part of the Ostree of Silverblue, you could configure the firefox nighly "
 "remote (https://dl.flathub.org/repo/) with the following command `flatpak "
 "remote-add firefox-nightly <https://dl.flathub.org/repo/>` then install the "
-"FireFox nightly build with the command `flatpak install firefox-nightly "
-"org.mozilla.FirefoxNightly` and flatpak will install the Firefox nightly "
-"build for you. You may have already come to the conclusion that you could "
-"also install it from Gnome Software since you have configured the remote, "
-"and you would be correct but take note of the source listed on its install "
-"icon, it is the remote you just configured. As no doubt. some of the clever "
-"monkeys out there have likely noted when they did a remote-ls command on "
-"their configured flathub remote, there are more things listed than the "
-"app's. There are runtimes, and sdk's as well as app's since Flathub.org is a "
-"place to distribute such things."
+"FireFox nightly build with the command `flatpak install firefox-nightly org."
+"mozilla.FirefoxNightly` and flatpak will install the Firefox nightly build "
+"for you. You may have already come to the conclusion that you could also "
+"install it from Gnome Software since you have configured the remote, and you "
+"would be correct but take note of the source listed on its install icon, it "
+"is the remote you just configured. As no doubt. some of the clever monkeys "
+"out there have likely noted when they did a remote-ls command on their "
+"configured flathub remote, there are more things listed than the app's. "
+"There are runtimes, and sdk's as well as app's since Flathub.org is a place "
+"to distribute such things."
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:163
+#: pages/silverblue-guide.adoc:163
 #, no-wrap
 msgid "Using Package Layering"
 msgstr "Користування нашаровуванням пакунків"
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:164
+#: pages/silverblue-guide.adoc:164
 #, no-wrap
 msgid "Enabling 3rd Party RPM Repos"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:165
+#: pages/silverblue-guide.adoc:165
 #, no-wrap
 msgid "Command Line vs. Gnome Software"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:167
+#: pages/silverblue-guide.adoc:167
 #, no-wrap
 msgid "Using Containers"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:168
+#: pages/silverblue-guide.adoc:168
 #, no-wrap
 msgid "Using Podman to Run Containers"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:169
+#: pages/silverblue-guide.adoc:169
 #, no-wrap
 msgid "Running Your First Container"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:170
+#: pages/silverblue-guide.adoc:170
 #, no-wrap
 msgid "Writing Your First Dockerfile"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:171
+#: pages/silverblue-guide.adoc:171
 #, no-wrap
 msgid "Using Buildah to Build Containers"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:172
+#: pages/silverblue-guide.adoc:172
 #, no-wrap
 msgid "Sharing Data Between Container + Host ?"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:173
+#: pages/silverblue-guide.adoc:173
 #, no-wrap
 msgid "Example Pet Container Usage"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:176
+#: pages/silverblue-guide.adoc:176
 msgid ""
 "On Fedora Silverblue, there is an out of the box solution provided for a Pet "
 "Container, fedora-toolbox. If it isn't already installed for you, you can do "
 "so with the following command `~[$ rpm-ostree install fedora-toolbox`, once "
 "it is installed, you'll have to reboot into the new image with `~[$ "
-"systemctl reboot`. When your image comes back you can begin with "
-"fedora-toolbox immediately by creating an image based upon your current "
-"system installation, including your home directory setup with dotfiles and "
-"all. To create an image this way type `~[$ fedora-toolbox create`, that will "
-"create a toolbox container for you, based upon an image of your current "
-"system setup. To use the container, you simply enter `~[$ fedora-toolbox "
-"enter` and you should now be at a prompt that looks like this in my case "
-"🔹[user@toolbox ~]$ instead of my normal prompt in Fedora Silverblue which is "
-"this Lx  user@localhost  😈 ~ "
+"systemctl reboot`. When your image comes back you can begin with fedora-"
+"toolbox immediately by creating an image based upon your current system "
+"installation, including your home directory setup with dotfiles and all. To "
+"create an image this way type `~[$ fedora-toolbox create`, that will create "
+"a toolbox container for you, based upon an image of your current system "
+"setup. To use the container, you simply enter `~[$ fedora-toolbox enter` and "
+"you should now be at a prompt that looks like this in my case 🔹[user@toolbox "
+"~]$ instead of my normal prompt in Fedora Silverblue which is this Lx  "
+"user@localhost  😈 ~ "
 msgstr ""
 
 #. type: Plain text
-#: ./pages/silverblue-guide.adoc:178
+#: pages/silverblue-guide.adoc:178
 msgid ""
 "The prompts as displayed, are normal for my system setup. They will very "
 "likely be different on your system."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:180
+#: pages/silverblue-guide.adoc:180
 #, no-wrap
 msgid "Upgrades and Rollbacks"
 msgstr "Оновлення та повернення до попередніх версій"
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:181
+#: pages/silverblue-guide.adoc:181
 #, no-wrap
 msgid "Upgrading the OS"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:182
+#: pages/silverblue-guide.adoc:182
 #, no-wrap
 msgid "Rolling Back the OS"
 msgstr "Повернення до попередньої версії операційної системи"
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:183
+#: pages/silverblue-guide.adoc:183
 #, no-wrap
 msgid "Upgrading Flatpaks"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:184
+#: pages/silverblue-guide.adoc:184
 #, no-wrap
 msgid "Upgrading Containers"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:186
+#: pages/silverblue-guide.adoc:186
 #, no-wrap
 msgid "Miscellany ?"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:188
+#: pages/silverblue-guide.adoc:188
 #, no-wrap
 msgid "Generating SSH Keys ?"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:189
+#: pages/silverblue-guide.adoc:189
 #, no-wrap
 msgid "Enabling SSH Access ?"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:190
+#: pages/silverblue-guide.adoc:190
 #, no-wrap
 msgid "Using VPN Connections ?"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:191
+#: pages/silverblue-guide.adoc:191
 #, no-wrap
 msgid "oc cluster up ?"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:193
+#: pages/silverblue-guide.adoc:193
 #, no-wrap
 msgid "Advanced Topics"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:195
+#: pages/silverblue-guide.adoc:195
 #, no-wrap
 msgid "Creating a Custom Silverblue Compose"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:196
+#: pages/silverblue-guide.adoc:196
 #, no-wrap
 msgid "Generating Your Own Silverblue ISO"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/silverblue-guide.adoc:198
+#: pages/silverblue-guide.adoc:198
 #, no-wrap
 msgid "Known Problems"
 msgstr ""
 
 #. type: Title ===
-#: ./pages/silverblue-guide.adoc:200
+#: pages/silverblue-guide.adoc:200
 #, no-wrap
 msgid "Lack of Support for DKMS/AKMOD (i.e. nVidia drivers)"
 msgstr ""
