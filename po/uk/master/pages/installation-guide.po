@@ -16,32 +16,27 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
-#: ./pages/installation-guide.adoc:1
+#: pages/installation-guide.adoc:1
 #, no-wrap
 msgid "Installing Silverblue"
 msgstr "Встановлення Silverblue"
 
 #. type: delimited block -
-#: ./pages/installation-guide.adoc:7
+#: pages/installation-guide.adoc:7
 #, no-wrap
 msgid ""
 "The preferred way to install Silverblue is with the Fedora MediaWriter\n"
-"application. See the https://silverblue.fedoraproject.org/download[Download] "
-"page\n"
+"application. See the https://silverblue.fedoraproject.org/download[Download] page\n"
 "for details on how to create a USB stick to install Silverblue.\n"
-msgstr ""
-"Рекомендованим способом встановлення Silverblue є використання програми "
-"Fedora MediaWriter. Див. сторінку https://silverblue.fedoraproject.org/"
-"download[отримання пакукнів], щоб дізнатися більше про те, як створити "
-"флешку USB для встановлення Silverblue.\n"
+msgstr "Рекомендованим способом встановлення Silverblue є використання програми Fedora MediaWriter. Див. сторінку https://silverblue.fedoraproject.org/download[отримання пакукнів], щоб дізнатися більше про те, як створити флешку USB для встановлення Silverblue.\n"
 
 #. type: delimited block -
-#: ./pages/installation-guide.adoc:11
+#: pages/installation-guide.adoc:11
 #, no-wrap
 msgid ""
 "_NOTE: The following instructions are written in detail, assuming that\n"
@@ -49,13 +44,11 @@ msgid ""
 "installing Fedora, you may be able to skip much of these instructions._\n"
 msgstr ""
 "_ПРИМІТКА: Наступні вказівки написані докладно, припускаючи,\n"
-"що ви ніколи не встановлювали Fedora раніше. Якщо у вас є досвід "
-"використання,\n"
-"або встановлення Fedora, можливо ви зможете пропустити більшу частину цих "
-"інструкцій._\n"
+"що ви ніколи не встановлювали Fedora раніше. Якщо у вас є досвід використання,\n"
+"або встановлення Fedora, можливо ви зможете пропустити більшу частину цих інструкцій._\n"
 
 #. type: delimited block -
-#: ./pages/installation-guide.adoc:14
+#: pages/installation-guide.adoc:14
 #, no-wrap
 msgid ""
 "[[before-you-begin]]\n"
@@ -65,7 +58,7 @@ msgstr ""
 "Перш ніж ви почнете\n"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:18
+#: pages/installation-guide.adoc:18
 msgid ""
 "Before you start the installation process, you should answer the following "
 "questions:"
@@ -74,12 +67,12 @@ msgstr ""
 "питання:"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:20
+#: pages/installation-guide.adoc:20
 msgid "Do you want to retain any existing data on your system?"
 msgstr "Чи хочете ви зберегти наявні дані у вашій системі?"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:23
+#: pages/installation-guide.adoc:23
 msgid ""
 "If yes, you should consider using the link:#manual-partition[manual "
 "partitioning] method during the install process."
@@ -88,7 +81,7 @@ msgstr ""
 "link:#manual-partition[поділу диска на розділи вручну]."
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:26
+#: pages/installation-guide.adoc:26
 msgid ""
 "Alternatively, if your system has an existing Fedora install on it, you "
 "could use the xref:installing-silverblue-side-by-side[side-by-side] install "
@@ -99,7 +92,7 @@ msgstr ""
 "встановленням]."
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:29
+#: pages/installation-guide.adoc:29
 msgid ""
 "Do you want to do a fresh install and do not care about retaining any "
 "existing data on your system?"
@@ -108,18 +101,18 @@ msgstr ""
 "даних у вашій системі?"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:34
+#: pages/installation-guide.adoc:34
 msgid ""
 "If yes, you should consider using the link:#automatic-partition[automatic "
 "partitioning] method during the install process. This is the easiest way to "
 "get Silverblue installed on your system."
 msgstr ""
-"Якщо так, вам варто скористатися способом link:#automatic-partition["
-"автоматичного поділу диска на розділи] під час процедури встановлення. Це "
-"найпростіший спосіб встановити Silverblue у вашій системі."
+"Якщо так, вам варто скористатися способом link:#automatic-"
+"partition[автоматичного поділу диска на розділи] під час процедури "
+"встановлення. Це найпростіший спосіб встановити Silverblue у вашій системі."
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:37
+#: pages/installation-guide.adoc:37
 msgid ""
 "You may still use the link:#manual-partition[manual partitioning] method "
 "during the install process, but it will require some additional steps."
@@ -129,13 +122,13 @@ msgstr ""
 "додаткові кроки."
 
 #. type: Title -
-#: ./pages/installation-guide.adoc:40
+#: pages/installation-guide.adoc:40
 #, no-wrap
 msgid "Starting the Install"
 msgstr "Починаємо встановлення"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:47
+#: pages/installation-guide.adoc:47
 msgid ""
 "After you have successfully created your USB stick, you'll need to boot your "
 "system from the USB stick. Depending on your system, you might get lucky and "
@@ -150,7 +143,7 @@ msgstr ""
 "UEFI вашої системи та вибрати USB-накопичувач, як завантажувальний пристрій."
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:50
+#: pages/installation-guide.adoc:50
 msgid ""
 "You should see a Fedora 28 installation screen that is identical to the "
 "Fedora 28 Workstation installer:"
@@ -159,19 +152,19 @@ msgstr ""
 "Fedora 28 Workstation:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:51
+#: pages/installation-guide.adoc:51
 #, no-wrap
 msgid "Fedora 28 Installer Menu"
 msgstr "Меню засобу встановлення Fedora 28"
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:51
+#: pages/installation-guide.adoc:51
 #, no-wrap
 msgid "faw-boot-menu.png"
 msgstr "faw-boot-menu.png"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:58
+#: pages/installation-guide.adoc:58
 msgid ""
 "From this menu, you can choose to test the media to ensure that the USB "
 "stick was created successfully. Or launch right into the installer if you "
@@ -186,19 +179,19 @@ msgstr ""
 "що деякі повідомлення пролітають повз ваш екран, та виглядають приблизно так:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:59
+#: pages/installation-guide.adoc:59
 #, no-wrap
 msgid "Fedora Installer Services Output"
 msgstr "Дані, які виведено службами встановлення Fedora"
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:59
+#: pages/installation-guide.adoc:59
 #, no-wrap
 msgid "faw-boot-output.png"
 msgstr "faw-boot-output.png"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:64
+#: pages/installation-guide.adoc:64
 msgid ""
 "Eventually, the graphical installer should start and you'll be presented "
 "with the options to select the language you wish to use during the install:"
@@ -208,19 +201,19 @@ msgstr ""
 "встановлення:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:65
+#: pages/installation-guide.adoc:65
 #, no-wrap
 msgid "Fedora Installer Language Selection"
 msgstr "Вибір мови у засобі встановлення Fedora"
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:65
+#: pages/installation-guide.adoc:65
 #, no-wrap
 msgid "faw-boot-welcome.png"
 msgstr "faw-boot-welcome.png"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:76
+#: pages/installation-guide.adoc:76
 msgid ""
 "After selecting your language, the next screen of the installer allows us to "
 "make additional selections regarding the installer. We can configure the "
@@ -228,13 +221,13 @@ msgid ""
 "partitioning. In this guide we are only going to focus on the partitioning "
 "because of certain restrictions in this area when using Silverblue. However, "
 "if you have questions about some of the options of this part (or any part) "
-"of the installer, you can consult the "
-"https://docs.fedoraproject.org/f28/install-guide/install/Installing_Using_Anaconda.html[Fedora "
-"Installation Guide]."
+"of the installer, you can consult the https://docs.fedoraproject.org/f28/"
+"install-guide/install/Installing_Using_Anaconda.html[Fedora Installation "
+"Guide]."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:83
+#: pages/installation-guide.adoc:83
 msgid ""
 "On this screen, you should notice that there is a warning on the bottom of "
 "the screen that says you need to complete the items marked with the warning "
@@ -245,58 +238,58 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:84
+#: pages/installation-guide.adoc:84
 #, no-wrap
 msgid "Fedora Installtion Summary"
 msgstr "Резюме щодо встановлення Fedora"
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:84
+#: pages/installation-guide.adoc:84
 #, no-wrap
 msgid "faw-summary-one.png"
 msgstr "faw-summary-one.png"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:93
+#: pages/installation-guide.adoc:93
 msgid ""
 "After choosing the \"Installation Destination\", you are brought to a screen "
 "where you have to decide if you want to use automatic partitioning or manual "
 "partitioning. If you have existing data on your disk and want to preserve "
-"it, you'll want to link:#manual-partition[manually partition] your "
-"disk(s). However, if you are comfortable with losing any and all existing "
-"data on your disk(s), you can choose link:#automatic-partition[automatic "
+"it, you'll want to link:#manual-partition[manually partition] your disk(s). "
+"However, if you are comfortable with losing any and all existing data on "
+"your disk(s), you can choose link:#automatic-partition[automatic "
 "partitioning]:"
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:94
+#: pages/installation-guide.adoc:94
 #, no-wrap
 msgid "Fedora Installation Destination"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:94
+#: pages/installation-guide.adoc:94
 #, no-wrap
 msgid "faw-storage-start.png"
 msgstr ""
 
 #. type: Title -
-#: ./pages/installation-guide.adoc:98
+#: pages/installation-guide.adoc:98
 #, no-wrap
 msgid "Automatic Partitioning"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:104
+#: pages/installation-guide.adoc:104
 msgid ""
 "If you choose automatic partitioning, your job is almost done. Select the "
-"disk you want to install onto (in this guide we have only a single "
-"disk). Check the radio button that says 'Automatic' and click the big blue "
-"button at the top that says 'Done'."
+"disk you want to install onto (in this guide we have only a single disk). "
+"Check the radio button that says 'Automatic' and click the big blue button "
+"at the top that says 'Done'."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:109
+#: pages/installation-guide.adoc:109
 msgid ""
 "If your disk already has partitions on it, you'll be presented with a dialog "
 "to 'reclaim' space. This means you are going choose which partitions can be "
@@ -304,19 +297,19 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:110
+#: pages/installation-guide.adoc:110
 #, no-wrap
 msgid "Reclaim Disks Dialog"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:110
+#: pages/installation-guide.adoc:110
 #, no-wrap
 msgid "faw-storage-reclaim.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:115
+#: pages/installation-guide.adoc:115
 msgid ""
 "In this guide, we are going to delete all the existing partitions so that we "
 "can use the entirety of the disk for the install. This is easily done with "
@@ -324,38 +317,38 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:116
+#: pages/installation-guide.adoc:116
 #, no-wrap
 msgid "Delete All Partitions"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:116
+#: pages/installation-guide.adoc:116
 #, no-wrap
 msgid "faw-storage-reclaim-two.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:120
+#: pages/installation-guide.adoc:120
 msgid ""
 "And then confirm that you are going to delete all the partitions by clicking "
 "the 'Reclaim space' button:"
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:121
+#: pages/installation-guide.adoc:121
 #, no-wrap
 msgid "Confirming Delete All Partitions"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:121
+#: pages/installation-guide.adoc:121
 #, no-wrap
 msgid "faw-storage-reclaim-delete-all.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:127
+#: pages/installation-guide.adoc:127
 msgid ""
 "With your partitioning choice complete, the installer brings you back to the "
 "installation summary screen and the big blue 'Begin Installation' button is "
@@ -364,42 +357,42 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:128
+#: pages/installation-guide.adoc:128
 #, no-wrap
 msgid "Ready to Begin Installation"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:128
+#: pages/installation-guide.adoc:128
 #, no-wrap
 msgid "faw-summary-two.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:132
+#: pages/installation-guide.adoc:132
 msgid ""
 "Once you have started the install process, you can move on to the next phase "
 "where you will link:#user-config[configure users]."
 msgstr ""
 
 #. type: Title -
-#: ./pages/installation-guide.adoc:135
+#: pages/installation-guide.adoc:135
 #, no-wrap
 msgid "Manual Partitioning"
 msgstr "Поділ диска вручну"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:143
+#: pages/installation-guide.adoc:143
 msgid ""
 "When choosing to manually partition your system, you need to be aware of "
 "certain restrictions specific to Silverblue. Due to how the operating system "
 "and filesystem are managed via libostree, only certain mount points can be "
-"created during the install process. These mount points are limited to "
-"`/boot`, `/var`, subdirectories under `/var`, and the root filesystem."
+"created during the install process. These mount points are limited to `/"
+"boot`, `/var`, subdirectories under `/var`, and the root filesystem."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:149
+#: pages/installation-guide.adoc:149
 msgid ""
 "Unfortunately, the installer (which is shared with vanilla Fedora "
 "Workstation) is not aware of these restrictions specific to Silverblue and "
@@ -408,30 +401,30 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:157
+#: pages/installation-guide.adoc:157
 msgid ""
-"With those restrictions in mind, let's try to manually partition our "
-"system. The first screen you'll see is the \"Installation Destination\" "
-"screen. From here, you can select which disk(s) to use for the install and "
-"choose the partitioning method. For this guide, we only have a single disk, "
-"but you might have more than one disk in your system. In order to select the "
-"manual parition method, click the radio button labeled \"Custom\"."
+"With those restrictions in mind, let's try to manually partition our system. "
+"The first screen you'll see is the \"Installation Destination\" screen. From "
+"here, you can select which disk(s) to use for the install and choose the "
+"partitioning method. For this guide, we only have a single disk, but you "
+"might have more than one disk in your system. In order to select the manual "
+"parition method, click the radio button labeled \"Custom\"."
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:158
+#: pages/installation-guide.adoc:158
 #, no-wrap
 msgid "Selecting Custom Partitioning"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:158
+#: pages/installation-guide.adoc:158
 #, no-wrap
 msgid "faw-storage-custom-one.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:164
+#: pages/installation-guide.adoc:164
 msgid ""
 "This will launch you into the \"Manual Partioning\" screen, which gives you "
 "a minimal overview of the existing storage configuration. In order to see "
@@ -440,19 +433,19 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:165
+#: pages/installation-guide.adoc:165
 #, no-wrap
 msgid "Viewing Existing Partitions"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:165
+#: pages/installation-guide.adoc:165
 #, no-wrap
 msgid "faw-manual-partition-two.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:177
+#: pages/installation-guide.adoc:177
 msgid ""
 "Now we can see that we have three existing partitions on the disk: two "
 "`ext4` partitions and a swap partition. At this point, you should "
@@ -460,26 +453,26 @@ msgid ""
 "they remain intact if you wanted to keep the existing data on your disk.  "
 "But for this guide, we do not want to preserve any data, so we are going to "
 "start deleting all of our existing partitions to start fresh. We start by "
-"selecting the first `ext4` partition in the list labeled "
-"\"fedora-root\". Then we click the button that looks like a dash (\"-\") to "
-"mark the partition to be delete. This brings up a prompt asking you to "
-"confirm that you want to delete the partition."
+"selecting the first `ext4` partition in the list labeled \"fedora-root\". "
+"Then we click the button that looks like a dash (\"-\") to mark the "
+"partition to be delete. This brings up a prompt asking you to confirm that "
+"you want to delete the partition."
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:178
+#: pages/installation-guide.adoc:178
 #, no-wrap
 msgid "Confirm Deletion of Partition"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:178
+#: pages/installation-guide.adoc:178
 #, no-wrap
 msgid "faw-manual-partition-three.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:183
+#: pages/installation-guide.adoc:183
 msgid ""
 "Repeat this process for all the partitions that you want to delete. In this "
 "guide, we have removed all the paritions from the system and have a blank "
@@ -487,19 +480,19 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:184
+#: pages/installation-guide.adoc:184
 #, no-wrap
 msgid "All Partitions Removed"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:184
+#: pages/installation-guide.adoc:184
 #, no-wrap
 msgid "faw-manual-partition-four.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:191
+#: pages/installation-guide.adoc:191
 msgid ""
 "We'll create our first partition by clicking on the button that looks like a "
 "plus sign (\"+\"). This first partition will be our `/boot` where critical "
@@ -509,19 +502,19 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:192
+#: pages/installation-guide.adoc:192
 #, no-wrap
 msgid "Creating the /boot Partition"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:192
+#: pages/installation-guide.adoc:192
 #, no-wrap
 msgid "faw-manual-partition-boot.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:201
+#: pages/installation-guide.adoc:201
 msgid ""
 "The only other partition we absolutely need in order for the system to "
 "install successfully is the root partition (\"/\"). But we have the "
@@ -532,69 +525,68 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:202
+#: pages/installation-guide.adoc:202
 #, no-wrap
 msgid "Creating /var/home Partition"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:202
+#: pages/installation-guide.adoc:202
 #, no-wrap
 msgid "faw-manual-partition-varhome.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:210
+#: pages/installation-guide.adoc:210
 msgid ""
-"You can create additional parititions such as `/var/log` or "
-"`/var/lib/containers`, but for this guide, we will move on to creating the "
-"root partition. We'll finish this part of the install process by creating "
-"the root partition for our system. We can leave the size field blank during "
-"this step and the installer will automatically use the remaining free space "
-"on the disk for the partition."
+"You can create additional parititions such as `/var/log` or `/var/lib/"
+"containers`, but for this guide, we will move on to creating the root "
+"partition. We'll finish this part of the install process by creating the "
+"root partition for our system. We can leave the size field blank during this "
+"step and the installer will automatically use the remaining free space on "
+"the disk for the partition."
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:211
+#: pages/installation-guide.adoc:211
 #, no-wrap
 msgid "Creating Root Partition"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:211
+#: pages/installation-guide.adoc:211
 #, no-wrap
 msgid "faw-manual-partition-root.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:220
+#: pages/installation-guide.adoc:220
 msgid ""
 "With all the partitions created, we can inspect the final configuration "
 "before proceeding. It's worth noting here that the default partitioning "
-"scheme uses "
-"https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM] as the "
-"default partitioning scheme with an `ext4` filesystem. You can change this "
-"during this partitioning phase to use standard partitions or an `xfs` "
-"filesystem, but that is outside the scope of this guide."
+"scheme uses https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux"
+"%29[LVM] as the default partitioning scheme with an `ext4` filesystem. You "
+"can change this during this partitioning phase to use standard partitions or "
+"an `xfs` filesystem, but that is outside the scope of this guide."
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:221
+#: pages/installation-guide.adoc:221
 #, no-wrap
 msgid "Partitioning Complete"
 msgstr "Завершення поділу на розділи"
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:221
+#: pages/installation-guide.adoc:221
 #, no-wrap
 msgid "faw-manual-partition-complete.png"
 msgstr "faw-manual-partition-complete.png"
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:229
+#: pages/installation-guide.adoc:229
 msgid ""
-"After confirming your partitioning choices by clicking the big, blue "
-"\"Done\" button at the top of the screen, you are brought back to the "
+"After confirming your partitioning choices by clicking the big, blue \"Done"
+"\" button at the top of the screen, you are brought back to the "
 "\"Installation Summary\" screen. Here you have a chance to inspect your "
 "choices one last time before starting the actual installation proper.  Once "
 "you click the big, blue \"Begin Installation\" button, your disk(s)  will be "
@@ -602,39 +594,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:232
+#: pages/installation-guide.adoc:232
 msgid ""
-"Once you have started the installer, you can move on to the "
-"link:#user-config[User Configuration] section of this guide."
+"Once you have started the installer, you can move on to the link:#user-"
+"config[User Configuration] section of this guide."
 msgstr ""
 
 #. type: Title -
-#: ./pages/installation-guide.adoc:235
+#: pages/installation-guide.adoc:235
 #, no-wrap
 msgid "User Configuration"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:239
+#: pages/installation-guide.adoc:239
 msgid ""
 "As the installer churns away, you are presented with a screen where you can "
 "configure the root password and create one or more regular users:"
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:240
+#: pages/installation-guide.adoc:240
 #, no-wrap
 msgid "Configuring Users"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:240
+#: pages/installation-guide.adoc:240
 #, no-wrap
 msgid "faw-progress-one.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:247
+#: pages/installation-guide.adoc:247
 msgid ""
 "Firstly, let's configure a root password. Be sure to choose a safe and "
 "strong password that contains a mix of upper and lower case characters, "
@@ -644,19 +636,19 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:248
+#: pages/installation-guide.adoc:248
 #, no-wrap
 msgid "Choosing a Strong Root Password"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:248
+#: pages/installation-guide.adoc:248
 #, no-wrap
 msgid "faw-root-pw-two.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:255
+#: pages/installation-guide.adoc:255
 msgid ""
 "Then we can create a normal, unprivileged user which we will use as our day "
 "to day login. The same suggestions about creating a password for this user "
@@ -666,38 +658,38 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:256
+#: pages/installation-guide.adoc:256
 #, no-wrap
 msgid "Creating an Unprivileged User"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:256
+#: pages/installation-guide.adoc:256
 #, no-wrap
 msgid "faw-user-two.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:260
+#: pages/installation-guide.adoc:260
 msgid ""
 "Once we have the root password configured and an unprivileged user "
 "configured, we just sit back and wait for the installer to complete:"
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: ./pages/installation-guide.adoc:261
+#: pages/installation-guide.adoc:261
 #, no-wrap
 msgid "Waiting for the Installer to Complete"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/installation-guide.adoc:261
+#: pages/installation-guide.adoc:261
 #, no-wrap
 msgid "faw-progress-two.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/installation-guide.adoc:266
+#: pages/installation-guide.adoc:266
 msgid ""
 "Eventually, the installer will finish and you will be presented with a big, "
 "blue button that says 'Reboot'. This will (obviously) reboot your system and "
