@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-13 12:44+0200\n"
+"POT-Creation-Date: 2019-04-19 09:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Title =
-#: ./pages/installation-dual-boot.adoc:1
+#: pages/installation-dual-boot.adoc:1
 #, no-wrap
 msgid "Installing Silverblue, side-by-side"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:7
+#: pages/installation-dual-boot.adoc:7
 #, no-wrap
 msgid ""
 "WARNING: Some users have reported issues when trying to install\n"
 "Silverblue side-by-side.  Please report any issues you may encounter\n"
-"on the https://discussion.fedoraproject.org/c/desktop/silverblue[Silverblue "
-"Forums].\n"
+"on the https://discussion.fedoraproject.org/c/desktop/silverblue[Silverblue Forums].\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:11
+#: pages/installation-dual-boot.adoc:11
 #, no-wrap
 msgid ""
 "A really neat feature of OSTree is that you can parallel install\n"
@@ -42,7 +41,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:15
+#: pages/installation-dual-boot.adoc:15
 #, no-wrap
 msgid ""
 "....\n"
@@ -51,7 +50,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:21
+#: pages/installation-dual-boot.adoc:21
 #, no-wrap
 msgid ""
 "Before proceeding further, make sure that you have enough space in your\n"
@@ -62,13 +61,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:23
+#: pages/installation-dual-boot.adoc:23
 #, no-wrap
 msgid "Next, we add /ostree/repo to the filesystem:\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:27
+#: pages/installation-dual-boot.adoc:27
 #, no-wrap
 msgid ""
 "....\n"
@@ -77,25 +76,22 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:29
+#: pages/installation-dual-boot.adoc:29
 #, no-wrap
 msgid "Add a remote which points to the Silverblue content:\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:33
+#: pages/installation-dual-boot.adoc:33
 #, no-wrap
 msgid ""
 "....\n"
-"ostree remote add "
-"--set=gpgkeypath=/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary fedora "
-"https://ostree.fedoraproject.org "
-"--set=contenturl=mirrorlist=https://ostree.fedoraproject.org/mirrorlist\n"
+"ostree remote add --set=gpgkeypath=/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary fedora https://ostree.fedoraproject.org --set=contenturl=mirrorlist=https://ostree.fedoraproject.org/mirrorlist\n"
 "....\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:37
+#: pages/installation-dual-boot.adoc:37
 #, no-wrap
 msgid ""
 "If you do not have the Fedora 29 GPG primary key, you can get it from\n"
@@ -104,13 +100,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:39
+#: pages/installation-dual-boot.adoc:39
 #, no-wrap
 msgid "Pull down the content (you can interrupt and restart this):\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:43
+#: pages/installation-dual-boot.adoc:43
 #, no-wrap
 msgid ""
 "....\n"
@@ -119,13 +115,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:45
+#: pages/installation-dual-boot.adoc:45
 #, no-wrap
 msgid "Initialize an OS for this, which acts as a state root.\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:49
+#: pages/installation-dual-boot.adoc:49
 #, no-wrap
 msgid ""
 "....\n"
@@ -134,7 +130,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:54
+#: pages/installation-dual-boot.adoc:54
 #, no-wrap
 msgid ""
 "*For EFI systems:* currently ostree uses the presence of\n"
@@ -144,7 +140,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:58
+#: pages/installation-dual-boot.adoc:58
 #, no-wrap
 msgid ""
 "....\n"
@@ -153,7 +149,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:62
+#: pages/installation-dual-boot.adoc:62
 #, no-wrap
 msgid ""
 "Since this file is not used on a EFI system, this won't break the\n"
@@ -162,7 +158,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:66
+#: pages/installation-dual-boot.adoc:66
 #, no-wrap
 msgid ""
 "....\n"
@@ -171,7 +167,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:70
+#: pages/installation-dual-boot.adoc:70
 #, no-wrap
 msgid ""
 "And now, we can deploy the commit we just pulled down. The\n"
@@ -180,17 +176,16 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:74
+#: pages/installation-dual-boot.adoc:74
 #, no-wrap
 msgid ""
 "....\n"
-"ostree admin deploy --os=fedora --karg-proc-cmdline "
-"atomic:fedora/29/x86_64/silverblue\n"
+"ostree admin deploy --os=fedora --karg-proc-cmdline atomic:fedora/29/x86_64/silverblue\n"
 "....\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:78
+#: pages/installation-dual-boot.adoc:78
 #, no-wrap
 msgid ""
 "To initialize this root, you'll need to copy over your /etc/fstab,\n"
@@ -199,18 +194,16 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:82
+#: pages/installation-dual-boot.adoc:82
 #, no-wrap
 msgid ""
 "....\n"
-"for i in /etc/fstab /etc/default/grub /etc/locale.conf "
-"/etc/ostree/remotes.d/atomic.conf ; do cp $i "
-"/ostree/deploy/fedora/deploy/$checksum.0/$i; done\n"
+"for i in /etc/fstab /etc/default/grub /etc/locale.conf /etc/ostree/remotes.d/atomic.conf ; do cp $i /ostree/deploy/fedora/deploy/$checksum.0/$i; done\n"
 "....\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:86
+#: pages/installation-dual-boot.adoc:86
 #, no-wrap
 msgid ""
 "where $checksum is whatever the checksum of the deployment is; there\n"
@@ -219,7 +212,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:90
+#: pages/installation-dual-boot.adoc:90
 #, no-wrap
 msgid ""
 "If you have a separate /home mount point, you'll need to change that\n"
@@ -228,17 +221,16 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:94
+#: pages/installation-dual-boot.adoc:94
 #, no-wrap
 msgid ""
 "....\n"
-"echo 'L /var/home - - - - ../sysroot/home' > "
-"/ostree/deploy/fedora/deploy/$checksum.0/etc/tmpfiles.d/00rpm-ostree.conf\n"
+"echo 'L /var/home - - - - ../sysroot/home' > /ostree/deploy/fedora/deploy/$checksum.0/etc/tmpfiles.d/00rpm-ostree.conf\n"
 "....\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:99
+#: pages/installation-dual-boot.adoc:99
 #, no-wrap
 msgid ""
 "You'll also need to copy your user entry from /etc/passwd, /etc/group,\n"
@@ -248,7 +240,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:103
+#: pages/installation-dual-boot.adoc:103
 #, no-wrap
 msgid ""
 "*For BIOS systems:* while ostree regenerated the bootloader\n"
@@ -257,7 +249,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:107
+#: pages/installation-dual-boot.adoc:107
 #, no-wrap
 msgid ""
 "....\n"
@@ -266,7 +258,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:110
+#: pages/installation-dual-boot.adoc:110
 #, no-wrap
 msgid ""
 "Note that you will have to repeat this every time a new tree is created,\n"
@@ -274,7 +266,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/installation-dual-boot.adoc:115
+#: pages/installation-dual-boot.adoc:115
 #, no-wrap
 msgid ""
 "....\n"
