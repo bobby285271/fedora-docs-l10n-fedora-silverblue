@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-02-22 13:28+0100\n"
+"POT-Creation-Date: 2020-04-17 02:20+0000\n"
 "PO-Revision-Date: 2020-02-29 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -15,35 +15,35 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.2\n"
 
 #. type: Title =
-#: ./pages/index.adoc:1
+#: pages/index.adoc:1
 #, no-wrap
 msgid "Fedora Silverblue User Guide"
 msgstr "Підручний користувача Fedora Silverblue"
 
 #. type: Plain text
-#: ./pages/index.adoc:4
+#: pages/index.adoc:4
 msgid "Welcome to the Fedora Silverblue user guide!"
 msgstr "Вітаємо у підручнику користувача Fedora Silverblue!"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/index.adoc:5
+#: pages/index.adoc:5
 #, no-wrap
 msgid "Silverblue logo"
 msgstr "Логотип Silverblue"
 
 #. type: Target for macro image
-#: ./pages/index.adoc:5
+#: pages/index.adoc:5
 #, no-wrap
 msgid "silverblue-logo.svg"
 msgstr "silverblue-logo.svg"
 
 #. type: Plain text
-#: ./pages/index.adoc:10
+#: pages/index.adoc:10
 msgid ""
 "_Fedora Silverblue_ is an immutable desktop operating system. It aims to be "
 "extremely stable and reliable. It also aims to be an excellent platform for "
@@ -55,13 +55,13 @@ msgstr ""
 "процесами, заснованими на контейнеризації."
 
 #. type: Title ==
-#: ./pages/index.adoc:12
+#: pages/index.adoc:12
 #, no-wrap
 msgid "Introduction to Silverblue"
 msgstr "Вступ до Silverblue"
 
 #. type: Plain text
-#: ./pages/index.adoc:17
+#: pages/index.adoc:17
 msgid ""
 "Silverblue is a variant of Fedora Workstation. It looks, feels and behaves "
 "like a regular desktop operating system, and the experience is similar to "
@@ -72,7 +72,7 @@ msgstr ""
 "повністю подібна до роботи у стандартній системі Fedora Workstation."
 
 #. type: Plain text
-#: ./pages/index.adoc:22
+#: pages/index.adoc:22
 msgid ""
 "However, unlike other operating systems, Silverblue is immutable. This means "
 "that every installation is identical to every other installation of the same "
@@ -86,7 +86,7 @@ msgstr ""
 "змінюється протягом терміну користування нею."
 
 #. type: Plain text
-#: ./pages/index.adoc:29
+#: pages/index.adoc:29
 msgid ""
 "Silverblue's immutable design is intended to make it more stable, less prone "
 "to bugs, and easier to test and develop. Finally, Silverblue's immutable "
@@ -102,7 +102,7 @@ msgstr ""
 "системи, що поліпшує стабільність і надійність роботи системи."
 
 #. type: Plain text
-#: ./pages/index.adoc:34
+#: pages/index.adoc:34
 msgid ""
 "Silverblue's core technologies have some other helpful features. OS updates "
 "are fast and there's no waiting around for them to install: just reboot as "
@@ -118,13 +118,13 @@ msgstr ""
 "негаразди."
 
 #. type: Title ==
-#: ./pages/index.adoc:36
+#: pages/index.adoc:36
 #, no-wrap
 msgid "About this guide"
 msgstr "Про цей підручник"
 
 #. type: Plain text
-#: ./pages/index.adoc:42
+#: pages/index.adoc:42
 msgid ""
 "In most cases, Silverblue behaves like a standard Fedora Workstation "
 "installation, and the https://docs.fedoraproject.org/[standard Fedora "
@@ -137,24 +137,24 @@ msgstr ""
 "відрізняється від стандартної Fedora Workstation, зокрема:"
 
 #. type: Plain text
-#: ./pages/index.adoc:44
+#: pages/index.adoc:44
 msgid "link:installation[OS installation]"
 msgstr "link:installation[Встановлення операційної системи]"
 
 #. type: Plain text
-#: ./pages/index.adoc:45
+#: pages/index.adoc:45
 msgid "link:getting-started[Installing apps and software]"
 msgstr "link:getting-started[Встановлення програм і програмного забезпечення]"
 
 #. type: Plain text
-#: ./pages/index.adoc:46
+#: pages/index.adoc:46
 msgid "link:updates-upgrades-rollbacks[OS upgrades and rollbacks]"
 msgstr ""
 "link:updates-upgrades-rollbacks[Встановлення нових версій операційної "
 "системи та повернення до старих версій]"
 
 #. type: Plain text
-#: ./pages/index.adoc:50
+#: pages/index.adoc:50
 msgid ""
 "The primary audience for these docs are new users, who aren't expected to "
 "have specialist knowledge or technical knowledge about Silverblue's "
