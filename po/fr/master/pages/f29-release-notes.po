@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-13 12:44+0200\n"
+"POT-Creation-Date: 2019-04-19 09:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Title =
-#: ./pages/f29-release-notes.adoc:1
+#: pages/f29-release-notes.adoc:1
 #, no-wrap
 msgid "Fedora 29 Silverblue Release Notes"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:11
+#: pages/f29-release-notes.adoc:11
 #, no-wrap
 msgid ""
 "Since the release of Fedora 28 Silverblue, the project has been steadily\n"
@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:14
+#: pages/f29-release-notes.adoc:14
 #, no-wrap
 msgid ""
 "[[changes-from-fedora-28]]\n"
@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:21
+#: pages/f29-release-notes.adoc:21
 msgid ""
 "For the release of Fedora 29 Silverblue, the content of the base operating "
 "system was slimmed down significantly, using new tooling developed on the "
@@ -54,21 +54,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:23
+#: pages/f29-release-notes.adoc:23
 msgid "https://pagure.io/workstation-ostree-config/tree/f29"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:27
+#: pages/f29-release-notes.adoc:27
 msgid ""
-"Specifically, the "
-"https://pagure.io/workstation-ostree-config/blob/f29/f/comps-sync-blacklist.yml[comps-sync-blacklist.yml] "
-"file defines the packages which will be excluded from the default Fedora 29 "
-"Workstation content set."
+"Specifically, the https://pagure.io/workstation-ostree-config/blob/f29/f/"
+"comps-sync-blacklist.yml[comps-sync-blacklist.yml] file defines the packages "
+"which will be excluded from the default Fedora 29 Workstation content set."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:33
+#: pages/f29-release-notes.adoc:33
 msgid ""
 "The most notable change from Fedora 28 Silverblue is the removal of `docker` "
 "from the default content set.  This means users who have existing containers "
@@ -77,7 +76,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:39
+#: pages/f29-release-notes.adoc:39
 msgid ""
 "If you have existing container images you want to retain after the upgrade "
 "to Fedora 29 Silverblue, please use the <<migrating-from-docker,migration "
@@ -87,79 +86,79 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:42
+#: pages/f29-release-notes.adoc:42
 msgid ""
 "For a complete list of packages that have changed, added, or removed in "
 "Fedora 29, please see the <<package-changes,full list of changes>>."
 msgstr ""
 
 #. type: Title -
-#: ./pages/f29-release-notes.adoc:45
+#: pages/f29-release-notes.adoc:45
 #, no-wrap
 msgid "Known Issues"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:49
+#: pages/f29-release-notes.adoc:49
 msgid ""
 "This is not a comprehensive list of all problems but some that might trip up "
 "users."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:51
+#: pages/f29-release-notes.adoc:51
 msgid "rootless containers via `podman` requires `slirp4netns`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:55
+#: pages/f29-release-notes.adoc:55
 msgid ""
-"This is covered in the "
-"https://github.com/containers/libpod/issues/1234[upstream issue] and should "
-"be resolved in versions of `podman` newer than `v0.8.3`.  If you find you "
-"need this package, you can layer it with `rpm-ostree install slirp4netns`."
+"This is covered in the https://github.com/containers/libpod/"
+"issues/1234[upstream issue] and should be resolved in versions of `podman` "
+"newer than `v0.8.3`.  If you find you need this package, you can layer it "
+"with `rpm-ostree install slirp4netns`."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:57
+#: pages/f29-release-notes.adoc:57
 msgid "removal of some default GNOME apps"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:66
+#: pages/f29-release-notes.adoc:66
 msgid ""
 "As Fedora Silverblue evolves, we are trying to reduce the install size of "
 "each release.  This means choosing to remove some packages from the manifest "
 "that are available as Flatpaks. Many of the default GNOME apps that are "
 "installed in the vanilla Fedora Workstation (such as `gedit`, `evolution`, "
 "`gnome-calculator`, etc) have been removed from Silverblue.  You can find a "
-"version of many (but not all) GNOME apps as Flatpaks, available on "
-"https://flathub.org/[Flathub].  Those packages that are not available as "
-"Flatpaks can be layered onto the system with `rpm-ostree install`."
+"version of many (but not all) GNOME apps as Flatpaks, available on https://"
+"flathub.org/[Flathub].  Those packages that are not available as Flatpaks "
+"can be layered onto the system with `rpm-ostree install`."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:68
+#: pages/f29-release-notes.adoc:68
 msgid "Flathub not enabled by default"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:72
+#: pages/f29-release-notes.adoc:72
 msgid ""
 "Because Flathub distributes non-free software, the Fedora Project has chosen "
 "to not enable the Flathub repository by default.  If you wish to use the "
-"Flatpaks available from Flathub, just follow the "
-"https://flatpak.org/setup/Fedora/[install instructions]."
+"Flatpaks available from Flathub, just follow the https://flatpak.org/setup/"
+"Fedora/[install instructions]."
 msgstr ""
 
 #. type: Title -
-#: ./pages/f29-release-notes.adoc:75
+#: pages/f29-release-notes.adoc:75
 #, no-wrap
 msgid "Migrating from Docker to Podman"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:81
+#: pages/f29-release-notes.adoc:81
 msgid ""
 "If you previously used `docker` for running and managing your containers "
 "while using Fedora 28 Silverblue, you may want to migrate your existing "
@@ -169,51 +168,44 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:83
+#: pages/f29-release-notes.adoc:83
 msgid ""
 "Here we have a system with four container images.  We can copy them singly, "
 "as shown below:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:91
+#: pages/f29-release-notes.adoc:91
 #, no-wrap
 msgid ""
 "```\n"
 "$ sudo docker images\n"
-"REPOSITORY                             TAG                 IMAGE ID            "
-"CREATED             SIZE\n"
-"registry.fedoraproject.org/fedora      28                  ded494ce3076        "
-"3 weeks ago         254 MB\n"
-"registry.centos.org/centos/centos      latest              e986e5dbd662        "
-"3 weeks ago         200 MB\n"
-"docker.io/alpine                       latest              196d12cf6ab1        "
-"7 weeks ago         4.41 MB\n"
-"registry.fedoraproject.org/f28/httpd   latest              79442b002283        "
-"5 months ago        416 MB\n"
+"REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE\n"
+"registry.fedoraproject.org/fedora      28                  ded494ce3076        3 weeks ago         254 MB\n"
+"registry.centos.org/centos/centos      latest              e986e5dbd662        3 weeks ago         200 MB\n"
+"docker.io/alpine                       latest              196d12cf6ab1        7 weeks ago         4.41 MB\n"
+"registry.fedoraproject.org/f28/httpd   latest              79442b002283        5 months ago        416 MB\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:93
+#: pages/f29-release-notes.adoc:93
 msgid ""
 "$ sudo skopeo copy docker-daemon:registry.fedoraproject.org/fedora:28 "
 "containers-storage:registry.fedoraproject.org/fedora:28"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:98
+#: pages/f29-release-notes.adoc:98
 #, no-wrap
 msgid ""
 "$ sudo podman images\n"
-"REPOSITORY                             TAG      IMAGE ID       CREATED        "
-"SIZE\n"
-"registry.fedoraproject.org/fedora      28       ded494ce3076   3 weeks ago    "
-"264MB\n"
+"REPOSITORY                             TAG      IMAGE ID       CREATED        SIZE\n"
+"registry.fedoraproject.org/fedora      28       ded494ce3076   3 weeks ago    264MB\n"
 "```\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:102
+#: pages/f29-release-notes.adoc:102
 msgid ""
 "But if you have more than just a handful of images, you'll probably want to "
 "use something that will not require manual intervention.  You can string "
@@ -221,93 +213,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:137
+#: pages/f29-release-notes.adoc:137
 #, no-wrap
 msgid ""
 "```\n"
-"$ sudo docker images | awk 'NR>1 {print $1 \":\" $2}' | xargs -I {} sudo "
-"skopeo copy docker-daemon:{} containers-storage:{}\n"
+"$ sudo docker images | awk 'NR>1 {print $1 \":\" $2}' | xargs -I {} sudo skopeo copy docker-daemon:{} containers-storage:{}\n"
 "Getting image source signatures\n"
-"Copying blob "
-"sha256:83abdad1a6e9eae57f0ce0eb803b21bc9f246196e52716f1ea96ec70a6fe7b9e\n"
-" 252.22 MB / 252.22 MB "
-"[====================================================] 3s\n"
-"Copying config "
-"sha256:ded494ce3076e8f2d264235fdb09da5970921d8317f8fd024ab65821bf13e29f\n"
-" 1.27 KB / 1.27 KB "
-"[========================================================] 0s\n"
+"Copying blob sha256:83abdad1a6e9eae57f0ce0eb803b21bc9f246196e52716f1ea96ec70a6fe7b9e\n"
+" 252.22 MB / 252.22 MB [====================================================] 3s\n"
+"Copying config sha256:ded494ce3076e8f2d264235fdb09da5970921d8317f8fd024ab65821bf13e29f\n"
+" 1.27 KB / 1.27 KB [========================================================] 0s\n"
 "Writing manifest to image destination\n"
 "Storing signatures\n"
 "Getting image source signatures\n"
-"Copying blob "
-"sha256:c1533a28b1a93bd395069016028a28c58c90733c64968f329d119f3bcfea80db\n"
-" 199.17 MB / 199.17 MB "
-"[====================================================] 2s\n"
-"Copying config "
-"sha256:e986e5dbd662a4cf1366e1a672d5258e63c4ee1f0a1c35869c58a3d5e6027145\n"
-" 2.14 KB / 2.14 KB "
-"[========================================================] 0s\n"
+"Copying blob sha256:c1533a28b1a93bd395069016028a28c58c90733c64968f329d119f3bcfea80db\n"
+" 199.17 MB / 199.17 MB [====================================================] 2s\n"
+"Copying config sha256:e986e5dbd662a4cf1366e1a672d5258e63c4ee1f0a1c35869c58a3d5e6027145\n"
+" 2.14 KB / 2.14 KB [========================================================] 0s\n"
 "Writing manifest to image destination\n"
 "Storing signatures\n"
 "Getting image source signatures\n"
-"Copying blob "
-"sha256:df64d3292fd6194b7865d7326af5255db6d81e9df29f48adde61a918fbd8c332\n"
-" 4.46 MB / 4.46 MB "
-"[========================================================] 0s\n"
-"Copying config "
-"sha256:196d12cf6ab19273823e700516e98eb1910b03b17840f9d5509f03858484d321\n"
-" 1.48 KB / 1.48 KB "
-"[========================================================] 0s\n"
+"Copying blob sha256:df64d3292fd6194b7865d7326af5255db6d81e9df29f48adde61a918fbd8c332\n"
+" 4.46 MB / 4.46 MB [========================================================] 0s\n"
+"Copying config sha256:196d12cf6ab19273823e700516e98eb1910b03b17840f9d5509f03858484d321\n"
+" 1.48 KB / 1.48 KB [========================================================] 0s\n"
 "Writing manifest to image destination\n"
 "Storing signatures\n"
 "Getting image source signatures\n"
-"Copying blob "
-"sha256:e10df12480fbd42b0a89dd9e09670acdabc2872b9e7610f353c72fd59c3b26bf\n"
-" 250.89 MB / 250.89 MB "
-"[====================================================] 2s\n"
-"Copying blob "
-"sha256:3b89debc74fa1c6475f10233dd999ade3891f210882c860b93f840210ceb9c0c\n"
-" 25.51 MB / 25.51 MB "
-"[======================================================] 0s\n"
-"Copying blob "
-"sha256:b1c71d614d62501097480aabcd21609e91502611baf20a2b1cb2f821caa5b9fb\n"
-" 137.82 MB / 137.82 MB "
-"[====================================================] 1s\n"
-"Copying config "
-"sha256:79442b002283db5ce902a475bb10e66663a93618e125691f84e084f4825e3a9d\n"
-" 6.79 KB / 6.79 KB "
-"[========================================================] 0s\n"
+"Copying blob sha256:e10df12480fbd42b0a89dd9e09670acdabc2872b9e7610f353c72fd59c3b26bf\n"
+" 250.89 MB / 250.89 MB [====================================================] 2s\n"
+"Copying blob sha256:3b89debc74fa1c6475f10233dd999ade3891f210882c860b93f840210ceb9c0c\n"
+" 25.51 MB / 25.51 MB [======================================================] 0s\n"
+"Copying blob sha256:b1c71d614d62501097480aabcd21609e91502611baf20a2b1cb2f821caa5b9fb\n"
+" 137.82 MB / 137.82 MB [====================================================] 1s\n"
+"Copying config sha256:79442b002283db5ce902a475bb10e66663a93618e125691f84e084f4825e3a9d\n"
+" 6.79 KB / 6.79 KB [========================================================] 0s\n"
 "Writing manifest to image destination\n"
 "Storing signatures\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:145
+#: pages/f29-release-notes.adoc:145
 #, no-wrap
 msgid ""
 "$ sudo podman images\n"
-"REPOSITORY                             TAG      IMAGE ID       CREATED        "
-"SIZE\n"
-"registry.fedoraproject.org/fedora      28       ded494ce3076   3 weeks ago    "
-"264MB\n"
-"registry.centos.org/centos/centos      latest   e986e5dbd662   3 weeks ago    "
-"209MB\n"
-"docker.io/library/alpine               latest   196d12cf6ab1   7 weeks ago    "
-"4.67MB\n"
-"registry.fedoraproject.org/f28/httpd   latest   79442b002283   5 months ago   "
-"434MB\n"
+"REPOSITORY                             TAG      IMAGE ID       CREATED        SIZE\n"
+"registry.fedoraproject.org/fedora      28       ded494ce3076   3 weeks ago    264MB\n"
+"registry.centos.org/centos/centos      latest   e986e5dbd662   3 weeks ago    209MB\n"
+"docker.io/library/alpine               latest   196d12cf6ab1   7 weeks ago    4.67MB\n"
+"registry.fedoraproject.org/f28/httpd   latest   79442b002283   5 months ago   434MB\n"
 "```\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:148
+#: pages/f29-release-notes.adoc:148
 msgid ""
 "And even after upgrading to Fedora 29 Silverblue, you can see the container "
 "images that were migrated are still present."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:158
+#: pages/f29-release-notes.adoc:158
 #, no-wrap
 msgid ""
 "```\n"
@@ -317,55 +283,46 @@ msgid ""
 "Deployments:\n"
 "● ostree://fedora-workstation:fedora/29/x86_64/silverblue\n"
 "                   Version: 29.20181101.0 (2018-11-01 14:01:23)\n"
-"                    Commit: "
-"d18df00f0ca9528adee90b83af696228a5010e837d1512721199507903ab4444\n"
-"              GPGSignature: Valid signature by "
-"5A03B4DD8254ECA02FDA1637A20AA56B429476B4\n"
+"                    Commit: d18df00f0ca9528adee90b83af696228a5010e837d1512721199507903ab4444\n"
+"              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:170
+#: pages/f29-release-notes.adoc:170
 #, no-wrap
 msgid ""
 "  ostree://fedora-workstation:fedora/28/x86_64/workstation\n"
 "                   Version: 28.20181027.0 (2018-10-27 16:02:21)\n"
-"                    Commit: "
-"1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23\n"
-"              GPGSignature: Valid signature by "
-"128CF232A9371991C8A65695E08E7E629DB62FB1\n"
+"                    Commit: 1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23\n"
+"              GPGSignature: Valid signature by 128CF232A9371991C8A65695E08E7E629DB62FB1\n"
 "$ sudo podman images\n"
-"REPOSITORY                             TAG      IMAGE ID       CREATED        "
-"SIZE\n"
-"registry.fedoraproject.org/fedora      28       ded494ce3076   3 weeks ago    "
-"264MB\n"
-"registry.centos.org/centos/centos      latest   e986e5dbd662   3 weeks ago    "
-"209MB\n"
-"docker.io/library/alpine               latest   196d12cf6ab1   7 weeks ago    "
-"4.67MB\n"
-"registry.fedoraproject.org/f28/httpd   latest   79442b002283   5 months ago   "
-"434MB\n"
+"REPOSITORY                             TAG      IMAGE ID       CREATED        SIZE\n"
+"registry.fedoraproject.org/fedora      28       ded494ce3076   3 weeks ago    264MB\n"
+"registry.centos.org/centos/centos      latest   e986e5dbd662   3 weeks ago    209MB\n"
+"docker.io/library/alpine               latest   196d12cf6ab1   7 weeks ago    4.67MB\n"
+"registry.fedoraproject.org/f28/httpd   latest   79442b002283   5 months ago   434MB\n"
 "```\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:172
+#: pages/f29-release-notes.adoc:172
 #, no-wrap
 msgid "**NOTE** The following step is completely optional.\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:178
+#: pages/f29-release-notes.adoc:178
 msgid ""
 "At this point you can safely delete the directory that Docker used for "
-"container image storage to reclaim the disk space.  The default is "
-"`/var/lib/docker`, but if you have customized your Docker storage, you "
-"should remove the location you used in your customization.  You can see that "
-"even after removing the Docker directory, your container images are still "
-"available via `podman`"
+"container image storage to reclaim the disk space.  The default is `/var/lib/"
+"docker`, but if you have customized your Docker storage, you should remove "
+"the location you used in your customization.  You can see that even after "
+"removing the Docker directory, your container images are still available via "
+"`podman`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:193
+#: pages/f29-release-notes.adoc:193
 #, no-wrap
 msgid ""
 "```\n"
@@ -375,64 +332,48 @@ msgid ""
 "944M    /var/lib/docker\n"
 "$ sudo rm -rf /var/lib/docker\n"
 "$ sudo podman images\n"
-"REPOSITORY                             TAG      IMAGE ID       CREATED        "
-"SIZE\n"
-"registry.fedoraproject.org/fedora      28       ded494ce3076   3 weeks ago    "
-"264MB\n"
-"registry.centos.org/centos/centos      latest   e986e5dbd662   3 weeks ago    "
-"209MB\n"
-"docker.io/library/alpine               latest   196d12cf6ab1   7 weeks ago    "
-"4.67MB\n"
-"registry.fedoraproject.org/f28/httpd   latest   79442b002283   5 months ago   "
-"434MB\n"
+"REPOSITORY                             TAG      IMAGE ID       CREATED        SIZE\n"
+"registry.fedoraproject.org/fedora      28       ded494ce3076   3 weeks ago    264MB\n"
+"registry.centos.org/centos/centos      latest   e986e5dbd662   3 weeks ago    209MB\n"
+"docker.io/library/alpine               latest   196d12cf6ab1   7 weeks ago    4.67MB\n"
+"registry.fedoraproject.org/f28/httpd   latest   79442b002283   5 months ago   434MB\n"
 "```\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:196
+#: pages/f29-release-notes.adoc:196
 msgid ""
 "Moving Containers from Privileged Container Storage to Unprivileged "
 "Container Storage"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:204
+#: pages/f29-release-notes.adoc:204
 #, no-wrap
 msgid ""
-"Recent releases of `podman` have introduced the ability to run containers as "
-"an unprivileged\n"
-"user.  For some users, it may be preferable to run existing containers as an "
-"unprivileged\n"
-"user.  In order to do this, the container image has to be copied out of the "
-"\"privileged\"\n"
-"container storage into the \"unprivileged\" container storage.  The "
-"\"privileged\" container\n"
-"storage can be those container images managed by `docker` or the container "
-"images managed\n"
+"Recent releases of `podman` have introduced the ability to run containers as an unprivileged\n"
+"user.  For some users, it may be preferable to run existing containers as an unprivileged\n"
+"user.  In order to do this, the container image has to be copied out of the \"privileged\"\n"
+"container storage into the \"unprivileged\" container storage.  The \"privileged\" container\n"
+"storage can be those container images managed by `docker` or the container images managed\n"
 "by `podman` as a privileged user.\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:212
+#: pages/f29-release-notes.adoc:212
 #, no-wrap
 msgid ""
-"One way to do this is to create a `tar` archive of the container image and "
-"import it\n"
-"using unprivileged (or 'rootless') `podman`.  In the example below, a `tar` "
-"archive\n"
-"is created with the `podman save` command as a privileged user and then "
-"imported with\n"
-"the `podman import` command as an unprivileged user.  It is possible to save "
-"those\n"
-"containers managed by `docker` in the same `tar` format using `docker save` "
-"as a privileged\n"
-"user; those archives created by `docker save` can also be imported by "
-"`podman import`\n"
+"One way to do this is to create a `tar` archive of the container image and import it\n"
+"using unprivileged (or 'rootless') `podman`.  In the example below, a `tar` archive\n"
+"is created with the `podman save` command as a privileged user and then imported with\n"
+"the `podman import` command as an unprivileged user.  It is possible to save those\n"
+"containers managed by `docker` in the same `tar` format using `docker save` as a privileged\n"
+"user; those archives created by `docker save` can also be imported by `podman import`\n"
 "as an unprivileged user.\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:216
+#: pages/f29-release-notes.adoc:216
 #, no-wrap
 msgid ""
 "```\n"
@@ -441,7 +382,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:219
+#: pages/f29-release-notes.adoc:219
 #, no-wrap
 msgid ""
 "$ podman images | wc -l\n"
@@ -449,50 +390,37 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:222
+#: pages/f29-release-notes.adoc:222
 #, no-wrap
 msgid ""
 "$ sudo podman images | grep antora\n"
-"docker.io/antora/antora                                                         "
-"latest   82d09f18b681   2 months ago   177MB\n"
+"docker.io/antora/antora                                                         latest   82d09f18b681   2 months ago   177MB\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:239
+#: pages/f29-release-notes.adoc:239
 #, no-wrap
 msgid ""
 "$ sudo podman save -o antora.tar docker.io/antora/antora:latest\n"
 "Getting image source signatures\n"
-"Copying blob "
-"sha256:df64d3292fd6194b7865d7326af5255db6d81e9df29f48adde61a918fbd8c332\n"
-" 4.46 MB / 4.46 MB "
-"[========================================================] 0s\n"
-"Copying blob "
-"sha256:7aa09d2ca0a3027a3059f57e707d7465248345d0a7495e223b19214f2b44be22\n"
-" 57.13 MB / 57.13 MB "
-"[======================================================] 0s\n"
-"Copying blob "
-"sha256:8b59e4cead98eb861677c9897dffd64e074a964a8c887942b613bad1ec796404\n"
-" 4.35 MB / 4.35 MB "
-"[========================================================] 0s\n"
-"Copying blob "
-"sha256:ea3b34893001b113cb5a8104063d5d199b18d79502f72e7d4920dd95f4d9f7d1\n"
-" 103.10 MB / 103.10 MB "
-"[====================================================] 1s\n"
-"Copying blob "
-"sha256:696e93e3e76bfaee0bb9cb3e12a7898fc128eada0bb6ba8d10348fa4896902dd\n"
-" 2.00 KB / 2.00 KB "
-"[========================================================] 0s\n"
-"Copying config "
-"sha256:82d09f18b6813c68c5c44d04c688c3d612dc5cfc83f8a8e93a3405a04557eaab\n"
-" 6.29 KB / 6.29 KB "
-"[========================================================] 0s\n"
+"Copying blob sha256:df64d3292fd6194b7865d7326af5255db6d81e9df29f48adde61a918fbd8c332\n"
+" 4.46 MB / 4.46 MB [========================================================] 0s\n"
+"Copying blob sha256:7aa09d2ca0a3027a3059f57e707d7465248345d0a7495e223b19214f2b44be22\n"
+" 57.13 MB / 57.13 MB [======================================================] 0s\n"
+"Copying blob sha256:8b59e4cead98eb861677c9897dffd64e074a964a8c887942b613bad1ec796404\n"
+" 4.35 MB / 4.35 MB [========================================================] 0s\n"
+"Copying blob sha256:ea3b34893001b113cb5a8104063d5d199b18d79502f72e7d4920dd95f4d9f7d1\n"
+" 103.10 MB / 103.10 MB [====================================================] 1s\n"
+"Copying blob sha256:696e93e3e76bfaee0bb9cb3e12a7898fc128eada0bb6ba8d10348fa4896902dd\n"
+" 2.00 KB / 2.00 KB [========================================================] 0s\n"
+"Copying config sha256:82d09f18b6813c68c5c44d04c688c3d612dc5cfc83f8a8e93a3405a04557eaab\n"
+" 6.29 KB / 6.29 KB [========================================================] 0s\n"
 "Writing manifest to image destination\n"
 "Storing signatures\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:242
+#: pages/f29-release-notes.adoc:242
 #, no-wrap
 msgid ""
 "$ ls -l antora*\n"
@@ -500,38 +428,32 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:252
+#: pages/f29-release-notes.adoc:252
 #, no-wrap
 msgid ""
 "$ podman import antora.tar docker.io/antora/antora:latest\n"
 "Getting image source signatures\n"
-"Copying blob "
-"sha256:ce7811da37eb9d4732e1e508793d20e619b78f20b9a27b54a3e7373f0a8e1327\n"
-" 169.06 MB / 169.06 MB "
-"[====================================================] 1s\n"
-"Copying config "
-"sha256:1c84eb53ef891b42fdfeac4b704b9eaa5af0840afce98ff55fc9fa0e49836bfa\n"
-" 419 B / 419 B "
-"[============================================================] 0s\n"
+"Copying blob sha256:ce7811da37eb9d4732e1e508793d20e619b78f20b9a27b54a3e7373f0a8e1327\n"
+" 169.06 MB / 169.06 MB [====================================================] 1s\n"
+"Copying config sha256:1c84eb53ef891b42fdfeac4b704b9eaa5af0840afce98ff55fc9fa0e49836bfa\n"
+" 419 B / 419 B [============================================================] 0s\n"
 "Writing manifest to image destination\n"
 "Storing signatures\n"
 "1c84eb53ef891b42fdfeac4b704b9eaa5af0840afce98ff55fc9fa0e49836bfa\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:257
+#: pages/f29-release-notes.adoc:257
 #, no-wrap
 msgid ""
 "$ podman images\n"
-"REPOSITORY                                                          TAG      "
-"IMAGE ID       CREATED          SIZE\n"
-"docker.io/antora/antora                                             latest   "
-"1c84eb53ef89   27 seconds ago   177MB\n"
+"REPOSITORY                                                          TAG      IMAGE ID       CREATED          SIZE\n"
+"docker.io/antora/antora                                             latest   1c84eb53ef89   27 seconds ago   177MB\n"
 "```\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/f29-release-notes.adoc:260
+#: pages/f29-release-notes.adoc:260
 #, no-wrap
 msgid ""
 "[[keep-pkgs]]\n"
@@ -539,7 +461,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:266
+#: pages/f29-release-notes.adoc:266
 msgid ""
 "As noted earlier, the base content set of Fedora 29 Silverblue has been "
 "drastically reduced from Fedora 28 Silverblue.  You are encouraged to review "
@@ -548,7 +470,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:271
+#: pages/f29-release-notes.adoc:271
 msgid ""
 "Should you want to keep some of the packages that have been removed, you'll "
 "need to re-install them after running the `rpm-ostree rebase` command (but "
@@ -558,12 +480,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:275
+#: pages/f29-release-notes.adoc:275
 msgid "``` $ sudo rpm-ostree rebase fedora/29/x86_64/silverblue ..."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:306
+#: pages/f29-release-notes.adoc:306
 #, no-wrap
 msgid ""
 "$ sudo rpm-ostree install docker gedit\n"
@@ -593,34 +515,30 @@ msgid ""
 "Deployments:\n"
 "  ostree://fedora-workstation:fedora/29/x86_64/silverblue\n"
 "                   Version: 29.20181101.0 (2018-11-01 14:01:23)\n"
-"                BaseCommit: "
-"d18df00f0ca9528adee90b83af696228a5010e837d1512721199507903ab4444\n"
-"              GPGSignature: Valid signature by "
-"5A03B4DD8254ECA02FDA1637A20AA56B429476B4\n"
+"                BaseCommit: d18df00f0ca9528adee90b83af696228a5010e837d1512721199507903ab4444\n"
+"              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\n"
 "           LayeredPackages: docker gedit libvirt\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:312
+#: pages/f29-release-notes.adoc:312
 #, no-wrap
 msgid ""
 "● ostree://fedora-workstation:fedora/28/x86_64/workstation\n"
 "                   Version: 28.20181027.0 (2018-10-27 16:02:21)\n"
-"                    Commit: "
-"1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23\n"
-"              GPGSignature: Valid signature by "
-"128CF232A9371991C8A65695E08E7E629DB62FB1\n"
+"                    Commit: 1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23\n"
+"              GPGSignature: Valid signature by 128CF232A9371991C8A65695E08E7E629DB62FB1\n"
 "```\n"
 msgstr ""
 
 #. type: Title -
-#: ./pages/f29-release-notes.adoc:315
+#: pages/f29-release-notes.adoc:315
 #, no-wrap
 msgid "Upgrading from Fedora 28 Silverblue"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:319
+#: pages/f29-release-notes.adoc:319
 msgid ""
 "When you are ready to upgrade to Fedora 29 Silverblue, you can follow the "
 "https://docs.fedoraproject.org/en-US/fedora-silverblue/upgrades/[upgrade "
@@ -628,13 +546,13 @@ msgid ""
 msgstr ""
 
 #. type: Title -
-#: ./pages/f29-release-notes.adoc:323
+#: pages/f29-release-notes.adoc:323
 #, no-wrap
 msgid "Package Changes Between Fedora 28 Silverblue and Fedora 29 Silverblue"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:331
+#: pages/f29-release-notes.adoc:331
 msgid ""
 "This is the full set of package changes when upgrading from Fedora 28 "
 "Silverblue to Fedora 29 Silverblue.  This was done using the `28.20181027.0` "
@@ -645,17 +563,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/f29-release-notes.adoc:1710
+#: pages/f29-release-notes.adoc:1710
 #, no-wrap
 msgid ""
 "```\n"
-"$ rpm-ostree db diff "
-"1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23 "
-"d18df00f0ca9528adee90b83af696228a5010e837d1512721199507903ab4444\n"
-"ostree diff commit old: "
-"1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23\n"
-"ostree diff commit new: "
-"d18df00f0ca9528adee90b83af696228a5010e837d1512721199507903ab4444\n"
+"$ rpm-ostree db diff 1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23 d18df00f0ca9528adee90b83af696228a5010e837d1512721199507903ab4444\n"
+"ostree diff commit old: 1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23\n"
+"ostree diff commit new: d18df00f0ca9528adee90b83af696228a5010e837d1512721199507903ab4444\n"
 "Upgraded:\n"
 "  GConf2 3.2.6-20.fc28 -> 3.2.6-21.fc29\n"
 "  GeoIP 1.6.12-3.fc28 -> 1.6.12-4.fc29\n"
@@ -665,8 +579,7 @@ msgid ""
 "  NetworkManager 1:1.10.12-1.fc28 -> 1:1.12.4-1.fc29\n"
 "  NetworkManager-adsl 1:1.10.12-1.fc28 -> 1:1.12.4-1.fc29\n"
 "  NetworkManager-bluetooth 1:1.10.12-1.fc28 -> 1:1.12.4-1.fc29\n"
-"  NetworkManager-config-connectivity-fedora 1:1.10.12-1.fc28 -> "
-"1:1.12.4-1.fc29\n"
+"  NetworkManager-config-connectivity-fedora 1:1.10.12-1.fc28 -> 1:1.12.4-1.fc29\n"
 "  NetworkManager-libnm 1:1.10.12-1.fc28 -> 1:1.12.4-1.fc29\n"
 "  NetworkManager-openconnect 1.2.4-9.fc28 -> 1.2.4-10.fc29\n"
 "  NetworkManager-openconnect-gnome 1.2.4-9.fc28 -> 1.2.4-10.fc29\n"
@@ -765,8 +678,7 @@ msgid ""
 "  comps-extras 24-3.fc28 -> 24-4.fc29\n"
 "  container-selinux 2:2.73-2.gitd7a3f33.fc28 -> 2:2.74-1.gita62c2db.fc29\n"
 "  containernetworking-plugins 0.7.3-2.fc28 -> 0.7.3-2.fc29\n"
-"  containers-common 0.1.31-13.dev.gite3034e1.fc28 -> "
-"1:0.1.32-2.dev.gite814f96.fc29\n"
+"  containers-common 0.1.31-13.dev.gite3034e1.fc28 -> 1:0.1.32-2.dev.gite814f96.fc29\n"
 "  coreutils 8.29-7.fc28 -> 8.30-5.fc29\n"
 "  coreutils-common 8.29-7.fc28 -> 8.30-5.fc29\n"
 "  cpio 2.12-7.fc28 -> 2.12-9.fc29\n"
@@ -805,10 +717,8 @@ msgid ""
 "  device-mapper-event 1.02.146-5.fc28 -> 1.02.150-1.fc29\n"
 "  device-mapper-event-libs 1.02.146-5.fc28 -> 1.02.150-1.fc29\n"
 "  device-mapper-libs 1.02.146-5.fc28 -> 1.02.150-1.fc29\n"
-"  device-mapper-multipath 0.7.4-3.git07e7bd5.fc28 -> "
-"0.7.7-5.gitef6d98b.fc29\n"
-"  device-mapper-multipath-libs 0.7.4-3.git07e7bd5.fc28 -> "
-"0.7.7-5.gitef6d98b.fc29\n"
+"  device-mapper-multipath 0.7.4-3.git07e7bd5.fc28 -> 0.7.7-5.gitef6d98b.fc29\n"
+"  device-mapper-multipath-libs 0.7.4-3.git07e7bd5.fc28 -> 0.7.7-5.gitef6d98b.fc29\n"
 "  device-mapper-persistent-data 0.7.5-3.fc28 -> 0.7.6-2.fc29\n"
 "  dhcp-client 12:4.3.6-21.fc28 -> 12:4.3.6-28.fc29\n"
 "  dhcp-common 12:4.3.6-21.fc28 -> 12:4.3.6-28.fc29\n"
@@ -1005,8 +915,7 @@ msgid ""
 "  hunspell-en-US 0.20140811.1-12.fc28 -> 0.20140811.1-13.fc29\n"
 "  hwdata 0.316-1.fc28 -> 0.316-1.fc29\n"
 "  hyperv-daemons 0-0.23.20180415git.fc28 -> 0-0.26.20180415git.fc29\n"
-"  hyperv-daemons-license 0-0.23.20180415git.fc28 -> "
-"0-0.26.20180415git.fc29\n"
+"  hyperv-daemons-license 0-0.23.20180415git.fc28 -> 0-0.26.20180415git.fc29\n"
 "  hypervfcopyd 0-0.23.20180415git.fc28 -> 0-0.26.20180415git.fc29\n"
 "  hypervkvpd 0-0.23.20180415git.fc28 -> 0-0.26.20180415git.fc29\n"
 "  hypervvssd 0-0.23.20180415git.fc28 -> 0-0.26.20180415git.fc29\n"
@@ -1162,8 +1071,7 @@ msgid ""
 "  liberation-mono-fonts 1:1.07.4-11.fc28 -> 1:2.00.3-1.fc29\n"
 "  liberation-sans-fonts 1:1.07.4-11.fc28 -> 1:2.00.3-1.fc29\n"
 "  liberation-serif-fonts 1:1.07.4-11.fc28 -> 1:2.00.3-1.fc29\n"
-"  libertas-usb8388-firmware 2:20181008-88.gitc6b6265d.fc28 -> "
-"2:20181008-88.gitc6b6265d.fc29\n"
+"  libertas-usb8388-firmware 2:20181008-88.gitc6b6265d.fc28 -> 2:20181008-88.gitc6b6265d.fc29\n"
 "  libev 4.24-6.fc28 -> 4.24-7.fc29\n"
 "  libevdev 1.5.9-4.fc28 -> 1.5.9-5.fc29\n"
 "  libevent 2.1.8-2.fc28 -> 2.1.8-3.fc29\n"
@@ -1233,13 +1141,11 @@ msgid ""
 "  libnfsidmap 1:2.3.3-0.fc28 -> 1:2.3.3-0.fc29\n"
 "  libnftnl 1.1.0-1.fc28 -> 1.1.1-5.fc29\n"
 "  libnghttp2 1.32.1-1.fc28 -> 1.34.0-1.fc29\n"
-"  libnice 0.1.14-7.20180504git34d6044.fc28 -> "
-"0.1.14-8.20180504git34d6044.fc29\n"
+"  libnice 0.1.14-7.20180504git34d6044.fc28 -> 0.1.14-8.20180504git34d6044.fc29\n"
 "  libnl3 3.4.0-3.fc28 -> 3.4.0-6.fc29\n"
 "  libnma 1.8.10-2.fc28.2 -> 1.8.18-2.fc29\n"
 "  libnotify 0.7.7-5.fc28 -> 0.7.7-6.fc29\n"
-"  libnsl2 1.2.0-2.20180605git4a062cf.fc28 -> "
-"1.2.0-3.20180605git4a062cf.fc29\n"
+"  libnsl2 1.2.0-2.20180605git4a062cf.fc28 -> 1.2.0-3.20180605git4a062cf.fc29\n"
 "  liboauth 1.0.3-9.fc28 -> 1.0.3-11.fc29\n"
 "  libogg 2:1.3.2-10.fc28 -> 2:1.3.3-1.fc29\n"
 "  libosinfo 1.1.0-2.fc28 -> 1.2.0-5.fc29\n"
@@ -1341,8 +1247,7 @@ msgid ""
 "  libzhuyin 2.2.1-1.fc28 -> 2.2.1-1.fc29\n"
 "  libzstd 1.3.6-1.fc28 -> 1.3.6-1.fc29\n"
 "  linux-atm-libs 2.5.1-20.fc28 -> 2.5.1-21.fc29\n"
-"  linux-firmware 20181008-88.gitc6b6265d.fc28 -> "
-"20181008-88.gitc6b6265d.fc29\n"
+"  linux-firmware 20181008-88.gitc6b6265d.fc28 -> 20181008-88.gitc6b6265d.fc29\n"
 "  llvm-libs 6.0.1-8.fc28 -> 7.0.0-2.fc29\n"
 "  lockdev 1.0.4-0.26.20111007git.fc28 -> 1.0.4-0.28.20111007git.fc29\n"
 "  logrotate 3.14.0-2.fc28 -> 3.14.0-4.fc29\n"
@@ -1693,8 +1598,7 @@ msgid ""
 "  urw-base35-nimbus-roman-fonts 20170801-10.fc28 -> 20170801-11.fc29\n"
 "  urw-base35-nimbus-sans-fonts 20170801-10.fc28 -> 20170801-11.fc29\n"
 "  urw-base35-p052-fonts 20170801-10.fc28 -> 20170801-11.fc29\n"
-"  urw-base35-standard-symbols-ps-fonts 20170801-10.fc28 -> "
-"20170801-11.fc29\n"
+"  urw-base35-standard-symbols-ps-fonts 20170801-10.fc28 -> 20170801-11.fc29\n"
 "  urw-base35-z003-fonts 20170801-10.fc28 -> 20170801-11.fc29\n"
 "  usb_modeswitch 2.5.2-1.fc28 -> 2.5.2-2.fc29\n"
 "  usb_modeswitch-data 20170806-2.fc28 -> 20170806-3.fc29\n"
@@ -1740,8 +1644,7 @@ msgid ""
 "  xorg-x11-drv-ati 18.0.1-1.fc28 -> 18.0.1-2.fc29\n"
 "  xorg-x11-drv-evdev 2.10.6-2.fc28 -> 2.10.6-3.fc29\n"
 "  xorg-x11-drv-fbdev 0.4.3-29.fc28 -> 0.5.0-2.fc29\n"
-"  xorg-x11-drv-intel 2.99.917-32.20171025.fc28 -> "
-"2.99.917-39.20180618.fc29\n"
+"  xorg-x11-drv-intel 2.99.917-32.20171025.fc28 -> 2.99.917-39.20180618.fc29\n"
 "  xorg-x11-drv-libinput 0.28.1-1.fc28 -> 0.28.1-1.fc29\n"
 "  xorg-x11-drv-nouveau 1:1.0.15-4.fc28 -> 1:1.0.15-6.fc29\n"
 "  xorg-x11-drv-openchrome 0.6.0-4.fc28 -> 0.6.0-6.fc29\n"
