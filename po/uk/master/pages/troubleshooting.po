@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-20 02:22+0000\n"
-"PO-Revision-Date: 2020-03-21 21:38+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2020-04-21 20:47+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
 #: pages/troubleshooting.adoc:1
@@ -427,6 +428,7 @@ msgstr ""
 #, no-wrap
 msgid " toolbox: failed to list images with com.redhat.component=fedora-toolbox\n"
 msgstr ""
+"`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:157
@@ -543,7 +545,7 @@ msgstr ""
 #: pages/troubleshooting.adoc:188
 #, no-wrap
 msgid "Running `restorecon`"
-msgstr ""
+msgstr "Віддайте команду `restorecon`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:192
