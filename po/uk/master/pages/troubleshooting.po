@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-20 02:22+0000\n"
-"PO-Revision-Date: 2020-04-21 20:47+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-04-22 02:34+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
 "Language: uk\n"
@@ -428,7 +428,7 @@ msgstr ""
 #, no-wrap
 msgid " toolbox: failed to list images with com.redhat.component=fedora-toolbox\n"
 msgstr ""
-"`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
+" `toolbox: failed to list images with com.redhat.component=fedora-toolbox`\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:157
