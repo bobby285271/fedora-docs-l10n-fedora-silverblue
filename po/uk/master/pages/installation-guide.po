@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-04-04 18:40+0000\n"
-"Last-Translator: Vladyslav Spirin <vladspirin@hotmail.com>\n"
+"PO-Revision-Date: 2020-04-23 22:37+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-guide/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
 #: pages/installation-guide.adoc:1
@@ -225,6 +225,15 @@ msgid ""
 "install-guide/install/Installing_Using_Anaconda.html[Fedora Installation "
 "Guide]."
 msgstr ""
+"Після вибору мови у наступному вікні засобу встановлення ви можете вибрати "
+"додаткові параметри роботи майбутньої системи. Можна визначитися із "
+"розкладкою клавіатури, встановленою підтримкою мов, датою і часом, "
+"параметрів роботи мережі та поділу диска на розділи. У цьому підручнику ми "
+"зосередимося лише на поділі диска на розділи, оскільки встановлення "
+"Silverblue накладає певні обмеження на такий поділ. Втім, якщо у вас є якісь "
+"питання щодо параметрів цієї частини процедури встановлення, ви можете "
+"звернутися до https://docs.fedoraproject.org/f28/install-guide/install/"
+"Installing_Using_Anaconda.html[Підручника зі встановлення Fedora]."
 
 #. type: Plain text
 #: pages/installation-guide.adoc:83
@@ -236,6 +245,13 @@ msgid ""
 "the partitioning and we can start that process by selecting the "
 "\"Installation Destination\" item with the warning icon next to it:"
 msgstr ""
+"На цій сторінці ви маєте побачити попередження у нижній частині екрана, у "
+"якому вам повідомлять, що вам слід визначитися з пунктами, які позначено "
+"піктограмою попередження, перш ніж ви зможете продовжити встановлення "
+"системи. Крім того, кнопку «Почати встановлення» буде показано сірим "
+"кольором. Пунктом, з якими потрібно визначитися, є поділ на розділи, і ми "
+"можемо почати процедуру встановлення потрібних параметрів, натиснувши пункт «"
+"Призначення встановлення», який позначено піктограмою попередження:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:84
@@ -260,24 +276,30 @@ msgid ""
 "your disk(s), you can choose link:#automatic-partition[automatic "
 "partitioning]:"
 msgstr ""
+"Після вибору «Призначення встановлення» ви перейдете до сторінки, де ви "
+"маєте вирішити, слід виконати поділ диска в автоматичному режимі чи диск "
+"слід поділити вручну. Якщо на вашому диску вже зберігаються якісь дані, і ви "
+"хочете їх зберегти, вам слід вибрати link:#manual-partition[поділ вручну]. "
+"Втім, якщо ви не переймаєтеся долею наявних даних на дисках комп'ютера, ви "
+"можете вибрати link:#automatic-partition[автоматичний поділ на розділи]:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:94
 #, no-wrap
 msgid "Fedora Installation Destination"
-msgstr ""
+msgstr "Призначення встановлення Fedora"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:94
 #, no-wrap
 msgid "faw-storage-start.png"
-msgstr ""
+msgstr "faw-storage-start.png"
 
 #. type: Title -
 #: pages/installation-guide.adoc:98
 #, no-wrap
 msgid "Automatic Partitioning"
-msgstr ""
+msgstr "Автоматичний поділ на розділи"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:104

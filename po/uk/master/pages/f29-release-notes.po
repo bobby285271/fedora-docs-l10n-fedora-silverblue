@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-04-18 08:40+0000\n"
+"PO-Revision-Date: 2020-04-23 22:37+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesf29-release-notes/uk/>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
@@ -520,6 +520,13 @@ msgid ""
 "storage can be those container images managed by `docker` or the container images managed\n"
 "by `podman` as a privileged user.\n"
 msgstr ""
+"У нових випусках `podman` було впроваджено можливість запускати контейнери "
+"від непривілейованих користувачів. Для деяких користувачів бажаним є запуск "
+"наявних контейнерів саме від імені непривілейованого користувача. Для такого "
+"запуску образ контейнера має бути скопійовано зі сховища «привілейованих» "
+"контейнерів до сховища «непривілейованих» контейнерів. «Привілейованим» може "
+"бути сховище образів контейнерів, яким керує `docker` або сховище "
+"контейнерів, яким керує `podman` від імені привілейованого користувача.\n"
 
 #. type: delimited block -
 #: pages/f29-release-notes.adoc:212
@@ -533,6 +540,16 @@ msgid ""
 "user; those archives created by `docker save` can also be imported by `podman import`\n"
 "as an unprivileged user.\n"
 msgstr ""
+"Одним зі способів досягти потрібного результату є створення архіву `tar` із "
+"образом контейнера і імпортування його за допомогою непривілейованого "
+"`podman`.  У наведеному нижче прикладі архів `tar` створено за допомогою "
+"команди `podman save` від імені привілейованого користувача, а потім "
+"імпортовано за допомогою команди `podman import` від імені непривілейованого "
+"користувача. Контейнери, якими керує `docker` можна зберігати у тому самому "
+"форматі `tar` за допомогою команди `docker save`, відданої від імені "
+"привілейованого користувача; архів, створені за допомогою `docker save` "
+"також можна імпортувати за допомогою команди `podman import`, яку віддано "
+"від імені непривілейованого користувача.\n"
 
 #. type: delimited block -
 #: pages/f29-release-notes.adoc:216
@@ -670,6 +687,11 @@ msgid ""
 "the complete list of <<package-changes>> before upgrading to ensure you will "
 "not be missing any of your favorite packages."
 msgstr ""
+"Як ми вже згадували вище, основний набір вмісту Fedora 29 Silverblue було "
+"радикально зменшено, якщо порівнювати з Fedora 28 Silverblue. Вам варто "
+"ознайомитися зі повним списком змін — <<package-changes>> — перш ніж "
+"оновлювати систему, щоб переконатися, що ви не втратите доступ до жодного з "
+"ваших улюблених пакунків."
 
 #. type: Plain text
 #: pages/f29-release-notes.adoc:271
@@ -680,6 +702,11 @@ msgid ""
 "and `libvirt`, you would use the following command after the `rebase` "
 "operation:"
 msgstr ""
+"Якщо вам потрібно зберегти якісь з пакунків, які було вилучено з "
+"дистрибутива, вам слід перевстановити їх після запуску `rpm-ostree rebase` ("
+"але перед перезавантаженням системи). Наприклад, якщо ви хочете зберегти "
+"`docker`, `gedit` і `libvirt`, вам варто скористатися вказаною нижче "
+"командою після дії `rebase`:"
 
 #. type: Plain text
 #: pages/f29-release-notes.adoc:275
@@ -781,6 +808,9 @@ msgid ""
 "https://docs.fedoraproject.org/en-US/fedora-silverblue/upgrades/[upgrade "
 "instructions]."
 msgstr ""
+"Коли будете готові до оновлення до Fedora 29 Silverblue, виконайте "
+"https://docs.fedoraproject.org/uk-UA/fedora-silverblue/upgrades/[настанови з "
+"оновлення]."
 
 #. type: Title -
 #: pages/f29-release-notes.adoc:323
@@ -798,6 +828,12 @@ msgid ""
 "the version of Fedora 29 Silverblue you end up on, you may see a slightly "
 "different set of changes."
 msgstr ""
+"Це повний список змін у пакунках при оновленні з Fedora 28 Silverblue до "
+"Fedora 29 Silverblue. Список було отримано за використанням випуску "
+"`28.20181027.0` Fedora 28 Silverblue і випуску `29.20181101.0` Fedora 29 "
+"Silverblue. Ваш список може бути трохи іншим і залежатиме від початкової "
+"версії Fedora 28 Silverblue і версії Fedora 29 Silverblue, до якої ви "
+"оновлюватиметеся."
 
 #. type: Plain text
 #: pages/f29-release-notes.adoc:1710
