@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-04-23 22:37+0000\n"
+"PO-Revision-Date: 2020-04-26 22:39+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-guide/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
@@ -309,6 +309,11 @@ msgid ""
 "Check the radio button that says 'Automatic' and click the big blue button "
 "at the top that says 'Done'."
 msgstr ""
+"Якщо вами було вибрано автоматичний поділ на розділи, ваше завдання майже "
+"виконано. Виберіть диск, на який ви хочете встановити систему (у цьому "
+"підручнику ми розглядатимемо випадок одного диска). Позначте варіант "
+"«Автоматично» і натисніть велику синю кнопку у верхній частині вікна, на "
+"якій написано «Виконано»."
 
 #. type: Plain text
 #: pages/installation-guide.adoc:109
@@ -317,18 +322,21 @@ msgid ""
 "to 'reclaim' space. This means you are going choose which partitions can be "
 "deleted, so that the disk can be re-partitioned from scratch."
 msgstr ""
+"Якщо на диску вже є розділи, програма покаже вам діалогове вікно із "
+"пропозицією перерозподілити диск. Це означає, що ви зможете вказати розділи, "
+"які можна вилучити, отже, поділ диска можна буде розпочати спочатку."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:110
 #, no-wrap
 msgid "Reclaim Disks Dialog"
-msgstr ""
+msgstr "Діалогове вікно перерозподілу диска"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:110
 #, no-wrap
 msgid "faw-storage-reclaim.png"
-msgstr ""
+msgstr "faw-storage-reclaim.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:115
@@ -337,18 +345,21 @@ msgid ""
 "can use the entirety of the disk for the install. This is easily done with "
 "the aptly named 'Delete All' button."
 msgstr ""
+"У цьому підручнику ми маємо намір вилучити усі наявні розділи, щоб отримати "
+"доступ до усього місця на диску для встановлення системи. Досягти потрібного "
+"нам результату можна натисканням кнопки «Вилучити все»."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:116
 #, no-wrap
 msgid "Delete All Partitions"
-msgstr ""
+msgstr "Вилучення усіх розділів"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:116
 #, no-wrap
 msgid "faw-storage-reclaim-two.png"
-msgstr ""
+msgstr "faw-storage-reclaim-two.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:120
@@ -356,18 +367,20 @@ msgid ""
 "And then confirm that you are going to delete all the partitions by clicking "
 "the 'Reclaim space' button:"
 msgstr ""
+"Далі, слід підтвердити свій намір вилучити усі розділи натисканням кнопки «"
+"Отримати місце»:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:121
 #, no-wrap
 msgid "Confirming Delete All Partitions"
-msgstr ""
+msgstr "Підтвердження вилучення усіх розділів"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:121
 #, no-wrap
 msgid "faw-storage-reclaim-delete-all.png"
-msgstr ""
+msgstr "faw-storage-reclaim-delete-all.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:127
@@ -377,18 +390,23 @@ msgid ""
 "beckoning you to click it. Once you click the button, your disk(s) will be "
 "altered and all data on the disk(s) will be lost."
 msgstr ""
+"Після визначення способу поділу диска засіб встановлення поверне вас до "
+"вікна резюме встановлення, де запропонує вам натиснути кнопку «Почати "
+"встановлення». Щойно ви натиснете цю кнопку, програма почне вносити зміни до "
+"вмісту диска, а усі дані, що зберігаються на поточних його розділах, буде "
+"втрачено."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:128
 #, no-wrap
 msgid "Ready to Begin Installation"
-msgstr ""
+msgstr "Усе готово до початку встановлення"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:128
 #, no-wrap
 msgid "faw-summary-two.png"
-msgstr ""
+msgstr "faw-summary-two.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:132
@@ -396,6 +414,8 @@ msgid ""
 "Once you have started the install process, you can move on to the next phase "
 "where you will link:#user-config[configure users]."
 msgstr ""
+"Далі, у процесі встановлення системи ви перейдете до наступної фази, на якій "
+"вам буде запропоновано link:#user-config[налаштувати користувачів]."
 
 #. type: Title -
 #: pages/installation-guide.adoc:135
@@ -412,6 +432,12 @@ msgid ""
 "created during the install process. These mount points are limited to `/"
 "boot`, `/var`, subdirectories under `/var`, and the root filesystem."
 msgstr ""
+"Якщо ви виберете поділ диска на розділи вручну, вам слід мати на увазі певні "
+"специфічні для Silverblue обмеження. Через спосіб, у який операційна система "
+"та файлова система керуються за допомогою libostree, під час процедури "
+"встановлення можна створювати лише певні точки монтування. Перелік цих точок "
+"монтування обмежено `/boot`, `/var`, підкаталогами у `/var` та кореневою "
+"файловою системою."
 
 #. type: Plain text
 #: pages/installation-guide.adoc:149
@@ -421,6 +447,11 @@ msgid ""
 "will happily accept your custom partitions without error. Only when you try "
 "to boot your system will you be made aware that you have made a mistake."
 msgstr ""
+"На жаль, у засобі встановлення (який є спільним із типовою Fedora "
+"Workstation) не передбачено врахування специфічних для Silverblue обмежень, "
+"тому він без проблем прийме дані щодо нетипового поділу диска і не "
+"повідомлятиме ні про які помилки. Лише після спроби завантажити вашу систему "
+"ви дізнаєтеся, що припустилися помилки."
 
 #. type: Plain text
 #: pages/installation-guide.adoc:157
@@ -432,18 +463,24 @@ msgid ""
 "might have more than one disk in your system. In order to select the manual "
 "parition method, click the radio button labeled \"Custom\"."
 msgstr ""
+"Беручи до уваги обмеження, давайте спробуємо поділити диск для нашої системи "
+"вручну. Першою сторінкою, яку вам буде показано, є сторінка «Призначення "
+"встановлення». На ній ви зможете вибрати, якими дисками слід скористатися "
+"для встановлення і визначити метод встановлення. У нашому прикладі маємо "
+"лише один диск, але у вашій системи може бути декілька дисків. Щоб вибрати "
+"метод поділу вручну, виберіть варіант «Нетиповий»."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:158
 #, no-wrap
 msgid "Selecting Custom Partitioning"
-msgstr ""
+msgstr "Вибір нетипового поділу на розділи"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:158
 #, no-wrap
 msgid "faw-storage-custom-one.png"
-msgstr ""
+msgstr "faw-storage-custom-one.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:164
