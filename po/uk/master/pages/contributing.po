@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-26 22:28+0000\n"
+"POT-Creation-Date: 2020-04-27 22:28+0000\n"
 "PO-Revision-Date: 2020-03-08 10:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -62,7 +62,9 @@ msgstr "https://github.com/ostreedev/ostree[ostree]"
 
 #. type: Plain text
 #: pages/contributing.adoc:15
-msgid "https://github.com/debarshiray/toolbox[toolbox]"
+#, fuzzy
+#| msgid "https://github.com/debarshiray/toolbox[toolbox]"
+msgid "https://github.com/containers/toolbox[toolbox]"
 msgstr "https://github.com/debarshiray/toolbox[toolbox]"
 
 #. type: Plain text
