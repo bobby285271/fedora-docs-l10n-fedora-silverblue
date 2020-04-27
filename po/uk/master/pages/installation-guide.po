@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-04-26 22:39+0000\n"
+"PO-Revision-Date: 2020-04-27 22:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-guide/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
@@ -490,18 +490,22 @@ msgid ""
 "all of the partitions on your disk, you should click the arrow next to the "
 "\"Unknown\" disk."
 msgstr ""
+"У відповідь буде відкрито вікно «Поділ диска вручну», у якому вам буде "
+"показано мінімальний огляд наявної конфігурації пристроїв для зберігання "
+"даних. Щоб переглянути усі розділи на вашому диску, вам слід натиснути "
+"кнопку зі стрілочкою, розташовану поряд із «Невідомим» диском."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:165
 #, no-wrap
 msgid "Viewing Existing Partitions"
-msgstr ""
+msgstr "Перегляд наявних розділів"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:165
 #, no-wrap
 msgid "faw-manual-partition-two.png"
-msgstr ""
+msgstr "faw-manual-partition-two.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:177
@@ -517,18 +521,27 @@ msgid ""
 "partition to be delete. This brings up a prompt asking you to confirm that "
 "you want to delete the partition."
 msgstr ""
+"Тепер ми бачимо на диску три наявних розділи: два розділи `ext4` і розділ "
+"резервної пам'яті. На цьому етапі ви маєте (сподіваємося!) змогу розпізнати "
+"ваші наявні розділи і переконатися, що вони залишаться неушкодженими, якщо "
+"ви хочете зберегти наявні дані на вашому диску. Втім, у цьому прикладі ми не "
+"будемо зберігати дані, тому маємо вилучити усі наявні розділи, щоб розпочати "
+"усе на порожньому місці. Ми почнемо із позначення першого розділу `ext4` із "
+"міткою «fedora-root». Далі, натиснемо кнопку, яка виглядає як символ мінуса "
+"(«-»), щоб позначити розділ до вилучення. У відповідь програма покаже "
+"контекстне вікно, у якому попросить вас підтвердити вилучення розділу."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:178
 #, no-wrap
 msgid "Confirm Deletion of Partition"
-msgstr ""
+msgstr "Підтвердження вилучення розділу"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:178
 #, no-wrap
 msgid "faw-manual-partition-three.png"
-msgstr ""
+msgstr "faw-manual-partition-three.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:183
@@ -537,18 +550,21 @@ msgid ""
 "guide, we have removed all the paritions from the system and have a blank "
 "disk to work with."
 msgstr ""
+"Повторимо цю процедуру для усіх розділів, які слід вилучити. У цьому приклад "
+"ми вилучили усі розділи з системи і лишили диск порожнім для подальшої "
+"роботи."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:184
 #, no-wrap
 msgid "All Partitions Removed"
-msgstr ""
+msgstr "Усі розділи вилучено"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:184
 #, no-wrap
 msgid "faw-manual-partition-four.png"
-msgstr ""
+msgstr "faw-manual-partition-four.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:191
@@ -559,18 +575,23 @@ msgid ""
 "`vmlinuz` executable). It doesn't need to be very large, so we set the size "
 "for 500M."
 msgstr ""
+"Ми створимо наш перший розділ натисканням кнопки, яка виглядає як символ "
+"плюс («+»). Цей перший розділ буде нашим `/boot`, на ньому зберігатиметься "
+"програмне забезпечення, яке потрібне для завантаження системи (зокрема "
+"виконувані файли `initramfs` і `vmlinuz`). Розділ не повинен бути аж надто "
+"великим, тому встановімо для нього розмір у 500 МБ."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:192
 #, no-wrap
 msgid "Creating the /boot Partition"
-msgstr ""
+msgstr "Створення розділу /boot"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:192
 #, no-wrap
 msgid "faw-manual-partition-boot.png"
-msgstr ""
+msgstr "faw-manual-partition-boot.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:201
@@ -582,18 +603,24 @@ msgid ""
 "`/var/home` which is where all the user's home directories live. (There is a "
 "symlink from `/home` to `/var/home` on Silverblue systems.)"
 msgstr ""
+"Єдиним іншим розділом, який абсолютно потрібен для успішного встановлення "
+"системи є кореневий розділ («/»). Втім, ми маємо змогу створити додаткові "
+"розділи, серед яких `/var` та підкаталоги у `/var`. Для цього підручника ми "
+"створимо `/var/home` — там зберігатимуться усі домашні каталоги "
+"користувачів. (У системах Silverblue передбачено символічне посилання з "
+"`/home` на `/var/home`.)"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:202
 #, no-wrap
 msgid "Creating /var/home Partition"
-msgstr ""
+msgstr "Створення розділу /var/home"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:202
 #, no-wrap
 msgid "faw-manual-partition-varhome.png"
-msgstr ""
+msgstr "faw-manual-partition-varhome.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:210
