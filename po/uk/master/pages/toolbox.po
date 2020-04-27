@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-26 22:28+0000\n"
+"POT-Creation-Date: 2020-04-27 22:28+0000\n"
 "PO-Revision-Date: 2020-03-15 17:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -39,10 +39,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:11
+#, fuzzy
+#| msgid ""
+#| "Silverblue also comes with the _toolbox_ utility, which uses containers "
+#| "to provide an environment where development tools and libraries can be "
+#| "installed and used."
 msgid ""
-"Silverblue also comes with the _toolbox_ utility, which uses containers to "
-"provide an environment where development tools and libraries can be "
-"installed and used."
+"Silverblue also comes with the https://github.com/containers/"
+"toolbox[toolbox] utility, which uses containers to provide an environment "
+"where development tools and libraries can be installed and used."
 msgstr ""
 "Крім того, до складу Silverblue включено допоміжний засіб _toolbox_, який "
 "використовує контейнери для забезпечення роботи середовища, у якому можна "
@@ -162,13 +167,20 @@ msgstr ""
 "стандартне середовище командного рядка Linux."
 
 #. type: Plain text
-#: pages/toolbox.adoc:53
+#: pages/toolbox.adoc:54
+#, fuzzy
+#| msgid ""
+#| "In most cases, when a command is run inside a container, the program from "
+#| "inside the container is used. However, there are a few special cases "
+#| "where the program on the host is used instead. One example of this is the "
+#| "toolbox command itself; this makes it possible to use toolbox from inside "
+#| "toolbox containers."
 msgid ""
 "In most cases, when a command is run inside a container, the program from "
 "inside the container is used. However, there are a few special cases where "
-"the program on the host is used instead. One example of this is the toolbox "
-"command itself; this makes it possible to use toolbox from inside toolbox "
-"containers."
+"the program on the host is used instead (using `flatpak-spawn`). One example "
+"of this is the toolbox command itself; this makes it possible to use toolbox "
+"from inside toolbox containers."
 msgstr ""
 "У більшості випадків, при запуску команди зсередини контейнера буде "
 "використано програму з контейнера. Втім, існує декілька спеціалізованих "
@@ -177,19 +189,19 @@ msgstr ""
 "використання toolbox з контейнерів toolbox."
 
 #. type: Title ==
-#: pages/toolbox.adoc:55
+#: pages/toolbox.adoc:56
 #, no-wrap
 msgid "Installation"
 msgstr "Встановлення"
 
 #. type: Title ===
-#: pages/toolbox.adoc:57
+#: pages/toolbox.adoc:58
 #, no-wrap
 msgid "Fedora Silverblue"
 msgstr "Fedora Silverblue"
 
 #. type: Plain text
-#: pages/toolbox.adoc:61
+#: pages/toolbox.adoc:62
 msgid ""
 "Toolbox is preinstalled on Fedora Silverblue 30 or newer. On older versions, "
 "it can be installed with the following command:"
@@ -198,24 +210,24 @@ msgstr ""
 "версіях встановити toolbox можна такою командою:"
 
 #. type: Plain text
-#: pages/toolbox.adoc:63
+#: pages/toolbox.adoc:64
 #, no-wrap
 msgid " $ rpm-ostree install toolbox\n"
 msgstr " $ rpm-ostree install toolbox\n"
 
 #. type: Plain text
-#: pages/toolbox.adoc:65
+#: pages/toolbox.adoc:66
 msgid "This will install toolbox as a layered RPM."
 msgstr "У результаті буде встановлено toolbox як нашарований RPM."
 
 #. type: Title ===
-#: pages/toolbox.adoc:66
+#: pages/toolbox.adoc:67
 #, no-wrap
 msgid "Fedora Workstation"
 msgstr "Fedora Workstation"
 
 #. type: Plain text
-#: pages/toolbox.adoc:70
+#: pages/toolbox.adoc:71
 msgid ""
 "Toolbox can be installed on Fedora Workstation (or any package-based version "
 "of Fedora) with the following command:"
@@ -224,19 +236,19 @@ msgstr ""
 "пакунках версію Fedora) за допомогою такої команди:"
 
 #. type: Plain text
-#: pages/toolbox.adoc:72
+#: pages/toolbox.adoc:73
 #, no-wrap
 msgid " $ sudo dnf install toolbox\n"
 msgstr " $ sudo dnf install toolbox\n"
 
 #. type: Title ==
-#: pages/toolbox.adoc:74
+#: pages/toolbox.adoc:75
 #, no-wrap
 msgid "Your first toolbox"
 msgstr "Ваш перший toolbox"
 
 #. type: Plain text
-#: pages/toolbox.adoc:77
+#: pages/toolbox.adoc:78
 msgid ""
 "Once toolbox is installed, two simple commands are required to get started:"
 msgstr ""
@@ -244,13 +256,13 @@ msgstr ""
 "команди:"
 
 #. type: Plain text
-#: pages/toolbox.adoc:79
+#: pages/toolbox.adoc:80
 #, no-wrap
 msgid " $ toolbox create\n"
 msgstr " $ toolbox create\n"
 
 #. type: Plain text
-#: pages/toolbox.adoc:82
+#: pages/toolbox.adoc:83
 msgid ""
 "This will download an OCI image and create a toolbox container from it. Once "
 "this is complete, run:"
@@ -259,13 +271,13 @@ msgstr ""
 "Щойно дані буде отримано, віддайте таку команду:"
 
 #. type: Plain text
-#: pages/toolbox.adoc:84
+#: pages/toolbox.adoc:85
 #, no-wrap
 msgid " $ toolbox enter\n"
 msgstr " $ toolbox enter\n"
 
 #. type: Plain text
-#: pages/toolbox.adoc:87
+#: pages/toolbox.adoc:88
 msgid ""
 "Once inside the toolbox, you can access common command line tools, and "
 "install new ones using DNF."
@@ -275,29 +287,34 @@ msgstr ""
 "DNF."
 
 #. type: Plain text
-#: pages/toolbox.adoc:90
+#: pages/toolbox.adoc:92
+#, fuzzy
+#| msgid ""
+#| "When the prompt is inside a toolbox, it is prepended with a diamond: this "
+#| "indicates that the prompt is inside a toolbox container."
 msgid ""
 "When the prompt is inside a toolbox, it is prepended with a diamond: this "
-"indicates that the prompt is inside a toolbox container."
+"indicates that the prompt is inside a toolbox container. The diamond symbol "
+"may not be present if you use a custom shell theme."
 msgstr ""
 "Якщо запит щодо команди надходить зсередини toolbox, перед ним буде показано "
 "ромб: так система вказує на те, що запит є запитом із середини контейнера "
 "toolbox."
 
 #. type: Title ==
-#: pages/toolbox.adoc:92
+#: pages/toolbox.adoc:94
 #, no-wrap
 msgid "Commands and usage"
 msgstr "Команди і користування"
 
 #. type: Labeled list
-#: pages/toolbox.adoc:94
+#: pages/toolbox.adoc:96
 #, no-wrap
 msgid "`toolbox create [--container <name>]`"
 msgstr "`toolbox create [--container <назва>]`"
 
 #. type: Plain text
-#: pages/toolbox.adoc:101
+#: pages/toolbox.adoc:103
 msgid ""
 "Creates a toolbox container. This will download an OCI image if one isn't "
 "available (this is required to create the container). By default a Fedora "
@@ -313,13 +330,13 @@ msgstr ""
 "параметром ``--container <назва>``."
 
 #. type: Labeled list
-#: pages/toolbox.adoc:102
+#: pages/toolbox.adoc:104
 #, no-wrap
 msgid "`toolbox enter [--container <name>]`"
 msgstr "`toolbox enter [--container <назва>]`"
 
 #. type: Plain text
-#: pages/toolbox.adoc:107
+#: pages/toolbox.adoc:109
 msgid ""
 "Enters a toolbox for interactive use. Used without options, `toolbox enter` "
 "opens the default toolbox. If there is more than one toolbox, use the `--"
@@ -331,32 +348,49 @@ msgstr ""
 "визначення контейнера toolbox, до якого слід увійти."
 
 #. type: Labeled list
-#: pages/toolbox.adoc:108
+#: pages/toolbox.adoc:110
+#, fuzzy, no-wrap
+#| msgid "`toolbox enter [--container <name>]`"
+msgid "`toolbox run [--container <name>] <cmd> <arg ...>`"
+msgstr "`toolbox enter [--container <назва>]`"
+
+#. type: Plain text
+#: pages/toolbox.adoc:115
+#, fuzzy
+#| msgid ""
+#| "Enters a toolbox for interactive use. Used without options, `toolbox "
+#| "enter` opens the default toolbox. If there is more than one toolbox, use "
+#| "the `--container name` option to specify the toolbox to enter."
+msgid ""
+"Runs a command in a toolbox without entering it. Used without options, "
+"`toolbox run` runs the command in the default toolbox. If there is more than "
+"one toolbox, use the `--container name` option to specify the toolbox to be "
+"used."
+msgstr ""
+"Увійти до контейнера toolbox для інтерактивного користування. Якщо команду "
+"віддано без параметрів, `toolbox enter` відкриває типовий контейнер toolbox. "
+"Якщо контейнерів декілька, скористайтеся параметром `--container назва` для "
+"визначення контейнера toolbox, до якого слід увійти."
+
+#. type: Labeled list
+#: pages/toolbox.adoc:116
 #, no-wrap
 msgid "`toolbox list`"
 msgstr "`toolbox list`"
 
 #. type: Plain text
-#: pages/toolbox.adoc:114
-msgid ""
-"Lists local toolbox images and containers. Note: it is typical to see two "
-"images listed, one with a `localhost` prefix and one with a `registry."
-"fedoraproject.org` prefix. These are a normal result of the toolbox creation "
-"process."
+#: pages/toolbox.adoc:119
+msgid "Lists local toolbox images and containers."
 msgstr ""
-"Виводить список образів і контейнерів toolbox. Зауваження: типово буде "
-"показано список із двох образів — один із префіксом `localhost` і один із "
-"префіксом `registry.fedoraproject.org`. Це типові образи, які буде створено "
-"у процесі ініціалізації toolbox."
 
 #. type: Labeled list
-#: pages/toolbox.adoc:115
+#: pages/toolbox.adoc:120
 #, no-wrap
 msgid "`toolbox rm [--force] <name>`"
 msgstr "`toolbox rm [--force] <назва>`"
 
 #. type: Plain text
-#: pages/toolbox.adoc:119
+#: pages/toolbox.adoc:124
 msgid ""
 "Removes one or more toolbox containers. The `--force` option removes the "
 "container even if it is running."
@@ -365,35 +399,35 @@ msgstr ""
 "контейнер, навіть якщо його запущено."
 
 #. type: Labeled list
-#: pages/toolbox.adoc:120
+#: pages/toolbox.adoc:125
 #, no-wrap
 msgid "`toolbox rmi [--force] <name>`"
 msgstr "`toolbox rmi [--force] <назва>`"
 
 #. type: Plain text
-#: pages/toolbox.adoc:123
+#: pages/toolbox.adoc:128
 msgid "Removes one or more toolbox images."
 msgstr "Вилучає один або декілька образів toolbox."
 
 #. type: Labeled list
-#: pages/toolbox.adoc:124
+#: pages/toolbox.adoc:129
 #, no-wrap
 msgid "`toolbox --help`"
 msgstr "`toolbox --help`"
 
 #. type: Plain text
-#: pages/toolbox.adoc:127
+#: pages/toolbox.adoc:132
 msgid "Lists available commands."
 msgstr "Виводить список доступних команд."
 
 #. type: Title ===
-#: pages/toolbox.adoc:128
+#: pages/toolbox.adoc:133
 #, no-wrap
 msgid "Exiting a toolbox"
 msgstr "Вихід з toolbox"
 
 #. type: Plain text
-#: pages/toolbox.adoc:132
+#: pages/toolbox.adoc:137
 msgid ""
 "To return to the host environment, either run `exit` or quit the current "
 "shell (typically Ctrl+D)."
@@ -402,39 +436,34 @@ msgstr ""
 "або вийдіть з поточної оболонки (типово, Ctrl+D)."
 
 #. type: Title ==
-#: pages/toolbox.adoc:135
+#: pages/toolbox.adoc:140
 #, no-wrap
 msgid "Under the hood"
 msgstr "Під капотом"
 
 #. type: Plain text
-#: pages/toolbox.adoc:138
+#: pages/toolbox.adoc:143
 msgid "Toolbox uses the following technologies:"
 msgstr "У toolbox використано такі технології:"
 
 #. type: Plain text
-#: pages/toolbox.adoc:140
-msgid "https://buildah.io/[Buildah]"
-msgstr "https://buildah.io/[Buildah]"
-
-#. type: Plain text
-#: pages/toolbox.adoc:141
+#: pages/toolbox.adoc:145
 msgid "https://www.opencontainers.org/[OCI container images]"
 msgstr "https://www.opencontainers.org/[Образи контейнерів OCI]"
 
 #. type: Plain text
-#: pages/toolbox.adoc:142
+#: pages/toolbox.adoc:146
 msgid "https://podman.io/[Podman]"
 msgstr "https://podman.io/[Podman]"
 
 #. type: Title ==
-#: pages/toolbox.adoc:144
+#: pages/toolbox.adoc:148
 #, no-wrap
 msgid "Contact and issues"
 msgstr "Контакти і адреси для сповіщення про вади"
 
 #. type: Plain text
-#: pages/toolbox.adoc:148
+#: pages/toolbox.adoc:152
 msgid ""
 "To report issues, make suggestions, or contribute fixes, see https://github."
 "com/containers/toolbox[toolbox's GitHub project]."
@@ -443,7 +472,7 @@ msgstr ""
 "https://github.com/containers/toolbox[сторінкою проєкту toolbox на GitHub]."
 
 #. type: Plain text
-#: pages/toolbox.adoc:152
+#: pages/toolbox.adoc:156
 msgid ""
 "To get in touch with toolbox users and developers, use https://discussion."
 "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "
@@ -452,3 +481,17 @@ msgstr ""
 "Щоб зв'язатися із користувачами та розробниками toolbox, скористайтеся "
 "https://discussion.fedoraproject.org/[екземпляром Discourse Fedora] або "
 "каналом IRC #silverblue на сервері Freenode."
+
+#~ msgid ""
+#~ "Lists local toolbox images and containers. Note: it is typical to see two "
+#~ "images listed, one with a `localhost` prefix and one with a `registry."
+#~ "fedoraproject.org` prefix. These are a normal result of the toolbox "
+#~ "creation process."
+#~ msgstr ""
+#~ "Виводить список образів і контейнерів toolbox. Зауваження: типово буде "
+#~ "показано список із двох образів — один із префіксом `localhost` і один із "
+#~ "префіксом `registry.fedoraproject.org`. Це типові образи, які буде "
+#~ "створено у процесі ініціалізації toolbox."
+
+#~ msgid "https://buildah.io/[Buildah]"
+#~ msgstr "https://buildah.io/[Buildah]"
