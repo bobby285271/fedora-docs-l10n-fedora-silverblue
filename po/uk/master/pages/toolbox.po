@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-27 22:28+0000\n"
-"PO-Revision-Date: 2020-03-15 17:38+0000\n"
+"PO-Revision-Date: 2020-04-28 22:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/uk/>\n"
@@ -15,9 +15,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
 #: pages/toolbox.adoc:2
@@ -39,19 +39,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:11
-#, fuzzy
-#| msgid ""
-#| "Silverblue also comes with the _toolbox_ utility, which uses containers "
-#| "to provide an environment where development tools and libraries can be "
-#| "installed and used."
 msgid ""
 "Silverblue also comes with the https://github.com/containers/"
 "toolbox[toolbox] utility, which uses containers to provide an environment "
 "where development tools and libraries can be installed and used."
 msgstr ""
-"Крім того, до складу Silverblue включено допоміжний засіб _toolbox_, який "
-"використовує контейнери для забезпечення роботи середовища, у якому можна "
-"встановити засоби для розробки і бібліотеки і скористатися ними."
+"Крім того, до складу Silverblue включено допоміжний засіб https://github.com/"
+"containers/toolbox[toolbox], який використовує контейнери для забезпечення "
+"роботи середовища, у якому можна встановити засоби для розробки і бібліотеки "
+"і скористатися ними."
 
 #. type: Plain text
 #: pages/toolbox.adoc:17
@@ -168,13 +164,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:54
-#, fuzzy
-#| msgid ""
-#| "In most cases, when a command is run inside a container, the program from "
-#| "inside the container is used. However, there are a few special cases "
-#| "where the program on the host is used instead. One example of this is the "
-#| "toolbox command itself; this makes it possible to use toolbox from inside "
-#| "toolbox containers."
 msgid ""
 "In most cases, when a command is run inside a container, the program from "
 "inside the container is used. However, there are a few special cases where "
@@ -184,9 +173,9 @@ msgid ""
 msgstr ""
 "У більшості випадків, при запуску команди зсередини контейнера буде "
 "використано програму з контейнера. Втім, існує декілька спеціалізованих "
-"випадків, коли замість неї буде використано програму з основної системи. "
-"Одним з прикладів є сама команда `toolbox`; таким чином можна уможливити "
-"використання toolbox з контейнерів toolbox."
+"випадків, коли замість неї буде використано програму з основної системи (за "
+"допомогою `flatpak-spawn`). Одним з прикладів є сама команда `toolbox`; "
+"таким чином можна уможливити використання toolbox з контейнерів toolbox."
 
 #. type: Title ==
 #: pages/toolbox.adoc:56
@@ -288,10 +277,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:92
-#, fuzzy
-#| msgid ""
-#| "When the prompt is inside a toolbox, it is prepended with a diamond: this "
-#| "indicates that the prompt is inside a toolbox container."
 msgid ""
 "When the prompt is inside a toolbox, it is prepended with a diamond: this "
 "indicates that the prompt is inside a toolbox container. The diamond symbol "
@@ -299,7 +284,8 @@ msgid ""
 msgstr ""
 "Якщо запит щодо команди надходить зсередини toolbox, перед ним буде показано "
 "ромб: так система вказує на те, що запит є запитом із середини контейнера "
-"toolbox."
+"toolbox. Символ ромба може бути також показано, якщо ви використовуєте "
+"нетипову тему командної оболонки."
 
 #. type: Title ==
 #: pages/toolbox.adoc:94
@@ -349,28 +335,22 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/toolbox.adoc:110
-#, fuzzy, no-wrap
-#| msgid "`toolbox enter [--container <name>]`"
+#, no-wrap
 msgid "`toolbox run [--container <name>] <cmd> <arg ...>`"
-msgstr "`toolbox enter [--container <назва>]`"
+msgstr "`toolbox run [--container <назва>] <команда> <аргумент ...>`"
 
 #. type: Plain text
 #: pages/toolbox.adoc:115
-#, fuzzy
-#| msgid ""
-#| "Enters a toolbox for interactive use. Used without options, `toolbox "
-#| "enter` opens the default toolbox. If there is more than one toolbox, use "
-#| "the `--container name` option to specify the toolbox to enter."
 msgid ""
 "Runs a command in a toolbox without entering it. Used without options, "
 "`toolbox run` runs the command in the default toolbox. If there is more than "
 "one toolbox, use the `--container name` option to specify the toolbox to be "
 "used."
 msgstr ""
-"Увійти до контейнера toolbox для інтерактивного користування. Якщо команду "
-"віддано без параметрів, `toolbox enter` відкриває типовий контейнер toolbox. "
+"Виконує команду у toolbox, без входу до нього. Якщо команду віддано без "
+"параметрів, `toolbox run` запускає команду у типовому контейнері toolbox. "
 "Якщо контейнерів декілька, скористайтеся параметром `--container назва` для "
-"визначення контейнера toolbox, до якого слід увійти."
+"визначення контейнера toolbox, яким слід скористатися."
 
 #. type: Labeled list
 #: pages/toolbox.adoc:116
@@ -381,7 +361,7 @@ msgstr "`toolbox list`"
 #. type: Plain text
 #: pages/toolbox.adoc:119
 msgid "Lists local toolbox images and containers."
-msgstr ""
+msgstr "Виводить список образів і контейнерів toolbox."
 
 #. type: Labeled list
 #: pages/toolbox.adoc:120

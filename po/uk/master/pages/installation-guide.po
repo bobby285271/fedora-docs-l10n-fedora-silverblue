@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-04-27 22:38+0000\n"
+"PO-Revision-Date: 2020-04-28 22:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-guide/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
@@ -632,18 +632,24 @@ msgid ""
 "step and the installer will automatically use the remaining free space on "
 "the disk for the partition."
 msgstr ""
+"Ви можете створити додаткові розділи, зокрема `/var/log` або `/var/lib/"
+"containers`, але у цьому підручнику ми одразу перейдемо до створення "
+"кореневого розділу. Завершимо цю частину процедури встановлення на створенні "
+"кореневого розділу для вашої системи. Ми можемо не заповнювати поле розміру "
+"на цьому кроці — засіб встановлення використає усе вільне місце на диску для "
+"цього розділу."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:211
 #, no-wrap
 msgid "Creating Root Partition"
-msgstr ""
+msgstr "Створення кореневого розділу"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:211
 #, no-wrap
 msgid "faw-manual-partition-root.png"
-msgstr ""
+msgstr "faw-manual-partition-root.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:220
