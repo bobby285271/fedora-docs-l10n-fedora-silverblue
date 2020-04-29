@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-04-28 22:40+0000\n"
+"PO-Revision-Date: 2020-04-29 22:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation-guide/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
@@ -661,6 +661,14 @@ msgid ""
 "can change this during this partitioning phase to use standard partitions or "
 "an `xfs` filesystem, but that is outside the scope of this guide."
 msgstr ""
+"Коли буде створено усі розділи, ми можемо ознайомитися із остаточною "
+"конфігурацією, перш ніж продовжувати процедуру встановлення. Тут варто "
+"зауважити, що у типовій схемі поділу диска використовується "
+"https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM] із "
+"файловою системою `ext4`. Ви можете змінити це під час кроку поділу на "
+"розділи так, щоб використовувалися стандартні розділи або файлова система "
+"`xfs`, але у цьому підручнику ми не розглядатимемо питання вибору файлових "
+"систем."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:221
@@ -684,6 +692,13 @@ msgid ""
 "you click the big, blue \"Begin Installation\" button, your disk(s)  will be "
 "altered and any data on them may be lost forever."
 msgstr ""
+"Після підтвердження вашого варіанта поділу диска на розділи натисканням "
+"великої синьої кнопки «Готово» у верхній частині вікна ви повернетеся до "
+"вікна «Резюме щодо встановлення». За допомогою цього вікна ви матимете змогу "
+"ще раз оцінити вибрані параметри встановлення, перш ніж буде розпочато саму "
+"процедуру встановлення. Щойно ви натиснете велику синю кнопку «Почати "
+"встановлення», програми почнуть вносити зміни до дисків комп'ютера, і усі "
+"дані на них може бути втрачено назавжди."
 
 #. type: Plain text
 #: pages/installation-guide.adoc:232
@@ -691,12 +706,14 @@ msgid ""
 "Once you have started the installer, you can move on to the link:#user-"
 "config[User Configuration] section of this guide."
 msgstr ""
+"Після запуску засобу встановлення ви можете перейти до розділу link:#user-"
+"config[Налаштування записів користувачів] цього підручника."
 
 #. type: Title -
 #: pages/installation-guide.adoc:235
 #, no-wrap
 msgid "User Configuration"
-msgstr ""
+msgstr "Налаштування записів користувачів"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:239
@@ -704,18 +721,22 @@ msgid ""
 "As the installer churns away, you are presented with a screen where you can "
 "configure the root password and create one or more regular users:"
 msgstr ""
+"Доки засоби встановлення виконує роботу, основна програма встановлення "
+"запропонує вам вікно, за допомогою якого ви зможете налаштувати пароль "
+"адміністратора (root) і створити один або декілька записів звичайних "
+"користувачів:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:240
 #, no-wrap
 msgid "Configuring Users"
-msgstr ""
+msgstr "Налаштовування записів користувачів"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:240
 #, no-wrap
 msgid "faw-progress-one.png"
-msgstr ""
+msgstr "faw-progress-one.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:247
@@ -726,18 +747,23 @@ msgid ""
 "password process that estimates the strength of your password; aim for "
 "creating a password that is \"Strong\":"
 msgstr ""
+"Спочатку, налаштуймо пароль root. Переконайтеся, що використано безпечний і "
+"складний пароль, який складається із суміші літер верхнього і нижнього "
+"регістрів, цифр і спеціальних символів. У засобі встановлення передбачено "
+"чудовий індикатор, який оцінює складність пароля, за допомогою якого ви "
+"можете створити справді складний для зламу пароль:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:248
 #, no-wrap
 msgid "Choosing a Strong Root Password"
-msgstr ""
+msgstr "Вибір складного пароля root"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:248
 #, no-wrap
 msgid "faw-root-pw-two.png"
-msgstr ""
+msgstr "faw-root-pw-two.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:255
@@ -748,18 +774,24 @@ msgid ""
 "the system, which grants the username the ability to use the `sudo` command "
 "to elevate their privileges:"
 msgstr ""
+"Далі, ми можемо створити запис звичайного, непривілейованого користувача, "
+"яким користуватимемося для щоденної роботи. Пароля для облікового запису "
+"такого користувача стосуються ті самі поради, які ми давали для пароля "
+"користувача root. Крім того, ми можемо зробити нашого користувача "
+"адміністратором системи, що надасть йому змогу користуватися командою `sudo` "
+"для розширення прав доступу у системі:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:256
 #, no-wrap
 msgid "Creating an Unprivileged User"
-msgstr ""
+msgstr "Створення непривілейованого користувача"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:256
 #, no-wrap
 msgid "faw-user-two.png"
-msgstr ""
+msgstr "faw-user-two.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:260
@@ -767,18 +799,21 @@ msgid ""
 "Once we have the root password configured and an unprivileged user "
 "configured, we just sit back and wait for the installer to complete:"
 msgstr ""
+"Після визначення пароля root і створення облікового запису непривілейованого "
+"користувача ми можемо розслабитися і зачекати на завершення роботи засобу "
+"встановлення:"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation-guide.adoc:261
 #, no-wrap
 msgid "Waiting for the Installer to Complete"
-msgstr ""
+msgstr "Очікування на завершення роботи засобу встановлення"
 
 #. type: Target for macro image
 #: pages/installation-guide.adoc:261
 #, no-wrap
 msgid "faw-progress-two.png"
-msgstr ""
+msgstr "faw-progress-two.png"
 
 #. type: Plain text
 #: pages/installation-guide.adoc:266
@@ -787,3 +822,7 @@ msgid ""
 "blue button that says 'Reboot'. This will (obviously) reboot your system and "
 "you'll be able to login to your Silverblue installation for the first time!"
 msgstr ""
+"Нарешті, засіб встановлення завершить свою роботу, і буде показано велику "
+"синю кнопку із написом «Перезавантажити». Натискання цієї кнопки (очевидно) "
+"призведе до перезавантаження системи у процесі якого ви зможете вперше "
+"увійти до вашої нововстановленої системи Silverblue!"

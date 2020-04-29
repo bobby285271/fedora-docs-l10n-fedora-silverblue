@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-19 09:36+0200\n"
-"PO-Revision-Date: 2020-04-23 22:37+0000\n"
+"PO-Revision-Date: 2020-04-29 22:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagessilverblue-guide/uk/>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
@@ -102,6 +102,10 @@ msgid ""
 "command`, and any other form of coding listed in the document will take the "
 "form of `for config (~/.zsh/*.zsh) source $config` without the leading `~]$`."
 msgstr ""
+"Кожного разу, коли використовуватиметься видана у терміналі команда, її буде "
+"показано як `~]$ команда`, і усі інші форми коду, які буде використано у "
+"цьому документі, буде показано у формі `for config (~/.zsh/*.zsh) source "
+"$config` без початкового `~]$`."
 
 #. type: Title ==
 #: pages/silverblue-guide.adoc:36
@@ -163,7 +167,7 @@ msgstr ""
 #: pages/silverblue-guide.adoc:67
 #, no-wrap
 msgid "Layering"
-msgstr ""
+msgstr "Нашаровування"
 
 #. type: delimited block *
 #: pages/silverblue-guide.adoc:70
@@ -172,6 +176,10 @@ msgid ""
 "onto the rpm-ostree to solve the lacking proselint executable. If you have a "
 "preferred terminal to use, it should be layered too."
 msgstr ""
+"У випадку, який було використано у «Вступі», пакунок Proselint було "
+"нашаровано на rpm-ostree для вирішення нестачі виконуваного файла proselint. "
+"Якщо у вас є бажаний термінал, яким ви хочете користуватися, його також слід "
+"нашарувати."
 
 #. type: Plain text
 #: pages/silverblue-guide.adoc:72
@@ -215,7 +223,7 @@ msgstr "Поділ диска вручну"
 #: pages/silverblue-guide.adoc:75
 #, no-wrap
 msgid "Installing Side by Side with an Existing System"
-msgstr ""
+msgstr "Встановлення паралельно із наявною системою"
 
 #. type: Title ==
 #: pages/silverblue-guide.adoc:76
@@ -233,7 +241,7 @@ msgstr ""
 #: pages/silverblue-guide.adoc:78
 #, no-wrap
 msgid "Containers vs Flatpak vs Package Layering"
-msgstr ""
+msgstr "Контейнери, Flatpak і нашаровування пакунків"
 
 #. type: Plain text
 #: pages/silverblue-guide.adoc:88
@@ -294,7 +302,7 @@ msgstr ""
 #: pages/silverblue-guide.adoc:116
 #, no-wrap
 msgid "Using Flatpaks/Flathub"
-msgstr ""
+msgstr "Використання пакунків Flatpak і Flathub"
 
 #. type: Plain text
 #: pages/silverblue-guide.adoc:144
@@ -368,55 +376,55 @@ msgstr "Користування нашаровуванням пакунків"
 #: pages/silverblue-guide.adoc:164
 #, no-wrap
 msgid "Enabling 3rd Party RPM Repos"
-msgstr ""
+msgstr "Вмикання сторонніх сховищ RPM"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:165
 #, no-wrap
 msgid "Command Line vs. Gnome Software"
-msgstr ""
+msgstr "Командний рядок і «Програмне забезпечення GNOME»"
 
 #. type: Title ==
 #: pages/silverblue-guide.adoc:167
 #, no-wrap
 msgid "Using Containers"
-msgstr ""
+msgstr "Користування контейнерами"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:168
 #, no-wrap
 msgid "Using Podman to Run Containers"
-msgstr ""
+msgstr "Використання Podman для запуску контейнерів"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:169
 #, no-wrap
 msgid "Running Your First Container"
-msgstr ""
+msgstr "Запуск вашого першого контейнера"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:170
 #, no-wrap
 msgid "Writing Your First Dockerfile"
-msgstr ""
+msgstr "Написання вашого першого dockerfile"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:171
 #, no-wrap
 msgid "Using Buildah to Build Containers"
-msgstr ""
+msgstr "Використання buildah для побудови контейнерів"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:172
 #, no-wrap
 msgid "Sharing Data Between Container + Host ?"
-msgstr ""
+msgstr "Спільне використання даних у контейнері і основній системі?"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:173
 #, no-wrap
 msgid "Example Pet Container Usage"
-msgstr ""
+msgstr "Приклад використання контейнера-іграшки"
 
 #. type: Plain text
 #: pages/silverblue-guide.adoc:176
@@ -453,7 +461,7 @@ msgstr "Оновлення та повернення до попередніх �
 #: pages/silverblue-guide.adoc:181
 #, no-wrap
 msgid "Upgrading the OS"
-msgstr ""
+msgstr "Оновлення операційної системи"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:182
@@ -465,70 +473,70 @@ msgstr "Повернення до попередньої версії опера
 #: pages/silverblue-guide.adoc:183
 #, no-wrap
 msgid "Upgrading Flatpaks"
-msgstr ""
+msgstr "Оновлення пакунків Flatpak"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:184
 #, no-wrap
 msgid "Upgrading Containers"
-msgstr ""
+msgstr "Оновлення контейнерів"
 
 #. type: Title ==
 #: pages/silverblue-guide.adoc:186
 #, no-wrap
 msgid "Miscellany ?"
-msgstr ""
+msgstr "Інше?"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:188
 #, no-wrap
 msgid "Generating SSH Keys ?"
-msgstr ""
+msgstr "Створення ключів SSH?"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:189
 #, no-wrap
 msgid "Enabling SSH Access ?"
-msgstr ""
+msgstr "Вмикання доступу за допомогою SSH?"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:190
 #, no-wrap
 msgid "Using VPN Connections ?"
-msgstr ""
+msgstr "Використання з'єднань VPN?"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:191
 #, no-wrap
 msgid "oc cluster up ?"
-msgstr ""
+msgstr "Запуск кластера?"
 
 #. type: Title ==
 #: pages/silverblue-guide.adoc:193
 #, no-wrap
 msgid "Advanced Topics"
-msgstr ""
+msgstr "Додаткові теми"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:195
 #, no-wrap
 msgid "Creating a Custom Silverblue Compose"
-msgstr ""
+msgstr "Створення нетипової композиції Silverblue"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:196
 #, no-wrap
 msgid "Generating Your Own Silverblue ISO"
-msgstr ""
+msgstr "Створення власного образу ISO Silverblue"
 
 #. type: Title ==
 #: pages/silverblue-guide.adoc:198
 #, no-wrap
 msgid "Known Problems"
-msgstr ""
+msgstr "Відомі проблеми"
 
 #. type: Title ===
 #: pages/silverblue-guide.adoc:200
 #, no-wrap
 msgid "Lack of Support for DKMS/AKMOD (i.e. nVidia drivers)"
-msgstr ""
+msgstr "Нестача підтримки DKMS/AKMOD (тобто драйверів nVidia)"
