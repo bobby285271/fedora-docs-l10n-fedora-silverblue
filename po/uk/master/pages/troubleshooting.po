@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-29 22:29+0000\n"
-"PO-Revision-Date: 2020-05-01 07:40+0000\n"
+"PO-Revision-Date: 2020-05-01 22:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
@@ -235,6 +235,8 @@ msgid ""
 "After doing this, the output from `ostree admin config-diff | grep policy` "
 "should no longer indicate the policy is modified."
 msgstr ""
+"Після виконання цієї дії у результаті команди `ostree admin config-diff | "
+"grep policy` не повинно лишитися нічого, що вказує на зміну правил."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:78
@@ -242,11 +244,13 @@ msgid ""
 "If your policy still appears to be modified, you can try the following "
 "approach."
 msgstr ""
+"Якщо команда повідомляє, що правила змінено, ви можете скористатися вказаним "
+"нижче підходом."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:80
 msgid "Remove the SELinux policy; copy in the default policy"
-msgstr ""
+msgstr "Вилучіть правила SELinux; скопіюйте типові правила"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:83
@@ -264,6 +268,8 @@ msgid ""
 "After this, the `ostree admin config-diff | grep policy` command should "
 "return no modifications."
 msgstr ""
+"Після цього команда `ostree admin config-diff | grep policy` має повідомити, "
+"що ніяких змін до правил внесено не було."
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:87
