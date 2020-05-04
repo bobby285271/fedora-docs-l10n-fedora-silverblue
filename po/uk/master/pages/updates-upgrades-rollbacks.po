@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-05-03 22:27+0000\n"
+"POT-Creation-Date: 2020-05-04 22:28+0000\n"
 "PO-Revision-Date: 2020-03-08 10:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -118,17 +118,24 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:40
-msgid ""
-"For example, to upgrade from Fedora Silverblue 30 to Silverblue 31, the "
-"commands are:"
+#, fuzzy
+#| msgid ""
+#| "For example, to upgrade from Fedora Silverblue 30 to Silverblue 31, the "
+#| "commands are:"
+msgid "For example, to upgrade to Silverblue 32, the commands are:"
 msgstr ""
 "Наприклад, для оновлення з Fedora Silverblue 30 до Silverblue 31 слід "
 "віддати такі команди:"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:42
+#, fuzzy
+#| msgid ""
+#| "Currently, the default remote for Silverblue 31 is named `fedora`. If "
+#| "this is not the case for your system, you can find out the remote name by "
+#| "issuing: `ostree remote list`."
 msgid ""
-"Currently, the default remote for Silverblue 31 is named `fedora`. If this "
+"Currently, the default remote for Silverblue 32 is named `fedora`. If this "
 "is not the case for your system, you can find out the remote name by "
 "issuing: `ostree remote list`."
 msgstr ""
@@ -138,10 +145,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:45
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| " $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
+#| " $ rpm-ostree rebase fedora:fedora/31/x86_64/silverblue\n"
 msgid ""
-" $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
-" $ rpm-ostree rebase fedora:fedora/31/x86_64/silverblue\n"
+" $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-32-primary\n"
+" $ rpm-ostree rebase fedora:fedora/32/x86_64/silverblue\n"
 msgstr ""
 " $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
 " $ rpm-ostree rebase fedora:fedora/31/x86_64/silverblue\n"
