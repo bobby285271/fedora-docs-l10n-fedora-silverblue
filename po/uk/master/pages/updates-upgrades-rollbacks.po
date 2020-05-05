@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-04 22:28+0000\n"
-"PO-Revision-Date: 2020-03-08 10:38+0000\n"
+"PO-Revision-Date: 2020-05-05 22:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
-">\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
+"\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.0.3\n"
 
 #. type: Title =
 #: pages/updates-upgrades-rollbacks.adoc:2
@@ -118,43 +118,30 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:40
-#, fuzzy
-#| msgid ""
-#| "For example, to upgrade from Fedora Silverblue 30 to Silverblue 31, the "
-#| "commands are:"
 msgid "For example, to upgrade to Silverblue 32, the commands are:"
-msgstr ""
-"Наприклад, для оновлення з Fedora Silverblue 30 до Silverblue 31 слід "
-"віддати такі команди:"
+msgstr "Наприклад, для оновлення до Silverblue 32 слід віддати такі команди:"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:42
-#, fuzzy
-#| msgid ""
-#| "Currently, the default remote for Silverblue 31 is named `fedora`. If "
-#| "this is not the case for your system, you can find out the remote name by "
-#| "issuing: `ostree remote list`."
 msgid ""
 "Currently, the default remote for Silverblue 32 is named `fedora`. If this "
 "is not the case for your system, you can find out the remote name by "
 "issuing: `ostree remote list`."
 msgstr ""
-"У поточній версії віддалене сховище Silverblue 31 має назву `fedora`. Якщо "
+"У поточній версії віддалене сховище Silverblue 32 має назву `fedora`. Якщо "
 "це не так у вашій системі, ви можете визначити назву віддаленого сховища за "
 "допомогою такої команди: `ostree remote list`."
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:45
-#, fuzzy, no-wrap
-#| msgid ""
-#| " $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
-#| " $ rpm-ostree rebase fedora:fedora/31/x86_64/silverblue\n"
+#, no-wrap
 msgid ""
 " $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-32-primary\n"
 " $ rpm-ostree rebase fedora:fedora/32/x86_64/silverblue\n"
 msgstr ""
-" $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-primary\n"
-" $ rpm-ostree rebase fedora:fedora/31/x86_64/silverblue\n"
+" $ sudo ostree remote gpg-import fedora -k /etc/pki/rpm-gpg/RPM-GPG-KEY-"
+"fedora-32-primary\n"
+" $ rpm-ostree rebase fedora:fedora/32/x86_64/silverblue\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:48

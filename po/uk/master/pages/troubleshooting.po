@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-04 22:28+0000\n"
-"PO-Revision-Date: 2020-05-03 22:38+0000\n"
+"PO-Revision-Date: 2020-05-05 22:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0.3\n"
 
 #. type: Title =
@@ -358,6 +358,10 @@ msgid ""
 "HFS+ and is not always resilient to power failures or other kinds of hard "
 "power events."
 msgstr ""
+"Ця проблема, здебільшого, виникає у користувачів, які встановлюють "
+"Silverblue на апаратне забезпечення Apple. Розділ `/boot/efi` на обладнанні "
+"Apple форматовано як HFS+, і він не завжди стійкий до вимикання живлення та "
+"інших типів проблем із живленням."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:122
@@ -366,6 +370,9 @@ msgid ""
 "compose, it has become relatively easy for users to workaround this kind of "
 "error."
 msgstr ""
+"Оскільки до нової версії Silverblue до базової композиції включено пакунок "
+"`hfsplus-tools`, користувачам тепер набагато простіше усувати проблеми "
+"такого типу."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:126
@@ -403,17 +410,23 @@ msgid ""
 "system where they previously had another OS installed.  The error that is "
 "often observed looks like:"
 msgstr ""
+"Користувачі повідомляли про неможливість встановити Silverblue на засновані "
+"на EFI, де раніше було встановлено іншу операційну систему. Повідомлення про "
+"помилку, яке часто спостерігали, виглядало так:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:138
 #, no-wrap
 msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
 msgstr ""
+" ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-"
+"workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed "
+"with code -6`\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:140
 msgid "A couple of possible workarounds exist:"
-msgstr ""
+msgstr "Існує декілька можливих вирішень:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:142
@@ -423,6 +436,11 @@ msgid ""
 "efi`. You will then be able to boot the previous OS(s) alongside Fedora "
 "Silverblue. If this workaround is not successful follow the below step."
 msgstr ""
+"Під час процедури встановлення вибрати «Нетиповий поділ на розділи» і "
+"створити додатковий розділ EFI. Призначте для новоствореного розділу EFI "
+"точку монтування `/boot/efi`. Після цього ви зможете завантажувати ваші "
+"попередні операційні системи паралельно до Fedora Silverblue. Якщо цей "
+"варіант не спрацює, виконайте наведений нижче крок."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:143
@@ -431,6 +449,9 @@ msgid ""
 "be done by selecting \"Custom Partitioning\" and checking the `Reformat` box "
 "when creating the `/boot/efi` partition."
 msgstr ""
+"Переформатуйте розділ EFI у основній системі під час процедури встановлення. "
+"Зробити це можна вибором варіанта «Нетиповий поділ на розділи» із наступним "
+"позначенням пункту «Переформатувати» при створенні розділу `/boot/efi`."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:147
@@ -439,6 +460,10 @@ msgid ""
 "any other operating systems that were previously installed. Be sure that you "
 "have backed up any important data before using this workaround."
 msgstr ""
+"Вибір варіанта із переформатуванням `/boot/efi`, ймовірно, зробить "
+"неможливим завантаження будь-яких інших раніше встановлених операційних "
+"систем. Переконайтеся, що вами створено резервну копію будь-яких важливих "
+"даних, перш ніж користуватися цим варіантом."
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:148
@@ -453,6 +478,9 @@ msgid ""
 "`podman` is up to date by issuing `rpm-ostree upgrade` before attempting "
 "this workaround."
 msgstr ""
+"З версії `podman` `1.4.0` потреби у цьому обхідному маневрі немає. "
+"Переконайтеся, що встановлено актуальну версію `podman`, віддавши команду "
+"`rpm-ostree upgrade`, перш ніж намагатися скористатися цим обхідним маневром."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:153
@@ -460,6 +488,8 @@ msgid ""
 "When issuing the `toolbox list` command, systems using `podman` versions "
 "newer than `1.2.0`, will generate the following error:"
 msgstr ""
+"Якщо віддати команду `toolbox list`, системи, у яких встановлено `podman` "
+"версій, новіших за `1.2.0`, призведе до такого повідомлення про помилку:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:155
@@ -474,6 +504,10 @@ msgid ""
 "by `podman` versions greater than `1.2.0`. See https://github.com/"
 "debarshiray/toolbox/issues/169#issuecomment-495193902[Toolbox Github Repo]"
 msgstr ""
+"Наведений нижче варіант дій може бути корисним для інших помилок `toolbox`, "
+"які спричинено використанням версій `podman`, новіших за `1.2.0`. Див. "
+"https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902["
+"сховища Toolbox на Github]"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:159
@@ -481,6 +515,8 @@ msgid ""
 "As a workaround, it is possible to override `podman` packages newer than "
 "version `1.2.0` by issuing:"
 msgstr ""
+"Обійти цю проблему можна заміною пакунків `podman`, які є новішими за версію "
+"`1.2.0`, за допомогою такої команди:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:161
@@ -499,6 +535,8 @@ msgid ""
 "For reference, it is also possible to override the package by following "
 "these steps:"
 msgstr ""
+"Просто для довідки, замінити пакунок на якусь іншу версію можна за допомогою "
+"таких кроків:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:167
@@ -527,16 +565,19 @@ msgid ""
 "have downloaded on the first step) by: `rpm-ostree override replace "
 "podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
 msgstr ""
+"Замінити поточну встановлену версію пакунка `podman` (на пакунок, який ви "
+"отримали на першому кроці) можна за допомогою такої команди: `rpm-ostree "
+"override replace podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:171
 msgid "You can now reboot the system for the change to take effect."
-msgstr ""
+msgstr "Після цього систему можна перезавантажити, щоб зміни набули чинності."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:173
 msgid "To revert this workaround issue the following command:"
-msgstr ""
+msgstr "Щоб повернути усе до типового стану, віддайте таку команду:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:175
@@ -562,6 +603,9 @@ msgid ""
 "errors. You can fix this by resetting the permissions on the overlay-"
 "containers with the following command."
 msgstr ""
+"У певних версіях `podman` спроба увійти до toolbox призводить до "
+"повідомлення про помилку. Виправити помилку можна скиданням прав доступу до "
+"накладених контейнерів за допомогою наведеної нижче команди."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:185
@@ -590,21 +634,24 @@ msgid ""
 "You should never run `restorecon` on a Silverblue host.  See the following "
 "bug for details - https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
 msgstr ""
+"Ніколи не запускайте `restorecon` у основній системі Silverblue. Подробиці "
+"наведено у цьому звіті щодо вади: https://bugzilla.redhat.com/"
+"show_bug.cgi?id=1259018"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:194
 msgid "However, if you happened to do this, it is possible to recover."
-msgstr ""
+msgstr "Втім, якщо ви вже віддали цю команду, систему ще можна відновити."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:196
 msgid "Boot with `enforcing=0` on the kernel command line"
-msgstr ""
+msgstr "Завантажте систему з `enforcing=0` у командному рядку ядра"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:197
 msgid "Create a new, \"fixed\" commit locally"
-msgstr ""
+msgstr "Створіть новий «виправний» внесок локально"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:198
@@ -664,6 +711,8 @@ msgid ""
 "The caveat to this recovery is that your layered packages will be removed; "
 "you'll need to relayer them after the recovery."
 msgstr ""
+"Проблема такого способу відновлення полягає ту тому, що усі ваші нашаровані "
+"пакунки буде вилучено — вам доведеться знову нашарувати їх після відновлення."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:215
@@ -671,3 +720,5 @@ msgid ""
 "See this upstream comment for additional details - https://github.com/"
 "ostreedev/ostree/issues/1265#issuecomment-484557615"
 msgstr ""
+"Подробиці можна знайти у описі цього внеску до сховища основного коду: "
+"https://github.com/ostreedev/ostree/issues/1265#issuecomment-484557615"
