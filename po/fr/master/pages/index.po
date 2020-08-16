@@ -1,43 +1,44 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Timothée Ravier <tim@siosm.fr>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-08-15 22:23+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-08-16 22:36+0000\n"
+"Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-silverblue/masterpagesindex/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. type: Title =
 #: pages/index.adoc:1
 #, no-wrap
 msgid "Fedora Silverblue User Guide"
-msgstr ""
+msgstr "Guide de l'utilisateur de Fedora Silverblue"
 
 #. type: Plain text
 #: pages/index.adoc:4
 msgid "Welcome to the Fedora Silverblue user guide!"
-msgstr ""
+msgstr "Bienvenue dans le guide de l'utilisateur de Fedora Silverblue !"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/index.adoc:5
 #, no-wrap
 msgid "Silverblue logo"
-msgstr ""
+msgstr "Logo de Fedora Silverblue"
 
 #. type: Target for macro image
 #: pages/index.adoc:5
 #, no-wrap
 msgid "silverblue-logo.svg"
-msgstr ""
+msgstr "silverblue-logo.svg"
 
 #. type: Plain text
 #: pages/index.adoc:10
@@ -46,12 +47,16 @@ msgid ""
 "extremely stable and reliable. It also aims to be an excellent platform for "
 "developers and for those using container-focused workflows."
 msgstr ""
+"_Fedora Silverblue_ est un système d'exploitation avec interface graphique "
+"et immutable. Il a pour but d'être très stable et sûr. Il a aussi pour "
+"objectif d'être une plateforme de choix pour les développeurs et pour les "
+"usages centrés autour des conteneurs."
 
 #. type: Title ==
 #: pages/index.adoc:12
 #, no-wrap
 msgid "Introduction to Silverblue"
-msgstr ""
+msgstr "Introduction à Silverblue"
 
 #. type: Plain text
 #: pages/index.adoc:17
@@ -60,6 +65,10 @@ msgid ""
 "like a regular desktop operating system, and the experience is similar to "
 "what you find with using a standard Fedora Workstation."
 msgstr ""
+"Silverblue est une variante de Fedora Workstation. Le système se comporte de "
+"la même façon qu'un système d'exploitation avec interface graphique "
+"classique et l'expérience est similaire à celle offerte par un système "
+"Fedora Workstation conventionnel."
 
 #. type: Plain text
 #: pages/index.adoc:22
@@ -69,6 +78,11 @@ msgid ""
 "version. The operating system that is on disk is exactly the same from one "
 "machine to the next, and it never changes as it is used."
 msgstr ""
+"En revanche, à la différence des autres systèmes d'exploitation, Silverblue "
+"est immuable. Cela signifie que chaque installation est identique à toutes "
+"les autres installations de la même version. Le système installé sur le "
+"disque est le même d'une machine à l'autre et il n'est jamais modifié lors "
+"de son utilisation."
 
 #. type: Plain text
 #: pages/index.adoc:29
@@ -95,7 +109,7 @@ msgstr ""
 #: pages/index.adoc:36
 #, no-wrap
 msgid "About this guide"
-msgstr ""
+msgstr "A propos de ce guide"
 
 #. type: Plain text
 #: pages/index.adoc:42
@@ -105,21 +119,27 @@ msgid ""
 "documentation] can be used. This guide covers those areas where Silverblue "
 "differs from a standard Fedora Workstation, including:"
 msgstr ""
+"Dans la plupart des cas, Silverblue se comporte comme une installation "
+"standard de Fedora Workstation et la https://docs.fedoraproject.org/["
+"documentation standard de Fedora] peut être utilisée. Ce guide se concentre "
+"sur les éléments qui diffèrent d'une installation standard de Fedora "
+"Workstation, en particulier :"
 
 #. type: Plain text
 #: pages/index.adoc:44
 msgid "link:installation[OS installation]"
-msgstr ""
+msgstr "link:installation[Installation du système]"
 
 #. type: Plain text
 #: pages/index.adoc:45
 msgid "link:getting-started[Installing apps and software]"
-msgstr ""
+msgstr "link:getting-started[Installation de logiciels et d'applications]"
 
 #. type: Plain text
 #: pages/index.adoc:46
 msgid "link:updates-upgrades-rollbacks[OS upgrades and rollbacks]"
 msgstr ""
+"link:updates-upgrades-rollbacks[Mises à jour du système et retour en arrière]"
 
 #. type: Plain text
 #: pages/index.adoc:50
