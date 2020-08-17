@@ -1,32 +1,33 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Timothée Ravier <tim@siosm.fr>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-08-16 22:23+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-08-17 22:36+0000\n"
+"Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-silverblue/masterpagesfaq/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. type: Title =
 #: pages/faq.adoc:1
 #, no-wrap
 msgid "Frequently Asked Questions (FAQ)"
-msgstr ""
+msgstr "Foire aux questions (FAQ)"
 
 #. type: Title ==
 #: pages/faq.adoc:3
 #, no-wrap
 msgid "About the project"
-msgstr ""
+msgstr "A propos du projet"
 
 #. type: Labeled list
 #: pages/faq.adoc:6
@@ -46,7 +47,7 @@ msgstr ""
 #: pages/faq.adoc:11
 #, no-wrap
 msgid "Why does the Silverblue logo look like a leaf?"
-msgstr ""
+msgstr "Pourquoi est-ce que le logo de Silverblue ressemble à une feuille ?"
 
 #. type: Plain text
 #: pages/faq.adoc:15
@@ -60,7 +61,7 @@ msgstr ""
 #: pages/faq.adoc:16
 #, no-wrap
 msgid "Is Silverblue another GNOME OS?"
-msgstr ""
+msgstr "Est-ce que Silverblue est une variante de GNOME OS ?"
 
 #. type: Plain text
 #: pages/faq.adoc:22
@@ -76,7 +77,7 @@ msgstr ""
 #: pages/faq.adoc:23
 #, no-wrap
 msgid "What is Silverblue's relationship with Project Atomic?"
-msgstr ""
+msgstr "Quelle est la relation entre Silverblue et Project Atomic ?"
 
 #. type: Plain text
 #: pages/faq.adoc:27
@@ -96,7 +97,7 @@ msgstr ""
 #: pages/faq.adoc:31
 #, no-wrap
 msgid "How can I install Eclipse on Silverblue?"
-msgstr ""
+msgstr "Comment puis-je installer Éclipse sur Silverblue ?"
 
 #. type: Plain text
 #: pages/faq.adoc:34
@@ -109,7 +110,7 @@ msgstr ""
 #: pages/faq.adoc:35
 #, no-wrap
 msgid "How do I create a VPN connection?"
-msgstr ""
+msgstr "Comment puis-je créer une connection VPN ?"
 
 #. type: Plain text
 #: pages/faq.adoc:40
@@ -125,6 +126,8 @@ msgstr ""
 #, no-wrap
 msgid "How can I play more videos in Firefox, like YouTube?"
 msgstr ""
+"Comment faire fonctionner plus de vidéos sur Firefox comme par exemple sur "
+"YouTube ?"
 
 #. type: Plain text
 #: pages/faq.adoc:49
