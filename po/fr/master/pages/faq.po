@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-10-18 22:25+0000\n"
+"POT-Creation-Date: 2020-10-19 22:27+0000\n"
 "PO-Revision-Date: 2020-08-17 22:36+0000\n"
 "Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
@@ -54,7 +54,7 @@ msgstr "Pourquoi est-ce que le logo de Silverblue ressemble à une feuille ?"
 msgid ""
 "Our favorite choice for a project name was Silverleaf, but that sadly did "
 "not work out. We just couldn't quite let go of the leaf. You could also say "
-"that Silverblue is a new new leaf on Fedora's OSTree. 😀"
+"that Silverblue is a new leaf on Fedora's OSTree. 😀"
 msgstr ""
 
 #. type: Labeled list

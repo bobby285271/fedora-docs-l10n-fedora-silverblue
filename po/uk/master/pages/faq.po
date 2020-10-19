@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-10-18 22:25+0000\n"
+"POT-Creation-Date: 2020-10-19 22:27+0000\n"
 "PO-Revision-Date: 2020-03-25 20:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -56,10 +56,15 @@ msgstr "Чому логотип Silverblue виглядає як листок?"
 
 #. type: Plain text
 #: pages/faq.adoc:15
+#, fuzzy
+#| msgid ""
+#| "Our favorite choice for a project name was Silverleaf, but that sadly did "
+#| "not work out. We just couldn't quite let go of the leaf. You could also "
+#| "say that Silverblue is a new new leaf on Fedora's OSTree. 😀"
 msgid ""
 "Our favorite choice for a project name was Silverleaf, but that sadly did "
 "not work out. We just couldn't quite let go of the leaf. You could also say "
-"that Silverblue is a new new leaf on Fedora's OSTree. 😀"
+"that Silverblue is a new leaf on Fedora's OSTree. 😀"
 msgstr ""
 "Ми хотіли назвати проєкт «Silverleaf» («срібний листок»), але, на жаль, не "
 "вийшло. Але ми не могли просто так забути наш «листок». «Silverblue», можна "
