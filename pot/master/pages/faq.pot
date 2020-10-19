@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-10-18 22:25+0000\n"
+"POT-Creation-Date: 2020-10-19 22:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgstr ""
 msgid ""
 "Our favorite choice for a project name was Silverleaf, but that sadly did "
 "not work out. We just couldn't quite let go of the leaf. You could also say "
-"that Silverblue is a new new leaf on Fedora's OSTree. 😀"
+"that Silverblue is a new leaf on Fedora's OSTree. 😀"
 msgstr ""
 
 #. type: Labeled list
