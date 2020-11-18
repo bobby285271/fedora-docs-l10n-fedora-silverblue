@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-17 22:32+0000\n"
+"POT-Creation-Date: 2020-11-18 22:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,11 +47,10 @@ msgstr ""
 #. type: Plain text
 #: pages/technical-information.adoc:19
 msgid ""
-"https://ostree.readthedocs.io/en/latest/[ostree] is the core technology that "
-"is used to compose, deploy and update Silverblue. ostree operates in a "
-"similar manner to a version control system, but it operates on entire "
-"filesystem trees.  It is often described as “Git for operating system "
-"binaries”."
+"https://ostreedev.github.io/ostree/[ostree] is the core technology that is "
+"used to compose, deploy and update Silverblue. ostree operates in a similar "
+"manner to a version control system, but it operates on entire filesystem "
+"trees.  It is often described as “Git for operating system binaries”."
 msgstr ""
 
 #. type: Plain text
@@ -65,9 +64,9 @@ msgstr ""
 #. type: Plain text
 #: pages/technical-information.adoc:27
 msgid ""
-"https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] builds on top of "
-"ostree, and makes it possible to install RPMs as a “layer” on top of an "
-"ostree image. This makes it possible to install RPMs on Silverblue."
+"https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
+"and makes it possible to install RPMs as a “layer” on top of an ostree "
+"image. This makes it possible to install RPMs on Silverblue."
 msgstr ""
 
 #. type: Plain text
@@ -146,6 +145,6 @@ msgstr ""
 #: pages/technical-information.adoc:57
 msgid ""
 "For a more detailed explanation of Silverblue's filesystem layout, refer to "
-"the excellent https://ostree.readthedocs.io/en/latest/manual/adapting-"
-"existing/[libostree documentation]."
+"the excellent https://ostreedev.github.io/ostree/adapting-existing/"
+"[libostree documentation]."
 msgstr ""

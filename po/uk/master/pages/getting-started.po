@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-17 22:32+0000\n"
+"POT-Creation-Date: 2020-11-18 22:30+0000\n"
 "PO-Revision-Date: 2020-03-23 12:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -454,10 +454,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:137
+#, fuzzy
+#| msgid ""
+#| "Removing and replacing packages using package layering is not generally "
+#| "recommended. For more information, see the https://rpm-ostree.readthedocs."
+#| "io/en/latest/manual/administrator-handbook/[rpm-ostree documentation]."
 msgid ""
 "Removing and replacing packages using package layering is not generally "
-"recommended. For more information, see the https://rpm-ostree.readthedocs.io/"
-"en/latest/manual/administrator-handbook/[rpm-ostree documentation]."
+"recommended. For more information, see the https://coreos.github.io/rpm-"
+"ostree/administrator-handbook/[rpm-ostree documentation]."
 msgstr ""
 "Загалом, не рекомендуємо вам користуватися вилученням або заміною пакунків з "
 "використанням нашаровування. Щоб дізнатися про це більше, ознайомтеся із "

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-17 22:32+0000\n"
+"POT-Creation-Date: 2020-11-18 22:30+0000\n"
 "PO-Revision-Date: 2020-02-28 09:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -50,8 +50,12 @@ msgstr ""
 
 #. type: Plain text
 #: pages/reading-and-resources.adoc:11
+#, fuzzy
+#| msgid ""
+#| "https://ostree.readthedocs.io/en/latest/[ostree] - OS image composition "
+#| "and updates"
 msgid ""
-"https://ostree.readthedocs.io/en/latest/[ostree] - OS image composition and "
+"https://ostreedev.github.io/ostree/[ostree] - OS image composition and "
 "updates"
 msgstr ""
 "https://ostree.readthedocs.io/en/latest/[ostree] — компонування та оновлення "
@@ -66,9 +70,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/reading-and-resources.adoc:14
+#, fuzzy
+#| msgid ""
+#| "https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] - hybrid image/"
+#| "package system"
 msgid ""
-"https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] - hybrid image/"
-"package system"
+"https://coreos.github.io/rpm-ostree/[rpm-ostree] - hybrid image/package "
+"system"
 msgstr ""
 "https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] — гібридна система "
 "образів і пакунків"

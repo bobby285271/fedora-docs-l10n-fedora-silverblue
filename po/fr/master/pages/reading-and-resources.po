@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-17 22:32+0000\n"
+"POT-Creation-Date: 2020-11-18 22:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 #. type: Plain text
 #: pages/reading-and-resources.adoc:11
 msgid ""
-"https://ostree.readthedocs.io/en/latest/[ostree] - OS image composition and "
+"https://ostreedev.github.io/ostree/[ostree] - OS image composition and "
 "updates"
 msgstr ""
 
@@ -58,8 +58,8 @@ msgstr ""
 #. type: Plain text
 #: pages/reading-and-resources.adoc:14
 msgid ""
-"https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] - hybrid image/"
-"package system"
+"https://coreos.github.io/rpm-ostree/[rpm-ostree] - hybrid image/package "
+"system"
 msgstr ""
 
 #. type: Title ==
