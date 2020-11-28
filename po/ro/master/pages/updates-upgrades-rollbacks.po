@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-27 22:29+0000\n"
+"POT-Creation-Date: 2020-11-28 22:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,13 +15,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Title =
-#: ./pages/updates-upgrades-rollbacks.adoc:2
+#: pages/updates-upgrades-rollbacks.adoc:2
 #, no-wrap
 msgid "Updates, Upgrades & Rollbacks"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:7
+#: pages/updates-upgrades-rollbacks.adoc:7
 msgid ""
 "Installing updates with Silverblue is easy and fast (much faster than other "
 "operating systems). It also has a special rollback feature, in case anything "
@@ -29,13 +29,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: ./pages/updates-upgrades-rollbacks.adoc:9
+#: pages/updates-upgrades-rollbacks.adoc:9
 #, no-wrap
 msgid "Updating Silverblue"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:15
+#: pages/updates-upgrades-rollbacks.adoc:15
 msgid ""
 "OS updates in Silverblue are fully integrated into the desktop; you will be "
 "automatically notified when an update is available. The standard behavior is "
@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:19
+#: pages/updates-upgrades-rollbacks.adoc:19
 msgid ""
 "Once an update is ready, it is just a matter of rebooting to start using the "
 "new version. There is no waiting for the update to be installed during this "
@@ -52,20 +52,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:22
+#: pages/updates-upgrades-rollbacks.adoc:22
 msgid ""
 "If you'd prefer, it is also possible to update using the command line. To do "
 "this, run:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:24
+#: pages/updates-upgrades-rollbacks.adoc:24
 #, no-wrap
 msgid " $ rpm-ostree upgrade\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:28
+#: pages/updates-upgrades-rollbacks.adoc:28
 msgid ""
 "This will check for new updates and download and install them if they are "
 "available. Alternatively, to check for available updates without downloading "
@@ -73,19 +73,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:30
+#: pages/updates-upgrades-rollbacks.adoc:30
 #, no-wrap
 msgid " $ rpm-ostree upgrade --check\n"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/updates-upgrades-rollbacks.adoc:32
+#: pages/updates-upgrades-rollbacks.adoc:32
 #, no-wrap
 msgid "Upgrading between major versions"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:37
+#: pages/updates-upgrades-rollbacks.adoc:37
 msgid ""
 "Upgrading between major versions (such as from Fedora 32 to Fedora 33) can "
 "be completed using the Software application. Alternatively, Silverblue can "
@@ -93,27 +93,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:39
+#: pages/updates-upgrades-rollbacks.adoc:39
 msgid ""
 "First, verify the branch is available. You can print all available branches "
 "with this command:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:41
+#: pages/updates-upgrades-rollbacks.adoc:41
 #, no-wrap
 msgid " $ ostree remote refs fedora\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:44
+#: pages/updates-upgrades-rollbacks.adoc:44
 msgid ""
 "After you verify the name of your branch, you are ready to proceed. For "
 "example, to upgrade to Silverblue 33, the command is:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:46
+#: pages/updates-upgrades-rollbacks.adoc:46
 msgid ""
 "Currently, the default remote for Silverblue 33 is named `fedora`. If this "
 "is not the case for your system, you can find out the remote name by "
@@ -121,26 +121,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:48
+#: pages/updates-upgrades-rollbacks.adoc:48
 #, no-wrap
 msgid " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:51
+#: pages/updates-upgrades-rollbacks.adoc:51
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/updates-upgrades-rollbacks.adoc:53
+#: pages/updates-upgrades-rollbacks.adoc:53
 #, no-wrap
 msgid "Rolling back"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:59
+#: pages/updates-upgrades-rollbacks.adoc:59
 msgid ""
 "Silverblue keeps a record of the previous OS version, which can be switched "
 "to instead of the latest version. While this shouldn't usually be necessary, "
@@ -149,12 +149,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:61
+#: pages/updates-upgrades-rollbacks.adoc:61
 msgid "There are two ways to roll back to the previous version:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:65
+#: pages/updates-upgrades-rollbacks.adoc:65
 msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
@@ -162,14 +162,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:67
+#: pages/updates-upgrades-rollbacks.adoc:67
 msgid ""
 "Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/updates-upgrades-rollbacks.adoc:70
+#: pages/updates-upgrades-rollbacks.adoc:70
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update. Updating will undo the rollback, so should be avoided if "
