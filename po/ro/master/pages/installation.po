@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-11-27 22:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/installation.adoc:1
+#, no-wrap
+msgid "Installing Silverblue"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:8
+msgid ""
+"Fedora Silverblue can be installed in the same way as Fedora Workstation, "
+"and the official Fedora installation guide can be followed for your Fedora "
+"version.  See the https://docs.fedoraproject.org/en-US/docs/[Fedora "
+"documentation site] for more details."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/installation.adoc:10
+#, no-wrap
+msgid "Before you begin"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:15
+msgid ""
+"As with installing any new operating system, it is important to back up any "
+"data that you want to save before starting, and have a clear understanding "
+"of the consequences of what you are doing."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:20
+msgid ""
+"Silverblue is intended to provide the full range of capabilities that you "
+"would expect from an installation of Fedora Workstation. However, there are "
+"some differences in terms of which applications can be installed, and how "
+"the operating system environment works."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:26
+msgid ""
+"It is therefore recommended that you read this user guide before deciding to "
+"install Silverblue. It is also recommended that you determine whether "
+"Silverblue meets the specific needs or requirements that you might have. If "
+"you are uncertain about this, Silverblue can also be tested in a virtual "
+"machine prior to installation or booted from a flash drive using Fedora "
+"Media Writer."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/installation.adoc:28
+#, no-wrap
+msgid "Known limitations"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:32
+#, no-wrap
+msgid ""
+"*Silverblue does not provide a fully functional experience for dual booting "
+"or \n"
+"manual partitioning.*\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:38
+msgid ""
+"It is possible to make Silverblue work for both dual boot and manual "
+"partitioning, and some guidance is provided on manual partitioning below.  "
+"However, there are hazards involved in both cases, and you should only "
+"attempt to use these features if you have done the necessary research, and "
+"are confident that you can overcome any issues that you might encounter."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/installation.adoc:40
+#, no-wrap
+msgid "Getting Silverblue"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:46
+msgid ""
+"If you are using Fedora Media Writer, Silverblue should be listed as a "
+"download option. However, if it isn't, or if you want to download it "
+"manually, an install image can be downloaded from "
+"https://silverblue.fedoraproject.org/[the main Silverblue website]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:49
+msgid ""
+"Once you have got your copy of Silverblue, it can be installed in the usual "
+"manner. We hope that you love it!"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/installation.adoc:51
+#, no-wrap
+msgid "Manual Partitioning"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:57
+msgid ""
+"As described above, there are known issues with manual partitioning on "
+"Silverblue, and it should be used with caution. The following notes are "
+"intended as hints for those attempting it, and should not be treated as "
+"recommended practice. Automatic partitioning is recommended."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:60
+msgid ""
+"With Silverblue, only certain mounts can be manually specified as "
+"partitions. These include:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:62
+msgid "`/boot`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:63
+msgid "`/var`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:64
+msgid "Subdirectories under `/var`, including:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:65
+msgid "`/var/home` (Silverblue has a symlink from `/home` to `/var/home`)"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:66
+msgid "`/var/log`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:67
+msgid "`/var/containers`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:68
+msgid "The root filesystem: `/`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:72
+msgid ""
+"The Fedora installer is not aware of these restrictions and will accept "
+"custom partitions without error, even if they are incompatible with "
+"Silverblue."
+msgstr ""
+
+#. type: Named 'title' AttributeList argument for macro 'image'
+#: ./pages/installation.adoc:73
+#, no-wrap
+msgid "Partitioning Complete"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/installation.adoc:73
+#, no-wrap
+msgid "faw-manual-partition-complete.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:77
+msgid ""
+"The above screenshot shows a typical configuration with manual partitioning, "
+"with partitions for `/boot`, `/`, `swap` and `/var/home`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/installation.adoc:80
+msgid ""
+"Manual partitioning on Silverblue can be done with `Btrfs`, "
+"https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], as "
+"well as standard partitions or an `xfs` filesystem."
+msgstr ""
