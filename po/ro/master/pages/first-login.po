@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-04-19 09:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/first-login.adoc:1
+#, no-wrap
+msgid "First Login"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/first-login.adoc:6
+#, no-wrap
+msgid ""
+"[[filesystem-layout]]\n"
+"Filesystem Layout\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:12
+msgid ""
+"The root filesystem has the immutable attribute set on OSTree installations, "
+"so `/`, `/usr` and everything below it is readonly. `/var` is where all the "
+"runtime state is kept. There are some symlinks that put the state-carrying "
+"directories in their traditional, expected place:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:14
+msgid "`/home` → `/var/home`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:15
+msgid "`/opt` → `/var/opt`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:16
+msgid "`/srv` → `/var/srv`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:17
+msgid "`/root` → `/var/roothome`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:18
+msgid "`/usr/local` → `/var/usrlocal`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:19
+msgid "`/mnt`→ `/var/mnt`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:20
+msgid "`/tmp` → `/sysroot/tmp`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:23
+msgid ""
+"and so on. If you have a separate home partition on your system, it should "
+"be mounted on `/var/home`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:27
+msgid ""
+"For a more detailed explanation of the system layout, refer to the excellent "
+"https://ostree.readthedocs.io/en/latest/manual/adapting-existing/[libostree "
+"documentation] on this subject."
+msgstr ""
+
+#. type: Title -
+#: ./pages/first-login.adoc:30
+#, no-wrap
+msgid "Packaging: ostree, rpms, flatpaks and containers"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:36
+msgid ""
+"_ostree_ is responsible for deploying and updating the OS image (ie "
+"everything below `/` that is not symlinked into `/var`). ostree also "
+"contains the necessary logic to update grub.cfg entries to point to the "
+"current image."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:45
+msgid ""
+"_rpm-ostree_ builds on top of ostree, and makes it possible to install rpms "
+"as a 'layer' on top of an ostree image. In practice, that means you can "
+"install rpms as usual, just use rpm-ostree install instead of dnf "
+"install. What happens under the covers is that rpm-ostree will compose a new "
+"OS image by adding the rpm payload to the existing OS image, and creating a "
+"new, combined image. To see the newly installed rpms, you have to reboot "
+"into the new image. _rpm-ostree_ also takes care of recreating the layered "
+"image whenever you update the base OS image."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:48
+msgid ""
+"_flatpak_ uses container technologies to deploy and run desktop applications "
+"isolated from the underlying OS."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:51
+msgid ""
+"You can of course use other container tools like _podman_ or _buildah_ to "
+"run other containers on a Silverblue system."
+msgstr ""
+
+#. type: Title -
+#: ./pages/first-login.adoc:54
+#, no-wrap
+msgid "Using Flatpak"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:59
+msgid ""
+"If you don't want to use the _flatpak_ commandline tools, GNOME Software has "
+"excellent support for installing Flatpaks. There are several repositories "
+"that provide Flatpaks."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:62
+msgid ""
+"http://flathub.org[Flathub] is a convenient place to find many popular "
+"desktop apps"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:64
+msgid ""
+"https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo[GNOME nightly] provides "
+"builds of unstable GNOME apps"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:66
+msgid ""
+"https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly.flatpakref[Firefox "
+"nightly]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:67
+msgid "http://eclipse.matbooth.co.uk/[Eclipse nightly]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:71
+msgid ""
+"Once you have repositories enabled, you can use GNOME Software's excellent "
+"support for searching Flatpaks. Or you can use `flatpak search` command."
+msgstr ""
+
+#. type: Title -
+#: ./pages/first-login.adoc:74
+#, no-wrap
+msgid "Using Package Layering"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:81
+msgid ""
+"Package layering works by re-composing the OS image locally, while adding "
+"extra rpm packages to it. This is done with the `rpm-ostree install` "
+"command. Once a package has been layered, rpm-ostree will keep it up-to-date "
+"for you and recreate the layer when you install a newer OS image."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:84
+msgid ""
+"You can also remove a package from OS image. The command to do this is "
+"`rpm-ostree override remove`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:88
+msgid ""
+"rpm-ostree does not currently have an equivalent to the `dnf search` command "
+"for finding packages in the configured repositories. As a workaround, you "
+"can run _dnf_ in a temporary container like this:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/first-login.adoc:91
+#, no-wrap
+msgid "$ sudo podman run --rm fedora:28 dnf search <1>\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:93
+msgid "provide your search term"
+msgstr ""
+
+#. type: Title -
+#: ./pages/first-login.adoc:96
+#, no-wrap
+msgid "Enabling third-party RPM Repositories"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/first-login.adoc:101
+msgid ""
+"Silverblue installs a number of yum repositories containing useful software "
+"that is not part of Fedora proper for various reasons. You can enable these "
+"repositories either during the initial setup of an new install, or from the "
+"\"Software Repositories\" dialog in GNOME Software."
+msgstr ""
