@@ -24,7 +24,6 @@ for staged in $(git diff --name-only --cached --diff-filter=d); do
         countDateRem=$(grep -E --count '^[-]"POT-Creation-Date:' "$output")
 
         if [ "$countChanges" -eq $(("$countDateAdd" + "$countDateRem")) ] ; then
-            echo "the file $staged only contains POT-Creation-Date"
             git reset -q HEAD "$staged"
         fi
     fi
