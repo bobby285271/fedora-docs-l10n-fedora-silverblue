@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: 2020-02-28 09:38+0000\n"
+"PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesreading-and-resources/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: pages/reading-and-resources.adoc:1
@@ -50,15 +50,11 @@ msgstr ""
 
 #. type: Plain text
 #: pages/reading-and-resources.adoc:11
-#, fuzzy
-#| msgid ""
-#| "https://ostree.readthedocs.io/en/latest/[ostree] - OS image composition "
-#| "and updates"
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] - OS image composition and "
 "updates"
 msgstr ""
-"https://ostree.readthedocs.io/en/latest/[ostree] — компонування та оновлення "
+"https://ostreedev.github.io/ostree/[ostree] — компонування та оновлення "
 "образів операційних систем"
 
 #. type: Plain text
@@ -70,16 +66,12 @@ msgstr ""
 
 #. type: Plain text
 #: pages/reading-and-resources.adoc:14
-#, fuzzy
-#| msgid ""
-#| "https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] - hybrid image/"
-#| "package system"
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] - hybrid image/package "
 "system"
 msgstr ""
-"https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] — гібридна система "
-"образів і пакунків"
+"https://coreos.github.io/rpm-ostree/[rpm-ostree] — гібридна система образів "
+"і пакунків"
 
 #. type: Title ==
 #: pages/reading-and-resources.adoc:15

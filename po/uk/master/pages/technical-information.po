@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: 2020-04-16 02:27+0000\n"
+"PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestechnical-information/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: pages/technical-information.adoc:2
@@ -55,20 +55,13 @@ msgstr "ostree та rpm-ostree"
 
 #. type: Plain text
 #: pages/technical-information.adoc:19
-#, fuzzy
-#| msgid ""
-#| "https://ostree.readthedocs.io/en/latest/[ostree] is the core technology "
-#| "that is used to compose, deploy and update Silverblue. ostree operates in "
-#| "a similar manner to a version control system, but it operates on entire "
-#| "filesystem trees.  It is often described as “Git for operating system "
-#| "binaries”."
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] is the core technology that is "
 "used to compose, deploy and update Silverblue. ostree operates in a similar "
 "manner to a version control system, but it operates on entire filesystem "
 "trees.  It is often described as “Git for operating system binaries”."
 msgstr ""
-"https://ostree.readthedocs.io/en/latest/[ostree] — базова технологія, яка "
+"https://ostreedev.github.io/ostree/[ostree] — базова технологія, яка "
 "використовується для компонування, розгортання та оновлення Silverblue. "
 "ostree працює подібно до системи керування версіями, але використовує для "
 "роботи усі ієрархії файлових систем.  Часто ostree описують як «Git для "
@@ -88,19 +81,14 @@ msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:27
-#, fuzzy
-#| msgid ""
-#| "https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] builds on top of "
-#| "ostree, and makes it possible to install RPMs as a “layer” on top of an "
-#| "ostree image. This makes it possible to install RPMs on Silverblue."
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
 "and makes it possible to install RPMs as a “layer” on top of an ostree "
 "image. This makes it possible to install RPMs on Silverblue."
 msgstr ""
-"https://rpm-ostree.readthedocs.io/en/latest/[rpm-ostree] збирається на "
-"основі ostree і робить можливим встановлення RPM як «шару» над образом "
-"ostree. Це уможливлює встановлення RPM у Silverblue."
+"https://coreos.github.io/rpm-ostree/[rpm-ostree] збирається на основі ostree "
+"і робить можливим встановлення RPM як «шару» над образом ostree. Це "
+"уможливлює встановлення RPM у Silverblue."
 
 #. type: Plain text
 #: pages/technical-information.adoc:33
@@ -188,16 +176,11 @@ msgstr "Це означає, що окремі домашні розділи с�
 
 #. type: Plain text
 #: pages/technical-information.adoc:57
-#, fuzzy
-#| msgid ""
-#| "For a more detailed explanation of Silverblue's filesystem layout, refer "
-#| "to the excellent https://ostree.readthedocs.io/en/latest/manual/adapting-"
-#| "existing/[libostree documentation]."
 msgid ""
 "For a more detailed explanation of Silverblue's filesystem layout, refer to "
 "the excellent https://ostreedev.github.io/ostree/adapting-existing/"
 "[libostree documentation]."
 msgstr ""
 "Докладніший опис компонування файлової системи Silverblue можна знайти у "
-"чудовій https://ostree.readthedocs.io/en/latest/manual/adapting-existing/"
-"[документації із libostree]."
+"чудовій https://ostreedev.github.io/ostree/adapting-existing/[документації "
+"із libostree]."

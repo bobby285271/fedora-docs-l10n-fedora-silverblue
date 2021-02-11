@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: 2020-03-25 20:38+0000\n"
+"PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesfaq/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: pages/faq.adoc:1
@@ -56,11 +56,6 @@ msgstr "Чому логотип Silverblue виглядає як листок?"
 
 #. type: Plain text
 #: pages/faq.adoc:15
-#, fuzzy
-#| msgid ""
-#| "Our favorite choice for a project name was Silverleaf, but that sadly did "
-#| "not work out. We just couldn't quite let go of the leaf. You could also "
-#| "say that Silverblue is a new new leaf on Fedora's OSTree. 😀"
 msgid ""
 "Our favorite choice for a project name was Silverleaf, but that sadly did "
 "not work out. We just couldn't quite let go of the leaf. You could also say "

@@ -2,23 +2,23 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: 2020-05-05 22:38+0000\n"
+"PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
-">\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
+"\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0.3\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: pages/updates-upgrades-rollbacks.adoc:2
@@ -107,19 +107,14 @@ msgstr "Оновлення до новіших версій системи"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:37
-#, fuzzy
-#| msgid ""
-#| "Upgrading between major versions (such as from Fedora 30 to Fedora 31) is "
-#| "not fully integrated into Silverblue at this time. However, Silverblue "
-#| "can be upgraded between major versions using the `ostree` command."
 msgid ""
 "Upgrading between major versions (such as from Fedora 32 to Fedora 33) can "
 "be completed using the Software application. Alternatively, Silverblue can "
 "be upgraded between major versions using the `ostree` command."
 msgstr ""
-"Оновлення до новіших версій (наприклад, з Fedora 30 до Fedora 31) не "
-"повністю інтегровано до поточної версії Silverblue. Втім, оновити Silverblue "
-"до нової основної версії можна за допомогою команди `ostree`."
+"Оновлення до новіших версій (наприклад, з Fedora 32 до Fedora 33) можна "
+"здійснити за допомогою програми «Програмне забезпечення». Крім того, оновити "
+"Silverblue до нової основної версії можна за допомогою команди `ostree`."
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:39
@@ -127,12 +122,14 @@ msgid ""
 "First, verify the branch is available. You can print all available branches "
 "with this command:"
 msgstr ""
+"Спочатку перевірте доступність гілки. Ви можете переглянути усі доступні "
+"гілки за допомогою такої команди:"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:41
 #, no-wrap
 msgid " $ ostree remote refs fedora\n"
-msgstr ""
+msgstr " $ ostree remote refs fedora\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:44
@@ -140,20 +137,18 @@ msgid ""
 "After you verify the name of your branch, you are ready to proceed. For "
 "example, to upgrade to Silverblue 33, the command is:"
 msgstr ""
+"Після того, як ви перевірите назву вашої гілки, можна продовжувати "
+"встановлення. Наприклад, для оновлення до Silverblue 33 слід скористатися "
+"такою командою:"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:46
-#, fuzzy
-#| msgid ""
-#| "Currently, the default remote for Silverblue 32 is named `fedora`. If "
-#| "this is not the case for your system, you can find out the remote name by "
-#| "issuing: `ostree remote list`."
 msgid ""
 "Currently, the default remote for Silverblue 33 is named `fedora`. If this "
 "is not the case for your system, you can find out the remote name by "
 "issuing: `ostree remote list`."
 msgstr ""
-"У поточній версії віддалене сховище Silverblue 32 має назву `fedora`. Якщо "
+"У поточній версії віддалене сховище Silverblue 33 має назву `fedora`. Якщо "
 "це не так у вашій системі, ви можете визначити назву віддаленого сховища за "
 "допомогою такої команди: `ostree remote list`."
 
@@ -161,7 +156,7 @@ msgstr ""
 #: pages/updates-upgrades-rollbacks.adoc:48
 #, no-wrap
 msgid " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
-msgstr ""
+msgstr " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:51
