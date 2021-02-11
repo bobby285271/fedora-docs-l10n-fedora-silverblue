@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/"
+"zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/getting-started.adoc:2
 #, no-wrap
 msgid "Getting Started"
-msgstr ""
+msgstr "开始使用"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:8
@@ -29,6 +32,8 @@ msgid ""
 "differently from other operating systems, and there are therefore some "
 "things that it is useful to know."
 msgstr ""
+"Silverblue 的设计简单明了，一般不需要专业知识就可以上手。然而 Silverblue "
+"的构建方式与其它操作系统不同，因此你可能需要先熟悉一下这个系统。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:12
@@ -36,19 +41,19 @@ msgid ""
 "Silverblue has different options for installing software, compared with a "
 "standard Fedora Workstation (or other package-based Linux "
 "distributions). These include:"
-msgstr ""
+msgstr "相比 Fedora Workstation 和其它基于软件包的发行版，Silverblue 有三种方式安装软件，包括："
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:14
 msgid ""
 "Flatpak apps: this is the primary way that (GUI) apps get installed on "
 "Silverblue."
-msgstr ""
+msgstr "Flatpak：这是在 Silverblue 安装图形化应用的主要方式。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:15
 msgid "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
-msgstr ""
+msgstr "Toolbox：安装命令行应用的主要方式，也是开发调试主要使用的工具。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:18
@@ -57,26 +62,27 @@ msgid ""
 "image/package system.  By default the system operates in pure image mode, "
 "but package layering is useful for things like libvirt, drivers, etc."
 msgstr ""
+"软件包层叠：rpm-ostree 使得混合映像/软件包系统成为可能。在默认设置下，系统以纯映像模式运行，而软件包层叠为虚拟化、驱动等提供了支持。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:20
 msgid ""
 "For information on <<flatpak>> and <<package-layering,package layering>>, "
 "see below."
-msgstr ""
+msgstr "要想了解有关 <<flatpak,Flatpak>> 和 <<package-layering,软件包层叠>> 有关的更多信息，请继续阅读。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:22
 msgid ""
 "See the dedicated <<toolbox.adoc#toolbox,toolbox>> page to get started with "
 "it."
-msgstr ""
+msgstr "要想了解 Toolbox，有 <<toolbox.adoc#toolbox,专门的页面>> 可供查阅。"
 
 #. type: Title ==
 #: ./pages/getting-started.adoc:24
 #, no-wrap
 msgid "Flatpak"
-msgstr ""
+msgstr "Flatpak"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:30
@@ -86,6 +92,9 @@ msgid ""
 "box in Fedora Silverblue, and Fedora provides a small (but growing) "
 "collection of apps that can be installed."
 msgstr ""
+"Flatpak 是 Silverblue 安装应用程序的主要方式之一。要了解 Flatpak 是什么，可以前往 http://flatpak."
+"org[flatpak.org] 。Fedora Silverblue 缺省提供了 Flatpak 的支持，Fedora "
+"也提供了一个小但在持续增长的软件集供用户选择与安装。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:33
@@ -93,12 +102,14 @@ msgid ""
 "The other main source of Flatpak apps is https://flathub.org/home[Flathub], "
 "which provides a large repository of Flatpak apps that can be installed."
 msgstr ""
+"Flatpak 应用程序的另一主要来源是 https://flathub.org/home[Flathub] ，Flathub 提供了大量的 "
+"Flatpak 应用程序供用户选用。"
 
 #. type: Title ==
 #: ./pages/getting-started.adoc:35
 #, no-wrap
 msgid "Setting up Flathub"
-msgstr ""
+msgstr "初始化 Flathub"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:40
@@ -107,18 +118,20 @@ msgid ""
 "https://flatpak.org/setup/Fedora/[Flathub setup page for Fedora] and click "
 "the “Flathub repository file” button to download the Flathub configuration."
 msgstr ""
+"要在 Fedora Silverblue 启用 Flathub 支持，打开 https://flatpak.org/setup/Fedora/[适用于 "
+"Fedora 的 Flathub 设置页] 并点击 Flathub repository file 按钮以下载 Flathub 配置文件。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:41
 #, no-wrap
 msgid "Fedora quick setup page"
-msgstr ""
+msgstr "Fedora 快速设置页"
 
 #. type: Target for macro image
 #: ./pages/getting-started.adoc:41
 #, no-wrap
 msgid "sfg_flathub_fedora.png"
-msgstr ""
+msgstr "sfg_flathub_fedora.png"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:46
@@ -126,19 +139,19 @@ msgid ""
 "A popup window will show a download option for the file. The “Open with” "
 "option should show “Software Install (default)”. Click on the “OK” button to "
 "start the download."
-msgstr ""
+msgstr "此时会有弹窗供你指定下载选项，选择『打开，通过』一栏并使用『软件安装（默认）』，点击『确定』开始下载。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:47
 #, no-wrap
 msgid "Flathub download options"
-msgstr ""
+msgstr "Flathub 下载选项"
 
 #. type: Target for macro image
 #: ./pages/getting-started.adoc:47
 #, no-wrap
 msgid "sfg_flathub_download.png"
-msgstr ""
+msgstr "sfg_flathub_download.png"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:53
@@ -147,32 +160,32 @@ msgid ""
 "repository. This window also shows the source location of the repository to "
 "be installed, under the details heading (1). To start the installation of "
 "the Flathub repository, click on the “Install” button (2)."
-msgstr ""
+msgstr "当下载完成后，新的窗口就会弹出供你查看与确认 Flathub 软件源的相关信息。要应用 Flatpak 软件源，点击『安装』按钮。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:54
 #, no-wrap
 msgid "Flathub install window"
-msgstr ""
+msgstr "Flathub 安装向导"
 
 #. type: Target for macro image
 #: ./pages/getting-started.adoc:54
 #, no-wrap
 msgid "sfg_flathub_install.png"
-msgstr ""
+msgstr "sfg_flathub_install.png"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:58
 msgid ""
 "After the repository installation process is complete, the window will be "
 "updated to show a “Remove\" button in place of the “Install” button."
-msgstr ""
+msgstr "当软件源安装完成，『安装』按钮就会被『移除』按钮取代。"
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:59
 #, no-wrap
 msgid "Installing Flatpak apps from Flathub"
-msgstr ""
+msgstr "从 Flathub 安装 Flatpak 应用程序"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:64
@@ -181,6 +194,8 @@ msgid ""
 "Flatpak apps. This can be done directly from the Software app, or apps can "
 "be browsed on the https://flathub.org/home[Flathub website]."
 msgstr ""
+"当 Flathub 软件源初始化完成后，我们就可以通过 Flathub 安装 Flatpak 应用程序了。这一切都可以在 GNOME 商店中完成，"
+"你也可以在 https://flathub.org/home[Flathub 网站] 浏览应用。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:70
@@ -191,6 +206,9 @@ msgid ""
 "https://www.libreoffice.org/[LibreOffice], you first search for and open the "
 "LibreOffice page, and then press the “Install” button (2)."
 msgstr ""
+"当你在 Flathub 网站了喜欢的应用程序想要安装时，只需点击 Install 按钮并完成下载，GNOME 商店就会自动打开并处理剩余的事情。举个例子，"
+"要想安装 https://www.libreoffice.org/[LibreOffice]，你只需要找到 LibreOffice 的相关页面，点击 "
+"Install 按钮。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:74
@@ -198,19 +216,19 @@ msgid ""
 "After clicking the “Install” button, a download information window will be "
 "shown. Verify the correct Flatpak has been downloaded and then click on the "
 "“OK” button to begin installing the LibreOffice application."
-msgstr ""
+msgstr "在点击 Install 按钮后，一个下载信息框就会弹出。只需确认文件名与你所要安装的应用程序相匹配就可以点击『确定』开始下载。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:75
 #, no-wrap
 msgid "LibreOffice Flatpak download"
-msgstr ""
+msgstr "下载 LibreOffice Flatpak"
 
 #. type: Target for macro image
 #: ./pages/getting-started.adoc:75
 #, no-wrap
 msgid "sfg_libreoffice_install.png"
-msgstr ""
+msgstr "sfg_libreoffice_install.png"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:79
@@ -218,13 +236,13 @@ msgid ""
 "Once the Flatpak is downloaded, the Software application will open a new "
 "window with an “Install” button (2). Click this button to begin "
 "installation."
-msgstr ""
+msgstr "当 Flatpak 信息文件成功下载，GNOME 商店就会弹出，点击上面的『安装』按钮就可以开始安装了。"
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:80
 #, no-wrap
 msgid "Flatpak command line"
-msgstr ""
+msgstr "Flatpak 命令行工具"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:86
@@ -234,12 +252,14 @@ msgid ""
 "http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] "
 "for how to do this."
 msgstr ""
+"除了使用 GNOME 商店安装 Flatpak 应用之外，也可以使用 `flatpak` 命令行工具。请阅读 http://docs.flatpak."
+"org/en/latest/using-flatpak.html[Flatpak 文档] 了解命令行工具的使用方法。"
 
 #. type: Title ==
 #: ./pages/getting-started.adoc:88
 #, no-wrap
 msgid "Package layering"
-msgstr ""
+msgstr "软件包层叠"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:92
@@ -247,34 +267,34 @@ msgid ""
 "Package layering works by modifying your Silverblue installation. As the "
 "name implies, it works by extending the packages from which Silverblue is "
 "composed."
-msgstr ""
+msgstr "软件包层叠通过修改你的 Silverblue 安装以实现。正如名字所示，它通过在 Silverblue 构建时拓展软件包而工作。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:94
 msgid "Good examples of packages to be layered would be:"
-msgstr ""
+msgstr "适合软件包层叠的一些好例子包括："
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:96
 msgid "`fish`: An alternative Unix shell"
-msgstr ""
+msgstr "`fish`：一个备选的 UNIX Shell"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:97
 msgid "`sway`: A Wayland tiling compositor"
-msgstr ""
+msgstr "`sway`：一个基于 Wayland 的平铺窗口管理器"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:98
 msgid "`libvirt`: The libvirt daemon"
-msgstr ""
+msgstr "`libvirt`：libvirt 守护进程"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:101
 msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
 "Silverblue using this method."
-msgstr ""
+msgstr "Fedora 提供的大部分（但不是所有的）RPM 都可以通过这个方法安装。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:107
@@ -286,6 +306,9 @@ msgid ""
 "be lifted, but it's generally expected that you use package layering "
 "sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
 msgstr ""
+"目前来说，每执行一次软件包层叠都会创建一个新的『部署』，换言之就是可启动的系统。它并不会影响你当前的系统，也使回滚和事务模型得到保留，但也意味着必须在层叠"
+"软件包后需要重启。尽管这一限制最终可能会被解除，但我们还是希望你谨慎使用软件包层叠，在可以的时候尽可能采用 `flatpak` 或者在 `toolbox`"
+" 使用 `dnf install` 。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:111
@@ -293,24 +316,24 @@ msgid ""
 "Package layering is generally done from the command line. However, the "
 "Software application does rely on it for installing a small number of apps "
 "that are currently difficult to install as Flatpaks."
-msgstr ""
+msgstr "软件包层叠通常需要在命令行下完成。然而，GNOME 商店有时候确实会通过这种方式安装一些难以通过 Flatpak 的形式安装的应用程序。"
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:112
 #, no-wrap
 msgid "Installing packages"
-msgstr ""
+msgstr "安装软件包"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:115
 msgid "Packages can be installed on Silverblue using:"
-msgstr ""
+msgstr "在 Silverblue，我们使用下面的命令安装软件包："
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:117
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
-msgstr ""
+msgstr " $ rpm-ostree install <package name>\n"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:122
@@ -320,19 +343,21 @@ msgid ""
 "names, which can be searched using DNF (this is not available on a "
 "Silverblue host, but can be used in a link:toolbox[toolbox])."
 msgstr ""
+"这会下载所需的软件包及其依赖包，并同你的 Silverblue 映像一起被构建。 `rpm-ostree` 使用标准的 Fedora 软件包名称，"
+"因此你可以通过 DNF 搜索软件包（Silverblue 并不提供 DNF，但你可以在 link:toolbox[toolbox] 使用它）。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:125
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
-msgstr ""
+msgstr "当软件包通过这种方式安装之后，它就会随着 Silverblue 映像一起保持着最新状态。"
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:126
 #, no-wrap
 msgid "Replacing packages"
-msgstr ""
+msgstr "替换软件包"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:130
@@ -342,12 +367,14 @@ msgid ""
 "command can be used to replace a package with a different version.  "
 "Currently you must download the RPM packages locally, and then run:"
 msgstr ""
+"在一些情形下，你可能希望测试新版的 `podman` 或 `kernel` 或其它的一些软件包。 `rpm-ostree override` "
+"命令允许你将一个软件包替换为其它版本。目前你需要手动下载 RPM 到本地，然后执行："
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:132
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
-msgstr ""
+msgstr " $ rpm-ostree override replace <path to package>\n"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:134
@@ -355,7 +382,7 @@ msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
 "booted root."
-msgstr ""
+msgstr "你也可以使用 `override remove` 来隐藏一个软件包；它们仍在底层映像中，但他们不会在部署的系统中出现。"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:137
@@ -365,3 +392,5 @@ msgid ""
 "https://coreos.github.io/rpm-ostree/administrator-handbook/[rpm-ostree "
 "documentation]."
 msgstr ""
+"移除或替换层叠的软件包是不被推荐的。要了解更多信息，请查阅 https://coreos.github.io/rpm-ostree/"
+"administrator-handbook/[rpm-ostree 文档]。"

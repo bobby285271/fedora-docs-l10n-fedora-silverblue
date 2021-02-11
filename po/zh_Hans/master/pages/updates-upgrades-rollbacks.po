@@ -6,19 +6,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/"
+"masterpagesupdates-upgrades-rollbacks/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/updates-upgrades-rollbacks.adoc:2
 #, no-wrap
 msgid "Updates, Upgrades & Rollbacks"
-msgstr ""
+msgstr "更新、升级与回滚"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:7
@@ -26,13 +30,13 @@ msgid ""
 "Installing updates with Silverblue is easy and fast (much faster than other "
 "operating systems). It also has a special rollback feature, in case anything "
 "goes wrong."
-msgstr ""
+msgstr "为 Silverblue 安装更新是既方便又快捷的。万一更新出现问题时，Silverblue 还有回滚功能。"
 
 #. type: Title ==
 #: ./pages/updates-upgrades-rollbacks.adoc:9
 #, no-wrap
 msgid "Updating Silverblue"
-msgstr ""
+msgstr "更新 Silverblue"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:15
@@ -42,6 +46,7 @@ msgid ""
 "to automatically download the update (this can be changed from the update "
 "preferences in Software)."
 msgstr ""
+"Silverblue 的更新已经集成到了桌面中；当更新可用你就会收到相关的通知。在默认设置下更新会被自动下载（在 GNOME 商店中可以修改这一设定）。"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:19
@@ -49,20 +54,20 @@ msgid ""
 "Once an update is ready, it is just a matter of rebooting to start using the "
 "new version. There is no waiting for the update to be installed during this "
 "reboot."
-msgstr ""
+msgstr "当更新准备就绪，只需要重启系统就可以使用新版本。重启时不需要耗费额外的时间以应用更新。"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:22
 msgid ""
 "If you'd prefer, it is also possible to update using the command line. To do "
 "this, run:"
-msgstr ""
+msgstr "当然，你也可以在命令行下执行更新："
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:24
 #, no-wrap
 msgid " $ rpm-ostree upgrade\n"
-msgstr ""
+msgstr " $ rpm-ostree upgrade\n"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:28
@@ -70,19 +75,19 @@ msgid ""
 "This will check for new updates and download and install them if they are "
 "available. Alternatively, to check for available updates without downloading "
 "them, run:"
-msgstr ""
+msgstr "这会检查更新并在更新可用时立刻获取它们。如果你只希望检查更新而不希望执行下载："
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:30
 #, no-wrap
 msgid " $ rpm-ostree upgrade --check\n"
-msgstr ""
+msgstr " $ rpm-ostree upgrade --check\n"
 
 #. type: Title ==
 #: ./pages/updates-upgrades-rollbacks.adoc:32
 #, no-wrap
 msgid "Upgrading between major versions"
-msgstr ""
+msgstr "主要版本间升级"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:37
@@ -91,26 +96,28 @@ msgid ""
 "be completed using the Software application. Alternatively, Silverblue can "
 "be upgraded between major versions using the `ostree` command."
 msgstr ""
+"GNOME 商店可以帮助你完成 Silverblue 主要版本间的升级（例如从 Fedora 32 更新到 Fedora 33）。当然，你也可以使用 "
+"`ostree` 命令完成这一升级。"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:39
 msgid ""
 "First, verify the branch is available. You can print all available branches "
 "with this command:"
-msgstr ""
+msgstr "首先，确认你需要的分支是可用的。要列出所有可用的分支，执行："
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:41
 #, no-wrap
 msgid " $ ostree remote refs fedora\n"
-msgstr ""
+msgstr " $ ostree remote refs fedora\n"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:44
 msgid ""
 "After you verify the name of your branch, you are ready to proceed. For "
 "example, to upgrade to Silverblue 33, the command is:"
-msgstr ""
+msgstr "在确认分支的名称后，就可以继续了。假设你希望升级到 Silverblue 33，那么执行："
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:46
@@ -119,25 +126,27 @@ msgid ""
 "is not the case for your system, you can find out the remote name by "
 "issuing: `ostree remote list`."
 msgstr ""
+"Silverblue 33 的默认远程来源名称是 `fedora`。当然在某些情况下不一定是这样的，你可以使用 `ostree remote list` "
+"查看系统的远程来源名称。"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:48
 #, no-wrap
 msgid " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
-msgstr ""
+msgstr " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:51
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
-msgstr ""
+msgstr "版本间的升级和普通的更新是非常相似的：新版系统被下载到后台，你只需重启系统就可以启动新系统。"
 
 #. type: Title ==
 #: ./pages/updates-upgrades-rollbacks.adoc:53
 #, no-wrap
 msgid "Rolling back"
-msgstr ""
+msgstr "回滚"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:59
@@ -147,11 +156,13 @@ msgid ""
 "it can be helpful if there is a problem with an update or an upgrade "
 "(rollbacks work the same way for both), as well as for development purposes."
 msgstr ""
+"Silverblue "
+"保留了上一版系统的备份，你可以随时从新版系统切换回去。尽管通常情况我们用不上这一特性，但当更新或版本间升级出现问题，回滚功能就会派上用场。"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:61
 msgid "There are two ways to roll back to the previous version:"
-msgstr ""
+msgstr "回滚到旧版本有两种方法："
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:65
@@ -159,14 +170,14 @@ msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
 "the grub menu)."
-msgstr ""
+msgstr "临时回滚：要临时地切换到上一版的系统，只需要重启并在启动选单（也就是 GRUB 引导菜单）中选择旧版系统就可以了。"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:67
 msgid ""
 "Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
-msgstr ""
+msgstr "永久回滚：要回滚到旧版本并希望回滚持续生效，你可以使用 `rpm-ostree rollback` 命令。"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:70
@@ -174,4 +185,4 @@ msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update. Updating will undo the rollback, so should be avoided if "
 "you want the rollback to stay in effect."
-msgstr ""
+msgstr "当回滚完成后，在技术角度你就回到了旧版的系统，这时候系统可能会提示你更新。更新会导致回滚操作被撤销，所以要使回滚操作持续生效就得避免更新。"

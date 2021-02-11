@@ -1,42 +1,44 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/masterpagesindex/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/index.adoc:1
 #, no-wrap
 msgid "Fedora Silverblue User Guide"
-msgstr ""
+msgstr "Fedora Silverblue 用户指南"
 
 #. type: Plain text
 #: ./pages/index.adoc:4
 msgid "Welcome to the Fedora Silverblue user guide!"
-msgstr ""
+msgstr "欢迎阅读 Fedora Silverblue 用户指南！"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/index.adoc:5
 #, no-wrap
 msgid "Silverblue logo"
-msgstr ""
+msgstr "Silverblue 标志"
 
 #. type: Target for macro image
 #: ./pages/index.adoc:5
 #, no-wrap
 msgid "silverblue-logo.svg"
-msgstr ""
+msgstr "silverblue-logo.svg"
 
 #. type: Plain text
 #: ./pages/index.adoc:10
@@ -44,13 +46,13 @@ msgid ""
 "_Fedora Silverblue_ is an immutable desktop operating system. It aims to be "
 "extremely stable and reliable. It also aims to be an excellent platform for "
 "developers and for those using container-focused workflows."
-msgstr ""
+msgstr "_Fedora Silverblue_ 是一个不可变的桌面操作系统，旨在为开发者和容器重度使用者提供一个稳定、可靠的平台。"
 
 #. type: Title ==
 #: ./pages/index.adoc:12
 #, no-wrap
 msgid "Introduction to Silverblue"
-msgstr ""
+msgstr "Silverblue 简介"
 
 #. type: Plain text
 #: ./pages/index.adoc:17
@@ -59,6 +61,8 @@ msgid ""
 "like a regular desktop operating system, and the experience is similar to "
 "what you find with using a standard Fedora Workstation."
 msgstr ""
+"Silverblue 是 Fedora Workstation 的变种版本。Silverblue 也致力于提供高度贴近 Fedora "
+"Workstation 的桌面使用体验。"
 
 #. type: Plain text
 #: ./pages/index.adoc:22
@@ -68,6 +72,7 @@ msgid ""
 "version. The operating system that is on disk is exactly the same from one "
 "machine to the next, and it never changes as it is used."
 msgstr ""
+"然而和其它操作系统不同的是，Silverblue 是不可变的。这意味着同一版本下每一份安装都会是完全相同的，而且在使用过程中也不会发生任何改变。"
 
 #. type: Plain text
 #: ./pages/index.adoc:29
@@ -79,6 +84,8 @@ msgid ""
 "(apps) and containers are kept separate from the host system, improving "
 "stability and reliability."
 msgstr ""
+"Silverblue 的不可变设计使得它更加稳定，更不容易出现错误，更易于测试和开发。Silverblue "
+"的不可变设计也使其与容器化应用程序、容器应用开发成为绝配。应用程序和容器与主机系统的分隔也使得系统更加可靠。"
 
 #. type: Plain text
 #: ./pages/index.adoc:34
@@ -89,12 +96,13 @@ msgid ""
 "to roll back to the previous version of the operating system, if something "
 "goes wrong."
 msgstr ""
+"Silverblue 使用的核心技术也带来了其它的特性。系统更新从此变得方便快捷：只需要重启系统就可以使用新版本，而出现任何问题时还可以随时回滚。"
 
 #. type: Title ==
 #: ./pages/index.adoc:36
 #, no-wrap
 msgid "About this guide"
-msgstr ""
+msgstr "关于这份指南"
 
 #. type: Plain text
 #: ./pages/index.adoc:42
@@ -104,21 +112,24 @@ msgid ""
 "documentation] can be used. This guide covers those areas where Silverblue "
 "differs from a standard Fedora Workstation, including:"
 msgstr ""
+"在大部分情况下，Silverblue 和普通的 Fedora Workstation 是一样的，这时候只需要参考 https://docs."
+"fedoraproject.org/[常规 Fedora 文档] 就好了。这份文档则覆盖了 Silverblue 与普通 Fedora "
+"Workstation 体验不一致的场景，包括："
 
 #. type: Plain text
 #: ./pages/index.adoc:44
 msgid "link:installation[OS installation]"
-msgstr ""
+msgstr "link:installation[系统安装]"
 
 #. type: Plain text
 #: ./pages/index.adoc:45
 msgid "link:getting-started[Installing apps and software]"
-msgstr ""
+msgstr "link:getting-started[安装应用程序]"
 
 #. type: Plain text
 #: ./pages/index.adoc:46
 msgid "link:updates-upgrades-rollbacks[OS upgrades and rollbacks]"
-msgstr ""
+msgstr "link:updates-upgrades-rollbacks[系统更新与回滚]"
 
 #. type: Plain text
 #: ./pages/index.adoc:50
@@ -129,3 +140,5 @@ msgid ""
 "information] is provided, for those who are interested and want to learn "
 "more."
 msgstr ""
+"这份文档主要面向新用户，我们也不需要你掌握任何与 Silverblue 内部实现有关的细节。然而，如果你希望深入研究 Silverblue，你可以阅读 "
+"link:technical-information[这篇文章] 。"

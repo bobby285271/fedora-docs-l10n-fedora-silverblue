@@ -1,81 +1,84 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/masterpagescontributing/zh_Hans/>"
+"\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/contributing.adoc:2
 #, no-wrap
 msgid "Contributing to Fedora Silverblue"
-msgstr ""
+msgstr "为 Fedora Silverblue 做出贡献"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:5
 msgid "Help us improve Fedora Silverblue by contributing to the project!"
-msgstr ""
+msgstr "帮助我们改进 Fedora Silverblue！"
 
 #. type: Title ==
 #: ./pages/contributing.adoc:7
 #, no-wrap
 msgid "Developing Silverblue"
-msgstr ""
+msgstr "参与 Silverblue 开发"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:10
 msgid ""
 "If you are a developer, you can contribute to one of the several projects "
 "which make Fedora Silverblue possible. Submit your pull requests to:"
-msgstr ""
+msgstr "如果你是一名开发者，你可以为下面的任一项目做出贡献，是这些项目使得 Fedora Silverblue 成为可能。发送你的合并请求到："
 
 #. type: Plain text
 #: ./pages/contributing.adoc:12
 msgid "https://github.com/projectatomic/rpm-ostree[rpm-ostree]"
-msgstr ""
+msgstr "https://github.com/projectatomic/rpm-ostree[rpm-ostree]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:13
 msgid "https://github.com/flatpak/flatpak[flatpak]"
-msgstr ""
+msgstr "https://github.com/flatpak/flatpak[flatpak]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:14
 msgid "https://github.com/ostreedev/ostree[ostree]"
-msgstr ""
+msgstr "https://github.com/ostreedev/ostree[ostree]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:15
 msgid "https://github.com/containers/toolbox[toolbox]"
-msgstr ""
+msgstr "https://github.com/containers/toolbox[toolbox]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:16
 msgid "https://github.com/containers/libpod[podman]"
-msgstr ""
+msgstr "https://github.com/containers/libpod[podman]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:18
 msgid ""
 "Your contributions towards the main "
 "https://fedoraproject.org/wiki/Join[Fedora] project are also very welcome."
-msgstr ""
+msgstr "我们也非常欢迎你为 https://fedoraproject.org/wiki/Join[Fedora] 主项目做出贡献。"
 
 #. type: Title ==
 #: ./pages/contributing.adoc:20
 #, no-wrap
 msgid "Creating Flatpaks"
-msgstr ""
+msgstr "创建 Flatpak 软件包"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:23
@@ -83,7 +86,7 @@ msgid ""
 "Your favourite application is not in the default repository and won't "
 "probably be added? You can do it yourself! Go through our tutorial for "
 "creating flatpaks from rpm packages:"
-msgstr ""
+msgstr "发现你最喜欢的应用程序不在默认软件源里面？尝试自己打包吧！下面的资源将帮助你利用 RPM 创建 Flatpak 软件包："
 
 #. type: Plain text
 #: ./pages/contributing.adoc:25
@@ -91,6 +94,7 @@ msgid ""
 "https://docs.fedoraproject.org/en-US/flatpak/tutorial/[RPM to Flatpak "
 "tutorial]"
 msgstr ""
+"https://docs.fedoraproject.org/en-US/flatpak/tutorial/[RPM 至 Flatpak 转换指南]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:27
@@ -101,37 +105,40 @@ msgid ""
 "https://fedoraproject.org/wiki/Join_the_package_collection_maintainers[wiki "
 "page] about becoming a packager."
 msgstr ""
+"要成为一名官方打包者你需要完成若干步骤以获得所有 Fedora 核心设施（Pagure、Koji 和 Bodhi）的访问权限。你可以阅读 "
+"https://fedoraproject.org/wiki/"
+"Join_the_package_collection_maintainers[维基的相关页面] 以了解如何成为一名打包者。"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:29
 msgid "Other useful links:"
-msgstr ""
+msgstr "其它实用链接："
 
 #. type: Plain text
 #: ./pages/contributing.adoc:31
 msgid "https://pagure.io[Pagure]"
-msgstr ""
+msgstr "https://pagure.io[Pagure]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:32
 msgid "https://src.fedoraproject.org[Package Sources]"
-msgstr ""
+msgstr "https://src.fedoraproject.org[软件包源码]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:33
 msgid "https://koji.fedoraproject.org/koji/[Koji]"
-msgstr ""
+msgstr "https://koji.fedoraproject.org/koji/[Koji]"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:34
 msgid "https://bodhi.fedoraproject.org/[Bodhi]"
-msgstr ""
+msgstr "https://bodhi.fedoraproject.org/[Bodhi]"
 
 #. type: Title ==
 #: ./pages/contributing.adoc:36
 #, no-wrap
 msgid "Writing Documentation"
-msgstr ""
+msgstr "撰写文档"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:39
@@ -140,6 +147,8 @@ msgid ""
 "https://github.com/fedora-silverblue/silverblue-docs[documentation] GitHub "
 "repository, fork it and create a pull request."
 msgstr ""
+"创建或编辑文档是非常简单的。你可以前往 https://github.com/fedora-silverblue/silverblue-docs[文档] "
+"的 GitHub 仓库，创建一份拷贝然后发起合并请求。"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:41
@@ -149,49 +158,52 @@ msgid ""
 "an https://github.com/fedora-silverblue/silverblue-docs/issues[issue] "
 "describing what need to be changed."
 msgstr ""
+"如果你不太了解 Git 的使用，你也可以在 https://discussion.fedoraproject.org/c/desktop/"
+"silverblue[社区论坛] 创建一个帖子或在 https://github.com/fedora-silverblue/"
+"silverblue-docs/issues[问题反馈] 页告诉我们何处需要改动。"
 
 #. type: Title ===
 #: ./pages/contributing.adoc:43
 #, no-wrap
 msgid "Writing Conventions"
-msgstr ""
+msgstr "写作规约"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:46
 msgid "When creating documentation, please follow these writing conventions:"
-msgstr ""
+msgstr "在创建文档时，请遵守下面的写作规约："
 
 #. type: Plain text
 #: ./pages/contributing.adoc:48
 msgid ""
 "Code blocks for commands that require `root` privileges must show the `#` "
 "prompt symbol. Example:"
-msgstr ""
+msgstr "需要 `root` 权限执行的命令块必须要以 `#` 作为前缀，举个例子："
 
 #. type: Plain text
 #: ./pages/contributing.adoc:50
 #, no-wrap
 msgid "# dnf install <package>\n"
-msgstr ""
+msgstr "# dnf install <package>\n"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:52
 msgid ""
 "The `$` user prompt symbol can also be used but you must prefix the command "
 "with `sudo`. Example:"
-msgstr ""
+msgstr "你也可以使用 `$` 作为前缀，但与此同时你需要在命令前再加上 `sudo` ，举个例子："
 
 #. type: Plain text
 #: ./pages/contributing.adoc:54
 #, no-wrap
 msgid " $ sudo dnf install <package>\n"
-msgstr ""
+msgstr " $ sudo dnf install <package>\n"
 
 #. type: Title ==
 #: ./pages/contributing.adoc:56
 #, no-wrap
 msgid "Reporting Issues"
-msgstr ""
+msgstr "问题报告"
 
 #. type: Plain text
 #: ./pages/contributing.adoc:58
@@ -199,3 +211,5 @@ msgid ""
 "You can report bugs and suggest features or improvements on the "
 "https://github.com/fedora-silverblue/issue-tracker/issues[issue tracker.]"
 msgstr ""
+"你可以在 https://github.com/fedora-silverblue/issue-tracker/issues[问题追踪系统] "
+"报告问题或请求新功能。"
