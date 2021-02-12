@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"PO-Revision-Date: 2021-02-12 06:39+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/"
@@ -52,7 +52,7 @@ msgid ""
 "package that is in the base OS.  In the problematic case, the layered "
 "package requires a newer version of the dependent package which is not "
 "available in the base OS."
-msgstr ""
+msgstr "层叠软件包依赖于基本系统映像中的包时，有可能就会发生这种情况。层叠软件包需要更高版本的依赖软件包，基本系统映像中却无法提供。"
 
 #. type: Plain text
 #: ./pages/troubleshooting.adoc:20
@@ -60,7 +60,7 @@ msgid ""
 "In most cases, waiting for a newer OSTree compose will resolve this "
 "problem.  The dependent package will be updated in the compose and the "
 "package that was going to be layered will be successful."
-msgstr ""
+msgstr "大部分情况下，耐心等候新版本的 OSTree 构建就可以了，新的构建届时会提供正确版本的软件包，大多数情况下能解决问题。"
 
 #. type: Plain text
 #: ./pages/troubleshooting.adoc:24
@@ -69,24 +69,27 @@ msgid ""
 "can try to cleanup the metadata with `rpm-ostree cleanup -m` and then "
 "retrying the `rpm-ostree install`."
 msgstr ""
+"如果你在更新到新版依然遇到相同的问题，你可以尝试使用 `rpm-ostree cleanup -m` 清理元数据信息然后重新 `rpm-ostree "
+"install`。"
 
 #. type: Plain text
 #: ./pages/troubleshooting.adoc:27
 msgid ""
 "Alternatively, you can try rebasing to any `updates` ref, like "
 "`fedora/30/updates/x86_64` after the `cleanup` operation."
-msgstr ""
+msgstr "你也可以在 `cleanup` 操作后尝试变基到任意 `updates` 分支，例如 `fedora/30/updates/x86_64`。"
 
 #. type: Title ==
 #: ./pages/troubleshooting.adoc:28
 #, no-wrap
 msgid "Installing packages to `/opt` or `/usr/local`"
-msgstr ""
+msgstr "安装软件包到 `/opt` 或 `/usr/local`"
 
 #. type: Plain text
 #: ./pages/troubleshooting.adoc:31
 msgid "https://github.com/projectatomic/rpm-ostree/issues/233[GitHub Issue]"
 msgstr ""
+"https://github.com/projectatomic/rpm-ostree/issues/233[点此查看相关的 GitHub Issue]"
 
 #. type: Plain text
 #: ./pages/troubleshooting.adoc:36
@@ -162,6 +165,11 @@ msgid ""
 "M    selinux/targeted/policy/policy.31\n"
 "A    selinux/targeted/policy/policy.30\n"
 msgstr ""
+"$ sudo ostree admin config-diff | grep policy\n"
+"M    selinux/targeted/active/policy.linked\n"
+"M    selinux/targeted/active/policy.kern\n"
+"M    selinux/targeted/policy/policy.31\n"
+"A    selinux/targeted/policy/policy.30\n"
 
 #. type: Plain text
 #: ./pages/troubleshooting.adoc:68
@@ -305,6 +313,9 @@ msgid ""
 " # fsck.hfsplus /dev/sda1\n"
 " # mount -o rw /boot/efi\n"
 msgstr ""
+" # umount /boot/efi\n"
+" # fsck.hfsplus /dev/sda1\n"
+" # mount -o rw /boot/efi\n"
 
 #. type: Plain text
 #: ./pages/troubleshooting.adoc:128
@@ -338,6 +349,9 @@ msgid ""
 "'--os=fedora-workstation', "
 "'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
 msgstr ""
+" ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-"
+"workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed "
+"with code -6`\n"
 
 #. type: Plain text
 #: ./pages/troubleshooting.adoc:140
