@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-02-22 21:48+0000\n"
 "PO-Revision-Date: 2021-02-12 10:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -19,134 +19,144 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
-#: ./pages/troubleshooting.adoc:1
+#: pages/troubleshooting.adoc:1
 #, no-wrap
 msgid "Troubleshooting"
 msgstr "疑难解答"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:7
+#: pages/troubleshooting.adoc:7
 msgid ""
 "Silverblue is a radically new way of deploying and managing your desktop "
 "operating system, so you may occasionally run into problems while going "
 "through your day to day.  Below are some of the more common problems "
 "reported and any workarounds for those problems."
-msgstr "Silverblue 应用了全新的桌面操作系统部署与管理技术，所以在你日常使用时难免会遇到各种问题。我们在这里摘录了一部分问题列举如下。"
+msgstr ""
+"Silverblue 应用了全新的桌面操作系统部署与管理技术，所以在你日常使用时难免会遇"
+"到各种问题。我们在这里摘录了一部分问题列举如下。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:8
+#: pages/troubleshooting.adoc:8
 #, no-wrap
 msgid "\"Forbidden base package replacements\""
 msgstr "软件包替换被禁止"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:11
+#: pages/troubleshooting.adoc:11
 msgid "https://github.com/projectatomic/rpm-ostree/issues/415[GitHub Issue]"
 msgstr "https://github.com/projectatomic/rpm-ostree/issues/415[GitHub Issue]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:16
+#: pages/troubleshooting.adoc:16
 msgid ""
 "This can happen when a package that is being layered has a dependency on a "
 "package that is in the base OS.  In the problematic case, the layered "
 "package requires a newer version of the dependent package which is not "
 "available in the base OS."
-msgstr "层叠软件包依赖于基本系统映像中的包时，有可能就会发生这种情况。层叠软件包需要更高版本的依赖软件包，基本系统映像中却无法提供。"
+msgstr ""
+"层叠软件包依赖于基本系统映像中的包时，有可能就会发生这种情况。层叠软件包需要"
+"更高版本的依赖软件包，基本系统映像中却无法提供。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:20
+#: pages/troubleshooting.adoc:20
 msgid ""
 "In most cases, waiting for a newer OSTree compose will resolve this "
 "problem.  The dependent package will be updated in the compose and the "
 "package that was going to be layered will be successful."
-msgstr "大部分情况下，耐心等候新版本的 OSTree 构建就可以了，新的构建届时会提供正确版本的软件包，大多数情况下能解决问题。"
+msgstr ""
+"大部分情况下，耐心等候新版本的 OSTree 构建就可以了，新的构建届时会提供正确版"
+"本的软件包，大多数情况下能解决问题。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:24
+#: pages/troubleshooting.adoc:24
 msgid ""
 "However, if you continue to encounter this problem with a newer compose, you "
 "can try to cleanup the metadata with `rpm-ostree cleanup -m` and then "
 "retrying the `rpm-ostree install`."
 msgstr ""
-"如果你在更新到新版依然遇到相同的问题，你可以尝试使用 `rpm-ostree cleanup -m` 清理元数据信息然后重新 `rpm-ostree "
-"install`。"
+"如果你在更新到新版依然遇到相同的问题，你可以尝试使用 `rpm-ostree cleanup -m` "
+"清理元数据信息然后重新 `rpm-ostree install`。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:27
+#: pages/troubleshooting.adoc:27
 msgid ""
-"Alternatively, you can try rebasing to any `updates` ref, like "
-"`fedora/30/updates/x86_64` after the `cleanup` operation."
-msgstr "你也可以在 `cleanup` 操作后尝试变基到任意 `updates` 分支，例如 `fedora/30/updates/x86_64`。"
+"Alternatively, you can try rebasing to any `updates` ref, like `fedora/30/"
+"updates/x86_64` after the `cleanup` operation."
+msgstr ""
+"你也可以在 `cleanup` 操作后尝试变基到任意 `updates` 分支，例如 `fedora/30/"
+"updates/x86_64`。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:28
+#: pages/troubleshooting.adoc:28
 #, no-wrap
 msgid "Installing packages to `/opt` or `/usr/local`"
 msgstr "安装软件包到 `/opt` 或 `/usr/local`"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:31
+#: pages/troubleshooting.adoc:31
 msgid "https://github.com/projectatomic/rpm-ostree/issues/233[GitHub Issue]"
 msgstr "https://github.com/projectatomic/rpm-ostree/issues/233[GitHub Issue]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:36
+#: pages/troubleshooting.adoc:36
 msgid ""
 "Installing into `/opt` was commonly raised as a problem when users where "
-"trying to install Google Chrome.  A partial "
-"https://github.com/projectatomic/rpm-ostree/pull/1795[solution] has been "
-"implemented that allows users to layer Google Chrome, however it is not a "
-"complete solution for applications that write mutable data to `/opt`."
+"trying to install Google Chrome.  A partial https://github.com/projectatomic/"
+"rpm-ostree/pull/1795[solution] has been implemented that allows users to "
+"layer Google Chrome, however it is not a complete solution for applications "
+"that write mutable data to `/opt`."
 msgstr ""
-"在 `/opt` 安装软件包这个问题由一些尝试在 Silverblue 上安装 Google Chrome 的用户发起。尽管目前已经有了层叠 "
-"Google Chrome 的 https://github.com/projectatomic/rpm-ostree/pull/"
-"1795[临时解决方案]，然而在 `/opt` 写入可变数据依然是个大难题。"
+"在 `/opt` 安装软件包这个问题由一些尝试在 Silverblue 上安装 Google Chrome 的用"
+"户发起。尽管目前已经有了层叠 Google Chrome 的 https://github.com/"
+"projectatomic/rpm-ostree/pull/1795[临时解决方案]，然而在 `/opt` 写入可变数据"
+"依然是个大难题。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:37
+#: pages/troubleshooting.adoc:37
 #, no-wrap
 msgid "Using Nvidia drivers"
 msgstr "使用 NVIDIA 驱动"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:40
+#: pages/troubleshooting.adoc:40
 msgid "https://github.com/projectatomic/rpm-ostree/issues/1091[GitHub Issue]"
 msgstr "https://github.com/projectatomic/rpm-ostree/issues/1091[GitHub Issue]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:45
+#: pages/troubleshooting.adoc:45
 msgid ""
 "Users have long wanted to use their Nvidia GPUs on their Silverblue "
 "systems.  Thankfully, recent changes to the `akmods` and `kmodtools` "
 "packages were made by https://twitter.com/gnomealex[Alex Larsson] to allow "
 "for normal installation of the Nvidia drivers."
 msgstr ""
-"很多用户希望在 Silverblue 上使用他们的 NVIDIA GPU。值得庆幸的是，https://twitter.com/gnomealex["
-"Alex Larsson] 已经对 `akmods` 和 `kmodtools` 软件包做出修改以允许用户安装 NVIDIA 驱动。"
+"很多用户希望在 Silverblue 上使用他们的 NVIDIA GPU。值得庆幸的是，https://"
+"twitter.com/gnomealex[Alex Larsson] 已经对 `akmods` 和 `kmodtools` 软件包做出"
+"修改以允许用户安装 NVIDIA 驱动。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:47
+#: pages/troubleshooting.adoc:47
 #, no-wrap
 msgid " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
 msgstr " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:49
+#: pages/troubleshooting.adoc:49
 msgid ""
-"You can read more about the work that Alex did on his "
-"https://blogs.gnome.org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/[blog]."
+"You can read more about the work that Alex did on his https://blogs.gnome."
+"org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/[blog]."
 msgstr ""
-"你可以在 Alex 的 https://blogs.gnome.org/alexl/2019/03/06/"
-"nvidia-drivers-in-fedora-silverblue/[博客] 了解更多相关信息。"
+"你可以在 Alex 的 https://blogs.gnome.org/alexl/2019/03/06/nvidia-drivers-in-"
+"fedora-silverblue/[博客] 了解更多相关信息。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:50
+#: pages/troubleshooting.adoc:50
 #, no-wrap
 msgid "SELinux problems"
 msgstr "SELinux 相关问题"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:57
+#: pages/troubleshooting.adoc:57
 msgid ""
 "As users work with Silverblue day-to-day, it is possible that they have "
 "modified the default SELinux policy in an effort to workaround one or more "
@@ -154,16 +164,16 @@ msgid ""
 "denial in the journal.  If this is the case and one wishes to revert back to "
 "the default SELinux policy, you can try these set of actions."
 msgstr ""
-"有些 Silverblue 用户可能希望临时修改默认的 SELinux 策略，以解决与 SELinux 相关的问题。如果在修改后又希望恢复到默认的 "
-"SELinux 策略，则可以尝试下面的操作。"
+"有些 Silverblue 用户可能希望临时修改默认的 SELinux 策略，以解决与 SELinux 相"
+"关的问题。如果在修改后又希望恢复到默认的 SELinux 策略，则可以尝试下面的操作。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:59
+#: pages/troubleshooting.adoc:59
 msgid "Check the state of the SELinux policy"
 msgstr "查看当前的 SELinux 策略"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:65
+#: pages/troubleshooting.adoc:65
 #, no-wrap
 msgid ""
 "$ sudo ostree admin config-diff | grep policy\n"
@@ -179,19 +189,19 @@ msgstr ""
 "A    selinux/targeted/policy/policy.30\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:68
+#: pages/troubleshooting.adoc:68
 msgid ""
 "If anything is returned by this command, then your SELinux policy has been "
 "modified from the default."
 msgstr "如果执行这个命令有任何输出，那就意味着 SELinux 策略有被改动过。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:70
+#: pages/troubleshooting.adoc:70
 msgid "Copy the default SELinux policy shipped in the OSTree compose"
 msgstr "复制 OSTree 构建提供的 SELinux 默认策略"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:73
+#: pages/troubleshooting.adoc:73
 #, no-wrap
 msgid ""
 "$ sudo cp -al /etc/selinux{,.bak}\n"
@@ -201,27 +211,28 @@ msgstr ""
 "$ sudo rsync -rlv /usr/etc/selinux/ /etc/selinux/\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:76
+#: pages/troubleshooting.adoc:76
 msgid ""
 "After doing this, the output from `ostree admin config-diff | grep policy` "
 "should no longer indicate the policy is modified."
 msgstr ""
-"此时执行 `ostree admin config-diff | grep policy` 应该不会再有输出，也就意味着 SELinux 策略恢复成功。"
+"此时执行 `ostree admin config-diff | grep policy` 应该不会再有输出，也就意味"
+"着 SELinux 策略恢复成功。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:78
+#: pages/troubleshooting.adoc:78
 msgid ""
 "If your policy still appears to be modified, you can try the following "
 "approach."
 msgstr "如果恢复没有成功，还可以尝试下面的方法。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:80
+#: pages/troubleshooting.adoc:80
 msgid "Remove the SELinux policy; copy in the default policy"
 msgstr "移除已有 SELinux 策略；添加默认策略"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:83
+#: pages/troubleshooting.adoc:83
 #, no-wrap
 msgid ""
 "$ sudo rm -rf /etc/selinux\n"
@@ -231,30 +242,30 @@ msgstr ""
 "$ sudo cp -aT /usr/etc/selinux /etc/selinux\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:86
+#: pages/troubleshooting.adoc:86
 msgid ""
 "After this, the `ostree admin config-diff | grep policy` command should "
 "return no modifications."
 msgstr "此时执行 `ostree admin config-diff | grep policy` 应该不会再有输出。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:87
+#: pages/troubleshooting.adoc:87
 #, no-wrap
 msgid "Unable to add user to group"
 msgstr "无法将用户添加到用户组"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:90
+#: pages/troubleshooting.adoc:90
 msgid "https://github.com/projectatomic/rpm-ostree/issues/29[GitHub Issue]"
 msgstr "https://github.com/projectatomic/rpm-ostree/issues/29[GitHub Issue]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:92
+#: pages/troubleshooting.adoc:92
 msgid "https://github.com/projectatomic/rpm-ostree/issues/49[GitHub Issue]"
 msgstr "https://github.com/projectatomic/rpm-ostree/issues/49[GitHub Issue]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:99
+#: pages/troubleshooting.adoc:99
 msgid ""
 "Due to how `rpm-ostree` handles user + group entries, it may not be possible "
 "to use `usermod -a -G` to add a user to a group successfully.  Until the "
@@ -263,12 +274,13 @@ msgid ""
 "themselves to the group.  For example, if you wanted to add a user to the "
 "`libvirt` group:"
 msgstr ""
-"由于 `rpm-ostree` 的原因，`usermod -a -G` 是无法将用户添加到用户组的。在 `rpm-ostree` 使用 `systemd "
-"sysusers` 之前，用户必须先按照 `/usr/lib/group` 填写 `/etc/group`，然后才能将自己添加到组中。"
-"现在假设要将用户添加到 `libvirt` 组："
+"由于 `rpm-ostree` 的原因，`usermod -a -G` 是无法将用户添加到用户组的。在 "
+"`rpm-ostree` 使用 `systemd sysusers` 之前，用户必须先按照 `/usr/lib/group` 填"
+"写 `/etc/group`，然后才能将自己添加到组中。现在假设要将用户添加到 `libvirt` "
+"组："
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:102
+#: pages/troubleshooting.adoc:102
 #, no-wrap
 msgid ""
 " # grep -E '^libvirt:' /usr/lib/group >> /etc/group\n"
@@ -277,57 +289,64 @@ msgstr ""
 " # grep -E '^libvirt:' /usr/lib/group >> /etc/group\n"
 " # usermod -aG libvirt username\n"
 
+#. type: Plain text
+#: pages/troubleshooting.adoc:104
+msgid "You will need to log off and log back in to apply these changes."
+msgstr ""
+
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:103
+#: pages/troubleshooting.adoc:105
 #, no-wrap
 msgid "`ostree fsck` reports file corruption"
 msgstr "`ostree fsck` 提示文件受损"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:109
+#: pages/troubleshooting.adoc:111
 msgid ""
 "It is possible to end up in a situation where one or more files on the disk "
 "have become corrupted or missing.  In this case, `ostree fsck` will report "
-"errors in certain commits.  The "
-"https://github.com/ostreedev/ostree/pull/345#issuecomment-262263824[workaround] "
-"in this case is to mark the entire OSTree commit as partially retrieved and "
-"then re-pull the commit."
+"errors in certain commits.  The https://github.com/ostreedev/ostree/"
+"pull/345#issuecomment-262263824[workaround] in this case is to mark the "
+"entire OSTree commit as partially retrieved and then re-pull the commit."
 msgstr ""
-"当磁盘上有一个或多个文件损坏或丢失时， `ostree fsck` 就会报告错误。https://github.com/ostreedev/ostree/"
-"pull/345#issuecomment-262263824[解决方法] 则是将有关的 OSTree 提交标记为部分检索，然后重新拉取提交。"
+"当磁盘上有一个或多个文件损坏或丢失时， `ostree fsck` 就会报告错误。https://"
+"github.com/ostreedev/ostree/pull/345#issuecomment-262263824[解决方法] 则是将"
+"有关的 OSTree 提交标记为部分检索，然后重新拉取提交。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:110
+#: pages/troubleshooting.adoc:112
 #, no-wrap
 msgid "Read-only `/boot/efi` prevents any upgrades"
 msgstr "`/boot/efi` 只读导致所有更新被阻断"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:113
+#: pages/troubleshooting.adoc:115
 msgid "https://github.com/projectatomic/rpm-ostree/issues/1380[GitHub Issue]"
 msgstr "https://github.com/projectatomic/rpm-ostree/issues/1380[GitHub Issue]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:118
+#: pages/troubleshooting.adoc:120
 msgid ""
 "This issue is most commonly seen when users have installed Silverblue on "
 "Apple hardware.  The `/boot/efi` partition on Apple hardware is formatted as "
 "HFS+ and is not always resilient to power failures or other kinds of hard "
 "power events."
 msgstr ""
-"在苹果设备上 Silverblue 很有可能会出现这样的问题。苹果设备上的 `/boot/efi` 分区的文件系统是 "
-"HFS+，这一文件系统不一定能很好地处理各种电源事件。"
+"在苹果设备上 Silverblue 很有可能会出现这样的问题。苹果设备上的 `/boot/efi` 分"
+"区的文件系统是 HFS+，这一文件系统不一定能很好地处理各种电源事件。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:122
+#: pages/troubleshooting.adoc:124
 msgid ""
 "Since Silverblue now includes the `hfsplus-tools` package in the base "
 "compose, it has become relatively easy for users to workaround this kind of "
 "error."
-msgstr "Silverblue 映像中已经默认提供了 `hfsplus-tools` 软件包，所以处理起此类问题应该还是很容易的。"
+msgstr ""
+"Silverblue 映像中已经默认提供了 `hfsplus-tools` 软件包，所以处理起此类问题应"
+"该还是很容易的。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:126
+#: pages/troubleshooting.adoc:128
 #, no-wrap
 msgid ""
 " # umount /boot/efi\n"
@@ -339,332 +358,315 @@ msgstr ""
 " # mount -o rw /boot/efi\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:128
+#: pages/troubleshooting.adoc:130
 msgid "See the linked issue for additional details."
 msgstr "你可以查看与本节相关联的 Issue 以了解更多信息。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:129
+#: pages/troubleshooting.adoc:131
 #, no-wrap
 msgid "Unable to install Silverblue on EFI systems"
 msgstr "无法在 EFI 系统安装 Silverblue"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:132
+#: pages/troubleshooting.adoc:134
 msgid "https://bugzilla.redhat.com/show_bug.cgi?id=1575957[Bugzilla Issue]"
 msgstr "https://bugzilla.redhat.com/show_bug.cgi?id=1575957[Bugzilla Issue]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:136
+#: pages/troubleshooting.adoc:138
 msgid ""
 "Users have reported that they cannot install Silverblue on an EFI based "
 "system where they previously had another OS installed.  The error that is "
 "often observed looks like:"
-msgstr "当你的设备曾经安装过其它操作系统，在安装 Silverblue 的时候可能会得到下面的报错："
-
-#. type: Plain text
-#: ./pages/troubleshooting.adoc:138
-#, no-wrap
-msgid ""
-" ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', "
-"'--os=fedora-workstation', "
-"'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
 msgstr ""
-" ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-"
-"workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed "
-"with code -6`\n"
+"当你的设备曾经安装过其它操作系统，在安装 Silverblue 的时候可能会得到下面的报"
+"错："
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:140
+#: pages/troubleshooting.adoc:140
+#, no-wrap
+msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
+msgstr " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
+
+#. type: Plain text
+#: pages/troubleshooting.adoc:142
 msgid "A couple of possible workarounds exist:"
 msgstr "解决方案有下面几个："
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:142
+#: pages/troubleshooting.adoc:144
 msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
-"additional EFI partition. Assign the newly created EFI partition to "
-"`/boot/efi`. You will then be able to boot the previous OS(s) alongside "
-"Fedora Silverblue. If this workaround is not successful follow the below "
-"step."
+"additional EFI partition. Assign the newly created EFI partition to `/boot/"
+"efi`. You will then be able to boot the previous OS(s) alongside Fedora "
+"Silverblue. If this workaround is not successful follow the below step."
 msgstr ""
-"安装的时候选择手动分区并划分一个额外的 EFI 分区并挂载到`/boot/efi`。这样子就可以使 Fedora Silverblue "
-"与你之前安装的操作系统共存。如果这样做不奏效，那么还有另一种方法。"
+"安装的时候选择手动分区并划分一个额外的 EFI 分区并挂载到`/boot/efi`。这样子就"
+"可以使 Fedora Silverblue 与你之前安装的操作系统共存。如果这样做不奏效，那么还"
+"有另一种方法。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:143
+#: pages/troubleshooting.adoc:145
 msgid ""
 "Reformat the EFI partition on the host during the install process. This can "
 "be done by selecting \"Custom Partitioning\" and checking the `Reformat` box "
 "when creating the `/boot/efi` partition."
-msgstr "安装的时候选择手动分区，挂载 `/boot/efi` 分区的时候勾选格式化选项以格式化 EFI 分区。"
+msgstr ""
+"安装的时候选择手动分区，挂载 `/boot/efi` 分区的时候勾选格式化选项以格式化 "
+"EFI 分区。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:147
+#: pages/troubleshooting.adoc:149
 msgid ""
 "Choosing to reformat `/boot/efi` will likely result in the inability to boot "
 "any other operating systems that were previously installed. Be sure that you "
 "have backed up any important data before using this workaround."
-msgstr "格式化 `/boot/efi` 可能会使以前安装的操作系统无法被引导。在使用此解决方法之前，请确认你已经备份一切重要数据。"
+msgstr ""
+"格式化 `/boot/efi` 可能会使以前安装的操作系统无法被引导。在使用此解决方法之"
+"前，请确认你已经备份一切重要数据。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:148
+#: pages/troubleshooting.adoc:150
 #, no-wrap
 msgid "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
-msgstr ""
-"`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
+msgstr "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:151
+#: pages/troubleshooting.adoc:153
 msgid ""
 "As of `podman` version `1.4.0` this workaround is not necessary. Ensure "
 "`podman` is up to date by issuing `rpm-ostree upgrade` before attempting "
 "this workaround."
 msgstr ""
-"如果 `podman` 版本大于或等于 `1.4.0`，下面的解决措施可能不是必要的。在尝试下面的方案前请通过 `rpm-ostree upgrade` "
-"确认 `podman` 是最新的。"
+"如果 `podman` 版本大于或等于 `1.4.0`，下面的解决措施可能不是必要的。在尝试下"
+"面的方案前请通过 `rpm-ostree upgrade` 确认 `podman` 是最新的。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:153
+#: pages/troubleshooting.adoc:155
 msgid ""
 "When issuing the `toolbox list` command, systems using `podman` versions "
 "newer than `1.2.0`, will generate the following error:"
-msgstr "如果你的 `podman` 版本大于或等于 `1.2.0`，在执行 `toolbox list` 时可能会得到下面的报错："
+msgstr ""
+"如果你的 `podman` 版本大于或等于 `1.2.0`，在执行 `toolbox list` 时可能会得到"
+"下面的报错："
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:155
+#: pages/troubleshooting.adoc:157
 #, no-wrap
 msgid " toolbox: failed to list images with com.redhat.component=fedora-toolbox\n"
-msgstr ""
-" toolbox: failed to list images with com.redhat.component=fedora-toolbox\n"
+msgstr " toolbox: failed to list images with com.redhat.component=fedora-toolbox\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:157
+#: pages/troubleshooting.adoc:159
 msgid ""
 "The following workaround might be useful for other `toolbox` errors caused "
-"by `podman` versions greater than `1.2.0`. See "
-"https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902[Toolbox "
-"Github Repo]"
+"by `podman` versions greater than `1.2.0`. See https://github.com/"
+"debarshiray/toolbox/issues/169#issuecomment-495193902[Toolbox Github Repo]"
 msgstr ""
-"下面的解决措施可能也适用于其它因 `1.2.0` 或更高版本的 `toolbox` 导致的 `toolbox` 报错。详见 https://github."
-"com/debarshiray/toolbox/issues/169#issuecomment-495193902[Toolbox Github 仓库]"
+"下面的解决措施可能也适用于其它因 `1.2.0` 或更高版本的 `toolbox` 导致的 "
+"`toolbox` 报错。详见 https://github.com/debarshiray/toolbox/"
+"issues/169#issuecomment-495193902[Toolbox Github 仓库]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:159
+#: pages/troubleshooting.adoc:161
 msgid ""
 "As a workaround, it is possible to override `podman` packages newer than "
 "version `1.2.0` by issuing:"
 msgstr "作为一个解决措施，执行下面的命令替换 `podman` 软件包："
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:161
+#: pages/troubleshooting.adoc:163
 #, no-wrap
-msgid ""
-" $ rpm-ostree override --remove=podman-manpages replace "
-"https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
-msgstr ""
-" $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs."
-"fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2."
-"0-2.git3bd528e.fc30.x86_64.rpm\n"
+msgid " $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
+msgstr " $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:163
+#: pages/troubleshooting.adoc:165
 msgid "Reboot the system to apply the changes."
 msgstr "重启系统使改动生效。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:165
+#: pages/troubleshooting.adoc:167
 msgid ""
 "For reference, it is also possible to override the package by following "
 "these steps:"
 msgstr "当然你可以遵循下面的步骤完成软件包的替换："
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:167
+#: pages/troubleshooting.adoc:169
 msgid ""
-"Download `podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm` from "
-"https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
+"Download `podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm` from https://kojipkgs."
+"fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/"
+"podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
 msgstr ""
 "从 https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e."
-"fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji] 下载 `podman-1.2."
-"0-2.git3bd528e.fc30.x86_64.rpm`"
+"fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji] 下载 "
+"`podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:168
+#: pages/troubleshooting.adoc:170
 msgid ""
-"Remove `podman-manpages` issuing: `rpm-ostree override remove "
-"podman-manpages`"
+"Remove `podman-manpages` issuing: `rpm-ostree override remove podman-"
+"manpages`"
 msgstr "移除 `podman-manpages`：`rpm-ostree override remove podman-manpages`"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:169
+#: pages/troubleshooting.adoc:171
 msgid ""
 "Override the currently installed `podman` package (using the package you "
 "have downloaded on the first step) by: `rpm-ostree override replace "
 "podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
 msgstr ""
-"使用第一步下载的包替换当前已安装的 `podman`：`rpm-ostree override replace podman-1.2.0-2."
-"git3bd528e.fc30.x86_64.rpm`"
+"使用第一步下载的包替换当前已安装的 `podman`：`rpm-ostree override replace "
+"podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:171
+#: pages/troubleshooting.adoc:173
 msgid "You can now reboot the system for the change to take effect."
 msgstr "现在重启系统使改动生效。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:173
+#: pages/troubleshooting.adoc:175
 msgid "To revert this workaround issue the following command:"
 msgstr "要撤销上面的改动，执行："
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:175
+#: pages/troubleshooting.adoc:177
 #, no-wrap
-msgid ""
-" $ rpm-ostree override reset podman; rpm-ostree override reset "
-"podman-manpages\n"
-msgstr ""
-" $ rpm-ostree override reset podman; rpm-ostree override reset podman-"
-"manpages\n"
+msgid " $ rpm-ostree override reset podman; rpm-ostree override reset podman-manpages\n"
+msgstr " $ rpm-ostree override reset podman; rpm-ostree override reset podman-manpages\n"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:176
+#: pages/troubleshooting.adoc:178
 #, no-wrap
 msgid "Unable to enter a toolbox due to permissions errors"
 msgstr "因权限原因无法进入 Toolbox 容器"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:179
+#: pages/troubleshooting.adoc:181
 msgid "https://github.com/containers/libpod/issues/3187[GitHub Issue]"
 msgstr "https://github.com/containers/libpod/issues/3187[GitHub Issue]"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:183
+#: pages/troubleshooting.adoc:185
 msgid ""
 "With certain versions of `podman`, trying to enter a toolbox will result in "
-"errors. You can fix this by resetting the permissions on the "
-"overlay-containers with the following command."
-msgstr "在某些版本的 `podman` 下，尝试进入 Toolbox 容器时可能会报错。你可以使用下面的命令修正权限问题。"
-
-#. type: Plain text
-#: ./pages/troubleshooting.adoc:185
-#, no-wrap
-msgid ""
-" $ sudo chown -R $USER "
-"~/.local/share/containers/storage/overlay-containers\n"
+"errors. You can fix this by resetting the permissions on the overlay-"
+"containers with the following command."
 msgstr ""
-" $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
+"在某些版本的 `podman` 下，尝试进入 Toolbox 容器时可能会报错。你可以使用下面的"
+"命令修正权限问题。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:187
+#: pages/troubleshooting.adoc:187
+#, no-wrap
+msgid " $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
+msgstr " $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
+
+#. type: Plain text
+#: pages/troubleshooting.adoc:189
 msgid ""
 "This will reset the permissions on your containers and allow you to enter "
 "them again."
 msgstr "这会重置容器的权限设定以允许你重新进入容器。"
 
 #. type: Title ==
-#: ./pages/troubleshooting.adoc:188
+#: pages/troubleshooting.adoc:190
 #, no-wrap
 msgid "Running `restorecon`"
 msgstr "执行 `restorecon`"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:192
+#: pages/troubleshooting.adoc:194
 msgid ""
 "You should never run `restorecon` on a Silverblue host.  See the following "
 "bug for details - https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
 msgstr ""
-"你不应该在 Silverblue 执行 `restorecon`。请查看相关问题报告了解详情 - https://bugzilla.redhat.com/"
-"show_bug.cgi?id=1259018"
+"你不应该在 Silverblue 执行 `restorecon`。请查看相关问题报告了解详情 - "
+"https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:194
+#: pages/troubleshooting.adoc:196
 msgid "However, if you happened to do this, it is possible to recover."
 msgstr "不过即使你不小心执行了这个，也是可以挽救的。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:196
+#: pages/troubleshooting.adoc:198
 msgid "Boot with `enforcing=0` on the kernel command line"
 msgstr "引导系统时使用 `enforcing=0` 参数"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:197
+#: pages/troubleshooting.adoc:199
 msgid "Create a new, \"fixed\" commit locally"
 msgstr "在本地创建一个新的修复好的提交"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:198
+#: pages/troubleshooting.adoc:200
 msgid "Deploy the new \"fixed\" commit"
 msgstr "部署这个提交"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:199
+#: pages/troubleshooting.adoc:201
 msgid "Run `restorecon`"
 msgstr "执行 `restorecon`"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:200
+#: pages/troubleshooting.adoc:202
 msgid "Reboot"
 msgstr "重启系统"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:201
+#: pages/troubleshooting.adoc:203
 msgid "Cleanup"
 msgstr "执行清理工作"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:203
+#: pages/troubleshooting.adoc:205
 #, no-wrap
 msgid "$ rpm-ostree status -b | grep BaseCommit\n"
 msgstr "$ rpm-ostree status -b | grep BaseCommit\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:204
+#: pages/troubleshooting.adoc:206
 #, no-wrap
-msgid ""
-"BaseCommit: "
-"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-msgstr ""
-"BaseCommit: "
-"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+msgstr "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:211
+#: pages/troubleshooting.adoc:213
 #, no-wrap
 msgid ""
-"$ sudo ostree checkout -H "
-"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee "
-"/ostree/repo/tmp/selinux-fix\n"
+"$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
 "$ sudo ostree fsck --delete\n"
-"$ sudo ostree commit --consume --link-checkout-speedup --orphan "
-"--selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
+"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
 "$ sudo restorecon -Rv /var\n"
 "$ sudo restorecon -Rv /etc\n"
 "$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
 "$ sudo reboot\n"
 msgstr ""
-"$ sudo ostree checkout -H "
-"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/"
-"repo/tmp/selinux-fix\n"
+"$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
 "$ sudo ostree fsck --delete\n"
-"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-"
-"policy=/ /ostree/repo/tmp/selinux-fix\n"
+"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
 "$ sudo restorecon -Rv /var\n"
 "$ sudo restorecon -Rv /etc\n"
 "$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
 "$ sudo reboot\n"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:214
+#: pages/troubleshooting.adoc:216
 msgid ""
 "The caveat to this recovery is that your layered packages will be removed; "
 "you'll need to relayer them after the recovery."
-msgstr "请注意在操作完成后，所有层叠的软件包会被删除；在恢复完成之后，你需要重新层叠它们。"
+msgstr ""
+"请注意在操作完成后，所有层叠的软件包会被删除；在恢复完成之后，你需要重新层叠"
+"它们。"
 
 #. type: Plain text
-#: ./pages/troubleshooting.adoc:215
+#: pages/troubleshooting.adoc:217
 msgid ""
-"See this upstream comment for additional details - "
-"https://github.com/ostreedev/ostree/issues/1265#issuecomment-484557615"
+"See this upstream comment for additional details - https://github.com/"
+"ostreedev/ostree/issues/1265#issuecomment-484557615"
 msgstr ""
-"查看上游的说明了解更多信息 - https://github.com/ostreedev/ostree/issues/"
-"1265#issuecomment-484557615"
+"查看上游的说明了解更多信息 - https://github.com/ostreedev/ostree/"
+"issues/1265#issuecomment-484557615"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-02-22 21:48+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -175,53 +175,11 @@ msgstr ""
 #. type: Labeled list
 #: pages/faq.adoc:50
 #, no-wrap
-msgid "How can I use Adobe Flash on the Firefox version pre installed on my system?"
-msgstr "Як скористатися Adobe Flash у версії Firefox, яку попередньо встановлено у моїй системі?"
-
-#. type: Plain text
-#: pages/faq.adoc:53
-msgid ""
-"You can follow this https://docs.fedoraproject.org/en-US/quick-docs/using-"
-"adobe-flash/[Fedora quickdoc] with the following changes:"
-msgstr ""
-"Ви можете стежити за цим https://docs.fedoraproject.org/en-US/quick-docs/"
-"using-adobe-flash/[Fedora quickdoc] з такими змінами:"
-
-#. type: Plain text
-#: pages/faq.adoc:55
-msgid ""
-"where needed, substitute the `dnf install` command with the `rpm-ostree "
-"install` command"
-msgstr ""
-"де потрібно, замініть команду `dnf install` на команду `rpm-ostree install`"
-
-#. type: Plain text
-#: pages/faq.adoc:57
-msgid "reboot the system after the installation of the Adobe DNF repository"
-msgstr "перезавантажте систему після встановлення сховища DNF Adobe"
-
-#. type: Plain text
-#: pages/faq.adoc:59
-msgid ""
-"install only `flash-plugin` as `libcurl` and `alsa-plugins-pulseaudio` are "
-"installed by default on Fedora Silverblue"
-msgstr ""
-"встановіть лише `flash-plugin`, оскільки `libcurl` і `alsa-plugins-"
-"pulseaudio` типово встановлено у Fedora Silverblue"
-
-#. type: Plain text
-#: pages/faq.adoc:61
-msgid "reboot the system after having installed `flash-plugin`"
-msgstr "перезавантажте систему після встановлення `flash-plugin`"
-
-#. type: Labeled list
-#: pages/faq.adoc:62
-#, no-wrap
 msgid "How can I see what packages were updated between two commits?"
 msgstr "Як переглянути список пакунків, які було оновлено, між двома внесками?"
 
 #. type: Plain text
-#: pages/faq.adoc:65
+#: pages/faq.adoc:53
 msgid ""
 "If you want to compare the booted deployment with the pending deployment (or "
 "rollback deployment), simply issue:"
@@ -231,13 +189,13 @@ msgstr ""
 "команду:"
 
 #. type: Plain text
-#: pages/faq.adoc:67
+#: pages/faq.adoc:55
 #, no-wrap
 msgid "$ rpm-ostree db diff\n"
 msgstr "$ rpm-ostree db diff\n"
 
 #. type: Plain text
-#: pages/faq.adoc:69
+#: pages/faq.adoc:57
 msgid ""
 "You can also see the RPM changelog by adding the `-c` option like so: `rpm-"
 "ostree db diff -c`"
@@ -246,7 +204,7 @@ msgstr ""
 "c`. Ось так: `rpm-ostree db diff -c`"
 
 #. type: Plain text
-#: pages/faq.adoc:71
+#: pages/faq.adoc:59
 msgid ""
 "If you want to see which packages were updated between two specific commits:"
 msgstr ""
@@ -254,54 +212,54 @@ msgstr ""
 "певним внесками, зробіть так:"
 
 #. type: Plain text
-#: pages/faq.adoc:73
+#: pages/faq.adoc:61
 msgid "find out which two commits you want to compare by issuing:"
 msgstr ""
 "визначте два внески, які ви хочете порівняти, можна за допомогою такої "
 "команди:"
 
 #. type: Plain text
-#: pages/faq.adoc:75
+#: pages/faq.adoc:63
 #, no-wrap
 msgid "$ ostree log <ref>\n"
 msgstr "$ ostree log <посилання>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:77
+#: pages/faq.adoc:65
 msgid "you can now compare the two commits by issuing:"
 msgstr "далі, порівняйте два внески за допомогою такої команди:"
 
 #. type: Plain text
-#: pages/faq.adoc:79
+#: pages/faq.adoc:67
 #, no-wrap
 msgid "$ rpm-ostree db diff <commit x> <commit y>\n"
 msgstr "$ rpm-ostree db diff <внесок x> <внесок y>\n"
 
 #. type: Labeled list
-#: pages/faq.adoc:80
+#: pages/faq.adoc:68
 #, no-wrap
 msgid "How can I check the version number of an installed package?"
 msgstr "Як можна визначити номер версії встановленого пакунка?"
 
 #. type: Plain text
-#: pages/faq.adoc:83
+#: pages/faq.adoc:71
 msgid "You can simply use:"
 msgstr "Можете просто скористатися такою командою:"
 
 #. type: Plain text
-#: pages/faq.adoc:85
+#: pages/faq.adoc:73
 #, no-wrap
 msgid " $ rpm -q <package>\n"
 msgstr " $ rpm -q <пакунок>\n"
 
 #. type: Labeled list
-#: pages/faq.adoc:86
+#: pages/faq.adoc:74
 #, no-wrap
 msgid "How can I check if an `rpm` software package is available in the repository?"
 msgstr "Як перевірити, чи є пакунок програмного забезпечення `rpm` у сховищі пакунків?"
 
 #. type: Plain text
-#: pages/faq.adoc:89
+#: pages/faq.adoc:77
 msgid ""
 "At this point in time, there is no `rpm` package search function built into "
 "`rpm-ostree`. However, you can use `toolbox` with the following command:"
@@ -311,13 +269,13 @@ msgstr ""
 "скористатися `toolbox` і такою командою:"
 
 #. type: Plain text
-#: pages/faq.adoc:91
+#: pages/faq.adoc:79
 #, no-wrap
 msgid " $ toolbox run dnf search <package>\n"
 msgstr " $ toolbox run dnf search <пакунок>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:93
+#: pages/faq.adoc:81
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
 "version of your Fedora Silverblue installation."
@@ -326,13 +284,13 @@ msgstr ""
 "встановленій у вас версії Fedora Silverblue."
 
 #. type: Labeled list
-#: pages/faq.adoc:94
+#: pages/faq.adoc:82
 #, no-wrap
 msgid "How can I downgrade my system's kernel?"
 msgstr "Як знизити версію ядра системи?"
 
 #. type: Plain text
-#: pages/faq.adoc:97
+#: pages/faq.adoc:85
 msgid ""
 "If, for whatever reason, you need to downgrade the kernel, you can do so by "
 "following these steps:"
@@ -341,7 +299,7 @@ msgstr ""
 "системи, ви можете виконати його за допомогою таких кроків:"
 
 #. type: Plain text
-#: pages/faq.adoc:99
+#: pages/faq.adoc:87
 msgid ""
 "For the version you need to downgrade, download `<kernel>`, `<kernel-core>`, "
 "`<kernel-modules>` and `<kernel-modules-extra>` from https://koji."
@@ -352,30 +310,30 @@ msgstr ""
 "https://koji.fedoraproject.org/koji/packageinfo?packageID=8[Koji]."
 
 #. type: Plain text
-#: pages/faq.adoc:101
+#: pages/faq.adoc:89
 msgid "Install the packages downloaded on the previous step by issuing:"
 msgstr ""
 "Встановіть отримані на попередньому кроці пакунки за допомогою такої команди:"
 
 #. type: Plain text
-#: pages/faq.adoc:103
+#: pages/faq.adoc:91
 #, no-wrap
 msgid "$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> <kernel-modules-extra>\n"
 msgstr "$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> <kernel-modules-extra>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:105
+#: pages/faq.adoc:93
 msgid "Reboot the system to apply the changes."
 msgstr "Перезавантажте систему для застосування змін."
 
 #. type: Labeled list
-#: pages/faq.adoc:106
+#: pages/faq.adoc:94
 #, no-wrap
 msgid "How can I upgrade my system to the next major version (for instance: rawhide or an upcoming Fedora release branch), while keeping my current deployment?"
 msgstr "Як оновити систему до наступної основної версії (наприклад rawhide або гілки майбутнього випуску Fedora), не вилучаючи поточної розгорнутої системи?"
 
 #. type: Plain text
-#: pages/faq.adoc:109
+#: pages/faq.adoc:97
 msgid ""
 "OSTree allows you to pin deployments (pinning ensures that your deployment "
 "of choice is kept and not discarded)."
@@ -385,7 +343,7 @@ msgstr ""
 "встановленою і не вилучається)."
 
 #. type: Plain text
-#: pages/faq.adoc:111
+#: pages/faq.adoc:99
 msgid ""
 "Assuming that you want to keep your default deployment, issue the following "
 "command:"
@@ -394,32 +352,32 @@ msgstr ""
 "віддати таку команду:"
 
 #. type: Plain text
-#: pages/faq.adoc:113
+#: pages/faq.adoc:101
 #, no-wrap
 msgid "$ sudo ostree admin pin 0\n"
 msgstr "$ sudo ostree admin pin 0\n"
 
 #. type: Plain text
-#: pages/faq.adoc:115
+#: pages/faq.adoc:103
 msgid "`0` here refers to the first deployment listed by `rpm-ostree status`"
 msgstr ""
 "`0` тут посилається на першу розгорнуту систему зі списку `rpm-ostree status`"
 
 #. type: Plain text
-#: pages/faq.adoc:117
+#: pages/faq.adoc:105
 msgid "Verify that you have pinned your deployment of choice by issuing:"
 msgstr ""
 "Перевірте, чи пришпилено вибрану вами розгорнуту систему за допомогою такої "
 "команди:"
 
 #. type: Plain text
-#: pages/faq.adoc:119
+#: pages/faq.adoc:107
 #, no-wrap
 msgid "rpm-ostree status\n"
 msgstr "rpm-ostree status\n"
 
 #. type: Plain text
-#: pages/faq.adoc:121
+#: pages/faq.adoc:109
 msgid ""
 "After the deployment is pinned, you can upgrade your system by using the "
 "instructions found https://docs.fedoraproject.org/en-US/fedora-silverblue/"
@@ -430,7 +388,7 @@ msgstr ""
 "fedora-silverblue/updates-upgrades-rollbacks/#upgrading[тут.]"
 
 #. type: Plain text
-#: pages/faq.adoc:123
+#: pages/faq.adoc:111
 msgid ""
 "When you have completed rebasing, reboot the system. The GRUB menu will now "
 "present you with both: the previous deployment major version entry (e.g.: *"
@@ -443,10 +401,40 @@ msgstr ""
 "(наприклад *\"Fedora 31.YYYYMMDD.n\"*)."
 
 #. type: Plain text
-#: pages/faq.adoc:124
+#: pages/faq.adoc:112
 msgid ""
 "At the moment it is not possible to name (pinned) deployments and their "
 "associated GRUB menu entries."
 msgstr ""
 "У поточній версії не передбачено можливості змінювати назви (пришпилених) "
 "розгорнутих систем та пов'язаних із ними пунктів меню GRUB."
+
+#~ msgid "How can I use Adobe Flash on the Firefox version pre installed on my system?"
+#~ msgstr "Як скористатися Adobe Flash у версії Firefox, яку попередньо встановлено у моїй системі?"
+
+#~ msgid ""
+#~ "You can follow this https://docs.fedoraproject.org/en-US/quick-docs/using-"
+#~ "adobe-flash/[Fedora quickdoc] with the following changes:"
+#~ msgstr ""
+#~ "Ви можете стежити за цим https://docs.fedoraproject.org/en-US/quick-docs/"
+#~ "using-adobe-flash/[Fedora quickdoc] з такими змінами:"
+
+#~ msgid ""
+#~ "where needed, substitute the `dnf install` command with the `rpm-ostree "
+#~ "install` command"
+#~ msgstr ""
+#~ "де потрібно, замініть команду `dnf install` на команду `rpm-ostree "
+#~ "install`"
+
+#~ msgid "reboot the system after the installation of the Adobe DNF repository"
+#~ msgstr "перезавантажте систему після встановлення сховища DNF Adobe"
+
+#~ msgid ""
+#~ "install only `flash-plugin` as `libcurl` and `alsa-plugins-pulseaudio` "
+#~ "are installed by default on Fedora Silverblue"
+#~ msgstr ""
+#~ "встановіть лише `flash-plugin`, оскільки `libcurl` і `alsa-plugins-"
+#~ "pulseaudio` типово встановлено у Fedora Silverblue"
+
+#~ msgid "reboot the system after having installed `flash-plugin`"
+#~ msgstr "перезавантажте систему після встановлення `flash-plugin`"

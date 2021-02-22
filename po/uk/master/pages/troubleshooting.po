@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-02-22 21:48+0000\n"
 "PO-Revision-Date: 2020-05-05 22:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -316,14 +316,19 @@ msgstr ""
 " # grep -E '^libvirt:' /usr/lib/group >> /etc/group\n"
 " # usermod -aG libvirt username\n"
 
+#. type: Plain text
+#: pages/troubleshooting.adoc:104
+msgid "You will need to log off and log back in to apply these changes."
+msgstr ""
+
 #. type: Title ==
-#: pages/troubleshooting.adoc:103
+#: pages/troubleshooting.adoc:105
 #, no-wrap
 msgid "`ostree fsck` reports file corruption"
 msgstr "`ostree fsck` повідомляє про пошкодження файла"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:109
+#: pages/troubleshooting.adoc:111
 msgid ""
 "It is possible to end up in a situation where one or more files on the disk "
 "have become corrupted or missing.  In this case, `ostree fsck` will report "
@@ -339,19 +344,19 @@ msgstr ""
 "цього внеску."
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:110
+#: pages/troubleshooting.adoc:112
 #, no-wrap
 msgid "Read-only `/boot/efi` prevents any upgrades"
 msgstr "Захист від запису `/boot/efi` заважає будь-якому оновленню"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:113
+#: pages/troubleshooting.adoc:115
 msgid "https://github.com/projectatomic/rpm-ostree/issues/1380[GitHub Issue]"
 msgstr ""
 "https://github.com/projectatomic/rpm-ostree/issues/1380[Запис вади на GitHub]"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:118
+#: pages/troubleshooting.adoc:120
 msgid ""
 "This issue is most commonly seen when users have installed Silverblue on "
 "Apple hardware.  The `/boot/efi` partition on Apple hardware is formatted as "
@@ -364,7 +369,7 @@ msgstr ""
 "інших типів проблем із живленням."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:122
+#: pages/troubleshooting.adoc:124
 msgid ""
 "Since Silverblue now includes the `hfsplus-tools` package in the base "
 "compose, it has become relatively easy for users to workaround this kind of "
@@ -375,7 +380,7 @@ msgstr ""
 "такого типу."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:126
+#: pages/troubleshooting.adoc:128
 #, no-wrap
 msgid ""
 " # umount /boot/efi\n"
@@ -387,24 +392,24 @@ msgstr ""
 " # mount -o rw /boot/efi\n"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:128
+#: pages/troubleshooting.adoc:130
 msgid "See the linked issue for additional details."
 msgstr "Див. додаткові подробиці можна дізнатися за вказаним посиланням."
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:129
+#: pages/troubleshooting.adoc:131
 #, no-wrap
 msgid "Unable to install Silverblue on EFI systems"
 msgstr "Не вдається встановити Silverblue у системи з EFI"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:132
+#: pages/troubleshooting.adoc:134
 msgid "https://bugzilla.redhat.com/show_bug.cgi?id=1575957[Bugzilla Issue]"
 msgstr ""
 "https://bugzilla.redhat.com/show_bug.cgi?id=1575957[Запис вади у Bugzilla]"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:136
+#: pages/troubleshooting.adoc:138
 msgid ""
 "Users have reported that they cannot install Silverblue on an EFI based "
 "system where they previously had another OS installed.  The error that is "
@@ -415,18 +420,18 @@ msgstr ""
 "помилку, яке часто спостерігали, виглядало так:"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:138
+#: pages/troubleshooting.adoc:140
 #, no-wrap
 msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
 msgstr " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:140
+#: pages/troubleshooting.adoc:142
 msgid "A couple of possible workarounds exist:"
 msgstr "Існує декілька можливих вирішень:"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:142
+#: pages/troubleshooting.adoc:144
 msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
 "additional EFI partition. Assign the newly created EFI partition to `/boot/"
@@ -440,7 +445,7 @@ msgstr ""
 "варіант не спрацює, виконайте наведений нижче крок."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:143
+#: pages/troubleshooting.adoc:145
 msgid ""
 "Reformat the EFI partition on the host during the install process. This can "
 "be done by selecting \"Custom Partitioning\" and checking the `Reformat` box "
@@ -451,7 +456,7 @@ msgstr ""
 "позначенням пункту «Переформатувати» при створенні розділу `/boot/efi`."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:147
+#: pages/troubleshooting.adoc:149
 msgid ""
 "Choosing to reformat `/boot/efi` will likely result in the inability to boot "
 "any other operating systems that were previously installed. Be sure that you "
@@ -463,13 +468,13 @@ msgstr ""
 "даних, перш ніж користуватися цим варіантом."
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:148
+#: pages/troubleshooting.adoc:150
 #, no-wrap
 msgid "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
 msgstr "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:151
+#: pages/troubleshooting.adoc:153
 msgid ""
 "As of `podman` version `1.4.0` this workaround is not necessary. Ensure "
 "`podman` is up to date by issuing `rpm-ostree upgrade` before attempting "
@@ -480,7 +485,7 @@ msgstr ""
 "`rpm-ostree upgrade`, перш ніж намагатися скористатися цим обхідним маневром."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:153
+#: pages/troubleshooting.adoc:155
 msgid ""
 "When issuing the `toolbox list` command, systems using `podman` versions "
 "newer than `1.2.0`, will generate the following error:"
@@ -489,13 +494,13 @@ msgstr ""
 "версій, новіших за `1.2.0`, призведе до такого повідомлення про помилку:"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:155
+#: pages/troubleshooting.adoc:157
 #, no-wrap
 msgid " toolbox: failed to list images with com.redhat.component=fedora-toolbox\n"
 msgstr " `toolbox: failed to list images with com.redhat.component=fedora-toolbox`\n"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:157
+#: pages/troubleshooting.adoc:159
 msgid ""
 "The following workaround might be useful for other `toolbox` errors caused "
 "by `podman` versions greater than `1.2.0`. See https://github.com/"
@@ -507,7 +512,7 @@ msgstr ""
 "issues/169#issuecomment-495193902[сховища Toolbox на Github]"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:159
+#: pages/troubleshooting.adoc:161
 msgid ""
 "As a workaround, it is possible to override `podman` packages newer than "
 "version `1.2.0` by issuing:"
@@ -516,18 +521,18 @@ msgstr ""
 "`1.2.0`, за допомогою такої команди:"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:161
+#: pages/troubleshooting.adoc:163
 #, no-wrap
 msgid " $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
 msgstr " $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:163
+#: pages/troubleshooting.adoc:165
 msgid "Reboot the system to apply the changes."
 msgstr "Перезавантажте систему для застосування змін."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:165
+#: pages/troubleshooting.adoc:167
 msgid ""
 "For reference, it is also possible to override the package by following "
 "these steps:"
@@ -536,7 +541,7 @@ msgstr ""
 "таких кроків:"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:167
+#: pages/troubleshooting.adoc:169
 msgid ""
 "Download `podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm` from https://kojipkgs."
 "fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/"
@@ -547,7 +552,7 @@ msgstr ""
 "podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm[Koji]"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:168
+#: pages/troubleshooting.adoc:170
 msgid ""
 "Remove `podman-manpages` issuing: `rpm-ostree override remove podman-"
 "manpages`"
@@ -556,7 +561,7 @@ msgstr ""
 "remove podman-manpages`"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:169
+#: pages/troubleshooting.adoc:171
 msgid ""
 "Override the currently installed `podman` package (using the package you "
 "have downloaded on the first step) by: `rpm-ostree override replace "
@@ -567,34 +572,34 @@ msgstr ""
 "override replace podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm`"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:171
+#: pages/troubleshooting.adoc:173
 msgid "You can now reboot the system for the change to take effect."
 msgstr "Після цього систему можна перезавантажити, щоб зміни набули чинності."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:173
+#: pages/troubleshooting.adoc:175
 msgid "To revert this workaround issue the following command:"
 msgstr "Щоб повернути усе до типового стану, віддайте таку команду:"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:175
+#: pages/troubleshooting.adoc:177
 #, no-wrap
 msgid " $ rpm-ostree override reset podman; rpm-ostree override reset podman-manpages\n"
 msgstr " $ rpm-ostree override reset podman; rpm-ostree override reset podman-manpages\n"
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:176
+#: pages/troubleshooting.adoc:178
 #, no-wrap
 msgid "Unable to enter a toolbox due to permissions errors"
 msgstr "Не вдається увійти до toolbox через помилки із правами доступу"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:179
+#: pages/troubleshooting.adoc:181
 msgid "https://github.com/containers/libpod/issues/3187[GitHub Issue]"
 msgstr "https://github.com/containers/libpod/issues/3187[Запис вади на GitHub]"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:183
+#: pages/troubleshooting.adoc:185
 msgid ""
 "With certain versions of `podman`, trying to enter a toolbox will result in "
 "errors. You can fix this by resetting the permissions on the overlay-"
@@ -605,13 +610,13 @@ msgstr ""
 "накладених контейнерів за допомогою наведеної нижче команди."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:185
+#: pages/troubleshooting.adoc:187
 #, no-wrap
 msgid " $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
 msgstr " $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:187
+#: pages/troubleshooting.adoc:189
 msgid ""
 "This will reset the permissions on your containers and allow you to enter "
 "them again."
@@ -620,13 +625,13 @@ msgstr ""
 "уможливлення входу до них."
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:188
+#: pages/troubleshooting.adoc:190
 #, no-wrap
 msgid "Running `restorecon`"
 msgstr "Віддайте команду `restorecon`"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:192
+#: pages/troubleshooting.adoc:194
 msgid ""
 "You should never run `restorecon` on a Silverblue host.  See the following "
 "bug for details - https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
@@ -636,54 +641,54 @@ msgstr ""
 "id=1259018"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:194
+#: pages/troubleshooting.adoc:196
 msgid "However, if you happened to do this, it is possible to recover."
 msgstr "Втім, якщо ви вже віддали цю команду, систему ще можна відновити."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:196
+#: pages/troubleshooting.adoc:198
 msgid "Boot with `enforcing=0` on the kernel command line"
 msgstr "Завантажте систему з `enforcing=0` у командному рядку ядра"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:197
+#: pages/troubleshooting.adoc:199
 msgid "Create a new, \"fixed\" commit locally"
 msgstr "Створіть новий «виправний» внесок локально"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:198
+#: pages/troubleshooting.adoc:200
 msgid "Deploy the new \"fixed\" commit"
 msgstr "Розгорніть новий «виправлений» внесок"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:199
+#: pages/troubleshooting.adoc:201
 msgid "Run `restorecon`"
 msgstr "Віддайте команду `restorecon`"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:200
+#: pages/troubleshooting.adoc:202
 msgid "Reboot"
 msgstr "Перезавантажте систему"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:201
+#: pages/troubleshooting.adoc:203
 msgid "Cleanup"
 msgstr "Виконайте очищення системи"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:203
+#: pages/troubleshooting.adoc:205
 #, no-wrap
 msgid "$ rpm-ostree status -b | grep BaseCommit\n"
 msgstr "$ rpm-ostree status -b | grep BaseCommit\n"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:204
+#: pages/troubleshooting.adoc:206
 #, no-wrap
 msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 msgstr "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:211
+#: pages/troubleshooting.adoc:213
 #, no-wrap
 msgid ""
 "$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
@@ -703,7 +708,7 @@ msgstr ""
 "$ sudo reboot\n"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:214
+#: pages/troubleshooting.adoc:216
 msgid ""
 "The caveat to this recovery is that your layered packages will be removed; "
 "you'll need to relayer them after the recovery."
@@ -712,7 +717,7 @@ msgstr ""
 "пакунки буде вилучено — вам доведеться знову нашарувати їх після відновлення."
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:215
+#: pages/troubleshooting.adoc:217
 msgid ""
 "See this upstream comment for additional details - https://github.com/"
 "ostreedev/ostree/issues/1265#issuecomment-484557615"
