@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/toolbox.adoc:2
+#, no-wrap
+msgid "Toolbox"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:7
+msgid ""
+"As an immutable host, Silverblue is an excellent platform for "
+"container-based development and, for working with containers, "
+"https://buildah.io/[buildah] and https://podman.io/[podman] are recommended."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:11
+msgid ""
+"Silverblue also comes with the "
+"https://github.com/containers/toolbox[toolbox] utility, which uses "
+"containers to provide an environment where development tools and libraries "
+"can be installed and used."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:17
+msgid ""
+"Toolbox makes it easy to use a containerized environment for everyday "
+"software development and debugging. On immutable operating systems, like "
+"https://silverblue.fedoraproject.org/[Fedora Silverblue], it provides a "
+"familiar package-based environment in which tools and libraries can be "
+"installed and used. However, toolbox can also be used on package-based "
+"systems."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/toolbox.adoc:19
+#, no-wrap
+msgid "Why use toolbox?"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:23
+msgid ""
+"Using toolbox containers to install development tools offers a number of "
+"advantages:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:26
+msgid ""
+"It keeps the host OS clean and stable, and helps to avoid the clutter that "
+"can happen after installing lots of development tools and packages."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:28
+msgid ""
+"Containers are a safe space to experiment: if things go wrong, it's easy to "
+"throw a toolbox away and start again."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:30
+msgid ""
+"Containers are a good way to isolate and organise the dependencies needed "
+"for different projects."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/toolbox.adoc:32
+#, no-wrap
+msgid "How it works"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:38
+msgid ""
+"Toolbox takes the work out of using containers, by providing a small number "
+"of simple commands to create, enter, list and remove containers. It also "
+"integrates toolbox containers into your regular working environment, to make "
+"it easy for you to use them as an everyday development space."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:41
+msgid ""
+"Each toolbox container is an environment that you can enter from the command "
+"line. Inside each one, you will find:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:43
+msgid "Your existing username and permissions"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:44
+msgid "Access to your home directory"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:45
+msgid "Common command lines tools, including the DNF package manager"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:48
+msgid ""
+"In other words, toolbox containers look, feel and behave like a standard "
+"Linux command line environment."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:54
+msgid ""
+"In most cases, when a command is run inside a container, the program from "
+"inside the container is used. However, there are a few special cases where "
+"the program on the host is used instead (using `flatpak-spawn`). One example "
+"of this is the toolbox command itself; this makes it possible to use toolbox "
+"from inside toolbox containers."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/toolbox.adoc:56
+#, no-wrap
+msgid "Installation"
+msgstr ""
+
+#. type: Title ===
+#: ./pages/toolbox.adoc:58
+#, no-wrap
+msgid "Fedora Silverblue"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:62
+msgid ""
+"Toolbox is preinstalled on Fedora Silverblue 30 or newer. On older versions, "
+"it can be installed with the following command:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:64
+#, no-wrap
+msgid " $ rpm-ostree install toolbox\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:66
+msgid "This will install toolbox as a layered RPM."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/toolbox.adoc:67
+#, no-wrap
+msgid "Fedora Workstation"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:71
+msgid ""
+"Toolbox can be installed on Fedora Workstation (or any package-based version "
+"of Fedora) with the following command:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:73
+#, no-wrap
+msgid " $ sudo dnf install toolbox\n"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/toolbox.adoc:75
+#, no-wrap
+msgid "Your first toolbox"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:78
+msgid "Once toolbox is installed, two simple commands are required to get started:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:80
+#, no-wrap
+msgid " $ toolbox create\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:83
+msgid ""
+"This will download an OCI image and create a toolbox container from it. Once "
+"this is complete, run:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:85
+#, no-wrap
+msgid " $ toolbox enter\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:88
+msgid ""
+"Once inside the toolbox, you can access common command line tools, and "
+"install new ones using DNF."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:92
+msgid ""
+"When the prompt is inside a toolbox, it is prepended with a diamond: this "
+"indicates that the prompt is inside a toolbox container. The diamond symbol "
+"may not be present if you use a custom shell theme."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/toolbox.adoc:94
+#, no-wrap
+msgid "Commands and usage"
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/toolbox.adoc:96
+#, no-wrap
+msgid "`toolbox create [--container <name>]`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:103
+msgid ""
+"Creates a toolbox container. This will download an OCI image if one isn't "
+"available (this is required to create the container). By default a Fedora "
+"image matching the version of the host is used. Used without options, "
+"`toolbox create` will automatically name the container it creates. To create "
+"additional toolboxes, use the ``--container <name>`` option."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/toolbox.adoc:104
+#, no-wrap
+msgid "`toolbox enter [--container <name>]`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:109
+msgid ""
+"Enters a toolbox for interactive use. Used without options, `toolbox enter` "
+"opens the default toolbox. If there is more than one toolbox, use the "
+"`--container name` option to specify the toolbox to enter."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/toolbox.adoc:110
+#, no-wrap
+msgid "`toolbox run [--container <name>] <cmd> <arg ...>`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:115
+msgid ""
+"Runs a command in a toolbox without entering it. Used without options, "
+"`toolbox run` runs the command in the default toolbox. If there is more than "
+"one toolbox, use the `--container name` option to specify the toolbox to be "
+"used."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/toolbox.adoc:116
+#, no-wrap
+msgid "`toolbox list`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:119
+msgid "Lists local toolbox images and containers."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/toolbox.adoc:120
+#, no-wrap
+msgid "`toolbox rm [--force] <name>`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:124
+msgid ""
+"Removes one or more toolbox containers. The `--force` option removes the "
+"container even if it is running."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/toolbox.adoc:125
+#, no-wrap
+msgid "`toolbox rmi [--force] <name>`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:128
+msgid "Removes one or more toolbox images."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/toolbox.adoc:129
+#, no-wrap
+msgid "`toolbox --help`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:132
+msgid "Lists available commands."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/toolbox.adoc:133
+#, no-wrap
+msgid "Exiting a toolbox"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:137
+msgid ""
+"To return to the host environment, either run `exit` or quit the current "
+"shell (typically Ctrl+D)."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/toolbox.adoc:140
+#, no-wrap
+msgid "Under the hood"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:143
+msgid "Toolbox uses the following technologies:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:145
+msgid "https://www.opencontainers.org/[OCI container images]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:146
+msgid "https://podman.io/[Podman]"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/toolbox.adoc:148
+#, no-wrap
+msgid "Contact and issues"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:152
+msgid ""
+"To report issues, make suggestions, or contribute fixes, see "
+"https://github.com/containers/toolbox[toolbox's GitHub project]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/toolbox.adoc:156
+msgid ""
+"To get in touch with toolbox users and developers, use "
+"https://discussion.fedoraproject.org/[Fedora's Discourse instance], or join "
+"the #silverblue IRC channel on Freenode."
+msgstr ""
