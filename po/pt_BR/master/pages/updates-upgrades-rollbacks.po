@@ -6,19 +6,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-27 23:52+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/"
+"masterpagesupdates-upgrades-rollbacks/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/updates-upgrades-rollbacks.adoc:2
 #, no-wrap
 msgid "Updates, Upgrades & Rollbacks"
-msgstr ""
+msgstr "Atualizações & reversões"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:7
@@ -27,12 +31,15 @@ msgid ""
 "operating systems). It also has a special rollback feature, in case anything "
 "goes wrong."
 msgstr ""
+"Instalar atualizações com o Silverblue é fácil e rápido (muito mais rápido "
+"do que outros sistemas operacionais). Ele também possui um recurso especial "
+"de reversão, caso algo dê errado."
 
 #. type: Title ==
 #: ./pages/updates-upgrades-rollbacks.adoc:9
 #, no-wrap
 msgid "Updating Silverblue"
-msgstr ""
+msgstr "Atualizando o Silverblue"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:15
@@ -42,6 +49,11 @@ msgid ""
 "to automatically download the update (this can be changed from the update "
 "preferences in Software)."
 msgstr ""
+"As atualizações do sistema operacional no Silverblue são totalmente "
+"integradas ao ambiente; você será notificado automaticamente quando uma "
+"atualização estiver disponível. O comportamento padrão é baixar "
+"automaticamente a atualização (isso pode ser alterado nas preferências de "
+"atualização no Programas)."
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:19
@@ -50,6 +62,9 @@ msgid ""
 "new version. There is no waiting for the update to be installed during this "
 "reboot."
 msgstr ""
+"Assim que uma atualização estiver pronta, basta reiniciar para começar a "
+"usar a nova versão. Não há espera para que a atualização seja instalada "
+"durante a reinicialização."
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:22
@@ -57,12 +72,14 @@ msgid ""
 "If you'd prefer, it is also possible to update using the command line. To do "
 "this, run:"
 msgstr ""
+"Se preferir, também é possível atualizar usando a linha de comando. Para "
+"fazer isso, execute:"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:24
 #, no-wrap
 msgid " $ rpm-ostree upgrade\n"
-msgstr ""
+msgstr " $ rpm-ostree upgrade\n"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:28
@@ -71,18 +88,21 @@ msgid ""
 "available. Alternatively, to check for available updates without downloading "
 "them, run:"
 msgstr ""
+"Isso irá verificar se há novas atualizações e fazer o download e instalá-las "
+"se estiverem disponíveis. Como alternativa, para verificar as atualizações "
+"disponíveis sem baixá-las, execute:"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:30
 #, no-wrap
 msgid " $ rpm-ostree upgrade --check\n"
-msgstr ""
+msgstr " $ rpm-ostree upgrade --check\n"
 
 #. type: Title ==
 #: ./pages/updates-upgrades-rollbacks.adoc:32
 #, no-wrap
 msgid "Upgrading between major versions"
-msgstr ""
+msgstr "Atualizando entre as versões principais"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:37
@@ -91,6 +111,10 @@ msgid ""
 "be completed using the Software application. Alternatively, Silverblue can "
 "be upgraded between major versions using the `ostree` command."
 msgstr ""
+"A atualização entre as versões principais (como do Fedora 32 para o Fedora "
+"33) pode ser concluída usando o aplicativo Programas. Alternativamente, o "
+"Silverblue pode ser atualizado entre as versões principais usando o comando "
+"`ostree`."
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:39
@@ -98,12 +122,14 @@ msgid ""
 "First, verify the branch is available. You can print all available branches "
 "with this command:"
 msgstr ""
+"Primeiro, verifique se o ramo está disponível. Você pode imprimir todos os "
+"ramos disponíveis com este comando:"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:41
 #, no-wrap
 msgid " $ ostree remote refs fedora\n"
-msgstr ""
+msgstr " $ ostree remote refs fedora\n"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:44
@@ -111,6 +137,8 @@ msgid ""
 "After you verify the name of your branch, you are ready to proceed. For "
 "example, to upgrade to Silverblue 33, the command is:"
 msgstr ""
+"Depois de verificar o nome de seu ramo, você está pronto para prosseguir. "
+"Por exemplo, para atualizar para Silverblue 33, o comando é:"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:46
@@ -119,12 +147,15 @@ msgid ""
 "is not the case for your system, you can find out the remote name by "
 "issuing: `ostree remote list`."
 msgstr ""
+"Atualmente, o remoto padrão do Silverblue 33 é denominado `fedora`. Se este "
+"não for o caso do seu sistema, você pode descobrir o nome remoto emitindo: `"
+"ostree remote list`."
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:48
 #, no-wrap
 msgid " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
-msgstr ""
+msgstr " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:51
@@ -132,12 +163,15 @@ msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
 msgstr ""
+"O processo é muito semelhante a uma atualização do sistema: o novo sistema "
+"operacional é baixado e instalado em segundo plano, e você apenas inicializa "
+"quando estiver pronto."
 
 #. type: Title ==
 #: ./pages/updates-upgrades-rollbacks.adoc:53
 #, no-wrap
 msgid "Rolling back"
-msgstr ""
+msgstr "Revertendo"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:59
@@ -147,11 +181,16 @@ msgid ""
 "it can be helpful if there is a problem with an update or an upgrade "
 "(rollbacks work the same way for both), as well as for development purposes."
 msgstr ""
+"Silverblue mantém um registro da versão anterior do sistema operacional, à "
+"qual pode ser alternada em vez da versão mais recente. Embora isso "
+"geralmente não seja necessário, pode ser útil se houver um problema com uma "
+"atualização de programa ou de versão principal (reversões funcionam da mesma "
+"maneira para ambos), bem como para fins de desenvolvimento."
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:61
 msgid "There are two ways to roll back to the previous version:"
-msgstr ""
+msgstr "Existem duas maneiras de reverter para a versão anterior:"
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:65
@@ -160,6 +199,9 @@ msgid ""
 "reboot and select the previous version from the boot menu (often known as "
 "the grub menu)."
 msgstr ""
+"Reversões temporárias: para reverter temporariamente para uma versão "
+"anterior, simplesmente reinicie e selecione a versão anterior no menu de "
+"inicialização (geralmente conhecido como menu grub)."
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:67
@@ -167,6 +209,8 @@ msgid ""
 "Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
 msgstr ""
+"Reversões permanentes: para voltar permanentemente à implementação anterior, "
+"use o comando `rpm-ostree rollback`."
 
 #. type: Plain text
 #: ./pages/updates-upgrades-rollbacks.adoc:70
@@ -175,3 +219,7 @@ msgid ""
 "prompted to update. Updating will undo the rollback, so should be avoided if "
 "you want the rollback to stay in effect."
 msgstr ""
+"Depois de reverter, você estará tecnicamente em uma versão antiga do sistema "
+"operacional e pode ser solicitado a atualizar. A atualização desfará a "
+"reversão, portanto, deve ser evitada se você quiser que a reversão permaneça "
+"em vigor."

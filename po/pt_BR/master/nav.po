@@ -1,61 +1,63 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-27 23:52+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/nav/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Plain text
 #: ./nav.adoc:2
 msgid "xref:contributing.adoc[Contributing]"
-msgstr ""
+msgstr "xref:contributing.adoc[Contribuindo]"
 
 #. type: Plain text
 #: ./nav.adoc:3
 msgid "xref:installation.adoc[Installation]"
-msgstr ""
+msgstr "xref:installation.adoc[Instalação]"
 
 #. type: Plain text
 #: ./nav.adoc:4
 msgid "xref:getting-started.adoc[Getting Started]"
-msgstr ""
+msgstr "xref:getting-started.adoc[Primeiros passos]"
 
 #. type: Plain text
 #: ./nav.adoc:5
 msgid "xref:updates-upgrades-rollbacks.adoc[Updates, Upgrades & Rollbacks]"
-msgstr ""
+msgstr "xref:updates-upgrades-rollbacks.adoc[Atualizações & reversões]"
 
 #. type: Plain text
 #: ./nav.adoc:6
 msgid "xref:toolbox.adoc[Toolbox]"
-msgstr ""
+msgstr "xref:toolbox.adoc[Toolbox]"
 
 #. type: Plain text
 #: ./nav.adoc:7
 msgid "xref:technical-information.adoc[Technical Information]"
-msgstr ""
+msgstr "xref:technical-information.adoc[Informações técnicas]"
 
 #. type: Plain text
 #: ./nav.adoc:8
 msgid "xref:reading-and-resources.adoc[Reading and Resources]"
-msgstr ""
+msgstr "xref:reading-and-resources.adoc[Leitura e recursos]"
 
 #. type: Plain text
 #: ./nav.adoc:9
 msgid "xref:troubleshooting.adoc[Troubleshooting]"
-msgstr ""
+msgstr "xref:install/Troubleshooting.adoc[Solução de problemas]"
 
 #. type: Plain text
 #: ./nav.adoc:9
 msgid "xref:faq.adoc[FAQ]"
-msgstr ""
+msgstr "xref:faq.adoc[FAQ]"

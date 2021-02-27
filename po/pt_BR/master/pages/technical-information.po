@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-27 23:52+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/masterpagestechnical-information/"
+"pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/technical-information.adoc:2
 #, no-wrap
 msgid "Technical Information"
-msgstr ""
+msgstr "Informações técnicas"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:7
@@ -28,6 +31,9 @@ msgid ""
 "including information on the core technologies used to build it, as well as "
 "the filesystem layout."
 msgstr ""
+"Esta página fornece algumas informações técnicas básicas sobre o Silverblue, "
+"incluindo informações sobre as principais tecnologias usadas para criá-lo, "
+"bem como o layout do sistema de arquivos."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:11
@@ -36,12 +42,15 @@ msgid ""
 "those who are interested in the technical details or those who want to use "
 "Silverblue in a non-standard manner."
 msgstr ""
+"Os usuários não precisam saber dessas informações. Elas são fornecidas aqui "
+"para aqueles que estão interessados nos detalhes técnicos ou para aqueles "
+"que desejam usar o Silverblue de uma maneira não padronizada."
 
 #. type: Title ==
 #: ./pages/technical-information.adoc:13
 #, no-wrap
 msgid "ostree and rpm-ostree"
-msgstr ""
+msgstr "ostree e rpm-ostree"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:19
@@ -51,6 +60,11 @@ msgid ""
 "manner to a version control system, but it operates on entire filesystem "
 "trees.  It is often described as “Git for operating system binaries”."
 msgstr ""
+"https://ostreedev.github.io/ostree/[ostree] é a tecnologia principal usada "
+"para compor, implantar e atualizar o Silverblue. ostree opera de maneira "
+"semelhante a um sistema de controle de versão, mas opera em árvores de "
+"sistema de arquivos inteiras. Geralmente é descrito como “Git para binários "
+"do sistema operacional”."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:23
@@ -59,6 +73,10 @@ msgid ""
 "the OS image (including everything below `/` that is not symlinked into "
 "`/var`). It also updates `grub.cfg` entries to point to the current image."
 msgstr ""
+"Para instalações do Silverblue, ostree é responsável por implantar e "
+"atualizar a imagem do sistema operacional (incluindo tudo abaixo de `/` que "
+"não está vinculado a `/var`). Ele também atualiza as entradas do `grub.cfg` "
+"para apontar para a imagem atual."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:27
@@ -67,6 +85,9 @@ msgid ""
 "and makes it possible to install RPMs as a “layer” on top of an ostree "
 "image. This makes it possible to install RPMs on Silverblue."
 msgstr ""
+"https://coreos.github.io/rpm-ostree/[rpm-ostree] construi sobre a ostree e "
+"possibilita a instalação de RPMs como uma “camada” sobre a imagem da ostree. "
+"Isso torna possível instalar RPMs no Silverblue."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:33
@@ -77,12 +98,18 @@ msgid ""
 "rebooted with the new image. rpm-ostree also takes care of recreating the "
 "layered image whenever you update the base OS image."
 msgstr ""
+"Quando um pacote é instalado com `rpm-ostree`, uma nova imagem do sistema "
+"operacional é composta adicionando a carga útil RPM à imagem do sistema "
+"operacional existente e criando uma nova imagem combinada. Para ver os RPMs "
+"recém-instalados, o sistema precisa ser reinicializado com a nova imagem. O "
+"rpm-ostree também se encarrega de recriar a imagem em camadas sempre que "
+"você atualiza a imagem do sistema operacional base."
 
 #. type: Title ==
 #: ./pages/technical-information.adoc:35
 #, no-wrap
 msgid "Silverblue filesystem layout"
-msgstr ""
+msgstr "Layout do sistema de arquivos do Silverblue"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:39
@@ -90,6 +117,8 @@ msgid ""
 "On Silverblue, the root filesystem is immutable. This means that `/`, `/usr` "
 "and everything below it is read-only."
 msgstr ""
+"No Silverblue, o sistema de arquivos raiz é imutável. Isso significa que `/`"
+", `/usr` e tudo abaixo dele são somente leitura."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:43
@@ -98,46 +127,51 @@ msgid ""
 "used to make traditional state-carrying directories available in their "
 "expected locations. This includes:"
 msgstr ""
+"`/var` é onde todo o estado de tempo de execução do Silverblue é armazenado. "
+"Links simbólicos são usados para disponibilizar diretórios tradicionais de "
+"controle de estado em seus locais esperados. Isso inclui:"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:45
 msgid "`/home` → `/var/home`"
-msgstr ""
+msgstr "`/home` → `/var/home`"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:46
 msgid "`/opt` → `/var/opt`"
-msgstr ""
+msgstr "`/opt` → `/var/opt`"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:47
 msgid "`/srv` → `/var/srv`"
-msgstr ""
+msgstr "`/srv` → `/var/srv`"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:48
 msgid "`/root` → `/var/roothome`"
-msgstr ""
+msgstr "`/root` → `/var/roothome`"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:49
 msgid "`/usr/local` → `/var/usrlocal`"
-msgstr ""
+msgstr "`/usr/local` → `/var/usrlocal`"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:50
 msgid "`/mnt`→ `/var/mnt`"
-msgstr ""
+msgstr "`/mnt`→ `/var/mnt`"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:51
 msgid "`/tmp` → `/sysroot/tmp`"
-msgstr ""
+msgstr "`/tmp` → `/sysroot/tmp`"
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:53
 msgid "This means that separate home partitions should be mounted on `/var/home`."
 msgstr ""
+"Isso significa que partições pessoais separadas devem ser montadas em `/var/"
+"home`."
 
 #. type: Plain text
 #: ./pages/technical-information.adoc:57
@@ -147,3 +181,6 @@ msgid ""
 "https://ostreedev.github.io/ostree/adapting-existing/[libostree "
 "documentation]."
 msgstr ""
+"Para uma explicação mais detalhada do layout do sistema de arquivos do "
+"Silverblue, consulte a excelente https://ostreedev.github.io/ostree/"
+"adapting-existing/[documentação do libostree]."

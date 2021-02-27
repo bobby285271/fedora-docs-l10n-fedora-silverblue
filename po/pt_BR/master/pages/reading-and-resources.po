@@ -1,46 +1,51 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-27 23:52+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/masterpagesreading-and-resources/"
+"pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/reading-and-resources.adoc:1
 #, no-wrap
 msgid "Reading & Resources"
-msgstr ""
+msgstr "Leitura & recursos"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:4
 msgid "This page is a list of further reading and resources for Silverblue."
-msgstr ""
+msgstr "Esta página é uma lista de outras leituras e recursos para Silverblue."
 
 #. type: Title ==
 #: ./pages/reading-and-resources.adoc:5
 #, no-wrap
 msgid "Technology websites and documentation"
-msgstr ""
+msgstr "Sites e documentação de tecnologias"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:8
 msgid "https://buildah.io/[Buildah] - build OCI container images"
-msgstr ""
+msgstr "https://buildah.io/[Buildah] - compila imagens de contêiner OCI"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:9
 msgid "http://flatpak.org[Flatpak] - next-generation desktop app framework"
 msgstr ""
+"http://flatpak.org[Flatpak] - framework de última geração para aplicativos "
+"de desktop"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:11
@@ -48,11 +53,13 @@ msgid ""
 "https://ostreedev.github.io/ostree/[ostree] - OS image composition and "
 "updates"
 msgstr ""
+"https://ostreedev.github.io/ostree/[ostree] - Composição e atualizações de "
+"imagem de sistema operacional"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:12
 msgid "https://podman.io/[podman] - daemonless container engine"
-msgstr ""
+msgstr "https://podman.io/[podman] - mecanismo de contêiner sem daemon"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:14
@@ -60,12 +67,14 @@ msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] - hybrid image/package "
 "system"
 msgstr ""
+"https://coreos.github.io/rpm-ostree/[rpm-ostree] - sistema híbrido imagem/"
+"pacote"
 
 #. type: Title ==
 #: ./pages/reading-and-resources.adoc:15
 #, no-wrap
 msgid "Documents"
-msgstr ""
+msgstr "Documentos"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:20
@@ -74,6 +83,9 @@ msgid ""
 "Origins] - PDF that explains the motivations, goals, and history behind "
 "Silverblue"
 msgstr ""
+"link:{attachmentsdir}/team-silverblue-origins.pdf[Team Silverblue - The "
+"Origins] - PDF que explica as motivações, objetivos e história por trás do "
+"Silverblue"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:22
@@ -81,6 +93,8 @@ msgid ""
 "link:{attachmentsdir}/flatpak-print-cheatsheet.pdf[Flatpak Cheat Sheet] - "
 "PDF with common flatpak commands"
 msgstr ""
+"link:{attachmentsdir}/flatpak-print-cheatsheet.pdf[Flatpak Cheat Sheet] - "
+"PDF com comandos flatpak comuns"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:24
@@ -88,6 +102,8 @@ msgid ""
 "link:{attachmentsdir}/silverblue-cheatsheet.pdf[rpm-ostree Cheat Sheet] - "
 "PDF with common rpm-ostree commands"
 msgstr ""
+"link:{attachmentsdir}/silverblue-cheatsheet.pdf[rpm-ostree Cheat Sheet] - "
+"PDF com comandos rpm-ostree comuns"
 
 #. type: Plain text
 #: ./pages/reading-and-resources.adoc:26
@@ -96,3 +112,6 @@ msgid ""
 "playful introduction to tools such as podman, cri-o and buildah by Máirín "
 "Duffy and Dan Walsh. Print it out, and learn as you color!"
 msgstr ""
+"link:{attachmentsdir}/container-commandos.pdf[Container commandos] - uma "
+"introdução lúdica a ferramentas como podman, cri-o e buildah, de Máirín "
+"Duffy e Dan Walsh. Imprima e aprenda enquanto você pinta!"

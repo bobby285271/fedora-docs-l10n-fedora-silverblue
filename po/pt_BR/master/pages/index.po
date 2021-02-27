@@ -1,42 +1,44 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-27 23:52+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/masterpagesindex/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/index.adoc:1
 #, no-wrap
 msgid "Fedora Silverblue User Guide"
-msgstr ""
+msgstr "Guia do usuário do Fedora Silverblue"
 
 #. type: Plain text
 #: ./pages/index.adoc:4
 msgid "Welcome to the Fedora Silverblue user guide!"
-msgstr ""
+msgstr "Bem-vindo ao guia do usuário do Silverblue!"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/index.adoc:5
 #, no-wrap
 msgid "Silverblue logo"
-msgstr ""
+msgstr "Logo do Silverblue"
 
 #. type: Target for macro image
 #: ./pages/index.adoc:5
 #, no-wrap
 msgid "silverblue-logo.svg"
-msgstr ""
+msgstr "silverblue-logo.svg"
 
 #. type: Plain text
 #: ./pages/index.adoc:10
@@ -45,12 +47,16 @@ msgid ""
 "extremely stable and reliable. It also aims to be an excellent platform for "
 "developers and for those using container-focused workflows."
 msgstr ""
+"_Fedora Silverblue_ é um sistema operacional imutável de desktop. Tem como "
+"objetivo ser extremamente estável e confiável. Ele também pretende ser uma "
+"excelente plataforma para desenvolvedores e para aqueles que usam fluxos de "
+"trabalho com foco em contêiner."
 
 #. type: Title ==
 #: ./pages/index.adoc:12
 #, no-wrap
 msgid "Introduction to Silverblue"
-msgstr ""
+msgstr "Introdução ao Silverblue"
 
 #. type: Plain text
 #: ./pages/index.adoc:17
@@ -59,6 +65,9 @@ msgid ""
 "like a regular desktop operating system, and the experience is similar to "
 "what you find with using a standard Fedora Workstation."
 msgstr ""
+"Silverblue é uma variante do Fedora Workstation. Ele se parece e se comporta "
+"como um sistema operacional de desktop normal, e a experiência é semelhante "
+"à que você encontra ao usar um Fedora Workstation padrão."
 
 #. type: Plain text
 #: ./pages/index.adoc:22
@@ -68,6 +77,11 @@ msgid ""
 "version. The operating system that is on disk is exactly the same from one "
 "machine to the next, and it never changes as it is used."
 msgstr ""
+"No entanto, ao contrário de outros sistemas operacionais, Silverblue é "
+"imutável. Isso significa que cada instalação é idêntica a todas as outras "
+"instalações da mesma versão. O sistema operacional que está no disco é "
+"exatamente o mesmo de uma máquina para a outra e nunca muda à medida que é "
+"usado."
 
 #. type: Plain text
 #: ./pages/index.adoc:29
@@ -79,6 +93,13 @@ msgid ""
 "(apps) and containers are kept separate from the host system, improving "
 "stability and reliability."
 msgstr ""
+"O design imutável do Silverblue se destina a torná-lo mais estável, menos "
+"sujeito a bugs e mais fácil de testar e desenvolver. Finalmente, o design "
+"imutável do Silverblue também o torna uma excelente plataforma para "
+"aplicativos em contêiner, bem como para o desenvolvimento de software "
+"baseado em contêiner. Em cada caso, os aplicativos (apps) e contêineres são "
+"mantidos separados do sistema host, melhorando a estabilidade e a "
+"confiabilidade."
 
 #. type: Plain text
 #: ./pages/index.adoc:34
@@ -89,12 +110,17 @@ msgid ""
 "to roll back to the previous version of the operating system, if something "
 "goes wrong."
 msgstr ""
+"As principais tecnologias do Silverblue têm alguns outros recursos úteis. As "
+"atualizações do sistema operacional são rápidas e não há espera para serem "
+"instaladas: apenas reinicie normalmente para começar a usar a próxima "
+"versão. Com o Silverblue, também é possível reverter para a versão anterior "
+"do sistema operacional, se algo der errado."
 
 #. type: Title ==
 #: ./pages/index.adoc:36
 #, no-wrap
 msgid "About this guide"
-msgstr ""
+msgstr "Sobre este guia"
 
 #. type: Plain text
 #: ./pages/index.adoc:42
@@ -104,21 +130,27 @@ msgid ""
 "documentation] can be used. This guide covers those areas where Silverblue "
 "differs from a standard Fedora Workstation, including:"
 msgstr ""
+"Na maioria dos casos, o Silverblue se comporta como uma instalação padrão do "
+"Fedora Workstation, e a https://docs.fedoraproject.org/[documentação padrão "
+"do Fedora] pode ser usada. Este guia cobre as áreas onde o Silverblue difere "
+"de um Fedora Workstation padrão, incluindo:"
 
 #. type: Plain text
 #: ./pages/index.adoc:44
 msgid "link:installation[OS installation]"
-msgstr ""
+msgstr "link:installation[Instalação do sistema operacional]"
 
 #. type: Plain text
 #: ./pages/index.adoc:45
 msgid "link:getting-started[Installing apps and software]"
-msgstr ""
+msgstr "link:getting-started[Instalando aplicativos e softwares]"
 
 #. type: Plain text
 #: ./pages/index.adoc:46
 msgid "link:updates-upgrades-rollbacks[OS upgrades and rollbacks]"
 msgstr ""
+"link:updates-upgrades-rollbacks[Atualizações e reversões de sistema "
+"operacional]"
 
 #. type: Plain text
 #: ./pages/index.adoc:50
@@ -129,3 +161,8 @@ msgid ""
 "information] is provided, for those who are interested and want to learn "
 "more."
 msgstr ""
+"O público principal para esses documentos são novos usuários, dos quais não "
+"se espera que tenham conhecimento especializado ou conhecimento técnico "
+"sobre os componentes internos do Silverblue. No entanto, algumas link"
+":technical-information[informações técnicas] são fornecidas, para aqueles "
+"que estão interessados e querem saber mais."

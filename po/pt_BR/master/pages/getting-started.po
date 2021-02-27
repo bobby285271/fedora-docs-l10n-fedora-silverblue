@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-27 23:52+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/pt_BR/"
+">\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: ./pages/getting-started.adoc:2
 #, no-wrap
 msgid "Getting Started"
-msgstr ""
+msgstr "Primeiros passos"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:8
@@ -29,6 +32,10 @@ msgid ""
 "differently from other operating systems, and there are therefore some "
 "things that it is useful to know."
 msgstr ""
+"Silverblue foi projetado para ser fácil e direto de usar, e geralmente não é "
+"necessário conhecimento especializado. No entanto, o Silverblue é construído "
+"de forma diferente de outros sistemas operacionais e, portanto, há algumas "
+"coisas que é útil saber."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:12
@@ -37,6 +44,9 @@ msgid ""
 "standard Fedora Workstation (or other package-based Linux "
 "distributions). These include:"
 msgstr ""
+"Silverblue tem opções diferentes para instalar software, em comparação com "
+"um Fedora Workstation padrão (ou outras distribuições Linux baseadas em "
+"pacotes). Essas incluem:"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:14
@@ -44,11 +54,15 @@ msgid ""
 "Flatpak apps: this is the primary way that (GUI) apps get installed on "
 "Silverblue."
 msgstr ""
+"Aplicativos em Flatpak: esta é a maneira principal de os aplicativos (GUI) "
+"serem instalados no Silverblue."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:15
 msgid "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
 msgstr ""
+"Toolbox: Usado principalmente para aplicativos CLI; desenvolvimento, "
+"ferramentas de depuração etc."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:18
@@ -57,6 +71,10 @@ msgid ""
 "image/package system.  By default the system operates in pure image mode, "
 "but package layering is useful for things like libvirt, drivers, etc."
 msgstr ""
+"Camada de pacote: a ferramenta rpm-ostree usada para atualizações de host é "
+"um sistema de imagem/pacote totalmente híbrido. Por padrão, o sistema opera "
+"em modo de imagem pura, mas a disposição de pacotes é útil para coisas como "
+"libvirt, drivers etc."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:20
@@ -64,6 +82,8 @@ msgid ""
 "For information on <<flatpak>> and <<package-layering,package layering>>, "
 "see below."
 msgstr ""
+"Para informações sobre <<flatpak>> e <<package-layering,camada de pacote>>, "
+"veja abaixo."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:22
@@ -71,12 +91,14 @@ msgid ""
 "See the dedicated <<toolbox.adoc#toolbox,toolbox>> page to get started with "
 "it."
 msgstr ""
+"Consulte a página dedicada do <<toolbox.adoc#toolbox,toolbox>> para começar "
+"a usá-lo."
 
 #. type: Title ==
 #: ./pages/getting-started.adoc:24
 #, no-wrap
 msgid "Flatpak"
-msgstr ""
+msgstr "Flatpak"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:30
@@ -86,6 +108,10 @@ msgid ""
 "box in Fedora Silverblue, and Fedora provides a small (but growing) "
 "collection of apps that can be installed."
 msgstr ""
+"Flatpak é a principal forma de instalação de aplicativos no Silverblue. ("
+"Para informações, veja http://flatpak.org[flatpak.org].) Flatpak funciona "
+"por padrão no Fedora Silverblue, e o Fedora oferece uma pequena (mas "
+"crescente) coleção de aplicativos que podem ser instalados."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:33
@@ -93,12 +119,15 @@ msgid ""
 "The other main source of Flatpak apps is https://flathub.org/home[Flathub], "
 "which provides a large repository of Flatpak apps that can be installed."
 msgstr ""
+"A outra fonte principal de aplicativos Flatpak é o https://flathub.org/"
+"home[Flathub], que fornece um grande repositório de aplicativos Flatpak que "
+"podem ser instalados."
 
 #. type: Title ==
 #: ./pages/getting-started.adoc:35
 #, no-wrap
 msgid "Setting up Flathub"
-msgstr ""
+msgstr "Configurando o Flathub"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:40
@@ -107,18 +136,22 @@ msgid ""
 "https://flatpak.org/setup/Fedora/[Flathub setup page for Fedora] and click "
 "the “Flathub repository file” button to download the Flathub configuration."
 msgstr ""
+"Para configurar o Flathub no Fedora Silverblue, abra a https://flatpak.org/"
+"setup/Fedora/[página de configuração do Flathub para Fedora] e clique no "
+"botão “Flathub repository file” (em português seria algo como \"arquivo de "
+"repositório do Flathub\") para baixar a configuração do Flathub."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:41
 #, no-wrap
 msgid "Fedora quick setup page"
-msgstr ""
+msgstr "Página de configuração rápida do Fedora"
 
 #. type: Target for macro image
 #: ./pages/getting-started.adoc:41
 #, no-wrap
 msgid "sfg_flathub_fedora.png"
-msgstr ""
+msgstr "sfg_flathub_fedora.png"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:46
@@ -127,18 +160,21 @@ msgid ""
 "option should show “Software Install (default)”. Click on the “OK” button to "
 "start the download."
 msgstr ""
+"Uma janela pop-up mostrará uma opção de download para o arquivo. A opção “"
+"Abrir com” deve mostrar “Instalação de programa (aplicativo padrão)”. Clique "
+"no botão “OK” para iniciar o download."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:47
 #, no-wrap
 msgid "Flathub download options"
-msgstr ""
+msgstr "Opções de download do Flathub"
 
 #. type: Target for macro image
 #: ./pages/getting-started.adoc:47
 #, no-wrap
 msgid "sfg_flathub_download.png"
-msgstr ""
+msgstr "sfg_flathub_download.png"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:53
@@ -148,18 +184,22 @@ msgid ""
 "be installed, under the details heading (1). To start the installation of "
 "the Flathub repository, click on the “Install” button (2)."
 msgstr ""
+"Depois que o download for concluído, uma nova janela será aberta mostrando o "
+"repositório Flathub. Esta janela também mostra a localização de origem do "
+"repositório a ser instalado, no cabeçalho de detalhes (1). Para iniciar a "
+"instalação do repositório Flathub, clique no botão “Instalar” (2)."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:54
 #, no-wrap
 msgid "Flathub install window"
-msgstr ""
+msgstr "Janela de instalação do Flathub"
 
 #. type: Target for macro image
 #: ./pages/getting-started.adoc:54
 #, no-wrap
 msgid "sfg_flathub_install.png"
-msgstr ""
+msgstr "sfg_flathub_install.png"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:58
@@ -167,12 +207,14 @@ msgid ""
 "After the repository installation process is complete, the window will be "
 "updated to show a “Remove\" button in place of the “Install” button."
 msgstr ""
+"Após a conclusão do processo de instalação do repositório, a janela será "
+"atualizada para mostrar um botão “Remover” no lugar do botão “Instalar”."
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:59
 #, no-wrap
 msgid "Installing Flatpak apps from Flathub"
-msgstr ""
+msgstr "Instalando aplicativos Flatpak do Flathub"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:64
@@ -181,6 +223,10 @@ msgid ""
 "Flatpak apps. This can be done directly from the Software app, or apps can "
 "be browsed on the https://flathub.org/home[Flathub website]."
 msgstr ""
+"Assim que o repositório Flathub for configurado, ele pode ser usado para "
+"instalar aplicativos Flatpak. Isso pode ser feito diretamente do aplicativo "
+"Programas ou os aplicativos podem ser navegados no https://flathub.org/home["
+"site do Flathub]."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:70
@@ -191,6 +237,11 @@ msgid ""
 "https://www.libreoffice.org/[LibreOffice], you first search for and open the "
 "LibreOffice page, and then press the “Install” button (2)."
 msgstr ""
+"Se você optar por instalar aplicativos do site Flathub, clicar em \"Instalar"
+"\" fará o download de um arquivo que será aberto pelo aplicativo Programas, "
+"que poderá então ser usado para instalar o aplicativo. Por exemplo, para "
+"instalar https://www.libreoffice.org/[LibreOffice], primeiro pesquise e abra "
+"a página do LibreOffice e, em seguida, pressione o botão “Instalar” (2)."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:74
@@ -199,18 +250,21 @@ msgid ""
 "shown. Verify the correct Flatpak has been downloaded and then click on the "
 "“OK” button to begin installing the LibreOffice application."
 msgstr ""
+"Após clicar no botão “Instalar”, uma janela de informações de download será "
+"exibida. Verifique se o Flatpak correto foi baixado e clique no botão “OK” "
+"para iniciar a instalação do aplicativo LibreOffice."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: ./pages/getting-started.adoc:75
 #, no-wrap
 msgid "LibreOffice Flatpak download"
-msgstr ""
+msgstr "Download do LibreOffice em Flatpak"
 
 #. type: Target for macro image
 #: ./pages/getting-started.adoc:75
 #, no-wrap
 msgid "sfg_libreoffice_install.png"
-msgstr ""
+msgstr "sfg_libreoffice_install.png"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:79
@@ -219,12 +273,15 @@ msgid ""
 "window with an “Install” button (2). Click this button to begin "
 "installation."
 msgstr ""
+"Assim que o Flatpak for baixado, o aplicativo Programas abrirá uma nova "
+"janela com um botão “Instalar” (2). Clique neste botão para iniciar a "
+"instalação."
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:80
 #, no-wrap
 msgid "Flatpak command line"
-msgstr ""
+msgstr "Linha de comando do Flatpak"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:86
@@ -234,12 +291,16 @@ msgid ""
 "http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] "
 "for how to do this."
 msgstr ""
+"Além de usar o aplicativo Programas para instalar aplicativos Flatpak, "
+"também é possível usar a interface de linha de comando `flatpak`. Consulte a "
+"http://docs.flatpak.org/en/latest/using-flatpak.html[documentação do Flatpak]"
+" para saber como fazer isso."
 
 #. type: Title ==
 #: ./pages/getting-started.adoc:88
 #, no-wrap
 msgid "Package layering"
-msgstr ""
+msgstr "Camada de pacote"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:92
@@ -248,26 +309,29 @@ msgid ""
 "name implies, it works by extending the packages from which Silverblue is "
 "composed."
 msgstr ""
+"Camada de pacote funciona modificando a instalação do Silverblue. Como o "
+"nome indica, ele funciona estendendo os pacotes dos quais o Silverblue é "
+"composto."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:94
 msgid "Good examples of packages to be layered would be:"
-msgstr ""
+msgstr "Bons exemplos de pacotes a serem dispostos em camadas seriam:"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:96
 msgid "`fish`: An alternative Unix shell"
-msgstr ""
+msgstr "`fish`: Um shell Unix alternativo"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:97
 msgid "`sway`: A Wayland tiling compositor"
-msgstr ""
+msgstr "`sway`: Um compositor Wayland lado a lado"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:98
 msgid "`libvirt`: The libvirt daemon"
-msgstr ""
+msgstr "`libvirt`: O daemon libvirt"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:101
@@ -275,6 +339,8 @@ msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
 "Silverblue using this method."
 msgstr ""
+"A maioria dos pacotes RPM (mas não todos) fornecidos pelo Fedora podem ser "
+"instalados no Silverblue usando este método."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:107
@@ -286,6 +352,13 @@ msgid ""
 "be lifted, but it's generally expected that you use package layering "
 "sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
 msgstr ""
+"Atualmente, o uso da camada de pacote cria uma nova \"implantação\" ou raiz "
+"do sistema de arquivos inicializável. Isso não afeta sua raiz atual. Isso "
+"preserva a reversão e o modelo transacional, mas significa que o sistema "
+"deve ser reinicializado após um pacote ter sido colocado em camadas. "
+"Eventualmente, essa limitação pode ser eliminada, mas geralmente é esperado "
+"que você use camadas de pacotes com moderação e use `flatpak` e `dnf install`"
+" dentro de uma `toolbox` etc."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:111
@@ -294,23 +367,27 @@ msgid ""
 "Software application does rely on it for installing a small number of apps "
 "that are currently difficult to install as Flatpaks."
 msgstr ""
+"A disposição em camadas de pacote geralmente é feita a partir da linha de "
+"comando. No entanto, o aplicativo Programas depende disso para instalar um "
+"pequeno número de aplicativos que atualmente são difíceis de instalar como "
+"Flatpak."
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:112
 #, no-wrap
 msgid "Installing packages"
-msgstr ""
+msgstr "Instalando pacotes"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:115
 msgid "Packages can be installed on Silverblue using:"
-msgstr ""
+msgstr "Pacotes podem ser instalados no Silverblue usando:"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:117
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
-msgstr ""
+msgstr " $ rpm-ostree install <nome do pacote>\n"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:122
@@ -320,6 +397,10 @@ msgid ""
 "names, which can be searched using DNF (this is not available on a "
 "Silverblue host, but can be used in a link:toolbox[toolbox])."
 msgstr ""
+"Isso irá baixar o pacote e todas as dependências necessárias e recompor sua "
+"imagem Silverblue com eles. `rpm-ostree` usa nomes de pacote Fedora padrão, "
+"que podem ser pesquisados usando DNF (isso não está disponível em um host "
+"Silverblue, mas pode ser usado em um link:toolbox[toolbox])."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:125
@@ -327,12 +408,15 @@ msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
 msgstr ""
+"Assim que um pacote for instalado dessa maneira, ele será mantido atualizado "
+"conforme novas versões forem lançadas e o sistema operacional de base será "
+"atualizado."
 
 #. type: Title ===
 #: ./pages/getting-started.adoc:126
 #, no-wrap
 msgid "Replacing packages"
-msgstr ""
+msgstr "Substituindo pacotes"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:130
@@ -342,12 +426,17 @@ msgid ""
 "command can be used to replace a package with a different version.  "
 "Currently you must download the RPM packages locally, and then run:"
 msgstr ""
+"Em alguns cenários, você pode querer testar uma nova versão do `podman` ou "
+"`kernel` ou outros pacotes que residem no host. O comando `rpm-ostree "
+"override` pode ser usado para substituir um pacote por uma versão diferente. "
+"Atualmente você deve baixar os pacotes RPM localmente e, em seguida, "
+"executar:"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:132
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
-msgstr ""
+msgstr " $ rpm-ostree override replace <caminho para o pacote>\n"
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:134
@@ -356,6 +445,9 @@ msgid ""
 "will still exist in the underlying base layer, but will not appear in the "
 "booted root."
 msgstr ""
+"Você também pode usar `override remove` para efetivamente \"ocultar\" os "
+"pacotes; eles ainda existirão na camada de base subjacente, mas não "
+"aparecerão na raiz inicializada."
 
 #. type: Plain text
 #: ./pages/getting-started.adoc:137
@@ -365,3 +457,6 @@ msgid ""
 "https://coreos.github.io/rpm-ostree/administrator-handbook/[rpm-ostree "
 "documentation]."
 msgstr ""
+"Remover e substituir pacotes usando camadas de pacote geralmente não é "
+"recomendado. Para mais informações, consulte a https://coreos.github.io/"
+"rpm-ostree/administrator-handbook/[documentação do rpm-ostree]."
