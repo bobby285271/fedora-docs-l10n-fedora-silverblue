@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-22 21:48+0000\n"
+"POT-Creation-Date: 2021-03-01 21:53+0000\n"
 "PO-Revision-Date: 2021-02-12 10:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -385,8 +385,9 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:140
-#, no-wrap
-msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
+#, fuzzy, no-wrap
+#| msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
+msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] exited with code -6`\n"
 msgstr " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
 
 #. type: Plain text
