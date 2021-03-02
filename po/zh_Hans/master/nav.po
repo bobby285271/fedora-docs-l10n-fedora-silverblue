@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-03-02 21:54+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -18,46 +18,46 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #. type: Plain text
-#: ./nav.adoc:2
-msgid "xref:contributing.adoc[Contributing]"
-msgstr "xref:contributing.adoc[参与进来]"
-
-#. type: Plain text
-#: ./nav.adoc:3
+#: nav.adoc:2
 msgid "xref:installation.adoc[Installation]"
 msgstr "xref:installation.adoc[安装]"
 
 #. type: Plain text
-#: ./nav.adoc:4
+#: nav.adoc:3
 msgid "xref:getting-started.adoc[Getting Started]"
 msgstr "xref:getting-started.adoc[开始使用]"
 
 #. type: Plain text
-#: ./nav.adoc:5
+#: nav.adoc:4
 msgid "xref:updates-upgrades-rollbacks.adoc[Updates, Upgrades & Rollbacks]"
 msgstr "xref:updates-upgrades-rollbacks.adoc[更新、升级与回滚]"
 
 #. type: Plain text
-#: ./nav.adoc:6
+#: nav.adoc:5
 msgid "xref:toolbox.adoc[Toolbox]"
 msgstr "xref:toolbox.adoc[Toolbox]"
 
 #. type: Plain text
-#: ./nav.adoc:7
+#: nav.adoc:6
 msgid "xref:technical-information.adoc[Technical Information]"
 msgstr "xref:technical-information.adoc[技术信息]"
 
 #. type: Plain text
-#: ./nav.adoc:8
+#: nav.adoc:7
 msgid "xref:reading-and-resources.adoc[Reading and Resources]"
 msgstr "xref:reading-and-resources.adoc[实用文档和资源]"
 
 #. type: Plain text
-#: ./nav.adoc:9
+#: nav.adoc:8
+msgid "xref:contributing.adoc[Contributing]"
+msgstr "xref:contributing.adoc[参与进来]"
+
+#. type: Plain text
+#: nav.adoc:9
 msgid "xref:troubleshooting.adoc[Troubleshooting]"
 msgstr "xref:troubleshooting.adoc[疑难解答]"
 
 #. type: Plain text
-#: ./nav.adoc:9
+#: nav.adoc:9
 msgid "xref:faq.adoc[FAQ]"
 msgstr "xref:faq.adoc[常见问题]"

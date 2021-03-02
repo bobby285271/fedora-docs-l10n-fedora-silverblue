@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-03-02 21:54+0000\n"
 "PO-Revision-Date: 2021-02-27 23:52+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -18,36 +18,41 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
-#: ./pages/toolbox.adoc:2
+#: pages/toolbox.adoc:2
 #, no-wrap
 msgid "Toolbox"
 msgstr "Toolbox"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:7
+#: pages/toolbox.adoc:7
 msgid ""
-"As an immutable host, Silverblue is an excellent platform for "
-"container-based development and, for working with containers, "
-"https://buildah.io/[buildah] and https://podman.io/[podman] are recommended."
+"As an immutable host, Silverblue is an excellent platform for container-"
+"based development and, for working with containers, https://buildah.io/"
+"[buildah] and https://podman.io/[podman] are recommended."
 msgstr ""
 "Como um host imutável, o Silverblue é uma excelente plataforma para "
 "desenvolvimento baseado em contêiner e, para trabalhar com contêineres, "
 "https://buildah.io/[buildah] e https://podman.io/[podman] são recomendados."
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:11
+#: pages/toolbox.adoc:11
 msgid ""
-"Silverblue also comes with the "
-"https://github.com/containers/toolbox[toolbox] utility, which uses "
-"containers to provide an environment where development tools and libraries "
-"can be installed and used."
+"Silverblue also comes with the https://github.com/containers/"
+"toolbox[toolbox] utility, which uses containers to provide an environment "
+"where development tools and libraries can be installed and used."
 msgstr ""
 "Silverblue também vem com o utilitário https://github.com/containers/"
 "toolbox[toolbox], que usa contêineres para fornecer um ambiente onde "
 "ferramentas de desenvolvimento e bibliotecas podem ser instaladas e usadas."
 
+#. type: Title ==
+#: pages/toolbox.adoc:13
+#, no-wrap
+msgid "Why use toolbox?"
+msgstr "Por que usar o toolbox?"
+
 #. type: Plain text
-#: ./pages/toolbox.adoc:17
+#: pages/toolbox.adoc:20
 msgid ""
 "Toolbox makes it easy to use a containerized environment for everyday "
 "software development and debugging. On immutable operating systems, like "
@@ -63,23 +68,15 @@ msgstr ""
 "podem ser instaladas e usadas. No entanto, o toolbox também pode ser usado "
 "em sistemas baseados em pacotes."
 
-#. type: Title ==
-#: ./pages/toolbox.adoc:19
-#, no-wrap
-msgid "Why use toolbox?"
-msgstr "Por que usar o toolbox?"
-
 #. type: Plain text
-#: ./pages/toolbox.adoc:23
+#: pages/toolbox.adoc:23
 msgid ""
-"Using toolbox containers to install development tools offers a number of "
-"advantages:"
+"Using Toolbox for running your workflows in a containerized manner brings "
+"you several advantages:"
 msgstr ""
-"Usar contêineres do toolbox para instalar ferramentas de desenvolvimento "
-"oferece uma série de vantagens:"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:26
+#: pages/toolbox.adoc:26
 msgid ""
 "It keeps the host OS clean and stable, and helps to avoid the clutter that "
 "can happen after installing lots of development tools and packages."
@@ -89,16 +86,14 @@ msgstr ""
 "desenvolvimento e pacotes."
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:28
+#: pages/toolbox.adoc:28
 msgid ""
-"Containers are a safe space to experiment: if things go wrong, it's easy to "
-"throw a toolbox away and start again."
+"You get access to different versions of supported distributions independent "
+"of the version you are running."
 msgstr ""
-"Os contêineres são um espaço seguro para experimentar: se algo der errado, é "
-"fácil jogar uma toolbox fora e começar de novo."
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:30
+#: pages/toolbox.adoc:30
 msgid ""
 "Containers are a good way to isolate and organise the dependencies needed "
 "for different projects."
@@ -106,14 +101,23 @@ msgstr ""
 "Os contêineres são uma boa maneira de isolar e organizar as dependências "
 "necessárias para diferentes projetos."
 
+#. type: Plain text
+#: pages/toolbox.adoc:32
+msgid ""
+"Containers are a safe space to experiment: if things go wrong, it's easy to "
+"throw a toolbox away and start again."
+msgstr ""
+"Os contêineres são um espaço seguro para experimentar: se algo der errado, é "
+"fácil jogar uma toolbox fora e começar de novo."
+
 #. type: Title ==
-#: ./pages/toolbox.adoc:32
+#: pages/toolbox.adoc:34
 #, no-wrap
 msgid "How it works"
 msgstr "Como funciona"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:38
+#: pages/toolbox.adoc:40
 msgid ""
 "Toolbox takes the work out of using containers, by providing a small number "
 "of simple commands to create, enter, list and remove containers. It also "
@@ -127,7 +131,17 @@ msgstr ""
 "desenvolvimento diário."
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:41
+#: pages/toolbox.adoc:46
+msgid ""
+"Containers are created from images and those are usually a very stripped "
+"down version of distributions. In such images there are almost no tools and "
+"documentation available. The team behind Toolbox maintains a Fedora image "
+"where such tools and documentation are available, providing with a good out "
+"of the box experience."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:49
 msgid ""
 "Each toolbox container is an environment that you can enter from the command "
 "line. Inside each one, you will find:"
@@ -136,33 +150,44 @@ msgstr ""
 "linha de comando. Dentro de cada um, você encontrará:"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:43
+#: pages/toolbox.adoc:51
 msgid "Your existing username and permissions"
 msgstr "Seu nome de usuário e permissões existentes"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:44
-msgid "Access to your home directory"
+#: pages/toolbox.adoc:52
+#, fuzzy
+#| msgid "Access to your home directory"
+msgid "Access to your home directory and several other locations"
 msgstr "Acesso para seu diretório pessoal (home)"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:45
-msgid "Common command lines tools, including the DNF package manager"
+#: pages/toolbox.adoc:53
+msgid "Access to both system and session D-Bus, system journal and Kerberos"
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:54
+#, fuzzy
+#| msgid "Common command lines tools, including the DNF package manager"
+msgid ""
+"Common command lines tools, including a package manager (e.g., DNF on Fedora)"
 msgstr ""
 "Ferramentas de linha de comando comuns, incluindo o gerenciador de pacotes "
 "DNF"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:48
+#: pages/toolbox.adoc:60
 msgid ""
 "In other words, toolbox containers look, feel and behave like a standard "
-"Linux command line environment."
+"Linux command line environment. By connecting all this information, toolbox "
+"containers lose a certain amount of security gained by using the containers "
+"technology. Therefore, you should not treat toolbox containers as a sandbox "
+"where you can execute any script you would never run on any other system."
 msgstr ""
-"Em outras palavras, os contêineres do toolbox parecem e se comportam como um "
-"ambiente de linha de comando padrão do Linux."
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:54
+#: pages/toolbox.adoc:66
 msgid ""
 "In most cases, when a command is run inside a container, the program from "
 "inside the container is used. However, there are a few special cases where "
@@ -177,19 +202,19 @@ msgstr ""
 "toolbox de dentro dos contêineres de toolbox."
 
 #. type: Title ==
-#: ./pages/toolbox.adoc:56
+#: pages/toolbox.adoc:68
 #, no-wrap
 msgid "Installation"
 msgstr "Instalação"
 
 #. type: Title ===
-#: ./pages/toolbox.adoc:58
+#: pages/toolbox.adoc:70
 #, no-wrap
 msgid "Fedora Silverblue"
 msgstr "Fedora Silverblue"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:62
+#: pages/toolbox.adoc:74
 msgid ""
 "Toolbox is preinstalled on Fedora Silverblue 30 or newer. On older versions, "
 "it can be installed with the following command:"
@@ -198,24 +223,24 @@ msgstr ""
 "versões anteriores, ele pode ser instalado com o seguinte comando:"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:64
+#: pages/toolbox.adoc:76
 #, no-wrap
 msgid " $ rpm-ostree install toolbox\n"
 msgstr " $ rpm-ostree install toolbox\n"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:66
+#: pages/toolbox.adoc:78
 msgid "This will install toolbox as a layered RPM."
 msgstr "Isso vai instalar toolbox como um RPM em camada."
 
 #. type: Title ===
-#: ./pages/toolbox.adoc:67
+#: pages/toolbox.adoc:79
 #, no-wrap
 msgid "Fedora Workstation"
 msgstr "Fedora Workstation"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:71
+#: pages/toolbox.adoc:83
 msgid ""
 "Toolbox can be installed on Fedora Workstation (or any package-based version "
 "of Fedora) with the following command:"
@@ -224,32 +249,33 @@ msgstr ""
 "baseada em pacote do Fedora) com o seguinte comando:"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:73
+#: pages/toolbox.adoc:85
 #, no-wrap
 msgid " $ sudo dnf install toolbox\n"
 msgstr " $ sudo dnf install toolbox\n"
 
 #. type: Title ==
-#: ./pages/toolbox.adoc:75
+#: pages/toolbox.adoc:87
 #, no-wrap
 msgid "Your first toolbox"
 msgstr "Sua primeira toolbox"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:78
-msgid "Once toolbox is installed, two simple commands are required to get started:"
+#: pages/toolbox.adoc:90
+msgid ""
+"Once toolbox is installed, two simple commands are required to get started:"
 msgstr ""
 "Depois que o toolbox é instalado, dois comandos simples são necessários para "
 "começar:"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:80
+#: pages/toolbox.adoc:92
 #, no-wrap
 msgid " $ toolbox create\n"
 msgstr " $ toolbox create\n"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:83
+#: pages/toolbox.adoc:95
 msgid ""
 "This will download an OCI image and create a toolbox container from it. Once "
 "this is complete, run:"
@@ -258,22 +284,26 @@ msgstr ""
 "partir dela. Assim que terminar, execute:"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:85
+#: pages/toolbox.adoc:97
 #, no-wrap
 msgid " $ toolbox enter\n"
 msgstr " $ toolbox enter\n"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:88
+#: pages/toolbox.adoc:100
+#, fuzzy
+#| msgid ""
+#| "Once inside the toolbox, you can access common command line tools, and "
+#| "install new ones using DNF."
 msgid ""
 "Once inside the toolbox, you can access common command line tools, and "
-"install new ones using DNF."
+"install new ones using a package manager (e.g., DNF on Fedora)."
 msgstr ""
 "Uma vez dentro da caixa de ferramentas, você pode acessar ferramentas de "
 "linha de comando comuns e instalar novas usando DNF."
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:92
+#: pages/toolbox.adoc:104
 msgid ""
 "When the prompt is inside a toolbox, it is prepended with a diamond: this "
 "indicates that the prompt is inside a toolbox container. The diamond symbol "
@@ -285,25 +315,32 @@ msgstr ""
 "personalizado."
 
 #. type: Title ==
-#: ./pages/toolbox.adoc:94
+#: pages/toolbox.adoc:106
 #, no-wrap
 msgid "Commands and usage"
 msgstr "Comandos e uso"
 
-#. type: Labeled list
-#: ./pages/toolbox.adoc:96
-#, no-wrap
-msgid "`toolbox create [--container <name>]`"
+#. type: Title ===
+#: pages/toolbox.adoc:109
+#, fuzzy, no-wrap
+#| msgid "`toolbox create [--container <name>]`"
+msgid "toolbox create [options] <name>"
 msgstr "`toolbox create [--container <nome>]`"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:103
+#: pages/toolbox.adoc:115
+#, fuzzy
+#| msgid ""
+#| "Creates a toolbox container. This will download an OCI image if one isn't "
+#| "available (this is required to create the container). By default a Fedora "
+#| "image matching the version of the host is used. Used without options, "
+#| "`toolbox create` will automatically name the container it creates. To "
+#| "create additional toolboxes, use the ``--container <name>`` option."
 msgid ""
 "Creates a toolbox container. This will download an OCI image if one isn't "
-"available (this is required to create the container). By default a Fedora "
-"image matching the version of the host is used. Used without options, "
-"`toolbox create` will automatically name the container it creates. To create "
-"additional toolboxes, use the ``--container <name>`` option."
+"available (this is required to create the container). By default an image "
+"matching the version of the host is used. If the host system does not have a "
+"matching image, a Fedora image is used instead."
 msgstr ""
 "Cria um contêiner de toolbox. Isso fará o download de uma imagem OCI se não "
 "houver uma disponível (isso é necessário para criar o contêiner). Por "
@@ -311,148 +348,284 @@ msgstr ""
 "sem opções, `toolbox create` nomeará automaticamente o contêiner criado. "
 "Para criar toolboxes adicionais, use a opção ``--container <nome>``."
 
-#. type: Labeled list
-#: ./pages/toolbox.adoc:104
-#, no-wrap
-msgid "`toolbox enter [--container <name>]`"
+#. type: Plain text
+#: pages/toolbox.adoc:118
+msgid ""
+"Used without options, `toolbox create` will automatically name the container "
+"it creates. To create additional toolboxes, use the `<name>` argument."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:121
+msgid ""
+"To use a specific version of the host system (e.g., Fedora 32 on Fedora 34), "
+"use the `--release <release> | -r <release>` option."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:124
+msgid ""
+"To use a different distribution to create a toolbox container (e.g., RHEL on "
+"Fedora, use the `--distro <distro> | -d <distro>` option."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:126
+msgid ""
+"To use a different image, use the ``--image <name> | -i <name>`` option."
+msgstr ""
+
+#. type: Title ===
+#: pages/toolbox.adoc:128
+#, fuzzy, no-wrap
+#| msgid "`toolbox enter [--container <name>]`"
+msgid "toolbox enter [options] <name>"
 msgstr "`toolbox enter [--container <nome>]`"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:109
+#: pages/toolbox.adoc:132
+#, fuzzy
+#| msgid ""
+#| "Enters a toolbox for interactive use. Used without options, `toolbox "
+#| "enter` opens the default toolbox. If there is more than one toolbox, use "
+#| "the `--container name` option to specify the toolbox to enter."
 msgid ""
 "Enters a toolbox for interactive use. Used without options, `toolbox enter` "
-"opens the default toolbox. If there is more than one toolbox, use the "
-"`--container name` option to specify the toolbox to enter."
+"opens the default toolbox."
 msgstr ""
 "Entra em uma toolbox para uso interativo. Usado sem opções, `toolbox enter` "
 "abre a toolbox padrão. Se houver mais de uma toolbox, use a opção `--"
 "container nome` para especificar a toolbox a ser inserida."
 
-#. type: Labeled list
-#: ./pages/toolbox.adoc:110
-#, no-wrap
-msgid "`toolbox run [--container <name>] <cmd> <arg ...>`"
+#. type: Plain text
+#: pages/toolbox.adoc:134
+msgid "To enter a toolbox with specific name, use the `name` argument."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:137
+msgid ""
+"To enter a toolbox for a different distribution (e.g., Fedora on RHEL), use "
+"the `--distro <distro> |-d <distro>` option."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:140
+msgid ""
+"To enter a toolbox with specific version (e.g., RHEL 8.1 on RHEL 8.3), use "
+"the `--release <release> | -r <release>` option."
+msgstr ""
+
+#. type: Title ===
+#: pages/toolbox.adoc:142
+#, fuzzy, no-wrap
+#| msgid "`toolbox run [--container <name>] <cmd> <arg ...>`"
+msgid "toolbox run [options] <cmd> <arg ...>"
 msgstr "`toolbox run [--container <nome>] <cmd> <arg ...>`"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:115
+#: pages/toolbox.adoc:146
+#, fuzzy
+#| msgid ""
+#| "Runs a command in a toolbox without entering it. Used without options, "
+#| "`toolbox run` runs the command in the default toolbox. If there is more "
+#| "than one toolbox, use the `--container name` option to specify the "
+#| "toolbox to be used."
 msgid ""
 "Runs a command in a toolbox without entering it. Used without options, "
-"`toolbox run` runs the command in the default toolbox. If there is more than "
-"one toolbox, use the `--container name` option to specify the toolbox to be "
-"used."
+"`toolbox run` runs the command in the default toolbox."
 msgstr ""
-"Executa um comando em uma toolbox sem entrar nela. Usado sem opções, `"
-"toolbox run` executa o comando na toolbox padrão. Se houver mais de uma "
+"Executa um comando em uma toolbox sem entrar nela. Usado sem opções, "
+"`toolbox run` executa o comando na toolbox padrão. Se houver mais de uma "
 "toolbox, use a opção `--container nome` para especificar a toolbox a ser "
 "usada."
 
-#. type: Labeled list
-#: ./pages/toolbox.adoc:116
-#, no-wrap
-msgid "`toolbox list`"
+#. type: Plain text
+#: pages/toolbox.adoc:149
+msgid ""
+"To run a command in a toolbox with specific name, use the `--container "
+"<name> | -c <name>` option."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:152
+msgid ""
+"To run a command in a toolbox for a different distribution (e.g., Fedora on "
+"RHEL), use the `--distro <distro> |-d <distro>` option."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:155
+msgid ""
+"To run a command in a toolbox with specific version (e.g., RHEL 8.1 on RHEL "
+"8.3), use the `--release <release> | -r <release>` option."
+msgstr ""
+
+#. type: Title ===
+#: pages/toolbox.adoc:157
+#, fuzzy, no-wrap
+#| msgid "`toolbox list`"
+msgid "toolbox list [options]"
 msgstr "`toolbox list`"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:119
+#: pages/toolbox.adoc:160
 msgid "Lists local toolbox images and containers."
 msgstr "Lista contêineres e imagens de toolbox locais."
 
-#. type: Labeled list
-#: ./pages/toolbox.adoc:120
-#, no-wrap
-msgid "`toolbox rm [--force] <name>`"
+#. type: Plain text
+#: pages/toolbox.adoc:162
+msgid "To only show containers, use the `[--containers | -c]` option."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:164
+msgid "To only show images, use the `--images | -i]` option."
+msgstr ""
+
+#. type: Title ===
+#: pages/toolbox.adoc:166
+#, fuzzy, no-wrap
+#| msgid "`toolbox rm [--force] <name>`"
+msgid "toolbox rm [options] <name ...>"
 msgstr "`toolbox rm [--force] <nome>`"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:124
+#: pages/toolbox.adoc:169
+#, fuzzy
+#| msgid "Removes one or more toolbox images."
+msgid "Removes one or more toolbox containers."
+msgstr "Remove uma ou mais imagens de toolbox."
+
+#. type: Plain text
+#: pages/toolbox.adoc:172
+#, fuzzy
+#| msgid ""
+#| "Removes one or more toolbox containers. The `--force` option removes the "
+#| "container even if it is running."
 msgid ""
-"Removes one or more toolbox containers. The `--force` option removes the "
-"container even if it is running."
+"The `--force | -f` option removes the marked containers even if they are "
+"running."
 msgstr ""
 "Remove um ou mais contêineres de toolbox. A opção `--force` remove o "
 "contêiner mesmo se estiver em execução."
 
-#. type: Labeled list
-#: ./pages/toolbox.adoc:125
-#, no-wrap
-msgid "`toolbox rmi [--force] <name>`"
+#. type: Plain text
+#: pages/toolbox.adoc:174
+msgid "The `--all | -a` option removes all toolbox containers."
+msgstr ""
+
+#. type: Title ===
+#: pages/toolbox.adoc:176
+#, fuzzy, no-wrap
+#| msgid "`toolbox rmi [--force] <name>`"
+msgid "toolbox rmi [options] <name ...>"
 msgstr "`toolbox rmi [--force] <nome>`"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:128
+#: pages/toolbox.adoc:179
 msgid "Removes one or more toolbox images."
 msgstr "Remove uma ou mais imagens de toolbox."
 
-#. type: Labeled list
-#: ./pages/toolbox.adoc:129
-#, no-wrap
-msgid "`toolbox --help`"
+#. type: Plain text
+#: pages/toolbox.adoc:182
+msgid ""
+"The `--force | -f` option removes the marked images and all containers that "
+"have been created using the marked images."
+msgstr ""
+
+#. type: Plain text
+#: pages/toolbox.adoc:184
+msgid "The `-all | -a` option removes all toolbox images."
+msgstr ""
+
+#. type: Title ===
+#: pages/toolbox.adoc:186
+#, fuzzy, no-wrap
+#| msgid "`toolbox --help`"
+msgid "toolbox --help"
 msgstr "`toolbox --help`"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:132
-msgid "Lists available commands."
-msgstr "Lista comandos disponíveis."
+#: pages/toolbox.adoc:189
+msgid "Shows Toolbox's manual page."
+msgstr ""
 
 #. type: Title ===
-#: ./pages/toolbox.adoc:133
+#: pages/toolbox.adoc:191
 #, no-wrap
 msgid "Exiting a toolbox"
 msgstr "Saindo de uma toolbox"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:137
+#: pages/toolbox.adoc:195
 msgid ""
 "To return to the host environment, either run `exit` or quit the current "
 "shell (typically Ctrl+D)."
 msgstr ""
-"Para retornar ao ambiente host, execute `exit` ou saia do shell atual ("
-"normalmente Ctrl+D)."
+"Para retornar ao ambiente host, execute `exit` ou saia do shell atual "
+"(normalmente Ctrl+D)."
 
 #. type: Title ==
-#: ./pages/toolbox.adoc:140
+#: pages/toolbox.adoc:197
 #, no-wrap
 msgid "Under the hood"
 msgstr "Debaixo do capô"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:143
+#: pages/toolbox.adoc:200
 msgid "Toolbox uses the following technologies:"
 msgstr "O toolbox usa as seguintes tecnologias:"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:145
+#: pages/toolbox.adoc:202
 msgid "https://www.opencontainers.org/[OCI container images]"
 msgstr "https://www.opencontainers.org/[Imagens de contêiner OCI]"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:146
+#: pages/toolbox.adoc:203
 msgid "https://podman.io/[Podman]"
 msgstr "https://podman.io/[Podman]"
 
 #. type: Title ==
-#: ./pages/toolbox.adoc:148
+#: pages/toolbox.adoc:205
 #, no-wrap
 msgid "Contact and issues"
 msgstr "Contato e problemas"
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:152
+#: pages/toolbox.adoc:209
 msgid ""
-"To report issues, make suggestions, or contribute fixes, see "
-"https://github.com/containers/toolbox[toolbox's GitHub project]."
+"To report issues, make suggestions, or contribute fixes, see https://github."
+"com/containers/toolbox[toolbox's GitHub project]."
 msgstr ""
 "Para relatar problemas, fazer sugestões ou contribuir com correções, "
 "consulte https://github.com/containers/toolbox[projeto do toolbox no GitHub]."
 
 #. type: Plain text
-#: ./pages/toolbox.adoc:156
+#: pages/toolbox.adoc:213
 msgid ""
-"To get in touch with toolbox users and developers, use "
-"https://discussion.fedoraproject.org/[Fedora's Discourse instance], or join "
-"the #silverblue IRC channel on Freenode."
+"To get in touch with toolbox users and developers, use https://discussion."
+"fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "
+"channel on Freenode."
 msgstr ""
 "Para entrar em contato com usuários e desenvolvedores do toolbox, use a "
 "https://discussion.fedoraproject.org/[instância do Discourse do Fedora], ou "
 "entre no canal IRC #silverblue no Freenode."
+
+#~ msgid ""
+#~ "Using toolbox containers to install development tools offers a number of "
+#~ "advantages:"
+#~ msgstr ""
+#~ "Usar contêineres do toolbox para instalar ferramentas de desenvolvimento "
+#~ "oferece uma série de vantagens:"
+
+#~ msgid ""
+#~ "In other words, toolbox containers look, feel and behave like a standard "
+#~ "Linux command line environment."
+#~ msgstr ""
+#~ "Em outras palavras, os contêineres do toolbox parecem e se comportam como "
+#~ "um ambiente de linha de comando padrão do Linux."
+
+#~ msgid "Lists available commands."
+#~ msgstr "Lista comandos disponíveis."
