@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-03-02 21:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,37 +18,37 @@ msgstr ""
 
 #. type: Plain text
 #: ./nav.adoc:2
-msgid "xref:contributing.adoc[Contributing]"
-msgstr ""
-
-#. type: Plain text
-#: ./nav.adoc:3
 msgid "xref:installation.adoc[Installation]"
 msgstr ""
 
 #. type: Plain text
-#: ./nav.adoc:4
+#: ./nav.adoc:3
 msgid "xref:getting-started.adoc[Getting Started]"
 msgstr ""
 
 #. type: Plain text
-#: ./nav.adoc:5
+#: ./nav.adoc:4
 msgid "xref:updates-upgrades-rollbacks.adoc[Updates, Upgrades & Rollbacks]"
 msgstr ""
 
 #. type: Plain text
-#: ./nav.adoc:6
+#: ./nav.adoc:5
 msgid "xref:toolbox.adoc[Toolbox]"
 msgstr ""
 
 #. type: Plain text
-#: ./nav.adoc:7
+#: ./nav.adoc:6
 msgid "xref:technical-information.adoc[Technical Information]"
 msgstr ""
 
 #. type: Plain text
-#: ./nav.adoc:8
+#: ./nav.adoc:7
 msgid "xref:reading-and-resources.adoc[Reading and Resources]"
+msgstr ""
+
+#. type: Plain text
+#: ./nav.adoc:8
+msgid "xref:contributing.adoc[Contributing]"
 msgstr ""
 
 #. type: Plain text
