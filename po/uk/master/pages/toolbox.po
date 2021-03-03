@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-02 21:54+0000\n"
-"PO-Revision-Date: 2021-03-03 07:16+0000\n"
+"PO-Revision-Date: 2021-03-03 22:03+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/uk/>\n"
@@ -146,6 +146,11 @@ msgid ""
 "where such tools and documentation are available, providing with a good out "
 "of the box experience."
 msgstr ""
+"Контейнери створюються з образів. Вони є дуже спрощеними версіями "
+"дистрибутивів. У таких образах майже немає інструментів та документації. "
+"Команда, яка розробляє Toolbox, супроводжує образ Fedora, де такі "
+"інструменти і документація є доступними, надаючи чудові можливості одразу "
+"після запуску."
 
 #. type: Plain text
 #: pages/toolbox.adoc:49
@@ -163,24 +168,21 @@ msgstr "Ваше поточне ім'я користувача і права д�
 
 #. type: Plain text
 #: pages/toolbox.adoc:52
-#, fuzzy
-#| msgid "Access to your home directory"
 msgid "Access to your home directory and several other locations"
-msgstr "Доступ до вашого домашнього каталогу"
+msgstr "Доступ до вашого домашнього каталогу та декількох інших місць"
 
 #. type: Plain text
 #: pages/toolbox.adoc:53
 msgid "Access to both system and session D-Bus, system journal and Kerberos"
-msgstr ""
+msgstr "Доступ до D-Bus системи і сеансу, журналу системи і Kerberos"
 
 #. type: Plain text
 #: pages/toolbox.adoc:54
-#, fuzzy
-#| msgid "Common command lines tools, including the DNF package manager"
 msgid ""
 "Common command lines tools, including a package manager (e.g., DNF on Fedora)"
 msgstr ""
-"Типові засоби командного рядка, зокрема програму для керування пакунками DNF"
+"Типові засоби командного рядка, зокрема програму для керування пакунками ("
+"наприклад DNF у Fedora)"
 
 #. type: Plain text
 #: pages/toolbox.adoc:60
@@ -191,6 +193,12 @@ msgid ""
 "technology. Therefore, you should not treat toolbox containers as a sandbox "
 "where you can execute any script you would never run on any other system."
 msgstr ""
+"Іншими словами, контейнери toolbox виглядають, працюють і поводяться подібно "
+"до стандартного середовища командного рядка Linux. Поєднуючи усі ці "
+"відомості, контейнери toolbox втрачають певну частину захисту, який "
+"набувається використанням технології контейнерів. Тому вам не слід вважати "
+"контейнери toolbox пісочницями, у яких ви можете виконувати будь-який "
+"скрипт, який би ви ніколи не запускали у будь-якій іншій системі."
 
 #. type: Plain text
 #: pages/toolbox.adoc:66
@@ -297,17 +305,13 @@ msgstr " $ toolbox enter\n"
 
 #. type: Plain text
 #: pages/toolbox.adoc:100
-#, fuzzy
-#| msgid ""
-#| "Once inside the toolbox, you can access common command line tools, and "
-#| "install new ones using DNF."
 msgid ""
 "Once inside the toolbox, you can access common command line tools, and "
 "install new ones using a package manager (e.g., DNF on Fedora)."
 msgstr ""
 "Потрапивши до нутрощів toolbox, ви отримуєте доступ до типових інструментів "
 "командного рядка і доступ до встановлення нових інструментів за допомогою "
-"DNF."
+"програми для керування пакунками (наприклад DNF у Fedora)."
 
 #. type: Plain text
 #: pages/toolbox.adoc:104
@@ -329,20 +333,12 @@ msgstr "Команди і користування"
 
 #. type: Title ===
 #: pages/toolbox.adoc:109
-#, fuzzy, no-wrap
-#| msgid "`toolbox create [--container <name>]`"
+#, no-wrap
 msgid "toolbox create [options] <name>"
-msgstr "`toolbox create [--container <назва>]`"
+msgstr "toolbox create [параметри] <назва>"
 
 #. type: Plain text
 #: pages/toolbox.adoc:115
-#, fuzzy
-#| msgid ""
-#| "Creates a toolbox container. This will download an OCI image if one isn't "
-#| "available (this is required to create the container). By default a Fedora "
-#| "image matching the version of the host is used. Used without options, "
-#| "`toolbox create` will automatically name the container it creates. To "
-#| "create additional toolboxes, use the ``--container <name>`` option."
 msgid ""
 "Creates a toolbox container. This will download an OCI image if one isn't "
 "available (this is required to create the container). By default an image "
@@ -350,11 +346,9 @@ msgid ""
 "matching image, a Fedora image is used instead."
 msgstr ""
 "Створює контейнер toolbox. У результаті буде отримано образ OCI, якщо він є "
-"недоступним (ця дія потрібна для створення контейнера). Типово, образ Fedora "
-"за версією збігається із версією основної системи. Якщо команду віддано без "
-"параметрів, `toolbox create` автоматично визначить назву для створеного "
-"контейнера. Щоб створити додаткові контейнери toolbox, скористайтеся "
-"параметром ``--container <назва>``."
+"недоступним (ця дія потрібна для створення контейнера). Типово, образ за "
+"версією збігається із версією основної системи. Якщо основна система не має "
+"відповідного образу, замість нього буде використано образ Fedora."
 
 #. type: Plain text
 #: pages/toolbox.adoc:118
@@ -362,6 +356,9 @@ msgid ""
 "Used without options, `toolbox create` will automatically name the container "
 "it creates. To create additional toolboxes, use the `<name>` argument."
 msgstr ""
+"Якщо віддати команду без параметрів, `toolbox create` автоматично визначить "
+"назву створеного контейнера. Для створення додаткових toolbox скористайтеся "
+"аргументом `<назва>`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:121
@@ -369,6 +366,8 @@ msgid ""
 "To use a specific version of the host system (e.g., Fedora 32 on Fedora 34), "
 "use the `--release <release> | -r <release>` option."
 msgstr ""
+"Щоб використатися вказану версію основної системи (наприклад, Fedora 32 у "
+"Fedora 34), скористайтеся параметром `--release <випуск> | -r <випуск>`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:124
@@ -376,40 +375,37 @@ msgid ""
 "To use a different distribution to create a toolbox container (e.g., RHEL on "
 "Fedora, use the `--distro <distro> | -d <distro>` option."
 msgstr ""
+"Щоб скористатися іншим дистрибутивом для створення контейнера toolbox ("
+"наприклад, RHEL у Fedora), скористайтеся параметром `--distro <дистрибутив> |"
+" -d <дистрибутив>`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:126
 msgid ""
 "To use a different image, use the ``--image <name> | -i <name>`` option."
 msgstr ""
+"Щоб використати інший образ, скористайтеся параметром `--image <назва> | -i "
+"<назва>`."
 
 #. type: Title ===
 #: pages/toolbox.adoc:128
-#, fuzzy, no-wrap
-#| msgid "`toolbox enter [--container <name>]`"
+#, no-wrap
 msgid "toolbox enter [options] <name>"
-msgstr "`toolbox enter [--container <назва>]`"
+msgstr "toolbox enter [параметри] <назва>"
 
 #. type: Plain text
 #: pages/toolbox.adoc:132
-#, fuzzy
-#| msgid ""
-#| "Enters a toolbox for interactive use. Used without options, `toolbox "
-#| "enter` opens the default toolbox. If there is more than one toolbox, use "
-#| "the `--container name` option to specify the toolbox to enter."
 msgid ""
 "Enters a toolbox for interactive use. Used without options, `toolbox enter` "
 "opens the default toolbox."
 msgstr ""
 "Увійти до контейнера toolbox для інтерактивного користування. Якщо команду "
-"віддано без параметрів, `toolbox enter` відкриває типовий контейнер toolbox. "
-"Якщо контейнерів декілька, скористайтеся параметром `--container назва` для "
-"визначення контейнера toolbox, до якого слід увійти."
+"віддано без параметрів, `toolbox enter` відкриває типовий контейнер toolbox."
 
 #. type: Plain text
 #: pages/toolbox.adoc:134
 msgid "To enter a toolbox with specific name, use the `name` argument."
-msgstr ""
+msgstr "Щоб вказати toolbox із певною назвою, скористайтеся аргументом `назва`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:137
@@ -417,6 +413,8 @@ msgid ""
 "To enter a toolbox for a different distribution (e.g., Fedora on RHEL), use "
 "the `--distro <distro> |-d <distro>` option."
 msgstr ""
+"Щоб увійти до toolbox для іншого дистрибутива (наприклад, Fedora у RHEL), "
+"скористайтеся параметром `--distro <дистрибутив> |-d <дистрибутив>`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:140
@@ -424,30 +422,23 @@ msgid ""
 "To enter a toolbox with specific version (e.g., RHEL 8.1 on RHEL 8.3), use "
 "the `--release <release> | -r <release>` option."
 msgstr ""
+"Щоб увійти до toolbox із визначенням певної версії (наприклад, RHEL 8.1 у "
+"RHEL 8.3), скористайтеся параметром `--release <випуск> | -r <випуск>`."
 
 #. type: Title ===
 #: pages/toolbox.adoc:142
-#, fuzzy, no-wrap
-#| msgid "`toolbox run [--container <name>] <cmd> <arg ...>`"
+#, no-wrap
 msgid "toolbox run [options] <cmd> <arg ...>"
-msgstr "`toolbox run [--container <назва>] <команда> <аргумент ...>`"
+msgstr "toolbox run [параметри] <команда> <аргумент ...>"
 
 #. type: Plain text
 #: pages/toolbox.adoc:146
-#, fuzzy
-#| msgid ""
-#| "Runs a command in a toolbox without entering it. Used without options, "
-#| "`toolbox run` runs the command in the default toolbox. If there is more "
-#| "than one toolbox, use the `--container name` option to specify the "
-#| "toolbox to be used."
 msgid ""
 "Runs a command in a toolbox without entering it. Used without options, "
 "`toolbox run` runs the command in the default toolbox."
 msgstr ""
 "Виконує команду у toolbox, без входу до нього. Якщо команду віддано без "
-"параметрів, `toolbox run` запускає команду у типовому контейнері toolbox. "
-"Якщо контейнерів декілька, скористайтеся параметром `--container назва` для "
-"визначення контейнера toolbox, яким слід скористатися."
+"параметрів, `toolbox run` запускає команду у типовому контейнері toolbox."
 
 #. type: Plain text
 #: pages/toolbox.adoc:149
@@ -455,6 +446,8 @@ msgid ""
 "To run a command in a toolbox with specific name, use the `--container "
 "<name> | -c <name>` option."
 msgstr ""
+"Щоб запустити програму у toolbox із визначенням певної назви контейнера, "
+"скористайтеся параметром `--container <назва> | -c <назва>`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:152
@@ -462,6 +455,8 @@ msgid ""
 "To run a command in a toolbox for a different distribution (e.g., Fedora on "
 "RHEL), use the `--distro <distro> |-d <distro>` option."
 msgstr ""
+"Щоб запустити програму у toolbox для іншого дистрибутива (наприклад, Fedora "
+"у RHEL), скористайтеся параметром `--distro <дистрибутив> |-d <дистрибутив>`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:155
@@ -469,13 +464,15 @@ msgid ""
 "To run a command in a toolbox with specific version (e.g., RHEL 8.1 on RHEL "
 "8.3), use the `--release <release> | -r <release>` option."
 msgstr ""
+"Щоб запустити програму у toolbox із визначенням певної версії (наприклад, "
+"RHEL 8.1 у RHEL 8.3), скористайтеся параметром `--release <випуск> | -r "
+"<випуск>`."
 
 #. type: Title ===
 #: pages/toolbox.adoc:157
-#, fuzzy, no-wrap
-#| msgid "`toolbox list`"
+#, no-wrap
 msgid "toolbox list [options]"
-msgstr "`toolbox list`"
+msgstr "toolbox list [параметри]"
 
 #. type: Plain text
 #: pages/toolbox.adoc:160
@@ -486,50 +483,47 @@ msgstr "Виводить список образів і контейнерів t
 #: pages/toolbox.adoc:162
 msgid "To only show containers, use the `[--containers | -c]` option."
 msgstr ""
+"Щоб переглянути лише список контейнерів, скористайтеся параметром `--"
+"containers | -c`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:164
 msgid "To only show images, use the `--images | -i]` option."
 msgstr ""
+"Щоб лише переглянути список образів, скористайтеся параметром `--images | "
+"-i`."
 
 #. type: Title ===
 #: pages/toolbox.adoc:166
-#, fuzzy, no-wrap
-#| msgid "`toolbox rm [--force] <name>`"
+#, no-wrap
 msgid "toolbox rm [options] <name ...>"
-msgstr "`toolbox rm [--force] <назва>`"
+msgstr "toolbox rm [параметри] <назва ...>"
 
 #. type: Plain text
 #: pages/toolbox.adoc:169
-#, fuzzy
-#| msgid "Removes one or more toolbox images."
 msgid "Removes one or more toolbox containers."
-msgstr "Вилучає один або декілька образів toolbox."
+msgstr "Вилучає один або декілька контейнерів toolbox."
 
 #. type: Plain text
 #: pages/toolbox.adoc:172
-#, fuzzy
-#| msgid ""
-#| "Removes one or more toolbox containers. The `--force` option removes the "
-#| "container even if it is running."
 msgid ""
 "The `--force | -f` option removes the marked containers even if they are "
 "running."
 msgstr ""
-"Вилучає один або декілька контейнерів toolbox. Параметр `--force` вилучає "
-"контейнер, навіть якщо його запущено."
+"Параметр `--force | -f` надає змогу вилучити позначені контейнери, навіть "
+"якщо їх запущено."
 
 #. type: Plain text
 #: pages/toolbox.adoc:174
 msgid "The `--all | -a` option removes all toolbox containers."
 msgstr ""
+"За допомогою параметра `--all | -a` можна вилучити усі контейнери toolbox."
 
 #. type: Title ===
 #: pages/toolbox.adoc:176
-#, fuzzy, no-wrap
-#| msgid "`toolbox rmi [--force] <name>`"
+#, no-wrap
 msgid "toolbox rmi [options] <name ...>"
-msgstr "`toolbox rmi [--force] <назва>`"
+msgstr "toolbox rmi [параметри] <назва ...>"
 
 #. type: Plain text
 #: pages/toolbox.adoc:179
@@ -542,23 +536,24 @@ msgid ""
 "The `--force | -f` option removes the marked images and all containers that "
 "have been created using the marked images."
 msgstr ""
+"Параметр `--force | -f` надає змогу вилучити позначені образи і усі "
+"контейнери, які було створено з використанням позначених образів."
 
 #. type: Plain text
 #: pages/toolbox.adoc:184
 msgid "The `-all | -a` option removes all toolbox images."
-msgstr ""
+msgstr "За допомогою параметра `-all | -a` можна вилучити усі образи toolbox."
 
 #. type: Title ===
 #: pages/toolbox.adoc:186
-#, fuzzy, no-wrap
-#| msgid "`toolbox --help`"
+#, no-wrap
 msgid "toolbox --help"
-msgstr "`toolbox --help`"
+msgstr "toolbox --help"
 
 #. type: Plain text
 #: pages/toolbox.adoc:189
 msgid "Shows Toolbox's manual page."
-msgstr ""
+msgstr "Показує сторінку підручника з Toolbox."
 
 #. type: Title ===
 #: pages/toolbox.adoc:191
