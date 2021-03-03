@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-02 21:54+0000\n"
+"POT-Creation-Date: 2021-03-03 21:53+0000\n"
 "PO-Revision-Date: 2020-08-16 22:36+0000\n"
 "Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
@@ -386,12 +386,12 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:162
-msgid "To only show containers, use the `[--containers | -c]` option."
+msgid "To only show containers, use the `--containers | -c` option."
 msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:164
-msgid "To only show images, use the `--images | -i]` option."
+msgid "To only show images, use the `--images | -i` option."
 msgstr ""
 
 #. type: Title ===
@@ -437,7 +437,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:184
-msgid "The `-all | -a` option removes all toolbox images."
+msgid "The `--all | -a` option removes all toolbox images."
 msgstr ""
 
 #. type: Title ===
