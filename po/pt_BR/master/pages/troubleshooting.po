@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-01 21:53+0000\n"
-"PO-Revision-Date: 2021-03-01 22:00+0000\n"
+"PO-Revision-Date: 2021-03-05 14:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/pt_BR/"
@@ -419,10 +419,12 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:140
-#, fuzzy, no-wrap
-#| msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] existed with code -6`\n"
+#, no-wrap
 msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] exited with code -6`\n"
-msgstr " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] exited with code -6`\n"
+msgstr ""
+" ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-"
+"workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] exited with "
+"code -6`\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:142
