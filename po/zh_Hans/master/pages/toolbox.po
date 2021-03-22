@@ -2,12 +2,13 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Bobby Rong <rjl931189261@126.com>, 2021.
+# Qiyu Yan <yanqiyu01@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-03 21:53+0000\n"
-"PO-Revision-Date: 2021-02-11 12:40+0000\n"
-"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"PO-Revision-Date: 2021-03-22 04:01+0000\n"
+"Last-Translator: Qiyu Yan <yanqiyu01@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #. type: Title =
 #: pages/toolbox.adoc:2
@@ -70,7 +71,7 @@ msgstr ""
 msgid ""
 "Using Toolbox for running your workflows in a containerized manner brings "
 "you several advantages:"
-msgstr ""
+msgstr "通过 toolbox 容器化你的工作流会给你带来以下好处："
 
 #. type: Plain text
 #: pages/toolbox.adoc:26
@@ -86,7 +87,7 @@ msgstr ""
 msgid ""
 "You get access to different versions of supported distributions independent "
 "of the version you are running."
-msgstr ""
+msgstr "不管你运行的哪个版本的 Fedora，所有受支持的发行版都在 toolbox 中可用。"
 
 #. type: Plain text
 #: pages/toolbox.adoc:30
@@ -143,23 +144,19 @@ msgstr "已有的账户及其权限"
 
 #. type: Plain text
 #: pages/toolbox.adoc:52
-#, fuzzy
-#| msgid "Access to your home directory"
 msgid "Access to your home directory and several other locations"
-msgstr "用户目录的访问能力"
+msgstr "用户目录以及其他几个目录的访问能力"
 
 #. type: Plain text
 #: pages/toolbox.adoc:53
 msgid "Access to both system and session D-Bus, system journal and Kerberos"
-msgstr ""
+msgstr "对于系统以及会话的 D-Bus，系统日志以及 Kerberos 认证信息的访问权限"
 
 #. type: Plain text
 #: pages/toolbox.adoc:54
-#, fuzzy
-#| msgid "Common command lines tools, including the DNF package manager"
 msgid ""
 "Common command lines tools, including a package manager (e.g., DNF on Fedora)"
-msgstr "常见命令行工具，包括 DNF 软件包管理器"
+msgstr "常见命令行工具，包括软件包管理器（例如 Fedora 附带的 DNF）"
 
 #. type: Plain text
 #: pages/toolbox.adoc:60
