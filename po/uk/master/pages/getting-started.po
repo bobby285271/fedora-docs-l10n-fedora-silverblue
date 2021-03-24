@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-03-24 21:55+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -88,9 +88,11 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:22
-msgid ""
-"See the dedicated <<toolbox.adoc#toolbox,toolbox>> page to get started with "
-"it."
+#, fuzzy
+#| msgid ""
+#| "See the dedicated <<toolbox.adoc#toolbox,toolbox>> page to get started "
+#| "with it."
+msgid "See the dedicated <<toolbox.adoc,toolbox>> page to get started with it."
 msgstr ""
 "Ознайомтеся, для початку, зі сторінкою щодо <<toolbox.adoc#toolbox,toolbox>>."
 
@@ -393,11 +395,18 @@ msgstr " $ rpm-ostree install <назва пакунка>\n"
 
 #. type: Plain text
 #: pages/getting-started.adoc:122
+#, fuzzy
+#| msgid ""
+#| "This will download the package and any required dependencies, and "
+#| "recompose your Silverblue image with them. `rpm-ostree` uses standard "
+#| "Fedora package names, which can be searched using DNF (this is not "
+#| "available on a Silverblue host, but can be used in a link:"
+#| "toolbox[toolbox])."
 msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
 "names, which can be searched using DNF (this is not available on a "
-"Silverblue host, but can be used in a link:toolbox[toolbox])."
+"Silverblue host, but can be used in a <<toolbox.adoc,toolbox>>)."
 msgstr ""
 "Ця команда виконає отримання пакунка та усіх потрібних залежностей і "
 "перекомпонує образ Silverblue, встановивши їх відповідним чином. `rpm-"

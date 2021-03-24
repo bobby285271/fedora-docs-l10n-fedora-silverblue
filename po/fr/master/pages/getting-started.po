@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-03-24 21:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,9 +68,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:22
-msgid ""
-"See the dedicated <<toolbox.adoc#toolbox,toolbox>> page to get started with "
-"it."
+msgid "See the dedicated <<toolbox.adoc,toolbox>> page to get started with it."
 msgstr ""
 
 #. type: Title ==
@@ -318,7 +316,7 @@ msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
 "names, which can be searched using DNF (this is not available on a "
-"Silverblue host, but can be used in a link:toolbox[toolbox])."
+"Silverblue host, but can be used in a <<toolbox.adoc,toolbox>>)."
 msgstr ""
 
 #. type: Plain text
