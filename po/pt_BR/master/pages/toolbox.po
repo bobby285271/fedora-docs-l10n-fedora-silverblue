@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-03 21:53+0000\n"
+"POT-Creation-Date: 2021-04-06 21:49+0000\n"
 "PO-Revision-Date: 2021-03-05 14:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -178,8 +178,8 @@ msgstr "Acesso ao sistema e à sessão D-Bus, journal do sistema e Kerberos"
 msgid ""
 "Common command lines tools, including a package manager (e.g., DNF on Fedora)"
 msgstr ""
-"Ferramentas de linha de comando comuns, incluindo um gerenciador de pacotes ("
-"por exemplo, DNF no Fedora)"
+"Ferramentas de linha de comando comuns, incluindo um gerenciador de pacotes "
+"(por exemplo, DNF no Fedora)"
 
 #. type: Plain text
 #: pages/toolbox.adoc:60
@@ -369,9 +369,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:124
+#, fuzzy
+#| msgid ""
+#| "To use a different distribution to create a toolbox container (e.g., RHEL "
+#| "on Fedora, use the `--distro <distro> | -d <distro>` option."
 msgid ""
 "To use a different distribution to create a toolbox container (e.g., RHEL on "
-"Fedora, use the `--distro <distro> | -d <distro>` option."
+"Fedora), use the `--distro <distro> | -d <distro>` option."
 msgstr ""
 "Para usar uma distribuição diferente para criar um contêiner de toolbox (por "
 "exemplo, RHEL no Fedora, use a opção `--distro <distro> | -d <distro>`."
@@ -434,8 +438,8 @@ msgid ""
 "Runs a command in a toolbox without entering it. Used without options, "
 "`toolbox run` runs the command in the default toolbox."
 msgstr ""
-"Executa um comando em uma toolbox sem entrar nela. Usado sem opções, `"
-"toolbox run` executa o comando na toolbox padrão."
+"Executa um comando em uma toolbox sem entrar nela. Usado sem opções, "
+"`toolbox run` executa o comando na toolbox padrão."
 
 #. type: Plain text
 #: pages/toolbox.adoc:149

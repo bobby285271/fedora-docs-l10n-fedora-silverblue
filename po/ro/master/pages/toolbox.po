@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-03 21:53+0000\n"
+"POT-Creation-Date: 2021-04-06 21:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -295,7 +295,7 @@ msgstr ""
 #: pages/toolbox.adoc:124
 msgid ""
 "To use a different distribution to create a toolbox container (e.g., RHEL on "
-"Fedora, use the `--distro <distro> | -d <distro>` option."
+"Fedora), use the `--distro <distro> | -d <distro>` option."
 msgstr ""
 
 #. type: Plain text
