@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-06 21:49+0000\n"
 "PO-Revision-Date: 2021-04-08 15:02+0000\n"
-"Last-Translator: Qiyu Yan <yanqiyu01@gmail.com>\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -331,16 +331,12 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:124
-#, fuzzy
-#| msgid ""
-#| "To use a different distribution to create a toolbox container (e.g., RHEL "
-#| "on Fedora, use the `--distro <distro> | -d <distro>` option."
 msgid ""
 "To use a different distribution to create a toolbox container (e.g., RHEL on "
 "Fedora), use the `--distro <distro> | -d <distro>` option."
 msgstr ""
-"要想使用其他发行版的映像创建 Toolbox 容器（例如在 Fedora 上使用 RHEL 的映"
-"像），使用 `--distro <distro> | -d <distro>` 选项。"
+"要想使用其他发行版的映像创建 Toolbox 容器（例如在 Fedora 上使用 RHEL 的映像），使用 `--distro <distro> | -"
+"d <distro>` 选项。"
 
 #. type: Plain text
 #: pages/toolbox.adoc:126
