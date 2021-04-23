@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-01 21:53+0000\n"
+"POT-Creation-Date: 2021-04-23 21:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -114,26 +114,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:47
+#: pages/troubleshooting.adoc:48
 #, no-wrap
-msgid " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
+msgid ""
+" # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
+" # rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:49
+#: pages/troubleshooting.adoc:50
 msgid ""
 "You can read more about the work that Alex did on his https://blogs.gnome."
 "org/alexl/2019/03/06/nvidia-drivers-in-fedora-silverblue/[blog]."
 msgstr ""
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:50
+#: pages/troubleshooting.adoc:51
 #, no-wrap
 msgid "SELinux problems"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:57
+#: pages/troubleshooting.adoc:58
 msgid ""
 "As users work with Silverblue day-to-day, it is possible that they have "
 "modified the default SELinux policy in an effort to workaround one or more "
@@ -143,12 +145,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:59
+#: pages/troubleshooting.adoc:60
 msgid "Check the state of the SELinux policy"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:65
+#: pages/troubleshooting.adoc:66
 #, no-wrap
 msgid ""
 "$ sudo ostree admin config-diff | grep policy\n"
@@ -159,19 +161,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:68
+#: pages/troubleshooting.adoc:69
 msgid ""
 "If anything is returned by this command, then your SELinux policy has been "
 "modified from the default."
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:70
+#: pages/troubleshooting.adoc:71
 msgid "Copy the default SELinux policy shipped in the OSTree compose"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:73
+#: pages/troubleshooting.adoc:74
 #, no-wrap
 msgid ""
 "$ sudo cp -al /etc/selinux{,.bak}\n"
@@ -179,26 +181,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:76
+#: pages/troubleshooting.adoc:77
 msgid ""
 "After doing this, the output from `ostree admin config-diff | grep policy` "
 "should no longer indicate the policy is modified."
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:78
+#: pages/troubleshooting.adoc:79
 msgid ""
 "If your policy still appears to be modified, you can try the following "
 "approach."
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:80
+#: pages/troubleshooting.adoc:81
 msgid "Remove the SELinux policy; copy in the default policy"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:83
+#: pages/troubleshooting.adoc:84
 #, no-wrap
 msgid ""
 "$ sudo rm -rf /etc/selinux\n"
@@ -206,30 +208,30 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:86
+#: pages/troubleshooting.adoc:87
 msgid ""
 "After this, the `ostree admin config-diff | grep policy` command should "
 "return no modifications."
 msgstr ""
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:87
+#: pages/troubleshooting.adoc:88
 #, no-wrap
 msgid "Unable to add user to group"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:90
+#: pages/troubleshooting.adoc:91
 msgid "https://github.com/projectatomic/rpm-ostree/issues/29[GitHub Issue]"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:92
+#: pages/troubleshooting.adoc:93
 msgid "https://github.com/projectatomic/rpm-ostree/issues/49[GitHub Issue]"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:99
+#: pages/troubleshooting.adoc:100
 msgid ""
 "Due to how `rpm-ostree` handles user + group entries, it may not be possible "
 "to use `usermod -a -G` to add a user to a group successfully.  Until the "
@@ -240,7 +242,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:102
+#: pages/troubleshooting.adoc:103
 #, no-wrap
 msgid ""
 " # grep -E '^libvirt:' /usr/lib/group >> /etc/group\n"
@@ -248,18 +250,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:104
+#: pages/troubleshooting.adoc:105
 msgid "You will need to log off and log back in to apply these changes."
 msgstr ""
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:105
+#: pages/troubleshooting.adoc:106
 #, no-wrap
 msgid "`ostree fsck` reports file corruption"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:111
+#: pages/troubleshooting.adoc:112
 msgid ""
 "It is possible to end up in a situation where one or more files on the disk "
 "have become corrupted or missing.  In this case, `ostree fsck` will report "
@@ -269,18 +271,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:112
+#: pages/troubleshooting.adoc:113
 #, no-wrap
 msgid "Read-only `/boot/efi` prevents any upgrades"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:115
+#: pages/troubleshooting.adoc:116
 msgid "https://github.com/projectatomic/rpm-ostree/issues/1380[GitHub Issue]"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:120
+#: pages/troubleshooting.adoc:121
 msgid ""
 "This issue is most commonly seen when users have installed Silverblue on "
 "Apple hardware.  The `/boot/efi` partition on Apple hardware is formatted as "
@@ -289,7 +291,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:124
+#: pages/troubleshooting.adoc:125
 msgid ""
 "Since Silverblue now includes the `hfsplus-tools` package in the base "
 "compose, it has become relatively easy for users to workaround this kind of "
@@ -297,7 +299,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:128
+#: pages/troubleshooting.adoc:129
 #, no-wrap
 msgid ""
 " # umount /boot/efi\n"
@@ -306,23 +308,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:130
+#: pages/troubleshooting.adoc:131
 msgid "See the linked issue for additional details."
 msgstr ""
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:131
+#: pages/troubleshooting.adoc:132
 #, no-wrap
 msgid "Unable to install Silverblue on EFI systems"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:134
+#: pages/troubleshooting.adoc:135
 msgid "https://bugzilla.redhat.com/show_bug.cgi?id=1575957[Bugzilla Issue]"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:138
+#: pages/troubleshooting.adoc:139
 msgid ""
 "Users have reported that they cannot install Silverblue on an EFI based "
 "system where they previously had another OS installed.  The error that is "
@@ -330,18 +332,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:140
+#: pages/troubleshooting.adoc:141
 #, no-wrap
 msgid " ostree ['admin', '--sysroot=/mnt/sysimage', 'deploy', '--os=fedora-workstation', 'fedora-workstation:fedora/28/x86_64/workstation'] exited with code -6`\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:142
+#: pages/troubleshooting.adoc:143
 msgid "A couple of possible workarounds exist:"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:144
+#: pages/troubleshooting.adoc:145
 msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
 "additional EFI partition. Assign the newly created EFI partition to `/boot/"
@@ -350,7 +352,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:145
+#: pages/troubleshooting.adoc:146
 msgid ""
 "Reformat the EFI partition on the host during the install process. This can "
 "be done by selecting \"Custom Partitioning\" and checking the `Reformat` box "
@@ -358,7 +360,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:149
+#: pages/troubleshooting.adoc:150
 msgid ""
 "Choosing to reformat `/boot/efi` will likely result in the inability to boot "
 "any other operating systems that were previously installed. Be sure that you "
@@ -366,13 +368,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:150
+#: pages/troubleshooting.adoc:151
 #, no-wrap
 msgid "`toolbox: failed to list images with com.redhat.component=fedora-toolbox`"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:153
+#: pages/troubleshooting.adoc:154
 msgid ""
 "As of `podman` version `1.4.0` this workaround is not necessary. Ensure "
 "`podman` is up to date by issuing `rpm-ostree upgrade` before attempting "
@@ -380,20 +382,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:155
+#: pages/troubleshooting.adoc:156
 msgid ""
 "When issuing the `toolbox list` command, systems using `podman` versions "
 "newer than `1.2.0`, will generate the following error:"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:157
+#: pages/troubleshooting.adoc:158
 #, no-wrap
 msgid " toolbox: failed to list images with com.redhat.component=fedora-toolbox\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:159
+#: pages/troubleshooting.adoc:160
 msgid ""
 "The following workaround might be useful for other `toolbox` errors caused "
 "by `podman` versions greater than `1.2.0`. See https://github.com/"
@@ -401,32 +403,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:161
+#: pages/troubleshooting.adoc:162
 msgid ""
 "As a workaround, it is possible to override `podman` packages newer than "
 "version `1.2.0` by issuing:"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:163
+#: pages/troubleshooting.adoc:164
 #, no-wrap
 msgid " $ rpm-ostree override --remove=podman-manpages replace https://kojipkgs.fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:165
+#: pages/troubleshooting.adoc:166
 msgid "Reboot the system to apply the changes."
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:167
+#: pages/troubleshooting.adoc:168
 msgid ""
 "For reference, it is also possible to override the package by following "
 "these steps:"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:169
+#: pages/troubleshooting.adoc:170
 msgid ""
 "Download `podman-1.2.0-2.git3bd528e.fc30.x86_64.rpm` from https://kojipkgs."
 "fedoraproject.org//packages/podman/1.2.0/2.git3bd528e.fc30/x86_64/"
@@ -434,14 +436,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:170
+#: pages/troubleshooting.adoc:171
 msgid ""
 "Remove `podman-manpages` issuing: `rpm-ostree override remove podman-"
 "manpages`"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:171
+#: pages/troubleshooting.adoc:172
 msgid ""
 "Override the currently installed `podman` package (using the package you "
 "have downloaded on the first step) by: `rpm-ostree override replace "
@@ -449,34 +451,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:173
+#: pages/troubleshooting.adoc:174
 msgid "You can now reboot the system for the change to take effect."
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:175
+#: pages/troubleshooting.adoc:176
 msgid "To revert this workaround issue the following command:"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:177
+#: pages/troubleshooting.adoc:178
 #, no-wrap
 msgid " $ rpm-ostree override reset podman; rpm-ostree override reset podman-manpages\n"
 msgstr ""
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:178
+#: pages/troubleshooting.adoc:179
 #, no-wrap
 msgid "Unable to enter a toolbox due to permissions errors"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:181
+#: pages/troubleshooting.adoc:182
 msgid "https://github.com/containers/libpod/issues/3187[GitHub Issue]"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:185
+#: pages/troubleshooting.adoc:186
 msgid ""
 "With certain versions of `podman`, trying to enter a toolbox will result in "
 "errors. You can fix this by resetting the permissions on the overlay-"
@@ -484,80 +486,80 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:187
+#: pages/troubleshooting.adoc:188
 #, no-wrap
 msgid " $ sudo chown -R $USER ~/.local/share/containers/storage/overlay-containers\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:189
+#: pages/troubleshooting.adoc:190
 msgid ""
 "This will reset the permissions on your containers and allow you to enter "
 "them again."
 msgstr ""
 
 #. type: Title ==
-#: pages/troubleshooting.adoc:190
+#: pages/troubleshooting.adoc:191
 #, no-wrap
 msgid "Running `restorecon`"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:194
+#: pages/troubleshooting.adoc:195
 msgid ""
 "You should never run `restorecon` on a Silverblue host.  See the following "
 "bug for details - https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:196
+#: pages/troubleshooting.adoc:197
 msgid "However, if you happened to do this, it is possible to recover."
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:198
+#: pages/troubleshooting.adoc:199
 msgid "Boot with `enforcing=0` on the kernel command line"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:199
+#: pages/troubleshooting.adoc:200
 msgid "Create a new, \"fixed\" commit locally"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:200
+#: pages/troubleshooting.adoc:201
 msgid "Deploy the new \"fixed\" commit"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:201
+#: pages/troubleshooting.adoc:202
 msgid "Run `restorecon`"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:202
+#: pages/troubleshooting.adoc:203
 msgid "Reboot"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:203
+#: pages/troubleshooting.adoc:204
 msgid "Cleanup"
-msgstr ""
-
-#. type: Plain text
-#: pages/troubleshooting.adoc:205
-#, no-wrap
-msgid "$ rpm-ostree status -b | grep BaseCommit\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:206
 #, no-wrap
+msgid "$ rpm-ostree status -b | grep BaseCommit\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/troubleshooting.adoc:207
+#, no-wrap
 msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:213
+#: pages/troubleshooting.adoc:214
 #, no-wrap
 msgid ""
 "$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
@@ -570,14 +572,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:216
+#: pages/troubleshooting.adoc:217
 msgid ""
 "The caveat to this recovery is that your layered packages will be removed; "
 "you'll need to relayer them after the recovery."
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:217
+#: pages/troubleshooting.adoc:218
 msgid ""
 "See this upstream comment for additional details - https://github.com/"
 "ostreedev/ostree/issues/1265#issuecomment-484557615"
