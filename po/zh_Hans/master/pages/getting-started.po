@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-12 21:48+0000\n"
+"POT-Creation-Date: 2021-05-24 21:55+0000\n"
 "PO-Revision-Date: 2021-05-15 07:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -314,13 +314,24 @@ msgid ""
 msgstr "Fedora 提供的大部分（但不是所有的）RPM 都可以通过这个方法安装。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:107
+#: pages/getting-started.adoc:108
+#, fuzzy
+#| msgid ""
+#| "Currently, using package layering creates a new \"deployment\", or "
+#| "bootable filesystem root.  It does not affect your current root.  This "
+#| "preserves rollback and the transactional model, but means that the system "
+#| "must be rebooted after a package has been layered.  Eventually this "
+#| "limitation may be lifted, but it's generally expected that you use "
+#| "package layering sparingly, and use `flatpak` and `dnf install` inside a "
+#| "`toolbox` etc."
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
 "rollback and the transactional model, but means that the system must be "
-"rebooted after a package has been layered.  Eventually this limitation may "
-"be lifted, but it's generally expected that you use package layering "
+"rebooted after a package has been layered.  If you don't want to reboot your "
+"system for switching to the new deployment, you can use an experimental `rpm-"
+"ostree ex apply-live` command to update the filesystem to see changes from "
+"new deployment, but it's generally expected that you use package layering "
 "sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
 msgstr ""
 "目前来说，每执行一次软件包层叠都会创建一个新的『部署』，换言之就是可启动的系"
@@ -330,7 +341,7 @@ msgstr ""
 "install` 。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:111
+#: pages/getting-started.adoc:112
 msgid ""
 "Package layering is generally done from the command line. However, the "
 "Software application does rely on it for installing a small number of apps "
@@ -340,35 +351,36 @@ msgstr ""
 "装一些难以通过 Flatpak 的形式安装的应用程序。"
 
 #. type: Title ===
-#: pages/getting-started.adoc:112
+#: pages/getting-started.adoc:113
 #, no-wrap
 msgid "Installing packages"
 msgstr "安装软件包"
 
 #. type: Plain text
-#: pages/getting-started.adoc:115
+#: pages/getting-started.adoc:116
 msgid "Packages can be installed on Silverblue using:"
 msgstr "在 Silverblue，我们使用下面的命令安装软件包："
 
 #. type: Plain text
-#: pages/getting-started.adoc:117
+#: pages/getting-started.adoc:118
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
 msgstr " $ rpm-ostree install <package name>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:122
+#: pages/getting-started.adoc:123
 msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
 "names, which can be searched using DNF (this is not available on a "
 "Silverblue host, but can be used in a xref:toolbox.adoc[toolbox])."
 msgstr ""
-"这会下载所需的软件包及其依赖包，并同你的 Silverblue 映像一起被构建。 `rpm-ostree` 使用标准的 Fedora 软件包名称，"
-"因此你可以通过 DNF 搜索软件包（Silverblue 并不提供 DNF，但你可以在 xref:toolbox.adoc[toolbox] 使用它）。"
+"这会下载所需的软件包及其依赖包，并同你的 Silverblue 映像一起被构建。 `rpm-"
+"ostree` 使用标准的 Fedora 软件包名称，因此你可以通过 DNF 搜索软件包"
+"（Silverblue 并不提供 DNF，但你可以在 xref:toolbox.adoc[toolbox] 使用它）。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:125
+#: pages/getting-started.adoc:126
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
@@ -376,31 +388,51 @@ msgstr ""
 "当软件包通过这种方式安装之后，它就会随着 Silverblue 映像一起保持着最新状态。"
 
 #. type: Title ===
-#: pages/getting-started.adoc:126
+#: pages/getting-started.adoc:127
 #, no-wrap
 msgid "Replacing packages"
 msgstr "替换软件包"
 
 #. type: Plain text
-#: pages/getting-started.adoc:130
+#: pages/getting-started.adoc:131
+#, fuzzy
+#| msgid ""
+#| "In some scenarios, you may want to test out a new version of `podman` or "
+#| "`kernel` or other packages that live on the host.  The `rpm-ostree "
+#| "override` command can be used to replace a package with a different "
+#| "version.  Currently you must download the RPM packages locally, and then "
+#| "run:"
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
-"command can be used to replace a package with a different version.  "
-"Currently you must download the RPM packages locally, and then run:"
+"command can be used to replace a package with a different version.  You can "
+"download the package locally and run:"
 msgstr ""
 "在一些情形下，你可能希望测试新版的 `podman` 或 `kernel` 或其它的一些软件包。 "
 "`rpm-ostree override` 命令允许你将一个软件包替换为其它版本。目前你需要手动下"
 "载 RPM 到本地，然后执行："
 
 #. type: Plain text
-#: pages/getting-started.adoc:132
+#: pages/getting-started.adoc:133
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
 msgstr " $ rpm-ostree override replace <path to package>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:134
+#: pages/getting-started.adoc:135
+msgid ""
+"Or you can override packages without downloading using links from koji or "
+"bodhi. For example:"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:137
+#, no-wrap
+msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:139
 msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
@@ -410,7 +442,7 @@ msgstr ""
 "会在部署的系统中出现。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:137
+#: pages/getting-started.adoc:142
 msgid ""
 "Removing and replacing packages using package layering is not generally "
 "recommended. For more information, see the https://coreos.github.io/rpm-"

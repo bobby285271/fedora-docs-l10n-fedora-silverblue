@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-12 21:48+0000\n"
+"POT-Creation-Date: 2021-05-24 21:55+0000\n"
 "PO-Revision-Date: 2021-05-15 07:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -90,8 +90,8 @@ msgstr ""
 msgid ""
 "See the dedicated xref:toolbox.adoc[toolbox] page to get started with it."
 msgstr ""
-"Consulte a página dedicada do xref:toolbox.adoc[toolbox] para começar a "
-"usá-lo."
+"Consulte a página dedicada do xref:toolbox.adoc[toolbox] para começar a usá-"
+"lo."
 
 #. type: Title ==
 #: pages/getting-started.adoc:24
@@ -341,13 +341,24 @@ msgstr ""
 "instalados no Silverblue usando este método."
 
 #. type: Plain text
-#: pages/getting-started.adoc:107
+#: pages/getting-started.adoc:108
+#, fuzzy
+#| msgid ""
+#| "Currently, using package layering creates a new \"deployment\", or "
+#| "bootable filesystem root.  It does not affect your current root.  This "
+#| "preserves rollback and the transactional model, but means that the system "
+#| "must be rebooted after a package has been layered.  Eventually this "
+#| "limitation may be lifted, but it's generally expected that you use "
+#| "package layering sparingly, and use `flatpak` and `dnf install` inside a "
+#| "`toolbox` etc."
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
 "rollback and the transactional model, but means that the system must be "
-"rebooted after a package has been layered.  Eventually this limitation may "
-"be lifted, but it's generally expected that you use package layering "
+"rebooted after a package has been layered.  If you don't want to reboot your "
+"system for switching to the new deployment, you can use an experimental `rpm-"
+"ostree ex apply-live` command to update the filesystem to see changes from "
+"new deployment, but it's generally expected that you use package layering "
 "sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
 msgstr ""
 "Atualmente, o uso da camada de pacote cria uma nova \"implantação\" ou raiz "
@@ -359,7 +370,7 @@ msgstr ""
 "install` dentro de uma `toolbox` etc."
 
 #. type: Plain text
-#: pages/getting-started.adoc:111
+#: pages/getting-started.adoc:112
 msgid ""
 "Package layering is generally done from the command line. However, the "
 "Software application does rely on it for installing a small number of apps "
@@ -371,24 +382,24 @@ msgstr ""
 "Flatpak."
 
 #. type: Title ===
-#: pages/getting-started.adoc:112
+#: pages/getting-started.adoc:113
 #, no-wrap
 msgid "Installing packages"
 msgstr "Instalando pacotes"
 
 #. type: Plain text
-#: pages/getting-started.adoc:115
+#: pages/getting-started.adoc:116
 msgid "Packages can be installed on Silverblue using:"
 msgstr "Pacotes podem ser instalados no Silverblue usando:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:117
+#: pages/getting-started.adoc:118
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
 msgstr " $ rpm-ostree install <nome do pacote>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:122
+#: pages/getting-started.adoc:123
 msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
@@ -401,7 +412,7 @@ msgstr ""
 "Silverblue, mas pode ser usado em um xref:toolbox.adoc[toolbox])."
 
 #. type: Plain text
-#: pages/getting-started.adoc:125
+#: pages/getting-started.adoc:126
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
@@ -411,18 +422,25 @@ msgstr ""
 "atualizado."
 
 #. type: Title ===
-#: pages/getting-started.adoc:126
+#: pages/getting-started.adoc:127
 #, no-wrap
 msgid "Replacing packages"
 msgstr "Substituindo pacotes"
 
 #. type: Plain text
-#: pages/getting-started.adoc:130
+#: pages/getting-started.adoc:131
+#, fuzzy
+#| msgid ""
+#| "In some scenarios, you may want to test out a new version of `podman` or "
+#| "`kernel` or other packages that live on the host.  The `rpm-ostree "
+#| "override` command can be used to replace a package with a different "
+#| "version.  Currently you must download the RPM packages locally, and then "
+#| "run:"
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
-"command can be used to replace a package with a different version.  "
-"Currently you must download the RPM packages locally, and then run:"
+"command can be used to replace a package with a different version.  You can "
+"download the package locally and run:"
 msgstr ""
 "Em alguns cenários, você pode querer testar uma nova versão do `podman` ou "
 "`kernel` ou outros pacotes que residem no host. O comando `rpm-ostree "
@@ -431,13 +449,26 @@ msgstr ""
 "executar:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:132
+#: pages/getting-started.adoc:133
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
 msgstr " $ rpm-ostree override replace <caminho para o pacote>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:134
+#: pages/getting-started.adoc:135
+msgid ""
+"Or you can override packages without downloading using links from koji or "
+"bodhi. For example:"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:137
+#, no-wrap
+msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:139
 msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
@@ -448,7 +479,7 @@ msgstr ""
 "aparecerão na raiz inicializada."
 
 #. type: Plain text
-#: pages/getting-started.adoc:137
+#: pages/getting-started.adoc:142
 msgid ""
 "Removing and replacing packages using package layering is not generally "
 "recommended. For more information, see the https://coreos.github.io/rpm-"
