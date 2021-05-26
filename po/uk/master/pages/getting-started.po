@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-24 21:55+0000\n"
-"PO-Revision-Date: 2021-05-15 07:02+0000\n"
+"PO-Revision-Date: 2021-05-26 06:02+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/uk/>\n"
@@ -344,15 +344,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:108
-#, fuzzy
-#| msgid ""
-#| "Currently, using package layering creates a new \"deployment\", or "
-#| "bootable filesystem root.  It does not affect your current root.  This "
-#| "preserves rollback and the transactional model, but means that the system "
-#| "must be rebooted after a package has been layered.  Eventually this "
-#| "limitation may be lifted, but it's generally expected that you use "
-#| "package layering sparingly, and use `flatpak` and `dnf install` inside a "
-#| "`toolbox` etc."
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
@@ -368,8 +359,11 @@ msgstr ""
 "до поточної кореневої файлової системи не вноситься. Таким чином "
 "забезпечується робота моделі із можливістю повернення до попереднього стану "
 "і атомарними діями з системою. Втім, це означає, що після нашаровування "
-"пакунка систему доведеться перезавантажити. Зрештою, це обмеження може бути "
-"усунуто, але автори дистрибутива припускають, що ви не зловживатимете "
+"пакунка систему доведеться перезавантажити. Якщо вам не хочеться "
+"перезавантажувати вашу систему для перемикання на новий розгорнутий варіант, "
+"можете поекспериментувати із командою `rpm-ostree ex apply-live` для "
+"оновлення файлової системи з метою впровадження змін з нової розгорнутої "
+"версії, але автори дистрибутива припускають, що ви не зловживатимете "
 "встановленням нашарованих пакунків і користуватиметеся `flatpak` і `dnf "
 "install` всередині `toolbox`."
 
@@ -433,13 +427,6 @@ msgstr "Заміна пакунків"
 
 #. type: Plain text
 #: pages/getting-started.adoc:131
-#, fuzzy
-#| msgid ""
-#| "In some scenarios, you may want to test out a new version of `podman` or "
-#| "`kernel` or other packages that live on the host.  The `rpm-ostree "
-#| "override` command can be used to replace a package with a different "
-#| "version.  Currently you must download the RPM packages locally, and then "
-#| "run:"
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
@@ -449,8 +436,8 @@ msgstr ""
 "Іноді, може виникати потреба у тестуванні нової версії `podman`, `ядра` або "
 "інших пакунків, які є частиною основної системи. Для виконання цього "
 "завдання ви можете скористатися командою `rpm-ostree override`, яка замінює "
-"пакунок іншою версією. У поточній версії вам слід отримати пакунки RPM на "
-"ваш комп'ютер, а потім віддати таку команду:"
+"пакунок іншою версією. Ви можете отримати пакунки на ваш комп'ютер, а потім "
+"віддати таку команду:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:133
@@ -464,12 +451,18 @@ msgid ""
 "Or you can override packages without downloading using links from koji or "
 "bodhi. For example:"
 msgstr ""
+"Або ви можете перевизначити пакунки без отримання за допомогою посилань з "
+"koji або bodhi. Приклад:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:137
 #, no-wrap
 msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 msgstr ""
+" $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/"
+"podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs."
+"fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1"
+".fc34.x86_64.rpm\n"
 
 #. type: Plain text
 #: pages/getting-started.adoc:139
