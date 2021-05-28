@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-24 21:55+0000\n"
-"PO-Revision-Date: 2021-05-15 07:02+0000\n"
+"PO-Revision-Date: 2021-05-28 14:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/"
@@ -315,15 +315,6 @@ msgstr "Fedora 提供的大部分（但不是所有的）RPM 都可以通过这�
 
 #. type: Plain text
 #: pages/getting-started.adoc:108
-#, fuzzy
-#| msgid ""
-#| "Currently, using package layering creates a new \"deployment\", or "
-#| "bootable filesystem root.  It does not affect your current root.  This "
-#| "preserves rollback and the transactional model, but means that the system "
-#| "must be rebooted after a package has been layered.  Eventually this "
-#| "limitation may be lifted, but it's generally expected that you use "
-#| "package layering sparingly, and use `flatpak` and `dnf install` inside a "
-#| "`toolbox` etc."
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
@@ -334,11 +325,10 @@ msgid ""
 "new deployment, but it's generally expected that you use package layering "
 "sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
 msgstr ""
-"目前来说，每执行一次软件包层叠都会创建一个新的『部署』，换言之就是可启动的系"
-"统。它并不会影响你当前的系统，也使回滚和事务模型得到保留，但也意味着必须在层"
-"叠软件包后需要重启。尽管这一限制最终可能会被解除，但我们还是希望你谨慎使用软"
-"件包层叠，在可以的时候尽可能采用 `flatpak` 或者在 `toolbox` 使用 `dnf "
-"install` 。"
+"目前来说，每执行一次软件包层叠都会创建一个新的『部署』，换言之就是可启动的系统。它并不会影响你当前的系统，也使回滚和事务模型得到保留，但也意味着在层叠软件"
+"包后需要重启，当然你也可以体验我们的实验性功能，通过执行 `rpm-ostree ex apply-live` "
+"更新文件系统并应用更新。无论如何，我们还是希望你谨慎使用软件包层叠，在可以的时候尽可能采用 `flatpak` 或者在 `toolbox` 使用 `"
+"dnf install` 。"
 
 #. type: Plain text
 #: pages/getting-started.adoc:112
@@ -395,22 +385,14 @@ msgstr "替换软件包"
 
 #. type: Plain text
 #: pages/getting-started.adoc:131
-#, fuzzy
-#| msgid ""
-#| "In some scenarios, you may want to test out a new version of `podman` or "
-#| "`kernel` or other packages that live on the host.  The `rpm-ostree "
-#| "override` command can be used to replace a package with a different "
-#| "version.  Currently you must download the RPM packages locally, and then "
-#| "run:"
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
 "command can be used to replace a package with a different version.  You can "
 "download the package locally and run:"
 msgstr ""
-"在一些情形下，你可能希望测试新版的 `podman` 或 `kernel` 或其它的一些软件包。 "
-"`rpm-ostree override` 命令允许你将一个软件包替换为其它版本。目前你需要手动下"
-"载 RPM 到本地，然后执行："
+"在一些情形下，你可能希望测试新版的 `podman` 或 `kernel` 或其它的一些软件包。 `rpm-ostree override` "
+"命令允许你将一个软件包替换为其它版本。目前你可以手动下载软件包到本地，然后执行："
 
 #. type: Plain text
 #: pages/getting-started.adoc:133
@@ -423,13 +405,17 @@ msgstr " $ rpm-ostree override replace <path to package>\n"
 msgid ""
 "Or you can override packages without downloading using links from koji or "
 "bodhi. For example:"
-msgstr ""
+msgstr "或者你也可以直接使用 koji 或 bodhi 的链接以进行软件包替换。例如："
 
 #. type: Plain text
 #: pages/getting-started.adoc:137
 #, no-wrap
 msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 msgstr ""
+" $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/"
+"podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs."
+"fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1"
+".fc34.x86_64.rpm\n"
 
 #. type: Plain text
 #: pages/getting-started.adoc:139
