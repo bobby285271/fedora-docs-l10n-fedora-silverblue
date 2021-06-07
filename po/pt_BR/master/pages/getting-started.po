@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-24 21:55+0000\n"
-"PO-Revision-Date: 2021-05-15 07:02+0000\n"
+"PO-Revision-Date: 2021-06-07 19:04+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/pt_BR/"
@@ -342,15 +342,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:108
-#, fuzzy
-#| msgid ""
-#| "Currently, using package layering creates a new \"deployment\", or "
-#| "bootable filesystem root.  It does not affect your current root.  This "
-#| "preserves rollback and the transactional model, but means that the system "
-#| "must be rebooted after a package has been layered.  Eventually this "
-#| "limitation may be lifted, but it's generally expected that you use "
-#| "package layering sparingly, and use `flatpak` and `dnf install` inside a "
-#| "`toolbox` etc."
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
@@ -364,10 +355,12 @@ msgstr ""
 "Atualmente, o uso da camada de pacote cria uma nova \"implantação\" ou raiz "
 "do sistema de arquivos inicializável. Isso não afeta sua raiz atual. Isso "
 "preserva a reversão e o modelo transacional, mas significa que o sistema "
-"deve ser reinicializado após um pacote ter sido colocado em camadas. "
-"Eventualmente, essa limitação pode ser eliminada, mas geralmente é esperado "
-"que você use camadas de pacotes com moderação e use `flatpak` e `dnf "
-"install` dentro de uma `toolbox` etc."
+"deve ser reinicializado após um pacote ter sido colocado em camadas. Se você "
+"não quiser reiniciar seu sistema para mudar para a nova implantação, você "
+"pode usar um comando experimental `rpm-ostree ex apply-live` para atualizar "
+"o sistema de arquivos para ver as mudanças da nova implantação, mas "
+"geralmente é esperado que você use camadas de pacotes com moderação e use "
+"`flatpak` e `dnf install` dentro de uma `toolbox` etc."
 
 #. type: Plain text
 #: pages/getting-started.adoc:112
@@ -429,13 +422,6 @@ msgstr "Substituindo pacotes"
 
 #. type: Plain text
 #: pages/getting-started.adoc:131
-#, fuzzy
-#| msgid ""
-#| "In some scenarios, you may want to test out a new version of `podman` or "
-#| "`kernel` or other packages that live on the host.  The `rpm-ostree "
-#| "override` command can be used to replace a package with a different "
-#| "version.  Currently you must download the RPM packages locally, and then "
-#| "run:"
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
@@ -445,8 +431,7 @@ msgstr ""
 "Em alguns cenários, você pode querer testar uma nova versão do `podman` ou "
 "`kernel` ou outros pacotes que residem no host. O comando `rpm-ostree "
 "override` pode ser usado para substituir um pacote por uma versão diferente. "
-"Atualmente você deve baixar os pacotes RPM localmente e, em seguida, "
-"executar:"
+"Você pode baixar o pacote localmente e executar:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:133
@@ -460,12 +445,18 @@ msgid ""
 "Or you can override packages without downloading using links from koji or "
 "bodhi. For example:"
 msgstr ""
+"Ou você pode substituir pacotes sem baixar usando links do koji ou bodhi. "
+"Por exemplo:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:137
 #, no-wrap
 msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 msgstr ""
+" $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/"
+"podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs."
+"fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1"
+".fc34.x86_64.rpm\n"
 
 #. type: Plain text
 #: pages/getting-started.adoc:139
