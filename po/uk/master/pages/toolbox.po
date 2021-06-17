@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-06 21:49+0000\n"
+"POT-Creation-Date: 2021-06-17 21:56+0000\n"
 "PO-Revision-Date: 2021-04-08 15:02+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -375,9 +375,9 @@ msgid ""
 "To use a different distribution to create a toolbox container (e.g., RHEL on "
 "Fedora), use the `--distro <distro> | -d <distro>` option."
 msgstr ""
-"Щоб скористатися іншим дистрибутивом для створення контейнера toolbox ("
-"наприклад, RHEL у Fedora), скористайтеся параметром `--distro <дистрибутив> |"
-" -d <дистрибутив>`."
+"Щоб скористатися іншим дистрибутивом для створення контейнера toolbox "
+"(наприклад, RHEL у Fedora), скористайтеся параметром `--distro <дистрибутив> "
+"| -d <дистрибутив>`."
 
 #. type: Plain text
 #: pages/toolbox.adoc:126
@@ -609,10 +609,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:213
+#, fuzzy
+#| msgid ""
+#| "To get in touch with toolbox users and developers, use https://discussion."
+#| "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue "
+#| "IRC channel on Freenode."
 msgid ""
 "To get in touch with toolbox users and developers, use https://discussion."
 "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "
-"channel on Freenode."
+"channel on https://libera.chat/[Libera]."
 msgstr ""
 "Щоб зв'язатися із користувачами та розробниками toolbox, скористайтеся "
 "https://discussion.fedoraproject.org/[екземпляром Discourse Fedora] або "
