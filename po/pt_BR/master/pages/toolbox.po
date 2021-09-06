@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-06-17 21:56+0000\n"
-"PO-Revision-Date: 2021-05-15 07:02+0000\n"
+"PO-Revision-Date: 2021-09-06 01:04+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/pt_BR/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: pages/toolbox.adoc:2
@@ -600,11 +600,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:213
-#, fuzzy
-#| msgid ""
-#| "To get in touch with toolbox users and developers, use https://discussion."
-#| "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue "
-#| "IRC channel on Freenode."
 msgid ""
 "To get in touch with toolbox users and developers, use https://discussion."
 "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "
@@ -612,7 +607,7 @@ msgid ""
 msgstr ""
 "Para entrar em contato com usuários e desenvolvedores do toolbox, use a "
 "https://discussion.fedoraproject.org/[instância do Discourse do Fedora], ou "
-"entre no canal IRC #silverblue no Freenode."
+"entre no canal IRC #silverblue no https://libera.chat/[Libera]."
 
 #~ msgid ""
 #~ "Using toolbox containers to install development tools offers a number of "
