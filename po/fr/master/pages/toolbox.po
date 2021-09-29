@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-06-17 21:56+0000\n"
+"POT-Creation-Date: 2021-09-29 22:01+0000\n"
 "PO-Revision-Date: 2020-08-16 22:36+0000\n"
 "Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
@@ -499,7 +499,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/toolbox.adoc:213
+#: pages/toolbox.adoc:212
 msgid ""
 "To get in touch with toolbox users and developers, use https://discussion."
 "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "

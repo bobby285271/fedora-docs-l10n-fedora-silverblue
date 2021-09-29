@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-24 21:55+0000\n"
+"POT-Creation-Date: 2021-09-29 22:01+0000\n"
 "PO-Revision-Date: 2021-05-26 06:02+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -343,12 +343,23 @@ msgstr ""
 "RPM зі сховищ Fedora."
 
 #. type: Plain text
-#: pages/getting-started.adoc:108
+#: pages/getting-started.adoc:110
+#, fuzzy
+#| msgid ""
+#| "Currently, using package layering creates a new \"deployment\", or "
+#| "bootable filesystem root.  It does not affect your current root.  This "
+#| "preserves rollback and the transactional model, but means that the system "
+#| "must be rebooted after a package has been layered.  If you don't want to "
+#| "reboot your system for switching to the new deployment, you can use an "
+#| "experimental `rpm-ostree ex apply-live` command to update the filesystem "
+#| "to see changes from new deployment, but it's generally expected that you "
+#| "use package layering sparingly, and use `flatpak` and `dnf install` "
+#| "inside a `toolbox` etc."
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
 "rollback and the transactional model, but means that the system must be "
-"rebooted after a package has been layered.  If you don't want to reboot your "
+"rebooted after a package has been layered. If you don't want to reboot your "
 "system for switching to the new deployment, you can use an experimental `rpm-"
 "ostree ex apply-live` command to update the filesystem to see changes from "
 "new deployment, but it's generally expected that you use package layering "
@@ -368,7 +379,7 @@ msgstr ""
 "install` всередині `toolbox`."
 
 #. type: Plain text
-#: pages/getting-started.adoc:112
+#: pages/getting-started.adoc:114
 msgid ""
 "Package layering is generally done from the command line. However, the "
 "Software application does rely on it for installing a small number of apps "
@@ -379,24 +390,24 @@ msgstr ""
 "програм, які зараз важко встановити за допомогою пакунків Flatpak."
 
 #. type: Title ===
-#: pages/getting-started.adoc:113
+#: pages/getting-started.adoc:115
 #, no-wrap
 msgid "Installing packages"
 msgstr "Встановлення пакунків"
 
 #. type: Plain text
-#: pages/getting-started.adoc:116
+#: pages/getting-started.adoc:118
 msgid "Packages can be installed on Silverblue using:"
 msgstr "Пакунки можна встановлювати у Silverblue за допомогою такої команди:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:118
+#: pages/getting-started.adoc:120
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
 msgstr " $ rpm-ostree install <назва пакунка>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:123
+#: pages/getting-started.adoc:125
 msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
@@ -410,7 +421,7 @@ msgstr ""
 "можна скористатися у xref:toolbox.adoc[toolbox])."
 
 #. type: Plain text
-#: pages/getting-started.adoc:126
+#: pages/getting-started.adoc:128
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
@@ -420,17 +431,23 @@ msgstr ""
 "системи."
 
 #. type: Title ===
-#: pages/getting-started.adoc:127
+#: pages/getting-started.adoc:129
 #, no-wrap
 msgid "Replacing packages"
 msgstr "Заміна пакунків"
 
 #. type: Plain text
-#: pages/getting-started.adoc:131
+#: pages/getting-started.adoc:135
+#, fuzzy
+#| msgid ""
+#| "In some scenarios, you may want to test out a new version of `podman` or "
+#| "`kernel` or other packages that live on the host.  The `rpm-ostree "
+#| "override` command can be used to replace a package with a different "
+#| "version.  You can download the package locally and run:"
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
-"command can be used to replace a package with a different version.  You can "
+"command can be used to replace a package with a different version. You can "
 "download the package locally and run:"
 msgstr ""
 "Іноді, може виникати потреба у тестуванні нової версії `podman`, `ядра` або "
@@ -440,13 +457,13 @@ msgstr ""
 "віддати таку команду:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:133
+#: pages/getting-started.adoc:137
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
 msgstr " $ rpm-ostree override replace <шлях до пакунка>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:135
+#: pages/getting-started.adoc:140
 msgid ""
 "Or you can override packages without downloading using links from koji or "
 "bodhi. For example:"
@@ -455,17 +472,13 @@ msgstr ""
 "koji або bodhi. Приклад:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:137
+#: pages/getting-started.adoc:142
 #, no-wrap
 msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
-msgstr ""
-" $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/"
-"podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs."
-"fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1"
-".fc34.x86_64.rpm\n"
+msgstr " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:139
+#: pages/getting-started.adoc:146
 msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
@@ -476,7 +489,7 @@ msgstr ""
 "шарі, але не з'являтимуться у завантаженій кореневій файловій системі."
 
 #. type: Plain text
-#: pages/getting-started.adoc:142
+#: pages/getting-started.adoc:149
 msgid ""
 "Removing and replacing packages using package layering is not generally "
 "recommended. For more information, see the https://coreos.github.io/rpm-"

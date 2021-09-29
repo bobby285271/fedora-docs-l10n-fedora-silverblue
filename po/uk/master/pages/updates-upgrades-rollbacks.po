@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-03 22:13+0000\n"
+"POT-Creation-Date: 2021-09-29 22:01+0000\n"
 "PO-Revision-Date: 2021-09-18 05:04+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
-"\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
+">\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -117,7 +117,7 @@ msgstr ""
 "Silverblue до нової основної версії можна за допомогою команди `ostree`."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:39
+#: pages/updates-upgrades-rollbacks.adoc:40
 msgid ""
 "First, verify the branch is available. You can print all available branches "
 "with this command:"
@@ -126,13 +126,13 @@ msgstr ""
 "гілки за допомогою такої команди:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:41
+#: pages/updates-upgrades-rollbacks.adoc:42
 #, no-wrap
 msgid " $ ostree remote refs fedora\n"
 msgstr " $ ostree remote refs fedora\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:44
+#: pages/updates-upgrades-rollbacks.adoc:45
 msgid ""
 "After you verify the name of your branch, you are ready to proceed. For "
 "example, to upgrade to Silverblue 33, the command is:"
@@ -142,7 +142,7 @@ msgstr ""
 "такою командою:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:46
+#: pages/updates-upgrades-rollbacks.adoc:49
 msgid ""
 "Currently, the default remote for Silverblue 34 is named `fedora`. If this "
 "is not the case for your system, you can find out the remote name by "
@@ -153,13 +153,13 @@ msgstr ""
 "допомогою такої команди: `ostree remote list`."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:48
+#: pages/updates-upgrades-rollbacks.adoc:51
 #, no-wrap
 msgid " $ rpm-ostree rebase fedora:fedora/34/x86_64/silverblue\n"
 msgstr " $ rpm-ostree rebase fedora:fedora/34/x86_64/silverblue\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:51
+#: pages/updates-upgrades-rollbacks.adoc:54
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
@@ -169,13 +169,13 @@ msgstr ""
 "просто завантажити нову систему."
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:53
+#: pages/updates-upgrades-rollbacks.adoc:56
 #, no-wrap
 msgid "Rolling back"
 msgstr "Відновлення попередньої версії"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:59
+#: pages/updates-upgrades-rollbacks.adoc:62
 msgid ""
 "Silverblue keeps a record of the previous OS version, which can be switched "
 "to instead of the latest version. While this shouldn't usually be necessary, "
@@ -190,12 +190,12 @@ msgstr ""
 "потреба, яку пов'язано із розробкою програмного забезпечення."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:61
+#: pages/updates-upgrades-rollbacks.adoc:64
 msgid "There are two ways to roll back to the previous version:"
 msgstr "Існує два способи повернення до попередньої версії:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:65
+#: pages/updates-upgrades-rollbacks.adoc:68
 msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
@@ -206,7 +206,7 @@ msgstr ""
 "попередньої версії у меню завантаження (яке часто називають меню grub)."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:67
+#: pages/updates-upgrades-rollbacks.adoc:70
 msgid ""
 "Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
@@ -216,7 +216,7 @@ msgstr ""
 "rollback`."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:70
+#: pages/updates-upgrades-rollbacks.adoc:73
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update. Updating will undo the rollback, so should be avoided if "

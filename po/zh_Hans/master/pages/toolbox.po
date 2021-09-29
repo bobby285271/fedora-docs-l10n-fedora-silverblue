@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-06-17 21:56+0000\n"
+"POT-Creation-Date: 2021-09-29 22:01+0000\n"
 "PO-Revision-Date: 2021-06-23 06:04+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -556,14 +556,15 @@ msgstr ""
 "toolbox[Toolbox 在 GitHub 上的页面] 。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:213
+#: pages/toolbox.adoc:212
 msgid ""
 "To get in touch with toolbox users and developers, use https://discussion."
 "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "
 "channel on https://libera.chat/[Libera]."
 msgstr ""
-"要联系 Toolbox 用户和开发者，可以前往 https://discussion.fedoraproject.org/[Fedora 的 "
-"Discourse 论坛] ，或者加入 https://libera.chat/[Libera] 的 #silverblue IRC 频道。"
+"要联系 Toolbox 用户和开发者，可以前往 https://discussion.fedoraproject.org/"
+"[Fedora 的 Discourse 论坛] ，或者加入 https://libera.chat/[Libera] 的 "
+"#silverblue IRC 频道。"
 
 #~ msgid ""
 #~ "Using toolbox containers to install development tools offers a number of "

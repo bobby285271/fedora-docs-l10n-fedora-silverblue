@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-09-29 22:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -48,7 +48,7 @@ msgid ""
 "https://ostreedev.github.io/ostree/[ostree] is the core technology that is "
 "used to compose, deploy and update Silverblue. ostree operates in a similar "
 "manner to a version control system, but it operates on entire filesystem "
-"trees.  It is often described as “Git for operating system binaries”."
+"trees. It is often described as “Git for operating system binaries”."
 msgstr ""
 
 #. type: Plain text
@@ -140,7 +140,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/technical-information.adoc:57
+#: pages/technical-information.adoc:56
 msgid ""
 "For a more detailed explanation of Silverblue's filesystem layout, refer to "
 "the excellent https://ostreedev.github.io/ostree/adapting-existing/"

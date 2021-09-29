@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-03 22:13+0000\n"
+"POT-Creation-Date: 2021-09-29 22:01+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -113,20 +113,20 @@ msgstr ""
 "到 Fedora 33）。当然，你也可以使用 `ostree` 命令完成这一升级。"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:39
+#: pages/updates-upgrades-rollbacks.adoc:40
 msgid ""
 "First, verify the branch is available. You can print all available branches "
 "with this command:"
 msgstr "首先，确认你需要的分支是可用的。要列出所有可用的分支，执行："
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:41
+#: pages/updates-upgrades-rollbacks.adoc:42
 #, no-wrap
 msgid " $ ostree remote refs fedora\n"
 msgstr " $ ostree remote refs fedora\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:44
+#: pages/updates-upgrades-rollbacks.adoc:45
 msgid ""
 "After you verify the name of your branch, you are ready to proceed. For "
 "example, to upgrade to Silverblue 33, the command is:"
@@ -134,7 +134,7 @@ msgstr ""
 "在确认分支的名称后，就可以继续了。假设你希望升级到 Silverblue 33，那么执行："
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:46
+#: pages/updates-upgrades-rollbacks.adoc:49
 #, fuzzy
 #| msgid ""
 #| "Currently, the default remote for Silverblue 33 is named `fedora`. If "
@@ -149,14 +149,14 @@ msgstr ""
 "你可以使用 `ostree remote list` 查看系统的远程来源名称。"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:48
+#: pages/updates-upgrades-rollbacks.adoc:51
 #, fuzzy, no-wrap
 #| msgid " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
 msgid " $ rpm-ostree rebase fedora:fedora/34/x86_64/silverblue\n"
 msgstr " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:51
+#: pages/updates-upgrades-rollbacks.adoc:54
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
@@ -165,13 +165,13 @@ msgstr ""
 "可以启动新系统。"
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:53
+#: pages/updates-upgrades-rollbacks.adoc:56
 #, no-wrap
 msgid "Rolling back"
 msgstr "回滚"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:59
+#: pages/updates-upgrades-rollbacks.adoc:62
 msgid ""
 "Silverblue keeps a record of the previous OS version, which can be switched "
 "to instead of the latest version. While this shouldn't usually be necessary, "
@@ -182,12 +182,12 @@ msgstr ""
 "我们用不上这一特性，但当更新或版本间升级出现问题，回滚功能就会派上用场。"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:61
+#: pages/updates-upgrades-rollbacks.adoc:64
 msgid "There are two ways to roll back to the previous version:"
 msgstr "回滚到旧版本有两种方法："
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:65
+#: pages/updates-upgrades-rollbacks.adoc:68
 msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
@@ -197,7 +197,7 @@ msgstr ""
 "导菜单）中选择旧版系统就可以了。"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:67
+#: pages/updates-upgrades-rollbacks.adoc:70
 msgid ""
 "Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
@@ -206,7 +206,7 @@ msgstr ""
 "命令。"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:70
+#: pages/updates-upgrades-rollbacks.adoc:73
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update. Updating will undo the rollback, so should be avoided if "

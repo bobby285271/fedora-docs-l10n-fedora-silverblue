@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-09-29 22:01+0000\n"
 "PO-Revision-Date: 2020-09-08 22:50+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -26,7 +26,7 @@ msgid "Installing Silverblue"
 msgstr "Встановлення Silverblue"
 
 #. type: Plain text
-#: pages/installation.adoc:8
+#: pages/installation.adoc:7
 msgid ""
 "Fedora Silverblue can be installed in the same way as Fedora Workstation, "
 "and the official Fedora installation guide can be followed for your Fedora "
@@ -39,13 +39,13 @@ msgstr ""
 "на https://docs.fedoraproject.org/en-US/docs/[сайті документації Fedora]."
 
 #. type: Title ==
-#: pages/installation.adoc:10
+#: pages/installation.adoc:9
 #, no-wrap
 msgid "Before you begin"
 msgstr "Перш ніж ви почнете"
 
 #. type: Plain text
-#: pages/installation.adoc:15
+#: pages/installation.adoc:14
 msgid ""
 "As with installing any new operating system, it is important to back up any "
 "data that you want to save before starting, and have a clear understanding "
@@ -56,7 +56,7 @@ msgstr ""
 "наслідків усіх ваших дій."
 
 #. type: Plain text
-#: pages/installation.adoc:20
+#: pages/installation.adoc:19
 msgid ""
 "Silverblue is intended to provide the full range of capabilities that you "
 "would expect from an installation of Fedora Workstation. However, there are "
@@ -68,7 +68,7 @@ msgstr ""
 "може бути встановлено, і тому, як працює середовище операційної системи."
 
 #. type: Plain text
-#: pages/installation.adoc:26
+#: pages/installation.adoc:25
 msgid ""
 "It is therefore recommended that you read this user guide before deciding to "
 "install Silverblue. It is also recommended that you determine whether "
@@ -84,23 +84,26 @@ msgstr ""
 "завантажити із флешки, скориставшись Fedora Media Writer."
 
 #. type: Title ==
-#: pages/installation.adoc:28
+#: pages/installation.adoc:27
 #, no-wrap
 msgid "Known limitations"
 msgstr "Відомі обмеження"
 
 #. type: Plain text
-#: pages/installation.adoc:32
-#, no-wrap
+#: pages/installation.adoc:31
+#, fuzzy, no-wrap
+#| msgid ""
+#| "*Silverblue does not provide a fully functional experience for dual booting or \n"
+#| "manual partitioning.*\n"
 msgid ""
-"*Silverblue does not provide a fully functional experience for dual booting or \n"
+"*Silverblue does not provide a fully functional experience for dual booting or\n"
 "manual partitioning.*\n"
 msgstr ""
 "*У Silverblue не передбачено повноцінної можливості паралельного використання різних систем на одному комп'ютері, а також\n"
 "поділу диска вручну.*\n"
 
 #. type: Plain text
-#: pages/installation.adoc:38
+#: pages/installation.adoc:37
 msgid ""
 "It is possible to make Silverblue work for both dual boot and manual "
 "partitioning, and some guidance is provided on manual partitioning below.  "
@@ -116,13 +119,13 @@ msgstr ""
 "проблеми, з якими ви можете зіткнутися."
 
 #. type: Title ==
-#: pages/installation.adoc:40
+#: pages/installation.adoc:39
 #, no-wrap
 msgid "Getting Silverblue"
 msgstr "Отримання носіїв Silverblue"
 
 #. type: Plain text
-#: pages/installation.adoc:46
+#: pages/installation.adoc:45
 msgid ""
 "If you are using Fedora Media Writer, Silverblue should be listed as a "
 "download option. However, if it isn't, or if you want to download it "
@@ -135,7 +138,7 @@ msgstr ""
 "silverblue.fedoraproject.org/[головного сайта Silverblue]."
 
 #. type: Plain text
-#: pages/installation.adoc:49
+#: pages/installation.adoc:48
 msgid ""
 "Once you have got your copy of Silverblue, it can be installed in the usual "
 "manner. We hope that you love it!"
@@ -144,13 +147,13 @@ msgstr ""
 "звичний спосіб. Сподіваємося, система вам сподобається!"
 
 #. type: Title ==
-#: pages/installation.adoc:51
+#: pages/installation.adoc:50
 #, no-wrap
 msgid "Manual Partitioning"
 msgstr "Поділ диска вручну"
 
 #. type: Plain text
-#: pages/installation.adoc:57
+#: pages/installation.adoc:56
 msgid ""
 "As described above, there are known issues with manual partitioning on "
 "Silverblue, and it should be used with caution. The following notes are "
@@ -164,52 +167,56 @@ msgstr ""
 "розділи."
 
 #. type: Plain text
-#: pages/installation.adoc:60
+#: pages/installation.adoc:59
+#, fuzzy
+#| msgid ""
+#| "With Silverblue, only certain mounts can be manually specified as "
+#| "partitions. These include:"
 msgid ""
 "With Silverblue, only certain mounts can be manually specified as "
-"partitions. These include:"
+"partitions.  These include:"
 msgstr ""
 "У Silverblue як каталоги системи можна вказувати лише певні змонтовані "
 "розділи. Це зокрема:"
 
 #. type: Plain text
-#: pages/installation.adoc:62
+#: pages/installation.adoc:61
 msgid "`/boot`"
 msgstr "`/boot`"
 
 #. type: Plain text
-#: pages/installation.adoc:63
+#: pages/installation.adoc:62
 msgid "`/var`"
 msgstr "`/var`"
 
 #. type: Plain text
-#: pages/installation.adoc:64
+#: pages/installation.adoc:63
 msgid "Subdirectories under `/var`, including:"
 msgstr "Підкаталоги у каталозі `/var`, зокрема:"
 
 #. type: Plain text
-#: pages/installation.adoc:65
+#: pages/installation.adoc:64
 msgid "`/var/home` (Silverblue has a symlink from `/home` to `/var/home`)"
 msgstr ""
 "`/var/home` (у Silverblue `/home` є символічним посиланням на `/var/home`)"
 
 #. type: Plain text
-#: pages/installation.adoc:66
+#: pages/installation.adoc:65
 msgid "`/var/log`"
 msgstr "`/var/log`"
 
 #. type: Plain text
-#: pages/installation.adoc:67
+#: pages/installation.adoc:66
 msgid "`/var/containers`"
 msgstr "`/var/containers`"
 
 #. type: Plain text
-#: pages/installation.adoc:68
+#: pages/installation.adoc:67
 msgid "The root filesystem: `/`"
 msgstr "Коренева файлова система: `/`"
 
 #. type: Plain text
-#: pages/installation.adoc:72
+#: pages/installation.adoc:70
 msgid ""
 "The Fedora installer is not aware of these restrictions and will accept "
 "custom partitions without error, even if they are incompatible with "
@@ -220,19 +227,19 @@ msgstr ""
 "якщо він є несумісним із Silverblue."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/installation.adoc:73
+#: pages/installation.adoc:71
 #, no-wrap
 msgid "Partitioning Complete"
 msgstr "Завершення поділу на розділи"
 
 #. type: Target for macro image
-#: pages/installation.adoc:73
+#: pages/installation.adoc:71
 #, no-wrap
 msgid "faw-manual-partition-complete.png"
 msgstr "faw-manual-partition-complete.png"
 
 #. type: Plain text
-#: pages/installation.adoc:77
+#: pages/installation.adoc:75
 msgid ""
 "The above screenshot shows a typical configuration with manual partitioning, "
 "with partitions for `/boot`, `/`, `swap` and `/var/home`."
@@ -241,7 +248,7 @@ msgstr ""
 "вручну, де є розділи для `/boot`, `/`, `swap` та `/var/home`."
 
 #. type: Plain text
-#: pages/installation.adoc:80
+#: pages/installation.adoc:78
 msgid ""
 "Manual partitioning on Silverblue can be done with `Btrfs`, https://en."
 "wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], as well as "
