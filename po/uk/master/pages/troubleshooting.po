@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-23 21:50+0000\n"
+"POT-Creation-Date: 2021-11-21 22:01+0000\n"
 "PO-Revision-Date: 2021-04-25 04:02+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -155,8 +155,7 @@ msgid ""
 " # rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1\n"
 msgstr ""
 " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
-" # rpm-ostree kargs --append=rd.driver.blacklist=nouveau --"
-"append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1\n"
+" # rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:50
@@ -683,21 +682,19 @@ msgid "Cleanup"
 msgstr "Виконайте очищення системи"
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:206
-#, no-wrap
-msgid "$ rpm-ostree status -b | grep BaseCommit\n"
-msgstr "$ rpm-ostree status -b | grep BaseCommit\n"
-
-#. type: Plain text
-#: pages/troubleshooting.adoc:207
-#, no-wrap
-msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-msgstr "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-
-#. type: Plain text
 #: pages/troubleshooting.adoc:214
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
+#| "$ sudo ostree fsck --delete\n"
+#| "$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
+#| "$ sudo restorecon -Rv /var\n"
+#| "$ sudo restorecon -Rv /etc\n"
+#| "$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
+#| "$ sudo reboot\n"
 msgid ""
+"$ rpm-ostree status -b | grep BaseCommit\n"
+"BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 "$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
 "$ sudo ostree fsck --delete\n"
 "$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
@@ -731,6 +728,12 @@ msgid ""
 msgstr ""
 "Подробиці можна знайти у описі цього внеску до сховища основного коду: "
 "https://github.com/ostreedev/ostree/issues/1265#issuecomment-484557615"
+
+#~ msgid "$ rpm-ostree status -b | grep BaseCommit\n"
+#~ msgstr "$ rpm-ostree status -b | grep BaseCommit\n"
+
+#~ msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+#~ msgstr "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 
 #~ msgid " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
 #~ msgstr " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"

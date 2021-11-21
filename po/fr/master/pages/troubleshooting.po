@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-23 21:50+0000\n"
+"POT-Creation-Date: 2021-11-21 22:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -549,21 +549,11 @@ msgid "Cleanup"
 msgstr ""
 
 #. type: Plain text
-#: pages/troubleshooting.adoc:206
-#, no-wrap
-msgid "$ rpm-ostree status -b | grep BaseCommit\n"
-msgstr ""
-
-#. type: Plain text
-#: pages/troubleshooting.adoc:207
-#, no-wrap
-msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-msgstr ""
-
-#. type: Plain text
 #: pages/troubleshooting.adoc:214
 #, no-wrap
 msgid ""
+"$ rpm-ostree status -b | grep BaseCommit\n"
+"BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 "$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
 "$ sudo ostree fsck --delete\n"
 "$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"

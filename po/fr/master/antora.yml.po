@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2021-11-21 22:01+0000\n"
 "PO-Revision-Date: 2020-08-16 22:36+0000\n"
 "Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
@@ -17,13 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.1.1\n"
 
-#. type: Array Element
-#: >nav
+#. type: Array Element: nav
+#: antora.yml:0
 #, no-wrap
 msgid "modules/ROOT/nav.adoc"
 msgstr "modules/ROOT/nav.adoc"
 
-#. type: Hash Value - Key: title
+#. type: Hash Value: title
+#: antora.yml:0
 #, no-wrap
 msgid "Fedora Silverblue"
 msgstr "Fedora Silverblue"
