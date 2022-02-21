@@ -1,0 +1,314 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-02-21 22:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/tips-and-tricks.adoc:1
+#, no-wrap
+msgid "Tips and Tricks"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/tips-and-tricks.adoc:3
+#, no-wrap
+msgid "Working with Toolbx"
+msgstr ""
+
+#. type: Title ===
+#: ./pages/tips-and-tricks.adoc:5
+#, no-wrap
+msgid "Finding out if you are currently in a Toolbx container"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:11
+msgid ""
+"If you frequently make use of Toolbx to perform various tasks and use "
+"multiple Toolbx containers it can be hard to keep track of whether you are "
+"currently executing commands on the host or in a Toolbx "
+"container. Furthermore, there is currently no command to tell you in which "
+"Toolbx container you are working."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:14
+msgid ""
+"To alleviate this, you can add the following shell alias at the end of your "
+"`~/.bashrc`:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:16
+#, no-wrap
+msgid ""
+"  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP "
+"\"(?<=name=\\\")[^\\\";]+\" /run/.containerenv'\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:19
+msgid ""
+"When you open a new shell, you now have access to the new command "
+"`istoolbx`.  This will behave as follows"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:21
+msgid "When run from the host, returns an exit code of 1"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:23
+msgid ""
+"When run from a Toolbx container, returns an exit code of 0 and prints the "
+"current Toolbx containers name to the console"
+msgstr ""
+
+#. type: Title ===
+#: ./pages/tips-and-tricks.adoc:26
+#, no-wrap
+msgid "Running applications from inside Toolbx on the host"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:32
+msgid ""
+"This can be necessary if you want to interact with tools available from the "
+"host, for example `podman`, `nmcli` or `rpm-ostree` without leaving the "
+"Toolbx container in between. You can use `flatpak-spawn`, included in the "
+"base installation for this:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:34
+#, no-wrap
+msgid "  $ flatpak-spawn --host podman --help\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:37
+msgid ""
+"If the application you want to call requires `sudo` access, the `-S` option "
+"must be supplied to `sudo` like below:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:39
+#, no-wrap
+msgid "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:44
+msgid ""
+"If you find yourself using commands like these frequently to access e.g. the "
+"flatpak command from inside the Toolbx container, you can create yourself a "
+"short custom wrapper script (*inside the Toolbx container*). To do this, "
+"perform the following steps:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:47
+msgid ""
+"Define the `istoolbx` alias (for convenience) by executing the command "
+"mentioned above in your terminal"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:50
+msgid ""
+"Make sure you are in a Toolbx container. If the following command doesn't "
+"produce any output, you are likely still working on the host!"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:53
+#, no-wrap
+msgid ""
+"[toolbx]$ istoolbx\n"
+"<Toolbx container name here>\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:56
+msgid ""
+"Once you have made sure you're in a Toolbx container, execute the following "
+"command:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:58
+#, no-wrap
+msgid ""
+"[toolbx]$ echo -e '#!/bin/sh\\nexec /usr/bin/flatpak-spawn --host flatpak "
+"\"$@\"' | sudo tee /usr/local/bin/flatpak 1>/dev/null && sudo chmod +x "
+"/usr/local/bin/flatpak\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:61
+msgid ""
+"You now have a `flatpak` command available that allows you to interact with "
+"`flatpak` as if you were running the command on the host."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/tips-and-tricks.adoc:63
+#, no-wrap
+msgid "Working with `ostree`/`rpm-ostree`"
+msgstr ""
+
+#. type: Title ===
+#: ./pages/tips-and-tricks.adoc:65
+#, no-wrap
+msgid "Tracking changes to the base OS"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:70
+msgid ""
+"Some directories in `ostree`-based operating systems are writable by the "
+"user, like `/etc`. You can get a quick overview of the files changed under "
+"`/etc` using the following command:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:72
+#, no-wrap
+msgid "  $ sudo ostree admin config-diff\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:74
+msgid "To get a more elaborate diff, you can use something like this:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:76
+#, no-wrap
+msgid ""
+"  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc "
+"2>/dev/null\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:79
+#, no-wrap
+msgid ""
+"This works because ostree keeps an unmodified copy of the `/etc` directory\n"
+"      under `/usr/etc`. All of your changes go to `/etc` directly.\n"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/tips-and-tricks.adoc:82
+#, no-wrap
+msgid "Working with Flatpak applications"
+msgstr ""
+
+#. type: Title ===
+#: ./pages/tips-and-tricks.adoc:84
+#, no-wrap
+msgid "Directly accessing Flatpak applications from the CLI"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:89
+msgid ""
+"The most noticable change when using Flatpak applications instead of "
+"conventional installations is that the applications cannot be directly "
+"called from the CLI any more, like so:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:92
+#, no-wrap
+msgid ""
+"  $ evince\n"
+"  bash: command not found: evince\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:94
+msgid "Instead, one can call them like this:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:96
+#, no-wrap
+msgid "  $ flatpak run org.gnome.Evince\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:99
+msgid ""
+"In addition, most Flatpak applications export their internal binaries under "
+"an installation-dependent location:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:102
+msgid ""
+"For Flatpak applications installed from `system` remotes, these can be found "
+"under `/var/lib/flatpak/exports/bin/`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:104
+msgid ""
+"For Flatpak applications installed from `user` remotes, these can be found "
+"under `$HOME/.local/share/flatpak/exports/bin/`"
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/tips-and-tricks.adoc:109
+msgid ""
+"If you're unsure to which installation a Flatpak application belongs, you "
+"can use this command to print it out:"
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/tips-and-tricks.adoc:111
+#, no-wrap
+msgid "  $ flatpak list --app --columns=name,installation\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:114
+msgid "You can then either add these directories to your `$PATH`:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:116
+#, no-wrap
+msgid "  $ org.gnome.Evince\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:118
+msgid ""
+"or setup shell `alias`es as needed to make them available to the CLI like "
+"so:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/tips-and-tricks.adoc:122
+#, no-wrap
+msgid ""
+"  $ alias evince=\"flatpak run org.gnome.Evince\"\n"
+"    # or alias evince=\"org.gnome.Evince\"\n"
+"  $ evince\n"
+msgstr ""
