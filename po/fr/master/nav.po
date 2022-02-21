@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-02 21:54+0000\n"
+"POT-Creation-Date: 2022-02-21 22:01+0000\n"
 "PO-Revision-Date: 2020-08-16 22:36+0000\n"
 "Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
@@ -59,6 +59,13 @@ msgid "xref:troubleshooting.adoc[Troubleshooting]"
 msgstr "xref:troubleshooting.adoc[Dépannage]"
 
 #. type: Plain text
-#: nav.adoc:9
+#: nav.adoc:10
 msgid "xref:faq.adoc[FAQ]"
 msgstr "xref:faq.adoc[Foire aux questions]"
+
+#. type: Plain text
+#: nav.adoc:10
+#, fuzzy
+#| msgid "xref:reading-and-resources.adoc[Reading and Resources]"
+msgid "xref:tips-and-tricks.adoc[Tips and Tricks]"
+msgstr "xref:reading-and-resources.adoc[Lectures et ressources]"
