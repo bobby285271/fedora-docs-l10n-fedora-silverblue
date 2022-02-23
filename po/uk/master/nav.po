@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-02-21 22:01+0000\n"
-"PO-Revision-Date: 2020-02-26 22:43+0000\n"
+"PO-Revision-Date: 2022-02-23 12:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/nav/uk/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #. type: Plain text
 #: nav.adoc:2
@@ -67,7 +67,5 @@ msgstr "xref:faq.adoc[Поширені питання та відповіді н
 
 #. type: Plain text
 #: nav.adoc:10
-#, fuzzy
-#| msgid "xref:reading-and-resources.adoc[Reading and Resources]"
 msgid "xref:tips-and-tricks.adoc[Tips and Tricks]"
-msgstr "xref:reading-and-resources.adoc[Читання і ресурси]"
+msgstr "xref:tips-and-tricks.adoc[Підказки і настанови]"

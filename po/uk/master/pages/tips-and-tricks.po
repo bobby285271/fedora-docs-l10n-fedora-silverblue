@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-02-21 22:01+0000\n"
-"PO-Revision-Date: 2022-02-23 07:25+0000\n"
+"PO-Revision-Date: 2022-02-23 12:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestips-and-tricks/uk/>\n"
@@ -45,6 +45,11 @@ msgid ""
 "container. Furthermore, there is currently no command to tell you in which "
 "Toolbx container you are working."
 msgstr ""
+"Якщо ви часто користуєтеся Toolbx для виконання різноманітних завдань і "
+"використовуєте декілька контейнерів Toolbx, стає важко стежити за тим, "
+"виконуєте ви команди в основній системі чи у контейнері Toolbx. Крім того, у "
+"поточній версії немає команди, яка б повідомила вам, у якому з контейнерів "
+"Toolbx ви працюєте."
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:14
@@ -52,6 +57,8 @@ msgid ""
 "To alleviate this, you can add the following shell alias at the end of your "
 "`~/.bashrc`:"
 msgstr ""
+"Для полегшення виконання цього завдання ви можете додати таку альтернативу "
+"командної оболонки наприкінці вашого файла `~/.bashrc`:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:16
@@ -60,6 +67,8 @@ msgid ""
 "  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP "
 "\"(?<=name=\\\")[^\\\";]+\" /run/.containerenv'\n"
 msgstr ""
+"  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP \"(?<=name=\\\")[^"
+"\\\";]+\" /run/.containerenv'\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:19
@@ -67,11 +76,13 @@ msgid ""
 "When you open a new shell, you now have access to the new command "
 "`istoolbx`.  This will behave as follows"
 msgstr ""
+"Коли ви відкриєте нову командну оболонку, у вас буде доступ до нової команди "
+"— `istoolbx`.  Ця команда поводитиметься так:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:21
 msgid "When run from the host, returns an exit code of 1"
-msgstr ""
+msgstr "Якщо команду виконано з основної системи, вона поверне код виходу 1"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:23
@@ -79,12 +90,14 @@ msgid ""
 "When run from a Toolbx container, returns an exit code of 0 and prints the "
 "current Toolbx containers name to the console"
 msgstr ""
+"Якщо команду запущено з контейнера Toolbx, буде повернуто код виходу 0 і "
+"виведено до консолі назву поточного контейнера Toolbx"
 
 #. type: Title ===
 #: ./pages/tips-and-tricks.adoc:26
 #, no-wrap
 msgid "Running applications from inside Toolbx on the host"
-msgstr ""
+msgstr "Запуск програм з Toolbx в основній системі"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:32
@@ -94,12 +107,16 @@ msgid ""
 "Toolbx container in between. You can use `flatpak-spawn`, included in the "
 "base installation for this:"
 msgstr ""
+"Потреба у запуску може виникнути, якщо ви хочете взаємодіяти із програмними "
+"інструментами основної системи, наприклад `podman`, `nmcli` або `rpm-ostree`"
+", не полишаючи контейнера Toolbx. Ви можете скористатися для виконання цього "
+"завдання програмою `flatpak-spawn`, яку включено до базового пакунка:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:34
 #, no-wrap
 msgid "  $ flatpak-spawn --host podman --help\n"
-msgstr ""
+msgstr "  $ flatpak-spawn --host podman --help\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:37
@@ -112,7 +129,7 @@ msgstr ""
 #: ./pages/tips-and-tricks.adoc:39
 #, no-wrap
 msgid "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
-msgstr ""
+msgstr "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:44
@@ -144,6 +161,8 @@ msgid ""
 "[toolbx]$ istoolbx\n"
 "<Toolbx container name here>\n"
 msgstr ""
+"[toolbx]$ istoolbx\n"
+"<Тут буде назва контейнера Toolbx>\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:56
@@ -160,6 +179,9 @@ msgid ""
 "\"$@\"' | sudo tee /usr/local/bin/flatpak 1>/dev/null && sudo chmod +x "
 "/usr/local/bin/flatpak\n"
 msgstr ""
+"[toolbx]$ echo -e '#!/bin/sh\\n"
+"exec /usr/bin/flatpak-spawn --host flatpak \"$@\"' | sudo tee /usr/local/bin/"
+"flatpak 1>/dev/null && sudo chmod +x /usr/local/bin/flatpak\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:61
@@ -172,13 +194,13 @@ msgstr ""
 #: ./pages/tips-and-tricks.adoc:63
 #, no-wrap
 msgid "Working with `ostree`/`rpm-ostree`"
-msgstr ""
+msgstr "Робота з `ostree`/`rpm-ostree`"
 
 #. type: Title ===
 #: ./pages/tips-and-tricks.adoc:65
 #, no-wrap
 msgid "Tracking changes to the base OS"
-msgstr ""
+msgstr "Стеження за змінами у базовій операційній системі"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:70
@@ -192,7 +214,7 @@ msgstr ""
 #: ./pages/tips-and-tricks.adoc:72
 #, no-wrap
 msgid "  $ sudo ostree admin config-diff\n"
-msgstr ""
+msgstr "  $ sudo ostree admin config-diff\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:74
@@ -206,6 +228,8 @@ msgid ""
 "  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc "
 "2>/dev/null\n"
 msgstr ""
+"  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc "
+"2>/dev/null\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:79
@@ -219,13 +243,13 @@ msgstr ""
 #: ./pages/tips-and-tricks.adoc:82
 #, no-wrap
 msgid "Working with Flatpak applications"
-msgstr ""
+msgstr "Робота з програмами Flatpak"
 
 #. type: Title ===
 #: ./pages/tips-and-tricks.adoc:84
 #, no-wrap
 msgid "Directly accessing Flatpak applications from the CLI"
-msgstr ""
+msgstr "Безпосередній доступ до програм Flatpak з інтерфейсу командного рядка"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:89
@@ -242,17 +266,19 @@ msgid ""
 "  $ evince\n"
 "  bash: command not found: evince\n"
 msgstr ""
+"  $ evince\n"
+"  bash: команду не знайдено: evince\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:94
 msgid "Instead, one can call them like this:"
-msgstr ""
+msgstr "Замість цього, виклик можна здійснити так:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:96
 #, no-wrap
 msgid "  $ flatpak run org.gnome.Evince\n"
-msgstr ""
+msgstr "  $ flatpak run org.gnome.Evince\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:99
@@ -286,7 +312,7 @@ msgstr ""
 #: ./pages/tips-and-tricks.adoc:111
 #, no-wrap
 msgid "  $ flatpak list --app --columns=name,installation\n"
-msgstr ""
+msgstr "  $ flatpak list --app --columns=name,installation\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:114
@@ -297,7 +323,7 @@ msgstr ""
 #: ./pages/tips-and-tricks.adoc:116
 #, no-wrap
 msgid "  $ org.gnome.Evince\n"
-msgstr ""
+msgstr "  $ org.gnome.Evince\n"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:118
@@ -314,3 +340,6 @@ msgid ""
 "    # or alias evince=\"org.gnome.Evince\"\n"
 "  $ evince\n"
 msgstr ""
+"  $ alias evince=\"flatpak run org.gnome.Evince\"\n"
+"    # або alias evince=\"org.gnome.Evince\"\n"
+"  $ evince\n"
