@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-02-21 22:01+0000\n"
-"PO-Revision-Date: 2022-02-23 12:16+0000\n"
+"PO-Revision-Date: 2022-02-24 18:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestips-and-tricks/uk/>\n"
@@ -124,6 +124,8 @@ msgid ""
 "If the application you want to call requires `sudo` access, the `-S` option "
 "must be supplied to `sudo` like below:"
 msgstr ""
+"Якщо програмі, яку ви хочете викликати, потрібен доступ `sudo`, слід додати "
+"параметр `-S` до команди `sudo`, ось так:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:39
@@ -139,6 +141,10 @@ msgid ""
 "short custom wrapper script (*inside the Toolbx container*). To do this, "
 "perform the following steps:"
 msgstr ""
+"Якщо ви використовуєте команди, подібні до наведеної вище, часто для "
+"доступу, наприклад, до команди flatpak з контейнера Toolbx, ви можете "
+"створити самі короткий нетиповий скрипт-обгортку (*у контейнері Toolbx*). "
+"Для цього виконайте такі кроки:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:47
@@ -146,6 +152,8 @@ msgid ""
 "Define the `istoolbx` alias (for convenience) by executing the command "
 "mentioned above in your terminal"
 msgstr ""
+"Визначте альтернативу `istoolbx` (для зручності) за допомогою згаданої вище "
+"команди у вашому терміналі"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:50
@@ -153,6 +161,8 @@ msgid ""
 "Make sure you are in a Toolbx container. If the following command doesn't "
 "produce any output, you are likely still working on the host!"
 msgstr ""
+"Переконайтеся, що ви перебуваєте у контейнері Toolbx. Якщо наступна команда "
+"нічого не виводить, ймовірно, ви усе ще перебуваєте в основній системі!"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:53
@@ -169,7 +179,7 @@ msgstr ""
 msgid ""
 "Once you have made sure you're in a Toolbx container, execute the following "
 "command:"
-msgstr ""
+msgstr "Щойно ви опинитеся у контейнері Toolbx, віддайте таку команду:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:58
@@ -189,6 +199,8 @@ msgid ""
 "You now have a `flatpak` command available that allows you to interact with "
 "`flatpak` as if you were running the command on the host."
 msgstr ""
+"Тепер вам доступна команда `flatpak`, за допомогою якої ви можете "
+"взаємодіяти з `flatpak` так, наче ви віддаєте команду в основній системі."
 
 #. type: Title ==
 #: ./pages/tips-and-tricks.adoc:63
@@ -209,6 +221,9 @@ msgid ""
 "user, like `/etc`. You can get a quick overview of the files changed under "
 "`/etc` using the following command:"
 msgstr ""
+"Деякі з каталогів операційних систем на основі `ostree` придатні до запису "
+"для звичайного користувача, зокрема `/etc`. Ви можете переглянути список "
+"файлів, які було змінено у `/etc`, за допомогою такої команди:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:72
@@ -220,6 +235,7 @@ msgstr "  $ sudo ostree admin config-diff\n"
 #: ./pages/tips-and-tricks.adoc:74
 msgid "To get a more elaborate diff, you can use something like this:"
 msgstr ""
+"Щоб отримати докладніший опис відмінностей, ви можете віддати таку команду:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:76
@@ -238,6 +254,9 @@ msgid ""
 "This works because ostree keeps an unmodified copy of the `/etc` directory\n"
 "      under `/usr/etc`. All of your changes go to `/etc` directly.\n"
 msgstr ""
+"Це працює, оскільки ostree зберігає незмінену копії каталогу `/etc` у\n"
+"      `/usr/etc`. Усі внесені вами зміни записуються до `/etc` безпосередньо."
+"\n"
 
 #. type: Title ==
 #: ./pages/tips-and-tricks.adoc:82
@@ -258,6 +277,9 @@ msgid ""
 "conventional installations is that the applications cannot be directly "
 "called from the CLI any more, like so:"
 msgstr ""
+"Найпомітнішою відмінністю користування програмами Flatpak від користування "
+"звичайними програмами є те, що такі програми не можна безпосередньо "
+"викликати з інтерфейсу командного рядка, ось так:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:92
@@ -286,6 +308,8 @@ msgid ""
 "In addition, most Flatpak applications export their internal binaries under "
 "an installation-dependent location:"
 msgstr ""
+"Крім того, більшість програм Flatpak експортують власні двійкові внутрішні "
+"файли каталозі, який залежить від каталогу встановлення:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:102
@@ -293,6 +317,8 @@ msgid ""
 "For Flatpak applications installed from `system` remotes, these can be found "
 "under `/var/lib/flatpak/exports/bin/`"
 msgstr ""
+"Для програм Flatpak, які встановлено з віддалених сховищ `system`, ці "
+"каталоги можна знайти у `/var/lib/flatpak/exports/bin/`"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:104
@@ -300,6 +326,8 @@ msgid ""
 "For Flatpak applications installed from `user` remotes, these can be found "
 "under `$HOME/.local/share/flatpak/exports/bin/`"
 msgstr ""
+"Для програм Flatpak, які встановлено з віддалених сховищ `user`, ці каталоги "
+"можна знайти у `$HOME/.local/share/flatpak/exports/bin/`"
 
 #. type: delimited block =
 #: ./pages/tips-and-tricks.adoc:109
@@ -307,6 +335,8 @@ msgid ""
 "If you're unsure to which installation a Flatpak application belongs, you "
 "can use this command to print it out:"
 msgstr ""
+"Якщо ви не певні, до якого встановлення належить програма Flatpak, ви можете "
+"скористатися такою командою для виведення потрібних даних:"
 
 #. type: delimited block =
 #: ./pages/tips-and-tricks.adoc:111
@@ -317,7 +347,7 @@ msgstr "  $ flatpak list --app --columns=name,installation\n"
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:114
 msgid "You can then either add these directories to your `$PATH`:"
-msgstr ""
+msgstr "Ви можете або додати ці каталоги до змінної `$PATH`:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:116
@@ -331,6 +361,8 @@ msgid ""
 "or setup shell `alias`es as needed to make them available to the CLI like "
 "so:"
 msgstr ""
+"або налаштувати `alias` командної оболонки так, щоб вони стали доступними "
+"інтерфейсу командного рядка, ось так:"
 
 #. type: Plain text
 #: ./pages/tips-and-tricks.adoc:122
