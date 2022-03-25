@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-04 22:00+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2020-08-16 22:36+0000\n"
 "Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
@@ -26,7 +26,7 @@ msgstr ""
 #. type: Plain text
 #: pages/toolbox.adoc:7
 msgid ""
-"As an immutable host, Silverblue is an excellent platform for container-"
+"As an immutable host, {variant-name} is an excellent platform for container-"
 "based development and, for working with containers, https://buildah.io/"
 "[buildah] and https://podman.io/[podman] are recommended."
 msgstr ""
@@ -34,7 +34,7 @@ msgstr ""
 #. type: Plain text
 #: pages/toolbox.adoc:11
 msgid ""
-"Silverblue also comes with the https://github.com/containers/"
+"{variant-name} also comes with the https://github.com/containers/"
 "toolbox[toolbox] utility, which uses containers to provide an environment "
 "where development tools and libraries can be installed and used."
 msgstr ""
@@ -50,10 +50,9 @@ msgstr ""
 msgid ""
 "Toolbox makes it easy to use a containerized environment for everyday "
 "software development and debugging. On immutable operating systems, like "
-"https://silverblue.fedoraproject.org/[Fedora Silverblue], it provides a "
-"familiar package-based environment in which tools and libraries can be "
-"installed and used. However, toolbox can also be used on package-based "
-"systems."
+"{website}[Fedora {variant-name}], it provides a familiar package-based "
+"environment in which tools and libraries can be installed and used. However, "
+"toolbox can also be used on package-based systems."
 msgstr ""
 
 #. type: Plain text
@@ -173,14 +172,14 @@ msgstr ""
 #. type: Title ===
 #: pages/toolbox.adoc:70
 #, no-wrap
-msgid "Fedora Silverblue"
-msgstr "Fedora Silverblue"
+msgid "Fedora {variant-name}"
+msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:74
 msgid ""
-"Toolbox is preinstalled on Fedora Silverblue 30 or newer. On older versions, "
-"it can be installed with the following command:"
+"Toolbox is preinstalled on Fedora {variant-name} 30 or newer. On older "
+"versions, it can be installed with the following command:"
 msgstr ""
 
 #. type: Plain text
@@ -505,3 +504,6 @@ msgid ""
 "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "
 "channel on https://libera.chat/[Libera]."
 msgstr ""
+
+#~ msgid "Fedora Silverblue"
+#~ msgstr "Fedora Silverblue"

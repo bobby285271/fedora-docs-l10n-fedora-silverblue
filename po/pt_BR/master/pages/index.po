@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-02-27 23:52+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -18,34 +18,42 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
-#: ./pages/index.adoc:1
-#, no-wrap
-msgid "Fedora Silverblue User Guide"
+#: pages/index.adoc:1
+#, fuzzy, no-wrap
+#| msgid "Fedora Silverblue User Guide"
+msgid "Fedora {variant-name} User Guide"
 msgstr "Guia do usuário do Fedora Silverblue"
 
 #. type: Plain text
-#: ./pages/index.adoc:4
-msgid "Welcome to the Fedora Silverblue user guide!"
+#: pages/index.adoc:4
+#, fuzzy
+#| msgid "Welcome to the Fedora Silverblue user guide!"
+msgid "Welcome to the Fedora {variant-name} user guide!"
 msgstr "Bem-vindo ao guia do usuário do Silverblue!"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/index.adoc:5
+#: pages/index.adoc:5
 #, no-wrap
-msgid "Silverblue logo"
-msgstr "Logo do Silverblue"
+msgid "{variant-name} logo"
+msgstr ""
 
 #. type: Target for macro image
-#: ./pages/index.adoc:5
+#: pages/index.adoc:5
 #, no-wrap
 msgid "silverblue-logo.svg"
 msgstr "silverblue-logo.svg"
 
 #. type: Plain text
-#: ./pages/index.adoc:10
+#: pages/index.adoc:10
+#, fuzzy
+#| msgid ""
+#| "_Fedora Silverblue_ is an immutable desktop operating system. It aims to "
+#| "be extremely stable and reliable. It also aims to be an excellent "
+#| "platform for developers and for those using container-focused workflows."
 msgid ""
-"_Fedora Silverblue_ is an immutable desktop operating system. It aims to be "
-"extremely stable and reliable. It also aims to be an excellent platform for "
-"developers and for those using container-focused workflows."
+"_Fedora {variant-name}_ is an immutable desktop operating system. It aims to "
+"be extremely stable and reliable. It also aims to be an excellent platform "
+"for developers and for those using container-focused workflows."
 msgstr ""
 "_Fedora Silverblue_ é um sistema operacional imutável de desktop. Tem como "
 "objetivo ser extremamente estável e confiável. Ele também pretende ser uma "
@@ -53,29 +61,41 @@ msgstr ""
 "trabalho com foco em contêiner."
 
 #. type: Title ==
-#: ./pages/index.adoc:12
-#, no-wrap
-msgid "Introduction to Silverblue"
+#: pages/index.adoc:12
+#, fuzzy, no-wrap
+#| msgid "Introduction to Silverblue"
+msgid "Introduction to {variant-name}"
 msgstr "Introdução ao Silverblue"
 
 #. type: Plain text
-#: ./pages/index.adoc:17
+#: pages/index.adoc:17
+#, fuzzy
+#| msgid ""
+#| "Silverblue is a variant of Fedora Workstation. It looks, feels and "
+#| "behaves like a regular desktop operating system, and the experience is "
+#| "similar to what you find with using a standard Fedora Workstation."
 msgid ""
-"Silverblue is a variant of Fedora Workstation. It looks, feels and behaves "
-"like a regular desktop operating system, and the experience is similar to "
-"what you find with using a standard Fedora Workstation."
+"{variant-name} is a variant of Fedora Workstation. It looks, feels and "
+"behaves like a regular desktop operating system, and the experience is "
+"similar to what you find with using a standard Fedora Workstation."
 msgstr ""
 "Silverblue é uma variante do Fedora Workstation. Ele se parece e se comporta "
 "como um sistema operacional de desktop normal, e a experiência é semelhante "
 "à que você encontra ao usar um Fedora Workstation padrão."
 
 #. type: Plain text
-#: ./pages/index.adoc:22
+#: pages/index.adoc:22
+#, fuzzy
+#| msgid ""
+#| "However, unlike other operating systems, Silverblue is immutable. This "
+#| "means that every installation is identical to every other installation of "
+#| "the same version. The operating system that is on disk is exactly the "
+#| "same from one machine to the next, and it never changes as it is used."
 msgid ""
-"However, unlike other operating systems, Silverblue is immutable. This means "
-"that every installation is identical to every other installation of the same "
-"version. The operating system that is on disk is exactly the same from one "
-"machine to the next, and it never changes as it is used."
+"However, unlike other operating systems, {variant-name} is immutable. This "
+"means that every installation is identical to every other installation of "
+"the same version. The operating system that is on disk is exactly the same "
+"from one machine to the next, and it never changes as it is used."
 msgstr ""
 "No entanto, ao contrário de outros sistemas operacionais, Silverblue é "
 "imutável. Isso significa que cada instalação é idêntica a todas as outras "
@@ -84,14 +104,22 @@ msgstr ""
 "usado."
 
 #. type: Plain text
-#: ./pages/index.adoc:29
+#: pages/index.adoc:29
+#, fuzzy
+#| msgid ""
+#| "Silverblue's immutable design is intended to make it more stable, less "
+#| "prone to bugs, and easier to test and develop. Finally, Silverblue's "
+#| "immutable design also makes it an excellent platform for containerized "
+#| "applications as well as container-based software development. In each "
+#| "case, applications (apps) and containers are kept separate from the host "
+#| "system, improving stability and reliability."
 msgid ""
-"Silverblue's immutable design is intended to make it more stable, less prone "
-"to bugs, and easier to test and develop. Finally, Silverblue's immutable "
-"design also makes it an excellent platform for containerized applications as "
-"well as container-based software development. In each case, applications "
-"(apps) and containers are kept separate from the host system, improving "
-"stability and reliability."
+"{variant-name}'s immutable design is intended to make it more stable, less "
+"prone to bugs, and easier to test and develop. Finally, {variant-name}'s "
+"immutable design also makes it an excellent platform for containerized "
+"applications as well as container-based software development. In each case, "
+"applications (apps) and containers are kept separate from the host system, "
+"improving stability and reliability."
 msgstr ""
 "O design imutável do Silverblue se destina a torná-lo mais estável, menos "
 "sujeito a bugs e mais fácil de testar e desenvolver. Finalmente, o design "
@@ -102,13 +130,20 @@ msgstr ""
 "confiabilidade."
 
 #. type: Plain text
-#: ./pages/index.adoc:34
+#: pages/index.adoc:34
+#, fuzzy
+#| msgid ""
+#| "Silverblue's core technologies have some other helpful features. OS "
+#| "updates are fast and there's no waiting around for them to install: just "
+#| "reboot as normal to start using the next version. With Silverblue, it is "
+#| "also possible to roll back to the previous version of the operating "
+#| "system, if something goes wrong."
 msgid ""
-"Silverblue's core technologies have some other helpful features. OS updates "
-"are fast and there's no waiting around for them to install: just reboot as "
-"normal to start using the next version. With Silverblue, it is also possible "
-"to roll back to the previous version of the operating system, if something "
-"goes wrong."
+"{variant-name}'s core technologies have some other helpful features. OS "
+"updates are fast and there's no waiting around for them to install: just "
+"reboot as normal to start using the next version. With {variant-name}, it is "
+"also possible to roll back to the previous version of the operating system, "
+"if something goes wrong."
 msgstr ""
 "As principais tecnologias do Silverblue têm alguns outros recursos úteis. As "
 "atualizações do sistema operacional são rápidas e não há espera para serem "
@@ -117,18 +152,24 @@ msgstr ""
 "do sistema operacional, se algo der errado."
 
 #. type: Title ==
-#: ./pages/index.adoc:36
+#: pages/index.adoc:36
 #, no-wrap
 msgid "About this guide"
 msgstr "Sobre este guia"
 
 #. type: Plain text
-#: ./pages/index.adoc:42
+#: pages/index.adoc:42
+#, fuzzy
+#| msgid ""
+#| "In most cases, Silverblue behaves like a standard Fedora Workstation "
+#| "installation, and the https://docs.fedoraproject.org/[standard Fedora "
+#| "documentation] can be used. This guide covers those areas where "
+#| "Silverblue differs from a standard Fedora Workstation, including:"
 msgid ""
-"In most cases, Silverblue behaves like a standard Fedora Workstation "
+"In most cases, {variant-name} behaves like a standard Fedora Workstation "
 "installation, and the https://docs.fedoraproject.org/[standard Fedora "
-"documentation] can be used. This guide covers those areas where Silverblue "
-"differs from a standard Fedora Workstation, including:"
+"documentation] can be used. This guide covers those areas where {variant-"
+"name} differs from a standard Fedora Workstation, including:"
 msgstr ""
 "Na maioria dos casos, o Silverblue se comporta como uma instalação padrão do "
 "Fedora Workstation, e a https://docs.fedoraproject.org/[documentação padrão "
@@ -136,33 +177,43 @@ msgstr ""
 "de um Fedora Workstation padrão, incluindo:"
 
 #. type: Plain text
-#: ./pages/index.adoc:44
+#: pages/index.adoc:44
 msgid "link:installation[OS installation]"
 msgstr "link:installation[Instalação do sistema operacional]"
 
 #. type: Plain text
-#: ./pages/index.adoc:45
+#: pages/index.adoc:45
 msgid "link:getting-started[Installing apps and software]"
 msgstr "link:getting-started[Instalando aplicativos e softwares]"
 
 #. type: Plain text
-#: ./pages/index.adoc:46
+#: pages/index.adoc:46
 msgid "link:updates-upgrades-rollbacks[OS upgrades and rollbacks]"
 msgstr ""
 "link:updates-upgrades-rollbacks[Atualizações e reversões de sistema "
 "operacional]"
 
 #. type: Plain text
-#: ./pages/index.adoc:50
+#: pages/index.adoc:50
+#, fuzzy
+#| msgid ""
+#| "The primary audience for these docs are new users, who aren't expected to "
+#| "have specialist knowledge or technical knowledge about Silverblue's "
+#| "internals.  However, some background link:technical-information[technical "
+#| "information] is provided, for those who are interested and want to learn "
+#| "more."
 msgid ""
 "The primary audience for these docs are new users, who aren't expected to "
-"have specialist knowledge or technical knowledge about Silverblue's "
+"have specialist knowledge or technical knowledge about {variant-name}'s "
 "internals.  However, some background link:technical-information[technical "
 "information] is provided, for those who are interested and want to learn "
 "more."
 msgstr ""
 "O público principal para esses documentos são novos usuários, dos quais não "
 "se espera que tenham conhecimento especializado ou conhecimento técnico "
-"sobre os componentes internos do Silverblue. No entanto, algumas link"
-":technical-information[informações técnicas] são fornecidas, para aqueles "
-"que estão interessados e querem saber mais."
+"sobre os componentes internos do Silverblue. No entanto, algumas link:"
+"technical-information[informações técnicas] são fornecidas, para aqueles que "
+"estão interessados e querem saber mais."
+
+#~ msgid "Silverblue logo"
+#~ msgstr "Logo do Silverblue"

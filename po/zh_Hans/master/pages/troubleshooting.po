@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-21 22:01+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-04-29 03:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -26,8 +26,14 @@ msgstr "疑难解答"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:7
+#, fuzzy
+#| msgid ""
+#| "Silverblue is a radically new way of deploying and managing your desktop "
+#| "operating system, so you may occasionally run into problems while going "
+#| "through your day to day.  Below are some of the more common problems "
+#| "reported and any workarounds for those problems."
 msgid ""
-"Silverblue is a radically new way of deploying and managing your desktop "
+"{variant-name} is a radically new way of deploying and managing your desktop "
 "operating system, so you may occasionally run into problems while going "
 "through your day to day.  Below are some of the more common problems "
 "reported and any workarounds for those problems."
@@ -124,8 +130,14 @@ msgstr "https://github.com/projectatomic/rpm-ostree/issues/1091[GitHub Issue]"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:45
+#, fuzzy
+#| msgid ""
+#| "Users have long wanted to use their Nvidia GPUs on their Silverblue "
+#| "systems.  Thankfully, recent changes to the `akmods` and `kmodtools` "
+#| "packages were made by https://twitter.com/gnomealex[Alex Larsson] to "
+#| "allow for normal installation of the Nvidia drivers."
 msgid ""
-"Users have long wanted to use their Nvidia GPUs on their Silverblue "
+"Users have long wanted to use their Nvidia GPUs on their {variant-name} "
 "systems.  Thankfully, recent changes to the `akmods` and `kmodtools` "
 "packages were made by https://twitter.com/gnomealex[Alex Larsson] to allow "
 "for normal installation of the Nvidia drivers."
@@ -161,8 +173,16 @@ msgstr "SELinux 相关问题"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:58
+#, fuzzy
+#| msgid ""
+#| "As users work with Silverblue day-to-day, it is possible that they have "
+#| "modified the default SELinux policy in an effort to workaround one or "
+#| "more problems related to SELinux. This is usually done when a user sees a "
+#| "SELinux denial in the journal.  If this is the case and one wishes to "
+#| "revert back to the default SELinux policy, you can try these set of "
+#| "actions."
 msgid ""
-"As users work with Silverblue day-to-day, it is possible that they have "
+"As users work with {variant-name} day-to-day, it is possible that they have "
 "modified the default SELinux policy in an effort to workaround one or more "
 "problems related to SELinux. This is usually done when a user sees a SELinux "
 "denial in the journal.  If this is the case and one wishes to revert back to "
@@ -330,9 +350,15 @@ msgstr "https://github.com/projectatomic/rpm-ostree/issues/1380[GitHub Issue]"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:121
+#, fuzzy
+#| msgid ""
+#| "This issue is most commonly seen when users have installed Silverblue on "
+#| "Apple hardware.  The `/boot/efi` partition on Apple hardware is formatted "
+#| "as HFS+ and is not always resilient to power failures or other kinds of "
+#| "hard power events."
 msgid ""
-"This issue is most commonly seen when users have installed Silverblue on "
-"Apple hardware.  The `/boot/efi` partition on Apple hardware is formatted as "
+"This issue is most commonly seen when users have installed {variant-name} on "
+"Apple hardware. The `/boot/efi` partition on Apple hardware is formatted as "
 "HFS+ and is not always resilient to power failures or other kinds of hard "
 "power events."
 msgstr ""
@@ -341,8 +367,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:125
+#, fuzzy
+#| msgid ""
+#| "Since Silverblue now includes the `hfsplus-tools` package in the base "
+#| "compose, it has become relatively easy for users to workaround this kind "
+#| "of error."
 msgid ""
-"Since Silverblue now includes the `hfsplus-tools` package in the base "
+"Since {variant-name} now includes the `hfsplus-tools` package in the base "
 "compose, it has become relatively easy for users to workaround this kind of "
 "error."
 msgstr ""
@@ -368,8 +399,9 @@ msgstr "你可以查看与本节相关联的 Issue 以了解更多信息。"
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:132
-#, no-wrap
-msgid "Unable to install Silverblue on EFI systems"
+#, fuzzy, no-wrap
+#| msgid "Unable to install Silverblue on EFI systems"
+msgid "Unable to install {variant-name} on EFI systems"
 msgstr "无法在 EFI 系统安装 Silverblue"
 
 #. type: Plain text
@@ -379,9 +411,14 @@ msgstr "https://bugzilla.redhat.com/show_bug.cgi?id=1575957[Bugzilla Issue]"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:139
+#, fuzzy
+#| msgid ""
+#| "Users have reported that they cannot install Silverblue on an EFI based "
+#| "system where they previously had another OS installed.  The error that is "
+#| "often observed looks like:"
 msgid ""
-"Users have reported that they cannot install Silverblue on an EFI based "
-"system where they previously had another OS installed.  The error that is "
+"Users have reported that they cannot install {variant-name} on an EFI based "
+"system where they previously had another OS installed. The error that is "
 "often observed looks like:"
 msgstr ""
 "当你的设备曾经安装过其它操作系统，在安装 Silverblue 的时候可能会得到下面的报"
@@ -400,11 +437,18 @@ msgstr "解决方案有下面几个："
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:145
+#, fuzzy
+#| msgid ""
+#| "During the install process, select \"Custom Partitioning\" and create an "
+#| "additional EFI partition. Assign the newly created EFI partition to `/"
+#| "boot/efi`. You will then be able to boot the previous OS(s) alongside "
+#| "Fedora Silverblue. If this workaround is not successful follow the below "
+#| "step."
 msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
 "additional EFI partition. Assign the newly created EFI partition to `/boot/"
 "efi`. You will then be able to boot the previous OS(s) alongside Fedora "
-"Silverblue. If this workaround is not successful follow the below step."
+"{variant-name}. If this workaround is not successful follow the below step."
 msgstr ""
 "安装的时候选择手动分区并划分一个额外的 EFI 分区并挂载到`/boot/efi`。这样子就"
 "可以使 Fedora Silverblue 与你之前安装的操作系统共存。如果这样做不奏效，那么还"
@@ -583,9 +627,15 @@ msgstr "执行 `restorecon`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:195
+#, fuzzy
+#| msgid ""
+#| "You should never run `restorecon` on a Silverblue host.  See the "
+#| "following bug for details - https://bugzilla.redhat.com/show_bug.cgi?"
+#| "id=1259018"
 msgid ""
-"You should never run `restorecon` on a Silverblue host.  See the following "
-"bug for details - https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
+"You should never run `restorecon` on a {variant-name} host. See the "
+"following bug for details - https://bugzilla.redhat.com/show_bug.cgi?"
+"id=1259018"
 msgstr ""
 "你不应该在 Silverblue 执行 `restorecon`。请查看相关问题报告了解详情 - "
 "https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
@@ -644,7 +694,7 @@ msgid ""
 "$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
 "$ sudo restorecon -Rv /var\n"
 "$ sudo restorecon -Rv /etc\n"
-"$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
+"$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/{variant}\n"
 "$ sudo reboot\n"
 msgstr ""
 "$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
@@ -676,8 +726,12 @@ msgstr ""
 #~ msgid "$ rpm-ostree status -b | grep BaseCommit\n"
 #~ msgstr "$ rpm-ostree status -b | grep BaseCommit\n"
 
-#~ msgid "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-#~ msgstr "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+#~ msgid ""
+#~ "BaseCommit: "
+#~ "696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+#~ msgstr ""
+#~ "BaseCommit: "
+#~ "696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
 
 #~ msgid " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"
 #~ msgstr " # rpm-ostree install kmod-nvidia xorg-x11-drv-nvidia\n"

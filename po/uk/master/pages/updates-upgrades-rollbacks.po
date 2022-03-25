@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-04 22:03+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-11-22 23:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
-"\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
+">\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,10 +28,15 @@ msgstr "Оновлення пакунків, оновлення системи �
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:7
+#, fuzzy
+#| msgid ""
+#| "Installing updates with Silverblue is easy and fast (much faster than "
+#| "other operating systems). It also has a special rollback feature, in case "
+#| "anything goes wrong."
 msgid ""
-"Installing updates with Silverblue is easy and fast (much faster than other "
-"operating systems). It also has a special rollback feature, in case anything "
-"goes wrong."
+"Installing updates with {variant-name} is easy and fast (much faster than "
+"other operating systems). It also has a special rollback feature, in case "
+"anything goes wrong."
 msgstr ""
 "Встановлення оновлень у Silverblue є простим і швидким (набагато швидшим за "
 "інші операційні системи). Також передбачено спеціальну можливість повернення "
@@ -40,15 +45,21 @@ msgstr ""
 #. type: Title ==
 #: pages/updates-upgrades-rollbacks.adoc:9
 #, no-wrap
-msgid "Updating Silverblue"
-msgstr "Оновлення Silverblue"
+msgid "Updating {variant-name}"
+msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:15
+#, fuzzy
+#| msgid ""
+#| "OS updates in Silverblue are fully integrated into the desktop; you will "
+#| "be automatically notified when an update is available. The standard "
+#| "behavior is to automatically download the update (this can be changed "
+#| "from the update preferences in Software)."
 msgid ""
-"OS updates in Silverblue are fully integrated into the desktop; you will be "
-"automatically notified when an update is available. The standard behavior is "
-"to automatically download the update (this can be changed from the update "
+"OS updates in {variant-name} are fully integrated into the desktop; you will "
+"be automatically notified when an update is available. The standard behavior "
+"is to automatically download the update (this can be changed from the update "
 "preferences in Software)."
 msgstr ""
 "Оновлення операційної системи у Silverblue повністю інтегровано до "
@@ -107,10 +118,16 @@ msgstr "Оновлення до новіших версій системи"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:37
+#, fuzzy
+#| msgid ""
+#| "Upgrading between major versions (such as from Fedora 34 to Fedora 35) "
+#| "can be completed using the Software application. Alternatively, "
+#| "Silverblue can be upgraded between major versions using the `ostree` "
+#| "command."
 msgid ""
 "Upgrading between major versions (such as from Fedora 34 to Fedora 35) can "
-"be completed using the Software application. Alternatively, Silverblue can "
-"be upgraded between major versions using the `ostree` command."
+"be completed using the Software application. Alternatively, {variant-name} "
+"can be upgraded between major versions using the `ostree` command."
 msgstr ""
 "Оновлення до новіших версій (наприклад, з Fedora 34 до Fedora 35) можна "
 "здійснити за допомогою програми «Програмне забезпечення». Крім того, оновити "
@@ -133,9 +150,13 @@ msgstr " $ ostree remote refs fedora\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:45
+#, fuzzy
+#| msgid ""
+#| "After you verify the name of your branch, you are ready to proceed. For "
+#| "example, to upgrade to Silverblue 35, the command is:"
 msgid ""
 "After you verify the name of your branch, you are ready to proceed. For "
-"example, to upgrade to Silverblue 35, the command is:"
+"example, to upgrade to {variant-name} 35, the command is:"
 msgstr ""
 "Після того, як ви перевірите назву вашої гілки, можна продовжувати "
 "встановлення. Наприклад, для оновлення до Silverblue 35 слід скористатися "
@@ -143,9 +164,14 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:49
+#, fuzzy
+#| msgid ""
+#| "Currently, the default remote for Silverblue 35 is named `fedora`. If "
+#| "this is not the case for your system, you can find out the remote name by "
+#| "issuing: `ostree remote list`."
 msgid ""
-"Currently, the default remote for Silverblue 35 is named `fedora`. If this "
-"is not the case for your system, you can find out the remote name by "
+"Currently, the default remote for {variant-name} 35 is named `fedora`. If "
+"this is not the case for your system, you can find out the remote name by "
 "issuing: `ostree remote list`."
 msgstr ""
 "У поточній версії віддалене сховище Silverblue 35 має назву `fedora`. Якщо "
@@ -154,8 +180,9 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:51
-#, no-wrap
-msgid " $ rpm-ostree rebase fedora:fedora/35/x86_64/silverblue\n"
+#, fuzzy, no-wrap
+#| msgid " $ rpm-ostree rebase fedora:fedora/35/x86_64/silverblue\n"
+msgid " $ rpm-ostree rebase fedora:fedora/35/x86_64/{variant}\n"
 msgstr " $ rpm-ostree rebase fedora:fedora/35/x86_64/silverblue\n"
 
 #. type: Plain text
@@ -176,11 +203,19 @@ msgstr "Відновлення попередньої версії"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:62
+#, fuzzy
+#| msgid ""
+#| "Silverblue keeps a record of the previous OS version, which can be "
+#| "switched to instead of the latest version. While this shouldn't usually "
+#| "be necessary, it can be helpful if there is a problem with an update or "
+#| "an upgrade (rollbacks work the same way for both), as well as for "
+#| "development purposes."
 msgid ""
-"Silverblue keeps a record of the previous OS version, which can be switched "
-"to instead of the latest version. While this shouldn't usually be necessary, "
-"it can be helpful if there is a problem with an update or an upgrade "
-"(rollbacks work the same way for both), as well as for development purposes."
+"{variant-name} keeps a record of the previous OS version, which can be "
+"switched to instead of the latest version. While this shouldn't usually be "
+"necessary, it can be helpful if there is a problem with an update or an "
+"upgrade (rollbacks work the same way for both), as well as for development "
+"purposes."
 msgstr ""
 "Silverblue зберігає запис попередньої версії операційної системи, до якої "
 "можна повернутися замість останньої версії. Хоча потреби у таких діях, "
@@ -227,6 +262,9 @@ msgstr ""
 "оновлення. Оновлення призведе до скасовування повернення до попередньої "
 "версії, тому вам не слід ним користуватися, якщо ви хочете продовжувати "
 "працювати із застарілою версією."
+
+#~ msgid "Updating Silverblue"
+#~ msgstr "Оновлення Silverblue"
 
 #~ msgid "For example, to upgrade to Silverblue 32, the commands are:"
 #~ msgstr ""

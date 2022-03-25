@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -19,91 +19,96 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
-#: ./pages/reading-and-resources.adoc:1
+#: pages/reading-and-resources.adoc:1
 #, no-wrap
 msgid "Reading & Resources"
 msgstr "实用文档和资源"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:4
-msgid "This page is a list of further reading and resources for Silverblue."
+#: pages/reading-and-resources.adoc:4
+#, fuzzy
+#| msgid "This page is a list of further reading and resources for Silverblue."
+msgid ""
+"This page is a list of further reading and resources for {variant-name}."
 msgstr "这个页面列举了一些 Silverblue 相关的实用文档和资源。"
 
 #. type: Title ==
-#: ./pages/reading-and-resources.adoc:5
+#: pages/reading-and-resources.adoc:5
 #, no-wrap
 msgid "Technology websites and documentation"
 msgstr "技术型站点与文档"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:8
+#: pages/reading-and-resources.adoc:8
 msgid "https://buildah.io/[Buildah] - build OCI container images"
 msgstr "https://buildah.io/[Buildah] - 构建 OCI 容器映像"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:9
+#: pages/reading-and-resources.adoc:9
 msgid "http://flatpak.org[Flatpak] - next-generation desktop app framework"
 msgstr "http://flatpak.org[Flatpak] - 下一代的桌面应用程序框架"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:11
+#: pages/reading-and-resources.adoc:11
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] - OS image composition and "
 "updates"
 msgstr "https://ostreedev.github.io/ostree/[ostree] - 系统映像构建与更新"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:12
+#: pages/reading-and-resources.adoc:12
 msgid "https://podman.io/[podman] - daemonless container engine"
 msgstr "https://podman.io/[podman] - 无守护进程的容器引擎"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:14
+#: pages/reading-and-resources.adoc:14
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] - hybrid image/package "
 "system"
-msgstr "https://coreos.github.io/rpm-ostree/[rpm-ostree] - 混合式映像/软件包系统"
+msgstr ""
+"https://coreos.github.io/rpm-ostree/[rpm-ostree] - 混合式映像/软件包系统"
 
 #. type: Title ==
-#: ./pages/reading-and-resources.adoc:15
+#: pages/reading-and-resources.adoc:15
 #, no-wrap
 msgid "Documents"
 msgstr "文档"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:20
+#: pages/reading-and-resources.adoc:20
 msgid ""
 "link:{attachmentsdir}/team-silverblue-origins.pdf[Team Silverblue - The "
 "Origins] - PDF that explains the motivations, goals, and history behind "
 "Silverblue"
 msgstr ""
-"link:{attachmentsdir}/team-silverblue-origins.pdf[Team Silverblue - 起源] - 介绍 "
-"Silverblue 初心、目标和历史的 PDF 文档"
+"link:{attachmentsdir}/team-silverblue-origins.pdf[Team Silverblue - 起源] - "
+"介绍 Silverblue 初心、目标和历史的 PDF 文档"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:22
+#: pages/reading-and-resources.adoc:22
 msgid ""
 "link:{attachmentsdir}/flatpak-print-cheatsheet.pdf[Flatpak Cheat Sheet] - "
 "PDF with common flatpak commands"
 msgstr ""
-"link:{attachmentsdir}/flatpak-print-cheatsheet.pdf[Flatpak 指令速查表] - 介绍常见 "
-"Flatpak 命令的 PDF 文档"
+"link:{attachmentsdir}/flatpak-print-cheatsheet.pdf[Flatpak 指令速查表] - 介绍"
+"常见 Flatpak 命令的 PDF 文档"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:24
+#: pages/reading-and-resources.adoc:24
 msgid ""
 "link:{attachmentsdir}/silverblue-cheatsheet.pdf[rpm-ostree Cheat Sheet] - "
 "PDF with common rpm-ostree commands"
 msgstr ""
-"link:{attachmentsdir}/silverblue-cheatsheet.pdf[rpm-ostree 指令速查表] - 介绍常见 rpm-"
-"ostree 命令的 PDF 文档"
+"link:{attachmentsdir}/silverblue-cheatsheet.pdf[rpm-ostree 指令速查表] - 介绍"
+"常见 rpm-ostree 命令的 PDF 文档"
 
 #. type: Plain text
-#: ./pages/reading-and-resources.adoc:26
+#: pages/reading-and-resources.adoc:26
 msgid ""
 "link:{attachmentsdir}/container-commandos.pdf[Container commandos] - a "
 "playful introduction to tools such as podman, cri-o and buildah by Máirín "
 "Duffy and Dan Walsh. Print it out, and learn as you color!"
 msgstr ""
 "link:{attachmentsdir}/container-commandos.pdf[Container commandos] - Máirín "
-"Duffy 和 Dan Walsh 编著的 podman、cri-o 和 buildah 涂画书。打印下来，然后愉快地玩耍吧！"
+"Duffy 和 Dan Walsh 编著的 podman、cri-o 和 buildah 涂画书。打印下来，然后愉快"
+"地玩耍吧！"

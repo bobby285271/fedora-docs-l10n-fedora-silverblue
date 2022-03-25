@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:29+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -27,7 +27,10 @@ msgstr "Відомості і ресурси"
 
 #. type: Plain text
 #: pages/reading-and-resources.adoc:4
-msgid "This page is a list of further reading and resources for Silverblue."
+#, fuzzy
+#| msgid "This page is a list of further reading and resources for Silverblue."
+msgid ""
+"This page is a list of further reading and resources for {variant-name}."
 msgstr "На цій сторінці наведено список текстових ресурсів щодо Silverblue."
 
 #. type: Title ==

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-22 21:48+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -82,30 +82,38 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/faq.adoc:23
-#, no-wrap
-msgid "What is Silverblue's relationship with Project Atomic?"
+#, fuzzy, no-wrap
+#| msgid "What is Silverblue's relationship with Project Atomic?"
+msgid "What is {variant-name}'s relationship with Project Atomic?"
 msgstr "Silverblue 和 Project Atomic 有什么联系？"
 
 #. type: Plain text
 #: pages/faq.adoc:27
+#, fuzzy
+#| msgid ""
+#| "Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
+#| "well as its successor, Fedora CoreOS). However, Silverblue is "
+#| "specifically focused on workstation/desktop use cases."
 msgid ""
-"Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
-"well as its successor, Fedora CoreOS). However, Silverblue is specifically "
-"focused on workstation/desktop use cases."
+"Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
+"(as well as its successor, Fedora CoreOS). However, {variant-name} is "
+"specifically focused on workstation/desktop use cases."
 msgstr ""
 "Fedora Silverblue 和 Fedora Atomic Host（以及它的继任者 Fedora CoreOS）采取的"
 "技术是一样的。然而，Silverblue 更加注重工作站和桌面使用的情景。"
 
 #. type: Title ==
 #: pages/faq.adoc:28
-#, no-wrap
-msgid "About using Silverblue"
+#, fuzzy, no-wrap
+#| msgid "About using Silverblue"
+msgid "About using {variant-name}"
 msgstr "关于使用 Silverblue"
 
 #. type: Labeled list
 #: pages/faq.adoc:31
-#, no-wrap
-msgid "How can I install Eclipse on Silverblue?"
+#, fuzzy, no-wrap
+#| msgid "How can I install Eclipse on Silverblue?"
+msgid "How can I install Eclipse on {variant-name}?"
 msgstr "如何在 Silverblue 上安装 Eclipse？"
 
 #. type: Plain text
@@ -252,9 +260,13 @@ msgstr " $ toolbox run dnf search <package>\n"
 
 #. type: Plain text
 #: pages/faq.adoc:81
+#, fuzzy
+#| msgid ""
+#| "The assumption is that you have already created a toolbox matching the "
+#| "version of your Fedora Silverblue installation."
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
-"version of your Fedora Silverblue installation."
+"version of your Fedora {variant-name} installation."
 msgstr "当然这样做的前提是你的 Fedora Silverblue 系统中已经安装了 Toolbox。"
 
 #. type: Labeled list
@@ -342,10 +354,14 @@ msgstr "rpm-ostree status\n"
 
 #. type: Plain text
 #: pages/faq.adoc:109
+#, fuzzy
+#| msgid ""
+#| "After the deployment is pinned, you can upgrade your system by using the "
+#| "instructions found https://docs.fedoraproject.org/en-US/fedora-silverblue/"
+#| "updates-upgrades-rollbacks/#upgrading[here.]"
 msgid ""
 "After the deployment is pinned, you can upgrade your system by using the "
-"instructions found https://docs.fedoraproject.org/en-US/fedora-silverblue/"
-"updates-upgrades-rollbacks/#upgrading[here.]"
+"instructions found {docs-url}/updates-upgrades-rollbacks/#upgrading[here]."
 msgstr ""
 "当你的部署被固定了之后，你就可以根据 https://docs.fedoraproject.org/en-US/"
 "fedora-silverblue/updates-upgrades-rollbacks/#upgrading[Fedora 文档] 的指引完"
@@ -369,7 +385,9 @@ msgid ""
 "associated GRUB menu entries."
 msgstr "请注意目前还不支持为这些部署重新命名。"
 
-#~ msgid "How can I use Adobe Flash on the Firefox version pre installed on my system?"
+#~ msgid ""
+#~ "How can I use Adobe Flash on the Firefox version pre installed on my "
+#~ "system?"
 #~ msgstr "如何在系统自带的 Firefox 上使用 Adobe Flash？"
 
 #~ msgid ""

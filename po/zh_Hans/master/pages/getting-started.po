@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-29 22:01+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-05-28 14:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -26,20 +26,31 @@ msgstr "开始使用"
 
 #. type: Plain text
 #: pages/getting-started.adoc:8
+#, fuzzy
+#| msgid ""
+#| "Silverblue is designed to be easy and straightforward to use, and "
+#| "specialist knowledge should generally not be required. However, "
+#| "Silverblue is built differently from other operating systems, and there "
+#| "are therefore some things that it is useful to know."
 msgid ""
-"Silverblue is designed to be easy and straightforward to use, and specialist "
-"knowledge should generally not be required. However, Silverblue is built "
-"differently from other operating systems, and there are therefore some "
-"things that it is useful to know."
+"{variant-name} is designed to be easy and straightforward to use, and "
+"specialist knowledge should generally not be required. However, {variant-"
+"name} is built differently from other operating systems, and there are "
+"therefore some things that it is useful to know."
 msgstr ""
 "Silverblue 的设计简单明了，一般不需要专业知识就可以上手。然而 Silverblue 的构"
 "建方式与其它操作系统不同，因此你可能需要先熟悉一下这个系统。"
 
 #. type: Plain text
 #: pages/getting-started.adoc:12
+#, fuzzy
+#| msgid ""
+#| "Silverblue has different options for installing software, compared with a "
+#| "standard Fedora Workstation (or other package-based Linux distributions). "
+#| "These include:"
 msgid ""
-"Silverblue has different options for installing software, compared with a "
-"standard Fedora Workstation (or other package-based Linux distributions). "
+"{variant-name} has different options for installing software, compared with "
+"a standard Fedora Workstation (or other package-based Linux distributions). "
 "These include:"
 msgstr ""
 "相比 Fedora Workstation 和其它基于软件包的发行版，Silverblue 有三种方式安装软"
@@ -47,9 +58,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:14
+#, fuzzy
+#| msgid ""
+#| "Flatpak apps: this is the primary way that (GUI) apps get installed on "
+#| "Silverblue."
 msgid ""
 "Flatpak apps: this is the primary way that (GUI) apps get installed on "
-"Silverblue."
+"{variant-name}."
 msgstr "Flatpak：这是在 Silverblue 安装图形化应用的主要方式。"
 
 #. type: Plain text
@@ -90,10 +105,16 @@ msgstr "Flatpak"
 
 #. type: Plain text
 #: pages/getting-started.adoc:30
+#, fuzzy
+#| msgid ""
+#| "Flatpak is the primary way that apps can be installed on Silverblue. (For "
+#| "information, see http://flatpak.org[flatpak.org].) Flatpak works out of "
+#| "the box in Fedora Silverblue, and Fedora provides a small (but growing) "
+#| "collection of apps that can be installed."
 msgid ""
-"Flatpak is the primary way that apps can be installed on Silverblue. (For "
-"information, see http://flatpak.org[flatpak.org].) Flatpak works out of the "
-"box in Fedora Silverblue, and Fedora provides a small (but growing) "
+"Flatpak is the primary way that apps can be installed on {variant-name}. "
+"(For information, see http://flatpak.org[flatpak.org].) Flatpak works out of "
+"the box in Fedora {variant-name}, and Fedora provides a small (but growing) "
 "collection of apps that can be installed."
 msgstr ""
 "Flatpak 是 Silverblue 安装应用程序的主要方式之一。要了解 Flatpak 是什么，可以"
@@ -117,10 +138,15 @@ msgstr "初始化 Flathub"
 
 #. type: Plain text
 #: pages/getting-started.adoc:40
+#, fuzzy
+#| msgid ""
+#| "To setup Flathub on Fedora Silverblue, open the https://flatpak.org/setup/"
+#| "Fedora/[Flathub setup page for Fedora] and click the “Flathub repository "
+#| "file” button to download the Flathub configuration."
 msgid ""
-"To setup Flathub on Fedora Silverblue, open the https://flatpak.org/setup/"
-"Fedora/[Flathub setup page for Fedora] and click the “Flathub repository "
-"file” button to download the Flathub configuration."
+"To setup Flathub on Fedora {variant-name}, open the https://flatpak.org/"
+"setup/Fedora/[Flathub setup page for Fedora] and click the “Flathub "
+"repository file” button to download the Flathub configuration."
 msgstr ""
 "要在 Fedora Silverblue 启用 Flathub 支持，打开 https://flatpak.org/setup/"
 "Fedora/[适用于 Fedora 的 Flathub 设置页] 并点击 Flathub repository file 按钮"
@@ -278,10 +304,15 @@ msgstr "软件包层叠"
 
 #. type: Plain text
 #: pages/getting-started.adoc:92
+#, fuzzy
+#| msgid ""
+#| "Package layering works by modifying your Silverblue installation. As the "
+#| "name implies, it works by extending the packages from which Silverblue is "
+#| "composed."
 msgid ""
-"Package layering works by modifying your Silverblue installation. As the "
-"name implies, it works by extending the packages from which Silverblue is "
-"composed."
+"Package layering works by modifying your {variant-name} installation. As the "
+"name implies, it works by extending the packages from which {variant-name} "
+"is composed."
 msgstr ""
 "软件包层叠通过修改你的 Silverblue 安装以实现。正如名字所示，它通过在 "
 "Silverblue 构建时拓展软件包而工作。"
@@ -308,9 +339,13 @@ msgstr "`libvirt`：libvirt 守护进程"
 
 #. type: Plain text
 #: pages/getting-started.adoc:101
+#, fuzzy
+#| msgid ""
+#| "Most (but not all) RPM packages provided by Fedora can be installed on "
+#| "Silverblue using this method."
 msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
-"Silverblue using this method."
+"{variant-name} using this method."
 msgstr "Fedora 提供的大部分（但不是所有的）RPM 都可以通过这个方法安装。"
 
 #. type: Plain text
@@ -360,7 +395,9 @@ msgstr "安装软件包"
 
 #. type: Plain text
 #: pages/getting-started.adoc:118
-msgid "Packages can be installed on Silverblue using:"
+#, fuzzy
+#| msgid "Packages can be installed on Silverblue using:"
+msgid "Packages can be installed on {variant-name} using:"
 msgstr "在 Silverblue，我们使用下面的命令安装软件包："
 
 #. type: Plain text
@@ -371,11 +408,18 @@ msgstr " $ rpm-ostree install <package name>\n"
 
 #. type: Plain text
 #: pages/getting-started.adoc:125
+#, fuzzy
+#| msgid ""
+#| "This will download the package and any required dependencies, and "
+#| "recompose your Silverblue image with them. `rpm-ostree` uses standard "
+#| "Fedora package names, which can be searched using DNF (this is not "
+#| "available on a Silverblue host, but can be used in a xref:toolbox."
+#| "adoc[toolbox])."
 msgid ""
 "This will download the package and any required dependencies, and recompose "
-"your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
-"names, which can be searched using DNF (this is not available on a "
-"Silverblue host, but can be used in a xref:toolbox.adoc[toolbox])."
+"your {variant-name} image with them. `rpm-ostree` uses standard Fedora "
+"package names, which can be searched using DNF (this is not available on a "
+"{variant-name} host, but can be used in a xref:toolbox.adoc[toolbox])."
 msgstr ""
 "这会下载所需的软件包及其依赖包，并同你的 Silverblue 映像一起被构建。 `rpm-"
 "ostree` 使用标准的 Fedora 软件包名称，因此你可以通过 DNF 搜索软件包"

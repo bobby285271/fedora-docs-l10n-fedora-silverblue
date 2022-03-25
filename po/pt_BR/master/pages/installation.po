@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-29 22:01+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-02-27 23:52+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -19,17 +19,24 @@ msgstr ""
 
 #. type: Title =
 #: pages/installation.adoc:1
-#, no-wrap
-msgid "Installing Silverblue"
+#, fuzzy, no-wrap
+#| msgid "Installing Silverblue"
+msgid "Installing {variant-name}"
 msgstr "Instalando o Silverblue"
 
 #. type: Plain text
 #: pages/installation.adoc:7
+#, fuzzy
+#| msgid ""
+#| "Fedora Silverblue can be installed in the same way as Fedora Workstation, "
+#| "and the official Fedora installation guide can be followed for your "
+#| "Fedora version.  See the https://docs.fedoraproject.org/en-US/docs/"
+#| "[Fedora documentation site] for more details."
 msgid ""
-"Fedora Silverblue can be installed in the same way as Fedora Workstation, "
-"and the official Fedora installation guide can be followed for your Fedora "
-"version.  See the https://docs.fedoraproject.org/en-US/docs/[Fedora "
-"documentation site] for more details."
+"Fedora {variant-name} can be installed in the same way as Fedora "
+"Workstation, and the official Fedora installation guide can be followed for "
+"your Fedora version.  See the https://docs.fedoraproject.org/en-US/docs/"
+"[Fedora documentation site] for more details."
 msgstr ""
 "O Fedora Silverblue pode ser instalado da mesma forma que o Fedora "
 "Workstation, e o guia de instalação oficial do Fedora pode ser seguido para "
@@ -55,11 +62,17 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:19
+#, fuzzy
+#| msgid ""
+#| "Silverblue is intended to provide the full range of capabilities that you "
+#| "would expect from an installation of Fedora Workstation. However, there "
+#| "are some differences in terms of which applications can be installed, and "
+#| "how the operating system environment works."
 msgid ""
-"Silverblue is intended to provide the full range of capabilities that you "
-"would expect from an installation of Fedora Workstation. However, there are "
-"some differences in terms of which applications can be installed, and how "
-"the operating system environment works."
+"{variant-name} is intended to provide the full range of capabilities that "
+"you would expect from an installation of Fedora Workstation. However, there "
+"are some differences in terms of which applications can be installed, and "
+"how the operating system environment works."
 msgstr ""
 "O Silverblue se destina a fornecer a gama completa de recursos que você "
 "esperaria de uma instalação do Fedora Workstation. No entanto, existem "
@@ -68,13 +81,21 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:25
+#, fuzzy
+#| msgid ""
+#| "It is therefore recommended that you read this user guide before deciding "
+#| "to install Silverblue. It is also recommended that you determine whether "
+#| "Silverblue meets the specific needs or requirements that you might have. "
+#| "If you are uncertain about this, Silverblue can also be tested in a "
+#| "virtual machine prior to installation or booted from a flash drive using "
+#| "Fedora Media Writer."
 msgid ""
 "It is therefore recommended that you read this user guide before deciding to "
-"install Silverblue. It is also recommended that you determine whether "
-"Silverblue meets the specific needs or requirements that you might have. If "
-"you are uncertain about this, Silverblue can also be tested in a virtual "
-"machine prior to installation or booted from a flash drive using Fedora "
-"Media Writer."
+"install {variant-name}. It is also recommended that you determine whether "
+"{variant-name} meets the specific needs or requirements that you might have. "
+"If you are uncertain about this, {variant-name} can also be tested in a "
+"virtual machine prior to installation or booted from a flash drive using "
+"Fedora Media Writer."
 msgstr ""
 "Portanto, é recomendável que você leia este guia do usuário antes de decidir "
 "instalar o Silverblue. Também é recomendável que você determine se o "
@@ -96,7 +117,7 @@ msgstr "Limitações conhecidas"
 #| "*Silverblue does not provide a fully functional experience for dual booting or \n"
 #| "manual partitioning.*\n"
 msgid ""
-"*Silverblue does not provide a fully functional experience for dual booting or\n"
+"*{variant-name} does not provide a fully functional experience for dual booting or\n"
 "manual partitioning.*\n"
 msgstr ""
 "*O Silverblue não fornece uma experiência totalmente funcional para dual\n"
@@ -104,8 +125,16 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:37
+#, fuzzy
+#| msgid ""
+#| "It is possible to make Silverblue work for both dual boot and manual "
+#| "partitioning, and some guidance is provided on manual partitioning "
+#| "below.  However, there are hazards involved in both cases, and you should "
+#| "only attempt to use these features if you have done the necessary "
+#| "research, and are confident that you can overcome any issues that you "
+#| "might encounter."
 msgid ""
-"It is possible to make Silverblue work for both dual boot and manual "
+"It is possible to make {variant-name} work for both dual boot and manual "
 "partitioning, and some guidance is provided on manual partitioning below.  "
 "However, there are hazards involved in both cases, and you should only "
 "attempt to use these features if you have done the necessary research, and "
@@ -120,16 +149,22 @@ msgstr ""
 #. type: Title ==
 #: pages/installation.adoc:39
 #, no-wrap
-msgid "Getting Silverblue"
-msgstr "Obtendo o Silverblue"
+msgid "Getting {variant-name}"
+msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:45
+#, fuzzy
+#| msgid ""
+#| "If you are using Fedora Media Writer, Silverblue should be listed as a "
+#| "download option. However, if it isn't, or if you want to download it "
+#| "manually, an install image can be downloaded from https://silverblue."
+#| "fedoraproject.org/[the main Silverblue website]."
 msgid ""
-"If you are using Fedora Media Writer, Silverblue should be listed as a "
+"If you are using Fedora Media Writer, {variant-name} should be listed as a "
 "download option. However, if it isn't, or if you want to download it "
-"manually, an install image can be downloaded from https://silverblue."
-"fedoraproject.org/[the main Silverblue website]."
+"manually, an install image can be downloaded from {website}[the main "
+"{variant-name} website]."
 msgstr ""
 "Se você estiver usando o Fedora Media Writer, o Silverblue deve estar "
 "listado como uma opção de download. No entanto, se não for, ou se você "
@@ -138,9 +173,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:48
+#, fuzzy
+#| msgid ""
+#| "Once you have got your copy of Silverblue, it can be installed in the "
+#| "usual manner. We hope that you love it!"
 msgid ""
-"Once you have got your copy of Silverblue, it can be installed in the usual "
-"manner. We hope that you love it!"
+"Once you have got your copy of {variant-name}, it can be installed in the "
+"usual manner. We hope that you love it!"
 msgstr ""
 "Depois de obter sua cópia do Silverblue, ela pode ser instalada da maneira "
 "usual. Esperamos que você ame!"
@@ -153,9 +192,15 @@ msgstr "Particionamento manual"
 
 #. type: Plain text
 #: pages/installation.adoc:56
+#, fuzzy
+#| msgid ""
+#| "As described above, there are known issues with manual partitioning on "
+#| "Silverblue, and it should be used with caution. The following notes are "
+#| "intended as hints for those attempting it, and should not be treated as "
+#| "recommended practice. Automatic partitioning is recommended."
 msgid ""
 "As described above, there are known issues with manual partitioning on "
-"Silverblue, and it should be used with caution. The following notes are "
+"{variant-name}, and it should be used with caution. The following notes are "
 "intended as hints for those attempting it, and should not be treated as "
 "recommended practice. Automatic partitioning is recommended."
 msgstr ""
@@ -172,7 +217,7 @@ msgstr ""
 #| "With Silverblue, only certain mounts can be manually specified as "
 #| "partitions. These include:"
 msgid ""
-"With Silverblue, only certain mounts can be manually specified as "
+"With {variant-name}, only certain mounts can be manually specified as "
 "partitions.  These include:"
 msgstr ""
 "Com o Silverblue, apenas certas montagens podem ser especificadas "
@@ -195,7 +240,9 @@ msgstr "Subdiretórios sob `/var`, incluindo:"
 
 #. type: Plain text
 #: pages/installation.adoc:64
-msgid "`/var/home` (Silverblue has a symlink from `/home` to `/var/home`)"
+#, fuzzy
+#| msgid "`/var/home` (Silverblue has a symlink from `/home` to `/var/home`)"
+msgid "`/var/home` ({variant-name} has a symlink from `/home` to `/var/home`)"
 msgstr ""
 "`/var/home` (Silverblue tem um link simbólico de `/home` para `/var/home`)"
 
@@ -216,10 +263,15 @@ msgstr "O sistema de arquivos raiz: `/`"
 
 #. type: Plain text
 #: pages/installation.adoc:70
+#, fuzzy
+#| msgid ""
+#| "The Fedora installer is not aware of these restrictions and will accept "
+#| "custom partitions without error, even if they are incompatible with "
+#| "Silverblue."
 msgid ""
 "The Fedora installer is not aware of these restrictions and will accept "
-"custom partitions without error, even if they are incompatible with "
-"Silverblue."
+"custom partitions without error, even if they are incompatible with {variant-"
+"name}."
 msgstr ""
 "O instalador do Fedora não está ciente dessas restrições e aceitará "
 "partições personalizadas sem erros, mesmo que sejam incompatíveis com o "
@@ -248,11 +300,19 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:78
+#, fuzzy
+#| msgid ""
+#| "Manual partitioning on Silverblue can be done with `Btrfs`, https://en."
+#| "wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], as well as "
+#| "standard partitions or an `xfs` filesystem."
 msgid ""
-"Manual partitioning on Silverblue can be done with `Btrfs`, https://en."
+"Manual partitioning on {variant-name} can be done with `Btrfs`, https://en."
 "wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], as well as "
 "standard partitions or an `xfs` filesystem."
 msgstr ""
 "O particionamento manual no Silverblue pode ser feito com `Btrfs`, https://"
 "en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], bem como "
 "partições padrão ou um sistema de arquivos `xfs`."
+
+#~ msgid "Getting Silverblue"
+#~ msgstr "Obtendo o Silverblue"

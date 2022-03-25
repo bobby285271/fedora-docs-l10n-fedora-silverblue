@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-29 22:01+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -23,17 +23,17 @@ msgstr ""
 #. type: Plain text
 #: pages/getting-started.adoc:8
 msgid ""
-"Silverblue is designed to be easy and straightforward to use, and specialist "
-"knowledge should generally not be required. However, Silverblue is built "
-"differently from other operating systems, and there are therefore some "
-"things that it is useful to know."
+"{variant-name} is designed to be easy and straightforward to use, and "
+"specialist knowledge should generally not be required. However, {variant-"
+"name} is built differently from other operating systems, and there are "
+"therefore some things that it is useful to know."
 msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:12
 msgid ""
-"Silverblue has different options for installing software, compared with a "
-"standard Fedora Workstation (or other package-based Linux distributions). "
+"{variant-name} has different options for installing software, compared with "
+"a standard Fedora Workstation (or other package-based Linux distributions). "
 "These include:"
 msgstr ""
 
@@ -41,7 +41,7 @@ msgstr ""
 #: pages/getting-started.adoc:14
 msgid ""
 "Flatpak apps: this is the primary way that (GUI) apps get installed on "
-"Silverblue."
+"{variant-name}."
 msgstr ""
 
 #. type: Plain text
@@ -79,9 +79,9 @@ msgstr ""
 #. type: Plain text
 #: pages/getting-started.adoc:30
 msgid ""
-"Flatpak is the primary way that apps can be installed on Silverblue. (For "
-"information, see http://flatpak.org[flatpak.org].) Flatpak works out of the "
-"box in Fedora Silverblue, and Fedora provides a small (but growing) "
+"Flatpak is the primary way that apps can be installed on {variant-name}. "
+"(For information, see http://flatpak.org[flatpak.org].) Flatpak works out of "
+"the box in Fedora {variant-name}, and Fedora provides a small (but growing) "
 "collection of apps that can be installed."
 msgstr ""
 
@@ -101,9 +101,9 @@ msgstr ""
 #. type: Plain text
 #: pages/getting-started.adoc:40
 msgid ""
-"To setup Flathub on Fedora Silverblue, open the https://flatpak.org/setup/"
-"Fedora/[Flathub setup page for Fedora] and click the “Flathub repository "
-"file” button to download the Flathub configuration."
+"To setup Flathub on Fedora {variant-name}, open the https://flatpak.org/"
+"setup/Fedora/[Flathub setup page for Fedora] and click the “Flathub "
+"repository file” button to download the Flathub configuration."
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
@@ -241,9 +241,9 @@ msgstr ""
 #. type: Plain text
 #: pages/getting-started.adoc:92
 msgid ""
-"Package layering works by modifying your Silverblue installation. As the "
-"name implies, it works by extending the packages from which Silverblue is "
-"composed."
+"Package layering works by modifying your {variant-name} installation. As the "
+"name implies, it works by extending the packages from which {variant-name} "
+"is composed."
 msgstr ""
 
 #. type: Plain text
@@ -270,7 +270,7 @@ msgstr ""
 #: pages/getting-started.adoc:101
 msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
-"Silverblue using this method."
+"{variant-name} using this method."
 msgstr ""
 
 #. type: Plain text
@@ -302,7 +302,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:118
-msgid "Packages can be installed on Silverblue using:"
+msgid "Packages can be installed on {variant-name} using:"
 msgstr ""
 
 #. type: Plain text
@@ -315,9 +315,9 @@ msgstr ""
 #: pages/getting-started.adoc:125
 msgid ""
 "This will download the package and any required dependencies, and recompose "
-"your Silverblue image with them. `rpm-ostree` uses standard Fedora package "
-"names, which can be searched using DNF (this is not available on a "
-"Silverblue host, but can be used in a xref:toolbox.adoc[toolbox])."
+"your {variant-name} image with them. `rpm-ostree` uses standard Fedora "
+"package names, which can be searched using DNF (this is not available on a "
+"{variant-name} host, but can be used in a xref:toolbox.adoc[toolbox])."
 msgstr ""
 
 #. type: Plain text

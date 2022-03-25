@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-29 22:01+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -26,8 +26,13 @@ msgstr "技术信息"
 
 #. type: Plain text
 #: pages/technical-information.adoc:7
+#, fuzzy
+#| msgid ""
+#| "This page provides some background technical information on Silverblue, "
+#| "including information on the core technologies used to build it, as well "
+#| "as the filesystem layout."
 msgid ""
-"This page provides some background technical information on Silverblue, "
+"This page provides some background technical information on {variant-name}, "
 "including information on the core technologies used to build it, as well as "
 "the filesystem layout."
 msgstr ""
@@ -36,10 +41,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:11
+#, fuzzy
+#| msgid ""
+#| "Users should not need to know this information. It is provided here for "
+#| "those who are interested in the technical details or those who want to "
+#| "use Silverblue in a non-standard manner."
 msgid ""
 "Users should not need to know this information. It is provided here for "
 "those who are interested in the technical details or those who want to use "
-"Silverblue in a non-standard manner."
+"{variant-name} in a non-standard manner."
 msgstr ""
 "一般用户无需了解这些信息，本页面仅为那些对 Silverblue 实现细节感兴趣的开发者"
 "准备。"
@@ -61,9 +71,10 @@ msgstr "ostree 和 rpm-ostree"
 #| "binaries”."
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] is the core technology that is "
-"used to compose, deploy and update Silverblue. ostree operates in a similar "
-"manner to a version control system, but it operates on entire filesystem "
-"trees. It is often described as “Git for operating system binaries”."
+"used to compose, deploy and update {variant-name}. ostree operates in a "
+"similar manner to a version control system, but it operates on entire "
+"filesystem trees. It is often described as “Git for operating system "
+"binaries”."
 msgstr ""
 "https://ostreedev.github.io/ostree/[ostree] 是构建、部署和更新 Silverblue 所"
 "采用的关键技术。ostree 的工作原理和常见的版本控制系统差不多，但是 ostree 掌管"
@@ -72,10 +83,16 @@ msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:23
+#, fuzzy
+#| msgid ""
+#| "For Silverblue installs, ostree is responsible for deploying and updating "
+#| "the OS image (including everything below `/` that is not symlinked into `/"
+#| "var`). It also updates `grub.cfg` entries to point to the current image."
 msgid ""
-"For Silverblue installs, ostree is responsible for deploying and updating "
-"the OS image (including everything below `/` that is not symlinked into `/"
-"var`). It also updates `grub.cfg` entries to point to the current image."
+"For {variant-name} installs, ostree is responsible for deploying and "
+"updating the OS image (including everything below `/` that is not symlinked "
+"into `/var`). It also updates `grub.cfg` entries to point to the current "
+"image."
 msgstr ""
 "对于 Silverblue 而言，ostree 会被用于部署和更新系统映像（也就是 `/` 下没有被"
 "链接到 `/var` 的所有目录）。ostree 也被用于更新 `grub.cfg` 以使新系统出现在引"
@@ -83,10 +100,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:27
+#, fuzzy
+#| msgid ""
+#| "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
+#| "and makes it possible to install RPMs as a “layer” on top of an ostree "
+#| "image. This makes it possible to install RPMs on Silverblue."
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
 "and makes it possible to install RPMs as a “layer” on top of an ostree "
-"image. This makes it possible to install RPMs on Silverblue."
+"image. This makes it possible to install RPMs on {variant-name}."
 msgstr ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] 基于 ostree 而来，它使得在 "
 "ostree 映像上层叠 RPM 成为可能。在 Silverblue 安装 RPM 也是通过 rpm-ostree 实"
@@ -107,24 +129,34 @@ msgstr ""
 
 #. type: Title ==
 #: pages/technical-information.adoc:35
-#, no-wrap
-msgid "Silverblue filesystem layout"
+#, fuzzy, no-wrap
+#| msgid "Silverblue filesystem layout"
+msgid "{variant-name} filesystem layout"
 msgstr "Silverblue 文件系统组织结构"
 
 #. type: Plain text
 #: pages/technical-information.adoc:39
+#, fuzzy
+#| msgid ""
+#| "On Silverblue, the root filesystem is immutable. This means that `/`, `/"
+#| "usr` and everything below it is read-only."
 msgid ""
-"On Silverblue, the root filesystem is immutable. This means that `/`, `/usr` "
-"and everything below it is read-only."
+"On {variant-name}, the root filesystem is immutable. This means that `/`, `/"
+"usr` and everything below it is read-only."
 msgstr ""
 "在 Silverblue，根目录是不可变的。也就是说 `/`、`/usr` 和这些目录下的所有文件"
 "都是只读的。"
 
 #. type: Plain text
 #: pages/technical-information.adoc:43
+#, fuzzy
+#| msgid ""
+#| "`/var` is where all of Silverblue's runtime state is stored. Symlinks are "
+#| "used to make traditional state-carrying directories available in their "
+#| "expected locations. This includes:"
 msgid ""
-"`/var` is where all of Silverblue's runtime state is stored. Symlinks are "
-"used to make traditional state-carrying directories available in their "
+"`/var` is where all of {variant-name}'s runtime state is stored. Symlinks "
+"are used to make traditional state-carrying directories available in their "
 "expected locations. This includes:"
 msgstr ""
 "`/var` 被用于储存 Silverblue 的运行时状态。我们使用链接使得目录能在我们期望的"
@@ -173,9 +205,14 @@ msgstr "这意味着用户目录分区应该被挂载到 `/var/home`。"
 
 #. type: Plain text
 #: pages/technical-information.adoc:56
+#, fuzzy
+#| msgid ""
+#| "For a more detailed explanation of Silverblue's filesystem layout, refer "
+#| "to the excellent https://ostreedev.github.io/ostree/adapting-existing/"
+#| "[libostree documentation]."
 msgid ""
-"For a more detailed explanation of Silverblue's filesystem layout, refer to "
-"the excellent https://ostreedev.github.io/ostree/adapting-existing/"
+"For a more detailed explanation of {variant-name}'s filesystem layout, refer "
+"to the excellent https://ostreedev.github.io/ostree/adapting-existing/"
 "[libostree documentation]."
 msgstr ""
 "要进一步了解 Silverblue 的文件系统组织结构，请阅读 https://ostreedev.github."

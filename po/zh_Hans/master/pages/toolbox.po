@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-04 22:00+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-06-23 06:04+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -26,8 +26,13 @@ msgstr "Toolbox"
 
 #. type: Plain text
 #: pages/toolbox.adoc:7
+#, fuzzy
+#| msgid ""
+#| "As an immutable host, Silverblue is an excellent platform for container-"
+#| "based development and, for working with containers, https://buildah.io/"
+#| "[buildah] and https://podman.io/[podman] are recommended."
 msgid ""
-"As an immutable host, Silverblue is an excellent platform for container-"
+"As an immutable host, {variant-name} is an excellent platform for container-"
 "based development and, for working with containers, https://buildah.io/"
 "[buildah] and https://podman.io/[podman] are recommended."
 msgstr ""
@@ -37,8 +42,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:11
+#, fuzzy
+#| msgid ""
+#| "Silverblue also comes with the https://github.com/containers/"
+#| "toolbox[toolbox] utility, which uses containers to provide an environment "
+#| "where development tools and libraries can be installed and used."
 msgid ""
-"Silverblue also comes with the https://github.com/containers/"
+"{variant-name} also comes with the https://github.com/containers/"
 "toolbox[toolbox] utility, which uses containers to provide an environment "
 "where development tools and libraries can be installed and used."
 msgstr ""
@@ -53,13 +63,20 @@ msgstr "为什么使用 Toolbox？"
 
 #. type: Plain text
 #: pages/toolbox.adoc:20
+#, fuzzy
+#| msgid ""
+#| "Toolbox makes it easy to use a containerized environment for everyday "
+#| "software development and debugging. On immutable operating systems, like "
+#| "https://silverblue.fedoraproject.org/[Fedora Silverblue], it provides a "
+#| "familiar package-based environment in which tools and libraries can be "
+#| "installed and used. However, toolbox can also be used on package-based "
+#| "systems."
 msgid ""
 "Toolbox makes it easy to use a containerized environment for everyday "
 "software development and debugging. On immutable operating systems, like "
-"https://silverblue.fedoraproject.org/[Fedora Silverblue], it provides a "
-"familiar package-based environment in which tools and libraries can be "
-"installed and used. However, toolbox can also be used on package-based "
-"systems."
+"{website}[Fedora {variant-name}], it provides a familiar package-based "
+"environment in which tools and libraries can be installed and used. However, "
+"toolbox can also be used on package-based systems."
 msgstr ""
 "Toolbox 提供了专为应用程序开发和调试打造的容器化环境。在 https://silverblue."
 "fedoraproject.org/[Fedora Silverblue] 这样的不可变操作系统上，Toolbox 提供了"
@@ -202,14 +219,18 @@ msgstr "安装"
 #. type: Title ===
 #: pages/toolbox.adoc:70
 #, no-wrap
-msgid "Fedora Silverblue"
-msgstr "Fedora Silverblue"
+msgid "Fedora {variant-name}"
+msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:74
+#, fuzzy
+#| msgid ""
+#| "Toolbox is preinstalled on Fedora Silverblue 30 or newer. On older "
+#| "versions, it can be installed with the following command:"
 msgid ""
-"Toolbox is preinstalled on Fedora Silverblue 30 or newer. On older versions, "
-"it can be installed with the following command:"
+"Toolbox is preinstalled on Fedora {variant-name} 30 or newer. On older "
+"versions, it can be installed with the following command:"
 msgstr ""
 "Fedora Silverblue 30 或更高版本已经预装了 Toolbox。在旧版系统上，你可以使用下"
 "面的命令安装 Toolbox："
@@ -572,6 +593,9 @@ msgstr ""
 "要联系 Toolbox 用户和开发者，可以前往 https://discussion.fedoraproject.org/"
 "[Fedora 的 Discourse 论坛] ，或者加入 https://libera.chat/[Libera] 的 "
 "#silverblue IRC 频道。"
+
+#~ msgid "Fedora Silverblue"
+#~ msgstr "Fedora Silverblue"
 
 #~ msgid ""
 #~ "Using toolbox containers to install development tools offers a number of "

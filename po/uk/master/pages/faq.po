@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-22 21:48+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -89,16 +89,22 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/faq.adoc:23
-#, no-wrap
-msgid "What is Silverblue's relationship with Project Atomic?"
+#, fuzzy, no-wrap
+#| msgid "What is Silverblue's relationship with Project Atomic?"
+msgid "What is {variant-name}'s relationship with Project Atomic?"
 msgstr "Як Silverblue пов'язано із проєктом Atomic?"
 
 #. type: Plain text
 #: pages/faq.adoc:27
+#, fuzzy
+#| msgid ""
+#| "Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
+#| "well as its successor, Fedora CoreOS). However, Silverblue is "
+#| "specifically focused on workstation/desktop use cases."
 msgid ""
-"Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
-"well as its successor, Fedora CoreOS). However, Silverblue is specifically "
-"focused on workstation/desktop use cases."
+"Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
+"(as well as its successor, Fedora CoreOS). However, {variant-name} is "
+"specifically focused on workstation/desktop use cases."
 msgstr ""
 "У Fedora Silverblue використано ту саму основну технологію, що у базовій "
 "системі Fedora Atomic (а також у її наступниці — Fedora CoreOS). Втім, "
@@ -107,14 +113,16 @@ msgstr ""
 
 #. type: Title ==
 #: pages/faq.adoc:28
-#, no-wrap
-msgid "About using Silverblue"
+#, fuzzy, no-wrap
+#| msgid "About using Silverblue"
+msgid "About using {variant-name}"
 msgstr "Про використання Silverblue"
 
 #. type: Labeled list
 #: pages/faq.adoc:31
-#, no-wrap
-msgid "How can I install Eclipse on Silverblue?"
+#, fuzzy, no-wrap
+#| msgid "How can I install Eclipse on Silverblue?"
+msgid "How can I install Eclipse on {variant-name}?"
 msgstr "Як встановити Eclipse у Silverblue?"
 
 #. type: Plain text
@@ -276,9 +284,13 @@ msgstr " $ toolbox run dnf search <пакунок>\n"
 
 #. type: Plain text
 #: pages/faq.adoc:81
+#, fuzzy
+#| msgid ""
+#| "The assumption is that you have already created a toolbox matching the "
+#| "version of your Fedora Silverblue installation."
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
-"version of your Fedora Silverblue installation."
+"version of your Fedora {variant-name} installation."
 msgstr ""
 "Тут ми припускаємо, що у вас вже створено toolbox, який відповідає "
 "встановленій у вас версії Fedora Silverblue."
@@ -378,10 +390,14 @@ msgstr "rpm-ostree status\n"
 
 #. type: Plain text
 #: pages/faq.adoc:109
+#, fuzzy
+#| msgid ""
+#| "After the deployment is pinned, you can upgrade your system by using the "
+#| "instructions found https://docs.fedoraproject.org/en-US/fedora-silverblue/"
+#| "updates-upgrades-rollbacks/#upgrading[here.]"
 msgid ""
 "After the deployment is pinned, you can upgrade your system by using the "
-"instructions found https://docs.fedoraproject.org/en-US/fedora-silverblue/"
-"updates-upgrades-rollbacks/#upgrading[here.]"
+"instructions found {docs-url}/updates-upgrades-rollbacks/#upgrading[here]."
 msgstr ""
 "Після того, як розгорнуту систему пришпилено, ви можете оновити вашу систему "
 "за допомогою настанов, які наведено https://docs.fedoraproject.org/uk-UA/"
@@ -409,8 +425,12 @@ msgstr ""
 "У поточній версії не передбачено можливості змінювати назви (пришпилених) "
 "розгорнутих систем та пов'язаних із ними пунктів меню GRUB."
 
-#~ msgid "How can I use Adobe Flash on the Firefox version pre installed on my system?"
-#~ msgstr "Як скористатися Adobe Flash у версії Firefox, яку попередньо встановлено у моїй системі?"
+#~ msgid ""
+#~ "How can I use Adobe Flash on the Firefox version pre installed on my "
+#~ "system?"
+#~ msgstr ""
+#~ "Як скористатися Adobe Flash у версії Firefox, яку попередньо встановлено "
+#~ "у моїй системі?"
 
 #~ msgid ""
 #~ "You can follow this https://docs.fedoraproject.org/en-US/quick-docs/using-"

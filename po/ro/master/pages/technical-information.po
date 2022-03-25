@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-29 22:01+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. type: Plain text
 #: pages/technical-information.adoc:7
 msgid ""
-"This page provides some background technical information on Silverblue, "
+"This page provides some background technical information on {variant-name}, "
 "including information on the core technologies used to build it, as well as "
 "the filesystem layout."
 msgstr ""
@@ -33,7 +33,7 @@ msgstr ""
 msgid ""
 "Users should not need to know this information. It is provided here for "
 "those who are interested in the technical details or those who want to use "
-"Silverblue in a non-standard manner."
+"{variant-name} in a non-standard manner."
 msgstr ""
 
 #. type: Title ==
@@ -46,17 +46,19 @@ msgstr ""
 #: pages/technical-information.adoc:19
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] is the core technology that is "
-"used to compose, deploy and update Silverblue. ostree operates in a similar "
-"manner to a version control system, but it operates on entire filesystem "
-"trees. It is often described as “Git for operating system binaries”."
+"used to compose, deploy and update {variant-name}. ostree operates in a "
+"similar manner to a version control system, but it operates on entire "
+"filesystem trees. It is often described as “Git for operating system "
+"binaries”."
 msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:23
 msgid ""
-"For Silverblue installs, ostree is responsible for deploying and updating "
-"the OS image (including everything below `/` that is not symlinked into `/"
-"var`). It also updates `grub.cfg` entries to point to the current image."
+"For {variant-name} installs, ostree is responsible for deploying and "
+"updating the OS image (including everything below `/` that is not symlinked "
+"into `/var`). It also updates `grub.cfg` entries to point to the current "
+"image."
 msgstr ""
 
 #. type: Plain text
@@ -64,7 +66,7 @@ msgstr ""
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
 "and makes it possible to install RPMs as a “layer” on top of an ostree "
-"image. This makes it possible to install RPMs on Silverblue."
+"image. This makes it possible to install RPMs on {variant-name}."
 msgstr ""
 
 #. type: Plain text
@@ -80,21 +82,21 @@ msgstr ""
 #. type: Title ==
 #: pages/technical-information.adoc:35
 #, no-wrap
-msgid "Silverblue filesystem layout"
+msgid "{variant-name} filesystem layout"
 msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:39
 msgid ""
-"On Silverblue, the root filesystem is immutable. This means that `/`, `/usr` "
-"and everything below it is read-only."
+"On {variant-name}, the root filesystem is immutable. This means that `/`, `/"
+"usr` and everything below it is read-only."
 msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:43
 msgid ""
-"`/var` is where all of Silverblue's runtime state is stored. Symlinks are "
-"used to make traditional state-carrying directories available in their "
+"`/var` is where all of {variant-name}'s runtime state is stored. Symlinks "
+"are used to make traditional state-carrying directories available in their "
 "expected locations. This includes:"
 msgstr ""
 
@@ -142,7 +144,7 @@ msgstr ""
 #. type: Plain text
 #: pages/technical-information.adoc:56
 msgid ""
-"For a more detailed explanation of Silverblue's filesystem layout, refer to "
-"the excellent https://ostreedev.github.io/ostree/adapting-existing/"
+"For a more detailed explanation of {variant-name}'s filesystem layout, refer "
+"to the excellent https://ostreedev.github.io/ostree/adapting-existing/"
 "[libostree documentation]."
 msgstr ""

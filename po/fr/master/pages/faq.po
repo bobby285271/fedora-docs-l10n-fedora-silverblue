@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-22 21:48+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: 2020-08-17 22:36+0000\n"
 "Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
@@ -75,28 +75,30 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/faq.adoc:23
-#, no-wrap
-msgid "What is Silverblue's relationship with Project Atomic?"
+#, fuzzy, no-wrap
+#| msgid "What is Silverblue's relationship with Project Atomic?"
+msgid "What is {variant-name}'s relationship with Project Atomic?"
 msgstr "Quelle est la relation entre Silverblue et Project Atomic ?"
 
 #. type: Plain text
 #: pages/faq.adoc:27
 msgid ""
-"Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
-"well as its successor, Fedora CoreOS). However, Silverblue is specifically "
-"focused on workstation/desktop use cases."
+"Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
+"(as well as its successor, Fedora CoreOS). However, {variant-name} is "
+"specifically focused on workstation/desktop use cases."
 msgstr ""
 
 #. type: Title ==
 #: pages/faq.adoc:28
 #, no-wrap
-msgid "About using Silverblue"
+msgid "About using {variant-name}"
 msgstr ""
 
 #. type: Labeled list
 #: pages/faq.adoc:31
-#, no-wrap
-msgid "How can I install Eclipse on Silverblue?"
+#, fuzzy, no-wrap
+#| msgid "How can I install Eclipse on Silverblue?"
+msgid "How can I install Eclipse on {variant-name}?"
 msgstr "Comment puis-je installer Éclipse sur Silverblue ?"
 
 #. type: Plain text
@@ -233,7 +235,7 @@ msgstr ""
 #: pages/faq.adoc:81
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
-"version of your Fedora Silverblue installation."
+"version of your Fedora {variant-name} installation."
 msgstr ""
 
 #. type: Labeled list
@@ -319,8 +321,7 @@ msgstr ""
 #: pages/faq.adoc:109
 msgid ""
 "After the deployment is pinned, you can upgrade your system by using the "
-"instructions found https://docs.fedoraproject.org/en-US/fedora-silverblue/"
-"updates-upgrades-rollbacks/#upgrading[here.]"
+"instructions found {docs-url}/updates-upgrades-rollbacks/#upgrading[here]."
 msgstr ""
 
 #. type: Plain text
