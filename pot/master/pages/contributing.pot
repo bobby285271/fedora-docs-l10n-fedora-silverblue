@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-29 22:01+0000\n"
+"POT-Creation-Date: 2022-03-25 00:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,25 +19,25 @@ msgstr ""
 #. type: Title =
 #: ./pages/contributing.adoc:2
 #, no-wrap
-msgid "Contributing to Fedora Silverblue"
+msgid "Contributing to Fedora {variant-name}"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/contributing.adoc:5
-msgid "Help us improve Fedora Silverblue by contributing to the project!"
+msgid "Help us improve Fedora {variant-name} by contributing to the project!"
 msgstr ""
 
 #. type: Title ==
 #: ./pages/contributing.adoc:7
 #, no-wrap
-msgid "Developing Silverblue"
+msgid "Developing {variant-name}"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/contributing.adoc:10
 msgid ""
 "If you are a developer, you can contribute to one of the several projects "
-"which make Fedora Silverblue possible. Submit your pull requests to:"
+"which make Fedora {variant-name} possible. Submit your pull requests to:"
 msgstr ""
 
 #. type: Plain text
@@ -138,17 +138,16 @@ msgstr ""
 #: ./pages/contributing.adoc:39
 msgid ""
 "Creating or modifying documentation is easy. Head over to our "
-"https://github.com/fedora-silverblue/silverblue-docs[documentation] GitHub "
-"repository, fork it and create a pull request."
+"{docs-src}[documentation] GitHub repository, fork it and create a pull "
+"request."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/contributing.adoc:41
 msgid ""
 "If you are not comfortable with using git, create a new topic in our "
-"https://discussion.fedoraproject.org/c/desktop/silverblue[community] or log "
-"an https://github.com/fedora-silverblue/silverblue-docs/issues[issue] "
-"describing what need to be changed."
+"{discussion-forum}[community] or log an {docs-issue}[issue] describing what "
+"need to be changed."
 msgstr ""
 
 #. type: Title ===
@@ -198,5 +197,5 @@ msgstr ""
 #: ./pages/contributing.adoc:58
 msgid ""
 "You can report bugs and suggest features or improvements on the "
-"https://github.com/fedora-silverblue/issue-tracker/issues[issue tracker.]"
+"{issue-tracker}[issue tracker]."
 msgstr ""
