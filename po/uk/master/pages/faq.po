@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-03-25 00:45+0000\n"
-"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"PO-Revision-Date: 2022-03-26 08:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesfaq/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. type: Title =
 #: pages/faq.adoc:1
@@ -89,41 +89,33 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/faq.adoc:23
-#, fuzzy, no-wrap
-#| msgid "What is Silverblue's relationship with Project Atomic?"
+#, no-wrap
 msgid "What is {variant-name}'s relationship with Project Atomic?"
-msgstr "Як Silverblue пов'язано із проєктом Atomic?"
+msgstr "Як {variant-name} пов'язано із проєктом Atomic?"
 
 #. type: Plain text
 #: pages/faq.adoc:27
-#, fuzzy
-#| msgid ""
-#| "Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
-#| "well as its successor, Fedora CoreOS). However, Silverblue is "
-#| "specifically focused on workstation/desktop use cases."
 msgid ""
 "Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
 "(as well as its successor, Fedora CoreOS). However, {variant-name} is "
 "specifically focused on workstation/desktop use cases."
 msgstr ""
-"У Fedora Silverblue використано ту саму основну технологію, що у базовій "
+"У Fedora {variant-name} використано ту саму основну технологію, що у базовій "
 "системі Fedora Atomic (а також у її наступниці — Fedora CoreOS). Втім, "
-"акцент у Silverblue зроблено на задоволенні потреби у якісній робочій "
+"акцент у {variant-name} зроблено на задоволенні потреби у якісній робочій "
 "станції."
 
 #. type: Title ==
 #: pages/faq.adoc:28
-#, fuzzy, no-wrap
-#| msgid "About using Silverblue"
+#, no-wrap
 msgid "About using {variant-name}"
-msgstr "Про використання Silverblue"
+msgstr "Про використання {variant-name}"
 
 #. type: Labeled list
 #: pages/faq.adoc:31
-#, fuzzy, no-wrap
-#| msgid "How can I install Eclipse on Silverblue?"
+#, no-wrap
 msgid "How can I install Eclipse on {variant-name}?"
-msgstr "Як встановити Eclipse у Silverblue?"
+msgstr "Як встановити Eclipse у {variant-name}?"
 
 #. type: Plain text
 #: pages/faq.adoc:34
@@ -284,16 +276,12 @@ msgstr " $ toolbox run dnf search <пакунок>\n"
 
 #. type: Plain text
 #: pages/faq.adoc:81
-#, fuzzy
-#| msgid ""
-#| "The assumption is that you have already created a toolbox matching the "
-#| "version of your Fedora Silverblue installation."
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
 "version of your Fedora {variant-name} installation."
 msgstr ""
 "Тут ми припускаємо, що у вас вже створено toolbox, який відповідає "
-"встановленій у вас версії Fedora Silverblue."
+"встановленій у вас версії Fedora {variant-name}."
 
 #. type: Labeled list
 #: pages/faq.adoc:82
@@ -390,18 +378,13 @@ msgstr "rpm-ostree status\n"
 
 #. type: Plain text
 #: pages/faq.adoc:109
-#, fuzzy
-#| msgid ""
-#| "After the deployment is pinned, you can upgrade your system by using the "
-#| "instructions found https://docs.fedoraproject.org/en-US/fedora-silverblue/"
-#| "updates-upgrades-rollbacks/#upgrading[here.]"
 msgid ""
 "After the deployment is pinned, you can upgrade your system by using the "
 "instructions found {docs-url}/updates-upgrades-rollbacks/#upgrading[here]."
 msgstr ""
 "Після того, як розгорнуту систему пришпилено, ви можете оновити вашу систему "
-"за допомогою настанов, які наведено https://docs.fedoraproject.org/uk-UA/"
-"fedora-silverblue/updates-upgrades-rollbacks/#upgrading[тут.]"
+"за допомогою настанов, які наведено {docs-url}/updates-upgrades-rollbacks/"
+"#upgrading[тут]."
 
 #. type: Plain text
 #: pages/faq.adoc:111

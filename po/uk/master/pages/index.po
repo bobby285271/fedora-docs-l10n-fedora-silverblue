@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-03-25 00:45+0000\n"
-"PO-Revision-Date: 2020-05-22 22:39+0000\n"
+"PO-Revision-Date: 2022-03-26 08:17+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesindex/uk/>\n"
@@ -17,27 +17,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. type: Title =
 #: pages/index.adoc:1
-#, fuzzy, no-wrap
-#| msgid "Fedora Silverblue User Guide"
+#, no-wrap
 msgid "Fedora {variant-name} User Guide"
-msgstr "Підручник користувача Fedora Silverblue"
+msgstr "Підручник користувача Fedora {variant-name}"
 
 #. type: Plain text
 #: pages/index.adoc:4
-#, fuzzy
-#| msgid "Welcome to the Fedora Silverblue user guide!"
 msgid "Welcome to the Fedora {variant-name} user guide!"
-msgstr "Вітаємо у підручнику користувача Fedora Silverblue!"
+msgstr "Вітаємо у підручнику користувача Fedora {variant-name}!"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/index.adoc:5
 #, no-wrap
 msgid "{variant-name} logo"
-msgstr ""
+msgstr "Логотип {variant-name}"
 
 #. type: Target for macro image
 #: pages/index.adoc:5
@@ -47,74 +44,49 @@ msgstr "silverblue-logo.svg"
 
 #. type: Plain text
 #: pages/index.adoc:10
-#, fuzzy
-#| msgid ""
-#| "_Fedora Silverblue_ is an immutable desktop operating system. It aims to "
-#| "be extremely stable and reliable. It also aims to be an excellent "
-#| "platform for developers and for those using container-focused workflows."
 msgid ""
 "_Fedora {variant-name}_ is an immutable desktop operating system. It aims to "
 "be extremely stable and reliable. It also aims to be an excellent platform "
 "for developers and for those using container-focused workflows."
 msgstr ""
-"_Fedora Silverblue_ — незмінна операційна система для робочих станцій. "
+"_Fedora {variant-name}_ — незмінна операційна система для робочих станцій. "
 "Робота системи має бути надзвичайно стабільною і надійною. Система має бути "
 "чудовою платформою для розробників і тих, хто користується робочими "
 "процесами, заснованими на контейнеризації."
 
 #. type: Title ==
 #: pages/index.adoc:12
-#, fuzzy, no-wrap
-#| msgid "Introduction to Silverblue"
+#, no-wrap
 msgid "Introduction to {variant-name}"
-msgstr "Вступ до Silverblue"
+msgstr "Вступ до {variant-name}"
 
 #. type: Plain text
 #: pages/index.adoc:17
-#, fuzzy
-#| msgid ""
-#| "Silverblue is a variant of Fedora Workstation. It looks, feels and "
-#| "behaves like a regular desktop operating system, and the experience is "
-#| "similar to what you find with using a standard Fedora Workstation."
 msgid ""
 "{variant-name} is a variant of Fedora Workstation. It looks, feels and "
 "behaves like a regular desktop operating system, and the experience is "
 "similar to what you find with using a standard Fedora Workstation."
 msgstr ""
-"Silverblue є варіантом Fedora Workstation. Система виглядає, працює і "
+"{variant-name} є варіантом Fedora Workstation. Система виглядає, працює і "
 "поводиться як звичайна операційна система для робочих станцій — робота у ній "
 "повністю подібна до роботи у стандартній системі Fedora Workstation."
 
 #. type: Plain text
 #: pages/index.adoc:22
-#, fuzzy
-#| msgid ""
-#| "However, unlike other operating systems, Silverblue is immutable. This "
-#| "means that every installation is identical to every other installation of "
-#| "the same version. The operating system that is on disk is exactly the "
-#| "same from one machine to the next, and it never changes as it is used."
 msgid ""
 "However, unlike other operating systems, {variant-name} is immutable. This "
 "means that every installation is identical to every other installation of "
 "the same version. The operating system that is on disk is exactly the same "
 "from one machine to the next, and it never changes as it is used."
 msgstr ""
-"Втім, на відміну від інших операційних систем, Silverblue є незмінною. Це "
-"означає, що кожен встановлений екземпляр системи є ідентичним до усіх "
+"Втім, на відміну від інших операційних систем, {variant-name} є незмінною. "
+"Це означає, що кожен встановлений екземпляр системи є ідентичним до усіх "
 "екземплярів системи тієї самої версії. Операційна система на диску є "
 "абсолютно однаковою на усіх комп'ютерах, де її встановлено, — вона ніколи не "
 "змінюється протягом терміну користування нею."
 
 #. type: Plain text
 #: pages/index.adoc:29
-#, fuzzy
-#| msgid ""
-#| "Silverblue's immutable design is intended to make it more stable, less "
-#| "prone to bugs, and easier to test and develop. Finally, Silverblue's "
-#| "immutable design also makes it an excellent platform for containerized "
-#| "applications as well as container-based software development. In each "
-#| "case, applications (apps) and containers are kept separate from the host "
-#| "system, improving stability and reliability."
 msgid ""
 "{variant-name}'s immutable design is intended to make it more stable, less "
 "prone to bugs, and easier to test and develop. Finally, {variant-name}'s "
@@ -123,22 +95,15 @@ msgid ""
 "applications (apps) and containers are kept separate from the host system, "
 "improving stability and reliability."
 msgstr ""
-"Незмінність Silverblue має зробити її стабільнішою, невразливою до вад та "
-"простішою у тестуванні та розробці. Нарешті, незмінність Silverblue також "
-"робить її чудовою платформою для контейнеризованих програм, а також розробки "
-"заснованого на технологіях контейнеризації програмного забезпечення. "
-"Програми і контейнери за будь-яких умов є відокремленими від основної "
-"системи, що поліпшує стабільність і надійність роботи системи."
+"Незмінність {variant-name} має зробити її стабільнішою, невразливою до вад "
+"та простішою у тестуванні та розробці. Нарешті, незмінність {variant-name} "
+"також робить її чудовою платформою для контейнеризованих програм, а також "
+"розробки заснованого на технологіях контейнеризації програмного "
+"забезпечення. Програми і контейнери за будь-яких умов є відокремленими від "
+"основної системи, що поліпшує стабільність і надійність роботи системи."
 
 #. type: Plain text
 #: pages/index.adoc:34
-#, fuzzy
-#| msgid ""
-#| "Silverblue's core technologies have some other helpful features. OS "
-#| "updates are fast and there's no waiting around for them to install: just "
-#| "reboot as normal to start using the next version. With Silverblue, it is "
-#| "also possible to roll back to the previous version of the operating "
-#| "system, if something goes wrong."
 msgid ""
 "{variant-name}'s core technologies have some other helpful features. OS "
 "updates are fast and there's no waiting around for them to install: just "
@@ -146,12 +111,12 @@ msgid ""
 "also possible to roll back to the previous version of the operating system, "
 "if something goes wrong."
 msgstr ""
-"У базових технологіях Silverblue закладено і деякі інші корисні можливості. "
-"Оновлення операційної системи є швидким — вам не доведеться чекати на "
-"встановлення нових пакунків: просто перезавантажте систему для того, щоб "
-"почати користуватися новою версією. Крім того, у Silverblue можна "
-"повернутися до попередньої версії операційної системи, якщо виникнуть якісь "
-"негаразди."
+"У базових технологіях {variant-name} закладено і деякі інші корисні "
+"можливості. Оновлення операційної системи є швидким — вам не доведеться "
+"чекати на встановлення нових пакунків: просто перезавантажте систему для "
+"того, щоб почати користуватися новою версією. Крім того, у {variant-name} "
+"можна повернутися до попередньої версії операційної системи, якщо виникнуть "
+"якісь негаразди."
 
 #. type: Title ==
 #: pages/index.adoc:36
@@ -161,22 +126,17 @@ msgstr "Про цей підручник"
 
 #. type: Plain text
 #: pages/index.adoc:42
-#, fuzzy
-#| msgid ""
-#| "In most cases, Silverblue behaves like a standard Fedora Workstation "
-#| "installation, and the https://docs.fedoraproject.org/[standard Fedora "
-#| "documentation] can be used. This guide covers those areas where "
-#| "Silverblue differs from a standard Fedora Workstation, including:"
 msgid ""
 "In most cases, {variant-name} behaves like a standard Fedora Workstation "
 "installation, and the https://docs.fedoraproject.org/[standard Fedora "
 "documentation] can be used. This guide covers those areas where {variant-"
 "name} differs from a standard Fedora Workstation, including:"
 msgstr ""
-"Здебільшого, Silverblue поводиться як стандартна система Fedora Workstation, "
-"тому можна скористатися https://docs.fedoraproject.org/[документацією до "
-"стандартної Fedora]. У цьому підручнику висвітлено ті речі, якими Silverblue "
-"відрізняється від стандартної Fedora Workstation, зокрема:"
+"Здебільшого, {variant-name} поводиться як стандартна система Fedora "
+"Workstation, тому можна скористатися https://docs.fedoraproject.org/["
+"документацією до стандартної Fedora]. У цьому підручнику висвітлено ті речі, "
+"якими {variant-name} відрізняється від стандартної Fedora Workstation, "
+"зокрема:"
 
 #. type: Plain text
 #: pages/index.adoc:44
@@ -197,13 +157,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/index.adoc:50
-#, fuzzy
-#| msgid ""
-#| "The primary audience for these docs are new users, who aren't expected to "
-#| "have specialist knowledge or technical knowledge about Silverblue's "
-#| "internals.  However, some background link:technical-information[technical "
-#| "information] is provided, for those who are interested and want to learn "
-#| "more."
 msgid ""
 "The primary audience for these docs are new users, who aren't expected to "
 "have specialist knowledge or technical knowledge about {variant-name}'s "
@@ -213,7 +166,7 @@ msgid ""
 msgstr ""
 "Основним контингентом читачів цієї документації мають бути нові користувачі, "
 "від яких ми не очікуємо глибоких спеціальних або технічних знань щодо "
-"Silverblue. Втім, тут наведено деякі link:technical-information[технічні "
+"{variant-name}. Втім, тут наведено деякі link:technical-information[технічні "
 "відомості] для тих, кому це цікаво, і для тих, хто хоче дізнатися більше."
 
 #~ msgid "Silverblue logo"

@@ -2,13 +2,13 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
 # Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-03-25 00:45+0000\n"
-"PO-Revision-Date: 2021-11-22 23:16+0000\n"
+"PO-Revision-Date: 2022-03-26 08:17+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. type: Title =
 #: pages/troubleshooting.adoc:1
@@ -28,20 +28,14 @@ msgstr "Усування проблем"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:7
-#, fuzzy
-#| msgid ""
-#| "Silverblue is a radically new way of deploying and managing your desktop "
-#| "operating system, so you may occasionally run into problems while going "
-#| "through your day to day.  Below are some of the more common problems "
-#| "reported and any workarounds for those problems."
 msgid ""
 "{variant-name} is a radically new way of deploying and managing your desktop "
 "operating system, so you may occasionally run into problems while going "
 "through your day to day.  Below are some of the more common problems "
 "reported and any workarounds for those problems."
 msgstr ""
-"Silverblue є радикально новим способом розгортання вашої операційної системи "
-"для робочих станцій та керування нею. Через це у вас можуть виникати "
+"{variant-name} є радикально новим способом розгортання вашої операційної "
+"системи для робочих станцій та керування нею. Через це у вас можуть виникати "
 "проблеми зі щоденним користуванням нею. Нижче наведено список найпоширеніших "
 "проблем та способів їхнього розв'язання."
 
@@ -142,12 +136,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:45
-#, fuzzy
-#| msgid ""
-#| "Users have long wanted to use their Nvidia GPUs on their Silverblue "
-#| "systems.  Thankfully, recent changes to the `akmods` and `kmodtools` "
-#| "packages were made by https://twitter.com/gnomealex[Alex Larsson] to "
-#| "allow for normal installation of the Nvidia drivers."
 msgid ""
 "Users have long wanted to use their Nvidia GPUs on their {variant-name} "
 "systems.  Thankfully, recent changes to the `akmods` and `kmodtools` "
@@ -155,7 +143,7 @@ msgid ""
 "for normal installation of the Nvidia drivers."
 msgstr ""
 "Користувачі вже давно прагнуть скористатися усіма можливостями графічних "
-"процесорів Nvidia у системах Silverblue. На щастя, нещодавні зміни у "
+"процесорів Nvidia у системах {variant-name}. На щастя, нещодавні зміни у "
 "пакунках `akmods` і `kmodtools`, які було внесено https://twitter.com/"
 "gnomealex[Alex Larsson], уможливлюють звичайне встановлення драйверів Nvidia."
 
@@ -186,14 +174,6 @@ msgstr "Проблеми із SELinux"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:58
-#, fuzzy
-#| msgid ""
-#| "As users work with Silverblue day-to-day, it is possible that they have "
-#| "modified the default SELinux policy in an effort to workaround one or "
-#| "more problems related to SELinux. This is usually done when a user sees a "
-#| "SELinux denial in the journal.  If this is the case and one wishes to "
-#| "revert back to the default SELinux policy, you can try these set of "
-#| "actions."
 msgid ""
 "As users work with {variant-name} day-to-day, it is possible that they have "
 "modified the default SELinux policy in an effort to workaround one or more "
@@ -201,12 +181,12 @@ msgid ""
 "denial in the journal.  If this is the case and one wishes to revert back to "
 "the default SELinux policy, you can try these set of actions."
 msgstr ""
-"Працюючи із Silverblue щоденно, користувачі можуть внести зміни до типових "
-"правил SELinux з метою обійти якісь проблеми, які пов'язано із SELinux. "
-"Зазвичай, користувачі вдаються до змін, якщо бачать у журналі якусь відмову "
-"у доступі з боку SELinux. Якщо такі зміни було внесено, а треба повернутися "
-"до типових правил SELinux, можете скористатися наведеною нижче послідовністю "
-"дій."
+"Працюючи із {variant-name} щоденно, користувачі можуть внести зміни до "
+"типових правил SELinux з метою обійти якісь проблеми, які пов'язано із "
+"SELinux. Зазвичай, користувачі вдаються до змін, якщо бачать у журналі якусь "
+"відмову у доступі з боку SELinux. Якщо такі зміни було внесено, а треба "
+"повернутися до типових правил SELinux, можете скористатися наведеною нижче "
+"послідовністю дій."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:60
@@ -383,38 +363,27 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:121
-#, fuzzy
-#| msgid ""
-#| "This issue is most commonly seen when users have installed Silverblue on "
-#| "Apple hardware.  The `/boot/efi` partition on Apple hardware is formatted "
-#| "as HFS+ and is not always resilient to power failures or other kinds of "
-#| "hard power events."
 msgid ""
 "This issue is most commonly seen when users have installed {variant-name} on "
 "Apple hardware. The `/boot/efi` partition on Apple hardware is formatted as "
 "HFS+ and is not always resilient to power failures or other kinds of hard "
 "power events."
 msgstr ""
-"Ця проблема, здебільшого, виникає у користувачів, які встановлюють "
-"Silverblue на апаратне забезпечення Apple. Розділ `/boot/efi` на обладнанні "
-"Apple форматовано як HFS+, і він не завжди стійкий до вимикання живлення та "
-"інших типів проблем із живленням."
+"Ця проблема, здебільшого, виникає у користувачів, які встановлюють {variant-"
+"name} на апаратне забезпечення Apple. Розділ `/boot/efi` на обладнанні Apple "
+"форматовано як HFS+, і він не завжди стійкий до вимикання живлення та інших "
+"типів проблем із живленням."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:125
-#, fuzzy
-#| msgid ""
-#| "Since Silverblue now includes the `hfsplus-tools` package in the base "
-#| "compose, it has become relatively easy for users to workaround this kind "
-#| "of error."
 msgid ""
 "Since {variant-name} now includes the `hfsplus-tools` package in the base "
 "compose, it has become relatively easy for users to workaround this kind of "
 "error."
 msgstr ""
-"Оскільки до нової версії Silverblue до базової композиції включено пакунок "
-"`hfsplus-tools`, користувачам тепер набагато простіше усувати проблеми "
-"такого типу."
+"Оскільки до нової версії {variant-name} до базової композиції включено "
+"пакунок `hfsplus-tools`, користувачам тепер набагато простіше усувати "
+"проблеми такого типу."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:129
@@ -435,10 +404,9 @@ msgstr "Див. додаткові подробиці можна дізнати�
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:132
-#, fuzzy, no-wrap
-#| msgid "Unable to install Silverblue on EFI systems"
+#, no-wrap
 msgid "Unable to install {variant-name} on EFI systems"
-msgstr "Не вдається встановити Silverblue у системи з EFI"
+msgstr "Не вдається встановити {variant-name} у системи з EFI"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:135
@@ -448,19 +416,14 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:139
-#, fuzzy
-#| msgid ""
-#| "Users have reported that they cannot install Silverblue on an EFI based "
-#| "system where they previously had another OS installed.  The error that is "
-#| "often observed looks like:"
 msgid ""
 "Users have reported that they cannot install {variant-name} on an EFI based "
 "system where they previously had another OS installed. The error that is "
 "often observed looks like:"
 msgstr ""
-"Користувачі повідомляли про неможливість встановити Silverblue на засновані "
-"на EFI, де раніше було встановлено іншу операційну систему. Повідомлення про "
-"помилку, яке часто спостерігали, виглядало так:"
+"Користувачі повідомляли про неможливість встановити {variant-name} на "
+"засновані на EFI, де раніше було встановлено іншу операційну систему. "
+"Повідомлення про помилку, яке часто спостерігали, виглядало так:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:141
@@ -475,13 +438,6 @@ msgstr "Існує декілька можливих вирішень:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:145
-#, fuzzy
-#| msgid ""
-#| "During the install process, select \"Custom Partitioning\" and create an "
-#| "additional EFI partition. Assign the newly created EFI partition to `/"
-#| "boot/efi`. You will then be able to boot the previous OS(s) alongside "
-#| "Fedora Silverblue. If this workaround is not successful follow the below "
-#| "step."
 msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
 "additional EFI partition. Assign the newly created EFI partition to `/boot/"
@@ -491,7 +447,7 @@ msgstr ""
 "Під час процедури встановлення вибрати «Нетиповий поділ на розділи» і "
 "створити додатковий розділ EFI. Призначте для новоствореного розділу EFI "
 "точку монтування `/boot/efi`. Після цього ви зможете завантажувати ваші "
-"попередні операційні системи паралельно до Fedora Silverblue. Якщо цей "
+"попередні операційні системи паралельно до Fedora {variant-name}. Якщо цей "
 "варіант не спрацює, виконайте наведений нижче крок."
 
 #. type: Plain text
@@ -682,19 +638,14 @@ msgstr "Віддайте команду `restorecon`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:195
-#, fuzzy
-#| msgid ""
-#| "You should never run `restorecon` on a Silverblue host.  See the "
-#| "following bug for details - https://bugzilla.redhat.com/show_bug.cgi?"
-#| "id=1259018"
 msgid ""
 "You should never run `restorecon` on a {variant-name} host. See the "
 "following bug for details - https://bugzilla.redhat.com/show_bug.cgi?"
 "id=1259018"
 msgstr ""
-"Ніколи не запускайте `restorecon` у основній системі Silverblue. Подробиці "
-"наведено у цьому звіті щодо вади: https://bugzilla.redhat.com/show_bug.cgi?"
-"id=1259018"
+"Ніколи не запускайте `restorecon` у основній системі {variant-name}. "
+"Подробиці наведено у цьому звіті щодо вади: https://bugzilla.redhat.com/"
+"show_bug.cgi?id=1259018"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:197
@@ -733,17 +684,7 @@ msgstr "Виконайте очищення системи"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:214
-#, fuzzy, no-wrap
-#| msgid ""
-#| "$ rpm-ostree status -b | grep BaseCommit\n"
-#| "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-#| "$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
-#| "$ sudo ostree fsck --delete\n"
-#| "$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
-#| "$ sudo restorecon -Rv /var\n"
-#| "$ sudo restorecon -Rv /etc\n"
-#| "$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
-#| "$ sudo reboot\n"
+#, no-wrap
 msgid ""
 "$ rpm-ostree status -b | grep BaseCommit\n"
 "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
@@ -756,13 +697,17 @@ msgid ""
 "$ sudo reboot\n"
 msgstr ""
 "$ rpm-ostree status -b | grep BaseCommit\n"
-"BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-"$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
+"BaseCommit: "
+"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+"$ sudo ostree checkout -H "
+"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/"
+"repo/tmp/selinux-fix\n"
 "$ sudo ostree fsck --delete\n"
-"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
+"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-"
+"policy=/ /ostree/repo/tmp/selinux-fix\n"
 "$ sudo restorecon -Rv /var\n"
 "$ sudo restorecon -Rv /etc\n"
-"$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/silverblue\n"
+"$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/{variant}\n"
 "$ sudo reboot\n"
 
 #. type: Plain text

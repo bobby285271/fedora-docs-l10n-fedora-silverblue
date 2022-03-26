@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-03-25 00:45+0000\n"
-"PO-Revision-Date: 2021-10-06 16:05+0000\n"
+"PO-Revision-Date: 2022-03-26 08:17+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagescontributing/uk/>\n"
@@ -17,41 +17,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. type: Title =
 #: pages/contributing.adoc:2
-#, fuzzy, no-wrap
-#| msgid "Contributing to Fedora Silverblue"
+#, no-wrap
 msgid "Contributing to Fedora {variant-name}"
-msgstr "Участь у розробці Fedora Silverblue"
+msgstr "Участь у розробці Fedora {variant-name}"
 
 #. type: Plain text
 #: pages/contributing.adoc:5
-#, fuzzy
-#| msgid "Help us improve Fedora Silverblue by contributing to the project!"
 msgid "Help us improve Fedora {variant-name} by contributing to the project!"
-msgstr "Допоможіть нам поліпшити Fedora Silverblue своєю участю у проєкті!"
+msgstr "Допоможіть нам поліпшити Fedora {variant-name} своєю участю у проєкті!"
 
 #. type: Title ==
 #: pages/contributing.adoc:7
-#, fuzzy, no-wrap
-#| msgid "Developing Silverblue"
+#, no-wrap
 msgid "Developing {variant-name}"
-msgstr "Розробка Silverblue"
+msgstr "Розробка {variant-name}"
 
 #. type: Plain text
 #: pages/contributing.adoc:10
-#, fuzzy
-#| msgid ""
-#| "If you are a developer, you can contribute to one of the several projects "
-#| "which make Fedora Silverblue possible. Submit your pull requests to:"
 msgid ""
 "If you are a developer, you can contribute to one of the several projects "
 "which make Fedora {variant-name} possible. Submit your pull requests to:"
 msgstr ""
 "Якщо ви є розробником, ви можете взяти участь у одному з проєктів, на основі "
-"яких створюють Fedora Silverblue. Надсилайте свої латки до таких проєктів:"
+"яких створюють Fedora {variant-name}. Надсилайте свої латки до таких "
+"проєктів:"
 
 #. type: Plain text
 #: pages/contributing.adoc:12
@@ -161,37 +154,24 @@ msgstr "Написання документації"
 
 #. type: Plain text
 #: pages/contributing.adoc:39
-#, fuzzy
-#| msgid ""
-#| "Creating or modifying documentation is easy. Head over to our https://"
-#| "github.com/fedora-silverblue/silverblue-docs[documentation] GitHub "
-#| "repository, fork it and create a pull request."
 msgid ""
 "Creating or modifying documentation is easy. Head over to our {docs-src}"
 "[documentation] GitHub repository, fork it and create a pull request."
 msgstr ""
 "Створення і внесення змін до документації є простою справою. Прямуйте до "
-"сторінки https://github.com/fedora-silverblue/silverblue-docs[нашого сховища "
-"документації] на GitHub, створіть його відгалуження, внесіть зміни і "
-"надішліть запит щодо об'єднання."
+"сторінки {docs-src}[нашого сховища документації] на GitHub, створіть його "
+"відгалуження, внесіть зміни і надішліть запит щодо об'єднання."
 
 #. type: Plain text
 #: pages/contributing.adoc:41
-#, fuzzy
-#| msgid ""
-#| "If you are not comfortable with using git, create a new topic in our "
-#| "https://discussion.fedoraproject.org/c/desktop/silverblue[community] or "
-#| "log an https://github.com/fedora-silverblue/silverblue-docs/issues[issue] "
-#| "describing what need to be changed."
 msgid ""
 "If you are not comfortable with using git, create a new topic in our "
 "{discussion-forum}[community] or log an {docs-issue}[issue] describing what "
 "need to be changed."
 msgstr ""
 "Якщо ви не маєте наміру користуватися git, створіть нову тему у нашій "
-"https://discussion.fedoraproject.org/c/desktop/silverblue[спільноті] або "
-"повідомте про https://github.com/fedora-silverblue/silverblue-docs/"
-"issues[ваду], описавши бажані для вас зміни."
+"{discussion-forum}[спільноті] або повідомте про {docs-issue}[ваду], описавши "
+"бажані для вас зміни."
 
 #. type: Title ===
 #: pages/contributing.adoc:43
@@ -242,14 +222,9 @@ msgstr "Створення повідомлень про вади"
 
 #. type: Plain text
 #: pages/contributing.adoc:58
-#, fuzzy
-#| msgid ""
-#| "You can report bugs and suggest features or improvements on the https://"
-#| "github.com/fedora-silverblue/issue-tracker/issues[issue tracker.]"
 msgid ""
 "You can report bugs and suggest features or improvements on the {issue-"
 "tracker}[issue tracker]."
 msgstr ""
 "Ви можете повідомляти про вади та надсилати запити щодо поліпшень за "
-"допомогою https://github.com/fedora-silverblue/issue-tracker/issues[системи "
-"стеження за вадами]."
+"допомогою {issue-tracker}[системи стеження за вадами]."

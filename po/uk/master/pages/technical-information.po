@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-03-25 00:45+0000\n"
-"PO-Revision-Date: 2021-11-22 23:16+0000\n"
+"PO-Revision-Date: 2022-03-26 08:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestechnical-information/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. type: Title =
 #: pages/technical-information.adoc:2
@@ -27,27 +27,17 @@ msgstr "Технічні відомості"
 
 #. type: Plain text
 #: pages/technical-information.adoc:7
-#, fuzzy
-#| msgid ""
-#| "This page provides some background technical information on Silverblue, "
-#| "including information on the core technologies used to build it, as well "
-#| "as the filesystem layout."
 msgid ""
 "This page provides some background technical information on {variant-name}, "
 "including information on the core technologies used to build it, as well as "
 "the filesystem layout."
 msgstr ""
-"На цій сторінці наведено деякі базові технічні відомості щодо Silverblue, "
-"зокрема відомості щодо базових технологій, які використано для збирання "
+"На цій сторінці наведено деякі базові технічні відомості щодо {variant-name}"
+", зокрема відомості щодо базових технологій, які використано для збирання "
 "дистрибутива, а також щодо компонування його файлової системи."
 
 #. type: Plain text
 #: pages/technical-information.adoc:11
-#, fuzzy
-#| msgid ""
-#| "Users should not need to know this information. It is provided here for "
-#| "those who are interested in the technical details or those who want to "
-#| "use Silverblue in a non-standard manner."
 msgid ""
 "Users should not need to know this information. It is provided here for "
 "those who are interested in the technical details or those who want to use "
@@ -55,7 +45,7 @@ msgid ""
 msgstr ""
 "Ці відомості є непотрібними для кінцевих користувачів. Їх наведено тут для "
 "тих, хто цікавиться технічним боком справи, або тих, хто хоче скористатися "
-"Silverblue у якийсь нестандартний спосіб."
+"{variant-name} у якийсь нестандартний спосіб."
 
 #. type: Title ==
 #: pages/technical-information.adoc:13
@@ -65,13 +55,6 @@ msgstr "ostree та rpm-ostree"
 
 #. type: Plain text
 #: pages/technical-information.adoc:19
-#, fuzzy
-#| msgid ""
-#| "https://ostreedev.github.io/ostree/[ostree] is the core technology that "
-#| "is used to compose, deploy and update Silverblue. ostree operates in a "
-#| "similar manner to a version control system, but it operates on entire "
-#| "filesystem trees. It is often described as “Git for operating system "
-#| "binaries”."
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] is the core technology that is "
 "used to compose, deploy and update {variant-name}. ostree operates in a "
@@ -80,36 +63,26 @@ msgid ""
 "binaries”."
 msgstr ""
 "https://ostreedev.github.io/ostree/[ostree] — базова технологія, яка "
-"використовується для компонування, розгортання та оновлення Silverblue. "
+"використовується для компонування, розгортання та оновлення {variant-name}. "
 "ostree працює подібно до системи керування версіями, але використовує для "
 "роботи усі ієрархії файлових систем. Часто ostree описують як «Git для "
 "бінарних файлів операційної системи»."
 
 #. type: Plain text
 #: pages/technical-information.adoc:23
-#, fuzzy
-#| msgid ""
-#| "For Silverblue installs, ostree is responsible for deploying and updating "
-#| "the OS image (including everything below `/` that is not symlinked into `/"
-#| "var`). It also updates `grub.cfg` entries to point to the current image."
 msgid ""
 "For {variant-name} installs, ostree is responsible for deploying and "
 "updating the OS image (including everything below `/` that is not symlinked "
 "into `/var`). It also updates `grub.cfg` entries to point to the current "
 "image."
 msgstr ""
-"У встановлених системах Silverblue ostree відповідає за розгортання і "
+"У встановлених системах {variant-name} ostree відповідає за розгортання і "
 "оновлення образу операційної системи (зокрема усього у `/`, які не пов'язано "
 "символічними посиланнями із `/var`). ostree також оновлює записи `grub.cfg` "
 "так, щоб вони вказували на поточний образ."
 
 #. type: Plain text
 #: pages/technical-information.adoc:27
-#, fuzzy
-#| msgid ""
-#| "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
-#| "and makes it possible to install RPMs as a “layer” on top of an ostree "
-#| "image. This makes it possible to install RPMs on Silverblue."
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
 "and makes it possible to install RPMs as a “layer” on top of an ostree "
@@ -117,7 +90,7 @@ msgid ""
 msgstr ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] збирається на основі ostree "
 "і робить можливим встановлення RPM як «шару» над образом ostree. Це "
-"уможливлює встановлення RPM у Silverblue."
+"уможливлює встановлення RPM у {variant-name}."
 
 #. type: Plain text
 #: pages/technical-information.adoc:33
@@ -137,37 +110,27 @@ msgstr ""
 
 #. type: Title ==
 #: pages/technical-information.adoc:35
-#, fuzzy, no-wrap
-#| msgid "Silverblue filesystem layout"
+#, no-wrap
 msgid "{variant-name} filesystem layout"
-msgstr "Компонування файлової системи Silverblue"
+msgstr "Компонування файлової системи {variant-name}"
 
 #. type: Plain text
 #: pages/technical-information.adoc:39
-#, fuzzy
-#| msgid ""
-#| "On Silverblue, the root filesystem is immutable. This means that `/`, `/"
-#| "usr` and everything below it is read-only."
 msgid ""
 "On {variant-name}, the root filesystem is immutable. This means that `/`, `/"
 "usr` and everything below it is read-only."
 msgstr ""
-"У Silverblue коренева файлова система є незмінною. Це означає, що `/`, `/"
-"usr` і усі підлеглі щодо них каталоги є придатними лише для читання."
+"У {variant-name} коренева файлова система є незмінною. Це означає, що `/`, "
+"`/usr` і усі підлеглі щодо них каталоги є придатними лише для читання."
 
 #. type: Plain text
 #: pages/technical-information.adoc:43
-#, fuzzy
-#| msgid ""
-#| "`/var` is where all of Silverblue's runtime state is stored. Symlinks are "
-#| "used to make traditional state-carrying directories available in their "
-#| "expected locations. This includes:"
 msgid ""
 "`/var` is where all of {variant-name}'s runtime state is stored. Symlinks "
 "are used to make traditional state-carrying directories available in their "
 "expected locations. This includes:"
 msgstr ""
-"Усі динамічні частини Silverblue зберігаються у `/var`. Для створення "
+"Усі динамічні частини {variant-name} зберігаються у `/var`. Для створення "
 "традиційних каталогів у очікуваних місцях для збереження стану системи "
 "використовуються символічні посилання. Це, зокрема, стосується таких "
 "каталогів:"
@@ -215,16 +178,11 @@ msgstr "Це означає, що окремі домашні розділи с�
 
 #. type: Plain text
 #: pages/technical-information.adoc:56
-#, fuzzy
-#| msgid ""
-#| "For a more detailed explanation of Silverblue's filesystem layout, refer "
-#| "to the excellent https://ostreedev.github.io/ostree/adapting-existing/"
-#| "[libostree documentation]."
 msgid ""
 "For a more detailed explanation of {variant-name}'s filesystem layout, refer "
 "to the excellent https://ostreedev.github.io/ostree/adapting-existing/"
 "[libostree documentation]."
 msgstr ""
-"Докладніший опис компонування файлової системи Silverblue можна знайти у "
+"Докладніший опис компонування файлової системи {variant-name} можна знайти у "
 "чудовій https://ostreedev.github.io/ostree/adapting-existing/[документації "
 "із libostree]."

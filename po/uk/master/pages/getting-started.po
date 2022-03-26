@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-03-25 00:45+0000\n"
-"PO-Revision-Date: 2021-10-06 16:04+0000\n"
+"PO-Revision-Date: 2022-03-26 08:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. type: Title =
 #: pages/getting-started.adoc:2
@@ -27,51 +27,36 @@ msgstr "Перші кроки"
 
 #. type: Plain text
 #: pages/getting-started.adoc:8
-#, fuzzy
-#| msgid ""
-#| "Silverblue is designed to be easy and straightforward to use, and "
-#| "specialist knowledge should generally not be required. However, "
-#| "Silverblue is built differently from other operating systems, and there "
-#| "are therefore some things that it is useful to know."
 msgid ""
 "{variant-name} is designed to be easy and straightforward to use, and "
 "specialist knowledge should generally not be required. However, {variant-"
 "name} is built differently from other operating systems, and there are "
 "therefore some things that it is useful to know."
 msgstr ""
-"Silverblue створено простою і зрозумілою у користуванні — у спеціальних "
-"знаннях для користування нею, зазвичай, немає потреби. Втім, будова "
-"Silverblue відрізняється від інших операційних систем, тому є декілька "
-"речей, про які корисно знати."
+"{variant-name} створено простою і зрозумілою у користуванні — у спеціальних "
+"знаннях для користування нею, зазвичай, немає потреби. Втім, будова {variant-"
+"name} відрізняється від інших операційних систем, тому є декілька речей, про "
+"які корисно знати."
 
 #. type: Plain text
 #: pages/getting-started.adoc:12
-#, fuzzy
-#| msgid ""
-#| "Silverblue has different options for installing software, compared with a "
-#| "standard Fedora Workstation (or other package-based Linux distributions). "
-#| "These include:"
 msgid ""
 "{variant-name} has different options for installing software, compared with "
 "a standard Fedora Workstation (or other package-based Linux distributions). "
 "These include:"
 msgstr ""
-"У Silverblue передбачено інші варіанти встановлення програмного "
+"У {variant-name} передбачено інші варіанти встановлення програмного "
 "забезпечення, порівняно зі стандартною Fedora Workstation (або іншими "
 "заснованими на пакунках дистрибутивами Linux). Це, зокрема:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:14
-#, fuzzy
-#| msgid ""
-#| "Flatpak apps: this is the primary way that (GUI) apps get installed on "
-#| "Silverblue."
 msgid ""
 "Flatpak apps: this is the primary way that (GUI) apps get installed on "
 "{variant-name}."
 msgstr ""
 "Програми Flatpak: це основний спосіб встановлення програм (із графічним "
-"інтерфейсом) у Silverblue."
+"інтерфейсом) у {variant-name}."
 
 #. type: Plain text
 #: pages/getting-started.adoc:15
@@ -116,23 +101,17 @@ msgstr "Flatpak"
 
 #. type: Plain text
 #: pages/getting-started.adoc:30
-#, fuzzy
-#| msgid ""
-#| "Flatpak is the primary way that apps can be installed on Silverblue. (For "
-#| "information, see http://flatpak.org[flatpak.org].) Flatpak works out of "
-#| "the box in Fedora Silverblue, and Fedora provides a small (but growing) "
-#| "collection of apps that can be installed."
 msgid ""
 "Flatpak is the primary way that apps can be installed on {variant-name}. "
 "(For information, see http://flatpak.org[flatpak.org].) Flatpak works out of "
 "the box in Fedora {variant-name}, and Fedora provides a small (but growing) "
 "collection of apps that can be installed."
 msgstr ""
-"Flatpak є основним способом встановлення програм у Silverblue. (Докладніші "
-"відомості можна знайти на http://flatpak.org[flatpak.org].) Flatpak працює у "
-"Fedora Silverblue без додаткового налаштовування, а Fedora надає доступ до "
-"невеликого (але такого, що постійно збільшується) набору програм, які можна "
-"встановити."
+"Flatpak є основним способом встановлення програм у {variant-name}. ("
+"Докладніші відомості можна знайти на http://flatpak.org[flatpak.org].) "
+"Flatpak працює у Fedora {variant-name} без додаткового налаштовування, а "
+"Fedora надає доступ до невеликого (але такого, що постійно збільшується) "
+"набору програм, які можна встановити."
 
 #. type: Plain text
 #: pages/getting-started.adoc:33
@@ -151,19 +130,15 @@ msgstr "Налаштовування Flathub"
 
 #. type: Plain text
 #: pages/getting-started.adoc:40
-#, fuzzy
-#| msgid ""
-#| "To setup Flathub on Fedora Silverblue, open the https://flatpak.org/setup/"
-#| "Fedora/[Flathub setup page for Fedora] and click the “Flathub repository "
-#| "file” button to download the Flathub configuration."
 msgid ""
 "To setup Flathub on Fedora {variant-name}, open the https://flatpak.org/"
 "setup/Fedora/[Flathub setup page for Fedora] and click the “Flathub "
 "repository file” button to download the Flathub configuration."
 msgstr ""
-"Щоб налаштувати використання Flathub у Fedora Silverblue, відкрийте https://"
-"flatpak.org/setup/Fedora/[сторінку налаштовування Flathub для Fedora] і "
-"натисніть кнопку «Flathub repository file» для отримання налаштувань Flathub."
+"Щоб налаштувати використання Flathub у Fedora {variant-name}, відкрийте "
+"https://flatpak.org/setup/Fedora/[сторінку налаштовування Flathub для Fedora]"
+" і натисніть кнопку «Flathub repository file» для отримання налаштувань "
+"Flathub."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/getting-started.adoc:41
@@ -330,19 +305,14 @@ msgstr "Нашаровування пакунків"
 
 #. type: Plain text
 #: pages/getting-started.adoc:92
-#, fuzzy
-#| msgid ""
-#| "Package layering works by modifying your Silverblue installation. As the "
-#| "name implies, it works by extending the packages from which Silverblue is "
-#| "composed."
 msgid ""
 "Package layering works by modifying your {variant-name} installation. As the "
 "name implies, it works by extending the packages from which {variant-name} "
 "is composed."
 msgstr ""
 "Основою нашаровування пакунків є внесення змін до встановленого образу "
-"Silverblue. Як можна здогадатися із назви, усе це працює шляхом розширення "
-"списку пакунків, з яких складається Silverblue."
+"{variant-name}. Як можна здогадатися із назви, усе це працює шляхом "
+"розширення списку пакунків, з яких складається Silverblue."
 
 #. type: Plain text
 #: pages/getting-started.adoc:94
@@ -366,16 +336,12 @@ msgstr "`libvirt`: фонова служба libvirt"
 
 #. type: Plain text
 #: pages/getting-started.adoc:101
-#, fuzzy
-#| msgid ""
-#| "Most (but not all) RPM packages provided by Fedora can be installed on "
-#| "Silverblue using this method."
 msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
 "{variant-name} using this method."
 msgstr ""
-"У цей спосіб у Silverblue можна встановити більшість (але не усі) пакунків "
-"RPM зі сховищ Fedora."
+"У цей спосіб у {variant-name} можна встановити більшість (але не усі) "
+"пакунків RPM зі сховищ Fedora."
 
 #. type: Plain text
 #: pages/getting-started.adoc:110
@@ -421,10 +387,9 @@ msgstr "Встановлення пакунків"
 
 #. type: Plain text
 #: pages/getting-started.adoc:118
-#, fuzzy
-#| msgid "Packages can be installed on Silverblue using:"
 msgid "Packages can be installed on {variant-name} using:"
-msgstr "Пакунки можна встановлювати у Silverblue за допомогою такої команди:"
+msgstr ""
+"Пакунки можна встановлювати у {variant-name} за допомогою такої команди:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:120
@@ -434,13 +399,6 @@ msgstr " $ rpm-ostree install <назва пакунка>\n"
 
 #. type: Plain text
 #: pages/getting-started.adoc:125
-#, fuzzy
-#| msgid ""
-#| "This will download the package and any required dependencies, and "
-#| "recompose your Silverblue image with them. `rpm-ostree` uses standard "
-#| "Fedora package names, which can be searched using DNF (this is not "
-#| "available on a Silverblue host, but can be used in a xref:toolbox."
-#| "adoc[toolbox])."
 msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your {variant-name} image with them. `rpm-ostree` uses standard Fedora "
@@ -448,10 +406,10 @@ msgid ""
 "{variant-name} host, but can be used in a xref:toolbox.adoc[toolbox])."
 msgstr ""
 "Ця команда виконає отримання пакунка та усіх потрібних залежностей і "
-"перекомпонує образ Silverblue, встановивши їх відповідним чином. `rpm-"
+"перекомпонує образ {variant-name}, встановивши їх відповідним чином. `rpm-"
 "ostree` використовує стандартні назви пакунків Fedora, визначити які можна "
-"за допомогою DNF (цієї програми немає у основній системі Silverblue, але нею "
-"можна скористатися у xref:toolbox.adoc[toolbox])."
+"за допомогою DNF (цієї програми немає у основній системі {variant-name}, але "
+"нею можна скористатися у xref:toolbox.adoc[toolbox])."
 
 #. type: Plain text
 #: pages/getting-started.adoc:128

@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-03-25 00:45+0000\n"
-"PO-Revision-Date: 2021-10-06 16:04+0000\n"
+"PO-Revision-Date: 2022-03-26 08:17+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. type: Title =
 #: pages/toolbox.adoc:2
@@ -27,37 +27,27 @@ msgstr "Toolbox"
 
 #. type: Plain text
 #: pages/toolbox.adoc:7
-#, fuzzy
-#| msgid ""
-#| "As an immutable host, Silverblue is an excellent platform for container-"
-#| "based development and, for working with containers, https://buildah.io/"
-#| "[buildah] and https://podman.io/[podman] are recommended."
 msgid ""
 "As an immutable host, {variant-name} is an excellent platform for container-"
 "based development and, for working with containers, https://buildah.io/"
 "[buildah] and https://podman.io/[podman] are recommended."
 msgstr ""
-"Як незмінна система, Silverblue є ідеальною платформою для розробки "
+"Як незмінна система, {variant-name} є ідеальною платформою для розробки "
 "програмного забезпечення на основі технологій контейнеризації. Для роботи з "
 "контейнерами рекомендуємо скористатися https://buildah.io/[buildah] і "
 "https://podman.io/[podman]."
 
 #. type: Plain text
 #: pages/toolbox.adoc:11
-#, fuzzy
-#| msgid ""
-#| "Silverblue also comes with the https://github.com/containers/"
-#| "toolbox[toolbox] utility, which uses containers to provide an environment "
-#| "where development tools and libraries can be installed and used."
 msgid ""
 "{variant-name} also comes with the https://github.com/containers/"
 "toolbox[toolbox] utility, which uses containers to provide an environment "
 "where development tools and libraries can be installed and used."
 msgstr ""
-"Крім того, до складу Silverblue включено допоміжний засіб https://github.com/"
-"containers/toolbox[toolbox], який використовує контейнери для забезпечення "
-"роботи середовища, у якому можна встановити засоби для розробки і бібліотеки "
-"і скористатися ними."
+"Крім того, до складу {variant-name} включено допоміжний засіб https://github."
+"com/containers/toolbox[toolbox], який використовує контейнери для "
+"забезпечення роботи середовища, у якому можна встановити засоби для розробки "
+"і бібліотеки і скористатися ними."
 
 #. type: Title ==
 #: pages/toolbox.adoc:13
@@ -67,14 +57,6 @@ msgstr "Чому слід користуватися toolbox?"
 
 #. type: Plain text
 #: pages/toolbox.adoc:20
-#, fuzzy
-#| msgid ""
-#| "Toolbox makes it easy to use a containerized environment for everyday "
-#| "software development and debugging. On immutable operating systems, like "
-#| "https://silverblue.fedoraproject.org/[Fedora Silverblue], it provides a "
-#| "familiar package-based environment in which tools and libraries can be "
-#| "installed and used. However, toolbox can also be used on package-based "
-#| "systems."
 msgid ""
 "Toolbox makes it easy to use a containerized environment for everyday "
 "software development and debugging. On immutable operating systems, like "
@@ -84,10 +66,10 @@ msgid ""
 msgstr ""
 "Toolbox спрощує використання контейнеризованих середовищ для регулярної "
 "розробки програмного забезпечення та діагностування. У незмінних операційних "
-"системах, зокрема https://silverblue.fedoraproject.org/[Fedora Silverblue], "
-"він надає доступ до знайомого середовища, яке засновано на пакунках, у якому "
-"можна встановлювати інструменти і бібліотеки. Втім, toolbox також можна "
-"використовувати і у заснованих на пакунках системах."
+"системах, зокрема {website}[Fedora {variant-name}], він надає доступ до "
+"знайомого середовища, яке засновано на пакунках, у якому можна встановлювати "
+"інструменти і бібліотеки. Втім, toolbox також можна використовувати і у "
+"заснованих на пакунках системах."
 
 #. type: Plain text
 #: pages/toolbox.adoc:23
@@ -242,20 +224,16 @@ msgstr "Встановлення"
 #: pages/toolbox.adoc:70
 #, no-wrap
 msgid "Fedora {variant-name}"
-msgstr ""
+msgstr "Fedora {variant-name}"
 
 #. type: Plain text
 #: pages/toolbox.adoc:74
-#, fuzzy
-#| msgid ""
-#| "Toolbox is preinstalled on Fedora Silverblue 30 or newer. On older "
-#| "versions, it can be installed with the following command:"
 msgid ""
 "Toolbox is preinstalled on Fedora {variant-name} 30 or newer. On older "
 "versions, it can be installed with the following command:"
 msgstr ""
-"Toolbox вже встановлено у Fedora Silverblue 30 і новіших версіях. У старіших "
-"версіях встановити toolbox можна такою командою:"
+"Toolbox вже встановлено у Fedora {variant-name} 30 і новіших версіях. У "
+"старіших версіях встановити toolbox можна такою командою:"
 
 #. type: Plain text
 #: pages/toolbox.adoc:76
