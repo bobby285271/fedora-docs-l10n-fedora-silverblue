@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,116 +34,60 @@ msgid "Developing {variant-name}"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:10
+#: ./pages/contributing.adoc:11
 msgid ""
 "If you are a developer, you can contribute to one of the several projects "
-"which make Fedora {variant-name} possible. Submit your pull requests to:"
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:12
-msgid "https://github.com/projectatomic/rpm-ostree[rpm-ostree]"
+"which make Fedora {variant-name} possible.  Submit your pull requests to:"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/contributing.adoc:13
-msgid "https://github.com/flatpak/flatpak[flatpak]"
+msgid "https://github.com/projectatomic/rpm-ostree[rpm-ostree]"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/contributing.adoc:14
-msgid "https://github.com/ostreedev/ostree[ostree]"
+msgid "https://github.com/flatpak/flatpak[flatpak]"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/contributing.adoc:15
-msgid "https://github.com/containers/toolbox[toolbox]"
+msgid "https://github.com/ostreedev/ostree[ostree]"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/contributing.adoc:16
+msgid "https://github.com/containers/toolbox[toolbox]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:17
 msgid "https://github.com/containers/libpod[podman]"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:18
+#: ./pages/contributing.adoc:19
 msgid ""
 "Your contributions towards the main "
 "https://fedoraproject.org/wiki/Join[Fedora] project are also very welcome."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/contributing.adoc:20
-#, no-wrap
-msgid "Creating Flatpaks"
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:23
-msgid ""
-"Your favourite application is not in the default repository and won't "
-"probably be added? You can do it yourself! Go through our tutorial for "
-"creating flatpaks from rpm packages:"
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:25
-msgid ""
-"https://docs.fedoraproject.org/en-US/flatpak/tutorial/[RPM to Flatpak "
-"tutorial]"
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:27
-msgid ""
-"To become an official packager you need to go through several steps to gain "
-"all required permissions to use the Fedora infrastructure (Pagure, Koji, "
-"Bodhi). There is a detailed "
-"https://docs.fedoraproject.org/en-US/package-maintainers/Joining_the_Package_Maintainers/[page] "
-"about becoming a packager."
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:29
-msgid "Other useful links:"
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:31
-msgid "https://pagure.io[Pagure]"
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:32
-msgid "https://src.fedoraproject.org[Package Sources]"
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:33
-msgid "https://koji.fedoraproject.org/koji/[Koji]"
-msgstr ""
-
-#. type: Plain text
-#: ./pages/contributing.adoc:34
-msgid "https://bodhi.fedoraproject.org/[Bodhi]"
-msgstr ""
-
-#. type: Title ==
-#: ./pages/contributing.adoc:36
+#: ./pages/contributing.adoc:21
 #, no-wrap
 msgid "Writing Documentation"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:39
+#: ./pages/contributing.adoc:25
 msgid ""
-"Creating or modifying documentation is easy. Head over to our "
+"Creating or modifying documentation is easy.  Head over to our "
 "{docs-src}[documentation] GitHub repository, fork it and create a pull "
 "request."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:41
+#: ./pages/contributing.adoc:27
 msgid ""
 "If you are not comfortable with using git, create a new topic in our "
 "{discussion-forum}[community] or log an {docs-issue}[issue] describing what "
@@ -151,51 +95,107 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: ./pages/contributing.adoc:43
+#: ./pages/contributing.adoc:29
 #, no-wrap
 msgid "Writing Conventions"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:46
+#: ./pages/contributing.adoc:32
 msgid "When creating documentation, please follow these writing conventions:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:48
+#: ./pages/contributing.adoc:35
 msgid ""
 "Code blocks for commands that require `root` privileges must show the `#` "
-"prompt symbol. Example:"
+"prompt symbol.  Example:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:50
+#: ./pages/contributing.adoc:37
 #, no-wrap
 msgid "# dnf install <package>\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:52
+#: ./pages/contributing.adoc:40
 msgid ""
 "The `$` user prompt symbol can also be used but you must prefix the command "
-"with `sudo`. Example:"
+"with `sudo`.  Example:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:54
+#: ./pages/contributing.adoc:42
 #, no-wrap
 msgid " $ sudo dnf install <package>\n"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/contributing.adoc:56
+#: ./pages/contributing.adoc:44
 #, no-wrap
 msgid "Reporting Issues"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/contributing.adoc:58
+#: ./pages/contributing.adoc:47
 msgid ""
 "You can report bugs and suggest features or improvements on the "
 "{issue-tracker}[issue tracker]."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/contributing.adoc:49
+#, no-wrap
+msgid "Creating Flatpaks"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:52
+msgid ""
+"Your favourite application is not in the default repository and won't "
+"probably be added? You can do it yourself! Go through our tutorial for "
+"creating flatpaks from rpm packages:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:54
+msgid ""
+"https://docs.fedoraproject.org/en-US/flatpak/tutorial/[RPM to Flatpak "
+"tutorial]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:57
+msgid ""
+"To become an official packager you need to go through several steps to gain "
+"all required permissions to use the Fedora infrastructure (Pagure, Koji, "
+"Bodhi).  There is a detailed "
+"https://docs.fedoraproject.org/en-US/package-maintainers/Joining_the_Package_Maintainers/[page] "
+"about becoming a packager."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:59
+msgid "Other useful links:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:61
+msgid "https://pagure.io[Pagure]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:62
+msgid "https://src.fedoraproject.org[Package Sources]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:63
+msgid "https://koji.fedoraproject.org/koji/[Koji]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/contributing.adoc:63
+msgid "https://bodhi.fedoraproject.org/[Bodhi]"
 msgstr ""

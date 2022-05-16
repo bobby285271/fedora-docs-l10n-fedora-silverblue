@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "Technical Information"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:7
+#: ./pages/technical-information.adoc:5
 msgid ""
 "This page provides some background technical information on {variant-name}, "
 "including information on the core technologies used to build it, as well as "
@@ -31,119 +31,119 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:11
+#: ./pages/technical-information.adoc:8
 msgid ""
-"Users should not need to know this information. It is provided here for "
+"Users should not need to know this information.  It is provided here for "
 "those who are interested in the technical details or those who want to use "
 "{variant-name} in a non-standard manner."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/technical-information.adoc:13
+#: ./pages/technical-information.adoc:10
 #, no-wrap
 msgid "ostree and rpm-ostree"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:19
+#: ./pages/technical-information.adoc:15
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] is the core technology that is "
-"used to compose, deploy and update {variant-name}. ostree operates in a "
+"used to compose, deploy and update {variant-name}.  ostree operates in a "
 "similar manner to a version control system, but it operates on entire "
-"filesystem trees. It is often described as “Git for operating system "
+"filesystem trees.  It is often described as “Git for operating system "
 "binaries”."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:23
+#: ./pages/technical-information.adoc:18
 msgid ""
 "For {variant-name} installs, ostree is responsible for deploying and "
 "updating the OS image (including everything below `/` that is not symlinked "
-"into `/var`). It also updates `grub.cfg` entries to point to the current "
+"into `/var`).  It also updates `grub.cfg` entries to point to the current "
 "image."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:27
+#: ./pages/technical-information.adoc:21
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
 "and makes it possible to install RPMs as a “layer” on top of an ostree "
-"image. This makes it possible to install RPMs on {variant-name}."
+"image.  This makes it possible to install RPMs on {variant-name}."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:33
+#: ./pages/technical-information.adoc:25
 msgid ""
 "When a package is installed with `rpm-ostree`, a new OS image is composed by "
 "adding the RPM payload to the existing OS image, and creating a new, "
-"combined image. To see the newly installed RPMs, the system needs to be "
-"rebooted with the new image. rpm-ostree also takes care of recreating the "
+"combined image.  To see the newly installed RPMs, the system needs to be "
+"rebooted with the new image.  rpm-ostree also takes care of recreating the "
 "layered image whenever you update the base OS image."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/technical-information.adoc:35
+#: ./pages/technical-information.adoc:27
 #, no-wrap
 msgid "{variant-name} filesystem layout"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:39
+#: ./pages/technical-information.adoc:31
 msgid ""
-"On {variant-name}, the root filesystem is immutable. This means that `/`, "
+"On {variant-name}, the root filesystem is immutable.  This means that `/`, "
 "`/usr` and everything below it is read-only."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:43
+#: ./pages/technical-information.adoc:35
 msgid ""
-"`/var` is where all of {variant-name}'s runtime state is stored. Symlinks "
+"`/var` is where all of {variant-name}'s runtime state is stored.  Symlinks "
 "are used to make traditional state-carrying directories available in their "
-"expected locations. This includes:"
+"expected locations.  This includes:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:45
+#: ./pages/technical-information.adoc:37
 msgid "`/home` → `/var/home`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:46
+#: ./pages/technical-information.adoc:38
 msgid "`/opt` → `/var/opt`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:47
+#: ./pages/technical-information.adoc:39
 msgid "`/srv` → `/var/srv`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:48
+#: ./pages/technical-information.adoc:40
 msgid "`/root` → `/var/roothome`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:49
+#: ./pages/technical-information.adoc:41
 msgid "`/usr/local` → `/var/usrlocal`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:50
+#: ./pages/technical-information.adoc:42
 msgid "`/mnt`→ `/var/mnt`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:51
+#: ./pages/technical-information.adoc:43
 msgid "`/tmp` → `/sysroot/tmp`"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:53
+#: ./pages/technical-information.adoc:45
 msgid "This means that separate home partitions should be mounted on `/var/home`."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/technical-information.adoc:56
+#: ./pages/technical-information.adoc:46
 msgid ""
 "For a more detailed explanation of {variant-name}'s filesystem layout, refer "
 "to the excellent "
