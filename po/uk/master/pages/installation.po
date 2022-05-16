@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: 2022-03-26 08:17+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -26,7 +26,7 @@ msgid "Installing {variant-name}"
 msgstr "Встановлення {variant-name}"
 
 #. type: Plain text
-#: pages/installation.adoc:7
+#: pages/installation.adoc:5
 msgid ""
 "Fedora {variant-name} can be installed in the same way as Fedora "
 "Workstation, and the official Fedora installation guide can be followed for "
@@ -39,13 +39,13 @@ msgstr ""
 "на https://docs.fedoraproject.org/en-US/docs/[сайті документації Fedora]."
 
 #. type: Title ==
-#: pages/installation.adoc:9
+#: pages/installation.adoc:7
 #, no-wrap
 msgid "Before you begin"
 msgstr "Перш ніж ви почнете"
 
 #. type: Plain text
-#: pages/installation.adoc:14
+#: pages/installation.adoc:10
 msgid ""
 "As with installing any new operating system, it is important to back up any "
 "data that you want to save before starting, and have a clear understanding "
@@ -56,10 +56,16 @@ msgstr ""
 "наслідків усіх ваших дій."
 
 #. type: Plain text
-#: pages/installation.adoc:19
+#: pages/installation.adoc:13
+#, fuzzy
+#| msgid ""
+#| "{variant-name} is intended to provide the full range of capabilities that "
+#| "you would expect from an installation of Fedora Workstation. However, "
+#| "there are some differences in terms of which applications can be "
+#| "installed, and how the operating system environment works."
 msgid ""
 "{variant-name} is intended to provide the full range of capabilities that "
-"you would expect from an installation of Fedora Workstation. However, there "
+"you would expect from an installation of Fedora Workstation.  However, there "
 "are some differences in terms of which applications can be installed, and "
 "how the operating system environment works."
 msgstr ""
@@ -69,13 +75,21 @@ msgstr ""
 "системи."
 
 #. type: Plain text
-#: pages/installation.adoc:25
+#: pages/installation.adoc:17
+#, fuzzy
+#| msgid ""
+#| "It is therefore recommended that you read this user guide before deciding "
+#| "to install {variant-name}. It is also recommended that you determine "
+#| "whether {variant-name} meets the specific needs or requirements that you "
+#| "might have. If you are uncertain about this, {variant-name} can also be "
+#| "tested in a virtual machine prior to installation or booted from a flash "
+#| "drive using Fedora Media Writer."
 msgid ""
 "It is therefore recommended that you read this user guide before deciding to "
-"install {variant-name}. It is also recommended that you determine whether "
-"{variant-name} meets the specific needs or requirements that you might have. "
-"If you are uncertain about this, {variant-name} can also be tested in a "
-"virtual machine prior to installation or booted from a flash drive using "
+"install {variant-name}.  It is also recommended that you determine whether "
+"{variant-name} meets the specific needs or requirements that you might "
+"have.  If you are uncertain about this, {variant-name} can also be tested in "
+"a virtual machine prior to installation or booted from a flash drive using "
 "Fedora Media Writer."
 msgstr ""
 "Саме тому, ми рекомендуємо вам прочитати цей підручник, перш ніж ви вирішите "
@@ -85,24 +99,24 @@ msgstr ""
 "встановлення або завантажити із флешки, скориставшись Fedora Media Writer."
 
 #. type: Title ==
-#: pages/installation.adoc:27
+#: pages/installation.adoc:19
 #, no-wrap
 msgid "Known limitations"
 msgstr "Відомі обмеження"
 
 #. type: Plain text
-#: pages/installation.adoc:31
-#, no-wrap
-msgid ""
-"*{variant-name} does not provide a fully functional experience for dual booting or\n"
-"manual partitioning.*\n"
+#: pages/installation.adoc:22
+#, fuzzy, no-wrap
+#| msgid ""
+#| "*{variant-name} does not provide a fully functional experience for dual booting or\n"
+#| "manual partitioning.*\n"
+msgid "*{variant-name} does not provide a fully functional experience for dual booting or manual partitioning.*\n"
 msgstr ""
-"*У {variant-name} не передбачено повноцінної можливості паралельного "
-"використання різних систем на одному комп'ютері, а також\n"
+"*У {variant-name} не передбачено повноцінної можливості паралельного використання різних систем на одному комп'ютері, а також\n"
 "поділу диска вручну.*\n"
 
 #. type: Plain text
-#: pages/installation.adoc:37
+#: pages/installation.adoc:25
 msgid ""
 "It is possible to make {variant-name} work for both dual boot and manual "
 "partitioning, and some guidance is provided on manual partitioning below.  "
@@ -118,16 +132,22 @@ msgstr ""
 "проблеми, з якими ви можете зіткнутися."
 
 #. type: Title ==
-#: pages/installation.adoc:39
+#: pages/installation.adoc:27
 #, no-wrap
 msgid "Getting {variant-name}"
 msgstr "Отримання {variant-name}"
 
 #. type: Plain text
-#: pages/installation.adoc:45
+#: pages/installation.adoc:31
+#, fuzzy
+#| msgid ""
+#| "If you are using Fedora Media Writer, {variant-name} should be listed as "
+#| "a download option. However, if it isn't, or if you want to download it "
+#| "manually, an install image can be downloaded from {website}[the main "
+#| "{variant-name} website]."
 msgid ""
 "If you are using Fedora Media Writer, {variant-name} should be listed as a "
-"download option. However, if it isn't, or if you want to download it "
+"download option.  However, if it isn't, or if you want to download it "
 "manually, an install image can be downloaded from {website}[the main "
 "{variant-name} website]."
 msgstr ""
@@ -137,27 +157,37 @@ msgstr ""
 "{website}[головного сайта {variant-name}]."
 
 #. type: Plain text
-#: pages/installation.adoc:48
+#: pages/installation.adoc:34
+#, fuzzy
+#| msgid ""
+#| "Once you have got your copy of {variant-name}, it can be installed in the "
+#| "usual manner. We hope that you love it!"
 msgid ""
 "Once you have got your copy of {variant-name}, it can be installed in the "
-"usual manner. We hope that you love it!"
+"usual manner.  We hope that you love it!"
 msgstr ""
 "Щойно ви отримаєте вашу копію {variant-name}, систему можна буде встановити "
 "у звичний спосіб. Сподіваємося, система вам сподобається!"
 
 #. type: Title ==
-#: pages/installation.adoc:50
+#: pages/installation.adoc:36
 #, no-wrap
 msgid "Manual Partitioning"
 msgstr "Поділ диска вручну"
 
 #. type: Plain text
-#: pages/installation.adoc:56
+#: pages/installation.adoc:41
+#, fuzzy
+#| msgid ""
+#| "As described above, there are known issues with manual partitioning on "
+#| "{variant-name}, and it should be used with caution. The following notes "
+#| "are intended as hints for those attempting it, and should not be treated "
+#| "as recommended practice. Automatic partitioning is recommended."
 msgid ""
 "As described above, there are known issues with manual partitioning on "
-"{variant-name}, and it should be used with caution. The following notes are "
+"{variant-name}, and it should be used with caution.  The following notes are "
 "intended as hints for those attempting it, and should not be treated as "
-"recommended practice. Automatic partitioning is recommended."
+"recommended practice.  Automatic partitioning is recommended."
 msgstr ""
 "Як ми вже писали вище, існують відомі проблеми із розподілом диска вручну "
 "для {variant-name}. Тому ділити диск вручну слід із осторогою. Наведені "
@@ -166,7 +196,7 @@ msgstr ""
 "поділом на розділи."
 
 #. type: Plain text
-#: pages/installation.adoc:59
+#: pages/installation.adoc:44
 msgid ""
 "With {variant-name}, only certain mounts can be manually specified as "
 "partitions.  These include:"
@@ -175,44 +205,44 @@ msgstr ""
 "розділи. Це зокрема:"
 
 #. type: Plain text
-#: pages/installation.adoc:61
+#: pages/installation.adoc:46
 msgid "`/boot`"
 msgstr "`/boot`"
 
 #. type: Plain text
-#: pages/installation.adoc:62
+#: pages/installation.adoc:47
 msgid "`/var`"
 msgstr "`/var`"
 
 #. type: Plain text
-#: pages/installation.adoc:63
+#: pages/installation.adoc:48
 msgid "Subdirectories under `/var`, including:"
 msgstr "Підкаталоги у каталозі `/var`, зокрема:"
 
 #. type: Plain text
-#: pages/installation.adoc:64
+#: pages/installation.adoc:49
 msgid "`/var/home` ({variant-name} has a symlink from `/home` to `/var/home`)"
 msgstr ""
 "`/var/home` (у {variant-name} `/home` є символічним посиланням на `/var/"
 "home`)"
 
 #. type: Plain text
-#: pages/installation.adoc:65
+#: pages/installation.adoc:50
 msgid "`/var/log`"
 msgstr "`/var/log`"
 
 #. type: Plain text
-#: pages/installation.adoc:66
+#: pages/installation.adoc:51
 msgid "`/var/containers`"
 msgstr "`/var/containers`"
 
 #. type: Plain text
-#: pages/installation.adoc:67
+#: pages/installation.adoc:52
 msgid "The root filesystem: `/`"
 msgstr "Коренева файлова система: `/`"
 
 #. type: Plain text
-#: pages/installation.adoc:70
+#: pages/installation.adoc:54
 msgid ""
 "The Fedora installer is not aware of these restrictions and will accept "
 "custom partitions without error, even if they are incompatible with {variant-"
@@ -223,19 +253,19 @@ msgstr ""
 "якщо він є несумісним із {variant-name}."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/installation.adoc:71
+#: pages/installation.adoc:55
 #, no-wrap
 msgid "Partitioning Complete"
 msgstr "Завершення поділу на розділи"
 
 #. type: Target for macro image
-#: pages/installation.adoc:71
+#: pages/installation.adoc:55
 #, no-wrap
 msgid "faw-manual-partition-complete.png"
 msgstr "faw-manual-partition-complete.png"
 
 #. type: Plain text
-#: pages/installation.adoc:75
+#: pages/installation.adoc:58
 msgid ""
 "The above screenshot shows a typical configuration with manual partitioning, "
 "with partitions for `/boot`, `/`, `swap` and `/var/home`."
@@ -244,7 +274,7 @@ msgstr ""
 "вручну, де є розділи для `/boot`, `/`, `swap` та `/var/home`."
 
 #. type: Plain text
-#: pages/installation.adoc:78
+#: pages/installation.adoc:59
 msgid ""
 "Manual partitioning on {variant-name} can be done with `Btrfs`, https://en."
 "wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], as well as "

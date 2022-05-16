@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,141 +21,141 @@ msgid "Updates, Upgrades & Rollbacks"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:7
+#: pages/updates-upgrades-rollbacks.adoc:6
 msgid ""
 "Installing updates with {variant-name} is easy and fast (much faster than "
-"other operating systems). It also has a special rollback feature, in case "
+"other operating systems).  It also has a special rollback feature, in case "
 "anything goes wrong."
 msgstr ""
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:9
+#: pages/updates-upgrades-rollbacks.adoc:8
 #, no-wrap
 msgid "Updating {variant-name}"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:15
+#: pages/updates-upgrades-rollbacks.adoc:12
 msgid ""
 "OS updates in {variant-name} are fully integrated into the desktop; you will "
-"be automatically notified when an update is available. The standard behavior "
-"is to automatically download the update (this can be changed from the update "
-"preferences in Software)."
+"be automatically notified when an update is available.  The standard "
+"behavior is to automatically download the update (this can be changed from "
+"the update preferences in Software)."
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:19
+#: pages/updates-upgrades-rollbacks.adoc:15
 msgid ""
 "Once an update is ready, it is just a matter of rebooting to start using the "
-"new version. There is no waiting for the update to be installed during this "
+"new version.  There is no waiting for the update to be installed during this "
 "reboot."
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:22
+#: pages/updates-upgrades-rollbacks.adoc:18
 msgid ""
-"If you'd prefer, it is also possible to update using the command line. To do "
-"this, run:"
+"If you'd prefer, it is also possible to update using the command line.  To "
+"do this, run:"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:24
+#: pages/updates-upgrades-rollbacks.adoc:20
 #, no-wrap
 msgid " $ rpm-ostree upgrade\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:28
+#: pages/updates-upgrades-rollbacks.adoc:23
 msgid ""
 "This will check for new updates and download and install them if they are "
-"available. Alternatively, to check for available updates without downloading "
-"them, run:"
+"available.  Alternatively, to check for available updates without "
+"downloading them, run:"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:30
+#: pages/updates-upgrades-rollbacks.adoc:25
 #, no-wrap
 msgid " $ rpm-ostree upgrade --check\n"
 msgstr ""
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:32
+#: pages/updates-upgrades-rollbacks.adoc:27
 #, no-wrap
 msgid "Upgrading between major versions"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:37
+#: pages/updates-upgrades-rollbacks.adoc:31
 msgid ""
-"Upgrading between major versions (such as from Fedora 34 to Fedora 35) can "
-"be completed using the Software application. Alternatively, {variant-name} "
+"Upgrading between major versions (such as from Fedora 35 to Fedora 36) can "
+"be completed using the Software application.  Alternatively, {variant-name} "
 "can be upgraded between major versions using the `ostree` command."
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:40
+#: pages/updates-upgrades-rollbacks.adoc:34
 msgid ""
-"First, verify the branch is available. You can print all available branches "
+"First, verify the branch is available.  You can print all available branches "
 "with this command:"
+msgstr ""
+
+#. type: delimited block -
+#: pages/updates-upgrades-rollbacks.adoc:38
+#, no-wrap
+msgid "$ ostree remote refs fedora | grep {variant}\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:42
-#, no-wrap
-msgid " $ ostree remote refs fedora\n"
+msgid ""
+"After you verify the name of your branch, you are ready to proceed.  For "
+"example, to upgrade to {variant-name} {version}, the command is:"
 msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:45
-msgid ""
-"After you verify the name of your branch, you are ready to proceed. For "
-"example, to upgrade to {variant-name} 35, the command is:"
-msgstr ""
-
-#. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:49
-msgid ""
-"Currently, the default remote for {variant-name} 35 is named `fedora`. If "
-"this is not the case for your system, you can find out the remote name by "
-"issuing: `ostree remote list`."
-msgstr ""
-
-#. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:51
 #, no-wrap
-msgid " $ rpm-ostree rebase fedora:fedora/35/x86_64/{variant}\n"
+msgid ""
+"Currently, the default remote for {variant-name} {version} is named `fedora`.\n"
+"      If this is not the case for your system, you can find out the remote name by issuing: `ostree remote list`.\n"
+msgstr ""
+
+#. type: delimited block -
+#: pages/updates-upgrades-rollbacks.adoc:49
+#, no-wrap
+msgid "$ rpm-ostree rebase fedora:fedora/{version}/x86_64/{variant}\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:54
+#: pages/updates-upgrades-rollbacks.adoc:52
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
 msgstr ""
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:56
+#: pages/updates-upgrades-rollbacks.adoc:54
 #, no-wrap
 msgid "Rolling back"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:62
+#: pages/updates-upgrades-rollbacks.adoc:58
 msgid ""
 "{variant-name} keeps a record of the previous OS version, which can be "
-"switched to instead of the latest version. While this shouldn't usually be "
+"switched to instead of the latest version.  While this shouldn't usually be "
 "necessary, it can be helpful if there is a problem with an update or an "
 "upgrade (rollbacks work the same way for both), as well as for development "
 "purposes."
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:64
+#: pages/updates-upgrades-rollbacks.adoc:60
 msgid "There are two ways to roll back to the previous version:"
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:68
+#: pages/updates-upgrades-rollbacks.adoc:62
 msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
@@ -163,16 +163,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:70
+#: pages/updates-upgrades-rollbacks.adoc:63
 msgid ""
 "Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
 msgstr ""
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:73
+#: pages/updates-upgrades-rollbacks.adoc:65
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
-"prompted to update. Updating will undo the rollback, so should be avoided if "
-"you want the rollback to stay in effect."
+"prompted to update.  Updating will undo the rollback, so should be avoided "
+"if you want the rollback to stay in effect."
 msgstr ""

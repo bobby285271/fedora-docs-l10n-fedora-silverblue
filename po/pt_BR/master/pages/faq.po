@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: 2021-02-27 23:52+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -30,15 +30,20 @@ msgid "About the project"
 msgstr "Sobre o projeto"
 
 #. type: Labeled list
-#: pages/faq.adoc:6
+#: pages/faq.adoc:5
 #, no-wrap
 msgid "Is it Team Silverblue, Silverblue, or Fedora Silverblue?"
 msgstr "É Equipe Silverblue, Silverblue ou Fedora Silverblue?"
 
 #. type: Plain text
-#: pages/faq.adoc:10
+#: pages/faq.adoc:8
+#, fuzzy
+#| msgid ""
+#| "We chose the name Team Silverblue to refer to the overall project. Fedora "
+#| "Silverblue will be used for the OS that we are producing, but calling it "
+#| "Silverblue in its short version is fine as well."
 msgid ""
-"We chose the name Team Silverblue to refer to the overall project. Fedora "
+"We chose the name Team Silverblue to refer to the overall project.  Fedora "
 "Silverblue will be used for the OS that we are producing, but calling it "
 "Silverblue in its short version is fine as well."
 msgstr ""
@@ -47,17 +52,22 @@ msgstr ""
 "produzindo, mas chamá-lo de Silverblue em sua versão curta também é adequado."
 
 #. type: Labeled list
-#: pages/faq.adoc:11
+#: pages/faq.adoc:9
 #, no-wrap
 msgid "Why does the Silverblue logo look like a leaf?"
 msgstr "Por que o logotipo do Silverblue parece uma folha?"
 
 #. type: Plain text
-#: pages/faq.adoc:15
+#: pages/faq.adoc:14
+#, fuzzy
+#| msgid ""
+#| "Our favorite choice for a project name was Silverleaf, but that sadly did "
+#| "not work out. We just couldn't quite let go of the leaf. You could also "
+#| "say that Silverblue is a new leaf on Fedora's OSTree. 😀"
 msgid ""
 "Our favorite choice for a project name was Silverleaf, but that sadly did "
-"not work out. We just couldn't quite let go of the leaf. You could also say "
-"that Silverblue is a new leaf on Fedora's OSTree. 😀"
+"not work out.  We just couldn't quite let go of the leaf.  You could also "
+"say that Silverblue is a new leaf on Fedora's OSTree.  😀"
 msgstr ""
 "Nossa escolha favorita para um nome de projeto foi Silverleaf, mas "
 "infelizmente não funcionou. Simplesmente não conseguíamos largar a folha. "
@@ -65,19 +75,27 @@ msgstr ""
 "😀"
 
 #. type: Labeled list
-#: pages/faq.adoc:16
+#: pages/faq.adoc:15
 #, no-wrap
 msgid "Is Silverblue another GNOME OS?"
 msgstr "Silverblue é outro GNOME OS?"
 
 #. type: Plain text
-#: pages/faq.adoc:22
+#: pages/faq.adoc:19
+#, fuzzy
+#| msgid ""
+#| "GNOME OS was a codename that was used by the upstream GNOME project for a "
+#| "while to refer to the idea of designing the entire desktop user "
+#| "experience.  By contrast, Silverblue is an effort inside the Fedora "
+#| "project, and will be built with existing Fedora technologies. However, "
+#| "the two efforts do share a desire to deliver a user experience that is "
+#| "polished and coherent."
 msgid ""
 "GNOME OS was a codename that was used by the upstream GNOME project for a "
 "while to refer to the idea of designing the entire desktop user experience.  "
 "By contrast, Silverblue is an effort inside the Fedora project, and will be "
-"built with existing Fedora technologies. However, the two efforts do share a "
-"desire to deliver a user experience that is polished and coherent."
+"built with existing Fedora technologies.  However, the two efforts do share "
+"a desire to deliver a user experience that is polished and coherent."
 msgstr ""
 "GNOME OS era um codinome usado pelo projeto GNOME por um tempo para se "
 "referir à ideia de projetar toda a experiência do usuário de desktop. Em "
@@ -87,14 +105,14 @@ msgstr ""
 "e coerente."
 
 #. type: Labeled list
-#: pages/faq.adoc:23
+#: pages/faq.adoc:20
 #, fuzzy, no-wrap
 #| msgid "What is Silverblue's relationship with Project Atomic?"
 msgid "What is {variant-name}'s relationship with Project Atomic?"
 msgstr "Qual a relação do Silverblue com Project Atomic?"
 
 #. type: Plain text
-#: pages/faq.adoc:27
+#: pages/faq.adoc:23
 #, fuzzy
 #| msgid ""
 #| "Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
@@ -102,7 +120,7 @@ msgstr "Qual a relação do Silverblue com Project Atomic?"
 #| "specifically focused on workstation/desktop use cases."
 msgid ""
 "Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
-"(as well as its successor, Fedora CoreOS). However, {variant-name} is "
+"(as well as its successor, Fedora CoreOS).  However, {variant-name} is "
 "specifically focused on workstation/desktop use cases."
 msgstr ""
 "O Fedora Silverblue usa a mesma tecnologia central do Fedora Atomic Host "
@@ -110,21 +128,21 @@ msgstr ""
 "especificamente focado em casos de uso de estação de trabalho/desktop."
 
 #. type: Title ==
-#: pages/faq.adoc:28
+#: pages/faq.adoc:24
 #, fuzzy, no-wrap
 #| msgid "About using Silverblue"
 msgid "About using {variant-name}"
 msgstr "Sobre usar Silverblue"
 
 #. type: Labeled list
-#: pages/faq.adoc:31
+#: pages/faq.adoc:26
 #, fuzzy, no-wrap
 #| msgid "How can I install Eclipse on Silverblue?"
 msgid "How can I install Eclipse on {variant-name}?"
 msgstr "Como eu instalo Eclipse no Silverblue?"
 
 #. type: Plain text
-#: pages/faq.adoc:34
+#: pages/faq.adoc:28
 msgid ""
 "Instructions to setup the Nightly flatpak remote for Eclipse are available "
 "http://eclipse.matbooth.co.uk/flatpak[here]."
@@ -133,17 +151,23 @@ msgstr ""
 "disponíveis http://eclipse.matbooth.co.uk/flatpak[aqui]."
 
 #. type: Labeled list
-#: pages/faq.adoc:35
+#: pages/faq.adoc:29
 #, no-wrap
 msgid "How do I create a VPN connection?"
 msgstr "Como eu crio uma conexão VPN?"
 
 #. type: Plain text
-#: pages/faq.adoc:40
+#: pages/faq.adoc:32
+#, fuzzy
+#| msgid ""
+#| "`/etc` is not part of the immutable OS image, so you can just copy files "
+#| "into `/etc/NetworkManager/system-connections` (or let NetworkManager "
+#| "store them there when you recreate your connections). Certificates in `/"
+#| "etc/pki` need to be handled similarly."
 msgid ""
 "`/etc` is not part of the immutable OS image, so you can just copy files "
 "into `/etc/NetworkManager/system-connections` (or let NetworkManager store "
-"them there when you recreate your connections). Certificates in `/etc/pki` "
+"them there when you recreate your connections).  Certificates in `/etc/pki` "
 "need to be handled similarly."
 msgstr ""
 "`/etc`não faz parte da imagem imutável do sistema operacional, então você "
@@ -153,17 +177,26 @@ msgstr ""
 "forma."
 
 #. type: Labeled list
-#: pages/faq.adoc:41
+#: pages/faq.adoc:33
 #, no-wrap
 msgid "How can I play more videos in Firefox, like YouTube?"
 msgstr "Como posso reproduzir mais vídeos no Firefox, como o YouTube?"
 
 #. type: Plain text
-#: pages/faq.adoc:49
+#: pages/faq.adoc:38
+#, fuzzy
+#| msgid ""
+#| "Firefox is included in the OS image for now. Until that changes, getting "
+#| "it to play videos works the same way as it does for the regular Fedora "
+#| "Workstation: find a package with the needed codecs, and install it. The "
+#| "one difference is that you use `rpm-ostree install` instead of `dnf "
+#| "install`.  An alternative solution is to install the nightly Firefox, "
+#| "which is available as a https://firefox-flatpak.mojefedora.cz/org.mozilla."
+#| "FirefoxNightly.flatpakref[Flatpak]."
 msgid ""
-"Firefox is included in the OS image for now. Until that changes, getting it "
+"Firefox is included in the OS image for now.  Until that changes, getting it "
 "to play videos works the same way as it does for the regular Fedora "
-"Workstation: find a package with the needed codecs, and install it. The one "
+"Workstation: find a package with the needed codecs, and install it.  The one "
 "difference is that you use `rpm-ostree install` instead of `dnf install`.  "
 "An alternative solution is to install the nightly Firefox, which is "
 "available as a https://firefox-flatpak.mojefedora.cz/org.mozilla."
@@ -178,13 +211,13 @@ msgstr ""
 "cz/org.mozilla.FirefoxNightly.flatpakref[Flatpak]."
 
 #. type: Labeled list
-#: pages/faq.adoc:50
+#: pages/faq.adoc:39
 #, no-wrap
 msgid "How can I see what packages were updated between two commits?"
 msgstr "Como posso ver quais pacotes foram atualizados entre dois commits?"
 
 #. type: Plain text
-#: pages/faq.adoc:53
+#: pages/faq.adoc:42
 msgid ""
 "If you want to compare the booted deployment with the pending deployment (or "
 "rollback deployment), simply issue:"
@@ -193,13 +226,13 @@ msgstr ""
 "pendente (ou reverter implantação), basta executar:"
 
 #. type: Plain text
-#: pages/faq.adoc:55
+#: pages/faq.adoc:44
 #, no-wrap
 msgid "$ rpm-ostree db diff\n"
 msgstr "$ rpm-ostree db diff\n"
 
 #. type: Plain text
-#: pages/faq.adoc:57
+#: pages/faq.adoc:46
 msgid ""
 "You can also see the RPM changelog by adding the `-c` option like so: `rpm-"
 "ostree db diff -c`"
@@ -208,7 +241,7 @@ msgstr ""
 "ostree db diff -c`"
 
 #. type: Plain text
-#: pages/faq.adoc:59
+#: pages/faq.adoc:48
 msgid ""
 "If you want to see which packages were updated between two specific commits:"
 msgstr ""
@@ -216,67 +249,72 @@ msgstr ""
 "específicos:"
 
 #. type: Plain text
-#: pages/faq.adoc:61
+#: pages/faq.adoc:50
 msgid "find out which two commits you want to compare by issuing:"
 msgstr "descubra quais dois commits você deseja comparar executando:"
 
 #. type: Plain text
-#: pages/faq.adoc:63
+#: pages/faq.adoc:52
 #, no-wrap
 msgid "$ ostree log <ref>\n"
 msgstr "$ ostree log <ref>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:65
+#: pages/faq.adoc:54
 msgid "you can now compare the two commits by issuing:"
 msgstr "agora você pode comparar os dois commits executando:"
 
 #. type: Plain text
-#: pages/faq.adoc:67
+#: pages/faq.adoc:56
 #, no-wrap
 msgid "$ rpm-ostree db diff <commit x> <commit y>\n"
 msgstr "$ rpm-ostree db diff <commit x> <commit y>\n"
 
 #. type: Labeled list
-#: pages/faq.adoc:68
+#: pages/faq.adoc:57
 #, no-wrap
 msgid "How can I check the version number of an installed package?"
 msgstr "Como posso verificar o número da versão de um pacote instalado?"
 
 #. type: Plain text
-#: pages/faq.adoc:71
+#: pages/faq.adoc:60
 msgid "You can simply use:"
 msgstr "Você pode simplesmente usar:"
 
 #. type: Plain text
-#: pages/faq.adoc:73
+#: pages/faq.adoc:62
 #, no-wrap
 msgid " $ rpm -q <package>\n"
 msgstr " $ rpm -q <pacote>\n"
 
 #. type: Labeled list
-#: pages/faq.adoc:74
+#: pages/faq.adoc:63
 #, no-wrap
 msgid "How can I check if an `rpm` software package is available in the repository?"
 msgstr "Como posso verificar se um pacote de software `rpm` está disponível no repositório?"
 
 #. type: Plain text
-#: pages/faq.adoc:77
+#: pages/faq.adoc:67
+#, fuzzy
+#| msgid ""
+#| "At this point in time, there is no `rpm` package search function built "
+#| "into `rpm-ostree`. However, you can use `toolbox` with the following "
+#| "command:"
 msgid ""
 "At this point in time, there is no `rpm` package search function built into "
-"`rpm-ostree`. However, you can use `toolbox` with the following command:"
+"`rpm-ostree`.  However, you can use `toolbox` with the following command:"
 msgstr ""
 "Neste momento, não há função de busca de pacote `rpm` embutida no `rpm-"
 "ostree`. No entanto, você pode usar `toolbox` com o seguinte comando:"
 
 #. type: Plain text
-#: pages/faq.adoc:79
+#: pages/faq.adoc:69
 #, no-wrap
 msgid " $ toolbox run dnf search <package>\n"
 msgstr " $ toolbox run dnf search <pacote>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:81
+#: pages/faq.adoc:71
 #, fuzzy
 #| msgid ""
 #| "The assumption is that you have already created a toolbox matching the "
@@ -289,13 +327,13 @@ msgstr ""
 "sua instalação do Fedora Silverblue."
 
 #. type: Labeled list
-#: pages/faq.adoc:82
+#: pages/faq.adoc:72
 #, no-wrap
 msgid "How can I downgrade my system's kernel?"
 msgstr "Como posso fazer o downgrade do kernel do meu sistema?"
 
 #. type: Plain text
-#: pages/faq.adoc:85
+#: pages/faq.adoc:75
 msgid ""
 "If, for whatever reason, you need to downgrade the kernel, you can do so by "
 "following these steps:"
@@ -304,7 +342,7 @@ msgstr ""
 "fazer isso seguindo estas etapas:"
 
 #. type: Plain text
-#: pages/faq.adoc:87
+#: pages/faq.adoc:77
 msgid ""
 "For the version you need to downgrade, download `<kernel>`, `<kernel-core>`, "
 "`<kernel-modules>` and `<kernel-modules-extra>` from https://koji."
@@ -315,29 +353,29 @@ msgstr ""
 "do https://koji.fedoraproject.org/koji/packageinfo?packageID=8[Koji]."
 
 #. type: Plain text
-#: pages/faq.adoc:89
+#: pages/faq.adoc:79
 msgid "Install the packages downloaded on the previous step by issuing:"
 msgstr "Instale os pacotes baixados na etapa anterior executando:"
 
 #. type: Plain text
-#: pages/faq.adoc:91
+#: pages/faq.adoc:81
 #, no-wrap
 msgid "$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> <kernel-modules-extra>\n"
 msgstr "$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> <kernel-modules-extra>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:93
+#: pages/faq.adoc:83
 msgid "Reboot the system to apply the changes."
 msgstr "Reinicialize o sistema para aplicar as alterações."
 
 #. type: Labeled list
-#: pages/faq.adoc:94
+#: pages/faq.adoc:84
 #, no-wrap
 msgid "How can I upgrade my system to the next major version (for instance: rawhide or an upcoming Fedora release branch), while keeping my current deployment?"
 msgstr "Como posso atualizar meu sistema para a próxima versão principal (por exemplo: rawhide ou um próximo ramo lançamento do Fedora), mantendo minha implantação atual?"
 
 #. type: Plain text
-#: pages/faq.adoc:97
+#: pages/faq.adoc:87
 msgid ""
 "OSTree allows you to pin deployments (pinning ensures that your deployment "
 "of choice is kept and not discarded)."
@@ -346,7 +384,7 @@ msgstr ""
 "implantação de sua escolha seja mantida e não descartada)."
 
 #. type: Plain text
-#: pages/faq.adoc:99
+#: pages/faq.adoc:89
 msgid ""
 "Assuming that you want to keep your default deployment, issue the following "
 "command:"
@@ -355,30 +393,30 @@ msgstr ""
 "comando:"
 
 #. type: Plain text
-#: pages/faq.adoc:101
+#: pages/faq.adoc:91
 #, no-wrap
 msgid "$ sudo ostree admin pin 0\n"
 msgstr "$ sudo ostree admin pin 0\n"
 
 #. type: Plain text
-#: pages/faq.adoc:103
+#: pages/faq.adoc:93
 msgid "`0` here refers to the first deployment listed by `rpm-ostree status`"
 msgstr ""
 "`0`aqui se refere à primeira implantação listada por `rpm-ostree status`"
 
 #. type: Plain text
-#: pages/faq.adoc:105
+#: pages/faq.adoc:95
 msgid "Verify that you have pinned your deployment of choice by issuing:"
 msgstr "Verifique se você fixou sua implantação preferida, executando:"
 
 #. type: Plain text
-#: pages/faq.adoc:107
+#: pages/faq.adoc:97
 #, no-wrap
 msgid "rpm-ostree status\n"
 msgstr "rpm-ostree status\n"
 
 #. type: Plain text
-#: pages/faq.adoc:109
+#: pages/faq.adoc:99
 #, fuzzy
 #| msgid ""
 #| "After the deployment is pinned, you can upgrade your system by using the "
@@ -393,9 +431,15 @@ msgstr ""
 "silverblue/updates-upgrades-rollbacks/#upgrading[aqui]."
 
 #. type: Plain text
-#: pages/faq.adoc:111
+#: pages/faq.adoc:102
+#, fuzzy
+#| msgid ""
+#| "When you have completed rebasing, reboot the system. The GRUB menu will "
+#| "now present you with both: the previous deployment major version entry (e."
+#| "g.: *\"Fedora 30.YYYYMMDD.n\"*) and the new deployment major version "
+#| "entry (e.g.: *\"Fedora 31.YYYYMMDD.n\"*)."
 msgid ""
-"When you have completed rebasing, reboot the system. The GRUB menu will now "
+"When you have completed rebasing, reboot the system.  The GRUB menu will now "
 "present you with both: the previous deployment major version entry (e.g.: *"
 "\"Fedora 30.YYYYMMDD.n\"*) and the new deployment major version entry (e.g.: "
 "*\"Fedora 31.YYYYMMDD.n\"*)."
@@ -406,7 +450,7 @@ msgstr ""
 "versão principal de implantação (por exemplo, *\"Fedora 31.YYYYMMDD.n\"*)."
 
 #. type: Plain text
-#: pages/faq.adoc:112
+#: pages/faq.adoc:103
 msgid ""
 "At the moment it is not possible to name (pinned) deployments and their "
 "associated GRUB menu entries."

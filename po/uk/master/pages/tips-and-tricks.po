@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-21 22:01+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: 2022-02-24 18:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -19,31 +19,38 @@ msgstr ""
 "X-Generator: Weblate 4.10.1\n"
 
 #. type: Title =
-#: ./pages/tips-and-tricks.adoc:1
+#: pages/tips-and-tricks.adoc:1
 #, no-wrap
 msgid "Tips and Tricks"
 msgstr "Підказки і настанови"
 
 #. type: Title ==
-#: ./pages/tips-and-tricks.adoc:3
+#: pages/tips-and-tricks.adoc:3
 #, no-wrap
 msgid "Working with Toolbx"
 msgstr "Робота з Toolbx"
 
 #. type: Title ===
-#: ./pages/tips-and-tricks.adoc:5
+#: pages/tips-and-tricks.adoc:5
 #, no-wrap
 msgid "Finding out if you are currently in a Toolbx container"
 msgstr "Визначення того, чи перебуваєте ви у контейнері Toolbx"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:11
+#: pages/tips-and-tricks.adoc:9
+#, fuzzy
+#| msgid ""
+#| "If you frequently make use of Toolbx to perform various tasks and use "
+#| "multiple Toolbx containers it can be hard to keep track of whether you "
+#| "are currently executing commands on the host or in a Toolbx container. "
+#| "Furthermore, there is currently no command to tell you in which Toolbx "
+#| "container you are working."
 msgid ""
 "If you frequently make use of Toolbx to perform various tasks and use "
 "multiple Toolbx containers it can be hard to keep track of whether you are "
-"currently executing commands on the host or in a Toolbx "
-"container. Furthermore, there is currently no command to tell you in which "
-"Toolbx container you are working."
+"currently executing commands on the host or in a Toolbx container.  "
+"Furthermore, there is currently no command to tell you in which Toolbx "
+"container you are working."
 msgstr ""
 "Якщо ви часто користуєтеся Toolbx для виконання різноманітних завдань і "
 "використовуєте декілька контейнерів Toolbx, стає важко стежити за тим, "
@@ -52,7 +59,7 @@ msgstr ""
 "Toolbx ви працюєте."
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:14
+#: pages/tips-and-tricks.adoc:11
 msgid ""
 "To alleviate this, you can add the following shell alias at the end of your "
 "`~/.bashrc`:"
@@ -61,31 +68,31 @@ msgstr ""
 "командної оболонки наприкінці вашого файла `~/.bashrc`:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:16
+#: pages/tips-and-tricks.adoc:13
 #, no-wrap
-msgid ""
-"  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP "
-"\"(?<=name=\\\")[^\\\";]+\" /run/.containerenv'\n"
-msgstr ""
-"  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP \"(?<=name=\\\")[^"
-"\\\";]+\" /run/.containerenv'\n"
+msgid "  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP \"(?<=name=\\\")[^\\\";]+\" /run/.containerenv'\n"
+msgstr "  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP \"(?<=name=\\\")[^\\\";]+\" /run/.containerenv'\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:19
+#: pages/tips-and-tricks.adoc:16
+#, fuzzy
+#| msgid ""
+#| "When you open a new shell, you now have access to the new command "
+#| "`istoolbx`.  This will behave as follows"
 msgid ""
 "When you open a new shell, you now have access to the new command "
-"`istoolbx`.  This will behave as follows"
+"`istoolbx`.  This will behave as follows:"
 msgstr ""
 "Коли ви відкриєте нову командну оболонку, у вас буде доступ до нової команди "
 "— `istoolbx`.  Ця команда поводитиметься так:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:21
+#: pages/tips-and-tricks.adoc:18
 msgid "When run from the host, returns an exit code of 1"
 msgstr "Якщо команду виконано з основної системи, вона поверне код виходу 1"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:23
+#: pages/tips-and-tricks.adoc:19
 msgid ""
 "When run from a Toolbx container, returns an exit code of 0 and prints the "
 "current Toolbx containers name to the console"
@@ -93,33 +100,90 @@ msgstr ""
 "Якщо команду запущено з контейнера Toolbx, буде повернуто код виходу 0 і "
 "виведено до консолі назву поточного контейнера Toolbx"
 
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:21
+msgid ""
+"If a more automated solution is your preference the following added to your "
+"`~/.bashrc` will change your bash prompt to include \"[toolbox <name>]\":"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:31
+#, no-wrap
+msgid ""
+"```\n"
+"function is_toolbox() {\n"
+"    if [ -f \"/run/.toolboxenv\" ]\n"
+"    then\n"
+"        TOOLBOX_NAME=$(cat /run/.containerenv | grep -oP \"(?<=name=\\\")[^\\\";]+\")\n"
+"        echo \"[${HOSTNAME} ${TOOLBOX_NAME}]\"\n"
+"    fi\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:33
+msgid ""
+"Now you can include `is_toolbox` in your `PS1` variable and not need to "
+"execute any extra commands in order to know whether or not your are in a "
+"toolbox or host shell."
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:38
+msgid ""
+"Example: ``` export PS1=\"\\[\\e[31m\\]\\`is_toolbox\\`\\]\\e[m\\]\\[\\e[32m"
+"\\]\\\\$ \\[\\e[m\\]\\[\\e[37m\\]❱\\[\\e[m\\] \" ```"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:40
+msgid ""
+"This results in a prompt which appears as such when not in a toolbox: `$ ❱`"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:42
+msgid ""
+"However, when running in a toolbox named \"default\" looks like: `[toolbox "
+"default]$ ❱`"
+msgstr ""
+
 #. type: Title ===
-#: ./pages/tips-and-tricks.adoc:26
+#: pages/tips-and-tricks.adoc:43
 #, no-wrap
 msgid "Running applications from inside Toolbx on the host"
 msgstr "Запуск програм з Toolbx в основній системі"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:32
+#: pages/tips-and-tricks.adoc:47
+#, fuzzy
+#| msgid ""
+#| "This can be necessary if you want to interact with tools available from "
+#| "the host, for example `podman`, `nmcli` or `rpm-ostree` without leaving "
+#| "the Toolbx container in between. You can use `flatpak-spawn`, included in "
+#| "the base installation for this:"
 msgid ""
 "This can be necessary if you want to interact with tools available from the "
 "host, for example `podman`, `nmcli` or `rpm-ostree` without leaving the "
-"Toolbx container in between. You can use `flatpak-spawn`, included in the "
+"Toolbx container in between.  You can use `flatpak-spawn`, included in the "
 "base installation for this:"
 msgstr ""
 "Потреба у запуску може виникнути, якщо ви хочете взаємодіяти із програмними "
-"інструментами основної системи, наприклад `podman`, `nmcli` або `rpm-ostree`"
-", не полишаючи контейнера Toolbx. Ви можете скористатися для виконання цього "
-"завдання програмою `flatpak-spawn`, яку включено до базового пакунка:"
+"інструментами основної системи, наприклад `podman`, `nmcli` або `rpm-"
+"ostree`, не полишаючи контейнера Toolbx. Ви можете скористатися для "
+"виконання цього завдання програмою `flatpak-spawn`, яку включено до базового "
+"пакунка:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:34
+#: pages/tips-and-tricks.adoc:49
 #, no-wrap
 msgid "  $ flatpak-spawn --host podman --help\n"
 msgstr "  $ flatpak-spawn --host podman --help\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:37
+#: pages/tips-and-tricks.adoc:51
 msgid ""
 "If the application you want to call requires `sudo` access, the `-S` option "
 "must be supplied to `sudo` like below:"
@@ -128,17 +192,23 @@ msgstr ""
 "параметр `-S` до команди `sudo`, ось так:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:39
+#: pages/tips-and-tricks.adoc:53
 #, no-wrap
 msgid "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
 msgstr "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:44
+#: pages/tips-and-tricks.adoc:56
+#, fuzzy
+#| msgid ""
+#| "If you find yourself using commands like these frequently to access e.g. "
+#| "the flatpak command from inside the Toolbx container, you can create "
+#| "yourself a short custom wrapper script (*inside the Toolbx container*). "
+#| "To do this, perform the following steps:"
 msgid ""
 "If you find yourself using commands like these frequently to access e.g. the "
 "flatpak command from inside the Toolbx container, you can create yourself a "
-"short custom wrapper script (*inside the Toolbx container*). To do this, "
+"short custom wrapper script (*inside the Toolbx container*).  To do this, "
 "perform the following steps:"
 msgstr ""
 "Якщо ви використовуєте команди, подібні до наведеної вище, часто для "
@@ -147,7 +217,7 @@ msgstr ""
 "Для цього виконайте такі кроки:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:47
+#: pages/tips-and-tricks.adoc:58
 msgid ""
 "Define the `istoolbx` alias (for convenience) by executing the command "
 "mentioned above in your terminal"
@@ -156,16 +226,20 @@ msgstr ""
 "команди у вашому терміналі"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:50
+#: pages/tips-and-tricks.adoc:61
+#, fuzzy
+#| msgid ""
+#| "Make sure you are in a Toolbx container. If the following command doesn't "
+#| "produce any output, you are likely still working on the host!"
 msgid ""
-"Make sure you are in a Toolbx container. If the following command doesn't "
+"Make sure you are in a Toolbx container.  If the following command doesn't "
 "produce any output, you are likely still working on the host!"
 msgstr ""
 "Переконайтеся, що ви перебуваєте у контейнері Toolbx. Якщо наступна команда "
 "нічого не виводить, ймовірно, ви усе ще перебуваєте в основній системі!"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:53
+#: pages/tips-and-tricks.adoc:64
 #, no-wrap
 msgid ""
 "[toolbx]$ istoolbx\n"
@@ -175,26 +249,20 @@ msgstr ""
 "<Тут буде назва контейнера Toolbx>\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:56
+#: pages/tips-and-tricks.adoc:66
 msgid ""
 "Once you have made sure you're in a Toolbx container, execute the following "
 "command:"
 msgstr "Щойно ви опинитеся у контейнері Toolbx, віддайте таку команду:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:58
+#: pages/tips-and-tricks.adoc:68
 #, no-wrap
-msgid ""
-"[toolbx]$ echo -e '#!/bin/sh\\nexec /usr/bin/flatpak-spawn --host flatpak "
-"\"$@\"' | sudo tee /usr/local/bin/flatpak 1>/dev/null && sudo chmod +x "
-"/usr/local/bin/flatpak\n"
-msgstr ""
-"[toolbx]$ echo -e '#!/bin/sh\\n"
-"exec /usr/bin/flatpak-spawn --host flatpak \"$@\"' | sudo tee /usr/local/bin/"
-"flatpak 1>/dev/null && sudo chmod +x /usr/local/bin/flatpak\n"
+msgid "[toolbx]$ echo -e '#!/bin/sh\\nexec /usr/bin/flatpak-spawn --host flatpak \"$@\"' | sudo tee /usr/local/bin/flatpak 1>/dev/null && sudo chmod +x /usr/local/bin/flatpak\n"
+msgstr "[toolbx]$ echo -e '#!/bin/sh\\nexec /usr/bin/flatpak-spawn --host flatpak \"$@\"' | sudo tee /usr/local/bin/flatpak 1>/dev/null && sudo chmod +x /usr/local/bin/flatpak\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:61
+#: pages/tips-and-tricks.adoc:70
 msgid ""
 "You now have a `flatpak` command available that allows you to interact with "
 "`flatpak` as if you were running the command on the host."
@@ -203,22 +271,27 @@ msgstr ""
 "взаємодіяти з `flatpak` так, наче ви віддаєте команду в основній системі."
 
 #. type: Title ==
-#: ./pages/tips-and-tricks.adoc:63
+#: pages/tips-and-tricks.adoc:71
 #, no-wrap
 msgid "Working with `ostree`/`rpm-ostree`"
 msgstr "Робота з `ostree`/`rpm-ostree`"
 
 #. type: Title ===
-#: ./pages/tips-and-tricks.adoc:65
+#: pages/tips-and-tricks.adoc:73
 #, no-wrap
 msgid "Tracking changes to the base OS"
 msgstr "Стеження за змінами у базовій операційній системі"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:70
+#: pages/tips-and-tricks.adoc:77
+#, fuzzy
+#| msgid ""
+#| "Some directories in `ostree`-based operating systems are writable by the "
+#| "user, like `/etc`. You can get a quick overview of the files changed "
+#| "under `/etc` using the following command:"
 msgid ""
 "Some directories in `ostree`-based operating systems are writable by the "
-"user, like `/etc`. You can get a quick overview of the files changed under "
+"user, like `/etc`.  You can get a quick overview of the files changed under "
 "`/etc` using the following command:"
 msgstr ""
 "Деякі з каталогів операційних систем на основі `ostree` придатні до запису "
@@ -226,52 +299,50 @@ msgstr ""
 "файлів, які було змінено у `/etc`, за допомогою такої команди:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:72
+#: pages/tips-and-tricks.adoc:79
 #, no-wrap
 msgid "  $ sudo ostree admin config-diff\n"
 msgstr "  $ sudo ostree admin config-diff\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:74
+#: pages/tips-and-tricks.adoc:81
 msgid "To get a more elaborate diff, you can use something like this:"
 msgstr ""
 "Щоб отримати докладніший опис відмінностей, ви можете віддати таку команду:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:76
+#: pages/tips-and-tricks.adoc:83
 #, no-wrap
-msgid ""
-"  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc "
-"2>/dev/null\n"
-msgstr ""
-"  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc "
-"2>/dev/null\n"
+msgid "  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc 2>/dev/null\n"
+msgstr "  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc 2>/dev/null\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:79
-#, no-wrap
+#: pages/tips-and-tricks.adoc:86
+#, fuzzy, no-wrap
+#| msgid ""
+#| "This works because ostree keeps an unmodified copy of the `/etc` directory\n"
+#| "      under `/usr/etc`. All of your changes go to `/etc` directly.\n"
 msgid ""
-"This works because ostree keeps an unmodified copy of the `/etc` directory\n"
-"      under `/usr/etc`. All of your changes go to `/etc` directly.\n"
+"This works because ostree keeps an unmodified copy of the `/etc` directory under `/usr/etc`.\n"
+"      All of your changes go to `/etc` directly.\n"
 msgstr ""
 "Це працює, оскільки ostree зберігає незмінену копії каталогу `/etc` у\n"
-"      `/usr/etc`. Усі внесені вами зміни записуються до `/etc` безпосередньо."
-"\n"
+"      `/usr/etc`. Усі внесені вами зміни записуються до `/etc` безпосередньо.\n"
 
 #. type: Title ==
-#: ./pages/tips-and-tricks.adoc:82
+#: pages/tips-and-tricks.adoc:87
 #, no-wrap
 msgid "Working with Flatpak applications"
 msgstr "Робота з програмами Flatpak"
 
 #. type: Title ===
-#: ./pages/tips-and-tricks.adoc:84
+#: pages/tips-and-tricks.adoc:89
 #, no-wrap
 msgid "Directly accessing Flatpak applications from the CLI"
 msgstr "Безпосередній доступ до програм Flatpak з інтерфейсу командного рядка"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:89
+#: pages/tips-and-tricks.adoc:92
 msgid ""
 "The most noticable change when using Flatpak applications instead of "
 "conventional installations is that the applications cannot be directly "
@@ -282,7 +353,7 @@ msgstr ""
 "викликати з інтерфейсу командного рядка, ось так:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:92
+#: pages/tips-and-tricks.adoc:95
 #, no-wrap
 msgid ""
 "  $ evince\n"
@@ -292,18 +363,18 @@ msgstr ""
 "  bash: команду не знайдено: evince\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:94
+#: pages/tips-and-tricks.adoc:97
 msgid "Instead, one can call them like this:"
 msgstr "Замість цього, виклик можна здійснити так:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:96
+#: pages/tips-and-tricks.adoc:99
 #, no-wrap
 msgid "  $ flatpak run org.gnome.Evince\n"
 msgstr "  $ flatpak run org.gnome.Evince\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:99
+#: pages/tips-and-tricks.adoc:101
 msgid ""
 "In addition, most Flatpak applications export their internal binaries under "
 "an installation-dependent location:"
@@ -312,7 +383,7 @@ msgstr ""
 "файли каталозі, який залежить від каталогу встановлення:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:102
+#: pages/tips-and-tricks.adoc:103
 msgid ""
 "For Flatpak applications installed from `system` remotes, these can be found "
 "under `/var/lib/flatpak/exports/bin/`"
@@ -321,7 +392,7 @@ msgstr ""
 "каталоги можна знайти у `/var/lib/flatpak/exports/bin/`"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:104
+#: pages/tips-and-tricks.adoc:104
 msgid ""
 "For Flatpak applications installed from `user` remotes, these can be found "
 "under `$HOME/.local/share/flatpak/exports/bin/`"
@@ -330,7 +401,7 @@ msgstr ""
 "можна знайти у `$HOME/.local/share/flatpak/exports/bin/`"
 
 #. type: delimited block =
-#: ./pages/tips-and-tricks.adoc:109
+#: pages/tips-and-tricks.adoc:108
 msgid ""
 "If you're unsure to which installation a Flatpak application belongs, you "
 "can use this command to print it out:"
@@ -339,33 +410,32 @@ msgstr ""
 "скористатися такою командою для виведення потрібних даних:"
 
 #. type: delimited block =
-#: ./pages/tips-and-tricks.adoc:111
+#: pages/tips-and-tricks.adoc:110
 #, no-wrap
 msgid "  $ flatpak list --app --columns=name,installation\n"
 msgstr "  $ flatpak list --app --columns=name,installation\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:114
+#: pages/tips-and-tricks.adoc:113
 msgid "You can then either add these directories to your `$PATH`:"
 msgstr "Ви можете або додати ці каталоги до змінної `$PATH`:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:116
+#: pages/tips-and-tricks.adoc:115
 #, no-wrap
 msgid "  $ org.gnome.Evince\n"
 msgstr "  $ org.gnome.Evince\n"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:118
+#: pages/tips-and-tricks.adoc:117
 msgid ""
-"or setup shell `alias`es as needed to make them available to the CLI like "
-"so:"
+"or setup shell `alias`es as needed to make them available to the CLI like so:"
 msgstr ""
 "або налаштувати `alias` командної оболонки так, щоб вони стали доступними "
 "інтерфейсу командного рядка, ось так:"
 
 #. type: Plain text
-#: ./pages/tips-and-tricks.adoc:122
+#: pages/tips-and-tricks.adoc:120
 #, no-wrap
 msgid ""
 "  $ alias evince=\"flatpak run org.gnome.Evince\"\n"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -30,15 +30,20 @@ msgid "About the project"
 msgstr "关于此项目"
 
 #. type: Labeled list
-#: pages/faq.adoc:6
+#: pages/faq.adoc:5
 #, no-wrap
 msgid "Is it Team Silverblue, Silverblue, or Fedora Silverblue?"
 msgstr "到底是 Team Silverblue，还是 Silverblue，还是 Fedora Silverblue？"
 
 #. type: Plain text
-#: pages/faq.adoc:10
+#: pages/faq.adoc:8
+#, fuzzy
+#| msgid ""
+#| "We chose the name Team Silverblue to refer to the overall project. Fedora "
+#| "Silverblue will be used for the OS that we are producing, but calling it "
+#| "Silverblue in its short version is fine as well."
 msgid ""
-"We chose the name Team Silverblue to refer to the overall project. Fedora "
+"We chose the name Team Silverblue to refer to the overall project.  Fedora "
 "Silverblue will be used for the OS that we are producing, but calling it "
 "Silverblue in its short version is fine as well."
 msgstr ""
@@ -46,49 +51,62 @@ msgstr ""
 "系统，但有时我们也简称它为 Silverblue。"
 
 #. type: Labeled list
-#: pages/faq.adoc:11
+#: pages/faq.adoc:9
 #, no-wrap
 msgid "Why does the Silverblue logo look like a leaf?"
 msgstr "为什么 Silverblue 的 Logo 是一片叶子？"
 
 #. type: Plain text
-#: pages/faq.adoc:15
+#: pages/faq.adoc:14
+#, fuzzy
+#| msgid ""
+#| "Our favorite choice for a project name was Silverleaf, but that sadly did "
+#| "not work out. We just couldn't quite let go of the leaf. You could also "
+#| "say that Silverblue is a new leaf on Fedora's OSTree. 😀"
 msgid ""
 "Our favorite choice for a project name was Silverleaf, but that sadly did "
-"not work out. We just couldn't quite let go of the leaf. You could also say "
-"that Silverblue is a new leaf on Fedora's OSTree. 😀"
+"not work out.  We just couldn't quite let go of the leaf.  You could also "
+"say that Silverblue is a new leaf on Fedora's OSTree.  😀"
 msgstr ""
 "我们本来想将项目命名为 Silverleaf，可惜这无法实现。我们不想就这样放弃叶子这个"
 "点子，毕竟 Silverblue 就是 OSTree 上的又一片新叶子。😀"
 
 #. type: Labeled list
-#: pages/faq.adoc:16
+#: pages/faq.adoc:15
 #, no-wrap
 msgid "Is Silverblue another GNOME OS?"
 msgstr "Silverblue 是另一个 GNOME OS 吗？"
 
 #. type: Plain text
-#: pages/faq.adoc:22
+#: pages/faq.adoc:19
+#, fuzzy
+#| msgid ""
+#| "GNOME OS was a codename that was used by the upstream GNOME project for a "
+#| "while to refer to the idea of designing the entire desktop user "
+#| "experience.  By contrast, Silverblue is an effort inside the Fedora "
+#| "project, and will be built with existing Fedora technologies. However, "
+#| "the two efforts do share a desire to deliver a user experience that is "
+#| "polished and coherent."
 msgid ""
 "GNOME OS was a codename that was used by the upstream GNOME project for a "
 "while to refer to the idea of designing the entire desktop user experience.  "
 "By contrast, Silverblue is an effort inside the Fedora project, and will be "
-"built with existing Fedora technologies. However, the two efforts do share a "
-"desire to deliver a user experience that is polished and coherent."
+"built with existing Fedora technologies.  However, the two efforts do share "
+"a desire to deliver a user experience that is polished and coherent."
 msgstr ""
 "GNOME OS 是上游 GNOME 用于测试桌面用户体验的项目。Silverblue 则是 Fedora 的项"
 "目，采用的也是 Fedora 已有的技术。当然，两个项目确实有一个共同的愿景，那就是"
 "提供一个完善且连贯的用户体验。"
 
 #. type: Labeled list
-#: pages/faq.adoc:23
+#: pages/faq.adoc:20
 #, fuzzy, no-wrap
 #| msgid "What is Silverblue's relationship with Project Atomic?"
 msgid "What is {variant-name}'s relationship with Project Atomic?"
 msgstr "Silverblue 和 Project Atomic 有什么联系？"
 
 #. type: Plain text
-#: pages/faq.adoc:27
+#: pages/faq.adoc:23
 #, fuzzy
 #| msgid ""
 #| "Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
@@ -96,28 +114,28 @@ msgstr "Silverblue 和 Project Atomic 有什么联系？"
 #| "specifically focused on workstation/desktop use cases."
 msgid ""
 "Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
-"(as well as its successor, Fedora CoreOS). However, {variant-name} is "
+"(as well as its successor, Fedora CoreOS).  However, {variant-name} is "
 "specifically focused on workstation/desktop use cases."
 msgstr ""
 "Fedora Silverblue 和 Fedora Atomic Host（以及它的继任者 Fedora CoreOS）采取的"
 "技术是一样的。然而，Silverblue 更加注重工作站和桌面使用的情景。"
 
 #. type: Title ==
-#: pages/faq.adoc:28
+#: pages/faq.adoc:24
 #, fuzzy, no-wrap
 #| msgid "About using Silverblue"
 msgid "About using {variant-name}"
 msgstr "关于使用 Silverblue"
 
 #. type: Labeled list
-#: pages/faq.adoc:31
+#: pages/faq.adoc:26
 #, fuzzy, no-wrap
 #| msgid "How can I install Eclipse on Silverblue?"
 msgid "How can I install Eclipse on {variant-name}?"
 msgstr "如何在 Silverblue 上安装 Eclipse？"
 
 #. type: Plain text
-#: pages/faq.adoc:34
+#: pages/faq.adoc:28
 msgid ""
 "Instructions to setup the Nightly flatpak remote for Eclipse are available "
 "http://eclipse.matbooth.co.uk/flatpak[here]."
@@ -126,17 +144,23 @@ msgstr ""
 "指引。"
 
 #. type: Labeled list
-#: pages/faq.adoc:35
+#: pages/faq.adoc:29
 #, no-wrap
 msgid "How do I create a VPN connection?"
 msgstr "如何创建一个 VPN 连接？"
 
 #. type: Plain text
-#: pages/faq.adoc:40
+#: pages/faq.adoc:32
+#, fuzzy
+#| msgid ""
+#| "`/etc` is not part of the immutable OS image, so you can just copy files "
+#| "into `/etc/NetworkManager/system-connections` (or let NetworkManager "
+#| "store them there when you recreate your connections). Certificates in `/"
+#| "etc/pki` need to be handled similarly."
 msgid ""
 "`/etc` is not part of the immutable OS image, so you can just copy files "
 "into `/etc/NetworkManager/system-connections` (or let NetworkManager store "
-"them there when you recreate your connections). Certificates in `/etc/pki` "
+"them there when you recreate your connections).  Certificates in `/etc/pki` "
 "need to be handled similarly."
 msgstr ""
 "`/etc` 并不是不可变系统映像的一部分，所以你只需要将文件复制到 `/etc/"
@@ -144,17 +168,26 @@ msgstr ""
 "NetworkManager 帮你完成）。`/etc/pki` 下的相关操作也是一样的道理。"
 
 #. type: Labeled list
-#: pages/faq.adoc:41
+#: pages/faq.adoc:33
 #, no-wrap
 msgid "How can I play more videos in Firefox, like YouTube?"
 msgstr "如何在 Firefox 下播放各种视频，例如 YouTube 上的？"
 
 #. type: Plain text
-#: pages/faq.adoc:49
+#: pages/faq.adoc:38
+#, fuzzy
+#| msgid ""
+#| "Firefox is included in the OS image for now. Until that changes, getting "
+#| "it to play videos works the same way as it does for the regular Fedora "
+#| "Workstation: find a package with the needed codecs, and install it. The "
+#| "one difference is that you use `rpm-ostree install` instead of `dnf "
+#| "install`.  An alternative solution is to install the nightly Firefox, "
+#| "which is available as a https://firefox-flatpak.mojefedora.cz/org.mozilla."
+#| "FirefoxNightly.flatpakref[Flatpak]."
 msgid ""
-"Firefox is included in the OS image for now. Until that changes, getting it "
+"Firefox is included in the OS image for now.  Until that changes, getting it "
 "to play videos works the same way as it does for the regular Fedora "
-"Workstation: find a package with the needed codecs, and install it. The one "
+"Workstation: find a package with the needed codecs, and install it.  The one "
 "difference is that you use `rpm-ostree install` instead of `dnf install`.  "
 "An alternative solution is to install the nightly Firefox, which is "
 "available as a https://firefox-flatpak.mojefedora.cz/org.mozilla."
@@ -167,99 +200,104 @@ msgstr ""
 "mozilla.FirefoxNightly.flatpakref[Flatpak] 软件包来解决这一问题。"
 
 #. type: Labeled list
-#: pages/faq.adoc:50
+#: pages/faq.adoc:39
 #, no-wrap
 msgid "How can I see what packages were updated between two commits?"
 msgstr "如何查看两个提交之间有什么软件包被升级了？"
 
 #. type: Plain text
-#: pages/faq.adoc:53
+#: pages/faq.adoc:42
 msgid ""
 "If you want to compare the booted deployment with the pending deployment (or "
 "rollback deployment), simply issue:"
 msgstr "如果你需要对比当前的部署与接下来的部署，只需要执行："
 
 #. type: Plain text
-#: pages/faq.adoc:55
+#: pages/faq.adoc:44
 #, no-wrap
 msgid "$ rpm-ostree db diff\n"
 msgstr "$ rpm-ostree db diff\n"
 
 #. type: Plain text
-#: pages/faq.adoc:57
+#: pages/faq.adoc:46
 msgid ""
 "You can also see the RPM changelog by adding the `-c` option like so: `rpm-"
 "ostree db diff -c`"
 msgstr "你也可以通过添加 `-c` 参数查看 RPM 的变更日志：`rpm-ostree db diff -c`"
 
 #. type: Plain text
-#: pages/faq.adoc:59
+#: pages/faq.adoc:48
 msgid ""
 "If you want to see which packages were updated between two specific commits:"
 msgstr "如果你需要查看两个特定提交之间哪些软件包被升级了："
 
 #. type: Plain text
-#: pages/faq.adoc:61
+#: pages/faq.adoc:50
 msgid "find out which two commits you want to compare by issuing:"
 msgstr "找到你需要比较的两个提交："
 
 #. type: Plain text
-#: pages/faq.adoc:63
+#: pages/faq.adoc:52
 #, no-wrap
 msgid "$ ostree log <ref>\n"
 msgstr "$ ostree log <ref>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:65
+#: pages/faq.adoc:54
 msgid "you can now compare the two commits by issuing:"
 msgstr "接下来就可以进行对比了："
 
 #. type: Plain text
-#: pages/faq.adoc:67
+#: pages/faq.adoc:56
 #, no-wrap
 msgid "$ rpm-ostree db diff <commit x> <commit y>\n"
 msgstr "$ rpm-ostree db diff <commit x> <commit y>\n"
 
 #. type: Labeled list
-#: pages/faq.adoc:68
+#: pages/faq.adoc:57
 #, no-wrap
 msgid "How can I check the version number of an installed package?"
 msgstr "如何查看已安装软件包的版本号？"
 
 #. type: Plain text
-#: pages/faq.adoc:71
+#: pages/faq.adoc:60
 msgid "You can simply use:"
 msgstr "只需要执行："
 
 #. type: Plain text
-#: pages/faq.adoc:73
+#: pages/faq.adoc:62
 #, no-wrap
 msgid " $ rpm -q <package>\n"
 msgstr " $ rpm -q <package>\n"
 
 #. type: Labeled list
-#: pages/faq.adoc:74
+#: pages/faq.adoc:63
 #, no-wrap
 msgid "How can I check if an `rpm` software package is available in the repository?"
 msgstr "我怎样知道软件源里面是否有我需要的包？"
 
 #. type: Plain text
-#: pages/faq.adoc:77
+#: pages/faq.adoc:67
+#, fuzzy
+#| msgid ""
+#| "At this point in time, there is no `rpm` package search function built "
+#| "into `rpm-ostree`. However, you can use `toolbox` with the following "
+#| "command:"
 msgid ""
 "At this point in time, there is no `rpm` package search function built into "
-"`rpm-ostree`. However, you can use `toolbox` with the following command:"
+"`rpm-ostree`.  However, you can use `toolbox` with the following command:"
 msgstr ""
 "目前 `rpm-ostree` 并没有内建 RPM 软件包搜索功能。然而你可以使用 `toolbox` 完"
 "成搜索："
 
 #. type: Plain text
-#: pages/faq.adoc:79
+#: pages/faq.adoc:69
 #, no-wrap
 msgid " $ toolbox run dnf search <package>\n"
 msgstr " $ toolbox run dnf search <package>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:81
+#: pages/faq.adoc:71
 #, fuzzy
 #| msgid ""
 #| "The assumption is that you have already created a toolbox matching the "
@@ -270,20 +308,20 @@ msgid ""
 msgstr "当然这样做的前提是你的 Fedora Silverblue 系统中已经安装了 Toolbox。"
 
 #. type: Labeled list
-#: pages/faq.adoc:82
+#: pages/faq.adoc:72
 #, no-wrap
 msgid "How can I downgrade my system's kernel?"
 msgstr "如何降级系统内核？"
 
 #. type: Plain text
-#: pages/faq.adoc:85
+#: pages/faq.adoc:75
 msgid ""
 "If, for whatever reason, you need to downgrade the kernel, you can do so by "
 "following these steps:"
 msgstr "无论是因为什么原因，如果你希望降级内核："
 
 #. type: Plain text
-#: pages/faq.adoc:87
+#: pages/faq.adoc:77
 msgid ""
 "For the version you need to downgrade, download `<kernel>`, `<kernel-core>`, "
 "`<kernel-modules>` and `<kernel-modules-extra>` from https://koji."
@@ -294,29 +332,29 @@ msgstr ""
 "modules-extra>`。"
 
 #. type: Plain text
-#: pages/faq.adoc:89
+#: pages/faq.adoc:79
 msgid "Install the packages downloaded on the previous step by issuing:"
 msgstr "安装上一步中下载下来的软件包："
 
 #. type: Plain text
-#: pages/faq.adoc:91
+#: pages/faq.adoc:81
 #, no-wrap
 msgid "$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> <kernel-modules-extra>\n"
 msgstr "$ rpm-ostree override replace <kernel> <kernel-core> <kernel-modules> <kernel-modules-extra>\n"
 
 #. type: Plain text
-#: pages/faq.adoc:93
+#: pages/faq.adoc:83
 msgid "Reboot the system to apply the changes."
 msgstr "重启系统使改动生效。"
 
 #. type: Labeled list
-#: pages/faq.adoc:94
+#: pages/faq.adoc:84
 #, no-wrap
 msgid "How can I upgrade my system to the next major version (for instance: rawhide or an upcoming Fedora release branch), while keeping my current deployment?"
 msgstr "如何在保留当前部署的同时，将我的系统升级到下一个主要版本（例如下一个 Fedora 稳定分支或 Rawhide）？"
 
 #. type: Plain text
-#: pages/faq.adoc:97
+#: pages/faq.adoc:87
 msgid ""
 "OSTree allows you to pin deployments (pinning ensures that your deployment "
 "of choice is kept and not discarded)."
@@ -324,36 +362,36 @@ msgstr ""
 "OSTree 允许你固定特定的部署（这样就能保留你选择的部署，避免被自动移除）。"
 
 #. type: Plain text
-#: pages/faq.adoc:99
+#: pages/faq.adoc:89
 msgid ""
 "Assuming that you want to keep your default deployment, issue the following "
 "command:"
 msgstr "不妨假设你希望保留你当前的部署："
 
 #. type: Plain text
-#: pages/faq.adoc:101
+#: pages/faq.adoc:91
 #, no-wrap
 msgid "$ sudo ostree admin pin 0\n"
 msgstr "$ sudo ostree admin pin 0\n"
 
 #. type: Plain text
-#: pages/faq.adoc:103
+#: pages/faq.adoc:93
 msgid "`0` here refers to the first deployment listed by `rpm-ostree status`"
 msgstr "`0` 指代的是 `rpm-ostree status` 所列举的第一个部署"
 
 #. type: Plain text
-#: pages/faq.adoc:105
+#: pages/faq.adoc:95
 msgid "Verify that you have pinned your deployment of choice by issuing:"
 msgstr "要想检查你固定了那些部署："
 
 #. type: Plain text
-#: pages/faq.adoc:107
+#: pages/faq.adoc:97
 #, no-wrap
 msgid "rpm-ostree status\n"
 msgstr "rpm-ostree status\n"
 
 #. type: Plain text
-#: pages/faq.adoc:109
+#: pages/faq.adoc:99
 #, fuzzy
 #| msgid ""
 #| "After the deployment is pinned, you can upgrade your system by using the "
@@ -368,9 +406,15 @@ msgstr ""
 "成系统升级。"
 
 #. type: Plain text
-#: pages/faq.adoc:111
+#: pages/faq.adoc:102
+#, fuzzy
+#| msgid ""
+#| "When you have completed rebasing, reboot the system. The GRUB menu will "
+#| "now present you with both: the previous deployment major version entry (e."
+#| "g.: *\"Fedora 30.YYYYMMDD.n\"*) and the new deployment major version "
+#| "entry (e.g.: *\"Fedora 31.YYYYMMDD.n\"*)."
 msgid ""
-"When you have completed rebasing, reboot the system. The GRUB menu will now "
+"When you have completed rebasing, reboot the system.  The GRUB menu will now "
 "present you with both: the previous deployment major version entry (e.g.: *"
 "\"Fedora 30.YYYYMMDD.n\"*) and the new deployment major version entry (e.g.: "
 "*\"Fedora 31.YYYYMMDD.n\"*)."
@@ -379,7 +423,7 @@ msgstr ""
 "YYYYMMDD.n\"*）和新的部署（例如 *\"Fedora 31.YYYYMMDD.n\"*）。"
 
 #. type: Plain text
-#: pages/faq.adoc:112
+#: pages/faq.adoc:103
 msgid ""
 "At the moment it is not possible to name (pinned) deployments and their "
 "associated GRUB menu entries."

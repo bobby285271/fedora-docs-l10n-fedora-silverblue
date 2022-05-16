@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: 2021-04-05 10:01+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -26,7 +26,7 @@ msgid "Installing {variant-name}"
 msgstr "安装 Silverblue"
 
 #. type: Plain text
-#: pages/installation.adoc:7
+#: pages/installation.adoc:5
 #, fuzzy
 #| msgid ""
 #| "Fedora Silverblue can be installed in the same way as Fedora Workstation, "
@@ -44,13 +44,13 @@ msgstr ""
 "docs/[Fedora 文档] 了解更多信息。"
 
 #. type: Title ==
-#: pages/installation.adoc:9
+#: pages/installation.adoc:7
 #, no-wrap
 msgid "Before you begin"
 msgstr "在你开始之前"
 
 #. type: Plain text
-#: pages/installation.adoc:14
+#: pages/installation.adoc:10
 msgid ""
 "As with installing any new operating system, it is important to back up any "
 "data that you want to save before starting, and have a clear understanding "
@@ -60,7 +60,7 @@ msgstr ""
 "来要做的事情。"
 
 #. type: Plain text
-#: pages/installation.adoc:19
+#: pages/installation.adoc:13
 #, fuzzy
 #| msgid ""
 #| "Silverblue is intended to provide the full range of capabilities that you "
@@ -69,7 +69,7 @@ msgstr ""
 #| "how the operating system environment works."
 msgid ""
 "{variant-name} is intended to provide the full range of capabilities that "
-"you would expect from an installation of Fedora Workstation. However, there "
+"you would expect from an installation of Fedora Workstation.  However, there "
 "are some differences in terms of which applications can be installed, and "
 "how the operating system environment works."
 msgstr ""
@@ -77,7 +77,7 @@ msgstr ""
 "缺省提供的软件包和 Workstation 略有不同，系统的工作原理也有所不同。"
 
 #. type: Plain text
-#: pages/installation.adoc:25
+#: pages/installation.adoc:17
 #, fuzzy
 #| msgid ""
 #| "It is therefore recommended that you read this user guide before deciding "
@@ -88,10 +88,10 @@ msgstr ""
 #| "Fedora Media Writer."
 msgid ""
 "It is therefore recommended that you read this user guide before deciding to "
-"install {variant-name}. It is also recommended that you determine whether "
-"{variant-name} meets the specific needs or requirements that you might have. "
-"If you are uncertain about this, {variant-name} can also be tested in a "
-"virtual machine prior to installation or booted from a flash drive using "
+"install {variant-name}.  It is also recommended that you determine whether "
+"{variant-name} meets the specific needs or requirements that you might "
+"have.  If you are uncertain about this, {variant-name} can also be tested in "
+"a virtual machine prior to installation or booted from a flash drive using "
 "Fedora Media Writer."
 msgstr ""
 "所以在安装 Silverblue 前我们希望你可以认真阅读一下这份指南，考虑清楚 "
@@ -99,24 +99,22 @@ msgstr ""
 "Silverblue 进行试用。"
 
 #. type: Title ==
-#: pages/installation.adoc:27
+#: pages/installation.adoc:19
 #, no-wrap
 msgid "Known limitations"
 msgstr "已知的限制条件"
 
 #. type: Plain text
-#: pages/installation.adoc:31
+#: pages/installation.adoc:22
 #, fuzzy, no-wrap
 #| msgid ""
 #| "*Silverblue does not provide a fully functional experience for dual booting or \n"
 #| "manual partitioning.*\n"
-msgid ""
-"*{variant-name} does not provide a fully functional experience for dual booting or\n"
-"manual partitioning.*\n"
+msgid "*{variant-name} does not provide a fully functional experience for dual booting or manual partitioning.*\n"
 msgstr "*在某种程度上，Silverblue 并不真正支持双启动或手动分区。*\n"
 
 #. type: Plain text
-#: pages/installation.adoc:37
+#: pages/installation.adoc:25
 #, fuzzy
 #| msgid ""
 #| "It is possible to make Silverblue work for both dual boot and manual "
@@ -137,13 +135,13 @@ msgstr ""
 "课，并且确信自己能够克服可能遇到的一切问题，才应该尝试使用这些功能。"
 
 #. type: Title ==
-#: pages/installation.adoc:39
+#: pages/installation.adoc:27
 #, no-wrap
 msgid "Getting {variant-name}"
 msgstr ""
 
 #. type: Plain text
-#: pages/installation.adoc:45
+#: pages/installation.adoc:31
 #, fuzzy
 #| msgid ""
 #| "If you are using Fedora Media Writer, Silverblue should be listed as a "
@@ -152,7 +150,7 @@ msgstr ""
 #| "fedoraproject.org/[the main Silverblue website]."
 msgid ""
 "If you are using Fedora Media Writer, {variant-name} should be listed as a "
-"download option. However, if it isn't, or if you want to download it "
+"download option.  However, if it isn't, or if you want to download it "
 "manually, an install image can be downloaded from {website}[the main "
 "{variant-name} website]."
 msgstr ""
@@ -161,26 +159,26 @@ msgstr ""
 "fedoraproject.org/[Silverblue 主站点] 进行下载。"
 
 #. type: Plain text
-#: pages/installation.adoc:48
+#: pages/installation.adoc:34
 #, fuzzy
 #| msgid ""
 #| "Once you have got your copy of Silverblue, it can be installed in the "
 #| "usual manner. We hope that you love it!"
 msgid ""
 "Once you have got your copy of {variant-name}, it can be installed in the "
-"usual manner. We hope that you love it!"
+"usual manner.  We hope that you love it!"
 msgstr ""
 "当你获取了 Silverblue 的安装介质，你就可以按照常规的方式安装 Silverblue 了，"
 "我们希望你可以爱上它！"
 
 #. type: Title ==
-#: pages/installation.adoc:50
+#: pages/installation.adoc:36
 #, no-wrap
 msgid "Manual Partitioning"
 msgstr "手动分区"
 
 #. type: Plain text
-#: pages/installation.adoc:56
+#: pages/installation.adoc:41
 #, fuzzy
 #| msgid ""
 #| "As described above, there are known issues with manual partitioning on "
@@ -189,16 +187,16 @@ msgstr "手动分区"
 #| "recommended practice. Automatic partitioning is recommended."
 msgid ""
 "As described above, there are known issues with manual partitioning on "
-"{variant-name}, and it should be used with caution. The following notes are "
+"{variant-name}, and it should be used with caution.  The following notes are "
 "intended as hints for those attempting it, and should not be treated as "
-"recommended practice. Automatic partitioning is recommended."
+"recommended practice.  Automatic partitioning is recommended."
 msgstr ""
 "正如上面所说，通过手动分区的方式安装 Silverblue 有不少的已知问题，建议谨慎使"
 "用。如果你执意手动分区，下面是一些小贴士，但不是推荐做法（唯一的推荐做法是自"
 "动分区）。"
 
 #. type: Plain text
-#: pages/installation.adoc:59
+#: pages/installation.adoc:44
 #, fuzzy
 #| msgid ""
 #| "With Silverblue, only certain mounts can be manually specified as "
@@ -209,44 +207,44 @@ msgid ""
 msgstr "安装 Silverblue，只有下面几个挂载点是可用的："
 
 #. type: Plain text
-#: pages/installation.adoc:61
+#: pages/installation.adoc:46
 msgid "`/boot`"
 msgstr "`/boot`"
 
 #. type: Plain text
-#: pages/installation.adoc:62
+#: pages/installation.adoc:47
 msgid "`/var`"
 msgstr "`/var`"
 
 #. type: Plain text
-#: pages/installation.adoc:63
+#: pages/installation.adoc:48
 msgid "Subdirectories under `/var`, including:"
 msgstr "`/var` 下的子目录，包括："
 
 #. type: Plain text
-#: pages/installation.adoc:64
+#: pages/installation.adoc:49
 #, fuzzy
 #| msgid "`/var/home` (Silverblue has a symlink from `/home` to `/var/home`)"
 msgid "`/var/home` ({variant-name} has a symlink from `/home` to `/var/home`)"
 msgstr "`/var/home`（Silverblue 将 `/home` 链接到了 `/var/home`）"
 
 #. type: Plain text
-#: pages/installation.adoc:65
+#: pages/installation.adoc:50
 msgid "`/var/log`"
 msgstr "`/var/log`"
 
 #. type: Plain text
-#: pages/installation.adoc:66
+#: pages/installation.adoc:51
 msgid "`/var/containers`"
 msgstr "`/var/containers`"
 
 #. type: Plain text
-#: pages/installation.adoc:67
+#: pages/installation.adoc:52
 msgid "The root filesystem: `/`"
 msgstr "根目录：`/`"
 
 #. type: Plain text
-#: pages/installation.adoc:70
+#: pages/installation.adoc:54
 #, fuzzy
 #| msgid ""
 #| "The Fedora installer is not aware of these restrictions and will accept "
@@ -261,19 +259,19 @@ msgstr ""
 "容，Fedora 安装程序是不会报错的。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/installation.adoc:71
+#: pages/installation.adoc:55
 #, no-wrap
 msgid "Partitioning Complete"
 msgstr "完成分区时的状态"
 
 #. type: Target for macro image
-#: pages/installation.adoc:71
+#: pages/installation.adoc:55
 #, no-wrap
 msgid "faw-manual-partition-complete.png"
 msgstr "faw-manual-partition-complete.png"
 
 #. type: Plain text
-#: pages/installation.adoc:75
+#: pages/installation.adoc:58
 msgid ""
 "The above screenshot shows a typical configuration with manual partitioning, "
 "with partitions for `/boot`, `/`, `swap` and `/var/home`."
@@ -282,7 +280,7 @@ msgstr ""
 "分区。"
 
 #. type: Plain text
-#: pages/installation.adoc:78
+#: pages/installation.adoc:59
 #, fuzzy
 #| msgid ""
 #| "Manual partitioning on Silverblue can be done with `Btrfs`, https://en."

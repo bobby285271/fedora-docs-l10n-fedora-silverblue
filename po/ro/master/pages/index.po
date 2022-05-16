@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -40,9 +40,9 @@ msgstr ""
 #. type: Plain text
 #: pages/index.adoc:10
 msgid ""
-"_Fedora {variant-name}_ is an immutable desktop operating system. It aims to "
-"be extremely stable and reliable. It also aims to be an excellent platform "
-"for developers and for those using container-focused workflows."
+"_Fedora {variant-name}_ is an immutable desktop operating system.  It aims "
+"to be extremely stable and reliable.  It also aims to be an excellent "
+"platform for developers and for those using container-focused workflows."
 msgstr ""
 
 #. type: Title ==
@@ -52,75 +52,75 @@ msgid "Introduction to {variant-name}"
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:17
+#: pages/index.adoc:16
 msgid ""
-"{variant-name} is a variant of Fedora Workstation. It looks, feels and "
+"{variant-name} is a variant of Fedora Workstation.  It looks, feels and "
 "behaves like a regular desktop operating system, and the experience is "
 "similar to what you find with using a standard Fedora Workstation."
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:22
+#: pages/index.adoc:20
 msgid ""
-"However, unlike other operating systems, {variant-name} is immutable. This "
+"However, unlike other operating systems, {variant-name} is immutable.  This "
 "means that every installation is identical to every other installation of "
-"the same version. The operating system that is on disk is exactly the same "
+"the same version.  The operating system that is on disk is exactly the same "
 "from one machine to the next, and it never changes as it is used."
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:29
+#: pages/index.adoc:24
 msgid ""
 "{variant-name}'s immutable design is intended to make it more stable, less "
-"prone to bugs, and easier to test and develop. Finally, {variant-name}'s "
+"prone to bugs, and easier to test and develop.  Finally, {variant-name}'s "
 "immutable design also makes it an excellent platform for containerized "
-"applications as well as container-based software development. In each case, "
+"applications as well as container-based software development.  In each case, "
 "applications (apps) and containers are kept separate from the host system, "
 "improving stability and reliability."
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:34
+#: pages/index.adoc:28
 msgid ""
-"{variant-name}'s core technologies have some other helpful features. OS "
+"{variant-name}'s core technologies have some other helpful features.  OS "
 "updates are fast and there's no waiting around for them to install: just "
-"reboot as normal to start using the next version. With {variant-name}, it is "
-"also possible to roll back to the previous version of the operating system, "
-"if something goes wrong."
+"reboot as normal to start using the next version.  With {variant-name}, it "
+"is also possible to roll back to the previous version of the operating "
+"system, if something goes wrong."
 msgstr ""
 
 #. type: Title ==
-#: pages/index.adoc:36
+#: pages/index.adoc:30
 #, no-wrap
 msgid "About this guide"
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:42
+#: pages/index.adoc:34
 msgid ""
 "In most cases, {variant-name} behaves like a standard Fedora Workstation "
 "installation, and the https://docs.fedoraproject.org/[standard Fedora "
-"documentation] can be used. This guide covers those areas where {variant-"
+"documentation] can be used.  This guide covers those areas where {variant-"
 "name} differs from a standard Fedora Workstation, including:"
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:44
+#: pages/index.adoc:36
 msgid "link:installation[OS installation]"
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:45
+#: pages/index.adoc:37
 msgid "link:getting-started[Installing apps and software]"
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:46
+#: pages/index.adoc:38
 msgid "link:updates-upgrades-rollbacks[OS upgrades and rollbacks]"
 msgstr ""
 
 #. type: Plain text
-#: pages/index.adoc:50
+#: pages/index.adoc:40
 msgid ""
 "The primary audience for these docs are new users, who aren't expected to "
 "have specialist knowledge or technical knowledge about {variant-name}'s "

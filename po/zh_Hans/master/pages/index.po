@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: 2021-02-11 12:40+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -51,9 +51,9 @@ msgstr "silverblue-logo.svg"
 #| "be extremely stable and reliable. It also aims to be an excellent "
 #| "platform for developers and for those using container-focused workflows."
 msgid ""
-"_Fedora {variant-name}_ is an immutable desktop operating system. It aims to "
-"be extremely stable and reliable. It also aims to be an excellent platform "
-"for developers and for those using container-focused workflows."
+"_Fedora {variant-name}_ is an immutable desktop operating system.  It aims "
+"to be extremely stable and reliable.  It also aims to be an excellent "
+"platform for developers and for those using container-focused workflows."
 msgstr ""
 "_Fedora Silverblue_ 是一个不可变的桌面操作系统，旨在为开发者和容器重度使用者"
 "提供一个稳定、可靠的平台。"
@@ -66,14 +66,14 @@ msgid "Introduction to {variant-name}"
 msgstr "Silverblue 简介"
 
 #. type: Plain text
-#: pages/index.adoc:17
+#: pages/index.adoc:16
 #, fuzzy
 #| msgid ""
 #| "Silverblue is a variant of Fedora Workstation. It looks, feels and "
 #| "behaves like a regular desktop operating system, and the experience is "
 #| "similar to what you find with using a standard Fedora Workstation."
 msgid ""
-"{variant-name} is a variant of Fedora Workstation. It looks, feels and "
+"{variant-name} is a variant of Fedora Workstation.  It looks, feels and "
 "behaves like a regular desktop operating system, and the experience is "
 "similar to what you find with using a standard Fedora Workstation."
 msgstr ""
@@ -81,7 +81,7 @@ msgstr ""
 "Fedora Workstation 的桌面使用体验。"
 
 #. type: Plain text
-#: pages/index.adoc:22
+#: pages/index.adoc:20
 #, fuzzy
 #| msgid ""
 #| "However, unlike other operating systems, Silverblue is immutable. This "
@@ -89,16 +89,16 @@ msgstr ""
 #| "the same version. The operating system that is on disk is exactly the "
 #| "same from one machine to the next, and it never changes as it is used."
 msgid ""
-"However, unlike other operating systems, {variant-name} is immutable. This "
+"However, unlike other operating systems, {variant-name} is immutable.  This "
 "means that every installation is identical to every other installation of "
-"the same version. The operating system that is on disk is exactly the same "
+"the same version.  The operating system that is on disk is exactly the same "
 "from one machine to the next, and it never changes as it is used."
 msgstr ""
 "然而和其它操作系统不同的是，Silverblue 是不可变的。这意味着同一版本下每一份安"
 "装都会是完全相同的，而且在使用过程中也不会发生任何改变。"
 
 #. type: Plain text
-#: pages/index.adoc:29
+#: pages/index.adoc:24
 #, fuzzy
 #| msgid ""
 #| "Silverblue's immutable design is intended to make it more stable, less "
@@ -109,9 +109,9 @@ msgstr ""
 #| "system, improving stability and reliability."
 msgid ""
 "{variant-name}'s immutable design is intended to make it more stable, less "
-"prone to bugs, and easier to test and develop. Finally, {variant-name}'s "
+"prone to bugs, and easier to test and develop.  Finally, {variant-name}'s "
 "immutable design also makes it an excellent platform for containerized "
-"applications as well as container-based software development. In each case, "
+"applications as well as container-based software development.  In each case, "
 "applications (apps) and containers are kept separate from the host system, "
 "improving stability and reliability."
 msgstr ""
@@ -120,7 +120,7 @@ msgstr ""
 "和容器与主机系统的分隔也使得系统更加可靠。"
 
 #. type: Plain text
-#: pages/index.adoc:34
+#: pages/index.adoc:28
 #, fuzzy
 #| msgid ""
 #| "Silverblue's core technologies have some other helpful features. OS "
@@ -129,23 +129,23 @@ msgstr ""
 #| "also possible to roll back to the previous version of the operating "
 #| "system, if something goes wrong."
 msgid ""
-"{variant-name}'s core technologies have some other helpful features. OS "
+"{variant-name}'s core technologies have some other helpful features.  OS "
 "updates are fast and there's no waiting around for them to install: just "
-"reboot as normal to start using the next version. With {variant-name}, it is "
-"also possible to roll back to the previous version of the operating system, "
-"if something goes wrong."
+"reboot as normal to start using the next version.  With {variant-name}, it "
+"is also possible to roll back to the previous version of the operating "
+"system, if something goes wrong."
 msgstr ""
 "Silverblue 使用的核心技术也带来了其它的特性。系统更新从此变得方便快捷：只需要"
 "重启系统就可以使用新版本，而出现任何问题时还可以随时回滚。"
 
 #. type: Title ==
-#: pages/index.adoc:36
+#: pages/index.adoc:30
 #, no-wrap
 msgid "About this guide"
 msgstr "关于这份指南"
 
 #. type: Plain text
-#: pages/index.adoc:42
+#: pages/index.adoc:34
 #, fuzzy
 #| msgid ""
 #| "In most cases, Silverblue behaves like a standard Fedora Workstation "
@@ -155,7 +155,7 @@ msgstr "关于这份指南"
 msgid ""
 "In most cases, {variant-name} behaves like a standard Fedora Workstation "
 "installation, and the https://docs.fedoraproject.org/[standard Fedora "
-"documentation] can be used. This guide covers those areas where {variant-"
+"documentation] can be used.  This guide covers those areas where {variant-"
 "name} differs from a standard Fedora Workstation, including:"
 msgstr ""
 "在大部分情况下，Silverblue 和普通的 Fedora Workstation 是一样的，这时候只需要"
@@ -163,22 +163,22 @@ msgstr ""
 "了 Silverblue 与普通 Fedora Workstation 体验不一致的场景，包括："
 
 #. type: Plain text
-#: pages/index.adoc:44
+#: pages/index.adoc:36
 msgid "link:installation[OS installation]"
 msgstr "link:installation[系统安装]"
 
 #. type: Plain text
-#: pages/index.adoc:45
+#: pages/index.adoc:37
 msgid "link:getting-started[Installing apps and software]"
 msgstr "link:getting-started[安装应用程序]"
 
 #. type: Plain text
-#: pages/index.adoc:46
+#: pages/index.adoc:38
 msgid "link:updates-upgrades-rollbacks[OS upgrades and rollbacks]"
 msgstr "link:updates-upgrades-rollbacks[系统更新与回滚]"
 
 #. type: Plain text
-#: pages/index.adoc:50
+#: pages/index.adoc:40
 #, fuzzy
 #| msgid ""
 #| "The primary audience for these docs are new users, who aren't expected to "

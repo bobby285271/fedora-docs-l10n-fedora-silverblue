@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,36 +23,36 @@ msgid "Getting Started"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:8
+#: pages/getting-started.adoc:6
 msgid ""
 "{variant-name} is designed to be easy and straightforward to use, and "
-"specialist knowledge should generally not be required. However, {variant-"
+"specialist knowledge should generally not be required.  However, {variant-"
 "name} is built differently from other operating systems, and there are "
 "therefore some things that it is useful to know."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:12
+#: pages/getting-started.adoc:9
 msgid ""
 "{variant-name} has different options for installing software, compared with "
-"a standard Fedora Workstation (or other package-based Linux distributions). "
+"a standard Fedora Workstation (or other package-based Linux distributions).  "
 "These include:"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:14
+#: pages/getting-started.adoc:11
 msgid ""
 "Flatpak apps: this is the primary way that (GUI) apps get installed on "
 "{variant-name}."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:15
+#: pages/getting-started.adoc:12
 msgid "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:18
+#: pages/getting-started.adoc:14
 msgid ""
 "Package layering: The rpm-ostree tool used for host updates is a full hybrid "
 "image/package system.  By default the system operates in pure image mode, "
@@ -60,48 +60,48 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:20
+#: pages/getting-started.adoc:16
 msgid ""
 "For information on <<flatpak>> and <<package-layering,package layering>>, "
 "see below."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:22
+#: pages/getting-started.adoc:18
 msgid ""
 "See the dedicated xref:toolbox.adoc[toolbox] page to get started with it."
 msgstr ""
 
 #. type: Title ==
-#: pages/getting-started.adoc:24
+#: pages/getting-started.adoc:20
 #, no-wrap
 msgid "Flatpak"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:30
+#: pages/getting-started.adoc:24
 msgid ""
-"Flatpak is the primary way that apps can be installed on {variant-name}. "
-"(For information, see http://flatpak.org[flatpak.org].) Flatpak works out of "
-"the box in Fedora {variant-name}, and Fedora provides a small (but growing) "
-"collection of apps that can be installed."
+"Flatpak is the primary way that apps can be installed on {variant-name} (for "
+"more information, see http://flatpak.org[flatpak.org]).  Flatpak works out "
+"of the box in Fedora {variant-name}, and Fedora provides a small (but "
+"growing) collection of apps that can be installed."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:33
+#: pages/getting-started.adoc:26
 msgid ""
 "The other main source of Flatpak apps is https://flathub.org/home[Flathub], "
 "which provides a large repository of Flatpak apps that can be installed."
 msgstr ""
 
 #. type: Title ==
-#: pages/getting-started.adoc:35
+#: pages/getting-started.adoc:28
 #, no-wrap
 msgid "Setting up Flathub"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:40
+#: pages/getting-started.adoc:31
 msgid ""
 "To setup Flathub on Fedora {variant-name}, open the https://flatpak.org/"
 "setup/Fedora/[Flathub setup page for Fedora] and click the “Flathub "
@@ -109,179 +109,180 @@ msgid ""
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/getting-started.adoc:41
+#: pages/getting-started.adoc:32
 #, no-wrap
 msgid "Fedora quick setup page"
 msgstr ""
 
 #. type: Target for macro image
-#: pages/getting-started.adoc:41
+#: pages/getting-started.adoc:32
 #, no-wrap
 msgid "sfg_flathub_fedora.png"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:46
+#: pages/getting-started.adoc:37
 msgid ""
-"A popup window will show a download option for the file. The “Open with” "
-"option should show “Software Install (default)”. Click on the “OK” button to "
-"start the download."
+"A popup window will show a download option for the file.  The “Open with” "
+"option should show “Software Install (default)”.  Click on the “OK” button "
+"to start the download."
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/getting-started.adoc:47
+#: pages/getting-started.adoc:38
 #, no-wrap
 msgid "Flathub download options"
 msgstr ""
 
 #. type: Target for macro image
-#: pages/getting-started.adoc:47
+#: pages/getting-started.adoc:38
 #, no-wrap
 msgid "sfg_flathub_download.png"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:53
+#: pages/getting-started.adoc:43
 msgid ""
 "After the download is complete, a new window will open showing the Flathub "
-"repository. This window also shows the source location of the repository to "
-"be installed, under the details heading (1). To start the installation of "
+"repository.  This window also shows the source location of the repository to "
+"be installed, under the details heading (1).  To start the installation of "
 "the Flathub repository, click on the “Install” button (2)."
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/getting-started.adoc:54
+#: pages/getting-started.adoc:44
 #, no-wrap
 msgid "Flathub install window"
 msgstr ""
 
 #. type: Target for macro image
-#: pages/getting-started.adoc:54
+#: pages/getting-started.adoc:44
 #, no-wrap
 msgid "sfg_flathub_install.png"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:58
+#: pages/getting-started.adoc:47
 msgid ""
 "After the repository installation process is complete, the window will be "
 "updated to show a “Remove\" button in place of the “Install” button."
 msgstr ""
 
 #. type: Title ===
-#: pages/getting-started.adoc:59
+#: pages/getting-started.adoc:48
 #, no-wrap
 msgid "Installing Flatpak apps from Flathub"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:64
+#: pages/getting-started.adoc:52
 msgid ""
 "Once the Flathub repository has been setup, it can be used to install "
-"Flatpak apps. This can be done directly from the Software app, or apps can "
+"Flatpak apps.  This can be done directly from the Software app, or apps can "
 "be browsed on the https://flathub.org/home[Flathub website]."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:70
+#: pages/getting-started.adoc:55
 msgid ""
 "If you choose to install apps from the Flathub website, clicking \"Install\" "
 "will download a file which will be opened by the Software app, which can "
-"then be used to install the app. For example, to install https://www."
+"then be used to install the app.  For example, to install https://www."
 "libreoffice.org/[LibreOffice], you first search for and open the LibreOffice "
 "page, and then press the “Install” button (2)."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:74
+#: pages/getting-started.adoc:58
 msgid ""
 "After clicking the “Install” button, a download information window will be "
-"shown. Verify the correct Flatpak has been downloaded and then click on the "
+"shown.  Verify the correct Flatpak has been downloaded and then click on the "
 "“OK” button to begin installing the LibreOffice application."
 msgstr ""
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/getting-started.adoc:75
+#: pages/getting-started.adoc:59
 #, no-wrap
 msgid "LibreOffice Flatpak download"
 msgstr ""
 
 #. type: Target for macro image
-#: pages/getting-started.adoc:75
+#: pages/getting-started.adoc:59
 #, no-wrap
 msgid "sfg_libreoffice_install.png"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:79
+#: pages/getting-started.adoc:63
 msgid ""
 "Once the Flatpak is downloaded, the Software application will open a new "
-"window with an “Install” button (2). Click this button to begin installation."
+"window with an “Install” button (2).  Click this button to begin "
+"installation."
 msgstr ""
 
 #. type: Title ===
-#: pages/getting-started.adoc:80
+#: pages/getting-started.adoc:64
 #, no-wrap
 msgid "Flatpak command line"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:86
+#: pages/getting-started.adoc:68
 msgid ""
 "In addition to using the Software app to install Flatpak apps, it is also "
-"possible to use the `flatpak` command line interface. See the http://docs."
+"possible to use the `flatpak` command line interface.  See the http://docs."
 "flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] for how to "
 "do this."
 msgstr ""
 
 #. type: Title ==
-#: pages/getting-started.adoc:88
+#: pages/getting-started.adoc:70
 #, no-wrap
 msgid "Package layering"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:92
+#: pages/getting-started.adoc:74
 msgid ""
-"Package layering works by modifying your {variant-name} installation. As the "
-"name implies, it works by extending the packages from which {variant-name} "
-"is composed."
+"Package layering works by modifying your {variant-name} installation.  As "
+"the name implies, it works by extending the packages from which {variant-"
+"name} is composed."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:94
+#: pages/getting-started.adoc:76
 msgid "Good examples of packages to be layered would be:"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:96
+#: pages/getting-started.adoc:78
 msgid "`fish`: An alternative Unix shell"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:97
+#: pages/getting-started.adoc:79
 msgid "`sway`: A Wayland tiling compositor"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:98
+#: pages/getting-started.adoc:80
 msgid "`libvirt`: The libvirt daemon"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:101
+#: pages/getting-started.adoc:82
 msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
 "{variant-name} using this method."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:110
+#: pages/getting-started.adoc:87
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
 "rollback and the transactional model, but means that the system must be "
-"rebooted after a package has been layered. If you don't want to reboot your "
+"rebooted after a package has been layered.  If you don't want to reboot your "
 "system for switching to the new deployment, you can use an experimental `rpm-"
 "ostree ex apply-live` command to update the filesystem to see changes from "
 "new deployment, but it's generally expected that you use package layering "
@@ -289,82 +290,82 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:114
+#: pages/getting-started.adoc:90
 msgid ""
-"Package layering is generally done from the command line. However, the "
+"Package layering is generally done from the command line.  However, the "
 "Software application does rely on it for installing a small number of apps "
 "that are currently difficult to install as Flatpaks."
 msgstr ""
 
 #. type: Title ===
-#: pages/getting-started.adoc:115
+#: pages/getting-started.adoc:91
 #, no-wrap
 msgid "Installing packages"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:118
+#: pages/getting-started.adoc:94
 msgid "Packages can be installed on {variant-name} using:"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:120
+#: pages/getting-started.adoc:96
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:125
+#: pages/getting-started.adoc:99
 msgid ""
 "This will download the package and any required dependencies, and recompose "
-"your {variant-name} image with them. `rpm-ostree` uses standard Fedora "
+"your {variant-name} image with them.  `rpm-ostree` uses standard Fedora "
 "package names, which can be searched using DNF (this is not available on a "
 "{variant-name} host, but can be used in a xref:toolbox.adoc[toolbox])."
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:128
+#: pages/getting-started.adoc:101
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
 msgstr ""
 
 #. type: Title ===
-#: pages/getting-started.adoc:129
+#: pages/getting-started.adoc:102
 #, no-wrap
 msgid "Replacing packages"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:135
+#: pages/getting-started.adoc:107
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
-"command can be used to replace a package with a different version. You can "
+"command can be used to replace a package with a different version.  You can "
 "download the package locally and run:"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:137
+#: pages/getting-started.adoc:109
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:140
+#: pages/getting-started.adoc:112
 msgid ""
 "Or you can override packages without downloading using links from koji or "
-"bodhi. For example:"
+"bodhi.  For example:"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:142
+#: pages/getting-started.adoc:114
 #, no-wrap
 msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:146
+#: pages/getting-started.adoc:116
 msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
@@ -372,9 +373,9 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/getting-started.adoc:149
+#: pages/getting-started.adoc:118
 msgid ""
 "Removing and replacing packages using package layering is not generally "
-"recommended. For more information, see the https://coreos.github.io/rpm-"
+"recommended.  For more information, see the https://coreos.github.io/rpm-"
 "ostree/administrator-handbook/[rpm-ostree documentation]."
 msgstr ""

@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: 2022-03-26 08:17+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
-"\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
+">\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,10 +27,15 @@ msgid "Updates, Upgrades & Rollbacks"
 msgstr "Оновлення пакунків, оновлення системи та повернення до попередніх версій"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:7
+#: pages/updates-upgrades-rollbacks.adoc:6
+#, fuzzy
+#| msgid ""
+#| "Installing updates with {variant-name} is easy and fast (much faster than "
+#| "other operating systems). It also has a special rollback feature, in case "
+#| "anything goes wrong."
 msgid ""
 "Installing updates with {variant-name} is easy and fast (much faster than "
-"other operating systems). It also has a special rollback feature, in case "
+"other operating systems).  It also has a special rollback feature, in case "
 "anything goes wrong."
 msgstr ""
 "Встановлення оновлень у {variant-name} є простим і швидким (набагато швидшим "
@@ -38,18 +43,24 @@ msgstr ""
 "повернення до попередньої версії системи, якщо щось піде не так."
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:9
+#: pages/updates-upgrades-rollbacks.adoc:8
 #, no-wrap
 msgid "Updating {variant-name}"
 msgstr "Оновлення {variant-name}"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:15
+#: pages/updates-upgrades-rollbacks.adoc:12
+#, fuzzy
+#| msgid ""
+#| "OS updates in {variant-name} are fully integrated into the desktop; you "
+#| "will be automatically notified when an update is available. The standard "
+#| "behavior is to automatically download the update (this can be changed "
+#| "from the update preferences in Software)."
 msgid ""
 "OS updates in {variant-name} are fully integrated into the desktop; you will "
-"be automatically notified when an update is available. The standard behavior "
-"is to automatically download the update (this can be changed from the update "
-"preferences in Software)."
+"be automatically notified when an update is available.  The standard "
+"behavior is to automatically download the update (this can be changed from "
+"the update preferences in Software)."
 msgstr ""
 "Оновлення операційної системи у {variant-name} повністю інтегровано до "
 "стільничного середовища. Система автоматично повідомить вам про доступність "
@@ -57,10 +68,15 @@ msgstr ""
 "цю поведінку можна у налаштуваннях оновлень у програмі «Програми»)."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:19
+#: pages/updates-upgrades-rollbacks.adoc:15
+#, fuzzy
+#| msgid ""
+#| "Once an update is ready, it is just a matter of rebooting to start using "
+#| "the new version. There is no waiting for the update to be installed "
+#| "during this reboot."
 msgid ""
 "Once an update is ready, it is just a matter of rebooting to start using the "
-"new version. There is no waiting for the update to be installed during this "
+"new version.  There is no waiting for the update to be installed during this "
 "reboot."
 msgstr ""
 "Щойно встановлення оновлень буде завершено, достатньо буде перезавантажити "
@@ -68,48 +84,62 @@ msgstr ""
 "оновлення під час перезавантаження немає."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:22
+#: pages/updates-upgrades-rollbacks.adoc:18
+#, fuzzy
+#| msgid ""
+#| "If you'd prefer, it is also possible to update using the command line. To "
+#| "do this, run:"
 msgid ""
-"If you'd prefer, it is also possible to update using the command line. To do "
-"this, run:"
+"If you'd prefer, it is also possible to update using the command line.  To "
+"do this, run:"
 msgstr ""
 "Якщо ви хочете, оновлення можна ініціювати за допомогою командної оболонки. "
 "Для цього віддайте таку команду:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:24
+#: pages/updates-upgrades-rollbacks.adoc:20
 #, no-wrap
 msgid " $ rpm-ostree upgrade\n"
 msgstr " $ rpm-ostree upgrade\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:28
+#: pages/updates-upgrades-rollbacks.adoc:23
+#, fuzzy
+#| msgid ""
+#| "This will check for new updates and download and install them if they are "
+#| "available. Alternatively, to check for available updates without "
+#| "downloading them, run:"
 msgid ""
 "This will check for new updates and download and install them if they are "
-"available. Alternatively, to check for available updates without downloading "
-"them, run:"
+"available.  Alternatively, to check for available updates without "
+"downloading them, run:"
 msgstr ""
 "У відповідь на цю команду система виконає пошук оновлень, отримає і "
 "встановить їх, якщо оновлення буде виявлено. Іншим варіантом є пошук "
 "доступних оновлень без їхнього отримання:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:30
+#: pages/updates-upgrades-rollbacks.adoc:25
 #, no-wrap
 msgid " $ rpm-ostree upgrade --check\n"
 msgstr " $ rpm-ostree upgrade --check\n"
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:32
+#: pages/updates-upgrades-rollbacks.adoc:27
 #, no-wrap
 msgid "Upgrading between major versions"
 msgstr "Оновлення до новіших версій системи"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:37
+#: pages/updates-upgrades-rollbacks.adoc:31
+#, fuzzy
+#| msgid ""
+#| "Upgrading between major versions (such as from Fedora 34 to Fedora 35) "
+#| "can be completed using the Software application. Alternatively, {variant-"
+#| "name} can be upgraded between major versions using the `ostree` command."
 msgid ""
-"Upgrading between major versions (such as from Fedora 34 to Fedora 35) can "
-"be completed using the Software application. Alternatively, {variant-name} "
+"Upgrading between major versions (such as from Fedora 35 to Fedora 36) can "
+"be completed using the Software application.  Alternatively, {variant-name} "
 "can be upgraded between major versions using the `ostree` command."
 msgstr ""
 "Оновлення до новіших версій (наприклад, з Fedora 34 до Fedora 35) можна "
@@ -117,49 +147,57 @@ msgstr ""
 "{variant-name} до нової основної версії можна за допомогою команди `ostree`."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:40
+#: pages/updates-upgrades-rollbacks.adoc:34
+#, fuzzy
+#| msgid ""
+#| "First, verify the branch is available. You can print all available "
+#| "branches with this command:"
 msgid ""
-"First, verify the branch is available. You can print all available branches "
+"First, verify the branch is available.  You can print all available branches "
 "with this command:"
 msgstr ""
 "Спочатку перевірте доступність гілки. Ви можете переглянути усі доступні "
 "гілки за допомогою такої команди:"
 
-#. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:42
-#, no-wrap
-msgid " $ ostree remote refs fedora\n"
+#. type: delimited block -
+#: pages/updates-upgrades-rollbacks.adoc:38
+#, fuzzy, no-wrap
+#| msgid " $ ostree remote refs fedora\n"
+msgid "$ ostree remote refs fedora | grep {variant}\n"
 msgstr " $ ostree remote refs fedora\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:45
+#: pages/updates-upgrades-rollbacks.adoc:42
+#, fuzzy
+#| msgid ""
+#| "After you verify the name of your branch, you are ready to proceed. For "
+#| "example, to upgrade to {variant-name} 35, the command is:"
 msgid ""
-"After you verify the name of your branch, you are ready to proceed. For "
-"example, to upgrade to {variant-name} 35, the command is:"
+"After you verify the name of your branch, you are ready to proceed.  For "
+"example, to upgrade to {variant-name} {version}, the command is:"
 msgstr ""
 "Після того, як ви перевірите назву вашої гілки, можна продовжувати "
 "встановлення. Наприклад, для оновлення до {variant-name} 35 слід "
 "скористатися такою командою:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:49
+#: pages/updates-upgrades-rollbacks.adoc:45
+#, fuzzy, no-wrap
+#| msgid "Currently, the default remote for {variant-name} 35 is named `fedora`. If this is not the case for your system, you can find out the remote name by issuing: `ostree remote list`."
 msgid ""
-"Currently, the default remote for {variant-name} 35 is named `fedora`. If "
-"this is not the case for your system, you can find out the remote name by "
-"issuing: `ostree remote list`."
-msgstr ""
-"У поточній версії віддалене сховище {variant-name} 35 має назву `fedora`. "
-"Якщо це не так у вашій системі, ви можете визначити назву віддаленого "
-"сховища за допомогою такої команди: `ostree remote list`."
+"Currently, the default remote for {variant-name} {version} is named `fedora`.\n"
+"      If this is not the case for your system, you can find out the remote name by issuing: `ostree remote list`.\n"
+msgstr "У поточній версії віддалене сховище {variant-name} 35 має назву `fedora`. Якщо це не так у вашій системі, ви можете визначити назву віддаленого сховища за допомогою такої команди: `ostree remote list`."
 
-#. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:51
-#, no-wrap
-msgid " $ rpm-ostree rebase fedora:fedora/35/x86_64/{variant}\n"
+#. type: delimited block -
+#: pages/updates-upgrades-rollbacks.adoc:49
+#, fuzzy, no-wrap
+#| msgid " $ rpm-ostree rebase fedora:fedora/35/x86_64/{variant}\n"
+msgid "$ rpm-ostree rebase fedora:fedora/{version}/x86_64/{variant}\n"
 msgstr " $ rpm-ostree rebase fedora:fedora/35/x86_64/{variant}\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:54
+#: pages/updates-upgrades-rollbacks.adoc:52
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
@@ -169,16 +207,23 @@ msgstr ""
 "просто завантажити нову систему."
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:56
+#: pages/updates-upgrades-rollbacks.adoc:54
 #, no-wrap
 msgid "Rolling back"
 msgstr "Відновлення попередньої версії"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:62
+#: pages/updates-upgrades-rollbacks.adoc:58
+#, fuzzy
+#| msgid ""
+#| "{variant-name} keeps a record of the previous OS version, which can be "
+#| "switched to instead of the latest version. While this shouldn't usually "
+#| "be necessary, it can be helpful if there is a problem with an update or "
+#| "an upgrade (rollbacks work the same way for both), as well as for "
+#| "development purposes."
 msgid ""
 "{variant-name} keeps a record of the previous OS version, which can be "
-"switched to instead of the latest version. While this shouldn't usually be "
+"switched to instead of the latest version.  While this shouldn't usually be "
 "necessary, it can be helpful if there is a problem with an update or an "
 "upgrade (rollbacks work the same way for both), as well as for development "
 "purposes."
@@ -191,12 +236,12 @@ msgstr ""
 "потреба, яку пов'язано із розробкою програмного забезпечення."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:64
+#: pages/updates-upgrades-rollbacks.adoc:60
 msgid "There are two ways to roll back to the previous version:"
 msgstr "Існує два способи повернення до попередньої версії:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:68
+#: pages/updates-upgrades-rollbacks.adoc:62
 msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
@@ -207,7 +252,7 @@ msgstr ""
 "попередньої версії у меню завантаження (яке часто називають меню grub)."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:70
+#: pages/updates-upgrades-rollbacks.adoc:63
 msgid ""
 "Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
@@ -217,11 +262,16 @@ msgstr ""
 "rollback`."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:73
+#: pages/updates-upgrades-rollbacks.adoc:65
+#, fuzzy
+#| msgid ""
+#| "After rolling back, you will technically be on an old OS version, and may "
+#| "be prompted to update. Updating will undo the rollback, so should be "
+#| "avoided if you want the rollback to stay in effect."
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
-"prompted to update. Updating will undo the rollback, so should be avoided if "
-"you want the rollback to stay in effect."
+"prompted to update.  Updating will undo the rollback, so should be avoided "
+"if you want the rollback to stay in effect."
 msgstr ""
 "Після повернення до попередньої версії технічно ви матимете справу із "
 "застарілою версією операційної системи, яка може надсилати запити щодо свого "

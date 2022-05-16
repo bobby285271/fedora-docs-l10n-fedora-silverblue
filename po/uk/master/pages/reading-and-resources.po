@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 00:45+0000\n"
+"POT-Creation-Date: 2022-05-16 22:01+0000\n"
 "PO-Revision-Date: 2022-03-26 08:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -29,7 +29,8 @@ msgstr "Відомості і ресурси"
 #: pages/reading-and-resources.adoc:4
 msgid ""
 "This page is a list of further reading and resources for {variant-name}."
-msgstr "На цій сторінці наведено список текстових ресурсів щодо {variant-name}."
+msgstr ""
+"На цій сторінці наведено список текстових ресурсів щодо {variant-name}."
 
 #. type: Title ==
 #: pages/reading-and-resources.adoc:5
@@ -50,7 +51,7 @@ msgstr ""
 "станцій наступного покоління"
 
 #. type: Plain text
-#: pages/reading-and-resources.adoc:11
+#: pages/reading-and-resources.adoc:10
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] - OS image composition and "
 "updates"
@@ -59,14 +60,14 @@ msgstr ""
 "образів операційних систем"
 
 #. type: Plain text
-#: pages/reading-and-resources.adoc:12
+#: pages/reading-and-resources.adoc:11
 msgid "https://podman.io/[podman] - daemonless container engine"
 msgstr ""
 "https://podman.io/[podman] — рушій для роботи із контейнерами без фонових "
 "служб"
 
 #. type: Plain text
-#: pages/reading-and-resources.adoc:14
+#: pages/reading-and-resources.adoc:12
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] - hybrid image/package "
 "system"
@@ -75,13 +76,13 @@ msgstr ""
 "і пакунків"
 
 #. type: Title ==
-#: pages/reading-and-resources.adoc:15
+#: pages/reading-and-resources.adoc:13
 #, no-wrap
 msgid "Documents"
 msgstr "Документи"
 
 #. type: Plain text
-#: pages/reading-and-resources.adoc:20
+#: pages/reading-and-resources.adoc:16
 msgid ""
 "link:{attachmentsdir}/team-silverblue-origins.pdf[Team Silverblue - The "
 "Origins] - PDF that explains the motivations, goals, and history behind "
@@ -92,7 +93,7 @@ msgstr ""
 "проєкту Silverblue"
 
 #. type: Plain text
-#: pages/reading-and-resources.adoc:22
+#: pages/reading-and-resources.adoc:17
 msgid ""
 "link:{attachmentsdir}/flatpak-print-cheatsheet.pdf[Flatpak Cheat Sheet] - "
 "PDF with common flatpak commands"
@@ -101,7 +102,7 @@ msgstr ""
 "PDF із типовими командами flatpak"
 
 #. type: Plain text
-#: pages/reading-and-resources.adoc:24
+#: pages/reading-and-resources.adoc:18
 msgid ""
 "link:{attachmentsdir}/silverblue-cheatsheet.pdf[rpm-ostree Cheat Sheet] - "
 "PDF with common rpm-ostree commands"
@@ -110,7 +111,7 @@ msgstr ""
 "PDF із типовими командами rpm-ostree"
 
 #. type: Plain text
-#: pages/reading-and-resources.adoc:26
+#: pages/reading-and-resources.adoc:18
 msgid ""
 "link:{attachmentsdir}/container-commandos.pdf[Container commandos] - a "
 "playful introduction to tools such as podman, cri-o and buildah by Máirín "
