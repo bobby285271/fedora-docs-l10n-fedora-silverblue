@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2022-03-26 08:17+0000\n"
+"PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/installation.adoc:1
@@ -57,12 +57,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:13
-#, fuzzy
-#| msgid ""
-#| "{variant-name} is intended to provide the full range of capabilities that "
-#| "you would expect from an installation of Fedora Workstation. However, "
-#| "there are some differences in terms of which applications can be "
-#| "installed, and how the operating system environment works."
 msgid ""
 "{variant-name} is intended to provide the full range of capabilities that "
 "you would expect from an installation of Fedora Workstation.  However, there "
@@ -76,14 +70,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:17
-#, fuzzy
-#| msgid ""
-#| "It is therefore recommended that you read this user guide before deciding "
-#| "to install {variant-name}. It is also recommended that you determine "
-#| "whether {variant-name} meets the specific needs or requirements that you "
-#| "might have. If you are uncertain about this, {variant-name} can also be "
-#| "tested in a virtual machine prior to installation or booted from a flash "
-#| "drive using Fedora Media Writer."
 msgid ""
 "It is therefore recommended that you read this user guide before deciding to "
 "install {variant-name}.  It is also recommended that you determine whether "
@@ -106,13 +92,11 @@ msgstr "Відомі обмеження"
 
 #. type: Plain text
 #: pages/installation.adoc:22
-#, fuzzy, no-wrap
-#| msgid ""
-#| "*{variant-name} does not provide a fully functional experience for dual booting or\n"
-#| "manual partitioning.*\n"
+#, no-wrap
 msgid "*{variant-name} does not provide a fully functional experience for dual booting or manual partitioning.*\n"
 msgstr ""
-"*У {variant-name} не передбачено повноцінної можливості паралельного використання різних систем на одному комп'ютері, а також\n"
+"*У {variant-name} не передбачено повноцінної можливості паралельного "
+"використання різних систем на одному комп'ютері, а також\n"
 "поділу диска вручну.*\n"
 
 #. type: Plain text
@@ -139,12 +123,6 @@ msgstr "Отримання {variant-name}"
 
 #. type: Plain text
 #: pages/installation.adoc:31
-#, fuzzy
-#| msgid ""
-#| "If you are using Fedora Media Writer, {variant-name} should be listed as "
-#| "a download option. However, if it isn't, or if you want to download it "
-#| "manually, an install image can be downloaded from {website}[the main "
-#| "{variant-name} website]."
 msgid ""
 "If you are using Fedora Media Writer, {variant-name} should be listed as a "
 "download option.  However, if it isn't, or if you want to download it "
@@ -158,10 +136,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:34
-#, fuzzy
-#| msgid ""
-#| "Once you have got your copy of {variant-name}, it can be installed in the "
-#| "usual manner. We hope that you love it!"
 msgid ""
 "Once you have got your copy of {variant-name}, it can be installed in the "
 "usual manner.  We hope that you love it!"
@@ -177,12 +151,6 @@ msgstr "Поділ диска вручну"
 
 #. type: Plain text
 #: pages/installation.adoc:41
-#, fuzzy
-#| msgid ""
-#| "As described above, there are known issues with manual partitioning on "
-#| "{variant-name}, and it should be used with caution. The following notes "
-#| "are intended as hints for those attempting it, and should not be treated "
-#| "as recommended practice. Automatic partitioning is recommended."
 msgid ""
 "As described above, there are known issues with manual partitioning on "
 "{variant-name}, and it should be used with caution.  The following notes are "

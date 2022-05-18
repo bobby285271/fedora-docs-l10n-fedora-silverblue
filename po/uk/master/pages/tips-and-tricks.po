@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2022-02-24 18:16+0000\n"
+"PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestips-and-tricks/uk/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/tips-and-tricks.adoc:1
@@ -38,13 +38,6 @@ msgstr "Визначення того, чи перебуваєте ви у ко�
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:9
-#, fuzzy
-#| msgid ""
-#| "If you frequently make use of Toolbx to perform various tasks and use "
-#| "multiple Toolbx containers it can be hard to keep track of whether you "
-#| "are currently executing commands on the host or in a Toolbx container. "
-#| "Furthermore, there is currently no command to tell you in which Toolbx "
-#| "container you are working."
 msgid ""
 "If you frequently make use of Toolbx to perform various tasks and use "
 "multiple Toolbx containers it can be hard to keep track of whether you are "
@@ -75,10 +68,6 @@ msgstr "  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP \"(?<=name=\\\
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:16
-#, fuzzy
-#| msgid ""
-#| "When you open a new shell, you now have access to the new command "
-#| "`istoolbx`.  This will behave as follows"
 msgid ""
 "When you open a new shell, you now have access to the new command "
 "`istoolbx`.  This will behave as follows:"
@@ -106,6 +95,9 @@ msgid ""
 "If a more automated solution is your preference the following added to your "
 "`~/.bashrc` will change your bash prompt to include \"[toolbox <name>]\":"
 msgstr ""
+"Якщо вам подобається більш автоматизоване рішення, варто додати до вашого `~/"
+".bashrc` вказаний вище фрагмент, який змінить ваш запит bash на такий, що "
+"міститиме рядок «[toolbox <назва>]»:"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:31
@@ -121,6 +113,16 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"```\n"
+"function is_toolbox() {\n"
+"    if [ -f \"/run/.toolboxenv\" ]\n"
+"    then\n"
+"        TOOLBOX_NAME=$(cat /run/.containerenv | grep -oP \"(?<=name=\\\")[^\\"
+"\";]+\")\n"
+"        echo \"[${HOSTNAME} ${TOOLBOX_NAME}]\"\n"
+"    fi\n"
+"}\n"
+"```\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:33
@@ -129,6 +131,9 @@ msgid ""
 "execute any extra commands in order to know whether or not your are in a "
 "toolbox or host shell."
 msgstr ""
+"Потім ви можете включити `is_toolbox` до вашої змінної `PS1`, і вам вже не "
+"потрібно буде виконувати жодних додаткових команд для того, щоб дізнатися, "
+"перебуваєте ви у toolbox чи у командній оболонці основної системи."
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:38
@@ -136,19 +141,22 @@ msgid ""
 "Example: ``` export PS1=\"\\[\\e[31m\\]\\`is_toolbox\\`\\]\\e[m\\]\\[\\e[32m"
 "\\]\\\\$ \\[\\e[m\\]\\[\\e[37m\\]❱\\[\\e[m\\] \" ```"
 msgstr ""
+"Приклад: ``` export PS1=\"\\[\\e[31m\\]\\`is_toolbox\\`\\]\\e[m\\]\\[\\e["
+"32m\\]\\\\$ \\[\\e[m\\]\\[\\e[37m\\]❱\\[\\e[m\\] \" ```"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:40
 msgid ""
 "This results in a prompt which appears as such when not in a toolbox: `$ ❱`"
 msgstr ""
+"Результатом буде запит, який виглядатиме так, якщо ви не у toolbox: `$ ❱`"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:42
 msgid ""
 "However, when running in a toolbox named \"default\" looks like: `[toolbox "
 "default]$ ❱`"
-msgstr ""
+msgstr "А у toolbox із назвою «default» ось так: `[toolbox default]$ ❱`"
 
 #. type: Title ===
 #: pages/tips-and-tricks.adoc:43
@@ -158,12 +166,6 @@ msgstr "Запуск програм з Toolbx в основній системі
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:47
-#, fuzzy
-#| msgid ""
-#| "This can be necessary if you want to interact with tools available from "
-#| "the host, for example `podman`, `nmcli` or `rpm-ostree` without leaving "
-#| "the Toolbx container in between. You can use `flatpak-spawn`, included in "
-#| "the base installation for this:"
 msgid ""
 "This can be necessary if you want to interact with tools available from the "
 "host, for example `podman`, `nmcli` or `rpm-ostree` without leaving the "
@@ -171,10 +173,9 @@ msgid ""
 "base installation for this:"
 msgstr ""
 "Потреба у запуску може виникнути, якщо ви хочете взаємодіяти із програмними "
-"інструментами основної системи, наприклад `podman`, `nmcli` або `rpm-"
-"ostree`, не полишаючи контейнера Toolbx. Ви можете скористатися для "
-"виконання цього завдання програмою `flatpak-spawn`, яку включено до базового "
-"пакунка:"
+"інструментами основної системи, наприклад `podman`, `nmcli` або `rpm-ostree`"
+", не полишаючи контейнера Toolbx. Ви можете скористатися для виконання цього "
+"завдання програмою `flatpak-spawn`, яку включено до базового пакунка:"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:49
@@ -199,12 +200,6 @@ msgstr "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:56
-#, fuzzy
-#| msgid ""
-#| "If you find yourself using commands like these frequently to access e.g. "
-#| "the flatpak command from inside the Toolbx container, you can create "
-#| "yourself a short custom wrapper script (*inside the Toolbx container*). "
-#| "To do this, perform the following steps:"
 msgid ""
 "If you find yourself using commands like these frequently to access e.g. the "
 "flatpak command from inside the Toolbx container, you can create yourself a "
@@ -227,10 +222,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:61
-#, fuzzy
-#| msgid ""
-#| "Make sure you are in a Toolbx container. If the following command doesn't "
-#| "produce any output, you are likely still working on the host!"
 msgid ""
 "Make sure you are in a Toolbx container.  If the following command doesn't "
 "produce any output, you are likely still working on the host!"
@@ -284,11 +275,6 @@ msgstr "Стеження за змінами у базовій операцій�
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:77
-#, fuzzy
-#| msgid ""
-#| "Some directories in `ostree`-based operating systems are writable by the "
-#| "user, like `/etc`. You can get a quick overview of the files changed "
-#| "under `/etc` using the following command:"
 msgid ""
 "Some directories in `ostree`-based operating systems are writable by the "
 "user, like `/etc`.  You can get a quick overview of the files changed under "
@@ -318,16 +304,14 @@ msgstr "  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /e
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:86
-#, fuzzy, no-wrap
-#| msgid ""
-#| "This works because ostree keeps an unmodified copy of the `/etc` directory\n"
-#| "      under `/usr/etc`. All of your changes go to `/etc` directly.\n"
+#, no-wrap
 msgid ""
 "This works because ostree keeps an unmodified copy of the `/etc` directory under `/usr/etc`.\n"
 "      All of your changes go to `/etc` directly.\n"
 msgstr ""
 "Це працює, оскільки ostree зберігає незмінену копії каталогу `/etc` у\n"
-"      `/usr/etc`. Усі внесені вами зміни записуються до `/etc` безпосередньо.\n"
+"      `/usr/etc`. Усі внесені вами зміни записуються до `/etc` безпосередньо."
+"\n"
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:87

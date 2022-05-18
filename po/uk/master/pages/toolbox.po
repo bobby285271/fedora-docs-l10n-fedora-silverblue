@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2022-03-26 08:17+0000\n"
+"PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/toolbox.adoc:2
@@ -57,13 +57,6 @@ msgstr "Чому слід користуватися toolbox?"
 
 #. type: Plain text
 #: pages/toolbox.adoc:14
-#, fuzzy
-#| msgid ""
-#| "Toolbox makes it easy to use a containerized environment for everyday "
-#| "software development and debugging. On immutable operating systems, like "
-#| "{website}[Fedora {variant-name}], it provides a familiar package-based "
-#| "environment in which tools and libraries can be installed and used. "
-#| "However, toolbox can also be used on package-based systems."
 msgid ""
 "Toolbox makes it easy to use a containerized environment for everyday "
 "software development and debugging.  On immutable operating systems, like "
@@ -132,13 +125,6 @@ msgstr "Як це працює"
 
 #. type: Plain text
 #: pages/toolbox.adoc:27
-#, fuzzy
-#| msgid ""
-#| "Toolbox takes the work out of using containers, by providing a small "
-#| "number of simple commands to create, enter, list and remove containers. "
-#| "It also integrates toolbox containers into your regular working "
-#| "environment, to make it easy for you to use them as an everyday "
-#| "development space."
 msgid ""
 "Toolbox takes the work out of using containers, by providing a small number "
 "of simple commands to create, enter, list and remove containers.  It also "
@@ -152,13 +138,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:31
-#, fuzzy
-#| msgid ""
-#| "Containers are created from images and those are usually a very stripped "
-#| "down version of distributions. In such images there are almost no tools "
-#| "and documentation available. The team behind Toolbox maintains a Fedora "
-#| "image where such tools and documentation are available, providing a good "
-#| "out of the box experience."
 msgid ""
 "Containers are created from images and those are usually a very stripped "
 "down version of distributions.  In such images there are almost no tools and "
@@ -174,10 +153,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:34
-#, fuzzy
-#| msgid ""
-#| "Each toolbox container is an environment that you can enter from the "
-#| "command line. Inside each one, you will find:"
 msgid ""
 "Each toolbox container is an environment that you can enter from the command "
 "line.  Inside each one, you will find:"
@@ -210,14 +185,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:43
-#, fuzzy
-#| msgid ""
-#| "In other words, toolbox containers look, feel and behave like a standard "
-#| "Linux command line environment. By connecting all this information, "
-#| "toolbox containers lose a certain amount of security gained by using the "
-#| "containers technology. Therefore, you should not treat toolbox containers "
-#| "as a sandbox where you can execute any script you would never run on any "
-#| "other system."
 msgid ""
 "In other words, toolbox containers look, feel and behave like a standard "
 "Linux command line environment.  By connecting all this information, toolbox "
@@ -234,13 +201,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:47
-#, fuzzy
-#| msgid ""
-#| "In most cases, when a command is run inside a container, the program from "
-#| "inside the container is used. However, there are a few special cases "
-#| "where the program on the host is used instead (using `flatpak-spawn`). "
-#| "One example of this is the toolbox command itself; this makes it possible "
-#| "to use toolbox from inside toolbox containers."
 msgid ""
 "In most cases, when a command is run inside a container, the program from "
 "inside the container is used.  However, there are a few special cases where "
@@ -268,10 +228,6 @@ msgstr "Fedora {variant-name}"
 
 #. type: Plain text
 #: pages/toolbox.adoc:55
-#, fuzzy
-#| msgid ""
-#| "Toolbox is preinstalled on Fedora {variant-name} 30 or newer. On older "
-#| "versions, it can be installed with the following command:"
 msgid ""
 "Toolbox is preinstalled on Fedora {variant-name} 30 or newer.  On older "
 "versions, it can be installed with the following command:"
@@ -333,10 +289,6 @@ msgstr " $ toolbox create\n"
 
 #. type: Plain text
 #: pages/toolbox.adoc:75
-#, fuzzy
-#| msgid ""
-#| "This will download an OCI image and create a toolbox container from it. "
-#| "Once this is complete, run:"
 msgid ""
 "This will download an OCI image and create a toolbox container from it.  "
 "Once this is complete, run:"
@@ -362,12 +314,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:82
-#, fuzzy, no-wrap
-#| msgid "When the prompt is inside a toolbox, it is prepended with a diamond: this indicates that the prompt is inside a toolbox container. The diamond symbol may not be present if you use a custom shell theme."
+#, no-wrap
 msgid ""
 "When the prompt is inside a toolbox, it is prepended with a diamond: this indicates that the prompt is inside a toolbox container.\n"
 "      The diamond symbol may not be present if you use a custom shell theme.\n"
-msgstr "Якщо запит щодо команди надходить зсередини toolbox, перед ним буде показано ромб: так система вказує на те, що запит є запитом із середини контейнера toolbox. Символ ромба може бути також показано, якщо ви використовуєте нетипову тему командної оболонки."
+msgstr ""
+"Якщо запит щодо команди надходить зсередини toolbox, перед ним буде показано "
+"ромб: так система вказує на те, що запит є запитом із середини контейнера "
+"toolbox. Символ ромба може бути також показано, якщо ви використовуєте "
+"нетипову тему командної оболонки.\n"
 
 #. type: Title ==
 #: pages/toolbox.adoc:84
@@ -383,12 +338,6 @@ msgstr "toolbox create [параметри] <назва>"
 
 #. type: Plain text
 #: pages/toolbox.adoc:93
-#, fuzzy
-#| msgid ""
-#| "Creates a toolbox container. This will download an OCI image if one isn't "
-#| "available (this is required to create the container). By default an image "
-#| "matching the version of the host is used. If the host system does not "
-#| "have a matching image, a Fedora image is used instead."
 msgid ""
 "Creates a toolbox container.  This will download an OCI image if one isn't "
 "available (this is required to create the container).  By default an image "
@@ -402,11 +351,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/toolbox.adoc:96
-#, fuzzy
-#| msgid ""
-#| "Used without options, `toolbox create` will automatically name the "
-#| "container it creates. To create additional toolboxes, use the `<name>` "
-#| "argument."
 msgid ""
 "Used without options, `toolbox create` will automatically name the container "
 "it creates.  To create additional toolboxes, use the `<name>` argument."
@@ -450,10 +394,6 @@ msgstr "toolbox enter [параметри] <назва>"
 
 #. type: Plain text
 #: pages/toolbox.adoc:108
-#, fuzzy
-#| msgid ""
-#| "Enters a toolbox for interactive use. Used without options, `toolbox "
-#| "enter` opens the default toolbox."
 msgid ""
 "Enters a toolbox for interactive use.  Used without options, `toolbox enter` "
 "opens the default toolbox."
@@ -493,10 +433,6 @@ msgstr "toolbox run [параметри] <команда> <аргумент ...>
 
 #. type: Plain text
 #: pages/toolbox.adoc:120
-#, fuzzy
-#| msgid ""
-#| "Runs a command in a toolbox without entering it. Used without options, "
-#| "`toolbox run` runs the command in the default toolbox."
 msgid ""
 "Runs a command in a toolbox without entering it.  Used without options, "
 "`toolbox run` runs the command in the default toolbox."

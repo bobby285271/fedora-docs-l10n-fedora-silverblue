@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2022-03-26 08:17+0000\n"
+"PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
-">\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
+"\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/updates-upgrades-rollbacks.adoc:2
@@ -28,11 +28,6 @@ msgstr "Оновлення пакунків, оновлення системи �
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:6
-#, fuzzy
-#| msgid ""
-#| "Installing updates with {variant-name} is easy and fast (much faster than "
-#| "other operating systems). It also has a special rollback feature, in case "
-#| "anything goes wrong."
 msgid ""
 "Installing updates with {variant-name} is easy and fast (much faster than "
 "other operating systems).  It also has a special rollback feature, in case "
@@ -50,12 +45,6 @@ msgstr "Оновлення {variant-name}"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:12
-#, fuzzy
-#| msgid ""
-#| "OS updates in {variant-name} are fully integrated into the desktop; you "
-#| "will be automatically notified when an update is available. The standard "
-#| "behavior is to automatically download the update (this can be changed "
-#| "from the update preferences in Software)."
 msgid ""
 "OS updates in {variant-name} are fully integrated into the desktop; you will "
 "be automatically notified when an update is available.  The standard "
@@ -69,11 +58,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:15
-#, fuzzy
-#| msgid ""
-#| "Once an update is ready, it is just a matter of rebooting to start using "
-#| "the new version. There is no waiting for the update to be installed "
-#| "during this reboot."
 msgid ""
 "Once an update is ready, it is just a matter of rebooting to start using the "
 "new version.  There is no waiting for the update to be installed during this "
@@ -85,10 +69,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:18
-#, fuzzy
-#| msgid ""
-#| "If you'd prefer, it is also possible to update using the command line. To "
-#| "do this, run:"
 msgid ""
 "If you'd prefer, it is also possible to update using the command line.  To "
 "do this, run:"
@@ -104,11 +84,6 @@ msgstr " $ rpm-ostree upgrade\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:23
-#, fuzzy
-#| msgid ""
-#| "This will check for new updates and download and install them if they are "
-#| "available. Alternatively, to check for available updates without "
-#| "downloading them, run:"
 msgid ""
 "This will check for new updates and download and install them if they are "
 "available.  Alternatively, to check for available updates without "
@@ -132,26 +107,17 @@ msgstr "Оновлення до новіших версій системи"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:31
-#, fuzzy
-#| msgid ""
-#| "Upgrading between major versions (such as from Fedora 34 to Fedora 35) "
-#| "can be completed using the Software application. Alternatively, {variant-"
-#| "name} can be upgraded between major versions using the `ostree` command."
 msgid ""
 "Upgrading between major versions (such as from Fedora 35 to Fedora 36) can "
 "be completed using the Software application.  Alternatively, {variant-name} "
 "can be upgraded between major versions using the `ostree` command."
 msgstr ""
-"Оновлення до новіших версій (наприклад, з Fedora 34 до Fedora 35) можна "
+"Оновлення до новіших версій (наприклад, з Fedora 35 до Fedora 36) можна "
 "здійснити за допомогою програми «Програмне забезпечення». Крім того, оновити "
 "{variant-name} до нової основної версії можна за допомогою команди `ostree`."
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:34
-#, fuzzy
-#| msgid ""
-#| "First, verify the branch is available. You can print all available "
-#| "branches with this command:"
 msgid ""
 "First, verify the branch is available.  You can print all available branches "
 "with this command:"
@@ -161,40 +127,36 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/updates-upgrades-rollbacks.adoc:38
-#, fuzzy, no-wrap
-#| msgid " $ ostree remote refs fedora\n"
+#, no-wrap
 msgid "$ ostree remote refs fedora | grep {variant}\n"
-msgstr " $ ostree remote refs fedora\n"
+msgstr "$ ostree remote refs fedora | grep {variant}\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:42
-#, fuzzy
-#| msgid ""
-#| "After you verify the name of your branch, you are ready to proceed. For "
-#| "example, to upgrade to {variant-name} 35, the command is:"
 msgid ""
 "After you verify the name of your branch, you are ready to proceed.  For "
 "example, to upgrade to {variant-name} {version}, the command is:"
 msgstr ""
 "Після того, як ви перевірите назву вашої гілки, можна продовжувати "
-"встановлення. Наприклад, для оновлення до {variant-name} 35 слід "
+"встановлення. Наприклад, для оновлення до {variant-name} {version} слід "
 "скористатися такою командою:"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:45
-#, fuzzy, no-wrap
-#| msgid "Currently, the default remote for {variant-name} 35 is named `fedora`. If this is not the case for your system, you can find out the remote name by issuing: `ostree remote list`."
+#, no-wrap
 msgid ""
 "Currently, the default remote for {variant-name} {version} is named `fedora`.\n"
 "      If this is not the case for your system, you can find out the remote name by issuing: `ostree remote list`.\n"
-msgstr "У поточній версії віддалене сховище {variant-name} 35 має назву `fedora`. Якщо це не так у вашій системі, ви можете визначити назву віддаленого сховища за допомогою такої команди: `ostree remote list`."
+msgstr ""
+"У поточній версії віддалене сховище {variant-name} {version} має назву "
+"`fedora`. Якщо це не так у вашій системі, ви можете визначити назву "
+"віддаленого сховища за допомогою такої команди: `ostree remote list`.\n"
 
 #. type: delimited block -
 #: pages/updates-upgrades-rollbacks.adoc:49
-#, fuzzy, no-wrap
-#| msgid " $ rpm-ostree rebase fedora:fedora/35/x86_64/{variant}\n"
+#, no-wrap
 msgid "$ rpm-ostree rebase fedora:fedora/{version}/x86_64/{variant}\n"
-msgstr " $ rpm-ostree rebase fedora:fedora/35/x86_64/{variant}\n"
+msgstr "$ rpm-ostree rebase fedora:fedora/{version}/x86_64/{variant}\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:52
@@ -214,13 +176,6 @@ msgstr "Відновлення попередньої версії"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:58
-#, fuzzy
-#| msgid ""
-#| "{variant-name} keeps a record of the previous OS version, which can be "
-#| "switched to instead of the latest version. While this shouldn't usually "
-#| "be necessary, it can be helpful if there is a problem with an update or "
-#| "an upgrade (rollbacks work the same way for both), as well as for "
-#| "development purposes."
 msgid ""
 "{variant-name} keeps a record of the previous OS version, which can be "
 "switched to instead of the latest version.  While this shouldn't usually be "
@@ -263,11 +218,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:65
-#, fuzzy
-#| msgid ""
-#| "After rolling back, you will technically be on an old OS version, and may "
-#| "be prompted to update. Updating will undo the rollback, so should be "
-#| "avoided if you want the rollback to stay in effect."
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update.  Updating will undo the rollback, so should be avoided "

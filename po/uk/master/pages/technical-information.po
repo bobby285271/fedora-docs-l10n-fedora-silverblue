@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2022-03-26 08:16+0000\n"
+"PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestechnical-information/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/technical-information.adoc:2
@@ -38,11 +38,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:8
-#, fuzzy
-#| msgid ""
-#| "Users should not need to know this information. It is provided here for "
-#| "those who are interested in the technical details or those who want to "
-#| "use {variant-name} in a non-standard manner."
 msgid ""
 "Users should not need to know this information.  It is provided here for "
 "those who are interested in the technical details or those who want to use "
@@ -60,13 +55,6 @@ msgstr "ostree та rpm-ostree"
 
 #. type: Plain text
 #: pages/technical-information.adoc:15
-#, fuzzy
-#| msgid ""
-#| "https://ostreedev.github.io/ostree/[ostree] is the core technology that "
-#| "is used to compose, deploy and update {variant-name}. ostree operates in "
-#| "a similar manner to a version control system, but it operates on entire "
-#| "filesystem trees. It is often described as “Git for operating system "
-#| "binaries”."
 msgid ""
 "https://ostreedev.github.io/ostree/[ostree] is the core technology that is "
 "used to compose, deploy and update {variant-name}.  ostree operates in a "
@@ -82,12 +70,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:18
-#, fuzzy
-#| msgid ""
-#| "For {variant-name} installs, ostree is responsible for deploying and "
-#| "updating the OS image (including everything below `/` that is not "
-#| "symlinked into `/var`). It also updates `grub.cfg` entries to point to "
-#| "the current image."
 msgid ""
 "For {variant-name} installs, ostree is responsible for deploying and "
 "updating the OS image (including everything below `/` that is not symlinked "
@@ -101,11 +83,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:21
-#, fuzzy
-#| msgid ""
-#| "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
-#| "and makes it possible to install RPMs as a “layer” on top of an ostree "
-#| "image. This makes it possible to install RPMs on {variant-name}."
 msgid ""
 "https://coreos.github.io/rpm-ostree/[rpm-ostree] builds on top of ostree, "
 "and makes it possible to install RPMs as a “layer” on top of an ostree "
@@ -117,13 +94,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/technical-information.adoc:25
-#, fuzzy
-#| msgid ""
-#| "When a package is installed with `rpm-ostree`, a new OS image is composed "
-#| "by adding the RPM payload to the existing OS image, and creating a new, "
-#| "combined image. To see the newly installed RPMs, the system needs to be "
-#| "rebooted with the new image. rpm-ostree also takes care of recreating the "
-#| "layered image whenever you update the base OS image."
 msgid ""
 "When a package is installed with `rpm-ostree`, a new OS image is composed by "
 "adding the RPM payload to the existing OS image, and creating a new, "
@@ -146,24 +116,15 @@ msgstr "Компонування файлової системи {variant-name}"
 
 #. type: Plain text
 #: pages/technical-information.adoc:31
-#, fuzzy
-#| msgid ""
-#| "On {variant-name}, the root filesystem is immutable. This means that `/`, "
-#| "`/usr` and everything below it is read-only."
 msgid ""
 "On {variant-name}, the root filesystem is immutable.  This means that `/`, `/"
 "usr` and everything below it is read-only."
 msgstr ""
-"У {variant-name} коренева файлова система є незмінною. Це означає, що `/`, `/"
-"usr` і усі підлеглі щодо них каталоги є придатними лише для читання."
+"У {variant-name} коренева файлова система є незмінною. Це означає, що `/`, "
+"`/usr` і усі підлеглі щодо них каталоги є придатними лише для читання."
 
 #. type: Plain text
 #: pages/technical-information.adoc:35
-#, fuzzy
-#| msgid ""
-#| "`/var` is where all of {variant-name}'s runtime state is stored. Symlinks "
-#| "are used to make traditional state-carrying directories available in "
-#| "their expected locations. This includes:"
 msgid ""
 "`/var` is where all of {variant-name}'s runtime state is stored.  Symlinks "
 "are used to make traditional state-carrying directories available in their "

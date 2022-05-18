@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2022-03-26 08:17+0000\n"
+"PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/troubleshooting.adoc:1
@@ -174,14 +174,6 @@ msgstr "Проблеми із SELinux"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:44
-#, fuzzy
-#| msgid ""
-#| "As users work with {variant-name} day-to-day, it is possible that they "
-#| "have modified the default SELinux policy in an effort to workaround one "
-#| "or more problems related to SELinux. This is usually done when a user "
-#| "sees a SELinux denial in the journal.  If this is the case and one wishes "
-#| "to revert back to the default SELinux policy, you can try these set of "
-#| "actions."
 msgid ""
 "As users work with {variant-name} day-to-day, it is possible that they have "
 "modified the default SELinux policy in an effort to workaround one or more "
@@ -371,12 +363,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:98
-#, fuzzy
-#| msgid ""
-#| "This issue is most commonly seen when users have installed {variant-name} "
-#| "on Apple hardware. The `/boot/efi` partition on Apple hardware is "
-#| "formatted as HFS+ and is not always resilient to power failures or other "
-#| "kinds of hard power events."
 msgid ""
 "This issue is most commonly seen when users have installed {variant-name} on "
 "Apple hardware.  The `/boot/efi` partition on Apple hardware is formatted as "
@@ -430,11 +416,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:113
-#, fuzzy
-#| msgid ""
-#| "Users have reported that they cannot install {variant-name} on an EFI "
-#| "based system where they previously had another OS installed. The error "
-#| "that is often observed looks like:"
 msgid ""
 "Users have reported that they cannot install {variant-name} on an EFI based "
 "system where they previously had another OS installed.  The error that is "
@@ -457,13 +438,6 @@ msgstr "Існує декілька можливих вирішень:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:122
-#, fuzzy
-#| msgid ""
-#| "During the install process, select \"Custom Partitioning\" and create an "
-#| "additional EFI partition. Assign the newly created EFI partition to `/"
-#| "boot/efi`. You will then be able to boot the previous OS(s) alongside "
-#| "Fedora {variant-name}. If this workaround is not successful follow the "
-#| "below step."
 msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
 "additional EFI partition.  Assign the newly created EFI partition to `/boot/"
@@ -478,11 +452,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:124
-#, fuzzy
-#| msgid ""
-#| "Reformat the EFI partition on the host during the install process. This "
-#| "can be done by selecting \"Custom Partitioning\" and checking the "
-#| "`Reformat` box when creating the `/boot/efi` partition."
 msgid ""
 "Reformat the EFI partition on the host during the install process.  This can "
 "be done by selecting \"Custom Partitioning\" and checking the `Reformat` box "
@@ -494,12 +463,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:127
-#, fuzzy, no-wrap
-#| msgid "Choosing to reformat `/boot/efi` will likely result in the inability to boot any other operating systems that were previously installed. Be sure that you have backed up any important data before using this workaround."
+#, no-wrap
 msgid ""
 "Choosing to reformat `/boot/efi` will likely result in the inability to boot any other operating systems that were previously installed.\n"
 "         Be sure that you have backed up any important data before using this workaround.\n"
-msgstr "Вибір варіанта із переформатуванням `/boot/efi`, ймовірно, зробить неможливим завантаження будь-яких інших раніше встановлених операційних систем. Переконайтеся, що вами створено резервну копію будь-яких важливих даних, перш ніж користуватися цим варіантом."
+msgstr ""
+"Вибір варіанта із переформатуванням `/boot/efi`, ймовірно, зробить "
+"неможливим завантаження будь-яких інших раніше встановлених операційних "
+"систем. Переконайтеся, що вами створено резервну копію будь-яких важливих "
+"даних, перш ніж користуватися цим варіантом.\n"
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:128
@@ -509,12 +481,15 @@ msgstr "`toolbox: failed to list images with com.redhat.component=fedora-toolbox
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:132
-#, fuzzy, no-wrap
-#| msgid "As of `podman` version `1.4.0` this workaround is not necessary. Ensure `podman` is up to date by issuing `rpm-ostree upgrade` before attempting this workaround."
+#, no-wrap
 msgid ""
 "As of `podman` version `1.4.0` this workaround is not necessary.\n"
 "           Ensure `podman` is up to date by issuing `rpm-ostree upgrade` before attempting this workaround.\n"
-msgstr "З версії `podman` `1.4.0` потреби у цьому обхідному маневрі немає. Переконайтеся, що встановлено актуальну версію `podman`, віддавши команду `rpm-ostree upgrade`, перш ніж намагатися скористатися цим обхідним маневром."
+msgstr ""
+"З версії `podman` `1.4.0` потреби у цьому обхідному маневрі немає. "
+"Переконайтеся, що встановлено актуальну версію `podman`, віддавши команду "
+"`rpm-ostree upgrade`, перш ніж намагатися скористатися цим обхідним маневром."
+"\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:134
@@ -533,12 +508,15 @@ msgstr " `toolbox: failed to list images with com.redhat.component=fedora-toolbo
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:139
-#, fuzzy, no-wrap
-#| msgid "The following workaround might be useful for other `toolbox` errors caused by `podman` versions greater than `1.2.0`. See https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902[Toolbox Github Repo]"
+#, no-wrap
 msgid ""
 "The following workaround might be useful for other `toolbox` errors caused by `podman` versions greater than `1.2.0`.\n"
 "     See https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902[Toolbox Github Repo]\n"
-msgstr "Наведений нижче варіант дій може бути корисним для інших помилок `toolbox`, які спричинено використанням версій `podman`, новіших за `1.2.0`. Див. https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902[сховища Toolbox на Github]"
+msgstr ""
+"Наведений нижче варіант дій може бути корисним для інших помилок `toolbox`, "
+"які спричинено використанням версій `podman`, новіших за `1.2.0`. Див. "
+"https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902["
+"сховища Toolbox на Github]\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:141
@@ -629,11 +607,6 @@ msgstr "https://github.com/containers/libpod/issues/3187[Запис вади н�
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:164
-#, fuzzy
-#| msgid ""
-#| "With certain versions of `podman`, trying to enter a toolbox will result "
-#| "in errors. You can fix this by resetting the permissions on the overlay-"
-#| "containers with the following command."
 msgid ""
 "With certain versions of `podman`, trying to enter a toolbox will result in "
 "errors.  You can fix this by resetting the permissions on the overlay-"
@@ -666,12 +639,14 @@ msgstr "Віддайте команду `restorecon`"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:173
-#, fuzzy, no-wrap
-#| msgid "You should never run `restorecon` on a {variant-name} host. See the following bug for details - https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
+#, no-wrap
 msgid ""
 "You should never run `restorecon` on a {variant-name} host.\n"
 "         See the following bug for details - https://bugzilla.redhat.com/show_bug.cgi?id=1259018\n"
-msgstr "Ніколи не запускайте `restorecon` у основній системі {variant-name}. Подробиці наведено у цьому звіті щодо вади: https://bugzilla.redhat.com/show_bug.cgi?id=1259018"
+msgstr ""
+"Ніколи не запускайте `restorecon` у основній системі {variant-name}. "
+"Подробиці наведено у цьому звіті щодо вади: https://bugzilla.redhat.com/"
+"show_bug.cgi?id=1259018\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:175
@@ -710,17 +685,7 @@ msgstr "Виконайте очищення системи"
 
 #. type: delimited block -
 #: pages/troubleshooting.adoc:194
-#, fuzzy, no-wrap
-#| msgid ""
-#| "$ rpm-ostree status -b | grep BaseCommit\n"
-#| "BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-#| "$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
-#| "$ sudo ostree fsck --delete\n"
-#| "$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
-#| "$ sudo restorecon -Rv /var\n"
-#| "$ sudo restorecon -Rv /etc\n"
-#| "$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/{variant}\n"
-#| "$ sudo reboot\n"
+#, no-wrap
 msgid ""
 "$ rpm-ostree status -b | grep BaseCommit\n"
 "                BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
@@ -733,13 +698,17 @@ msgid ""
 "$ sudo reboot\n"
 msgstr ""
 "$ rpm-ostree status -b | grep BaseCommit\n"
-"BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-"$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
+"                BaseCommit: "
+"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+"$ sudo ostree checkout -H "
+"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/"
+"repo/tmp/selinux-fix\n"
 "$ sudo ostree fsck --delete\n"
-"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
+"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-"
+"policy=/ /ostree/repo/tmp/selinux-fix\n"
 "$ sudo restorecon -Rv /var\n"
 "$ sudo restorecon -Rv /etc\n"
-"$ sudo ostree admin deploy fedora-atomic:fedora/30/x86_64/{variant}\n"
+"$ sudo ostree admin deploy fedora:fedora/{version}/x86_64/{variant}\n"
 "$ sudo reboot\n"
 
 #. type: Plain text
@@ -753,10 +722,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:198
-#, fuzzy
-#| msgid ""
-#| "See this upstream comment for additional details - https://github.com/"
-#| "ostreedev/ostree/issues/1265#issuecomment-484557615"
 msgid ""
 "See this upstream comment for additional details: https://github.com/"
 "ostreedev/ostree/issues/1265#issuecomment-484557615"
