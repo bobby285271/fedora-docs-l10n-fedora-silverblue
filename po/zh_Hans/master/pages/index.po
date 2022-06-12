@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Bobby Rong <rjl931189261@126.com>, 2021.
+# Bobby Rong <rjl931189261@126.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"PO-Revision-Date: 2022-06-12 15:18+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagesindex/zh_Hans/>\n"
@@ -15,27 +15,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/index.adoc:1
-#, fuzzy, no-wrap
-#| msgid "Fedora Silverblue User Guide"
+#, no-wrap
 msgid "Fedora {variant-name} User Guide"
-msgstr "Fedora Silverblue 用户指南"
+msgstr "Fedora {variant-name} 用户指南"
 
 #. type: Plain text
 #: pages/index.adoc:4
-#, fuzzy
-#| msgid "Welcome to the Fedora Silverblue user guide!"
 msgid "Welcome to the Fedora {variant-name} user guide!"
-msgstr "欢迎阅读 Fedora Silverblue 用户指南！"
+msgstr "欢迎阅读 Fedora {variant-name} 用户指南！"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/index.adoc:5
 #, no-wrap
 msgid "{variant-name} logo"
-msgstr ""
+msgstr "{variant-name} logo"
 
 #. type: Target for macro image
 #: pages/index.adoc:5
@@ -45,68 +42,42 @@ msgstr "silverblue-logo.svg"
 
 #. type: Plain text
 #: pages/index.adoc:10
-#, fuzzy
-#| msgid ""
-#| "_Fedora Silverblue_ is an immutable desktop operating system. It aims to "
-#| "be extremely stable and reliable. It also aims to be an excellent "
-#| "platform for developers and for those using container-focused workflows."
 msgid ""
 "_Fedora {variant-name}_ is an immutable desktop operating system.  It aims "
 "to be extremely stable and reliable.  It also aims to be an excellent "
 "platform for developers and for those using container-focused workflows."
-msgstr ""
-"_Fedora Silverblue_ 是一个不可变的桌面操作系统，旨在为开发者和容器重度使用者"
-"提供一个稳定、可靠的平台。"
+msgstr "_Fedora {variant-name}_ 是一个不可变的桌面操作系统，旨在为开发者和容器重度使"
+"用者提供一个稳定、可靠的平台。"
 
 #. type: Title ==
 #: pages/index.adoc:12
-#, fuzzy, no-wrap
-#| msgid "Introduction to Silverblue"
+#, no-wrap
 msgid "Introduction to {variant-name}"
-msgstr "Silverblue 简介"
+msgstr "{variant-name} 简介"
 
 #. type: Plain text
 #: pages/index.adoc:16
-#, fuzzy
-#| msgid ""
-#| "Silverblue is a variant of Fedora Workstation. It looks, feels and "
-#| "behaves like a regular desktop operating system, and the experience is "
-#| "similar to what you find with using a standard Fedora Workstation."
 msgid ""
 "{variant-name} is a variant of Fedora Workstation.  It looks, feels and "
 "behaves like a regular desktop operating system, and the experience is "
 "similar to what you find with using a standard Fedora Workstation."
 msgstr ""
-"Silverblue 是 Fedora Workstation 的变种版本。Silverblue 也致力于提供高度贴近 "
-"Fedora Workstation 的桌面使用体验。"
+"{variant-name} 是 Fedora Workstation 的变种版本。{variant-name} "
+"也致力于提供高度贴近 Fedora Workstation 的桌面使用体验。"
 
 #. type: Plain text
 #: pages/index.adoc:20
-#, fuzzy
-#| msgid ""
-#| "However, unlike other operating systems, Silverblue is immutable. This "
-#| "means that every installation is identical to every other installation of "
-#| "the same version. The operating system that is on disk is exactly the "
-#| "same from one machine to the next, and it never changes as it is used."
 msgid ""
 "However, unlike other operating systems, {variant-name} is immutable.  This "
 "means that every installation is identical to every other installation of "
 "the same version.  The operating system that is on disk is exactly the same "
 "from one machine to the next, and it never changes as it is used."
 msgstr ""
-"然而和其它操作系统不同的是，Silverblue 是不可变的。这意味着同一版本下每一份安"
-"装都会是完全相同的，而且在使用过程中也不会发生任何改变。"
+"然而和其它操作系统不同的是，{variant-name} 是不可变的。这意味着同一版本下每一"
+"份安装都会是完全相同的，而且在使用过程中也不会发生任何改变。"
 
 #. type: Plain text
 #: pages/index.adoc:24
-#, fuzzy
-#| msgid ""
-#| "Silverblue's immutable design is intended to make it more stable, less "
-#| "prone to bugs, and easier to test and develop. Finally, Silverblue's "
-#| "immutable design also makes it an excellent platform for containerized "
-#| "applications as well as container-based software development. In each "
-#| "case, applications (apps) and containers are kept separate from the host "
-#| "system, improving stability and reliability."
 msgid ""
 "{variant-name}'s immutable design is intended to make it more stable, less "
 "prone to bugs, and easier to test and develop.  Finally, {variant-name}'s "
@@ -115,19 +86,12 @@ msgid ""
 "applications (apps) and containers are kept separate from the host system, "
 "improving stability and reliability."
 msgstr ""
-"Silverblue 的不可变设计使得它更加稳定，更不容易出现错误，更易于测试和开发。"
-"Silverblue 的不可变设计也使其与容器化应用程序、容器应用开发成为绝配。应用程序"
-"和容器与主机系统的分隔也使得系统更加可靠。"
+"{variant-name} 的不可变设计使得它更加稳定，更不容易出现错误，更易于测试和开发"
+"。{variant-name} 的不可变设计也使其与容器化应用程序、容器应用开发成为绝配。应"
+"用程序和容器与主机系统的分隔也使得系统更加可靠。"
 
 #. type: Plain text
 #: pages/index.adoc:28
-#, fuzzy
-#| msgid ""
-#| "Silverblue's core technologies have some other helpful features. OS "
-#| "updates are fast and there's no waiting around for them to install: just "
-#| "reboot as normal to start using the next version. With Silverblue, it is "
-#| "also possible to roll back to the previous version of the operating "
-#| "system, if something goes wrong."
 msgid ""
 "{variant-name}'s core technologies have some other helpful features.  OS "
 "updates are fast and there's no waiting around for them to install: just "
@@ -135,8 +99,8 @@ msgid ""
 "is also possible to roll back to the previous version of the operating "
 "system, if something goes wrong."
 msgstr ""
-"Silverblue 使用的核心技术也带来了其它的特性。系统更新从此变得方便快捷：只需要"
-"重启系统就可以使用新版本，而出现任何问题时还可以随时回滚。"
+"{variant-name} 使用的核心技术也带来了其它的特性。系统更新从此变得方便快捷：只"
+"需要重启系统就可以使用新版本，而出现任何问题时还可以随时回滚。"
 
 #. type: Title ==
 #: pages/index.adoc:30
@@ -146,21 +110,16 @@ msgstr "关于这份指南"
 
 #. type: Plain text
 #: pages/index.adoc:34
-#, fuzzy
-#| msgid ""
-#| "In most cases, Silverblue behaves like a standard Fedora Workstation "
-#| "installation, and the https://docs.fedoraproject.org/[standard Fedora "
-#| "documentation] can be used. This guide covers those areas where "
-#| "Silverblue differs from a standard Fedora Workstation, including:"
 msgid ""
 "In most cases, {variant-name} behaves like a standard Fedora Workstation "
 "installation, and the https://docs.fedoraproject.org/[standard Fedora "
 "documentation] can be used.  This guide covers those areas where {variant-"
 "name} differs from a standard Fedora Workstation, including:"
 msgstr ""
-"在大部分情况下，Silverblue 和普通的 Fedora Workstation 是一样的，这时候只需要"
-"参考 https://docs.fedoraproject.org/[常规 Fedora 文档] 就好了。这份文档则覆盖"
-"了 Silverblue 与普通 Fedora Workstation 体验不一致的场景，包括："
+"在大部分情况下，{variant-name} 和普通的 Fedora Workstation 是一样的，"
+"这时候只需要参考 https://docs.fedoraproject.org/[常规 Fedora 文档] 就好了。"
+"这份文档则覆盖了 {variant-name} 与普通 Fedora Workstation "
+"体验不一致的场景，包括："
 
 #. type: Plain text
 #: pages/index.adoc:36
@@ -179,13 +138,6 @@ msgstr "link:updates-upgrades-rollbacks[系统更新与回滚]"
 
 #. type: Plain text
 #: pages/index.adoc:40
-#, fuzzy
-#| msgid ""
-#| "The primary audience for these docs are new users, who aren't expected to "
-#| "have specialist knowledge or technical knowledge about Silverblue's "
-#| "internals.  However, some background link:technical-information[technical "
-#| "information] is provided, for those who are interested and want to learn "
-#| "more."
 msgid ""
 "The primary audience for these docs are new users, who aren't expected to "
 "have specialist knowledge or technical knowledge about {variant-name}'s "
@@ -193,9 +145,9 @@ msgid ""
 "information] is provided, for those who are interested and want to learn "
 "more."
 msgstr ""
-"这份文档主要面向新用户，我们也不需要你掌握任何与 Silverblue 内部实现有关的细"
-"节。然而，如果你希望深入研究 Silverblue，你可以阅读 link:technical-"
-"information[这篇文章] 。"
+"这份文档主要面向新用户，我们也不需要你掌握任何与 {variant-name} "
+"内部实现有关的细节。然而，如果你希望深入研究 {variant-name}，你可以阅读 link"
+":technical-information[这篇文章] 。"
 
 #~ msgid "Silverblue logo"
 #~ msgstr "Silverblue 标志"

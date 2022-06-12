@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Bobby Rong <rjl931189261@126.com>, 2021.
+# Bobby Rong <rjl931189261@126.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"PO-Revision-Date: 2022-06-12 15:18+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagesreading-and-resources/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/reading-and-resources.adoc:1
@@ -26,11 +26,9 @@ msgstr "实用文档和资源"
 
 #. type: Plain text
 #: pages/reading-and-resources.adoc:4
-#, fuzzy
-#| msgid "This page is a list of further reading and resources for Silverblue."
 msgid ""
 "This page is a list of further reading and resources for {variant-name}."
-msgstr "这个页面列举了一些 Silverblue 相关的实用文档和资源。"
+msgstr "这个页面列举了一些 {variant-name} 相关的实用文档和资源。"
 
 #. type: Title ==
 #: pages/reading-and-resources.adoc:5

@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Bobby Rong <rjl931189261@126.com>, 2021.
+# Bobby Rong <rjl931189261@126.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"PO-Revision-Date: 2022-06-12 15:18+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-"
-"rollbacks/zh_Hans/>\n"
+"projects/fedora-docs-l10n-fedora-silverblue/"
+"masterpagesupdates-upgrades-rollbacks/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/updates-upgrades-rollbacks.adoc:2
@@ -26,63 +26,41 @@ msgstr "更新、升级与回滚"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:6
-#, fuzzy
-#| msgid ""
-#| "Installing updates with Silverblue is easy and fast (much faster than "
-#| "other operating systems). It also has a special rollback feature, in case "
-#| "anything goes wrong."
 msgid ""
 "Installing updates with {variant-name} is easy and fast (much faster than "
 "other operating systems).  It also has a special rollback feature, in case "
 "anything goes wrong."
-msgstr ""
-"为 Silverblue 安装更新是既方便又快捷的。万一更新出现问题时，Silverblue 还有回"
-"滚功能。"
+msgstr "为 {variant-name} 安装更新是既方便又快捷的。万一更新出现问题时，{variant-"
+"name} 还有回滚功能。"
 
 #. type: Title ==
 #: pages/updates-upgrades-rollbacks.adoc:8
 #, no-wrap
 msgid "Updating {variant-name}"
-msgstr ""
+msgstr "更新 {variant-name}"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:12
-#, fuzzy
-#| msgid ""
-#| "OS updates in Silverblue are fully integrated into the desktop; you will "
-#| "be automatically notified when an update is available. The standard "
-#| "behavior is to automatically download the update (this can be changed "
-#| "from the update preferences in Software)."
 msgid ""
 "OS updates in {variant-name} are fully integrated into the desktop; you will "
 "be automatically notified when an update is available.  The standard "
 "behavior is to automatically download the update (this can be changed from "
 "the update preferences in Software)."
 msgstr ""
-"Silverblue 的更新已经集成到了桌面中；当更新可用你就会收到相关的通知。在默认设"
-"置下更新会被自动下载（在 GNOME 商店中可以修改这一设定）。"
+"{variant-name} 的更新已经集成到了桌面中；当更新可用你就会收到相关的通知。在默"
+"认设置下更新会被自动下载（在 GNOME 商店中可以修改这一设定）。"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:15
-#, fuzzy
-#| msgid ""
-#| "Once an update is ready, it is just a matter of rebooting to start using "
-#| "the new version. There is no waiting for the update to be installed "
-#| "during this reboot."
 msgid ""
 "Once an update is ready, it is just a matter of rebooting to start using the "
 "new version.  There is no waiting for the update to be installed during this "
 "reboot."
-msgstr ""
-"当更新准备就绪，只需要重启系统就可以使用新版本。重启时不需要耗费额外的时间以"
+msgstr "当更新准备就绪，只需要重启系统就可以使用新版本。重启时不需要耗费额外的时间以"
 "应用更新。"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:18
-#, fuzzy
-#| msgid ""
-#| "If you'd prefer, it is also possible to update using the command line. To "
-#| "do this, run:"
 msgid ""
 "If you'd prefer, it is also possible to update using the command line.  To "
 "do this, run:"
@@ -96,18 +74,12 @@ msgstr " $ rpm-ostree upgrade\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:23
-#, fuzzy
-#| msgid ""
-#| "This will check for new updates and download and install them if they are "
-#| "available. Alternatively, to check for available updates without "
-#| "downloading them, run:"
 msgid ""
 "This will check for new updates and download and install them if they are "
 "available.  Alternatively, to check for available updates without "
 "downloading them, run:"
-msgstr ""
-"这会检查更新并在更新可用时立刻获取它们。如果你只希望检查更新而不希望执行下"
-"载："
+msgstr "这会检查更新并在更新可用时立刻获取它们。如果你只希望检查更新而不希望执行下载"
+"："
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:25
@@ -123,26 +95,16 @@ msgstr "主要版本间升级"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:31
-#, fuzzy
-#| msgid ""
-#| "Upgrading between major versions (such as from Fedora 32 to Fedora 33) "
-#| "can be completed using the Software application. Alternatively, "
-#| "Silverblue can be upgraded between major versions using the `ostree` "
-#| "command."
 msgid ""
 "Upgrading between major versions (such as from Fedora 35 to Fedora 36) can "
 "be completed using the Software application.  Alternatively, {variant-name} "
 "can be upgraded between major versions using the `ostree` command."
 msgstr ""
-"GNOME 商店可以帮助你完成 Silverblue 主要版本间的升级（例如从 Fedora 32 更新"
-"到 Fedora 33）。当然，你也可以使用 `ostree` 命令完成这一升级。"
+"GNOME 商店可以帮助你完成 {variant-name} 主要版本间的升级（例如从 Fedora 32 "
+"更新到 Fedora 33）。当然，你也可以使用 `ostree` 命令完成这一升级。"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:34
-#, fuzzy
-#| msgid ""
-#| "First, verify the branch is available. You can print all available "
-#| "branches with this command:"
 msgid ""
 "First, verify the branch is available.  You can print all available branches "
 "with this command:"
@@ -150,38 +112,34 @@ msgstr "首先，确认你需要的分支是可用的。要列出所有可用的
 
 #. type: delimited block -
 #: pages/updates-upgrades-rollbacks.adoc:38
-#, fuzzy, no-wrap
-#| msgid " $ ostree remote refs fedora\n"
+#, no-wrap
 msgid "$ ostree remote refs fedora | grep {variant}\n"
-msgstr " $ ostree remote refs fedora\n"
+msgstr "$ ostree remote refs fedora | grep {variant}\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:42
-#, fuzzy
-#| msgid ""
-#| "After you verify the name of your branch, you are ready to proceed. For "
-#| "example, to upgrade to Silverblue 33, the command is:"
 msgid ""
 "After you verify the name of your branch, you are ready to proceed.  For "
 "example, to upgrade to {variant-name} {version}, the command is:"
-msgstr ""
-"在确认分支的名称后，就可以继续了。假设你希望升级到 Silverblue 33，那么执行："
+msgstr "在确认分支的名称后，就可以继续了。假设你希望升级到 {variant-name} "
+"{version}，那么执行："
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:45
-#, fuzzy, no-wrap
-#| msgid "Currently, the default remote for Silverblue 33 is named `fedora`. If this is not the case for your system, you can find out the remote name by issuing: `ostree remote list`."
+#, no-wrap
 msgid ""
 "Currently, the default remote for {variant-name} {version} is named `fedora`.\n"
 "      If this is not the case for your system, you can find out the remote name by issuing: `ostree remote list`.\n"
-msgstr "Silverblue 33 的默认远程来源名称是 `fedora`。当然在某些情况下不一定是这样的，你可以使用 `ostree remote list` 查看系统的远程来源名称。"
+msgstr ""
+"{variant-name} {version} 的默认远程来源名称是 `fedora`。\n"
+"当然在某些情况下不一定是这样的，你可以使用 `ostree remote list` "
+"查看系统的远程来源名称。\n"
 
 #. type: delimited block -
 #: pages/updates-upgrades-rollbacks.adoc:49
-#, fuzzy, no-wrap
-#| msgid " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
+#, no-wrap
 msgid "$ rpm-ostree rebase fedora:fedora/{version}/x86_64/{variant}\n"
-msgstr " $ rpm-ostree rebase fedora:fedora/33/x86_64/silverblue\n"
+msgstr "$ rpm-ostree rebase fedora:fedora/{version}/x86_64/{variant}\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:52
@@ -200,13 +158,6 @@ msgstr "回滚"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:58
-#, fuzzy
-#| msgid ""
-#| "Silverblue keeps a record of the previous OS version, which can be "
-#| "switched to instead of the latest version. While this shouldn't usually "
-#| "be necessary, it can be helpful if there is a problem with an update or "
-#| "an upgrade (rollbacks work the same way for both), as well as for "
-#| "development purposes."
 msgid ""
 "{variant-name} keeps a record of the previous OS version, which can be "
 "switched to instead of the latest version.  While this shouldn't usually be "
@@ -214,8 +165,8 @@ msgid ""
 "upgrade (rollbacks work the same way for both), as well as for development "
 "purposes."
 msgstr ""
-"Silverblue 保留了上一版系统的备份，你可以随时从新版系统切换回去。尽管通常情况"
-"我们用不上这一特性，但当更新或版本间升级出现问题，回滚功能就会派上用场。"
+"{variant-name} 保留了上一版系统的备份，你可以随时从新版系统切换回去。尽管通常"
+"情况我们用不上这一特性，但当更新或版本间升级出现问题，回滚功能就会派上用场。"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:60
@@ -243,17 +194,11 @@ msgstr ""
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:65
-#, fuzzy
-#| msgid ""
-#| "After rolling back, you will technically be on an old OS version, and may "
-#| "be prompted to update. Updating will undo the rollback, so should be "
-#| "avoided if you want the rollback to stay in effect."
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update.  Updating will undo the rollback, so should be avoided "
 "if you want the rollback to stay in effect."
-msgstr ""
-"当回滚完成后，在技术角度你就回到了旧版的系统，这时候系统可能会提示你更新。更"
+msgstr "当回滚完成后，在技术角度你就回到了旧版的系统，这时候系统可能会提示你更新。更"
 "新会导致回滚操作被撤销，所以要使回滚操作持续生效就得避免更新。"
 
 #~ msgid "Updating Silverblue"

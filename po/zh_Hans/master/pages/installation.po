@@ -1,47 +1,40 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Bobby Rong <rjl931189261@126.com>, 2021.
+# Bobby Rong <rjl931189261@126.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2021-04-05 10:01+0000\n"
+"PO-Revision-Date: 2022-06-12 15:18+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10n-fedora-silverblue/masterpagesinstallation/zh_Hans/"
-">\n"
+"projects/fedora-docs-l10n-fedora-silverblue/masterpagesinstallation/zh_Hans/>"
+"\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/installation.adoc:1
-#, fuzzy, no-wrap
-#| msgid "Installing Silverblue"
+#, no-wrap
 msgid "Installing {variant-name}"
-msgstr "安装 Silverblue"
+msgstr "安装 {variant-name}"
 
 #. type: Plain text
 #: pages/installation.adoc:5
-#, fuzzy
-#| msgid ""
-#| "Fedora Silverblue can be installed in the same way as Fedora Workstation, "
-#| "and the official Fedora installation guide can be followed for your "
-#| "Fedora version.  See the https://docs.fedoraproject.org/en-US/docs/"
-#| "[Fedora documentation site] for more details."
 msgid ""
 "Fedora {variant-name} can be installed in the same way as Fedora "
 "Workstation, and the official Fedora installation guide can be followed for "
 "your Fedora version.  See the https://docs.fedoraproject.org/en-US/docs/"
 "[Fedora documentation site] for more details."
 msgstr ""
-"Fedora Silverblue 的安装方式和 Fedora Workstation 几乎是一样的，因此常规的 "
-"Fedora 安装指南就能指引你完成安装。参阅 https://docs.fedoraproject.org/en-US/"
-"docs/[Fedora 文档] 了解更多信息。"
+"Fedora {variant-name} 的安装方式和 Fedora Workstation 几乎是一样的，"
+"因此常规的 Fedora 安装指南就能指引你完成安装。参阅 https://docs.fedoraproject"
+".org/en-US/docs/[Fedora 文档] 了解更多信息。"
 
 #. type: Title ==
 #: pages/installation.adoc:7
@@ -61,31 +54,18 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:13
-#, fuzzy
-#| msgid ""
-#| "Silverblue is intended to provide the full range of capabilities that you "
-#| "would expect from an installation of Fedora Workstation. However, there "
-#| "are some differences in terms of which applications can be installed, and "
-#| "how the operating system environment works."
 msgid ""
 "{variant-name} is intended to provide the full range of capabilities that "
 "you would expect from an installation of Fedora Workstation.  However, there "
 "are some differences in terms of which applications can be installed, and "
 "how the operating system environment works."
 msgstr ""
-"Silverblue 致力于提供与 Fedora Workstation 相似的用户体验。然而，Silverblue "
-"缺省提供的软件包和 Workstation 略有不同，系统的工作原理也有所不同。"
+"{variant-name} 致力于提供与 Fedora Workstation 相似的用户体验。然而"
+"，{variant-name} 缺省提供的软件包和 Workstation "
+"略有不同，系统的工作原理也有所不同。"
 
 #. type: Plain text
 #: pages/installation.adoc:17
-#, fuzzy
-#| msgid ""
-#| "It is therefore recommended that you read this user guide before deciding "
-#| "to install Silverblue. It is also recommended that you determine whether "
-#| "Silverblue meets the specific needs or requirements that you might have. "
-#| "If you are uncertain about this, Silverblue can also be tested in a "
-#| "virtual machine prior to installation or booted from a flash drive using "
-#| "Fedora Media Writer."
 msgid ""
 "It is therefore recommended that you read this user guide before deciding to "
 "install {variant-name}.  It is also recommended that you determine whether "
@@ -94,9 +74,9 @@ msgid ""
 "a virtual machine prior to installation or booted from a flash drive using "
 "Fedora Media Writer."
 msgstr ""
-"所以在安装 Silverblue 前我们希望你可以认真阅读一下这份指南，考虑清楚 "
-"Silverblue 是否与你目前的需求契合。如果你对此并不确定，你可以在虚拟机先对 "
-"Silverblue 进行试用。"
+"所以在安装 {variant-name} 前我们希望你可以认真阅读一下这份指南，考虑清楚 "
+"{variant-name} 是否与你目前的需求契合。如果你对此并不确定，"
+"你可以在虚拟机先对 {variant-name} 进行试用。"
 
 #. type: Title ==
 #: pages/installation.adoc:19
@@ -106,23 +86,12 @@ msgstr "已知的限制条件"
 
 #. type: Plain text
 #: pages/installation.adoc:22
-#, fuzzy, no-wrap
-#| msgid ""
-#| "*Silverblue does not provide a fully functional experience for dual booting or \n"
-#| "manual partitioning.*\n"
+#, no-wrap
 msgid "*{variant-name} does not provide a fully functional experience for dual booting or manual partitioning.*\n"
-msgstr "*在某种程度上，Silverblue 并不真正支持双启动或手动分区。*\n"
+msgstr "*在某种程度上，{variant-name} 并不真正支持双启动或手动分区。*\n"
 
 #. type: Plain text
 #: pages/installation.adoc:25
-#, fuzzy
-#| msgid ""
-#| "It is possible to make Silverblue work for both dual boot and manual "
-#| "partitioning, and some guidance is provided on manual partitioning "
-#| "below.  However, there are hazards involved in both cases, and you should "
-#| "only attempt to use these features if you have done the necessary "
-#| "research, and are confident that you can overcome any issues that you "
-#| "might encounter."
 msgid ""
 "It is possible to make {variant-name} work for both dual boot and manual "
 "partitioning, and some guidance is provided on manual partitioning below.  "
@@ -131,45 +100,34 @@ msgid ""
 "are confident that you can overcome any issues that you might encounter."
 msgstr ""
 "双启动和手动分区确实是可以实现的，下文也提供了手动分区的指引。然而，无论是双"
-"启动还是手动分区都可能带来不可预知的后果，特别是在 Silverblue。只有做足了功"
-"课，并且确信自己能够克服可能遇到的一切问题，才应该尝试使用这些功能。"
+"启动还是手动分区都可能带来不可预知的后果，特别是在 {variant-name}。只有做足了"
+"功课，并且确信自己能够克服可能遇到的一切问题，才应该尝试使用这些功能。"
 
 #. type: Title ==
 #: pages/installation.adoc:27
 #, no-wrap
 msgid "Getting {variant-name}"
-msgstr ""
+msgstr "获取 {variant-name}"
 
 #. type: Plain text
 #: pages/installation.adoc:31
-#, fuzzy
-#| msgid ""
-#| "If you are using Fedora Media Writer, Silverblue should be listed as a "
-#| "download option. However, if it isn't, or if you want to download it "
-#| "manually, an install image can be downloaded from https://silverblue."
-#| "fedoraproject.org/[the main Silverblue website]."
 msgid ""
 "If you are using Fedora Media Writer, {variant-name} should be listed as a "
 "download option.  However, if it isn't, or if you want to download it "
 "manually, an install image can be downloaded from {website}[the main "
 "{variant-name} website]."
 msgstr ""
-"如果你在使用 Fedora Media Writer，Silverblue 应该作为一个下载选项被列出了。如"
-"果你没有看到此项，或者你希望手动下载安装介质，你可以前往 https://silverblue."
-"fedoraproject.org/[Silverblue 主站点] 进行下载。"
+"如果你在使用 Fedora Media Writer，{variant-name} 应该作为一个下载选项被列出了"
+"。如果你没有看到此项，或者你希望手动下载安装介质，你可以前往 {website"
+"}[{variant-name} 主站点] 进行下载。"
 
 #. type: Plain text
 #: pages/installation.adoc:34
-#, fuzzy
-#| msgid ""
-#| "Once you have got your copy of Silverblue, it can be installed in the "
-#| "usual manner. We hope that you love it!"
 msgid ""
 "Once you have got your copy of {variant-name}, it can be installed in the "
 "usual manner.  We hope that you love it!"
-msgstr ""
-"当你获取了 Silverblue 的安装介质，你就可以按照常规的方式安装 Silverblue 了，"
-"我们希望你可以爱上它！"
+msgstr "当你获取了 {variant-name} 的安装介质，你就可以按照常规的方式安装 {variant-"
+"name} 了，我们希望你可以爱上它！"
 
 #. type: Title ==
 #: pages/installation.adoc:36
@@ -179,32 +137,22 @@ msgstr "手动分区"
 
 #. type: Plain text
 #: pages/installation.adoc:41
-#, fuzzy
-#| msgid ""
-#| "As described above, there are known issues with manual partitioning on "
-#| "Silverblue, and it should be used with caution. The following notes are "
-#| "intended as hints for those attempting it, and should not be treated as "
-#| "recommended practice. Automatic partitioning is recommended."
 msgid ""
 "As described above, there are known issues with manual partitioning on "
 "{variant-name}, and it should be used with caution.  The following notes are "
 "intended as hints for those attempting it, and should not be treated as "
 "recommended practice.  Automatic partitioning is recommended."
 msgstr ""
-"正如上面所说，通过手动分区的方式安装 Silverblue 有不少的已知问题，建议谨慎使"
-"用。如果你执意手动分区，下面是一些小贴士，但不是推荐做法（唯一的推荐做法是自"
-"动分区）。"
+"正如上面所说，通过手动分区的方式安装 {variant-name} 有不少的已知问题，建议谨"
+"慎使用。如果你执意手动分区，下面是一些小贴士，但不是推荐做法（唯一的推荐做法"
+"是自动分区）。"
 
 #. type: Plain text
 #: pages/installation.adoc:44
-#, fuzzy
-#| msgid ""
-#| "With Silverblue, only certain mounts can be manually specified as "
-#| "partitions. These include:"
 msgid ""
 "With {variant-name}, only certain mounts can be manually specified as "
 "partitions.  These include:"
-msgstr "安装 Silverblue，只有下面几个挂载点是可用的："
+msgstr "安装 {variant-name}，只有下面几个挂载点是可用的："
 
 #. type: Plain text
 #: pages/installation.adoc:46
@@ -223,10 +171,8 @@ msgstr "`/var` 下的子目录，包括："
 
 #. type: Plain text
 #: pages/installation.adoc:49
-#, fuzzy
-#| msgid "`/var/home` (Silverblue has a symlink from `/home` to `/var/home`)"
 msgid "`/var/home` ({variant-name} has a symlink from `/home` to `/var/home`)"
-msgstr "`/var/home`（Silverblue 将 `/home` 链接到了 `/var/home`）"
+msgstr "`/var/home`（{variant-name} 将 `/home` 链接到了 `/var/home`）"
 
 #. type: Plain text
 #: pages/installation.adoc:50
@@ -245,18 +191,12 @@ msgstr "根目录：`/`"
 
 #. type: Plain text
 #: pages/installation.adoc:54
-#, fuzzy
-#| msgid ""
-#| "The Fedora installer is not aware of these restrictions and will accept "
-#| "custom partitions without error, even if they are incompatible with "
-#| "Silverblue."
 msgid ""
 "The Fedora installer is not aware of these restrictions and will accept "
 "custom partitions without error, even if they are incompatible with {variant-"
 "name}."
-msgstr ""
-"Fedora 安装程序并不会理会这些限制，即使你的自定义分区设定和 Silverblue 不兼"
-"容，Fedora 安装程序是不会报错的。"
+msgstr "Fedora 安装程序并不会理会这些限制，即使你的自定义分区设定和 {variant-name} "
+"不兼容，Fedora 安装程序是不会报错的。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/installation.adoc:55
@@ -281,18 +221,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/installation.adoc:59
-#, fuzzy
-#| msgid ""
-#| "Manual partitioning on Silverblue can be done with `Btrfs`, https://en."
-#| "wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], as well as "
-#| "standard partitions or an `xfs` filesystem."
 msgid ""
 "Manual partitioning on {variant-name} can be done with `Btrfs`, https://en."
 "wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29[LVM], as well as "
 "standard partitions or an `xfs` filesystem."
 msgstr ""
-"在手动分区模式下，Silverblue 支持 `Btrfs`、 https://en.wikipedia.org/wiki/"
-"Logical_Volume_Manager_%28Linux%29[LVM] 以及常规的 `xfs` 文件系统。"
+"在手动分区模式下，{variant-name} 支持 `Btrfs`、 https://en.wikipedia.org/"
+"wiki/Logical_Volume_Manager_%28Linux%29[LVM] 以及常规的 `xfs` 文件系统。"
 
 #~ msgid "Getting Silverblue"
 #~ msgstr "获取 Silverblue"

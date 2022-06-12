@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Bobby Rong <rjl931189261@126.com>, 2021.
+# Bobby Rong <rjl931189261@126.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2021-02-11 12:40+0000\n"
+"PO-Revision-Date: 2022-06-12 15:18+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagesfaq/zh_Hans/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/faq.adoc:1
@@ -37,18 +37,13 @@ msgstr "到底是 Team Silverblue，还是 Silverblue，还是 Fedora Silverblue
 
 #. type: Plain text
 #: pages/faq.adoc:8
-#, fuzzy
-#| msgid ""
-#| "We chose the name Team Silverblue to refer to the overall project. Fedora "
-#| "Silverblue will be used for the OS that we are producing, but calling it "
-#| "Silverblue in its short version is fine as well."
 msgid ""
 "We chose the name Team Silverblue to refer to the overall project.  Fedora "
 "Silverblue will be used for the OS that we are producing, but calling it "
 "Silverblue in its short version is fine as well."
 msgstr ""
-"我们使用 Team Silverblue 指代整个项目，Fedora Silverblue 则是我们在产出的操作"
-"系统，但有时我们也简称它为 Silverblue。"
+"我们使用 Team Silverblue 指代整个项目，Fedora Silverblue "
+"则是我们在产出的操作系统，但有时我们也简称它为 Silverblue。"
 
 #. type: Labeled list
 #: pages/faq.adoc:9
@@ -58,18 +53,14 @@ msgstr "为什么 Silverblue 的 Logo 是一片叶子？"
 
 #. type: Plain text
 #: pages/faq.adoc:14
-#, fuzzy
-#| msgid ""
-#| "Our favorite choice for a project name was Silverleaf, but that sadly did "
-#| "not work out. We just couldn't quite let go of the leaf. You could also "
-#| "say that Silverblue is a new leaf on Fedora's OSTree. 😀"
 msgid ""
 "Our favorite choice for a project name was Silverleaf, but that sadly did "
 "not work out.  We just couldn't quite let go of the leaf.  You could also "
 "say that Silverblue is a new leaf on Fedora's OSTree.  😀"
 msgstr ""
-"我们本来想将项目命名为 Silverleaf，可惜这无法实现。我们不想就这样放弃叶子这个"
-"点子，毕竟 Silverblue 就是 OSTree 上的又一片新叶子。😀"
+"我们本来想将项目命名为 "
+"Silverleaf，可惜这无法实现。我们不想就这样放弃叶子这个点子，毕竟 Silverblue "
+"就是 OSTree 上的又一片新叶子。😀"
 
 #. type: Labeled list
 #: pages/faq.adoc:15
@@ -79,14 +70,6 @@ msgstr "Silverblue 是另一个 GNOME OS 吗？"
 
 #. type: Plain text
 #: pages/faq.adoc:19
-#, fuzzy
-#| msgid ""
-#| "GNOME OS was a codename that was used by the upstream GNOME project for a "
-#| "while to refer to the idea of designing the entire desktop user "
-#| "experience.  By contrast, Silverblue is an effort inside the Fedora "
-#| "project, and will be built with existing Fedora technologies. However, "
-#| "the two efforts do share a desire to deliver a user experience that is "
-#| "polished and coherent."
 msgid ""
 "GNOME OS was a codename that was used by the upstream GNOME project for a "
 "while to refer to the idea of designing the entire desktop user experience.  "
@@ -94,45 +77,38 @@ msgid ""
 "built with existing Fedora technologies.  However, the two efforts do share "
 "a desire to deliver a user experience that is polished and coherent."
 msgstr ""
-"GNOME OS 是上游 GNOME 用于测试桌面用户体验的项目。Silverblue 则是 Fedora 的项"
-"目，采用的也是 Fedora 已有的技术。当然，两个项目确实有一个共同的愿景，那就是"
-"提供一个完善且连贯的用户体验。"
+"GNOME OS 是上游 GNOME 用于测试桌面用户体验的项目。Silverblue 则是 Fedora "
+"的项目，采用的也是 Fedora 已有的技术。当然，两个项目确实有一个共同的愿景，那"
+"就是提供一个完善且连贯的用户体验。"
 
 #. type: Labeled list
 #: pages/faq.adoc:20
-#, fuzzy, no-wrap
-#| msgid "What is Silverblue's relationship with Project Atomic?"
+#, no-wrap
 msgid "What is {variant-name}'s relationship with Project Atomic?"
-msgstr "Silverblue 和 Project Atomic 有什么联系？"
+msgstr "{variant-name} 和 Project Atomic 有什么联系？"
 
 #. type: Plain text
 #: pages/faq.adoc:23
-#, fuzzy
-#| msgid ""
-#| "Fedora Silverblue uses the same core technology as Fedora Atomic Host (as "
-#| "well as its successor, Fedora CoreOS). However, Silverblue is "
-#| "specifically focused on workstation/desktop use cases."
 msgid ""
 "Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
 "(as well as its successor, Fedora CoreOS).  However, {variant-name} is "
 "specifically focused on workstation/desktop use cases."
 msgstr ""
-"Fedora Silverblue 和 Fedora Atomic Host（以及它的继任者 Fedora CoreOS）采取的"
-"技术是一样的。然而，Silverblue 更加注重工作站和桌面使用的情景。"
+"Fedora {variant-name} 和 Fedora Atomic Host（以及它的继任者 Fedora "
+"CoreOS）采取的技术是一样的。然而，{variant-name} "
+"更加注重工作站和桌面使用的情景。"
 
 #. type: Title ==
 #: pages/faq.adoc:24
-#, fuzzy, no-wrap
-#| msgid "About using Silverblue"
+#, no-wrap
 msgid "About using {variant-name}"
-msgstr "关于使用 Silverblue"
+msgstr "关于使用 {variant-name}"
 
 #. type: Labeled list
 #: pages/faq.adoc:26
-#, fuzzy, no-wrap
-#| msgid "How can I install Eclipse on Silverblue?"
+#, no-wrap
 msgid "How can I install Eclipse on {variant-name}?"
-msgstr "如何在 Silverblue 上安装 Eclipse？"
+msgstr "如何在 {variant-name} 上安装 Eclipse？"
 
 #. type: Plain text
 #: pages/faq.adoc:28
@@ -151,12 +127,6 @@ msgstr "如何创建一个 VPN 连接？"
 
 #. type: Plain text
 #: pages/faq.adoc:32
-#, fuzzy
-#| msgid ""
-#| "`/etc` is not part of the immutable OS image, so you can just copy files "
-#| "into `/etc/NetworkManager/system-connections` (or let NetworkManager "
-#| "store them there when you recreate your connections). Certificates in `/"
-#| "etc/pki` need to be handled similarly."
 msgid ""
 "`/etc` is not part of the immutable OS image, so you can just copy files "
 "into `/etc/NetworkManager/system-connections` (or let NetworkManager store "
@@ -175,15 +145,6 @@ msgstr "如何在 Firefox 下播放各种视频，例如 YouTube 上的？"
 
 #. type: Plain text
 #: pages/faq.adoc:38
-#, fuzzy
-#| msgid ""
-#| "Firefox is included in the OS image for now. Until that changes, getting "
-#| "it to play videos works the same way as it does for the regular Fedora "
-#| "Workstation: find a package with the needed codecs, and install it. The "
-#| "one difference is that you use `rpm-ostree install` instead of `dnf "
-#| "install`.  An alternative solution is to install the nightly Firefox, "
-#| "which is available as a https://firefox-flatpak.mojefedora.cz/org.mozilla."
-#| "FirefoxNightly.flatpakref[Flatpak]."
 msgid ""
 "Firefox is included in the OS image for now.  Until that changes, getting it "
 "to play videos works the same way as it does for the regular Fedora "
@@ -195,9 +156,9 @@ msgid ""
 msgstr ""
 "Firefox 被包含在了系统映像中。在一切发生改变之前，要使 Firefox 播放视频，跟 "
 "Fedora Workstation 一样做就好了：找到一个包含所需解码器的软件包，然后安装它。"
-"唯一的区别就是你需要使用 `rpm-ostree install` 而不是 `dnf install`。你也可以"
-"选择下载 Firefox Nightly 的 https://firefox-flatpak.mojefedora.cz/org."
-"mozilla.FirefoxNightly.flatpakref[Flatpak] 软件包来解决这一问题。"
+"唯一的区别就是你需要使用 `rpm-ostree install` 而不是 `dnf install`。"
+"你也可以选择下载 Firefox Nightly 的 https://firefox-flatpak.mojefedora.cz/org"
+".mozilla.FirefoxNightly.flatpakref[Flatpak] 软件包来解决这一问题。"
 
 #. type: Labeled list
 #: pages/faq.adoc:39
@@ -278,17 +239,11 @@ msgstr "我怎样知道软件源里面是否有我需要的包？"
 
 #. type: Plain text
 #: pages/faq.adoc:67
-#, fuzzy
-#| msgid ""
-#| "At this point in time, there is no `rpm` package search function built "
-#| "into `rpm-ostree`. However, you can use `toolbox` with the following "
-#| "command:"
 msgid ""
 "At this point in time, there is no `rpm` package search function built into "
 "`rpm-ostree`.  However, you can use `toolbox` with the following command:"
-msgstr ""
-"目前 `rpm-ostree` 并没有内建 RPM 软件包搜索功能。然而你可以使用 `toolbox` 完"
-"成搜索："
+msgstr "目前 `rpm-ostree` 并没有内建 RPM 软件包搜索功能。然而你可以使用 `toolbox` "
+"完成搜索："
 
 #. type: Plain text
 #: pages/faq.adoc:69
@@ -298,14 +253,10 @@ msgstr " $ toolbox run dnf search <package>\n"
 
 #. type: Plain text
 #: pages/faq.adoc:71
-#, fuzzy
-#| msgid ""
-#| "The assumption is that you have already created a toolbox matching the "
-#| "version of your Fedora Silverblue installation."
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
 "version of your Fedora {variant-name} installation."
-msgstr "当然这样做的前提是你的 Fedora Silverblue 系统中已经安装了 Toolbox。"
+msgstr "当然这样做的前提是你的 Fedora {variant-name} 系统中已经安装了 Toolbox。"
 
 #. type: Labeled list
 #: pages/faq.adoc:72
@@ -392,27 +343,15 @@ msgstr "rpm-ostree status\n"
 
 #. type: Plain text
 #: pages/faq.adoc:99
-#, fuzzy
-#| msgid ""
-#| "After the deployment is pinned, you can upgrade your system by using the "
-#| "instructions found https://docs.fedoraproject.org/en-US/fedora-silverblue/"
-#| "updates-upgrades-rollbacks/#upgrading[here.]"
 msgid ""
 "After the deployment is pinned, you can upgrade your system by using the "
 "instructions found {docs-url}/updates-upgrades-rollbacks/#upgrading[here]."
 msgstr ""
-"当你的部署被固定了之后，你就可以根据 https://docs.fedoraproject.org/en-US/"
-"fedora-silverblue/updates-upgrades-rollbacks/#upgrading[Fedora 文档] 的指引完"
-"成系统升级。"
+"当你的部署被固定了之后，你就可以根据 {docs-url}/updates-upgrades-rollbacks/"
+"#upgrading[Fedora 文档] 的指引完成系统升级。"
 
 #. type: Plain text
 #: pages/faq.adoc:102
-#, fuzzy
-#| msgid ""
-#| "When you have completed rebasing, reboot the system. The GRUB menu will "
-#| "now present you with both: the previous deployment major version entry (e."
-#| "g.: *\"Fedora 30.YYYYMMDD.n\"*) and the new deployment major version "
-#| "entry (e.g.: *\"Fedora 31.YYYYMMDD.n\"*)."
 msgid ""
 "When you have completed rebasing, reboot the system.  The GRUB menu will now "
 "present you with both: the previous deployment major version entry (e.g.: *"
