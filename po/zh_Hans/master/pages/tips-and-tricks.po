@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-16 22:01+0000\n"
-"PO-Revision-Date: 2022-06-12 15:18+0000\n"
+"PO-Revision-Date: 2022-08-30 22:04+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/masterpagestips-and-tricks/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: pages/tips-and-tricks.adoc:1
@@ -153,7 +153,7 @@ msgstr "如果你在一个名为 \"default\" 的 toolbox 它则会显示为 `[to
 #: pages/tips-and-tricks.adoc:43
 #, no-wrap
 msgid "Running applications from inside Toolbx on the host"
-msgstr "在 Host 上运行 Toolbx 里的应用程序"
+msgstr "在 Toolbx 里运行 Host 上的应用程序"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:47
@@ -163,25 +163,27 @@ msgid ""
 "Toolbx container in between.  You can use `flatpak-spawn`, included in the "
 "base installation for this:"
 msgstr ""
+"当你希望在 Toolbx 中使用一些 host 上的工具如 `podman`, `nmcli` or `rpm-"
+"ostree`，你可以使用预置的 `flatpak-spawn` 命令："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:49
 #, no-wrap
 msgid "  $ flatpak-spawn --host podman --help\n"
-msgstr ""
+msgstr "  $ flatpak-spawn --host podman --help\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:51
 msgid ""
 "If the application you want to call requires `sudo` access, the `-S` option "
 "must be supplied to `sudo` like below:"
-msgstr ""
+msgstr "如果你运行某个应用需要到 `sudo` 权限，你必须为 `sudo` 添加 `-S` 选项："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:53
 #, no-wrap
 msgid "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
-msgstr ""
+msgstr "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:56
@@ -190,21 +192,23 @@ msgid ""
 "flatpak command from inside the Toolbx container, you can create yourself a "
 "short custom wrapper script (*inside the Toolbx container*).  To do this, "
 "perform the following steps:"
-msgstr ""
+msgstr "如果你发现自己经常遇到在 Toolbx 容器中运行 host "
+"上工具的场景，你可以自己创建一个简短的预置脚本（*在 Toolbx 容器内*）："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:58
 msgid ""
 "Define the `istoolbx` alias (for convenience) by executing the command "
 "mentioned above in your terminal"
-msgstr ""
+msgstr "在终端中执行上面的命令以定义 `istoolbx` 别称"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:61
 msgid ""
 "Make sure you are in a Toolbx container.  If the following command doesn't "
 "produce any output, you are likely still working on the host!"
-msgstr ""
+msgstr "请确保你在一个 Toolbx 容器内，如果你在 host "
+"上使用这个命令你可能得不到任何输出！"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:64
@@ -213,38 +217,44 @@ msgid ""
 "[toolbx]$ istoolbx\n"
 "<Toolbx container name here>\n"
 msgstr ""
+"[toolbx]$ istoolbx\n"
+"<Toolbx container name here>\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:66
 msgid ""
 "Once you have made sure you're in a Toolbx container, execute the following "
 "command:"
-msgstr ""
+msgstr "当你确定你在一个 Toolbx 容器时， 执行："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:68
 #, no-wrap
 msgid "[toolbx]$ echo -e '#!/bin/sh\\nexec /usr/bin/flatpak-spawn --host flatpak \"$@\"' | sudo tee /usr/local/bin/flatpak 1>/dev/null && sudo chmod +x /usr/local/bin/flatpak\n"
 msgstr ""
+"[toolbx]$ echo -e '#!/bin/sh\\n"
+"exec /usr/bin/flatpak-spawn --host flatpak \"$@\"' | sudo tee /usr/local/bin/"
+"flatpak 1>/dev/null && sudo chmod +x /usr/local/bin/flatpak\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:70
 msgid ""
 "You now have a `flatpak` command available that allows you to interact with "
 "`flatpak` as if you were running the command on the host."
-msgstr ""
+msgstr "你现在有一个可用的 `flatpak` 命令，它允许你与 `flatpak` "
+"交互，就好像您在主机上运行该命令一样。"
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:71
 #, no-wrap
 msgid "Working with `ostree`/`rpm-ostree`"
-msgstr ""
+msgstr "使用 `ostree`/`rpm-ostree`"
 
 #. type: Title ===
 #: pages/tips-and-tricks.adoc:73
 #, no-wrap
 msgid "Tracking changes to the base OS"
-msgstr ""
+msgstr "追踪基本系统上的变动"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:77
@@ -252,24 +262,27 @@ msgid ""
 "Some directories in `ostree`-based operating systems are writable by the "
 "user, like `/etc`.  You can get a quick overview of the files changed under "
 "`/etc` using the following command:"
-msgstr ""
+msgstr "基于 `ostree` 的操作系统中的某些目录是用户可写的，例如 `/etc`。 "
+"您可以使用以下命令快速了解在 `/etc` 下更改的文件："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:79
 #, no-wrap
 msgid "  $ sudo ostree admin config-diff\n"
-msgstr ""
+msgstr "  $ sudo ostree admin config-diff\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:81
 msgid "To get a more elaborate diff, you can use something like this:"
-msgstr ""
+msgstr "要获得更详细的差异，你可以使用："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:83
 #, no-wrap
 msgid "  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc 2>/dev/null\n"
 msgstr ""
+"  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc "
+"2>/dev/null\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:86
@@ -278,18 +291,20 @@ msgid ""
 "This works because ostree keeps an unmodified copy of the `/etc` directory under `/usr/etc`.\n"
 "      All of your changes go to `/etc` directly.\n"
 msgstr ""
+"这是因为 ostree 在 `/usr/etc` 下保留了 `/etc` 目录未经修改的副本。\n"
+"       您的所有更改都直接应用于 `/etc`。\n"
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:87
 #, no-wrap
 msgid "Working with Flatpak applications"
-msgstr ""
+msgstr "使用 Flatpak 应用"
 
 #. type: Title ===
 #: pages/tips-and-tricks.adoc:89
 #, no-wrap
 msgid "Directly accessing Flatpak applications from the CLI"
-msgstr ""
+msgstr "从 CLI 直接访问 Flatpak 应用程序"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:92
@@ -297,7 +312,8 @@ msgid ""
 "The most noticable change when using Flatpak applications instead of "
 "conventional installations is that the applications cannot be directly "
 "called from the CLI any more, like so:"
-msgstr ""
+msgstr "使用 Flatpak 应用程序而非传统方式安装的应用程序最显着的变化是不能再直接从 "
+"CLI 调用应用程序："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:95
@@ -306,31 +322,35 @@ msgid ""
 "  $ evince\n"
 "  bash: command not found: evince\n"
 msgstr ""
+"  $ evince\n"
+"  bash: command not found: evince\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:97
 msgid "Instead, one can call them like this:"
-msgstr ""
+msgstr "你需要这样子调用它们："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:99
 #, no-wrap
 msgid "  $ flatpak run org.gnome.Evince\n"
-msgstr ""
+msgstr "  $ flatpak run org.gnome.Evince\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:101
 msgid ""
 "In addition, most Flatpak applications export their internal binaries under "
 "an installation-dependent location:"
-msgstr ""
+msgstr "此外，大多数 Flatpak "
+"应用程序将其内部二进制文件导出到一个与安装方式相关的位置："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:103
 msgid ""
 "For Flatpak applications installed from `system` remotes, these can be found "
 "under `/var/lib/flatpak/exports/bin/`"
-msgstr ""
+msgstr "如果你的 Flatpak 应用是系统级别安装的，你可以在 `/var/lib/flatpak/exports/"
+"bin/` 找到它们"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:104
@@ -338,36 +358,38 @@ msgid ""
 "For Flatpak applications installed from `user` remotes, these can be found "
 "under `$HOME/.local/share/flatpak/exports/bin/`"
 msgstr ""
+"如果你的 Flatpak 应用是用户级别安装的，你可以在 `$HOME/.local/share/flatpak/"
+"exports/bin/` 找到它们"
 
 #. type: delimited block =
 #: pages/tips-and-tricks.adoc:108
 msgid ""
 "If you're unsure to which installation a Flatpak application belongs, you "
 "can use this command to print it out:"
-msgstr ""
+msgstr "如果你不确定某个 Flatpak 应用是怎么安装的，你可以使用这个命令："
 
 #. type: delimited block =
 #: pages/tips-and-tricks.adoc:110
 #, no-wrap
 msgid "  $ flatpak list --app --columns=name,installation\n"
-msgstr ""
+msgstr "  $ flatpak list --app --columns=name,installation\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:113
 msgid "You can then either add these directories to your `$PATH`:"
-msgstr ""
+msgstr "你可以将这些目录添加到 `$PATH`："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:115
 #, no-wrap
 msgid "  $ org.gnome.Evince\n"
-msgstr ""
+msgstr "  $ org.gnome.Evince\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:117
 msgid ""
 "or setup shell `alias`es as needed to make them available to the CLI like so:"
-msgstr ""
+msgstr "或者为你的 shell 设置别称是它们在 CLI 中可用："
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:120
@@ -377,3 +399,6 @@ msgid ""
 "    # or alias evince=\"org.gnome.Evince\"\n"
 "  $ evince\n"
 msgstr ""
+"  $ alias evince=\"flatpak run org.gnome.Evince\"\n"
+"    # or alias evince=\"org.gnome.Evince\"\n"
+"  $ evince\n"

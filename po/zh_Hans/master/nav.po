@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-02-21 22:01+0000\n"
-"PO-Revision-Date: 2022-06-12 15:18+0000\n"
+"PO-Revision-Date: 2022-09-01 13:19+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-silverblue/nav/zh_Hans/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Plain text
 #: nav.adoc:2
@@ -65,4 +65,4 @@ msgstr "xref:faq.adoc[常见问题]"
 #. type: Plain text
 #: nav.adoc:10
 msgid "xref:tips-and-tricks.adoc[Tips and Tricks]"
-msgstr "xref:tips-and-tricks.adoc[实用文档和资源]"
+msgstr "xref:tips-and-tricks.adoc[技巧与提示]"
