@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-02 21:56+0000\n"
 "PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
-"\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
+">\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,24 +27,23 @@ msgid "Updates, Upgrades & Rollbacks"
 msgstr "Оновлення пакунків, оновлення системи та повернення до попередніх версій"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:6
+#: pages/updates-upgrades-rollbacks.adoc:7
 msgid ""
-"Installing updates with {variant-name} is easy and fast (much faster than "
-"other operating systems).  It also has a special rollback feature, in case "
-"anything goes wrong."
+"Installing updates with {variant-name} is easy and fast.  It also has a "
+"special rollback feature, in case anything goes wrong.  Additionally, you "
+"can choose to have multiple versions of your operating system installed at "
+"all times, and you can choose which one to boot into whenever you start up "
+"your system."
 msgstr ""
-"Встановлення оновлень у {variant-name} є простим і швидким (набагато швидшим "
-"за інші операційні системи). Також передбачено спеціальну можливість "
-"повернення до попередньої версії системи, якщо щось піде не так."
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:8
+#: pages/updates-upgrades-rollbacks.adoc:9
 #, no-wrap
 msgid "Updating {variant-name}"
 msgstr "Оновлення {variant-name}"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:12
+#: pages/updates-upgrades-rollbacks.adoc:13
 msgid ""
 "OS updates in {variant-name} are fully integrated into the desktop; you will "
 "be automatically notified when an update is available.  The standard "
@@ -57,7 +56,7 @@ msgstr ""
 "цю поведінку можна у налаштуваннях оновлень у програмі «Програми»)."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:15
+#: pages/updates-upgrades-rollbacks.adoc:16
 msgid ""
 "Once an update is ready, it is just a matter of rebooting to start using the "
 "new version.  There is no waiting for the update to be installed during this "
@@ -68,7 +67,7 @@ msgstr ""
 "оновлення під час перезавантаження немає."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:18
+#: pages/updates-upgrades-rollbacks.adoc:19
 msgid ""
 "If you'd prefer, it is also possible to update using the command line.  To "
 "do this, run:"
@@ -77,13 +76,13 @@ msgstr ""
 "Для цього віддайте таку команду:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:20
+#: pages/updates-upgrades-rollbacks.adoc:21
 #, no-wrap
 msgid " $ rpm-ostree upgrade\n"
 msgstr " $ rpm-ostree upgrade\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:23
+#: pages/updates-upgrades-rollbacks.adoc:24
 msgid ""
 "This will check for new updates and download and install them if they are "
 "available.  Alternatively, to check for available updates without "
@@ -94,19 +93,19 @@ msgstr ""
 "доступних оновлень без їхнього отримання:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:25
+#: pages/updates-upgrades-rollbacks.adoc:26
 #, no-wrap
 msgid " $ rpm-ostree upgrade --check\n"
 msgstr " $ rpm-ostree upgrade --check\n"
 
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:27
+#: pages/updates-upgrades-rollbacks.adoc:28
 #, no-wrap
 msgid "Upgrading between major versions"
 msgstr "Оновлення до новіших версій системи"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:31
+#: pages/updates-upgrades-rollbacks.adoc:32
 msgid ""
 "Upgrading between major versions (such as from Fedora 35 to Fedora 36) can "
 "be completed using the Software application.  Alternatively, {variant-name} "
@@ -117,7 +116,7 @@ msgstr ""
 "{variant-name} до нової основної версії можна за допомогою команди `ostree`."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:34
+#: pages/updates-upgrades-rollbacks.adoc:35
 msgid ""
 "First, verify the branch is available.  You can print all available branches "
 "with this command:"
@@ -126,13 +125,13 @@ msgstr ""
 "гілки за допомогою такої команди:"
 
 #. type: delimited block -
-#: pages/updates-upgrades-rollbacks.adoc:38
+#: pages/updates-upgrades-rollbacks.adoc:39
 #, no-wrap
 msgid "$ ostree remote refs fedora | grep {variant}\n"
 msgstr "$ ostree remote refs fedora | grep {variant}\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:42
+#: pages/updates-upgrades-rollbacks.adoc:43
 msgid ""
 "After you verify the name of your branch, you are ready to proceed.  For "
 "example, to upgrade to {variant-name} {version}, the command is:"
@@ -142,24 +141,21 @@ msgstr ""
 "скористатися такою командою:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:45
+#: pages/updates-upgrades-rollbacks.adoc:46
 #, no-wrap
 msgid ""
 "Currently, the default remote for {variant-name} {version} is named `fedora`.\n"
 "      If this is not the case for your system, you can find out the remote name by issuing: `ostree remote list`.\n"
-msgstr ""
-"У поточній версії віддалене сховище {variant-name} {version} має назву "
-"`fedora`. Якщо це не так у вашій системі, ви можете визначити назву "
-"віддаленого сховища за допомогою такої команди: `ostree remote list`.\n"
+msgstr "У поточній версії віддалене сховище {variant-name} {version} має назву `fedora`. Якщо це не так у вашій системі, ви можете визначити назву віддаленого сховища за допомогою такої команди: `ostree remote list`.\n"
 
 #. type: delimited block -
-#: pages/updates-upgrades-rollbacks.adoc:49
+#: pages/updates-upgrades-rollbacks.adoc:50
 #, no-wrap
 msgid "$ rpm-ostree rebase fedora:fedora/{version}/x86_64/{variant}\n"
 msgstr "$ rpm-ostree rebase fedora:fedora/{version}/x86_64/{variant}\n"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:52
+#: pages/updates-upgrades-rollbacks.adoc:53
 msgid ""
 "The process is very similar to a system update: the new OS is downloaded and "
 "installed in the background, and you just boot into it when it is ready."
@@ -168,14 +164,43 @@ msgstr ""
 "отримується і встановлюється у фоновому режимі. Після встановлення вам треба "
 "просто завантажити нову систему."
 
+#. type: Plain text
+#: pages/updates-upgrades-rollbacks.adoc:55
+msgid ""
+"Additionally, you can choose to rebase to a different immutable variant of "
+"Fedora, like for example Fedora Kinoite. Kinoite is similar to Silverblue, "
+"except for the fact that it uses the KDE Plasma desktop environment instead "
+"of the default GNOME desktop environment."
+msgstr ""
+
+#. type: Plain text
+#: pages/updates-upgrades-rollbacks.adoc:57
+msgid ""
+"What this means is, you can rebase to Fedora Kinoite to try it out, without "
+"ever touching your current system. Because the two system images are "
+"isolated from eachother, the two desktop environments will never be "
+"installed at the same time. All of your flatpak apps and /home files will "
+"stay persistent between rebases. Same applies for testing out the bleeding-"
+"edge version of Silverblue, which is Rawhide."
+msgstr ""
+
+#. type: Plain text
+#: pages/updates-upgrades-rollbacks.adoc:59
+msgid ""
+"If you decide to rebase, make sure to https://docs.fedoraproject.org/en-US/"
+"fedora-silverblue/faq/#_about_using_silverblue[pin] your current deployment, "
+"so you don't accidentaly lose it (by default, only the two most recent "
+"deployments are kept)."
+msgstr ""
+
 #. type: Title ==
-#: pages/updates-upgrades-rollbacks.adoc:54
+#: pages/updates-upgrades-rollbacks.adoc:61
 #, no-wrap
 msgid "Rolling back"
 msgstr "Відновлення попередньої версії"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:58
+#: pages/updates-upgrades-rollbacks.adoc:65
 msgid ""
 "{variant-name} keeps a record of the previous OS version, which can be "
 "switched to instead of the latest version.  While this shouldn't usually be "
@@ -191,12 +216,12 @@ msgstr ""
 "потреба, яку пов'язано із розробкою програмного забезпечення."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:60
+#: pages/updates-upgrades-rollbacks.adoc:67
 msgid "There are two ways to roll back to the previous version:"
 msgstr "Існує два способи повернення до попередньої версії:"
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:62
+#: pages/updates-upgrades-rollbacks.adoc:69
 msgid ""
 "Temporary rollbacks: to temporarily roll back to a previous version, simply "
 "reboot and select the previous version from the boot menu (often known as "
@@ -207,7 +232,7 @@ msgstr ""
 "попередньої версії у меню завантаження (яке часто називають меню grub)."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:63
+#: pages/updates-upgrades-rollbacks.adoc:70
 msgid ""
 "Permanent rollbacks: to permanently switch back to the previous deployment, "
 "use the `rpm-ostree rollback` command."
@@ -217,7 +242,7 @@ msgstr ""
 "rollback`."
 
 #. type: Plain text
-#: pages/updates-upgrades-rollbacks.adoc:65
+#: pages/updates-upgrades-rollbacks.adoc:72
 msgid ""
 "After rolling back, you will technically be on an old OS version, and may be "
 "prompted to update.  Updating will undo the rollback, so should be avoided "
@@ -228,6 +253,16 @@ msgstr ""
 "оновлення. Оновлення призведе до скасовування повернення до попередньої "
 "версії, тому вам не слід ним користуватися, якщо ви хочете продовжувати "
 "працювати із застарілою версією."
+
+#~ msgid ""
+#~ "Installing updates with {variant-name} is easy and fast (much faster than "
+#~ "other operating systems).  It also has a special rollback feature, in "
+#~ "case anything goes wrong."
+#~ msgstr ""
+#~ "Встановлення оновлень у {variant-name} є простим і швидким (набагато "
+#~ "швидшим за інші операційні системи). Також передбачено спеціальну "
+#~ "можливість повернення до попередньої версії системи, якщо щось піде не "
+#~ "так."
 
 #~ msgid "Updating Silverblue"
 #~ msgstr "Оновлення Silverblue"
