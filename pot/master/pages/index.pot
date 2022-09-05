@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,12 @@ msgstr ""
 #. type: Title =
 #: ./pages/index.adoc:1
 #, no-wrap
-msgid "Fedora {variant-name} User Guide"
+msgid "{variant-name} User Guide"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/index.adoc:4
-msgid "Welcome to the Fedora {variant-name} user guide!"
+msgid "Welcome to the {variant-name} user guide!"
 msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
@@ -42,9 +42,9 @@ msgstr ""
 #. type: Plain text
 #: ./pages/index.adoc:10
 msgid ""
-"_Fedora {variant-name}_ is an immutable desktop operating system.  It aims "
-"to be extremely stable and reliable.  It also aims to be an excellent "
-"platform for developers and for those using container-focused workflows."
+"_{variant-name}_ is an immutable desktop operating system.  It aims to be "
+"extremely stable and reliable.  It also aims to be an excellent platform for "
+"developers and for those using container-focused workflows."
 msgstr ""
 
 #. type: Title ==

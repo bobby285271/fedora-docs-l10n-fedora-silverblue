@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,8 +82,8 @@ msgstr ""
 msgid ""
 "Flatpak is the primary way that apps can be installed on {variant-name} (for "
 "more information, see http://flatpak.org[flatpak.org]).  Flatpak works out "
-"of the box in Fedora {variant-name}, and Fedora provides a small (but "
-"growing) collection of apps that can be installed."
+"of the box in {variant-name}, and Fedora provides a small (but growing) "
+"collection of apps that can be installed."
 msgstr ""
 
 #. type: Plain text
@@ -102,7 +102,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/getting-started.adoc:31
 msgid ""
-"To setup Flathub on Fedora {variant-name}, open the "
+"To setup Flathub on {variant-name}, open the "
 "https://flatpak.org/setup/Fedora/[Flathub setup page for Fedora] and click "
 "the “Flathub repository file” button to download the Flathub configuration."
 msgstr ""
