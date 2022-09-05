@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:59+0000\n"
 "PO-Revision-Date: 2022-06-12 15:18+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -41,8 +41,9 @@ msgid ""
 "{variant-name} has different options for installing software, compared with "
 "a standard Fedora Workstation (or other package-based Linux distributions).  "
 "These include:"
-msgstr "相比 Fedora Workstation 和其它基于软件包的发行版，{variant-name} "
-"有三种方式安装软件，包括："
+msgstr ""
+"相比 Fedora Workstation 和其它基于软件包的发行版，{variant-name} 有三种方式安"
+"装软件，包括："
 
 #. type: Plain text
 #: pages/getting-started.adoc:11
@@ -89,11 +90,17 @@ msgstr "Flatpak"
 
 #. type: Plain text
 #: pages/getting-started.adoc:24
+#, fuzzy
+#| msgid ""
+#| "Flatpak is the primary way that apps can be installed on {variant-name} "
+#| "(for more information, see http://flatpak.org[flatpak.org]).  Flatpak "
+#| "works out of the box in Fedora {variant-name}, and Fedora provides a "
+#| "small (but growing) collection of apps that can be installed."
 msgid ""
 "Flatpak is the primary way that apps can be installed on {variant-name} (for "
 "more information, see http://flatpak.org[flatpak.org]).  Flatpak works out "
-"of the box in Fedora {variant-name}, and Fedora provides a small (but "
-"growing) collection of apps that can be installed."
+"of the box in {variant-name}, and Fedora provides a small (but growing) "
+"collection of apps that can be installed."
 msgstr ""
 "Flatpak 是 {variant-name} 安装应用程序的主要方式之一。要了解 Flatpak 是什么，"
 "可以前往 http://flatpak.org[flatpak.org] 。Fedora {variant-name} 缺省提供了 "
@@ -116,14 +123,19 @@ msgstr "初始化 Flathub"
 
 #. type: Plain text
 #: pages/getting-started.adoc:31
+#, fuzzy
+#| msgid ""
+#| "To setup Flathub on Fedora {variant-name}, open the https://flatpak.org/"
+#| "setup/Fedora/[Flathub setup page for Fedora] and click the “Flathub "
+#| "repository file” button to download the Flathub configuration."
 msgid ""
-"To setup Flathub on Fedora {variant-name}, open the https://flatpak.org/"
-"setup/Fedora/[Flathub setup page for Fedora] and click the “Flathub "
-"repository file” button to download the Flathub configuration."
+"To setup Flathub on {variant-name}, open the https://flatpak.org/setup/"
+"Fedora/[Flathub setup page for Fedora] and click the “Flathub repository "
+"file” button to download the Flathub configuration."
 msgstr ""
 "要在 Fedora {variant-name} 启用 Flathub 支持，打开 https://flatpak.org/setup/"
-"Fedora/[适用于 Fedora 的 Flathub 设置页] 并点击 Flathub repository file "
-"按钮以下载 Flathub 配置文件。"
+"Fedora/[适用于 Fedora 的 Flathub 设置页] 并点击 Flathub repository file 按钮"
+"以下载 Flathub 配置文件。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/getting-started.adoc:32
@@ -143,8 +155,9 @@ msgid ""
 "A popup window will show a download option for the file.  The “Open with” "
 "option should show “Software Install (default)”.  Click on the “OK” button "
 "to start the download."
-msgstr "此时会有弹窗供你指定下载选项，选择『打开，通过』一栏并使用『软件安装（默认）"
-"』，点击『确定』开始下载。"
+msgstr ""
+"此时会有弹窗供你指定下载选项，选择『打开，通过』一栏并使用『软件安装（默"
+"认）』，点击『确定』开始下载。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/getting-started.adoc:38
@@ -165,8 +178,9 @@ msgid ""
 "repository.  This window also shows the source location of the repository to "
 "be installed, under the details heading (1).  To start the installation of "
 "the Flathub repository, click on the “Install” button (2)."
-msgstr "当下载完成后，新的窗口就会弹出供你查看与确认 Flathub 软件源的相关信息。"
-"要应用 Flatpak 软件源，点击『安装』按钮。"
+msgstr ""
+"当下载完成后，新的窗口就会弹出供你查看与确认 Flathub 软件源的相关信息。要应"
+"用 Flatpak 软件源，点击『安装』按钮。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/getting-started.adoc:44
@@ -200,8 +214,8 @@ msgid ""
 "Flatpak apps.  This can be done directly from the Software app, or apps can "
 "be browsed on the https://flathub.org/home[Flathub website]."
 msgstr ""
-"当 Flathub 软件源初始化完成后，我们就可以通过 Flathub 安装 Flatpak "
-"应用程序了。这一切都可以在 GNOME 商店中完成，你也可以在 https://flathub.org/"
+"当 Flathub 软件源初始化完成后，我们就可以通过 Flathub 安装 Flatpak 应用程序"
+"了。这一切都可以在 GNOME 商店中完成，你也可以在 https://flathub.org/"
 "home[Flathub 网站] 浏览应用。"
 
 #. type: Plain text
@@ -213,10 +227,10 @@ msgid ""
 "libreoffice.org/[LibreOffice], you first search for and open the LibreOffice "
 "page, and then press the “Install” button (2)."
 msgstr ""
-"当你在 Flathub 网站了喜欢的应用程序想要安装时，只需点击 Install "
-"按钮并完成下载，GNOME 商店就会自动打开并处理剩余的事情。举个例子，要想安装 "
-"https://www.libreoffice.org/[LibreOffice]，你只需要找到 LibreOffice "
-"的相关页面，点击 Install 按钮。"
+"当你在 Flathub 网站了喜欢的应用程序想要安装时，只需点击 Install 按钮并完成下"
+"载，GNOME 商店就会自动打开并处理剩余的事情。举个例子，要想安装 https://www."
+"libreoffice.org/[LibreOffice]，你只需要找到 LibreOffice 的相关页面，点击 "
+"Install 按钮。"
 
 #. type: Plain text
 #: pages/getting-started.adoc:58
@@ -224,7 +238,8 @@ msgid ""
 "After clicking the “Install” button, a download information window will be "
 "shown.  Verify the correct Flatpak has been downloaded and then click on the "
 "“OK” button to begin installing the LibreOffice application."
-msgstr "在点击 Install 按钮后，一个下载信息框就会弹出。只需确认文件名与你所要安装的应"
+msgstr ""
+"在点击 Install 按钮后，一个下载信息框就会弹出。只需确认文件名与你所要安装的应"
 "用程序相匹配就可以点击『确定』开始下载。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
@@ -245,8 +260,9 @@ msgid ""
 "Once the Flatpak is downloaded, the Software application will open a new "
 "window with an “Install” button (2).  Click this button to begin "
 "installation."
-msgstr "当 Flatpak 信息文件成功下载，GNOME "
-"商店就会弹出，点击上面的『安装』按钮就可以开始安装了。"
+msgstr ""
+"当 Flatpak 信息文件成功下载，GNOME 商店就会弹出，点击上面的『安装』按钮就可以"
+"开始安装了。"
 
 #. type: Title ===
 #: pages/getting-started.adoc:64
@@ -262,9 +278,9 @@ msgid ""
 "flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] for how to "
 "do this."
 msgstr ""
-"除了使用 GNOME 商店安装 Flatpak 应用之外，也可以使用 `flatpak` 命令行工具。"
-"请阅读 http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak 文档] "
-"了解命令行工具的使用方法。"
+"除了使用 GNOME 商店安装 Flatpak 应用之外，也可以使用 `flatpak` 命令行工具。请"
+"阅读 http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak 文档] 了解"
+"命令行工具的使用方法。"
 
 #. type: Title ==
 #: pages/getting-started.adoc:70
@@ -307,7 +323,8 @@ msgstr "`libvirt`：libvirt 守护进程"
 msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
 "{variant-name} using this method."
-msgstr "Fedora 提供的大部分（但不是所有的）RPM 都可以通过这个方法安装在 {variant-"
+msgstr ""
+"Fedora 提供的大部分（但不是所有的）RPM 都可以通过这个方法安装在 {variant-"
 "name} 上。"
 
 #. type: Plain text
@@ -325,9 +342,8 @@ msgstr ""
 "目前来说，每执行一次软件包层叠都会创建一个新的『部署』，换言之就是可启动的系"
 "统。它并不会影响你当前的系统，也使回滚和事务模型得到保留，但也意味着在层叠软"
 "件包后需要重启，当然你也可以体验我们的实验性功能，通过执行 `rpm-ostree ex "
-"apply-live` "
-"更新文件系统并应用更新。无论如何，我们还是希望你谨慎使用软件包层叠，"
-"在可以的时候尽可能采用 `flatpak` 或者在 `toolbox` 使用 `dnf install` 。"
+"apply-live` 更新文件系统并应用更新。无论如何，我们还是希望你谨慎使用软件包层"
+"叠，在可以的时候尽可能采用 `flatpak` 或者在 `toolbox` 使用 `dnf install` 。"
 
 #. type: Plain text
 #: pages/getting-started.adoc:90
@@ -335,8 +351,9 @@ msgid ""
 "Package layering is generally done from the command line.  However, the "
 "Software application does rely on it for installing a small number of apps "
 "that are currently difficult to install as Flatpaks."
-msgstr "软件包层叠通常需要在命令行下完成。然而，GNOME "
-"商店有时候确实会通过这种方式安装一些难以通过 Flatpak 的形式安装的应用程序。"
+msgstr ""
+"软件包层叠通常需要在命令行下完成。然而，GNOME 商店有时候确实会通过这种方式安"
+"装一些难以通过 Flatpak 的形式安装的应用程序。"
 
 #. type: Title ===
 #: pages/getting-started.adoc:91
@@ -365,8 +382,8 @@ msgid ""
 msgstr ""
 "这会下载所需的软件包及其依赖包，并同你的 {variant-name} 映像一起被构建。 "
 "`rpm-ostree` 使用标准的 Fedora 软件包名称，因此你可以通过 DNF 搜索软件包"
-"（{variant-name} 并不提供 DNF，但你可以在 xref:toolbox.adoc[toolbox] "
-"使用它）。"
+"（{variant-name} 并不提供 DNF，但你可以在 xref:toolbox.adoc[toolbox] 使用"
+"它）。"
 
 #. type: Plain text
 #: pages/getting-started.adoc:101

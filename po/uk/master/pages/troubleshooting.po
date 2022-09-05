@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:59+0000\n"
 "PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -438,11 +438,18 @@ msgstr "Існує декілька можливих вирішень:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:122
+#, fuzzy
+#| msgid ""
+#| "During the install process, select \"Custom Partitioning\" and create an "
+#| "additional EFI partition.  Assign the newly created EFI partition to `/"
+#| "boot/efi`.  You will then be able to boot the previous OS(s) alongside "
+#| "Fedora {variant-name}.  If this workaround is not successful follow the "
+#| "below step."
 msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
 "additional EFI partition.  Assign the newly created EFI partition to `/boot/"
-"efi`.  You will then be able to boot the previous OS(s) alongside Fedora "
-"{variant-name}.  If this workaround is not successful follow the below step."
+"efi`.  You will then be able to boot the previous OS(s) alongside {variant-"
+"name}.  If this workaround is not successful follow the below step."
 msgstr ""
 "Під час процедури встановлення вибрати «Нетиповий поділ на розділи» і "
 "створити додатковий розділ EFI. Призначте для новоствореного розділу EFI "
@@ -467,11 +474,7 @@ msgstr ""
 msgid ""
 "Choosing to reformat `/boot/efi` will likely result in the inability to boot any other operating systems that were previously installed.\n"
 "         Be sure that you have backed up any important data before using this workaround.\n"
-msgstr ""
-"Вибір варіанта із переформатуванням `/boot/efi`, ймовірно, зробить "
-"неможливим завантаження будь-яких інших раніше встановлених операційних "
-"систем. Переконайтеся, що вами створено резервну копію будь-яких важливих "
-"даних, перш ніж користуватися цим варіантом.\n"
+msgstr "Вибір варіанта із переформатуванням `/boot/efi`, ймовірно, зробить неможливим завантаження будь-яких інших раніше встановлених операційних систем. Переконайтеся, що вами створено резервну копію будь-яких важливих даних, перш ніж користуватися цим варіантом.\n"
 
 #. type: Title ==
 #: pages/troubleshooting.adoc:128
@@ -485,11 +488,7 @@ msgstr "`toolbox: failed to list images with com.redhat.component=fedora-toolbox
 msgid ""
 "As of `podman` version `1.4.0` this workaround is not necessary.\n"
 "           Ensure `podman` is up to date by issuing `rpm-ostree upgrade` before attempting this workaround.\n"
-msgstr ""
-"З версії `podman` `1.4.0` потреби у цьому обхідному маневрі немає. "
-"Переконайтеся, що встановлено актуальну версію `podman`, віддавши команду "
-"`rpm-ostree upgrade`, перш ніж намагатися скористатися цим обхідним маневром."
-"\n"
+msgstr "З версії `podman` `1.4.0` потреби у цьому обхідному маневрі немає. Переконайтеся, що встановлено актуальну версію `podman`, віддавши команду `rpm-ostree upgrade`, перш ніж намагатися скористатися цим обхідним маневром.\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:134
@@ -512,11 +511,7 @@ msgstr " `toolbox: failed to list images with com.redhat.component=fedora-toolbo
 msgid ""
 "The following workaround might be useful for other `toolbox` errors caused by `podman` versions greater than `1.2.0`.\n"
 "     See https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902[Toolbox Github Repo]\n"
-msgstr ""
-"Наведений нижче варіант дій може бути корисним для інших помилок `toolbox`, "
-"які спричинено використанням версій `podman`, новіших за `1.2.0`. Див. "
-"https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902["
-"сховища Toolbox на Github]\n"
+msgstr "Наведений нижче варіант дій може бути корисним для інших помилок `toolbox`, які спричинено використанням версій `podman`, новіших за `1.2.0`. Див. https://github.com/debarshiray/toolbox/issues/169#issuecomment-495193902[сховища Toolbox на Github]\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:141
@@ -643,10 +638,7 @@ msgstr "Віддайте команду `restorecon`"
 msgid ""
 "You should never run `restorecon` on a {variant-name} host.\n"
 "         See the following bug for details - https://bugzilla.redhat.com/show_bug.cgi?id=1259018\n"
-msgstr ""
-"Ніколи не запускайте `restorecon` у основній системі {variant-name}. "
-"Подробиці наведено у цьому звіті щодо вади: https://bugzilla.redhat.com/"
-"show_bug.cgi?id=1259018\n"
+msgstr "Ніколи не запускайте `restorecon` у основній системі {variant-name}. Подробиці наведено у цьому звіті щодо вади: https://bugzilla.redhat.com/show_bug.cgi?id=1259018\n"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:175
@@ -698,14 +690,10 @@ msgid ""
 "$ sudo reboot\n"
 msgstr ""
 "$ rpm-ostree status -b | grep BaseCommit\n"
-"                BaseCommit: "
-"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
-"$ sudo ostree checkout -H "
-"696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/"
-"repo/tmp/selinux-fix\n"
+"                BaseCommit: 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee\n"
+"$ sudo ostree checkout -H 696991d589980aeaef5eda352dd7ad3d33c444c789c209f793a84bc6e7269aee /ostree/repo/tmp/selinux-fix\n"
 "$ sudo ostree fsck --delete\n"
-"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-"
-"policy=/ /ostree/repo/tmp/selinux-fix\n"
+"$ sudo ostree commit --consume --link-checkout-speedup --orphan --selinux-policy=/ /ostree/repo/tmp/selinux-fix\n"
 "$ sudo restorecon -Rv /var\n"
 "$ sudo restorecon -Rv /etc\n"
 "$ sudo ostree admin deploy fedora:fedora/{version}/x86_64/{variant}\n"

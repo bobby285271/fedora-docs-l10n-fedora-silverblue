@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-29 22:31+0000\n"
+"POT-Creation-Date: 2022-09-05 21:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -23,10 +23,10 @@ msgstr ""
 #. type: Plain text
 #: pages/installation.adoc:5
 msgid ""
-"Fedora {variant-name} can be installed in the same way as Fedora "
-"Workstation, and the official Fedora installation guide can be followed for "
-"your Fedora version.  See the https://docs.fedoraproject.org/en-US/docs/"
-"[Fedora documentation site] for more details."
+"{variant-name} can be installed in the same way as Fedora Workstation, and "
+"the official Fedora installation guide can be followed for your Fedora "
+"version.  See the https://docs.fedoraproject.org/en-US/docs/[Fedora "
+"documentation site] for more details."
 msgstr ""
 
 #. type: Title ==

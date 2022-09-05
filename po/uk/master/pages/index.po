@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:59+0000\n"
 "PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -21,13 +21,16 @@ msgstr ""
 
 #. type: Title =
 #: pages/index.adoc:1
-#, no-wrap
-msgid "Fedora {variant-name} User Guide"
+#, fuzzy, no-wrap
+#| msgid "Fedora {variant-name} User Guide"
+msgid "{variant-name} User Guide"
 msgstr "Підручник користувача Fedora {variant-name}"
 
 #. type: Plain text
 #: pages/index.adoc:4
-msgid "Welcome to the Fedora {variant-name} user guide!"
+#, fuzzy
+#| msgid "Welcome to the Fedora {variant-name} user guide!"
+msgid "Welcome to the {variant-name} user guide!"
 msgstr "Вітаємо у підручнику користувача Fedora {variant-name}!"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
@@ -44,10 +47,16 @@ msgstr "silverblue-logo.svg"
 
 #. type: Plain text
 #: pages/index.adoc:10
+#, fuzzy
+#| msgid ""
+#| "_Fedora {variant-name}_ is an immutable desktop operating system.  It "
+#| "aims to be extremely stable and reliable.  It also aims to be an "
+#| "excellent platform for developers and for those using container-focused "
+#| "workflows."
 msgid ""
-"_Fedora {variant-name}_ is an immutable desktop operating system.  It aims "
-"to be extremely stable and reliable.  It also aims to be an excellent "
-"platform for developers and for those using container-focused workflows."
+"_{variant-name}_ is an immutable desktop operating system.  It aims to be "
+"extremely stable and reliable.  It also aims to be an excellent platform for "
+"developers and for those using container-focused workflows."
 msgstr ""
 "_Fedora {variant-name}_ — незмінна операційна система для робочих станцій. "
 "Робота системи має бути надзвичайно стабільною і надійною. Система має бути "
@@ -133,9 +142,9 @@ msgid ""
 "name} differs from a standard Fedora Workstation, including:"
 msgstr ""
 "Здебільшого, {variant-name} поводиться як стандартна система Fedora "
-"Workstation, тому можна скористатися https://docs.fedoraproject.org/["
-"документацією до стандартної Fedora]. У цьому підручнику висвітлено ті речі, "
-"якими {variant-name} відрізняється від стандартної Fedora Workstation, "
+"Workstation, тому можна скористатися https://docs.fedoraproject.org/"
+"[документацією до стандартної Fedora]. У цьому підручнику висвітлено ті "
+"речі, якими {variant-name} відрізняється від стандартної Fedora Workstation, "
 "зокрема:"
 
 #. type: Plain text

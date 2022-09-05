@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:58+0000\n"
 "PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -21,13 +21,17 @@ msgstr ""
 
 #. type: Title =
 #: pages/contributing.adoc:2
-#, no-wrap
-msgid "Contributing to Fedora {variant-name}"
+#, fuzzy, no-wrap
+#| msgid "Contributing to Fedora {variant-name}"
+msgid "Contributing to {variant-name}"
 msgstr "Участь у розробці Fedora {variant-name}"
 
 #. type: Plain text
 #: pages/contributing.adoc:5
-msgid "Help us improve Fedora {variant-name} by contributing to the project!"
+#, fuzzy
+#| msgid ""
+#| "Help us improve Fedora {variant-name} by contributing to the project!"
+msgid "Help us improve {variant-name} by contributing to the project!"
 msgstr "Допоможіть нам поліпшити Fedora {variant-name} своєю участю у проєкті!"
 
 #. type: Title ==
@@ -38,9 +42,13 @@ msgstr "Розробка {variant-name}"
 
 #. type: Plain text
 #: pages/contributing.adoc:11
+#, fuzzy
+#| msgid ""
+#| "If you are a developer, you can contribute to one of the several projects "
+#| "which make Fedora {variant-name} possible.  Submit your pull requests to:"
 msgid ""
 "If you are a developer, you can contribute to one of the several projects "
-"which make Fedora {variant-name} possible.  Submit your pull requests to:"
+"which make {variant-name} possible.  Submit your pull requests to:"
 msgstr ""
 "Якщо ви є розробником, ви можете взяти участь у одному з проєктів, на основі "
 "яких створюють Fedora {variant-name}. Надсилайте свої латки до таких "
@@ -200,9 +208,9 @@ msgid ""
 msgstr ""
 "Щоб стати офіційним пакувальником, вам слід виконати декілька кроків для "
 "отримання усіх потрібних прав доступу для користування інфраструктурою "
-"Fedora (Pagure, Koji, Bodhi). Ми створили докладну https://docs.fedoraproject"
-".org/en-US/package-maintainers/Joining_the_Package_Maintainers/[сторінку] "
-"щодо набуття прав пакувальника."
+"Fedora (Pagure, Koji, Bodhi). Ми створили докладну https://docs."
+"fedoraproject.org/en-US/package-maintainers/Joining_the_Package_Maintainers/"
+"[сторінку] щодо набуття прав пакувальника."
 
 #. type: Plain text
 #: pages/contributing.adoc:59

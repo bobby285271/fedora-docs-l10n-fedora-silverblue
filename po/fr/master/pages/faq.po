@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:58+0000\n"
 "PO-Revision-Date: 2020-08-17 22:36+0000\n"
 "Last-Translator: Timothée Ravier <tim@siosm.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
@@ -83,9 +83,9 @@ msgstr "Quelle est la relation entre Silverblue et Project Atomic ?"
 #. type: Plain text
 #: pages/faq.adoc:23
 msgid ""
-"Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
-"(as well as its successor, Fedora CoreOS).  However, {variant-name} is "
-"specifically focused on workstation/desktop use cases."
+"{variant-name} uses the same core technology as Fedora Atomic Host (as well "
+"as its successor, Fedora CoreOS).  However, {variant-name} is specifically "
+"focused on workstation/desktop use cases."
 msgstr ""
 
 #. type: Title ==
@@ -235,7 +235,7 @@ msgstr ""
 #: pages/faq.adoc:71
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
-"version of your Fedora {variant-name} installation."
+"version of your {variant-name} installation."
 msgstr ""
 
 #. type: Labeled list

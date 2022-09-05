@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,12 +17,12 @@ msgstr ""
 #. type: Title =
 #: pages/contributing.adoc:2
 #, no-wrap
-msgid "Contributing to Fedora {variant-name}"
+msgid "Contributing to {variant-name}"
 msgstr ""
 
 #. type: Plain text
 #: pages/contributing.adoc:5
-msgid "Help us improve Fedora {variant-name} by contributing to the project!"
+msgid "Help us improve {variant-name} by contributing to the project!"
 msgstr ""
 
 #. type: Title ==
@@ -35,7 +35,7 @@ msgstr ""
 #: pages/contributing.adoc:11
 msgid ""
 "If you are a developer, you can contribute to one of the several projects "
-"which make Fedora {variant-name} possible.  Submit your pull requests to:"
+"which make {variant-name} possible.  Submit your pull requests to:"
 msgstr ""
 
 #. type: Plain text

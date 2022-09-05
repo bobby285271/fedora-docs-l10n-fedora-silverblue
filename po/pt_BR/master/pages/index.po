@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:59+0000\n"
 "PO-Revision-Date: 2021-02-27 23:52+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -21,14 +21,14 @@ msgstr ""
 #: pages/index.adoc:1
 #, fuzzy, no-wrap
 #| msgid "Fedora Silverblue User Guide"
-msgid "Fedora {variant-name} User Guide"
+msgid "{variant-name} User Guide"
 msgstr "Guia do usuário do Fedora Silverblue"
 
 #. type: Plain text
 #: pages/index.adoc:4
 #, fuzzy
 #| msgid "Welcome to the Fedora Silverblue user guide!"
-msgid "Welcome to the Fedora {variant-name} user guide!"
+msgid "Welcome to the {variant-name} user guide!"
 msgstr "Bem-vindo ao guia do usuário do Silverblue!"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
@@ -51,9 +51,9 @@ msgstr "silverblue-logo.svg"
 #| "be extremely stable and reliable. It also aims to be an excellent "
 #| "platform for developers and for those using container-focused workflows."
 msgid ""
-"_Fedora {variant-name}_ is an immutable desktop operating system.  It aims "
-"to be extremely stable and reliable.  It also aims to be an excellent "
-"platform for developers and for those using container-focused workflows."
+"_{variant-name}_ is an immutable desktop operating system.  It aims to be "
+"extremely stable and reliable.  It also aims to be an excellent platform for "
+"developers and for those using container-focused workflows."
 msgstr ""
 "_Fedora Silverblue_ é um sistema operacional imutável de desktop. Tem como "
 "objetivo ser extremamente estável e confiável. Ele também pretende ser uma "

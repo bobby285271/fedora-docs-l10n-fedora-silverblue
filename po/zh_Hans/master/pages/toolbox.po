@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:59+0000\n"
 "PO-Revision-Date: 2022-06-12 15:18+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -53,12 +53,19 @@ msgstr "为什么使用 Toolbox？"
 
 #. type: Plain text
 #: pages/toolbox.adoc:14
+#, fuzzy
+#| msgid ""
+#| "Toolbox makes it easy to use a containerized environment for everyday "
+#| "software development and debugging.  On immutable operating systems, like "
+#| "{website}[Fedora {variant-name}], it provides a familiar package-based "
+#| "environment in which tools and libraries can be installed and used.  "
+#| "However, toolbox can also be used on package-based systems."
 msgid ""
 "Toolbox makes it easy to use a containerized environment for everyday "
 "software development and debugging.  On immutable operating systems, like "
-"{website}[Fedora {variant-name}], it provides a familiar package-based "
-"environment in which tools and libraries can be installed and used.  "
-"However, toolbox can also be used on package-based systems."
+"{website}[{variant-name}], it provides a familiar package-based environment "
+"in which tools and libraries can be installed and used.  However, toolbox "
+"can also be used on package-based systems."
 msgstr ""
 "Toolbox 提供了专为应用程序开发和调试打造的容器化环境。在 {website}[Fedora "
 "{variant-name}] 这样的不可变操作系统上，Toolbox 提供了一种基于软件包的环境以"
@@ -101,14 +108,26 @@ msgid ""
 "throw a toolbox away and start again."
 msgstr "容器是做实验的好地方：一旦出了问题，只需要删除容器重新开始就行了。"
 
+#. type: Plain text
+#: pages/toolbox.adoc:23
+msgid ""
+"However, it is very important to note that toolbox containers are still "
+"integrated with your host system, so you should not attempt to do things or "
+"run software you otherwise wouldn't on your host system. Toolbox containers "
+"are not completely isolated environments like virtual machines."
+msgstr ""
+"但仍需注意，toolbox 容器和您的宿主系统仍是有集成的，因此不是所有在宿主系统上"
+"不敢做的事情换到容器这里就能放开手脚做了。toolbox 容器并不是虚拟机那样完全隔"
+"离的环境。"
+
 #. type: Title ==
-#: pages/toolbox.adoc:23 pages/toolbox.adoc:25
+#: pages/toolbox.adoc:25
 #, no-wrap
 msgid "How it works"
 msgstr "工作原理"
 
 #. type: Plain text
-#: pages/toolbox.adoc:27 pages/toolbox.adoc:29
+#: pages/toolbox.adoc:29
 msgid ""
 "Toolbox takes the work out of using containers, by providing a small number "
 "of simple commands to create, enter, list and remove containers.  It also "
@@ -119,7 +138,7 @@ msgstr ""
 "到了常规的工作环境中，以便日常开发使用。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:31 pages/toolbox.adoc:33
+#: pages/toolbox.adoc:33
 msgid ""
 "Containers are created from images and those are usually a very stripped "
 "down version of distributions.  In such images there are almost no tools and "
@@ -132,35 +151,35 @@ msgstr ""
 "好的开箱即用体验。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:34 pages/toolbox.adoc:36
+#: pages/toolbox.adoc:36
 msgid ""
 "Each toolbox container is an environment that you can enter from the command "
 "line.  Inside each one, you will find:"
 msgstr "所有 Toolbox 容器都可以通过命令行进入。每一个容器都提供了："
 
 #. type: Plain text
-#: pages/toolbox.adoc:36 pages/toolbox.adoc:38
+#: pages/toolbox.adoc:38
 msgid "Your existing username and permissions"
 msgstr "已有的账户及其权限"
 
 #. type: Plain text
-#: pages/toolbox.adoc:37 pages/toolbox.adoc:39
+#: pages/toolbox.adoc:39
 msgid "Access to your home directory and several other locations"
 msgstr "用户目录以及其他几个目录的访问能力"
 
 #. type: Plain text
-#: pages/toolbox.adoc:38 pages/toolbox.adoc:40
+#: pages/toolbox.adoc:40
 msgid "Access to both system and session D-Bus, system journal and Kerberos"
 msgstr "对于系统以及会话的 D-Bus，系统日志以及 Kerberos 认证信息的访问权限"
 
 #. type: Plain text
-#: pages/toolbox.adoc:39 pages/toolbox.adoc:41
+#: pages/toolbox.adoc:41
 msgid ""
 "Common command lines tools, including a package manager (e.g., DNF on Fedora)"
 msgstr "常见命令行工具，包括软件包管理器（例如 Fedora 附带的 DNF）"
 
 #. type: Plain text
-#: pages/toolbox.adoc:43 pages/toolbox.adoc:45
+#: pages/toolbox.adoc:45
 msgid ""
 "In other words, toolbox containers look, feel and behave like a standard "
 "Linux command line environment.  By connecting all this information, toolbox "
@@ -172,7 +191,7 @@ msgstr ""
 "于上面的几点，你不应将 Toolbox 容器视为可以执行未经试验脚本的沙箱。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:47 pages/toolbox.adoc:49
+#: pages/toolbox.adoc:49
 msgid ""
 "In most cases, when a command is run inside a container, the program from "
 "inside the container is used.  However, there are a few special cases where "
@@ -185,45 +204,50 @@ msgstr ""
 "令本身，它使得在 Toolbox 容器内使用 Toolbox 成为可能。"
 
 #. type: Title ==
-#: pages/toolbox.adoc:49 pages/toolbox.adoc:51
+#: pages/toolbox.adoc:51
 #, no-wrap
 msgid "Installation"
 msgstr "安装"
 
 #. type: Title ===
-#: pages/toolbox.adoc:51 pages/toolbox.adoc:53
-#, no-wrap
-msgid "Fedora {variant-name}"
+#: pages/toolbox.adoc:53
+#, fuzzy, no-wrap
+#| msgid "Fedora {variant-name}"
+msgid "{variant-name}"
 msgstr "Fedora {variant-name}"
 
 #. type: Plain text
-#: pages/toolbox.adoc:55 pages/toolbox.adoc:57
+#: pages/toolbox.adoc:57
+#, fuzzy
+#| msgid ""
+#| "Toolbox is preinstalled on Fedora {variant-name} 30 or newer.  On older "
+#| "versions, it can be installed with the following command:"
 msgid ""
-"Toolbox is preinstalled on Fedora {variant-name} 30 or newer.  On older "
-"versions, it can be installed with the following command:"
+"Toolbox is preinstalled on {variant-name} 30 or newer.  On older versions, "
+"it can be installed with the following command:"
 msgstr ""
 "Fedora {variant-name} 30 或更高版本已经预装了 Toolbox。在旧版系统上，你可以使"
 "用下面的命令安装 Toolbox："
 
 #. type: Plain text
-#: pages/toolbox.adoc:57 pages/toolbox.adoc:59
+#: pages/toolbox.adoc:59
 #, no-wrap
 msgid " $ rpm-ostree install toolbox\n"
 msgstr " $ rpm-ostree install toolbox\n"
 
 #. type: Plain text
-#: pages/toolbox.adoc:59 pages/toolbox.adoc:61
+#: pages/toolbox.adoc:61
 msgid "This will install toolbox as a layered RPM."
 msgstr "这会将 toolbox 作为一个堆叠的 RPM 被安装。"
 
 #. type: Title ===
-#: pages/toolbox.adoc:60 pages/toolbox.adoc:62
+#: pages/toolbox.adoc:62
 #, no-wrap
 msgid "Fedora Workstation"
 msgstr "Fedora Workstation"
 
 #. type: Plain text
-#: pages/toolbox.adoc:63 pages/toolbox.adoc:65
+#: pages/toolbox.adoc:65
 msgid ""
 "Toolbox can be installed on Fedora Workstation (or any package-based version "
 "of Fedora) with the following command:"
@@ -232,44 +256,44 @@ msgstr ""
 "面的命令安装 Toolbox："
 
 #. type: Plain text
-#: pages/toolbox.adoc:65 pages/toolbox.adoc:67
+#: pages/toolbox.adoc:67
 #, no-wrap
 msgid " $ sudo dnf install toolbox\n"
 msgstr " $ sudo dnf install toolbox\n"
 
 #. type: Title ==
-#: pages/toolbox.adoc:67 pages/toolbox.adoc:69
+#: pages/toolbox.adoc:69
 #, no-wrap
 msgid "Your first toolbox"
 msgstr "创建第一个 Toolbox 实例"
 
 #. type: Plain text
-#: pages/toolbox.adoc:70 pages/toolbox.adoc:72
+#: pages/toolbox.adoc:72
 msgid ""
 "Once toolbox is installed, two simple commands are required to get started:"
 msgstr "当 Toolbox 被安装后，执行下面的两个命令以开启你的 Toolbox 之旅："
 
 #. type: Plain text
-#: pages/toolbox.adoc:72 pages/toolbox.adoc:74
+#: pages/toolbox.adoc:74
 #, no-wrap
 msgid " $ toolbox create\n"
 msgstr " $ toolbox create\n"
 
 #. type: Plain text
-#: pages/toolbox.adoc:75 pages/toolbox.adoc:77
+#: pages/toolbox.adoc:77
 msgid ""
 "This will download an OCI image and create a toolbox container from it.  "
 "Once this is complete, run:"
 msgstr "这会下载 OCI 映像文件并利用它创建一个 Toolbox 容器。接下来我们执行："
 
 #. type: Plain text
-#: pages/toolbox.adoc:77 pages/toolbox.adoc:79
+#: pages/toolbox.adoc:79
 #, no-wrap
 msgid " $ toolbox enter\n"
 msgstr " $ toolbox enter\n"
 
 #. type: Plain text
-#: pages/toolbox.adoc:79 pages/toolbox.adoc:81
+#: pages/toolbox.adoc:81
 msgid ""
 "Once inside the toolbox, you can access common command line tools, and "
 "install new ones using a package manager (e.g., DNF on Fedora)."
@@ -278,7 +302,7 @@ msgstr ""
 "如 Fedora 的 DNF）安装更多新的工具。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:82 pages/toolbox.adoc:84
+#: pages/toolbox.adoc:84
 #, no-wrap
 msgid ""
 "When the prompt is inside a toolbox, it is prepended with a diamond: this indicates that the prompt is inside a toolbox container.\n"
@@ -288,19 +312,19 @@ msgstr ""
 "如果你使用了自定义的 Shell 主题，这颗菱形就会消失。\n"
 
 #. type: Title ==
-#: pages/toolbox.adoc:84 pages/toolbox.adoc:86
+#: pages/toolbox.adoc:86
 #, no-wrap
 msgid "Commands and usage"
 msgstr "命令与用法"
 
 #. type: Title ===
-#: pages/toolbox.adoc:87 pages/toolbox.adoc:89
+#: pages/toolbox.adoc:89
 #, no-wrap
 msgid "toolbox create [options] <name>"
 msgstr "toolbox create [options] <name>"
 
 #. type: Plain text
-#: pages/toolbox.adoc:93 pages/toolbox.adoc:95
+#: pages/toolbox.adoc:95
 msgid ""
 "Creates a toolbox container.  This will download an OCI image if one isn't "
 "available (this is required to create the container).  By default an image "
@@ -311,7 +335,7 @@ msgstr ""
 "宿主环境对应的映像。如果找不到匹配的映像，则会默认下载 Fedora 映像。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:96 pages/toolbox.adoc:98
+#: pages/toolbox.adoc:98
 msgid ""
 "Used without options, `toolbox create` will automatically name the container "
 "it creates.  To create additional toolboxes, use the `<name>` argument."
@@ -320,7 +344,7 @@ msgstr ""
 "器，使用 `<name>` 参数为容器命名。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:98 pages/toolbox.adoc:100
+#: pages/toolbox.adoc:100
 msgid ""
 "To use a specific version of the host system (e.g., Fedora 32 on Fedora 34), "
 "use the `--release <release> | -r <release>` option."
@@ -329,7 +353,7 @@ msgstr ""
 "的映像），使用 `--release <release> | -r <release>` 选项。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:100 pages/toolbox.adoc:102
+#: pages/toolbox.adoc:102
 msgid ""
 "To use a different distribution to create a toolbox container (e.g., RHEL on "
 "Fedora), use the `--distro <distro> | -d <distro>` option."
@@ -338,19 +362,19 @@ msgstr ""
 "像），使用 `--distro <distro> | -d <distro>` 选项。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:102 pages/toolbox.adoc:104
+#: pages/toolbox.adoc:104
 msgid ""
 "To use a different image, use the ``--image <name> | -i <name>`` option."
 msgstr "要使用不同的映像文件，使用 ``--image <name> | -i <name>`` 选项。"
 
 #. type: Title ===
-#: pages/toolbox.adoc:104 pages/toolbox.adoc:106
+#: pages/toolbox.adoc:106
 #, no-wrap
 msgid "toolbox enter [options] <name>"
 msgstr "toolbox enter [options] <name>"
 
 #. type: Plain text
-#: pages/toolbox.adoc:108 pages/toolbox.adoc:110
+#: pages/toolbox.adoc:110
 msgid ""
 "Enters a toolbox for interactive use.  Used without options, `toolbox enter` "
 "opens the default toolbox."
@@ -359,12 +383,12 @@ msgstr ""
 "Toolbox 容器。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:110 pages/toolbox.adoc:112
+#: pages/toolbox.adoc:112
 msgid "To enter a toolbox with specific name, use the `name` argument."
 msgstr "如果你有多个容器，可以使用 `name` 指定你需要进入的容器。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:112 pages/toolbox.adoc:114
+#: pages/toolbox.adoc:114
 msgid ""
 "To enter a toolbox for a different distribution (e.g., Fedora on RHEL), use "
 "the `--distro <distro> |-d <distro>` option."
@@ -373,7 +397,7 @@ msgstr ""
 "distro <distro> |-d <distro>` 选项。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:114 pages/toolbox.adoc:116
+#: pages/toolbox.adoc:116
 msgid ""
 "To enter a toolbox with specific version (e.g., RHEL 8.1 on RHEL 8.3), use "
 "the `--release <release> | -r <release>` option."
@@ -382,13 +406,13 @@ msgstr ""
 "`--release <release> | -r <release>` 选项。"
 
 #. type: Title ===
-#: pages/toolbox.adoc:116 pages/toolbox.adoc:118
+#: pages/toolbox.adoc:118
 #, no-wrap
 msgid "toolbox run [options] <cmd> <arg ...>"
 msgstr "toolbox run [options] <cmd> <arg ...>"
 
 #. type: Plain text
-#: pages/toolbox.adoc:120 pages/toolbox.adoc:122
+#: pages/toolbox.adoc:122
 msgid ""
 "Runs a command in a toolbox without entering it.  Used without options, "
 "`toolbox run` runs the command in the default toolbox."
@@ -397,7 +421,7 @@ msgstr ""
 "在默认的 Toolbox 容器执行你的命令。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:122 pages/toolbox.adoc:124
+#: pages/toolbox.adoc:124
 msgid ""
 "To run a command in a toolbox with specific name, use the `--container "
 "<name> | -c <name>` option."
@@ -406,7 +430,7 @@ msgstr ""
 "容器。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:124 pages/toolbox.adoc:126
+#: pages/toolbox.adoc:126
 msgid ""
 "To run a command in a toolbox for a different distribution (e.g., Fedora on "
 "RHEL), use the `--distro <distro> |-d <distro>` option."
@@ -415,7 +439,7 @@ msgstr ""
 "`--distro <distro> |-d <distro>` 选项。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:126 pages/toolbox.adoc:128
+#: pages/toolbox.adoc:128
 msgid ""
 "To run a command in a toolbox with specific version (e.g., RHEL 8.1 on RHEL "
 "8.3), use the `--release <release> | -r <release>` option."
@@ -424,62 +448,62 @@ msgstr ""
 "`--release <release> | -r <release>` 选项。"
 
 #. type: Title ===
-#: pages/toolbox.adoc:128 pages/toolbox.adoc:130
+#: pages/toolbox.adoc:130
 #, no-wrap
 msgid "toolbox list [options]"
 msgstr "toolbox list [options]"
 
 #. type: Plain text
-#: pages/toolbox.adoc:131 pages/toolbox.adoc:133
+#: pages/toolbox.adoc:133
 msgid "Lists local toolbox images and containers."
 msgstr "列出本地可用的 Toolbox 容器和映像。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:133 pages/toolbox.adoc:135
+#: pages/toolbox.adoc:135
 msgid "To only show containers, use the `--containers | -c` option."
 msgstr "如果希望只列出容器，使用 `--containers | -c` 选项。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:135 pages/toolbox.adoc:137
+#: pages/toolbox.adoc:137
 msgid "To only show images, use the `--images | -i` option."
 msgstr "如果希望只列出映像，使用 `--images | -i` 选项。"
 
 #. type: Title ===
-#: pages/toolbox.adoc:137 pages/toolbox.adoc:139
+#: pages/toolbox.adoc:139
 #, no-wrap
 msgid "toolbox rm [options] <name ...>"
 msgstr "toolbox rm [options] <name ...>"
 
 #. type: Plain text
-#: pages/toolbox.adoc:140 pages/toolbox.adoc:142
+#: pages/toolbox.adoc:142
 msgid "Removes one or more toolbox containers."
 msgstr "移除一个或多个 Toolbox 容器。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:142 pages/toolbox.adoc:144
+#: pages/toolbox.adoc:144
 msgid ""
 "The `--force | -f` option removes the marked containers even if they are "
 "running."
 msgstr "使用 `--force | -f` 参数以强制删除正在运行的容器。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:144 pages/toolbox.adoc:146
+#: pages/toolbox.adoc:146
 msgid "The `--all | -a` option removes all toolbox containers."
 msgstr "`--all | -a` 选项将移除所有 Toolbox 容器。"
 
 #. type: Title ===
-#: pages/toolbox.adoc:146 pages/toolbox.adoc:148
+#: pages/toolbox.adoc:148
 #, no-wrap
 msgid "toolbox rmi [options] <name ...>"
 msgstr "toolbox rmi [options] <name ...>"
 
 #. type: Plain text
-#: pages/toolbox.adoc:149 pages/toolbox.adoc:151
+#: pages/toolbox.adoc:151
 msgid "Removes one or more toolbox images."
 msgstr "移除一个或多个 Toolbox 映像。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:151 pages/toolbox.adoc:153
+#: pages/toolbox.adoc:153
 msgid ""
 "The `--force | -f` option removes the marked images and all containers that "
 "have been created using the marked images."
@@ -488,29 +512,29 @@ msgstr ""
 "选项。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:153 pages/toolbox.adoc:155
+#: pages/toolbox.adoc:155
 msgid "The `--all | -a` option removes all toolbox images."
 msgstr "`--all | -a` 选项将移除所有 Toolbox 映像。"
 
 #. type: Title ===
-#: pages/toolbox.adoc:155 pages/toolbox.adoc:157
+#: pages/toolbox.adoc:157
 #, no-wrap
 msgid "toolbox --help"
 msgstr "toolbox --help"
 
 #. type: Plain text
-#: pages/toolbox.adoc:158 pages/toolbox.adoc:160
+#: pages/toolbox.adoc:160
 msgid "Shows Toolbox's manual page."
 msgstr "显示 Toolbox 帮助文档。"
 
 #. type: Title ===
-#: pages/toolbox.adoc:160 pages/toolbox.adoc:162
+#: pages/toolbox.adoc:162
 #, no-wrap
 msgid "Exiting a toolbox"
 msgstr "离开 Toolbox 环境"
 
 #. type: Plain text
-#: pages/toolbox.adoc:163 pages/toolbox.adoc:165
+#: pages/toolbox.adoc:165
 msgid ""
 "To return to the host environment, either run `exit` or quit the current "
 "shell (typically Ctrl+D)."
@@ -518,34 +542,34 @@ msgstr ""
 "要回到宿主环境，可以执行 `exit` 或者退出当前 Shell（也就是按下 Ctrl+D）。"
 
 #. type: Title ==
-#: pages/toolbox.adoc:165 pages/toolbox.adoc:167
+#: pages/toolbox.adoc:167
 #, no-wrap
 msgid "Under the hood"
 msgstr "背后实现"
 
 #. type: Plain text
-#: pages/toolbox.adoc:168 pages/toolbox.adoc:170
+#: pages/toolbox.adoc:170
 msgid "Toolbox uses the following technologies:"
 msgstr "Toolbox 使用了下面的技术："
 
 #. type: Plain text
-#: pages/toolbox.adoc:170 pages/toolbox.adoc:172
+#: pages/toolbox.adoc:172
 msgid "https://www.opencontainers.org/[OCI container images]"
 msgstr "https://www.opencontainers.org/[OCI 容器映像]"
 
 #. type: Plain text
-#: pages/toolbox.adoc:171 pages/toolbox.adoc:173
+#: pages/toolbox.adoc:173
 msgid "https://podman.io/[Podman]"
 msgstr "https://podman.io/[Podman]"
 
 #. type: Title ==
-#: pages/toolbox.adoc:173 pages/toolbox.adoc:175
+#: pages/toolbox.adoc:175
 #, no-wrap
 msgid "Contact and issues"
 msgstr "交流与沟通"
 
 #. type: Plain text
-#: pages/toolbox.adoc:176 pages/toolbox.adoc:178
+#: pages/toolbox.adoc:178
 msgid ""
 "To report issues, make suggestions, or contribute fixes, see https://github."
 "com/containers/toolbox[toolbox's GitHub project]."
@@ -554,7 +578,7 @@ msgstr ""
 "toolbox[Toolbox 在 GitHub 上的页面] 。"
 
 #. type: Plain text
-#: pages/toolbox.adoc:177 pages/toolbox.adoc:179
+#: pages/toolbox.adoc:179
 msgid ""
 "To get in touch with toolbox users and developers, use https://discussion."
 "fedoraproject.org/[Fedora's Discourse instance], or join the #silverblue IRC "
@@ -563,18 +587,6 @@ msgstr ""
 "要联系 Toolbox 用户和开发者，可以前往 https://discussion.fedoraproject.org/"
 "[Fedora 的 Discourse 论坛] ，或者加入 https://libera.chat/[Libera] 的 "
 "#silverblue IRC 频道。"
-
-#. type: Plain text
-#: pages/toolbox.adoc:23
-msgid ""
-"However, it is very important to note that toolbox containers are still "
-"integrated with your host system, so you should not attempt to do things or "
-"run software you otherwise wouldn't on your host system. Toolbox containers "
-"are not completely isolated environments like virtual machines."
-msgstr ""
-"但仍需注意，toolbox 容器和您的宿主系统仍是有集成的，因此不是所有在宿主系统上"
-"不敢做的事情换到容器这里就能放开手脚做了。toolbox 容器并不是虚拟机那样完全隔"
-"离的环境。"
 
 #~ msgid "Fedora Silverblue"
 #~ msgstr "Fedora Silverblue"

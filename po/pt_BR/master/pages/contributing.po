@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:58+0000\n"
 "PO-Revision-Date: 2021-02-27 23:52+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -21,14 +21,14 @@ msgstr ""
 #: pages/contributing.adoc:2
 #, fuzzy, no-wrap
 #| msgid "Contributing to Fedora Silverblue"
-msgid "Contributing to Fedora {variant-name}"
+msgid "Contributing to {variant-name}"
 msgstr "Contribuindo para o Fedora Silverblue"
 
 #. type: Plain text
 #: pages/contributing.adoc:5
 #, fuzzy
 #| msgid "Help us improve Fedora Silverblue by contributing to the project!"
-msgid "Help us improve Fedora {variant-name} by contributing to the project!"
+msgid "Help us improve {variant-name} by contributing to the project!"
 msgstr "Ajude-nos a melhorar o Fedora Silverblue contribuindo para o projeto!"
 
 #. type: Title ==
@@ -46,7 +46,7 @@ msgstr "Desenvolvendo o Silverblue"
 #| "which make Fedora Silverblue possible. Submit your pull requests to:"
 msgid ""
 "If you are a developer, you can contribute to one of the several projects "
-"which make Fedora {variant-name} possible.  Submit your pull requests to:"
+"which make {variant-name} possible.  Submit your pull requests to:"
 msgstr ""
 "Se você é um desenvolvedor, pode contribuir para um dos vários projetos que "
 "tornam o Fedora Silverblue possível. Envie suas pull requests para:"

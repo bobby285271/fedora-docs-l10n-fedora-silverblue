@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-09-05 21:58+0000\n"
 "PO-Revision-Date: 2022-05-18 06:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -95,10 +95,15 @@ msgstr "Як {variant-name} пов'язано із проєктом Atomic?"
 
 #. type: Plain text
 #: pages/faq.adoc:23
+#, fuzzy
+#| msgid ""
+#| "Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
+#| "(as well as its successor, Fedora CoreOS).  However, {variant-name} is "
+#| "specifically focused on workstation/desktop use cases."
 msgid ""
-"Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
-"(as well as its successor, Fedora CoreOS).  However, {variant-name} is "
-"specifically focused on workstation/desktop use cases."
+"{variant-name} uses the same core technology as Fedora Atomic Host (as well "
+"as its successor, Fedora CoreOS).  However, {variant-name} is specifically "
+"focused on workstation/desktop use cases."
 msgstr ""
 "У Fedora {variant-name} використано ту саму основну технологію, що у базовій "
 "системі Fedora Atomic (а також у її наступниці — Fedora CoreOS). Втім, "
@@ -276,9 +281,13 @@ msgstr " $ toolbox run dnf search <пакунок>\n"
 
 #. type: Plain text
 #: pages/faq.adoc:71
+#, fuzzy
+#| msgid ""
+#| "The assumption is that you have already created a toolbox matching the "
+#| "version of your Fedora {variant-name} installation."
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
-"version of your Fedora {variant-name} installation."
+"version of your {variant-name} installation."
 msgstr ""
 "Тут ми припускаємо, що у вас вже створено toolbox, який відповідає "
 "встановленій у вас версії Fedora {variant-name}."
@@ -396,8 +405,8 @@ msgid ""
 msgstr ""
 "Після завершення переходу перезавантажте систему. У меню GRUB ви знайдете "
 "обидва пункти: запис попередньої розгорнутої основної версії (наприклад *"
-"\"Fedora 30.YYYYMMDD.n\"*) і запис нової розгорнутої основної версії ("
-"наприклад *\"Fedora 31.YYYYMMDD.n\"*)."
+"\"Fedora 30.YYYYMMDD.n\"*) і запис нової розгорнутої основної версії "
+"(наприклад *\"Fedora 31.YYYYMMDD.n\"*)."
 
 #. type: Plain text
 #: pages/faq.adoc:103
