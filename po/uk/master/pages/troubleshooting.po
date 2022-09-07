@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-05 21:59+0000\n"
-"PO-Revision-Date: 2022-05-18 06:18+0000\n"
+"PO-Revision-Date: 2022-09-07 15:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestroubleshooting/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: pages/troubleshooting.adoc:1
@@ -438,13 +438,6 @@ msgstr "Існує декілька можливих вирішень:"
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:122
-#, fuzzy
-#| msgid ""
-#| "During the install process, select \"Custom Partitioning\" and create an "
-#| "additional EFI partition.  Assign the newly created EFI partition to `/"
-#| "boot/efi`.  You will then be able to boot the previous OS(s) alongside "
-#| "Fedora {variant-name}.  If this workaround is not successful follow the "
-#| "below step."
 msgid ""
 "During the install process, select \"Custom Partitioning\" and create an "
 "additional EFI partition.  Assign the newly created EFI partition to `/boot/"
@@ -454,8 +447,8 @@ msgstr ""
 "Під час процедури встановлення вибрати «Нетиповий поділ на розділи» і "
 "створити додатковий розділ EFI. Призначте для новоствореного розділу EFI "
 "точку монтування `/boot/efi`. Після цього ви зможете завантажувати ваші "
-"попередні операційні системи паралельно до Fedora {variant-name}. Якщо цей "
-"варіант не спрацює, виконайте наведений нижче крок."
+"попередні операційні системи паралельно до {variant-name}. Якщо цей варіант "
+"не спрацює, виконайте наведений нижче крок."
 
 #. type: Plain text
 #: pages/troubleshooting.adoc:124

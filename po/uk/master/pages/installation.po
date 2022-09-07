@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-05 21:59+0000\n"
-"PO-Revision-Date: 2022-08-30 22:04+0000\n"
+"PO-Revision-Date: 2022-09-07 15:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesinstallation/uk/>\n"
@@ -27,22 +27,16 @@ msgstr "Встановлення {variant-name}"
 
 #. type: Plain text
 #: pages/installation.adoc:5
-#, fuzzy
-#| msgid ""
-#| "Fedora {variant-name} can be installed in the same way as Fedora "
-#| "Workstation, and the official Fedora installation guide can be followed "
-#| "for your Fedora version.  See the https://docs.fedoraproject.org/en-US/"
-#| "docs/[Fedora documentation site] for more details."
 msgid ""
 "{variant-name} can be installed in the same way as Fedora Workstation, and "
 "the official Fedora installation guide can be followed for your Fedora "
 "version.  See the https://docs.fedoraproject.org/en-US/docs/[Fedora "
 "documentation site] for more details."
 msgstr ""
-"Fedora {variant-name} можна встановити у той самий спосіб, у який можна "
-"встановити Fedora Workstation. Ви можете скористатися офіційними настановами "
-"щодо встановлення відповідної версії Fedora. Докладніший опис можна знайти "
-"на https://docs.fedoraproject.org/en-US/docs/[сайті документації Fedora]."
+"{variant-name} можна встановити у той самий спосіб, у який можна встановити "
+"Fedora Workstation. Ви можете скористатися офіційними настановами щодо "
+"встановлення відповідної версії Fedora. Докладніший опис можна знайти на "
+"https://docs.fedoraproject.org/en-US/docs/[сайті документації Fedora]."
 
 #. type: Title ==
 #: pages/installation.adoc:7

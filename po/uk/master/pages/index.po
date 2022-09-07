@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-05 21:59+0000\n"
-"PO-Revision-Date: 2022-05-18 06:18+0000\n"
+"PO-Revision-Date: 2022-09-07 15:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesindex/uk/>\n"
@@ -17,21 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: pages/index.adoc:1
-#, fuzzy, no-wrap
-#| msgid "Fedora {variant-name} User Guide"
+#, no-wrap
 msgid "{variant-name} User Guide"
-msgstr "Підручник користувача Fedora {variant-name}"
+msgstr "Підручник користувача {variant-name}"
 
 #. type: Plain text
 #: pages/index.adoc:4
-#, fuzzy
-#| msgid "Welcome to the Fedora {variant-name} user guide!"
 msgid "Welcome to the {variant-name} user guide!"
-msgstr "Вітаємо у підручнику користувача Fedora {variant-name}!"
+msgstr "Вітаємо у підручнику користувача {variant-name}!"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/index.adoc:5
@@ -47,21 +44,15 @@ msgstr "silverblue-logo.svg"
 
 #. type: Plain text
 #: pages/index.adoc:10
-#, fuzzy
-#| msgid ""
-#| "_Fedora {variant-name}_ is an immutable desktop operating system.  It "
-#| "aims to be extremely stable and reliable.  It also aims to be an "
-#| "excellent platform for developers and for those using container-focused "
-#| "workflows."
 msgid ""
 "_{variant-name}_ is an immutable desktop operating system.  It aims to be "
 "extremely stable and reliable.  It also aims to be an excellent platform for "
 "developers and for those using container-focused workflows."
 msgstr ""
-"_Fedora {variant-name}_ — незмінна операційна система для робочих станцій. "
-"Робота системи має бути надзвичайно стабільною і надійною. Система має бути "
-"чудовою платформою для розробників і тих, хто користується робочими "
-"процесами, заснованими на контейнеризації."
+"_{variant-name}_ — незмінна операційна система для робочих станцій. Робота "
+"системи має бути надзвичайно стабільною і надійною. Система має бути чудовою "
+"платформою для розробників і тих, хто користується робочими процесами, "
+"заснованими на контейнеризації."
 
 #. type: Title ==
 #: pages/index.adoc:12

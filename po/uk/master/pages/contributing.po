@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-05 21:58+0000\n"
-"PO-Revision-Date: 2022-05-18 06:18+0000\n"
+"PO-Revision-Date: 2022-09-07 15:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagescontributing/uk/>\n"
@@ -17,22 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: pages/contributing.adoc:2
-#, fuzzy, no-wrap
-#| msgid "Contributing to Fedora {variant-name}"
+#, no-wrap
 msgid "Contributing to {variant-name}"
-msgstr "Участь у розробці Fedora {variant-name}"
+msgstr "Участь у розробці {variant-name}"
 
 #. type: Plain text
 #: pages/contributing.adoc:5
-#, fuzzy
-#| msgid ""
-#| "Help us improve Fedora {variant-name} by contributing to the project!"
 msgid "Help us improve {variant-name} by contributing to the project!"
-msgstr "Допоможіть нам поліпшити Fedora {variant-name} своєю участю у проєкті!"
+msgstr "Допоможіть нам поліпшити {variant-name} своєю участю у проєкті!"
 
 #. type: Title ==
 #: pages/contributing.adoc:7
@@ -42,17 +38,12 @@ msgstr "Розробка {variant-name}"
 
 #. type: Plain text
 #: pages/contributing.adoc:11
-#, fuzzy
-#| msgid ""
-#| "If you are a developer, you can contribute to one of the several projects "
-#| "which make Fedora {variant-name} possible.  Submit your pull requests to:"
 msgid ""
 "If you are a developer, you can contribute to one of the several projects "
 "which make {variant-name} possible.  Submit your pull requests to:"
 msgstr ""
 "Якщо ви є розробником, ви можете взяти участь у одному з проєктів, на основі "
-"яких створюють Fedora {variant-name}. Надсилайте свої латки до таких "
-"проєктів:"
+"яких створюють {variant-name}. Надсилайте свої латки до таких проєктів:"
 
 #. type: Plain text
 #: pages/contributing.adoc:13

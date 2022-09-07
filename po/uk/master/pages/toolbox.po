@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-05 21:59+0000\n"
-"PO-Revision-Date: 2022-05-18 06:18+0000\n"
+"PO-Revision-Date: 2022-09-07 15:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestoolbox/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: pages/toolbox.adoc:2
@@ -57,13 +57,6 @@ msgstr "Чому слід користуватися toolbox?"
 
 #. type: Plain text
 #: pages/toolbox.adoc:14
-#, fuzzy
-#| msgid ""
-#| "Toolbox makes it easy to use a containerized environment for everyday "
-#| "software development and debugging.  On immutable operating systems, like "
-#| "{website}[Fedora {variant-name}], it provides a familiar package-based "
-#| "environment in which tools and libraries can be installed and used.  "
-#| "However, toolbox can also be used on package-based systems."
 msgid ""
 "Toolbox makes it easy to use a containerized environment for everyday "
 "software development and debugging.  On immutable operating systems, like "
@@ -73,8 +66,8 @@ msgid ""
 msgstr ""
 "Toolbox спрощує використання контейнеризованих середовищ для регулярної "
 "розробки програмного забезпечення та діагностування. У незмінних операційних "
-"системах, зокрема {website}[Fedora {variant-name}], він надає доступ до "
-"знайомого середовища, яке засновано на пакунках, у якому можна встановлювати "
+"системах, зокрема {website}[{variant-name}], він надає доступ до знайомого "
+"середовища, яке засновано на пакунках, у якому можна встановлювати "
 "інструменти і бібліотеки. Втім, toolbox також можна використовувати і у "
 "заснованих на пакунках системах."
 
@@ -243,23 +236,18 @@ msgstr "Встановлення"
 
 #. type: Title ===
 #: pages/toolbox.adoc:53
-#, fuzzy, no-wrap
-#| msgid "Fedora {variant-name}"
+#, no-wrap
 msgid "{variant-name}"
-msgstr "Fedora {variant-name}"
+msgstr "{variant-name}"
 
 #. type: Plain text
 #: pages/toolbox.adoc:57
-#, fuzzy
-#| msgid ""
-#| "Toolbox is preinstalled on Fedora {variant-name} 30 or newer.  On older "
-#| "versions, it can be installed with the following command:"
 msgid ""
 "Toolbox is preinstalled on {variant-name} 30 or newer.  On older versions, "
 "it can be installed with the following command:"
 msgstr ""
-"Toolbox вже встановлено у Fedora {variant-name} 30 і новіших версіях. У "
-"старіших версіях встановити toolbox можна такою командою:"
+"Toolbox вже встановлено у {variant-name} 30 і новіших версіях. У старіших "
+"версіях встановити toolbox можна такою командою:"
 
 #. type: Plain text
 #: pages/toolbox.adoc:59

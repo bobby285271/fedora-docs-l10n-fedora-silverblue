@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-05 21:58+0000\n"
-"PO-Revision-Date: 2022-05-18 06:18+0000\n"
+"PO-Revision-Date: 2022-09-07 15:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesfaq/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: pages/faq.adoc:1
@@ -95,17 +95,12 @@ msgstr "Як {variant-name} пов'язано із проєктом Atomic?"
 
 #. type: Plain text
 #: pages/faq.adoc:23
-#, fuzzy
-#| msgid ""
-#| "Fedora {variant-name} uses the same core technology as Fedora Atomic Host "
-#| "(as well as its successor, Fedora CoreOS).  However, {variant-name} is "
-#| "specifically focused on workstation/desktop use cases."
 msgid ""
 "{variant-name} uses the same core technology as Fedora Atomic Host (as well "
 "as its successor, Fedora CoreOS).  However, {variant-name} is specifically "
 "focused on workstation/desktop use cases."
 msgstr ""
-"У Fedora {variant-name} використано ту саму основну технологію, що у базовій "
+"У {variant-name} використано ту саму основну технологію, що у базовій "
 "системі Fedora Atomic (а також у її наступниці — Fedora CoreOS). Втім, "
 "акцент у {variant-name} зроблено на задоволенні потреби у якісній робочій "
 "станції."
@@ -281,16 +276,12 @@ msgstr " $ toolbox run dnf search <пакунок>\n"
 
 #. type: Plain text
 #: pages/faq.adoc:71
-#, fuzzy
-#| msgid ""
-#| "The assumption is that you have already created a toolbox matching the "
-#| "version of your Fedora {variant-name} installation."
 msgid ""
 "The assumption is that you have already created a toolbox matching the "
 "version of your {variant-name} installation."
 msgstr ""
 "Тут ми припускаємо, що у вас вже створено toolbox, який відповідає "
-"встановленій у вас версії Fedora {variant-name}."
+"встановленій у вас версії {variant-name}."
 
 #. type: Labeled list
 #: pages/faq.adoc:72

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-05 21:59+0000\n"
-"PO-Revision-Date: 2022-05-18 06:18+0000\n"
+"PO-Revision-Date: 2022-09-07 15:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: pages/getting-started.adoc:2
@@ -101,23 +101,17 @@ msgstr "Flatpak"
 
 #. type: Plain text
 #: pages/getting-started.adoc:24
-#, fuzzy
-#| msgid ""
-#| "Flatpak is the primary way that apps can be installed on {variant-name} "
-#| "(for more information, see http://flatpak.org[flatpak.org]).  Flatpak "
-#| "works out of the box in Fedora {variant-name}, and Fedora provides a "
-#| "small (but growing) collection of apps that can be installed."
 msgid ""
 "Flatpak is the primary way that apps can be installed on {variant-name} (for "
 "more information, see http://flatpak.org[flatpak.org]).  Flatpak works out "
 "of the box in {variant-name}, and Fedora provides a small (but growing) "
 "collection of apps that can be installed."
 msgstr ""
-"Flatpak є основним способом встановлення програм у {variant-name}. "
-"(Докладніші відомості можна знайти на http://flatpak.org[flatpak.org].) "
-"Flatpak працює у Fedora {variant-name} без додаткового налаштовування, а "
-"Fedora надає доступ до невеликого (але такого, що постійно збільшується) "
-"набору програм, які можна встановити."
+"Flatpak є основним способом встановлення програм у {variant-name}. ("
+"Докладніші відомості можна знайти на http://flatpak.org[flatpak.org].) "
+"Flatpak працює у {variant-name} без додаткового налаштовування, а Fedora "
+"надає доступ до невеликого (але такого, що постійно збільшується) набору "
+"програм, які можна встановити."
 
 #. type: Plain text
 #: pages/getting-started.adoc:26
@@ -136,20 +130,15 @@ msgstr "Налаштовування Flathub"
 
 #. type: Plain text
 #: pages/getting-started.adoc:31
-#, fuzzy
-#| msgid ""
-#| "To setup Flathub on Fedora {variant-name}, open the https://flatpak.org/"
-#| "setup/Fedora/[Flathub setup page for Fedora] and click the “Flathub "
-#| "repository file” button to download the Flathub configuration."
 msgid ""
 "To setup Flathub on {variant-name}, open the https://flatpak.org/setup/"
 "Fedora/[Flathub setup page for Fedora] and click the “Flathub repository "
 "file” button to download the Flathub configuration."
 msgstr ""
-"Щоб налаштувати використання Flathub у Fedora {variant-name}, відкрийте "
-"https://flatpak.org/setup/Fedora/[сторінку налаштовування Flathub для "
-"Fedora] і натисніть кнопку «Flathub repository file» для отримання "
-"налаштувань Flathub."
+"Щоб налаштувати використання Flathub у {variant-name}, відкрийте "
+"https://flatpak.org/setup/Fedora/[сторінку налаштовування Flathub для Fedora]"
+" і натисніть кнопку «Flathub repository file» для отримання налаштувань "
+"Flathub."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
 #: pages/getting-started.adoc:32
