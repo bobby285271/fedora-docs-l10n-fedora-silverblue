@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-05 21:59+0000\n"
+"POT-Creation-Date: 2022-09-10 21:58+0000\n"
 "PO-Revision-Date: 2021-06-07 19:04+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -74,17 +74,28 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:12
-msgid "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
+#, fuzzy
+#| msgid ""
+#| "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
+msgid ""
+"Toolbox: Used primarily for CLI apps; development, debugging tools, etc., "
+"but also has support for graphical apps."
 msgstr ""
 "Toolbox: Usado principalmente para aplicativos CLI; desenvolvimento, "
 "ferramentas de depuração etc."
 
 #. type: Plain text
 #: pages/getting-started.adoc:14
+#, fuzzy
+#| msgid ""
+#| "Package layering: The rpm-ostree tool used for host updates is a full "
+#| "hybrid image/package system.  By default the system operates in pure "
+#| "image mode, but package layering is useful for things like libvirt, "
+#| "drivers, etc."
 msgid ""
-"Package layering: The rpm-ostree tool used for host updates is a full hybrid "
-"image/package system.  By default the system operates in pure image mode, "
-"but package layering is useful for things like libvirt, drivers, etc."
+"Package layering: Most Fedora packages can be installed on the system with "
+"the help of package layering.  By default the system operates in pure image "
+"mode, but package layering is useful for things like libvirt, drivers, etc."
 msgstr ""
 "Camada de pacote: a ferramenta rpm-ostree usada para atualizações de host é "
 "um sistema de imagem/pacote totalmente híbrido. Por padrão, o sistema opera "
@@ -246,14 +257,25 @@ msgstr ""
 "Após a conclusão do processo de instalação do repositório, a janela será "
 "atualizada para mostrar um botão “Remover” no lugar do botão “Instalar”."
 
+#. type: Plain text
+#: pages/getting-started.adoc:49
+msgid "Alternatively, you can use the following command from the terminal:"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:51
+#, no-wrap
+msgid " $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\n"
+msgstr ""
+
 #. type: Title ===
-#: pages/getting-started.adoc:48
+#: pages/getting-started.adoc:52
 #, no-wrap
 msgid "Installing Flatpak apps from Flathub"
 msgstr "Instalando aplicativos Flatpak do Flathub"
 
 #. type: Plain text
-#: pages/getting-started.adoc:52
+#: pages/getting-started.adoc:56
 #, fuzzy
 #| msgid ""
 #| "Once the Flathub repository has been setup, it can be used to install "
@@ -270,7 +292,7 @@ msgstr ""
 "home[site do Flathub]."
 
 #. type: Plain text
-#: pages/getting-started.adoc:55
+#: pages/getting-started.adoc:59
 #, fuzzy
 #| msgid ""
 #| "If you choose to install apps from the Flathub website, clicking \"Install"
@@ -292,7 +314,7 @@ msgstr ""
 "a página do LibreOffice e, em seguida, pressione o botão “Instalar” (2)."
 
 #. type: Plain text
-#: pages/getting-started.adoc:58
+#: pages/getting-started.adoc:62
 #, fuzzy
 #| msgid ""
 #| "After clicking the “Install” button, a download information window will "
@@ -308,19 +330,19 @@ msgstr ""
 "para iniciar a instalação do aplicativo LibreOffice."
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/getting-started.adoc:59
+#: pages/getting-started.adoc:63
 #, no-wrap
 msgid "LibreOffice Flatpak download"
 msgstr "Download do LibreOffice em Flatpak"
 
 #. type: Target for macro image
-#: pages/getting-started.adoc:59
+#: pages/getting-started.adoc:63
 #, no-wrap
 msgid "sfg_libreoffice_install.png"
 msgstr "sfg_libreoffice_install.png"
 
 #. type: Plain text
-#: pages/getting-started.adoc:63
+#: pages/getting-started.adoc:67
 #, fuzzy
 #| msgid ""
 #| "Once the Flatpak is downloaded, the Software application will open a new "
@@ -335,14 +357,42 @@ msgstr ""
 "janela com um botão “Instalar” (2). Clique neste botão para iniciar a "
 "instalação."
 
+#. type: Plain text
+#: pages/getting-started.adoc:69
+msgid ""
+"Alternatively, each application on flathub.org can be installed through the "
+"terminal by running the installation command at the bottom of the page that "
+"should look something like this:"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:71
+#, fuzzy, no-wrap
+#| msgid " $ rpm-ostree install <package name>\n"
+msgid " $ flatpak install flathub <package-name>\n"
+msgstr " $ rpm-ostree install <nome do pacote>\n"
+
+#. type: Plain text
+#: pages/getting-started.adoc:73
+msgid ""
+"As an example, Firefox can be installed by running the following command "
+"which can be found on Firefox's flathub page:"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:75
+#, no-wrap
+msgid " $ flatpak install flathub org.mozilla.firefox\n"
+msgstr ""
+
 #. type: Title ===
-#: pages/getting-started.adoc:64
+#: pages/getting-started.adoc:76
 #, no-wrap
 msgid "Flatpak command line"
 msgstr "Linha de comando do Flatpak"
 
 #. type: Plain text
-#: pages/getting-started.adoc:68
+#: pages/getting-started.adoc:79
 #, fuzzy
 #| msgid ""
 #| "In addition to using the Software app to install Flatpak apps, it is also "
@@ -350,10 +400,9 @@ msgstr "Linha de comando do Flatpak"
 #| "flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] for how "
 #| "to do this."
 msgid ""
-"In addition to using the Software app to install Flatpak apps, it is also "
-"possible to use the `flatpak` command line interface.  See the http://docs."
-"flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] for how to "
-"do this."
+"Additional details about the flatpak command line interface can be found in "
+"the official http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak "
+"documentation]."
 msgstr ""
 "Além de usar o aplicativo Programas para instalar aplicativos Flatpak, "
 "também é possível usar a interface de linha de comando `flatpak`. Consulte a "
@@ -361,13 +410,13 @@ msgstr ""
 "Flatpak] para saber como fazer isso."
 
 #. type: Title ==
-#: pages/getting-started.adoc:70
+#: pages/getting-started.adoc:81
 #, no-wrap
 msgid "Package layering"
 msgstr "Camada de pacote"
 
 #. type: Plain text
-#: pages/getting-started.adoc:74
+#: pages/getting-started.adoc:85
 #, fuzzy
 #| msgid ""
 #| "Package layering works by modifying your Silverblue installation. As the "
@@ -383,27 +432,27 @@ msgstr ""
 "composto."
 
 #. type: Plain text
-#: pages/getting-started.adoc:76
+#: pages/getting-started.adoc:87
 msgid "Good examples of packages to be layered would be:"
 msgstr "Bons exemplos de pacotes a serem dispostos em camadas seriam:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:78
+#: pages/getting-started.adoc:89
 msgid "`fish`: An alternative Unix shell"
 msgstr "`fish`: Um shell Unix alternativo"
 
 #. type: Plain text
-#: pages/getting-started.adoc:79
+#: pages/getting-started.adoc:90
 msgid "`sway`: A Wayland tiling compositor"
 msgstr "`sway`: Um compositor Wayland lado a lado"
 
 #. type: Plain text
-#: pages/getting-started.adoc:80
+#: pages/getting-started.adoc:91
 msgid "`libvirt`: The libvirt daemon"
 msgstr "`libvirt`: O daemon libvirt"
 
 #. type: Plain text
-#: pages/getting-started.adoc:82
+#: pages/getting-started.adoc:93
 #, fuzzy
 #| msgid ""
 #| "Most (but not all) RPM packages provided by Fedora can be installed on "
@@ -416,7 +465,7 @@ msgstr ""
 "instalados no Silverblue usando este método."
 
 #. type: Plain text
-#: pages/getting-started.adoc:87
+#: pages/getting-started.adoc:99
 #, fuzzy
 #| msgid ""
 #| "Currently, using package layering creates a new \"deployment\", or "
@@ -432,11 +481,11 @@ msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
 "rollback and the transactional model, but means that the system must be "
-"rebooted after a package has been layered.  If you don't want to reboot your "
-"system for switching to the new deployment, you can use an experimental `rpm-"
-"ostree ex apply-live` command to update the filesystem to see changes from "
-"new deployment, but it's generally expected that you use package layering "
-"sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
+"rebooted after a package has been layered or updated.  You can alternatively "
+"use `rpm-ostree install --apply-live <pkg>` to also temporarily apply the "
+"change directly to your currently booted deployment.  It's generally "
+"expected that you use package layering sparingly, and use `flatpak` and `dnf "
+"install` inside a `toolbox` etc."
 msgstr ""
 "Atualmente, o uso da camada de pacote cria uma nova \"implantação\" ou raiz "
 "do sistema de arquivos inicializável. Isso não afeta sua raiz atual. Isso "
@@ -449,7 +498,7 @@ msgstr ""
 "`flatpak` e `dnf install` dentro de uma `toolbox` etc."
 
 #. type: Plain text
-#: pages/getting-started.adoc:90
+#: pages/getting-started.adoc:102
 #, fuzzy
 #| msgid ""
 #| "Package layering is generally done from the command line. However, the "
@@ -466,26 +515,26 @@ msgstr ""
 "Flatpak."
 
 #. type: Title ===
-#: pages/getting-started.adoc:91
+#: pages/getting-started.adoc:103
 #, no-wrap
 msgid "Installing packages"
 msgstr "Instalando pacotes"
 
 #. type: Plain text
-#: pages/getting-started.adoc:94
+#: pages/getting-started.adoc:106
 #, fuzzy
 #| msgid "Packages can be installed on Silverblue using:"
 msgid "Packages can be installed on {variant-name} using:"
 msgstr "Pacotes podem ser instalados no Silverblue usando:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:96
+#: pages/getting-started.adoc:108
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
 msgstr " $ rpm-ostree install <nome do pacote>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:99
+#: pages/getting-started.adoc:111
 #, fuzzy
 #| msgid ""
 #| "This will download the package and any required dependencies, and "
@@ -505,7 +554,7 @@ msgstr ""
 "Silverblue, mas pode ser usado em um xref:toolbox.adoc[toolbox])."
 
 #. type: Plain text
-#: pages/getting-started.adoc:101
+#: pages/getting-started.adoc:113
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
@@ -515,13 +564,13 @@ msgstr ""
 "atualizado."
 
 #. type: Title ===
-#: pages/getting-started.adoc:102
+#: pages/getting-started.adoc:114
 #, no-wrap
 msgid "Replacing packages"
 msgstr "Substituindo pacotes"
 
 #. type: Plain text
-#: pages/getting-started.adoc:107
+#: pages/getting-started.adoc:119
 #, fuzzy
 #| msgid ""
 #| "In some scenarios, you may want to test out a new version of `podman` or "
@@ -540,13 +589,13 @@ msgstr ""
 "Você pode baixar o pacote localmente e executar:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:109
+#: pages/getting-started.adoc:121
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
 msgstr " $ rpm-ostree override replace <caminho para o pacote>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:112
+#: pages/getting-started.adoc:124
 #, fuzzy
 #| msgid ""
 #| "Or you can override packages without downloading using links from koji or "
@@ -559,13 +608,13 @@ msgstr ""
 "Por exemplo:"
 
 #. type: Plain text
-#: pages/getting-started.adoc:114
+#: pages/getting-started.adoc:126
 #, no-wrap
 msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 msgstr " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:116
+#: pages/getting-started.adoc:128
 msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
@@ -576,7 +625,7 @@ msgstr ""
 "aparecerão na raiz inicializada."
 
 #. type: Plain text
-#: pages/getting-started.adoc:118
+#: pages/getting-started.adoc:130
 #, fuzzy
 #| msgid ""
 #| "Removing and replacing packages using package layering is not generally "

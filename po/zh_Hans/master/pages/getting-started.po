@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-05 21:59+0000\n"
+"POT-Creation-Date: 2022-09-10 21:58+0000\n"
 "PO-Revision-Date: 2022-06-12 15:18+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -54,15 +54,26 @@ msgstr "Flatpak：这是在 {variant-name} 安装图形化应用的主要方式�
 
 #. type: Plain text
 #: pages/getting-started.adoc:12
-msgid "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
+#, fuzzy
+#| msgid ""
+#| "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
+msgid ""
+"Toolbox: Used primarily for CLI apps; development, debugging tools, etc., "
+"but also has support for graphical apps."
 msgstr "Toolbox：安装命令行应用的主要方式，也是开发调试主要使用的工具。"
 
 #. type: Plain text
 #: pages/getting-started.adoc:14
+#, fuzzy
+#| msgid ""
+#| "Package layering: The rpm-ostree tool used for host updates is a full "
+#| "hybrid image/package system.  By default the system operates in pure "
+#| "image mode, but package layering is useful for things like libvirt, "
+#| "drivers, etc."
 msgid ""
-"Package layering: The rpm-ostree tool used for host updates is a full hybrid "
-"image/package system.  By default the system operates in pure image mode, "
-"but package layering is useful for things like libvirt, drivers, etc."
+"Package layering: Most Fedora packages can be installed on the system with "
+"the help of package layering.  By default the system operates in pure image "
+"mode, but package layering is useful for things like libvirt, drivers, etc."
 msgstr ""
 "软件包层叠：rpm-ostree 使得混合映像/软件包系统成为可能。在默认设置下，系统以"
 "纯映像模式运行，而软件包层叠为虚拟化、驱动等提供了支持。"
@@ -201,14 +212,25 @@ msgid ""
 "updated to show a “Remove\" button in place of the “Install” button."
 msgstr "当软件源安装完成，『安装』按钮就会被『移除』按钮取代。"
 
+#. type: Plain text
+#: pages/getting-started.adoc:49
+msgid "Alternatively, you can use the following command from the terminal:"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:51
+#, no-wrap
+msgid " $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\n"
+msgstr ""
+
 #. type: Title ===
-#: pages/getting-started.adoc:48
+#: pages/getting-started.adoc:52
 #, no-wrap
 msgid "Installing Flatpak apps from Flathub"
 msgstr "从 Flathub 安装 Flatpak 应用程序"
 
 #. type: Plain text
-#: pages/getting-started.adoc:52
+#: pages/getting-started.adoc:56
 msgid ""
 "Once the Flathub repository has been setup, it can be used to install "
 "Flatpak apps.  This can be done directly from the Software app, or apps can "
@@ -219,7 +241,7 @@ msgstr ""
 "home[Flathub 网站] 浏览应用。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:55
+#: pages/getting-started.adoc:59
 msgid ""
 "If you choose to install apps from the Flathub website, clicking \"Install\" "
 "will download a file which will be opened by the Software app, which can "
@@ -233,7 +255,7 @@ msgstr ""
 "Install 按钮。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:58
+#: pages/getting-started.adoc:62
 msgid ""
 "After clicking the “Install” button, a download information window will be "
 "shown.  Verify the correct Flatpak has been downloaded and then click on the "
@@ -243,19 +265,19 @@ msgstr ""
 "用程序相匹配就可以点击『确定』开始下载。"
 
 #. type: Named 'title' AttributeList argument for macro 'image'
-#: pages/getting-started.adoc:59
+#: pages/getting-started.adoc:63
 #, no-wrap
 msgid "LibreOffice Flatpak download"
 msgstr "下载 LibreOffice Flatpak"
 
 #. type: Target for macro image
-#: pages/getting-started.adoc:59
+#: pages/getting-started.adoc:63
 #, no-wrap
 msgid "sfg_libreoffice_install.png"
 msgstr "sfg_libreoffice_install.png"
 
 #. type: Plain text
-#: pages/getting-started.adoc:63
+#: pages/getting-started.adoc:67
 msgid ""
 "Once the Flatpak is downloaded, the Software application will open a new "
 "window with an “Install” button (2).  Click this button to begin "
@@ -264,32 +286,65 @@ msgstr ""
 "当 Flatpak 信息文件成功下载，GNOME 商店就会弹出，点击上面的『安装』按钮就可以"
 "开始安装了。"
 
+#. type: Plain text
+#: pages/getting-started.adoc:69
+msgid ""
+"Alternatively, each application on flathub.org can be installed through the "
+"terminal by running the installation command at the bottom of the page that "
+"should look something like this:"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:71
+#, fuzzy, no-wrap
+#| msgid " $ rpm-ostree install <package name>\n"
+msgid " $ flatpak install flathub <package-name>\n"
+msgstr " $ rpm-ostree install <package name>\n"
+
+#. type: Plain text
+#: pages/getting-started.adoc:73
+msgid ""
+"As an example, Firefox can be installed by running the following command "
+"which can be found on Firefox's flathub page:"
+msgstr ""
+
+#. type: Plain text
+#: pages/getting-started.adoc:75
+#, no-wrap
+msgid " $ flatpak install flathub org.mozilla.firefox\n"
+msgstr ""
+
 #. type: Title ===
-#: pages/getting-started.adoc:64
+#: pages/getting-started.adoc:76
 #, no-wrap
 msgid "Flatpak command line"
 msgstr "Flatpak 命令行工具"
 
 #. type: Plain text
-#: pages/getting-started.adoc:68
+#: pages/getting-started.adoc:79
+#, fuzzy
+#| msgid ""
+#| "In addition to using the Software app to install Flatpak apps, it is also "
+#| "possible to use the `flatpak` command line interface.  See the http://"
+#| "docs.flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] for "
+#| "how to do this."
 msgid ""
-"In addition to using the Software app to install Flatpak apps, it is also "
-"possible to use the `flatpak` command line interface.  See the http://docs."
-"flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] for how to "
-"do this."
+"Additional details about the flatpak command line interface can be found in "
+"the official http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak "
+"documentation]."
 msgstr ""
 "除了使用 GNOME 商店安装 Flatpak 应用之外，也可以使用 `flatpak` 命令行工具。请"
 "阅读 http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak 文档] 了解"
 "命令行工具的使用方法。"
 
 #. type: Title ==
-#: pages/getting-started.adoc:70
+#: pages/getting-started.adoc:81
 #, no-wrap
 msgid "Package layering"
 msgstr "软件包层叠"
 
 #. type: Plain text
-#: pages/getting-started.adoc:74
+#: pages/getting-started.adoc:85
 msgid ""
 "Package layering works by modifying your {variant-name} installation.  As "
 "the name implies, it works by extending the packages from which {variant-"
@@ -299,27 +354,27 @@ msgstr ""
 "{variant-name} 构建时拓展软件包而工作。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:76
+#: pages/getting-started.adoc:87
 msgid "Good examples of packages to be layered would be:"
 msgstr "适合软件包层叠的一些好例子包括："
 
 #. type: Plain text
-#: pages/getting-started.adoc:78
+#: pages/getting-started.adoc:89
 msgid "`fish`: An alternative Unix shell"
 msgstr "`fish`：一个备选的 UNIX Shell"
 
 #. type: Plain text
-#: pages/getting-started.adoc:79
+#: pages/getting-started.adoc:90
 msgid "`sway`: A Wayland tiling compositor"
 msgstr "`sway`：一个基于 Wayland 的平铺窗口管理器"
 
 #. type: Plain text
-#: pages/getting-started.adoc:80
+#: pages/getting-started.adoc:91
 msgid "`libvirt`: The libvirt daemon"
 msgstr "`libvirt`：libvirt 守护进程"
 
 #. type: Plain text
-#: pages/getting-started.adoc:82
+#: pages/getting-started.adoc:93
 msgid ""
 "Most (but not all) RPM packages provided by Fedora can be installed on "
 "{variant-name} using this method."
@@ -328,16 +383,27 @@ msgstr ""
 "name} 上。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:87
+#: pages/getting-started.adoc:99
+#, fuzzy
+#| msgid ""
+#| "Currently, using package layering creates a new \"deployment\", or "
+#| "bootable filesystem root.  It does not affect your current root.  This "
+#| "preserves rollback and the transactional model, but means that the system "
+#| "must be rebooted after a package has been layered.  If you don't want to "
+#| "reboot your system for switching to the new deployment, you can use an "
+#| "experimental `rpm-ostree ex apply-live` command to update the filesystem "
+#| "to see changes from new deployment, but it's generally expected that you "
+#| "use package layering sparingly, and use `flatpak` and `dnf install` "
+#| "inside a `toolbox` etc."
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
 "rollback and the transactional model, but means that the system must be "
-"rebooted after a package has been layered.  If you don't want to reboot your "
-"system for switching to the new deployment, you can use an experimental `rpm-"
-"ostree ex apply-live` command to update the filesystem to see changes from "
-"new deployment, but it's generally expected that you use package layering "
-"sparingly, and use `flatpak` and `dnf install` inside a `toolbox` etc."
+"rebooted after a package has been layered or updated.  You can alternatively "
+"use `rpm-ostree install --apply-live <pkg>` to also temporarily apply the "
+"change directly to your currently booted deployment.  It's generally "
+"expected that you use package layering sparingly, and use `flatpak` and `dnf "
+"install` inside a `toolbox` etc."
 msgstr ""
 "目前来说，每执行一次软件包层叠都会创建一个新的『部署』，换言之就是可启动的系"
 "统。它并不会影响你当前的系统，也使回滚和事务模型得到保留，但也意味着在层叠软"
@@ -346,7 +412,7 @@ msgstr ""
 "叠，在可以的时候尽可能采用 `flatpak` 或者在 `toolbox` 使用 `dnf install` 。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:90
+#: pages/getting-started.adoc:102
 msgid ""
 "Package layering is generally done from the command line.  However, the "
 "Software application does rely on it for installing a small number of apps "
@@ -356,24 +422,24 @@ msgstr ""
 "装一些难以通过 Flatpak 的形式安装的应用程序。"
 
 #. type: Title ===
-#: pages/getting-started.adoc:91
+#: pages/getting-started.adoc:103
 #, no-wrap
 msgid "Installing packages"
 msgstr "安装软件包"
 
 #. type: Plain text
-#: pages/getting-started.adoc:94
+#: pages/getting-started.adoc:106
 msgid "Packages can be installed on {variant-name} using:"
 msgstr "在 {variant-name}，我们使用下面的命令安装软件包："
 
 #. type: Plain text
-#: pages/getting-started.adoc:96
+#: pages/getting-started.adoc:108
 #, no-wrap
 msgid " $ rpm-ostree install <package name>\n"
 msgstr " $ rpm-ostree install <package name>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:99
+#: pages/getting-started.adoc:111
 msgid ""
 "This will download the package and any required dependencies, and recompose "
 "your {variant-name} image with them.  `rpm-ostree` uses standard Fedora "
@@ -386,7 +452,7 @@ msgstr ""
 "它）。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:101
+#: pages/getting-started.adoc:113
 msgid ""
 "Once a package has been installed in this manner, it will be kept up-to-date "
 "as new versions are released and as the base operating system is updated."
@@ -394,13 +460,13 @@ msgstr ""
 "当软件包通过这种方式安装之后，它就会随着 Silverblue 映像一起保持着最新状态。"
 
 #. type: Title ===
-#: pages/getting-started.adoc:102
+#: pages/getting-started.adoc:114
 #, no-wrap
 msgid "Replacing packages"
 msgstr "替换软件包"
 
 #. type: Plain text
-#: pages/getting-started.adoc:107
+#: pages/getting-started.adoc:119
 msgid ""
 "In some scenarios, you may want to test out a new version of `podman` or "
 "`kernel` or other packages that live on the host.  The `rpm-ostree override` "
@@ -412,26 +478,26 @@ msgstr ""
 "载软件包到本地，然后执行："
 
 #. type: Plain text
-#: pages/getting-started.adoc:109
+#: pages/getting-started.adoc:121
 #, no-wrap
 msgid " $ rpm-ostree override replace <path to package>\n"
 msgstr " $ rpm-ostree override replace <path to package>\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:112
+#: pages/getting-started.adoc:124
 msgid ""
 "Or you can override packages without downloading using links from koji or "
 "bodhi.  For example:"
 msgstr "或者你也可以直接使用 koji 或 bodhi 的链接以进行软件包替换。例如："
 
 #. type: Plain text
-#: pages/getting-started.adoc:114
+#: pages/getting-started.adoc:126
 #, no-wrap
 msgid " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 msgstr " $ rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-3.1.2-1.fc34.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/podman/3.1.2/1.fc34/x86_64/podman-plugins-3.1.2-1.fc34.x86_64.rpm\n"
 
 #. type: Plain text
-#: pages/getting-started.adoc:116
+#: pages/getting-started.adoc:128
 msgid ""
 "You may also use `override remove` to effectively \"hide\" packages; they "
 "will still exist in the underlying base layer, but will not appear in the "
@@ -441,7 +507,7 @@ msgstr ""
 "会在部署的系统中出现。"
 
 #. type: Plain text
-#: pages/getting-started.adoc:118
+#: pages/getting-started.adoc:130
 msgid ""
 "Removing and replacing packages using package layering is not generally "
 "recommended.  For more information, see the https://coreos.github.io/rpm-"
