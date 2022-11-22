@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-16 22:01+0000\n"
+"POT-Creation-Date: 2022-11-22 21:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,17 +25,110 @@ msgstr ""
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:3
 #, no-wrap
+msgid "Hidding the default browser (Firefox)"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:6
+msgid ""
+"If you're using another browser than the one installed by default (Firefox) "
+"then you can hide the default one from the interface via the following "
+"commands:"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:13
+msgid ""
+"``` $ sudo mkdir -p /usr/local/share/applications/ $ sudo cp /usr/share/"
+"applications/firefox.desktop /usr/local/share/applications/ $ sudo sed -i "
+"\"2a\\\\NotShowIn=GNOME;KDE\" /usr/local/share/applications/firefox.desktop "
+"$ sudo update-desktop-database /usr/local/share/applications/ ```"
+msgstr ""
+
+#. type: Title ==
+#: pages/tips-and-tricks.adoc:14
+#, no-wrap
+msgid "Enabling RPM Fusion repos"
+msgstr ""
+
+#. type: delimited block =
+#: pages/tips-and-tricks.adoc:21
+msgid ""
+"This section discusses third-party software sources not officially "
+"affiliated with or endorsed by the Fedora Project.  Use them at your own "
+"discretion.  Fedora recommends the use of free and open source software and "
+"avoidance of software encumbered by patents."
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:24
+msgid ""
+"Users may want to take advantage of the non-free software that is made "
+"available via the https://rpmfusion.org/[RPM Fusion] repos in order to use "
+"the proprietary NVIDIA drivers, multimedia codecs, or other software not "
+"distributed as part of Fedora."
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:26
+msgid ""
+"The first time you install the RPM Fusion repos, you need to install the "
+"versioned RPMs:"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:31
+#, no-wrap
+msgid ""
+"    $ sudo rpm-ostree install \\\n"
+"        https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \\\n"
+"        https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm\n"
+"    $ reboot\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:35
+msgid ""
+"Once you have rebooted into the new deployment, you can run the following "
+"command to remove the “lock” on the versioned packages that were installed "
+"previously.  This will enable the RPM Fusion repos to be automatically "
+"updated and versioned correctly across major Fedora version rebases:"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:42
+#, no-wrap
+msgid ""
+"    $ sudo rpm-ostree update \\\n"
+"        --uninstall rpmfusion-free-release \\\n"
+"        --uninstall rpmfusion-nonfree-release \\\n"
+"        --install rpmfusion-free-release \\\n"
+"        --install rpmfusion-nonfree-release\n"
+"    $ reboot\n"
+msgstr ""
+
+#. type: Plain text
+#: pages/tips-and-tricks.adoc:44
+msgid ""
+"For more information, see https://discussion.fedoraproject.org/t/simplifying-"
+"updates-for-rpm-fusion-packages-and-other-packages-shipping-their-own-rpm-"
+"repos/30364[this thread] on the Fedora Discourse site."
+msgstr ""
+
+#. type: Title ==
+#: pages/tips-and-tricks.adoc:45
+#, no-wrap
 msgid "Working with Toolbx"
 msgstr ""
 
 #. type: Title ===
-#: pages/tips-and-tricks.adoc:5
+#: pages/tips-and-tricks.adoc:47
 #, no-wrap
 msgid "Finding out if you are currently in a Toolbx container"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:9
+#: pages/tips-and-tricks.adoc:51
 msgid ""
 "If you frequently make use of Toolbx to perform various tasks and use "
 "multiple Toolbx containers it can be hard to keep track of whether you are "
@@ -45,46 +138,46 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:11
+#: pages/tips-and-tricks.adoc:53
 msgid ""
 "To alleviate this, you can add the following shell alias at the end of your "
 "`~/.bashrc`:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:13
+#: pages/tips-and-tricks.adoc:55
 #, no-wrap
 msgid "  alias istoolbx='[ -f \"/run/.toolboxenv\" ] && grep -oP \"(?<=name=\\\")[^\\\";]+\" /run/.containerenv'\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:16
+#: pages/tips-and-tricks.adoc:58
 msgid ""
 "When you open a new shell, you now have access to the new command "
 "`istoolbx`.  This will behave as follows:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:18
+#: pages/tips-and-tricks.adoc:60
 msgid "When run from the host, returns an exit code of 1"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:19
+#: pages/tips-and-tricks.adoc:61
 msgid ""
 "When run from a Toolbx container, returns an exit code of 0 and prints the "
 "current Toolbx containers name to the console"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:21
+#: pages/tips-and-tricks.adoc:63
 msgid ""
 "If a more automated solution is your preference the following added to your "
 "`~/.bashrc` will change your bash prompt to include \"[toolbox <name>]\":"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:31
+#: pages/tips-and-tricks.adoc:73
 #, no-wrap
 msgid ""
 "```\n"
@@ -99,7 +192,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:33
+#: pages/tips-and-tricks.adoc:75
 msgid ""
 "Now you can include `is_toolbox` in your `PS1` variable and not need to "
 "execute any extra commands in order to know whether or not your are in a "
@@ -107,33 +200,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:38
+#: pages/tips-and-tricks.adoc:80
 msgid ""
 "Example: ``` export PS1=\"\\[\\e[31m\\]\\`is_toolbox\\`\\]\\e[m\\]\\[\\e[32m"
 "\\]\\\\$ \\[\\e[m\\]\\[\\e[37m\\]❱\\[\\e[m\\] \" ```"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:40
+#: pages/tips-and-tricks.adoc:82
 msgid ""
 "This results in a prompt which appears as such when not in a toolbox: `$ ❱`"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:42
+#: pages/tips-and-tricks.adoc:84
 msgid ""
 "However, when running in a toolbox named \"default\" looks like: `[toolbox "
 "default]$ ❱`"
 msgstr ""
 
 #. type: Title ===
-#: pages/tips-and-tricks.adoc:43
+#: pages/tips-and-tricks.adoc:85
 #, no-wrap
 msgid "Running applications from inside Toolbx on the host"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:47
+#: pages/tips-and-tricks.adoc:89
 msgid ""
 "This can be necessary if you want to interact with tools available from the "
 "host, for example `podman`, `nmcli` or `rpm-ostree` without leaving the "
@@ -142,26 +235,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:49
+#: pages/tips-and-tricks.adoc:91
 #, no-wrap
 msgid "  $ flatpak-spawn --host podman --help\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:51
+#: pages/tips-and-tricks.adoc:93
 msgid ""
 "If the application you want to call requires `sudo` access, the `-S` option "
 "must be supplied to `sudo` like below:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:53
+#: pages/tips-and-tricks.adoc:95
 #, no-wrap
 msgid "  $ flatpak-spawn --host sudo -S rpm-ostree status\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:56
+#: pages/tips-and-tricks.adoc:98
 msgid ""
 "If you find yourself using commands like these frequently to access e.g. the "
 "flatpak command from inside the Toolbx container, you can create yourself a "
@@ -170,21 +263,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:58
+#: pages/tips-and-tricks.adoc:100
 msgid ""
 "Define the `istoolbx` alias (for convenience) by executing the command "
 "mentioned above in your terminal"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:61
+#: pages/tips-and-tricks.adoc:103
 msgid ""
 "Make sure you are in a Toolbx container.  If the following command doesn't "
 "produce any output, you are likely still working on the host!"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:64
+#: pages/tips-and-tricks.adoc:106
 #, no-wrap
 msgid ""
 "[toolbx]$ istoolbx\n"
@@ -192,39 +285,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:66
+#: pages/tips-and-tricks.adoc:108
 msgid ""
 "Once you have made sure you're in a Toolbx container, execute the following "
 "command:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:68
+#: pages/tips-and-tricks.adoc:110
 #, no-wrap
 msgid "[toolbx]$ echo -e '#!/bin/sh\\nexec /usr/bin/flatpak-spawn --host flatpak \"$@\"' | sudo tee /usr/local/bin/flatpak 1>/dev/null && sudo chmod +x /usr/local/bin/flatpak\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:70
+#: pages/tips-and-tricks.adoc:112
 msgid ""
 "You now have a `flatpak` command available that allows you to interact with "
 "`flatpak` as if you were running the command on the host."
 msgstr ""
 
 #. type: Title ==
-#: pages/tips-and-tricks.adoc:71
+#: pages/tips-and-tricks.adoc:113
 #, no-wrap
 msgid "Working with `ostree`/`rpm-ostree`"
 msgstr ""
 
 #. type: Title ===
-#: pages/tips-and-tricks.adoc:73
+#: pages/tips-and-tricks.adoc:115
 #, no-wrap
 msgid "Tracking changes to the base OS"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:77
+#: pages/tips-and-tricks.adoc:119
 msgid ""
 "Some directories in `ostree`-based operating systems are writable by the "
 "user, like `/etc`.  You can get a quick overview of the files changed under "
@@ -232,24 +325,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:79
+#: pages/tips-and-tricks.adoc:121
 #, no-wrap
 msgid "  $ sudo ostree admin config-diff\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:81
+#: pages/tips-and-tricks.adoc:123
 msgid "To get a more elaborate diff, you can use something like this:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:83
+#: pages/tips-and-tricks.adoc:125
 #, no-wrap
 msgid "  $ sudo diff -yrW200 --suppress-common-lines --color=always /usr/etc /etc 2>/dev/null\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:86
+#: pages/tips-and-tricks.adoc:128
 #, no-wrap
 msgid ""
 "This works because ostree keeps an unmodified copy of the `/etc` directory under `/usr/etc`.\n"
@@ -257,19 +350,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: pages/tips-and-tricks.adoc:87
+#: pages/tips-and-tricks.adoc:129
 #, no-wrap
 msgid "Working with Flatpak applications"
 msgstr ""
 
 #. type: Title ===
-#: pages/tips-and-tricks.adoc:89
+#: pages/tips-and-tricks.adoc:131
 #, no-wrap
 msgid "Directly accessing Flatpak applications from the CLI"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:92
+#: pages/tips-and-tricks.adoc:134
 msgid ""
 "The most noticable change when using Flatpak applications instead of "
 "conventional installations is that the applications cannot be directly "
@@ -277,7 +370,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:95
+#: pages/tips-and-tricks.adoc:137
 #, no-wrap
 msgid ""
 "  $ evince\n"
@@ -285,69 +378,69 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:97
+#: pages/tips-and-tricks.adoc:139
 msgid "Instead, one can call them like this:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:99
+#: pages/tips-and-tricks.adoc:141
 #, no-wrap
 msgid "  $ flatpak run org.gnome.Evince\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:101
+#: pages/tips-and-tricks.adoc:143
 msgid ""
 "In addition, most Flatpak applications export their internal binaries under "
 "an installation-dependent location:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:103
+#: pages/tips-and-tricks.adoc:145
 msgid ""
 "For Flatpak applications installed from `system` remotes, these can be found "
 "under `/var/lib/flatpak/exports/bin/`"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:104
+#: pages/tips-and-tricks.adoc:146
 msgid ""
 "For Flatpak applications installed from `user` remotes, these can be found "
 "under `$HOME/.local/share/flatpak/exports/bin/`"
 msgstr ""
 
 #. type: delimited block =
-#: pages/tips-and-tricks.adoc:108
+#: pages/tips-and-tricks.adoc:150
 msgid ""
 "If you're unsure to which installation a Flatpak application belongs, you "
 "can use this command to print it out:"
 msgstr ""
 
 #. type: delimited block =
-#: pages/tips-and-tricks.adoc:110
+#: pages/tips-and-tricks.adoc:152
 #, no-wrap
 msgid "  $ flatpak list --app --columns=name,installation\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:113
+#: pages/tips-and-tricks.adoc:155
 msgid "You can then either add these directories to your `$PATH`:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:115
+#: pages/tips-and-tricks.adoc:157
 #, no-wrap
 msgid "  $ org.gnome.Evince\n"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:117
+#: pages/tips-and-tricks.adoc:159
 msgid ""
 "or setup shell `alias`es as needed to make them available to the CLI like so:"
 msgstr ""
 
 #. type: Plain text
-#: pages/tips-and-tricks.adoc:120
+#: pages/tips-and-tricks.adoc:162
 #, no-wrap
 msgid ""
 "  $ alias evince=\"flatpak run org.gnome.Evince\"\n"
