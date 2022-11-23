@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-11-22 21:58+0000\n"
-"PO-Revision-Date: 2022-09-07 15:19+0000\n"
+"PO-Revision-Date: 2022-11-23 23:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/"
-">\n"
+"fedora-docs-l10n-fedora-silverblue/masterpagesupdates-upgrades-rollbacks/uk/>"
+"\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #. type: Title =
 #: pages/updates-upgrades-rollbacks.adoc:2
@@ -127,6 +127,10 @@ msgid ""
 "Skipping major releases is currently untested and is thus not supported.\n"
 "         You should update only one major release at a time, i.e. from Fedora 35 to 36, etc.\n"
 msgstr ""
+"Пропускання основних випусків у поточній версії не перевірялося, а отже, "
+"його підтримку не передбачено.\n"
+"         Вам слід послідовно оновлюватися до кожного наступного випуску, "
+"тобто з Fedora 35 до 36 тощо.\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:37
@@ -134,27 +138,25 @@ msgid ""
 "First, make sure that you are running the latest update for the current "
 "version:"
 msgstr ""
+"По-перше, переконайтеся, що ви працюєте із найсвіжішим оновленням поточної "
+"версії:"
 
 #. type: delimited block -
 #: pages/updates-upgrades-rollbacks.adoc:41
-#, fuzzy, no-wrap
-#| msgid " $ rpm-ostree upgrade\n"
+#, no-wrap
 msgid "$ rpm-ostree upgrade\n"
-msgstr " $ rpm-ostree upgrade\n"
+msgstr "$ rpm-ostree upgrade\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:46
-#, fuzzy
-#| msgid ""
-#| "First, verify the branch is available.  You can print all available "
-#| "branches with this command:"
 msgid ""
 "Reboot your system if needed.  Then, verify that the branch for the next "
 "major version is available.  You can print all available branches for "
 "{variant-name} with this command:"
 msgstr ""
-"Спочатку перевірте доступність гілки. Ви можете переглянути усі доступні "
-"гілки за допомогою такої команди:"
+"Перезавантажте систему, якщо це потрібно. Далі, перевірте доступність гілки "
+"наступної основної версії. Ви можете переглянути усі доступні гілки для "
+"{variant-name} за допомогою такої команди:"
 
 #. type: delimited block -
 #: pages/updates-upgrades-rollbacks.adoc:50
@@ -164,10 +166,6 @@ msgstr "$ ostree remote refs fedora | grep {variant}\n"
 
 #. type: Plain text
 #: pages/updates-upgrades-rollbacks.adoc:54
-#, fuzzy
-#| msgid ""
-#| "After you verify the name of your branch, you are ready to proceed.  For "
-#| "example, to upgrade to {variant-name} {version}, the command is:"
 msgid ""
 "After you've verified the name of your branch, you are ready to proceed.  "
 "For example, to upgrade to {variant-name} {version}, the command is:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-10 21:58+0000\n"
-"PO-Revision-Date: 2022-09-07 15:19+0000\n"
+"PO-Revision-Date: 2022-11-23 23:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagesgetting-started/uk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #. type: Title =
 #: pages/getting-started.adoc:2
@@ -60,33 +60,25 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:12
-#, fuzzy
-#| msgid ""
-#| "Toolbox: Used primarily for CLI apps; development, debugging tools etc."
 msgid ""
 "Toolbox: Used primarily for CLI apps; development, debugging tools, etc., "
 "but also has support for graphical apps."
 msgstr ""
 "Toolbox: використовується в основному для програм із текстовим інтерфейсом "
-"командного рядка, інструментів діагностики тощо."
+"командного рядка, інструментів діагностики тощо, але також має підтримку "
+"програм із графічним інтерфейсом."
 
 #. type: Plain text
 #: pages/getting-started.adoc:14
-#, fuzzy
-#| msgid ""
-#| "Package layering: The rpm-ostree tool used for host updates is a full "
-#| "hybrid image/package system.  By default the system operates in pure "
-#| "image mode, but package layering is useful for things like libvirt, "
-#| "drivers, etc."
 msgid ""
 "Package layering: Most Fedora packages can be installed on the system with "
 "the help of package layering.  By default the system operates in pure image "
 "mode, but package layering is useful for things like libvirt, drivers, etc."
 msgstr ""
-"Нашаровування пакунків: для зберігання оновлень у повному гібридному образі "
-"або системі пакунків використовується інструментарій rpm-ostree. Типово, "
-"система працює у режимі чистого образу, але нашаровування пакунків корисне "
-"для встановлення libvirt, драйверів тощо."
+"Нашаровування пакунків: більшість пакунків Fedora може бути встановлено у "
+"системі за допомогою нашаровування пакунків. Типово, система працює у режимі "
+"чистого образу, але нашаровування пакунків корисне для встановлення libvirt, "
+"драйверів тощо."
 
 #. type: Plain text
 #: pages/getting-started.adoc:16
@@ -223,13 +215,15 @@ msgstr ""
 #. type: Plain text
 #: pages/getting-started.adoc:49
 msgid "Alternatively, you can use the following command from the terminal:"
-msgstr ""
+msgstr "Крім того, ви можете скористатися такою командою у терміналі:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:51
 #, no-wrap
 msgid " $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\n"
 msgstr ""
+" $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/"
+"flathub.flatpakrepo\n"
 
 #. type: Title ===
 #: pages/getting-started.adoc:52
@@ -306,13 +300,15 @@ msgid ""
 "terminal by running the installation command at the bottom of the page that "
 "should look something like this:"
 msgstr ""
+"Крім того, будь-яку програму з flathub.org може бути встановлено з термінала "
+"за допомогою команди встановлення, наведеної унизу сторінки, якам має "
+"виглядати десь так:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:71
-#, fuzzy, no-wrap
-#| msgid " $ rpm-ostree install <package name>\n"
+#, no-wrap
 msgid " $ flatpak install flathub <package-name>\n"
-msgstr " $ rpm-ostree install <назва пакунка>\n"
+msgstr " $ flatpak install flathub <назва пакунка>\n"
 
 #. type: Plain text
 #: pages/getting-started.adoc:73
@@ -320,12 +316,14 @@ msgid ""
 "As an example, Firefox can be installed by running the following command "
 "which can be found on Firefox's flathub page:"
 msgstr ""
+"Наприклад, Firefox можна встановити за допомогою вказаної нижче команди, яку "
+"наведено на сторінці Firefox на flathub:"
 
 #. type: Plain text
 #: pages/getting-started.adoc:75
 #, no-wrap
 msgid " $ flatpak install flathub org.mozilla.firefox\n"
-msgstr ""
+msgstr " $ flatpak install flathub org.mozilla.firefox\n"
 
 #. type: Title ===
 #: pages/getting-started.adoc:76
@@ -335,21 +333,13 @@ msgstr "Командний рядок Flatpak"
 
 #. type: Plain text
 #: pages/getting-started.adoc:79
-#, fuzzy
-#| msgid ""
-#| "In addition to using the Software app to install Flatpak apps, it is also "
-#| "possible to use the `flatpak` command line interface.  See the http://"
-#| "docs.flatpak.org/en/latest/using-flatpak.html[Flatpak documentation] for "
-#| "how to do this."
 msgid ""
 "Additional details about the flatpak command line interface can be found in "
 "the official http://docs.flatpak.org/en/latest/using-flatpak.html[Flatpak "
 "documentation]."
 msgstr ""
-"Окрім використання для встановлення програм з пакунків Flatpak програми "
-"«Програмне забезпечення», ви можете скористатися інтерфейсом командного "
-"рядка `flatpak`. Щоб дізнатися більше про те, як це зробити, ознайомтеся із "
-"http://docs.flatpak.org/en/latest/using-flatpak.html[документацією до "
+"Подробиці щодо інтерфейсу командного рядка flatpak наведено в офіційній "
+"http://docs.flatpak.org/en/latest/using-flatpak.html[документації до "
 "Flatpak]."
 
 #. type: Title ==
@@ -400,17 +390,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/getting-started.adoc:99
-#, fuzzy
-#| msgid ""
-#| "Currently, using package layering creates a new \"deployment\", or "
-#| "bootable filesystem root.  It does not affect your current root.  This "
-#| "preserves rollback and the transactional model, but means that the system "
-#| "must be rebooted after a package has been layered.  If you don't want to "
-#| "reboot your system for switching to the new deployment, you can use an "
-#| "experimental `rpm-ostree ex apply-live` command to update the filesystem "
-#| "to see changes from new deployment, but it's generally expected that you "
-#| "use package layering sparingly, and use `flatpak` and `dnf install` "
-#| "inside a `toolbox` etc."
 msgid ""
 "Currently, using package layering creates a new \"deployment\", or bootable "
 "filesystem root.  It does not affect your current root.  This preserves "
@@ -425,14 +404,12 @@ msgstr ""
 "«розгортання» — придатної до завантаження кореневої файлової системи. Змін "
 "до поточної кореневої файлової системи не вноситься. Таким чином "
 "забезпечується робота моделі із можливістю повернення до попереднього стану "
-"і атомарними діями з системою. Втім, це означає, що після нашаровування "
-"пакунка систему доведеться перезавантажити. Якщо вам не хочеться "
-"перезавантажувати вашу систему для перемикання на новий розгорнутий варіант, "
-"можете поекспериментувати із командою `rpm-ostree ex apply-live` для "
-"оновлення файлової системи з метою впровадження змін з нової розгорнутої "
-"версії, але автори дистрибутива припускають, що ви не зловживатимете "
-"встановленням нашарованих пакунків і користуватиметеся `flatpak` і `dnf "
-"install` всередині `toolbox`."
+"і атомарними діями з системою. Втім, це означає, що після нашаровування або "
+"оновлення пакунка систему доведеться перезавантажити. Крім того, ви можете "
+"скористатися `rpm-ostree install --apply-live <пакунок>`, щоб тимчасово "
+"застосувати зміни безпосередньо до завантаженої розгорнутої системи. Автори "
+"дистрибутива припускають, що ви не зловживатимете встановленням нашарованих "
+"пакунків і користуватиметеся `flatpak` і `dnf install` всередині `toolbox`."
 
 #. type: Plain text
 #: pages/getting-started.adoc:102

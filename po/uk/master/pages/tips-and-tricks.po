@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-11-22 21:58+0000\n"
-"PO-Revision-Date: 2022-05-18 06:18+0000\n"
+"PO-Revision-Date: 2022-11-23 23:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestips-and-tricks/uk/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #. type: Title =
 #: pages/tips-and-tricks.adoc:1
@@ -28,7 +28,7 @@ msgstr "Підказки і настанови"
 #: pages/tips-and-tricks.adoc:3
 #, no-wrap
 msgid "Hidding the default browser (Firefox)"
-msgstr ""
+msgstr "Приховування типової програми для перегляду інтернету (Firefox)"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:6
@@ -37,6 +37,9 @@ msgid ""
 "then you can hide the default one from the interface via the following "
 "commands:"
 msgstr ""
+"Якщо ви користуєтеся іншою програмою для перегляду інтернету, ніж типова "
+"(Firefox), ви можете приховати типову програму з інтерфейсу за допомогою "
+"таких команд:"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:13
@@ -46,12 +49,16 @@ msgid ""
 "\"2a\\\\NotShowIn=GNOME;KDE\" /usr/local/share/applications/firefox.desktop "
 "$ sudo update-desktop-database /usr/local/share/applications/ ```"
 msgstr ""
+"``` $ sudo mkdir -p /usr/local/share/applications/ $ sudo cp /usr/share/"
+"applications/firefox.desktop /usr/local/share/applications/ $ sudo sed -i "
+"\"2a\\\\NotShowIn=GNOME;KDE\" /usr/local/share/applications/firefox.desktop $"
+" sudo update-desktop-database /usr/local/share/applications/ ```"
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:14
 #, no-wrap
 msgid "Enabling RPM Fusion repos"
-msgstr ""
+msgstr "Вмикання сховищ RPM Fusion"
 
 #. type: delimited block =
 #: pages/tips-and-tricks.adoc:21
@@ -61,6 +68,11 @@ msgid ""
 "discretion.  Fedora recommends the use of free and open source software and "
 "avoidance of software encumbered by patents."
 msgstr ""
+"У цьому розділі наведено поради щодо сторонніх джерел програмного "
+"забезпечення, які офіційно не пов'язано із Проєктом Fedora і не схвалено "
+"його учасниками. Користуйтеся ними на свій розсуд. Fedora рекомендує "
+"користуватися вільним програмним забезпеченням із відкритим кодом і уникати "
+"програмного забезпечення, поширення якого обмежено патентами."
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:24
@@ -70,6 +82,11 @@ msgid ""
 "the proprietary NVIDIA drivers, multimedia codecs, or other software not "
 "distributed as part of Fedora."
 msgstr ""
+"У користувачів може виникнути потреба у використанні програмного "
+"забезпечення, яке не є вільним і яке доступне зі сховищ https://rpmfusion."
+"org/[RPM Fusion], для користування закритими драйверами NVIDIA, "
+"мультимедійними кодеками або іншим програмним забезпеченням, яке не "
+"поширюється як частина Fedora."
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:26
@@ -77,6 +94,8 @@ msgid ""
 "The first time you install the RPM Fusion repos, you need to install the "
 "versioned RPMs:"
 msgstr ""
+"Під час початкового встановлення сховищ RPM Fusion вам слід встановити RPM "
+"відповідних версій:"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:31
@@ -87,6 +106,12 @@ msgid ""
 "        https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm\n"
 "    $ reboot\n"
 msgstr ""
+"    $ sudo rpm-ostree install \\\n"
+"        https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$("
+"rpm -E %fedora).noarch.rpm \\\n"
+"        https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-"
+"release-$(rpm -E %fedora).noarch.rpm\n"
+"    $ reboot\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:35
@@ -96,6 +121,11 @@ msgid ""
 "previously.  This will enable the RPM Fusion repos to be automatically "
 "updated and versioned correctly across major Fedora version rebases:"
 msgstr ""
+"Щойно ви завантажите нову рознорнуту систему, ви зможете віддати вказану "
+"нижче команду для вилучення «блокування» пакунків версій, які було "
+"встановлено раніше. Це увімкне сховища RPM Fusion для автоматичного "
+"оновлення і належного використання версій для основних переходів за версіями "
+"Fedora:"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:42
@@ -108,6 +138,12 @@ msgid ""
 "        --install rpmfusion-nonfree-release\n"
 "    $ reboot\n"
 msgstr ""
+"    $ sudo rpm-ostree update \\\n"
+"        --uninstall rpmfusion-free-release \\\n"
+"        --uninstall rpmfusion-nonfree-release \\\n"
+"        --install rpmfusion-free-release \\\n"
+"        --install rpmfusion-nonfree-release\n"
+"    $ reboot\n"
 
 #. type: Plain text
 #: pages/tips-and-tricks.adoc:44
@@ -116,6 +152,9 @@ msgid ""
 "updates-for-rpm-fusion-packages-and-other-packages-shipping-their-own-rpm-"
 "repos/30364[this thread] on the Fedora Discourse site."
 msgstr ""
+"Щоб дізнатися більше, ознайомтеся із https://discussion.fedoraproject.org/t/s"
+"implifying-updates-for-rpm-fusion-packages-and-other-packages-shipping-their-"
+"own-rpm-repos/30364[цією гілкою обговорення] на сайті Fedora Discourse."
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:45
