@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-22 21:58+0000\n"
+"POT-Creation-Date: 2022-12-06 21:59+0000\n"
 "PO-Revision-Date: 2022-11-23 23:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -26,8 +26,9 @@ msgstr "Підказки і настанови"
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:3
-#, no-wrap
-msgid "Hidding the default browser (Firefox)"
+#, fuzzy, no-wrap
+#| msgid "Hidding the default browser (Firefox)"
+msgid "Hiding the default browser (Firefox)"
 msgstr "Приховування типової програми для перегляду інтернету (Firefox)"
 
 #. type: Plain text
@@ -51,8 +52,8 @@ msgid ""
 msgstr ""
 "``` $ sudo mkdir -p /usr/local/share/applications/ $ sudo cp /usr/share/"
 "applications/firefox.desktop /usr/local/share/applications/ $ sudo sed -i "
-"\"2a\\\\NotShowIn=GNOME;KDE\" /usr/local/share/applications/firefox.desktop $"
-" sudo update-desktop-database /usr/local/share/applications/ ```"
+"\"2a\\\\NotShowIn=GNOME;KDE\" /usr/local/share/applications/firefox.desktop "
+"$ sudo update-desktop-database /usr/local/share/applications/ ```"
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:14
@@ -107,10 +108,8 @@ msgid ""
 "    $ reboot\n"
 msgstr ""
 "    $ sudo rpm-ostree install \\\n"
-"        https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$("
-"rpm -E %fedora).noarch.rpm \\\n"
-"        https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-"
-"release-$(rpm -E %fedora).noarch.rpm\n"
+"        https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \\\n"
+"        https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm\n"
 "    $ reboot\n"
 
 #. type: Plain text
@@ -152,9 +151,9 @@ msgid ""
 "updates-for-rpm-fusion-packages-and-other-packages-shipping-their-own-rpm-"
 "repos/30364[this thread] on the Fedora Discourse site."
 msgstr ""
-"Щоб дізнатися більше, ознайомтеся із https://discussion.fedoraproject.org/t/s"
-"implifying-updates-for-rpm-fusion-packages-and-other-packages-shipping-their-"
-"own-rpm-repos/30364[цією гілкою обговорення] на сайті Fedora Discourse."
+"Щоб дізнатися більше, ознайомтеся із https://discussion.fedoraproject.org/t/"
+"simplifying-updates-for-rpm-fusion-packages-and-other-packages-shipping-"
+"their-own-rpm-repos/30364[цією гілкою обговорення] на сайті Fedora Discourse."
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:45

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-22 21:58+0000\n"
+"POT-Creation-Date: 2022-12-06 21:59+0000\n"
 "PO-Revision-Date: 2022-08-30 22:04+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -27,7 +27,7 @@ msgstr "提示和技巧"
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:3
 #, no-wrap
-msgid "Hidding the default browser (Firefox)"
+msgid "Hiding the default browser (Firefox)"
 msgstr ""
 
 #. type: Plain text
