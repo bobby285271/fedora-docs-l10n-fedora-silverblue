@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-12-06 21:59+0000\n"
-"PO-Revision-Date: 2022-11-23 23:19+0000\n"
+"PO-Revision-Date: 2022-12-08 05:20+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-silverblue/masterpagestips-and-tricks/uk/>\n"
@@ -26,8 +26,7 @@ msgstr "Підказки і настанови"
 
 #. type: Title ==
 #: pages/tips-and-tricks.adoc:3
-#, fuzzy, no-wrap
-#| msgid "Hidding the default browser (Firefox)"
+#, no-wrap
 msgid "Hiding the default browser (Firefox)"
 msgstr "Приховування типової програми для перегляду інтернету (Firefox)"
 
